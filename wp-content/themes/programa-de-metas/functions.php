@@ -456,5 +456,149 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 
 // programa de metas
 
+/*CUSTOM METAS*/
+add_action('init', 'metas_register');
+function metas_register() {
+	$labels = array(
+      'name' => __('Metas'),
+      'singular_name' => __('Meta'),
+      'add_new' => __('Nova meta'),
+      'add_new_item' => __('Adicionar'),
+      'edit_item' => __('Editar'),
+      'new_item' => __('Nova'),
+      'view_item' => __('Ver'),
+      'search_items' => __('Procurar'),
+      'not_found' =>  __('Nada encontrado'),
+      'not_found_in_trash' => __('Nada encontrado na lixeira'),
+      'parent_item_colon' => ''
+    );
+    $args = array(
+      'labels' => $labels,
+      'public' => true,
+      'publicly_queryable' => true,
+      'show_ui' => true,
+      'query_var' => true,
+      'rewrite' => array('slug' => 'metas'),
+      'capability_type' => 'post',
+      'hierarchical' => false,
+      'menu_position' => null,
+      'supports' => array('title', 'editor', 'page-attributes'),
+      'taxonomies' => array('metas-category')
+      );
+    register_post_type('metas', $args );
+    flush_rewrite_rules();
+}
 
+add_action('admin_init', 'metas_create');
+
+function metas_create() {
+    add_meta_box('metas_meta_termos_tecnicos', 'Definições dos termos técnicos', 'metas_meta_termos_tecnicos', 'metas');
+	add_meta_box('metas_meta_o_que_vai_ser_entregue', 'O que vai ser entregue', 'metas_meta_o_que_vai_ser_entregue', 'metas');
+	add_meta_box('metas_meta_custo_total', 'Custo total', 'metas_meta_custo_total', 'metas');
+	add_meta_box('metas_meta_cronograma_1', 'Cronograma 2013-2014', 'metas_meta_cronograma_1', 'metas');
+	add_meta_box('metas_meta_cronograma_2', 'Cronograma 2015-2016', 'metas_meta_cronograma_2', 'metas');
+	add_meta_box('metas_meta_observacoes', 'Observações', 'metas_meta_observacoes', 'metas');
+}
+
+function metas_meta_termos_tecnicos() {
+	global $post;
+    $custom = get_post_custom($post->ID);
+    $meta_value = $custom["meta_termos_tecnicos"][0];
+
+    ?>
+    <div class="meta">
+      <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
+      <textarea name="meta_termos_tecnicos" class="link" style="width:90%; height: 140px;"><?php echo $meta_value; ?></textarea>
+    </div>
+    <?php
+}
+
+function metas_meta_o_que_vai_ser_entregue() {
+	global $post;
+    $custom = get_post_custom($post->ID);
+    $meta_value = $custom["meta_entregue"][0];
+
+    ?>
+    <div class="meta">
+      <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
+      <input type="text" name="meta_entregue" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+    </div>
+    <?php
+}
+
+function metas_meta_custo_total() {
+	global $post;
+    $custom = get_post_custom($post->ID);
+    $meta_value = $custom["meta_custo_total"][0];
+
+    ?>
+    <div class="meta">
+      <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
+      <input type="text" name="meta_custo_total" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+    </div>
+    <?php
+}
+
+function metas_meta_cronograma_1() {
+	global $post;
+    //$custom = get_post_custom($post->ID);
+    //$meta_value = $custom["meta_cronograma_1"][0];
+
+    ?>
+    <div class="meta">
+      <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
+      <input type="text" name="meta_cronograma_1[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+	  <input type="text" name="meta_cronograma_1[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+	  <input type="text" name="meta_cronograma_1[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+	  <input type="text" name="meta_cronograma_1[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+    </div>
+    <?php
+}
+
+function metas_meta_cronograma_2() {
+	global $post;
+    //$custom = get_post_custom($post->ID);
+    //$meta_value = $custom["meta_cronograma_1"][0];
+
+    ?>
+    <div class="meta">
+      <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
+      <input type="text" name="meta_cronograma_2[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+	  <input type="text" name="meta_cronograma_2[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+	  <input type="text" name="meta_cronograma_2[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+	  <input type="text" name="meta_cronograma_2[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+    </div>
+    <?php
+}
+
+function metas_meta_observacoes() {
+	global $post;
+    $custom = get_post_custom($post->ID);
+    $meta_value = $custom["meta_observacoes"][0];
+
+    ?>
+    <div class="meta">
+      <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
+      <textarea name="meta_observacoes" class="link" style="width:90%; height: 140px;"><?php echo $meta_value; ?></textarea>
+    </div>
+    <?php
+}
+
+add_action ('save_post', 'save_metas');
+
+function save_metas(){
+    global $post;
+	
+    if ( !wp_verify_nonce($_POST['metas-nonce'], 'metas-nonce')) {
+        return $post->ID;
+    }
+
+    if ( !current_user_can('edit_post', $post->ID))
+        return $post->ID;
+	
+    update_post_meta($post->ID, "meta_termos_tecnicos", $_POST['meta_termos_tecnicos']);
+	update_post_meta($post->ID, "meta_entregue", $_POST['meta_entregue']);
+	update_post_meta($post->ID, "meta_custo_total", $_POST['meta_custo_total']);
+	update_post_meta($post->ID, "meta_observacoes", $_POST['meta_observacoes']);
+}
 ?>

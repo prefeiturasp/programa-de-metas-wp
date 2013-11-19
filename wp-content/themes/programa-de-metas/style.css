@@ -76,8 +76,7 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
-	width:95%;
+	width:100%;
 	margin:0 auto;
 	position:relative;
 }
@@ -309,4 +308,294 @@ a img.aligncenter {
 	h3 {
 		page-break-after:avoid;
 	}
+}
+
+/*RULES FOR PROGRAMA DE METAS*/
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Tinos', serif;	
+}
+
+.content {
+	width: 941px;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	margin-top: 15px;
+	box-shadow: -1px 10px 11px #cecece;
+}
+
+header h1 {
+	padding: 0;
+	width: 249px;
+	float: left;
+	margin: 0;
+}
+
+header h2 {
+	width: 300px;
+	float: left;
+	margin: 0;
+	font-size: 15px;
+	color: #303030;
+	margin: 5px 0px 0px 29px;
+	font-weight: 700;
+	font-style: italic;
+}
+
+header h2 span {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+#all {
+	width: 98%;
+	background: #2f2f2f;
+	margin: 15px auto;
+}
+
+#all .nav {
+	width: 100%;
+	height: 72px;
+	box-shadow: -1px 8px 9px #000;
+}
+
+#all .nav ul {
+	padding: 0;
+	margin-top: 28px;
+	float: left;
+	list-style: none;
+}
+
+#all .nav ul li {
+	float: left;
+	display: inline;
+	color: #e5e5e4;
+}
+
+#all .nav ul li a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #e5e5e4;
+	padding: 0px 12px 0px 12px;
+	font-weight: 400;
+}
+
+#all .logo {
+	margin: 20px auto;
+	width: 242px;
+	height: 43px;
+	padding: 0;
+}
+
+#all .intro {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+	margin-top: 57px;
+}
+
+#all .filters {
+	width: 735px;
+	margin: 43px auto;
+}
+
+#all .eixos {
+	list-style: none;
+	padding: 0;
+}
+
+#all .eixos li a {
+	display: block;
+	width: 237px;
+	height: 63px;
+	margin-bottom: 13px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#all .eixos li a span {
+	display: block;
+	text-align: center;
+}
+
+#all .eixos li a .titulo {
+	color: #fff;
+	padding-top: 4px;
+}
+
+#all .eixos li a .descri {
+	font-weight: 700;
+	font-size: 10px;
+	padding-top: 1px;
+}
+
+#all .eixos li a.eixo-1 .descri {
+	color: #782525;
+}
+
+#all .eixos li a.eixo-2 .descri {
+	color: #124411;
+}
+
+#all .eixos li a.eixo-3 .descri {
+	color: #223652;
+}
+
+#all .metas {
+	margin-top: 23px;	
+}
+
+#all .metas .objetivo {
+	width: 933px;
+	height: 63px;
+}
+
+#all .metas .objetivo h2 {
+	font-size: 31px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0px 30px 0px 20px;
+	float: left;
+	line-height: 1.9;
+}
+
+#all .metas .objetivo p {
+	font-size: 22px;
+	color: #fff;
+	font-weight: 400;
+	font-style: italic;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+}
+
+#all .metas .grid {
+	list-style: none;
+	margin: 31px 0px 0px 0px;
+	padding: 0;
+}
+
+#all .metas .grid li a {
+	width: 301px;
+	height: 651px;
+	float: left;
+	display: inline;
+	margin: 0px 15px 15px 0px;
+	padding: 15px;
+}
+
+#all .metas .grid li .last {
+	margin-right: 0;
+}
+
+#all .metas .grid li a h3 {
+	font-size: 40px;
+	font-weight: 700;
+	margin: -11px 0px 0px 0px;
+}
+
+#all .metas .grid li a .texto {
+	width: 272px;
+	height: 179px;
+	margin-bottom: 38px;
+}
+
+#all .metas .grid li a .texto p {
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 14px 0px 14px 0px;
+	margin: 0;
+	line-height: 2;
+}
+
+#all .metas .grid li a h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0px;
+	text-align: justify;
+	letter-spacing: 2px;
+}
+
+#all .metas .grid li a .info {
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+	padding: 14px 0px 22px 0px;
+	margin: 0;
+}
+
+#all .metas .grid li a .custo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-align: right;
+	font-weight: 700;
+}
+
+/*EIXO 1*/
+#all .metas .objetivo.eixo-1 {
+	border: 3px dashed #d94e4d;
+	background: none;
+}
+
+#all .metas .grid.eixo-1 li a {
+	background: #d94e4d;
+}
+
+#all .metas .grid.eixo-1 li a h3 {
+	color: #602525;
+}
+
+#all .metas .grid.eixo-1 li a .texto {
+	background: #ff6c6c;
+	margin-top: 20px;
+}
+
+#all .metas .grid.eixo-1 li a .texto p {
+	color: #602626;
+}
+
+#all .metas .grid.eixo-1 li a h4 {
+	color: #602525;
+}
+
+#all .metas .grid.eixo-1 li a .info {
+	color: #602525;
+}
+
+#all .metas .grid.eixo-1 li a .custo {
+	color: #602626;
+	border-bottom: 2px solid #ff6c6c;
+}
+
+/*EIXOS*/
+.eixo-1 {
+	background: #d94e4d;
+}
+
+.eixo-2 {
+	background: #81af92;
+}
+
+.eixo-3 {
+	background: #7eabaf;
 }

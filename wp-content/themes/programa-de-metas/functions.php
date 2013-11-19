@@ -124,6 +124,12 @@ function html5blank_styles()
     
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+	
+	wp_register_style('fonts', 'http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic');
+    wp_enqueue_style('fonts'); // Enqueue it!
+	
+	wp_register_style('montserrat', 'http://fonts.googleapis.com/css?family=Montserrat:400,700');
+    wp_enqueue_style('montserrat'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -473,23 +479,54 @@ function metas_register() {
       'parent_item_colon' => ''
     );
     $args = array(
-      'labels' => $labels,
-      'public' => true,
-      'publicly_queryable' => true,
-      'show_ui' => true,
-      'query_var' => true,
-      'rewrite' => array('slug' => 'metas'),
-      'capability_type' => 'post',
-      'hierarchical' => false,
-      'menu_position' => null,
-      'supports' => array('title', 'editor', 'page-attributes'),
-      'taxonomies' => array('metas-category')
-      );
+		'labels' => $labels,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'metas'),
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'menu_position' => null,
+		'supports' => array('title', 'editor', 'page-attributes'),
+		'taxonomies' => array('metas-category')
+    );
     register_post_type('metas', $args );
     flush_rewrite_rules();
 }
 
 add_action('admin_init', 'metas_create');
+
+function create_metascategory_taxonomy() {
+
+    $labels = array(
+        'name' => _x( 'Categorias', 'taxonomy general name' ),
+        'singular_name' => _x( 'Category', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Search Categories' ),
+        'popular_items' => __( 'Popular Categories' ),
+        'all_items' => __( 'All Categories' ),
+        'parent_item' => null,
+        'parent_item_colon' => null,
+        'edit_item' => __( 'Edit Category' ),
+        'update_item' => __( 'Update Category' ),
+        'add_new_item' => __( 'Add New Category' ),
+        'new_item_name' => __( 'New Category Name' ),
+        'separate_items_with_commas' => __( 'Separate categories with commas' ),
+        'add_or_remove_items' => __( 'Add or remove categories' ),
+        'choose_from_most_used' => __( 'Choose from the most used categories' ),
+    );
+
+    register_taxonomy('metas-category', 'metas', array(
+        'label' => __('Categoria'),
+        'labels' => $labels,
+        'hierarchical' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'metas-category'),
+    ));
+}
+
+add_action('init', 'create_metascategory_taxonomy', 0);
 
 function metas_create() {
     add_meta_box('metas_meta_termos_tecnicos', 'Definições dos termos técnicos', 'metas_meta_termos_tecnicos', 'metas');
@@ -600,5 +637,29 @@ function save_metas(){
 	update_post_meta($post->ID, "meta_entregue", $_POST['meta_entregue']);
 	update_post_meta($post->ID, "meta_custo_total", $_POST['meta_custo_total']);
 	update_post_meta($post->ID, "meta_observacoes", $_POST['meta_observacoes']);
+}
+
+function filter_eixos() {
+	$eixos = get_categories(
+		array(
+			'orderby' => 'name',
+			'parent' => 0,
+			'hide_empty' => 0,
+			'taxonomy' => 'metas-category'
+		)
+	);
+	
+	if (!empty($eixos)) {
+		$outPut = array();
+		foreach ($eixos as $eixo){
+			$outPut[] = array(
+				'name' => $eixo->name,
+				'slug' => $eixo->slug,
+				'description' => $eixo->description
+			);
+		}
+		return $outPut;
+	}
+	return false;
 }
 ?>

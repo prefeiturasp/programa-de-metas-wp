@@ -31,7 +31,16 @@
 		<div class="wrapper">
 	
 			<!-- header -->
-			<header class="header clear" role="banner">
-							
+			<header>
+				<div class="content">
+					<h1>
+						<a href="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Planeja Sampa - Fazendo junto a cidade que a gente quer" name="Planeja Sampa - Fazendo junto a cidade que a gente quer">
+						</a>
+					</h1>
+					<h2>
+						Programa de Metas
+					</h2>
+				</div>
 			</header>
 			<!-- /header -->

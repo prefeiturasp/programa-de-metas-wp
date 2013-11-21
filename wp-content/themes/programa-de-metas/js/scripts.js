@@ -1,5 +1,5 @@
 // DOM Ready
-$(function() {
+/*$(function() {
 	
 	// SVG fallback
 	// toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script#update
@@ -13,4 +13,31 @@ $(function() {
 		}
 	}
 
+});*/
+
+OBJ = 1;
+var PDM = PDM || {};
+
+PDM.init = function() {
+	$(window).scroll(function(){  
+        if($(window).scrollTop() == $(document).height() - $(window).height()){
+			OBJ = OBJ + 1;
+			PDM.loadMetas();
+		}
+    });
+};
+
+PDM.loadMetas = function() {
+	$.ajax({  
+        url: wpAjaxUrl,  
+        type:'POST',  
+        data: 'action=infinite_scroll&objetivo=' + OBJ,   
+        success: function(response){  
+            $('.metas').append(response);
+        }  
+    });
+};
+
+$(document).ready(function() {
+	PDM.init();
 });

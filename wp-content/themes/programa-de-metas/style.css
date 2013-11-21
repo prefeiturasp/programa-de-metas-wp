@@ -390,6 +390,16 @@ header h2 span {
 	font-weight: 400;
 }
 
+#all .modal {
+	width: 941px;
+	height: 1145px;
+	position: fixed;
+	top: 82px;
+	left: 50%;
+	margin-left: -470px;
+	background: #da4e4d;
+}
+
 #all .logo {
 	margin: 20px auto;
 	width: 242px;
@@ -462,6 +472,8 @@ header h2 span {
 #all .metas .objetivo {
 	width: 933px;
 	height: 63px;
+	float: left;
+	margin: 109px 0px 54px 0px;
 }
 
 #all .metas .objetivo h2 {
@@ -587,6 +599,79 @@ header h2 span {
 	border-bottom: 2px solid #ff6c6c;
 }
 
+/*EIXO 2*/
+#all .metas .objetivo.eixo-2 {
+	border: 3px dashed #93ddac;
+	background: none;
+}
+
+#all .metas .grid.eixo-2 li a {
+	background: #81af92;
+}
+
+#all .metas .grid.eixo-2 li a h3 {
+	color: #4a6252;
+	text-align: right;
+}
+
+#all .metas .grid.eixo-2 li a .texto {
+	background: #a1f5bd;
+	margin-top: 20px;
+}
+
+#all .metas .grid.eixo-2 li a .texto p {
+	color: #4a6252;
+}
+
+#all .metas .grid.eixo-2 li a h4 {
+	color: #4a6252;
+}
+
+#all .metas .grid.eixo-2 li a .info {
+	color: #4a6252;
+}
+
+#all .metas .grid.eixo-2 li a .custo {
+	color: #4a6252;
+	border-bottom: 2px solid #a1f5bd;
+}
+
+/*EIXO 3*/
+#all .metas .objetivo.eixo-3 {
+	border: 3px dashed #a7dce0;
+	background: none;
+}
+
+#all .metas .grid.eixo-3 li a {
+	background: #7eabaf;
+}
+
+#all .metas .grid.eixo-3 li a h3 {
+	color: #374d4f;
+	text-align: right;
+}
+
+#all .metas .grid.eixo-3 li a .texto {
+	background: #b8f4f9;
+	margin-top: 20px;
+}
+
+#all .metas .grid.eixo-3 li a .texto p {
+	color: #374d4f;
+}
+
+#all .metas .grid.eixo-3 li a h4 {
+	color: #374d4f;
+}
+
+#all .metas .grid.eixo-3 li a .info {
+	color: #374d4f;
+}
+
+#all .metas .grid.eixo-3 li a .custo {
+	color: #374d4f;
+	border-bottom: 2px solid #b8f4f9;
+}
 /*EIXOS*/
 .eixo-1 {
 	background: #d94e4d;

@@ -578,32 +578,26 @@ function metas_meta_custo_total() {
 
 function metas_meta_cronograma_1() {
 	global $post;
-    //$custom = get_post_custom($post->ID);
-    //$meta_value = $custom["meta_cronograma_1"][0];
+    $custom = get_post_custom($post->ID);
+    $meta_value = $custom["meta_cronograma_1"][0];
 
     ?>
     <div class="meta">
       <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
-      <input type="text" name="meta_cronograma_1[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
-	  <input type="text" name="meta_cronograma_1[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
-	  <input type="text" name="meta_cronograma_1[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
-	  <input type="text" name="meta_cronograma_1[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+      <input type="text" name="meta_cronograma_1" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
     </div>
     <?php
 }
 
 function metas_meta_cronograma_2() {
 	global $post;
-    //$custom = get_post_custom($post->ID);
-    //$meta_value = $custom["meta_cronograma_1"][0];
+    $custom = get_post_custom($post->ID);
+    $meta_value = $custom["meta_cronograma_2"][0];
 
     ?>
     <div class="meta">
       <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
-      <input type="text" name="meta_cronograma_2[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
-	  <input type="text" name="meta_cronograma_2[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
-	  <input type="text" name="meta_cronograma_2[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
-	  <input type="text" name="meta_cronograma_2[]" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
+      <input type="text" name="meta_cronograma_2" class="link" value="<?php echo $meta_value; ?>" style="width:90%" />
     </div>
     <?php
 }
@@ -637,6 +631,8 @@ function save_metas(){
 	update_post_meta($post->ID, "meta_entregue", $_POST['meta_entregue']);
 	update_post_meta($post->ID, "meta_custo_total", $_POST['meta_custo_total']);
 	update_post_meta($post->ID, "meta_observacoes", $_POST['meta_observacoes']);
+	update_post_meta($post->ID, "meta_cronograma_1", $_POST['meta_cronograma_1']);
+	update_post_meta($post->ID, "meta_cronograma_2", $_POST['meta_cronograma_2']);
 }
 
 function filter_eixos() {
@@ -652,14 +648,74 @@ function filter_eixos() {
 	if (!empty($eixos)) {
 		$outPut = array();
 		foreach ($eixos as $eixo){
-			$outPut[] = array(
-				'name' => $eixo->name,
-				'slug' => $eixo->slug,
-				'description' => $eixo->description
-			);
+			if (strpos($eixo->name, 'Eixo') !== false) {
+				$outPut[] = array(
+					'name' => $eixo->name,
+					'slug' => $eixo->slug,
+					'description' => $eixo->description
+				);	
+			}
 		}
 		return $outPut;
 	}
 	return false;
 }
+
+function load_metas() {
+	if (!empty($_POST['objetivo'])) {
+		$currentObj = $_POST['objetivo'];
+		$objetivo = get_term_by('slug', 'objetivo-'.$currentObj, 'metas-category', ARRAY_A);
+		if (!empty($objetivo)) {
+			$objetivoNome = $objetivo['name'];
+			$objetivoDescri = $objetivo['description'];
+			$objetivoSlug = $objetivo['slug'];
+			$eixo = get_term_by('id', $objetivo['parent'], 'metas-category', ARRAY_A);
+			if(!empty($eixo)):
+				$class = $eixo['slug'];
+				?>
+					<div class="objetivo <?php echo $class;?>">
+						<h2><?php echo $objetivoNome;?></h2>
+						<p><?php echo $objetivoDescri;?></p>
+					</div>
+	
+					<ul class="grid <?php echo $class;?>">
+						<?php
+						$WP_query = new WP_Query(array('post_type' => 'metas',
+							'tax_query' => array(
+								array(
+									'taxonomy' => 'metas-category',
+									'field' => 'slug',
+									'terms' => $objetivoSlug
+								)
+							)
+						));
+						
+						while ($WP_query->have_posts()) : $WP_query->the_post();
+							?>
+								<li>
+									<a href="">
+										<h3><?php the_title();?></h3>
+										<div class="texto">
+											<!--p>Inserir aproximadamente 280 mil famílias com renda de até meio salário mínimo no Cadastro Único para atingir 773 mil famílias cadastradas</p-->
+											<?php the_content();?>
+										</div>
+										<h4>Articulação territorial</h4>
+										<p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
+										<h4>Secretaria e unidade<br /> responsável</h4>
+										<p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
+										<p class="custo">R$ 224 milhões</p>
+									</a>
+								</li>
+							<?php
+						endwhile;
+						?>
+					</ul>
+				<?php
+			endif;
+		}	
+	}die;
+}
+
+add_action('wp_ajax_infinite_scroll', 'load_metas');           // for logged in user  
+add_action('wp_ajax_nopriv_infinite_scroll', 'load_metas');  
 ?>

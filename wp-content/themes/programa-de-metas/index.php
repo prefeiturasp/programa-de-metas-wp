@@ -1,5 +1,6 @@
 <?php get_header(); ?>
     <div id="all">
+        <div class="modal"></div>
         <div class="nav">
             <div class="content">
                 <ul>
@@ -60,22 +61,84 @@
                 while ($WP_query->have_posts()) : $WP_query->the_post();
                     the_title();
                 endwhile;die;*/
-                $term = get_term_by('slug', 'objetivo-1', 'metas-category', ARRAY_A);
-                if (!empty($term)) {
-                    $parent = get_term_by('id', $term['parent'], 'metas-category', ARRAY_A);
-                    if (!empty($parent)) {
-                        $class = $parent['slug'];
-                    }
-                }
+                
             ?>
             
             <div class="metas">
-                <div class="objetivo <?php echo $class;?>">
+                <?php
+                    $objetivo = get_term_by('slug', 'objetivo-1', 'metas-category', ARRAY_A);
+                    if (!empty($objetivo)) {
+                        $objetivoNome = $objetivo['name'];
+                        $objetivoDescri = $objetivo['description'];
+                        $objetivoSlug = $objetivo['slug'];
+                        $eixo = get_term_by('id', $objetivo['parent'], 'metas-category', ARRAY_A);
+                        if(!empty($eixo)):
+                            $class = $eixo['slug'];
+                            ?>
+                                <div class="objetivo <?php echo $class;?>">
+                                    <h2><?php echo $objetivoNome;?></h2>
+                                    <p><?php echo $objetivoDescri;?></p>
+                                </div>
+            
+                                <ul class="grid <?php echo $class;?>">
+                                    <?php
+                                    $WP_query = new WP_Query(array('post_type' => 'metas',
+                                        'tax_query' => array(
+                                            array(
+                                                'taxonomy' => 'metas-category',
+                                                'field' => 'slug',
+                                                'terms' => $objetivoSlug
+                                            )
+                                        )
+                                    ));
+                                    
+                                    while ($WP_query->have_posts()) : $WP_query->the_post();
+                                        $terms = wp_get_post_terms($post->ID, 'metas-category');
+                                        ?>
+                                            <li>
+                                                <a href="">
+                                                    <h3><?php the_title();?></h3>
+                                                    <div class="texto">
+                                                        <!--p>Inserir aproximadamente 280 mil famílias com renda de até meio salário mínimo no Cadastro Único para atingir 773 mil famílias cadastradas</p-->
+                                                        <?php the_content();?>
+                                                    </div>
+                                                    <h4>Articulação territorial</h4>
+                                                    <?php
+                                                        foreach($terms as $t):
+                                                            if($t->parent == 7):
+                                                    ?>
+                                                                <p class="info"><?php echo $t->name;?></p>
+                                                    <?php
+                                                            endif;
+                                                        endforeach;
+                                                    ?>
+                                                    <h4>Secretaria e unidade<br /> responsável</h4>
+                                                    <?php
+                                                        foreach($terms as $t):
+                                                            if($t->parent == 9):
+                                                    ?>
+                                                                <p class="info"><?php echo $t->name;?></p>
+                                                    <?php
+                                                            endif;
+                                                        endforeach;
+                                                    ?>
+                                                    <p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
+                                                </a>
+                                            </li>
+                                        <?php
+                                    endwhile;
+                                    ?>
+                                </ul>
+                            <?php
+                        endif;
+                    }
+                ?>
+                <!--div class="objetivo eixo-3<?php //echo $class;?>">
                     <h2>Objetivo 1</h2>
                     <p>Superar a extrema pobreza na cidade de São Paulo, elevando a renda, promovendo a inclusão produtiva e o acesso a serviços públicos para todos.</p>
                 </div>
             
-                <ul class="grid <?php echo $class;?>">
+                <ul class="grid eixo-3<?php //echo $class;?>">
                     <li>
                         <a href="">
                             <h3>1</h3>
@@ -131,7 +194,7 @@
                             <p class="custo">R$ 224 milhões</p>
                         </a>
                     </li>
-                </ul>
+                </ul-->
             </div>
         </div>    
     </div>

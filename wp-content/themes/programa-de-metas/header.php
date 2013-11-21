@@ -24,6 +24,9 @@
 			conditionizr()
 		}()
 		</script>
+		<script type="text/javascript">
+			var wpAjaxUrl = '<?php echo admin_url('admin-ajax.php');?>';
+		</script>
 	</head>
 	<body <?php body_class(); ?>>
 	

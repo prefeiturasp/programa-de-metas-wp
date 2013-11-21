@@ -673,61 +673,62 @@ function load_metas() {
 			$eixo = get_term_by('id', $objetivo['parent'], 'metas-category', ARRAY_A);
 			if(!empty($eixo)):
 				$class = $eixo['slug'];
-				?>
-					<div class="objetivo <?php echo $class;?>">
-						<h2><?php echo $objetivoNome;?></h2>
-						<p><?php echo $objetivoDescri;?></p>
-					</div>
-	
-					<ul class="grid <?php echo $class;?>">
-						<?php
-						$WP_query = new WP_Query(array('post_type' => 'metas',
-							'tax_query' => array(
-								array(
-									'taxonomy' => 'metas-category',
-									'field' => 'slug',
-									'terms' => $objetivoSlug
-								)
+					$WP_query = new WP_Query(array('post_type' => 'metas',
+						'tax_query' => array(
+							array(
+								'taxonomy' => 'metas-category',
+								'field' => 'slug',
+								'terms' => $objetivoSlug
 							)
-						));
-						
-						while ($WP_query->have_posts()) : $WP_query->the_post();
-							$terms = wp_get_post_terms($post->ID, 'metas-category');
-							?>
-								<li>
-									<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>">
-										<h3><?php the_title();?></h3>
-										<div class="texto">
-											<?php the_content();?>
-										</div>
-										<h4>Articulação territorial</h4>
-										<?php
-											foreach($terms as $t):
-												if($t->parent == 53):
-										?>
-													<p class="info"><?php echo $t->name;?></p>
-										<?php
-												endif;
-											endforeach;
-										?>
-										<h4>Secretaria e unidade<br /> responsável</h4>
-										<?php
-											foreach($terms as $t):
-												if($t->parent == 25):
-										?>
-													<p class="info"><?php echo $t->name;?></p>
-										<?php
-												endif;
-											endforeach;
-										?>
-										<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
-									</a>
-								</li>
+						)
+					));
+					if($WP_query->have_posts()):
+				?>
+						<div class="objetivo <?php echo $class;?>">
+							<h2><?php echo $objetivoNome;?></h2>
+							<p><?php echo $objetivoDescri;?></p>
+						</div>
+		
+						<ul class="grid <?php echo $class;?>">
 							<?php
-						endwhile;
-						?>
-					</ul>
+							while ($WP_query->have_posts()) : $WP_query->the_post();
+								$terms = wp_get_post_terms($post->ID, 'metas-category');
+								?>
+									<li>
+										<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>">
+											<h3><?php the_title();?></h3>
+											<div class="texto">
+												<?php the_content();?>
+											</div>
+											<h4>Articulação territorial</h4>
+											<?php
+												foreach($terms as $t):
+													if($t->parent == 53):
+											?>
+														<p class="info"><?php echo $t->name;?></p>
+											<?php
+													endif;
+												endforeach;
+											?>
+											<h4>Secretaria e unidade<br /> responsável</h4>
+											<?php
+												foreach($terms as $t):
+													if($t->parent == 25):
+											?>
+														<p class="info"><?php echo $t->name;?></p>
+											<?php
+													endif;
+												endforeach;
+											?>
+											<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
+										</a>
+									</li>
+								<?php
+							endwhile;
+							?>
+						</ul>
 				<?php
+					endif;
 			endif;
 		}	
 	}die;

@@ -414,7 +414,6 @@ header h2 span {
 #all .modal .texto-meta{
 	width: 898px;
 	height: 154px;
-	background: #ff6c6c;
 	margin: 49px auto;
 }
 
@@ -457,7 +456,6 @@ header h2 span {
 	width: 898px;
 	height: 243px;
 	margin: 0 auto;
-	background: #ff6c6c;
 }
 
 #all .modal .detalhes .detalhamento h4 {
@@ -496,6 +494,39 @@ header h2 span {
 	width: 389px;
 	height: 100%;
 	float: left;
+}
+
+/*EIXO 1*/
+#all .modal.eixo-1 .texto-meta {
+	background: #ff6c6c;
+}
+
+#all .modal.eixo-1 .texto-meta h2 {
+	color: #602525;
+}
+
+#all .modal.eixo-1 .texto-meta p {
+	color: #602626;
+}
+
+#all .modal.eixo-1 .detalhes h4 {
+	color: #602525;
+}
+
+#all .modal.eixo-1 .detalhes .info {
+	color: #602525;
+}
+
+#all .modal.eixo-1 .detalhes .detalhamento {
+	background: #ff6c6c;
+}
+
+#all .modal.eixo-1 .detalhes .detalhamento h4 {
+	color: #602525;
+}
+
+#all .modal .detalhes .detalhamento .informacoes .termos {
+	
 }
 
 #all .logo {

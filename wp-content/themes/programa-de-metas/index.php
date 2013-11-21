@@ -69,6 +69,8 @@
                                 <ul class="grid <?php echo $class;?>">
                                     <?php
                                     $WP_query = new WP_Query(array('post_type' => 'metas',
+                                        'order' => 'ASC',
+                                        'orderby' => 'title',
                                         'tax_query' => array(
                                             array(
                                                 'taxonomy' => 'metas-category',
@@ -82,7 +84,7 @@
                                         $terms = wp_get_post_terms($post->ID, 'metas-category');
                                         ?>
                                             <li>
-                                                <a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>">
+                                                <a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $class;?>">
                                                     <h3><?php the_title();?></h3>
                                                     <div class="texto">
                                                         <?php the_content();?>

@@ -29,6 +29,7 @@ PDM.init = function() {
 	$('.meta-single').click(function(e) {
 		e.preventDefault();
 		PDM.getPost($(this).attr('data-post'));
+		$('.modal').addClass($(this).attr('data-eixo'));
 	})
 	
 	$('.mask').click(function() {

@@ -677,6 +677,7 @@ function load_metas() {
 					$WP_query = new WP_Query(array('post_type' => 'metas',
 						'order' => 'ASC',
                         'orderby' => 'date',
+						'posts_per_page' => -1,
 						'tax_query' => array(
 							array(
 								'taxonomy' => 'metas-category',
@@ -815,7 +816,39 @@ function get_post_data() {
 					<p class="info"><?php echo get_post_meta($post['ID'], 'meta_observacoes', true);?></p>
 					<h4>Custo total da meta</h4>
 					<p class="info"><?php echo get_post_meta($post['ID'], 'meta_custo_total', true);?></p>
-					<h4>Cronograma de entrega</h4>
+					<div class="cronograma">
+						<div class="conteudo">
+							<h4>Cronograma de entrega</h4>
+							<div class="um">
+								<p class="titulo">2013-2014</p>
+								<?php
+								$cronograma1 = get_post_meta($post['ID'], 'meta_cronograma_1', true);
+								if(!empty($cronograma1)):
+									$parts = explode(',', $cronograma1);
+									foreach($parts as $p):
+									?>
+										<p class="info"><?php echo $p;?></p>
+									<?php
+									endforeach;
+								endif;
+								?>
+							</div>
+							<div class="dois">
+								<p class="titulo">2015-2016</p>
+								<?php
+								$cronograma2 = get_post_meta($post['ID'], 'meta_cronograma_2', true);
+								if(!empty($cronograma2)):
+									$parts = explode(',', $cronograma2);
+									foreach($parts as $p):
+									?>
+										<p class="info"><?php echo $p;?></p>
+									<?php
+									endforeach;
+								endif;
+								?>
+							</div>
+						</div>	
+					</div>
 				</div>
 			<?php
 		}

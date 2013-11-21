@@ -402,7 +402,7 @@ header h2 span {
 
 #all .modal {
 	width: 941px;
-	height: 1232px;
+	height: 1372px;
 	position: absolute;
 	top: 82px;
 	left: 50%;
@@ -496,10 +496,49 @@ header h2 span {
 	float: left;
 }
 
-#all .modal .detalhes .detalhamento .informacoes .cronograma {
+#all .modal .detalhes .cronograma {
 	width: 898px;
-	min-height: 191px;
-	background: #fec311;
+	height: 191px;
+}
+
+#all .modal .detalhes .conteudo {
+	width: 783px;
+	height: 151px;
+	margin: 32px auto;
+}
+
+#all .modal .detalhes .cronograma h4 {
+	text-align: center;
+	padding-top: 19px;
+}
+
+#all .modal .detalhes .cronograma .um {
+	width: 389px;
+	height: 111px;
+	border-right: 1px solid #000;
+	float: left;
+}
+
+#all .modal .detalhes .cronograma .dois {
+	width: 389px;
+	height: 111px;
+	float: left;
+}
+
+#all .modal .detalhes .cronograma .titulo {
+	font-size: 16px;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+}
+
+#all .modal .detalhes .cronograma .info {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+	padding: 0;
+	margin: 0;
 }
 
 /*EIXO 1*/
@@ -540,6 +579,26 @@ header h2 span {
 }
 
 #all .modal.eixo-1 .detalhes .detalhamento .informacoes .info {
+	color: #602525;
+}
+
+#all .modal.eixo-1 .detalhes .cronograma {
+	background: #ff6c6c;
+}
+
+#all .modal.eixo-1 .detalhes .cronograma h4 {
+	color: #602525;
+}
+
+#all .modal.eixo-1 .detalhes .cronograma .um {
+	border-right: 1px solid #da4e4d;
+}
+
+#all .modal.eixo-1 .detalhes .cronograma .titulo {
+	color: #602525;
+}
+
+#all .modal.eixo-1 .detalhes .cronograma .info {
 	color: #602525;
 }
 

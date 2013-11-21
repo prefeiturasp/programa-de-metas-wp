@@ -525,8 +525,16 @@ header h2 span {
 	color: #602525;
 }
 
-#all .modal .detalhes .detalhamento .informacoes .termos {
-	
+#all .modal.eixo-1 .detalhes .detalhamento .informacoes .termos {
+	border-right: 1px solid #da4e4d;
+}
+
+#all .modal.eixo-1 .detalhes .detalhamento .informacoes .titulo {
+	color: #602525;
+}
+
+#all .modal.eixo-1 .detalhes .detalhamento .informacoes .info {
+	color: #602525;
 }
 
 #all .logo {

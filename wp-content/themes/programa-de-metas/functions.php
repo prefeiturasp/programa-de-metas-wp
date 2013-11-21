@@ -546,6 +546,7 @@ function metas_meta_termos_tecnicos() {
     <div class="meta">
       <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
       <textarea name="meta_termos_tecnicos" class="link" style="width:90%; height: 140px;"><?php echo $meta_value; ?></textarea>
+	  <?php //wp_editor($meta_value, 'meta-termos-tecnicos', array('textarea_name' => 'meta_termos_tecnicos')); ?> 
     </div>
     <?php
 }
@@ -740,6 +741,8 @@ add_action('wp_ajax_nopriv_infinite_scroll', 'load_metas');
 function get_post_data() {
 	if (!empty($_POST['pid'])) {
 		$postId = $_POST['pid'];
+		$terms = wp_get_post_terms($postId, 'metas-category');
+		//var_dump($terms);die;
 		$post = get_post($postId, ARRAY_A);
 		if (!empty($post)) {
 			?>
@@ -749,13 +752,47 @@ function get_post_data() {
 				</div>
 				
 				<div class="detalhes">
-					<h4>Eixo Temático 1. Compromisso com os direitos sociais e civis</h4>
+					<?php
+						foreach($terms as $t):
+							if($t->parent == 0 && strpos($t->slug, 'eixo') !== false):
+								$n = explode('-', $t->slug);
+								$n = $n[1];
+					?>
+								<h4>Eixo Temático <?php echo $n;?>. <?php echo $t->description?></h4>
+					<?php
+							endif;
+						endforeach;
+					?>
 					<h4>Objetivo temático associado</h4>
-					<p class="info"><b>Objetivo 4.</b> Ampliar o acesso, aperfeiçoar a qualidade, reduzir as desigualdades regionais e o tempo de espera e fortalecer a atenção integral das ações e serviços de saúde</p>
+					<?php
+						foreach($terms as $t):
+							if(strpos($t->name, 'Objetivo') !== false):
+					?>
+								<p class="info"><b><?php echo $t->name;?>.</b> <?php echo $t->description;?></p>
+					<?php
+							endif;
+						endforeach;
+					?>
 					<h4>Secretaria e unidade responsável</h4>
-					<p class="info">Secretaria Municipal da Saúde</p>
+					<?php
+						foreach($terms as $t):
+							if($t->parent == 25):
+					?>
+								<p class="info"><?php echo $t->name;?></p>
+					<?php
+							endif;
+						endforeach;
+					?>
 					<h4>Articulação territorial associada</h4>
-					<p class="info">Resgate da cidadania nos territórios mais vulneráveis</p>
+					<?php
+						foreach($terms as $t):
+							if($t->parent == 53):
+					?>
+								<p class="info"><?php echo $t->name;?></p>
+					<?php
+							endif;
+						endforeach;
+					?>
 					
 					<div class="detalhamento">
 						<h4>Detalhamento da Meta</h4>

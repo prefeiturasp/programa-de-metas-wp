@@ -642,7 +642,7 @@ header h2 span {
 
 #all .metas .grid li a {
 	width: 301px;
-	height: 651px;
+	min-height: 651px;
 	float: left;
 	display: inline;
 	margin: 0px 12px 15px 0px;

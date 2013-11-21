@@ -25,6 +25,29 @@ PDM.init = function() {
 			PDM.loadMetas();
 		}
     });
+	
+	$('.meta-single').click(function(e) {
+		e.preventDefault();
+		PDM.getPost($(this).attr('data-post'));
+	})
+	
+	$('.mask').click(function() {
+		$('.mask').fadeOut();
+		$('.modal').fadeOut();
+	});
+};
+
+PDM.getPost = function(id) {
+	$.ajax({  
+        url: wpAjaxUrl,  
+        type:'POST',  
+        data: 'action=get_post_by_id&pid=' + id,   
+        success: function(response){  
+            $('.modal').append(response);
+			$('.mask').fadeIn();
+			$('.modal').fadeIn();
+        }  
+    });
 };
 
 PDM.loadMetas = function() {

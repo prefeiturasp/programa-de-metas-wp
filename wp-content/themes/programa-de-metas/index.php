@@ -1,6 +1,9 @@
 <?php get_header(); ?>
     <div id="all">
-        <div class="modal"></div>
+        <div class="modal">
+            
+        </div>
+        
         <div class="nav">
             <div class="content">
                 <ul>
@@ -33,7 +36,7 @@
                                 foreach($eixos as $eixo):
                             ?>
                                     <li>
-                                        <a href="" class="<?php echo $eixo['slug'];?>">
+                                        <a href="javascript:void(0);" class="<?php echo $eixo['slug'];?>">
                                             <span class="titulo"><?php echo $eixo['name'];?></span>
                                             <span class="descri"><?php echo $eixo['description'];?></span>
                                         </a>
@@ -46,23 +49,6 @@
                 endif;
                 ?>
             </div>
-            
-            <?php
-                /*$WP_query = new WP_Query(array('post_type' => 'metas',
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'metas-category',
-                            'field' => 'slug',
-                            'terms' => 'objetivo-1'
-                        )
-                    )
-                ));
-                print_r($WP_query);
-                while ($WP_query->have_posts()) : $WP_query->the_post();
-                    the_title();
-                endwhile;die;*/
-                
-            ?>
             
             <div class="metas">
                 <?php
@@ -96,10 +82,9 @@
                                         $terms = wp_get_post_terms($post->ID, 'metas-category');
                                         ?>
                                             <li>
-                                                <a href="">
+                                                <a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>">
                                                     <h3><?php the_title();?></h3>
                                                     <div class="texto">
-                                                        <!--p>Inserir aproximadamente 280 mil famílias com renda de até meio salário mínimo no Cadastro Único para atingir 773 mil famílias cadastradas</p-->
                                                         <?php the_content();?>
                                                     </div>
                                                     <h4>Articulação territorial</h4>
@@ -133,68 +118,6 @@
                         endif;
                     }
                 ?>
-                <!--div class="objetivo eixo-3<?php //echo $class;?>">
-                    <h2>Objetivo 1</h2>
-                    <p>Superar a extrema pobreza na cidade de São Paulo, elevando a renda, promovendo a inclusão produtiva e o acesso a serviços públicos para todos.</p>
-                </div>
-            
-                <ul class="grid eixo-3<?php //echo $class;?>">
-                    <li>
-                        <a href="">
-                            <h3>1</h3>
-                            <div class="texto">
-                                <p>Inserir aproximadamente 280 mil famílias com renda de até meio salário mínimo no Cadastro Único para atingir 773 mil famílias cadastradas</p>
-                            </div>
-                            <h4>Articulação territorial</h4>
-                            <p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
-                            <h4>Secretaria e unidade<br /> responsável</h4>
-                            <p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
-                            <p class="custo">R$ 224 milhões</p>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="">
-                            <h3>1</h3>
-                            <div class="texto">
-                                <p>Inserir aproximadamente 280 mil famílias com renda de até meio salário mínimo no Cadastro Único para atingir 773 mil famílias cadastradas</p>
-                            </div>
-                            <h4>Articulação territorial</h4>
-                            <p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
-                            <h4>Secretaria e unidade<br /> responsável</h4>
-                            <p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
-                            <p class="custo">R$ 224 milhões</p>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="" class="last">
-                            <h3>1</h3>
-                            <div class="texto">
-                                <p>Inserir aproximadamente 280 mil famílias com renda de até meio salário mínimo no Cadastro Único para atingir 773 mil famílias cadastradas</p>
-                            </div>
-                            <h4>Articulação territorial</h4>
-                            <p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
-                            <h4>Secretaria e unidade<br /> responsável</h4>
-                            <p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
-                            <p class="custo">R$ 224 milhões</p>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="">
-                            <h3>1</h3>
-                            <div class="texto">
-                                <p>Inserir aproximadamente 280 mil famílias com renda de até meio salário mínimo no Cadastro Único para atingir 773 mil famílias cadastradas</p>
-                            </div>
-                            <h4>Articulação territorial</h4>
-                            <p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
-                            <h4>Secretaria e unidade<br /> responsável</h4>
-                            <p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
-                            <p class="custo">R$ 224 milhões</p>
-                        </a>
-                    </li>
-                </ul-->
             </div>
         </div>    
     </div>

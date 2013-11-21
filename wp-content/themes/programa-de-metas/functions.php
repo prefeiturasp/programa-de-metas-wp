@@ -662,6 +662,7 @@ function filter_eixos() {
 }
 
 function load_metas() {
+	global $post;
 	if (!empty($_POST['objetivo'])) {
 		$currentObj = $_POST['objetivo'];
 		$objetivo = get_term_by('slug', 'objetivo-'.$currentObj, 'metas-category', ARRAY_A);
@@ -691,19 +692,35 @@ function load_metas() {
 						));
 						
 						while ($WP_query->have_posts()) : $WP_query->the_post();
+							$terms = wp_get_post_terms($post->ID, 'metas-category');
 							?>
 								<li>
-									<a href="">
+									<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>">
 										<h3><?php the_title();?></h3>
 										<div class="texto">
-											<!--p>Inserir aproximadamente 280 mil famílias com renda de até meio salário mínimo no Cadastro Único para atingir 773 mil famílias cadastradas</p-->
 											<?php the_content();?>
 										</div>
 										<h4>Articulação territorial</h4>
-										<p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
+										<?php
+											foreach($terms as $t):
+												if($t->parent == 7):
+										?>
+													<p class="info"><?php echo $t->name;?></p>
+										<?php
+												endif;
+											endforeach;
+										?>
 										<h4>Secretaria e unidade<br /> responsável</h4>
-										<p class="info">Resgate da Cidanania nos Territórios mais vulneráveis; Reordenação da fronteira ambiental.</p>
-										<p class="custo">R$ 224 milhões</p>
+										<?php
+											foreach($terms as $t):
+												if($t->parent == 9):
+										?>
+													<p class="info"><?php echo $t->name;?></p>
+										<?php
+												endif;
+											endforeach;
+										?>
+										<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
 									</a>
 								</li>
 							<?php
@@ -716,6 +733,55 @@ function load_metas() {
 	}die;
 }
 
-add_action('wp_ajax_infinite_scroll', 'load_metas');           // for logged in user  
-add_action('wp_ajax_nopriv_infinite_scroll', 'load_metas');  
+add_action('wp_ajax_infinite_scroll', 'load_metas');
+add_action('wp_ajax_nopriv_infinite_scroll', 'load_metas');
+
+function get_post_data() {
+	if (!empty($_POST['pid'])) {
+		$postId = $_POST['pid'];
+		$post = get_post($postId, ARRAY_A);
+		if (!empty($post)) {
+			?>
+				<div class="texto-meta">
+					<h2>Meta <?php echo $post['post_title'];?></h2>
+					<p><?php echo $post['post_content'];?></p>
+				</div>
+				
+				<div class="detalhes">
+					<h4>Eixo Temático 1. Compromisso com os direitos sociais e civis</h4>
+					<h4>Objetivo temático associado</h4>
+					<p class="info"><b>Objetivo 4.</b> Ampliar o acesso, aperfeiçoar a qualidade, reduzir as desigualdades regionais e o tempo de espera e fortalecer a atenção integral das ações e serviços de saúde</p>
+					<h4>Secretaria e unidade responsável</h4>
+					<p class="info">Secretaria Municipal da Saúde</p>
+					<h4>Articulação territorial associada</h4>
+					<p class="info">Resgate da cidadania nos territórios mais vulneráveis</p>
+					
+					<div class="detalhamento">
+						<h4>Detalhamento da Meta</h4>
+						<div class="informacoes">
+							<div class="termos">
+								<p class="titulo">Definição dos termos técnicos</p>
+								<p class="info"><?php echo get_post_meta($post['ID'], 'meta_termos_tecnicos', true);?></p>
+							</div>
+							
+							<div class="entrega">
+								<p class="titulo">O que vai ser entregue ?</p>
+								<p class="info"><?php echo get_post_meta($post['ID'], 'meta_entregue', true);?></p>
+							</div>
+						</div>
+					</div>
+					
+					<h4>Observações</h4>
+					<p class="info"><?php echo get_post_meta($post['ID'], 'meta_observacoes', true);?></p>
+					<h4>Custo total da meta</h4>
+					<p class="info"><?php echo get_post_meta($post['ID'], 'meta_custo_total', true);?></p>
+					<h4>Cronograma de entrega</h4>
+				</div>
+			<?php
+		}
+	}die;
+}
+
+add_action('wp_ajax_get_post_by_id', 'get_post_data');
+add_action('wp_ajax_nopriv_get_post_by_id', 'get_post_data');
 ?>

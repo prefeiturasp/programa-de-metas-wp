@@ -32,7 +32,7 @@
 	
 		<!-- wrapper -->
 		<div class="wrapper">
-	
+			<div class="mask"></div>
 			<!-- header -->
 			<header>
 				<div class="content">

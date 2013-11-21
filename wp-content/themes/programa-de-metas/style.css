@@ -402,7 +402,7 @@ header h2 span {
 
 #all .modal {
 	width: 941px;
-	height: 1145px;
+	height: 1232px;
 	position: absolute;
 	top: 82px;
 	left: 50%;
@@ -494,6 +494,12 @@ header h2 span {
 	width: 389px;
 	height: 100%;
 	float: left;
+}
+
+#all .modal .detalhes .detalhamento .informacoes .cronograma {
+	width: 898px;
+	min-height: 191px;
+	background: #fec311;
 }
 
 /*EIXO 1*/

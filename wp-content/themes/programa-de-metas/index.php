@@ -71,6 +71,7 @@
                                     $WP_query = new WP_Query(array('post_type' => 'metas',
                                         'order' => 'ASC',
                                         'orderby' => 'date',
+                                        'posts_per_page' => -1,
                                         'tax_query' => array(
                                             array(
                                                 'taxonomy' => 'metas-category',
@@ -79,7 +80,7 @@
                                             )
                                         )
                                     ));
-                                    
+                                    $i = 1;
                                     while ($WP_query->have_posts()) : $WP_query->the_post();
                                         $terms = wp_get_post_terms($post->ID, 'metas-category');
                                         ?>
@@ -113,6 +114,7 @@
                                                 </a>
                                             </li>
                                         <?php
+                                        $i++;
                                     endwhile;
                                     ?>
                                 </ul>

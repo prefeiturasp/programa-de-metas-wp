@@ -703,7 +703,7 @@ function load_metas() {
 										<h4>Articulação territorial</h4>
 										<?php
 											foreach($terms as $t):
-												if($t->parent == 7):
+												if($t->parent == 53):
 										?>
 													<p class="info"><?php echo $t->name;?></p>
 										<?php
@@ -713,7 +713,7 @@ function load_metas() {
 										<h4>Secretaria e unidade<br /> responsável</h4>
 										<?php
 											foreach($terms as $t):
-												if($t->parent == 9):
+												if($t->parent == 25):
 										?>
 													<p class="info"><?php echo $t->name;?></p>
 										<?php

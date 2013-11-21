@@ -59,6 +59,7 @@ PDM.loadMetas = function() {
         data: 'action=infinite_scroll&objetivo=' + OBJ,   
         success: function(response){  
             $('.metas').append(response);
+			PDM.init();
         }  
     });
 };

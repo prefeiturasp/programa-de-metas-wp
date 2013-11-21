@@ -70,7 +70,7 @@
                                     <?php
                                     $WP_query = new WP_Query(array('post_type' => 'metas',
                                         'order' => 'ASC',
-                                        'orderby' => 'title',
+                                        'orderby' => 'date',
                                         'tax_query' => array(
                                             array(
                                                 'taxonomy' => 'metas-category',

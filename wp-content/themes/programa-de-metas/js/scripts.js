@@ -22,7 +22,7 @@ PDM.init = function() {
 	$(window).scroll(function(){  
         if($(window).scrollTop() == $(document).height() - $(window).height()){
 			OBJ = OBJ + 1;
-			PDM.loadMetas();
+			//PDM.loadMetas();
 		}
     });
 	

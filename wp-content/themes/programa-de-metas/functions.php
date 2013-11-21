@@ -545,8 +545,8 @@ function metas_meta_termos_tecnicos() {
     ?>
     <div class="meta">
       <input type="hidden" name="metas-nonce" value="<?php echo wp_create_nonce('metas-nonce'); ?>" />
-      <textarea name="meta_termos_tecnicos" class="link" style="width:90%; height: 140px;"><?php echo $meta_value; ?></textarea>
-	  <?php //wp_editor($meta_value, 'meta-termos-tecnicos', array('textarea_name' => 'meta_termos_tecnicos')); ?> 
+      <!--textarea name="meta_termos_tecnicos" class="link" style="width:90%; height: 140px;"><?php echo $meta_value; ?></textarea-->
+	  <?php wp_editor($meta_value, 'meta-termos-tecnicos', array('textarea_name' => 'meta_termos_tecnicos')); ?> 
     </div>
     <?php
 }
@@ -675,6 +675,8 @@ function load_metas() {
 			if(!empty($eixo)):
 				$class = $eixo['slug'];
 					$WP_query = new WP_Query(array('post_type' => 'metas',
+						'order' => 'ASC',
+                        'orderby' => 'date',
 						'tax_query' => array(
 							array(
 								'taxonomy' => 'metas-category',

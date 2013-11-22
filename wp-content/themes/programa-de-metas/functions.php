@@ -752,6 +752,9 @@ function load_metas() {
 		$eixoId = (!empty($eixoId)) ? $eixoId['term_id'] : 0;
 		$objetivos = get_terms('metas-category', array('child_of' => $eixoId));	
 	} else {
+		$currObj = explode('-', $_POST['objetivo']);
+		$currObj = $currObj[1];
+		echo '<script type="text/javascript"> OBJ = '.$currObj.';</script>';
 		$parent = get_term_by('slug', $_POST['objetivo'], 'metas-category');
 		if (!empty($parent)) {
 			$parentId = $parent->parent;

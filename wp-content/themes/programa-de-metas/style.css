@@ -402,13 +402,18 @@ header h2 span {
 
 #all .modal {
 	width: 941px;
-	height: 1372px;
+	min-height: 1372px;
 	position: absolute;
 	top: 82px;
 	left: 50%;
 	margin-left: -470px;
-	background: #da4e4d;
 	display: none;
+	z-index: 1;
+}
+
+#all .modal .bg {
+	width: 100%;
+	padding: 49px 0px 9px 0px;
 }
 
 #all .modal .texto-meta{
@@ -542,6 +547,14 @@ header h2 span {
 }
 
 /*EIXO 1*/
+#all .modal.eixo-1 {
+	background: none;
+}
+
+#all .modal.eixo-1 .bg {
+	background: #d94e4d !important;
+}
+
 #all .modal.eixo-1 .texto-meta {
 	background: #ff6c6c;
 }
@@ -602,11 +615,11 @@ header h2 span {
 	color: #602525;
 }
 
-#all .modal.eixo-2 {
+/*EIXO 2*/
+#all .modal.eixo-2 .bg {
 	background: #81af92;
 }
 
-/*EIXO 2*/
 #all .modal.eixo-2 .texto-meta {
 	background: #a1f5bd;
 }
@@ -735,7 +748,6 @@ header h2 span {
 #all .modal .comentarios {
 	width: 496px;
 	height: 352px;
-	background: #0d120e;
 }
 
 #all .modal .comentarios h2 {
@@ -743,8 +755,94 @@ header h2 span {
 	font-size: 16px;
 	text-transform: uppercase;
 	color: #fff;
+	float: left;
+	margin: 0;
 }
 
+#all .modal .comentarios .contador {
+	width: 138px;
+	float: right;
+}
+
+#all .modal .comentarios .balao {
+	display: block;
+	width: 28px;
+	height: 27px;
+	background: url(img/sprite.png) no-repeat;
+	float: left;
+}
+
+#all .modal .comentarios .total {
+	display: block;
+	float: left;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 12px;
+	margin-left: 8px;
+}
+
+#all .modal .comentarios .total b {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+#all .modal .comentarios form {
+	float: left;
+	width: 100%;
+}
+
+#all .modal .comentarios form label {
+	font-size: 12px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#all .modal .comentarios form input[type="text"] {
+	width: 100%;
+	height: 27px;
+	border: none;
+}
+
+#all .modal .comentarios form textarea {
+	width: 100%;
+	height: 68px;
+}
+
+#all .modal .comentarios form input[type="submit"] {
+	font-family: 'Montserrat', sans-serif;
+	background: #fff;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #2f302f;
+	border: none;
+	width: 147px;
+	height: 23px;
+	font-weight: 700;
+}
+
+/*EIXO 1*/
+#all .modal.eixo-1 .comentarios h2 {
+	color: #ff6c6c;
+}
+
+#all .modal.eixo-1 .comentarios .balao {
+	background-position: -4px -5px;
+}
+
+#all .modal.eixo-1 .comentarios .total {
+	color: #ff6c6c;
+}
+
+#all .modal.eixo-1 .comentarios form label, #all .modal.eixo-1 .comentarios form .required {
+	color: #ff6c6c;
+}
+
+#all .modal.eixo-1 .comentarios form input[type="text"],
+#all .modal.eixo-1 .comentarios form textarea {
+	background: #ff6c6c;
+	color: #602525;
+}
 
 #all .logo {
 	margin: 20px auto;

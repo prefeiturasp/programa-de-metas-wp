@@ -45,7 +45,10 @@ comment_form(
 	array(
 		'fields' => $fields,
 		'comment_field' => $comment_field,
-		'title_reply' => ''
+		'title_reply' => '',
+		'comment_notes_before' => '',
+		'comment_notes_after' => '',
+		'label_submit' => 'Publicar comentário'
 	)
 );
 ?>

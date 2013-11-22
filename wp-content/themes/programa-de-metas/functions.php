@@ -790,11 +790,13 @@ function load_metas() {
 			<ul class="grid <?php echo $eixo;?>">
 				<?php
 					$ids = array();
+					$i = 1;
+					echo '<div style="width:100%;float:left;">';
 					while ($WP_query->have_posts()) : $WP_query->the_post();
 						$terms = wp_get_post_terms($post->ID, 'metas-category');
 						?>
 						<li>
-							<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $class;?>">
+							<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $eixo;?>">
 								<h3><?php the_title();?></h3>
 								<div class="texto">
 									<?php the_content();?>
@@ -823,6 +825,8 @@ function load_metas() {
 							</a>
 						</li>
 					<?php
+						echo ($i%3 == 0) ? '</div><div style="width:100%;float:left;">' : '';
+						$i++;
 				endwhile;
 				?>
 			</ul>

@@ -1,6 +1,10 @@
+<?php
+global $withcomments;
+$withcomments = 1;
+?>
 <div class="texto-meta">
-	<h2>Meta <?php echo $post['post_title'];?></h2>
-	<p><?php echo $post['post_content'];?></p>
+	<h2>Meta <?php the_title();?></h2>
+	<?php the_content();?>
 </div>
 
 <div class="detalhes">
@@ -51,27 +55,27 @@
 		<div class="informacoes">
 			<div class="termos">
 				<p class="titulo">Definição dos termos técnicos</p>
-				<p class="info"><?php echo get_post_meta($post['ID'], 'meta_termos_tecnicos', true);?></p>
+				<p class="info"><?php echo get_post_meta($post->ID, 'meta_termos_tecnicos', true);?></p>
 			</div>
 			
 			<div class="entrega">
 				<p class="titulo">O que vai ser entregue ?</p>
-				<p class="info"><?php echo get_post_meta($post['ID'], 'meta_entregue', true);?></p>
+				<p class="info"><?php echo get_post_meta($post->ID, 'meta_entregue', true);?></p>
 			</div>
 		</div>
 	</div>
 	
 	<h4>Observações</h4>
-	<p class="info"><?php echo get_post_meta($post['ID'], 'meta_observacoes', true);?></p>
+	<p class="info"><?php echo get_post_meta($post->ID, 'meta_observacoes', true);?></p>
 	<h4>Custo total da meta</h4>
-	<p class="info"><?php echo get_post_meta($post['ID'], 'meta_custo_total', true);?></p>
+	<p class="info"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
 	<div class="cronograma">
 		<div class="conteudo">
 			<h4>Cronograma de entrega</h4>
 			<div class="um">
 				<p class="titulo">2013-2014</p>
 				<?php
-				$cronograma1 = get_post_meta($post['ID'], 'meta_cronograma_1', true);
+				$cronograma1 = get_post_meta($post->ID, 'meta_cronograma_1', true);
 				if(!empty($cronograma1)):
 					$parts = explode(',', $cronograma1);
 					foreach($parts as $p):
@@ -85,7 +89,7 @@
 			<div class="dois">
 				<p class="titulo">2015-2016</p>
 				<?php
-				$cronograma2 = get_post_meta($post['ID'], 'meta_cronograma_2', true);
+				$cronograma2 = get_post_meta($post->ID, 'meta_cronograma_2', true);
 				if(!empty($cronograma2)):
 					$parts = explode(',', $cronograma2);
 					foreach($parts as $p):
@@ -98,4 +102,12 @@
 			</div>
 		</div>	
 	</div>
+</div>
+<?php wp_reset_query(); ?>
+<div class="comentarios">
+	<h2>Deixe seu comentário</h2>
+	<div class="contador">
+		<span class="balao"></span>
+	</div>
+	<?php comments_template();?>
 </div>

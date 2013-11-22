@@ -137,6 +137,7 @@
                                         )
                                     ));
                                     $i = 1;
+                                    echo '<div style="width:100%;float:left;">';
                                     while ($WP_query->have_posts()) : $WP_query->the_post();
                                         $terms = wp_get_post_terms($post->ID, 'metas-category');
                                         ?>
@@ -170,6 +171,7 @@
                                                 </a>
                                             </li>
                                         <?php
+                                            echo ($i%3 == 0) ? '</div><div style="width:100%;float:left;">' : '';
                                         $i++;
                                     endwhile;
                                     ?>

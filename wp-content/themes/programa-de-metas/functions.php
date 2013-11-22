@@ -494,7 +494,7 @@ function metas_register() {
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'menu_position' => null,
-		'supports' => array('title', 'editor', 'page-attributes'),
+		'supports' => array('title', 'editor', 'page-attributes', 'comments'),
 		'taxonomies' => array('metas-category')
     );
     register_post_type('metas', $args );
@@ -915,7 +915,19 @@ function load_metas_bkp() {
 add_action('wp_ajax_infinite_scroll', 'load_metas');
 add_action('wp_ajax_nopriv_infinite_scroll', 'load_metas');
 
-function get_post_data() {
+function get_post_data(){
+    error_reporting(0); //see later to understand why it is here
+    global $post;
+    $post_id = $_REQUEST['pid'];
+    if($post_id){
+        $post = get_post($post_id);
+        setup_postdata($post);
+        get_template_part('single');
+        die();
+    }
+}
+
+function get_post_data_bkp() {
 	if (!empty($_POST['pid'])) {
 		$postId = $_POST['pid'];
 		$terms = wp_get_post_terms($postId, 'metas-category');

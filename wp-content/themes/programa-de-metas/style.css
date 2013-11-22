@@ -732,7 +732,18 @@ header h2 span {
 	color: #374d4f;
 }
 
+#all .modal .comentarios {
+	width: 496px;
+	height: 352px;
+	background: #0d120e;
+}
 
+#all .modal .comentarios h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+}
 
 
 #all .logo {
@@ -830,7 +841,7 @@ header h2 span {
 
 #all .metas .objetivo {
 	width: 933px;
-	height: 63px;
+	min-height: 63px;
 	float: left;
 	margin: 109px 0px 54px 0px;
 }
@@ -852,7 +863,7 @@ header h2 span {
 	font-weight: 400;
 	font-style: italic;
 	margin: 0;
-	padding: 0;
+	padding: 2px 0px 2px 0px;
 	line-height: 1.2;
 }
 
@@ -883,7 +894,7 @@ header h2 span {
 
 #all .metas .grid li a .texto {
 	width: 272px;
-	height: 179px;
+	min-height: 179px;
 	margin-bottom: 38px;
 }
 
@@ -892,7 +903,7 @@ header h2 span {
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 14px 0px 14px 0px;
+	padding: 14px 12px 14px 12px;
 	margin: 0;
 	line-height: 2;
 }
@@ -904,7 +915,6 @@ header h2 span {
 	font-weight: 700;
 	margin: 0px;
 	text-align: justify;
-	letter-spacing: 2px;
 }
 
 #all .metas .grid li a .info {

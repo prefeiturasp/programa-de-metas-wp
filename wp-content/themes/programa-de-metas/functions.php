@@ -750,7 +750,8 @@ function load_metas() {
 	if (empty($_POST['objetivo'])) {
 		$eixoId = get_term_by('slug', $eixo, 'metas-category', ARRAY_A);
 		$eixoId = (!empty($eixoId)) ? $eixoId['term_id'] : 0;
-		$objetivos = get_terms('metas-category', array('child_of' => $eixoId));	
+		$objetivos = get_terms('metas-category', array('child_of' => $eixoId, 'orderby' => 'id', 'order' => 'ASC'));
+		//var_dump($objetivos);die;
 	} else {
 		$currObj = explode('-', $_POST['objetivo']);
 		$currObj = $currObj[1];
@@ -792,7 +793,6 @@ function load_metas() {
 			
 			<ul class="grid <?php echo $eixo;?>">
 				<?php
-					$ids = array();
 					$i = 1;
 					echo '<div style="width:100%;float:left;">';
 					while ($WP_query->have_posts()) : $WP_query->the_post();

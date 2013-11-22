@@ -96,14 +96,17 @@ function html5blank_header_scripts()
     	wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.9.1'); // Google CDN jQuery
     	wp_enqueue_script('jquery'); // Enqueue it!
     	
-    	wp_register_script('conditionizr', 'http://cdnjs.cloudflare.com/ajax/libs/conditionizr.js/2.2.0/conditionizr.min.js', array(), '2.2.0'); // Conditionizr
-        wp_enqueue_script('conditionizr'); // Enqueue it!
+    	//wp_register_script('conditionizr', 'http://cdnjs.cloudflare.com/ajax/libs/conditionizr.js/2.2.0/conditionizr.min.js', array(), '2.2.0'); // Conditionizr
+        //wp_enqueue_script('conditionizr'); // Enqueue it!
         
         wp_register_script('modernizr', 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js', array(), '2.6.2'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
         
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+		
+		wp_register_script('dropkick', get_template_directory_uri() . '/js/jquery.dropkick-min.js'); // Modernizr
+        wp_enqueue_script('dropkick'); // Enqueue it!
     }
 }
 
@@ -130,6 +133,9 @@ function html5blank_styles()
 	
 	wp_register_style('montserrat', 'http://fonts.googleapis.com/css?family=Montserrat:400,700');
     wp_enqueue_style('montserrat'); // Enqueue it!
+	
+	wp_register_style('dropkick',  get_template_directory_uri() . '/css/dropkick.css');
+    wp_enqueue_style('dropkick'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -662,8 +668,176 @@ function filter_eixos() {
 	return false;
 }
 
+function filter_articulacoes() {
+	$articulacoes = get_categories(
+		array(
+			'orderby' => 'name',
+			'parent' => 53,
+			'hide_empty' => 0,
+			'taxonomy' => 'metas-category'
+		)
+	);
+	
+	if (!empty($articulacoes)) {
+		$outPut = array();
+		foreach ($articulacoes as $articulacao){
+			$outPut[] = array(
+				'name' => $articulacao->name,
+				'slug' => $articulacao->slug,
+				'description' => $articulacao->description
+			);
+		}
+		return $outPut;
+	}
+	return false;
+}
+
+function filter_objetivos() {
+	$outPut = array();
+	for ($i = 1; $i<=20; $i++) {
+		$outPut[] = array(
+			'name' => 'Objetivo ' . $i,
+			'slug' => 'objetivo-' . $i,
+		);
+	}
+	return $outPut;
+}
+
+function filter_secretarias() {
+	$secretarias = get_categories(
+		array(
+			'orderby' => 'name',
+			'parent' => 25,
+			'hide_empty' => 0,
+			'taxonomy' => 'metas-category'
+		)
+	);
+	
+	if (!empty($secretarias)) {
+		$outPut = array();
+		foreach ($secretarias as $secretaria){
+			$outPut[] = array(
+				'name' => $secretaria->name,
+				'slug' => $secretaria->slug,
+				'description' => $secretaria->description
+			);
+		}
+		return $outPut;
+	}
+	return false;
+}
+
 function load_metas() {
 	global $post;
+	$filters = array();
+	
+	if (!empty($_POST['eixo'])) {
+		$eixo = $_POST['eixo'];
+	} else {
+		$eixo = 'eixo-1';
+	}
+	
+	if (!empty($_POST['articulacao'])) {
+		$articulacao = $_POST['articulacao'];
+		array_push($filters, $articulacao);
+	}
+	
+	if (!empty($_POST['secretaria'])) {
+		$secretaria = $_POST['secretaria'];
+		array_push($filters, $secretaria);
+	}
+	
+	if (empty($_POST['objetivo'])) {
+		$eixoId = get_term_by('slug', $eixo, 'metas-category', ARRAY_A);
+		$eixoId = (!empty($eixoId)) ? $eixoId['term_id'] : 0;
+		$objetivos = get_terms('metas-category', array('child_of' => $eixoId));	
+	} else {
+		$parent = get_term_by('slug', $_POST['objetivo'], 'metas-category');
+		if (!empty($parent)) {
+			$parentId = $parent->parent;
+			$eixoSlug = get_term_by('id', $parentId, 'metas-category');
+			if (!empty($eixoSlug)) {
+				$eixo = $eixoSlug->slug;
+			}
+		}
+		
+		$objetivos[] = get_term_by('slug', $_POST['objetivo'], 'metas-category');
+	}
+	
+	foreach ($objetivos as $objetivo) {
+		array_push($filters, $objetivo->slug);
+		$WP_query = new WP_Query(array('post_type' => 'metas',
+			'order' => 'ASC',
+			'orderby' => 'date',
+			'posts_per_page' => -1,
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'metas-category',
+					'field' => 'slug',
+					'terms' => $filters,
+				)
+			)
+		));
+		array_pop($filters);
+		
+		if($WP_query->have_posts()):
+		?>
+			<div class="objetivo <?php echo $eixo;?>">
+				<h2><?php echo $objetivo->name;?></h2>
+				<p><?php echo $objetivo->description;?></p>
+			</div>
+			
+			<ul class="grid <?php echo $eixo;?>">
+				<?php
+					$ids = array();
+					while ($WP_query->have_posts()) : $WP_query->the_post();
+						$terms = wp_get_post_terms($post->ID, 'metas-category');
+						?>
+						<li>
+							<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $class;?>">
+								<h3><?php the_title();?></h3>
+								<div class="texto">
+									<?php the_content();?>
+								</div>
+								<h4>Articulação territorial</h4>
+								<?php
+									foreach($terms as $t):
+										if($t->parent == 53):
+								?>
+											<p class="info"><?php echo $t->name;?></p>
+								<?php
+										endif;
+									endforeach;
+								?>
+								<h4>Secretaria e unidade<br /> responsável</h4>
+								<?php
+									foreach($terms as $t):
+										if($t->parent == 25):
+								?>
+											<p class="info"><?php echo $t->name;?></p>
+								<?php
+										endif;
+									endforeach;
+								?>
+								<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
+							</a>
+						</li>
+					<?php
+				endwhile;
+				?>
+			</ul>
+		<?php
+		endif;
+	}die;
+}
+
+function load_metas_bkp() {
+	global $post;
+	$eixoSlug = $_POST['eixo'];
+	if (!empty($_POST['eixo'])) {
+		$eixoSlug = $_POST['eixo'];
+	}
+	
 	if (!empty($_POST['objetivo'])) {
 		$currentObj = $_POST['objetivo'];
 		$objetivo = get_term_by('slug', 'objetivo-'.$currentObj, 'metas-category', ARRAY_A);
@@ -682,7 +856,7 @@ function load_metas() {
 							array(
 								'taxonomy' => 'metas-category',
 								'field' => 'slug',
-								'terms' => $objetivoSlug
+								'terms' => array($objetivoSlug, $eixoSlug)
 							)
 						)
 					));
@@ -745,7 +919,6 @@ function get_post_data() {
 	if (!empty($_POST['pid'])) {
 		$postId = $_POST['pid'];
 		$terms = wp_get_post_terms($postId, 'metas-category');
-		//var_dump($terms);die;
 		$post = get_post($postId, ARRAY_A);
 		if (!empty($post)) {
 			?>

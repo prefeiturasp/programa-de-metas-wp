@@ -602,6 +602,139 @@ header h2 span {
 	color: #602525;
 }
 
+#all .modal.eixo-2 {
+	background: #81af92;
+}
+
+/*EIXO 2*/
+#all .modal.eixo-2 .texto-meta {
+	background: #a1f5bd;
+}
+
+#all .modal.eixo-2 .texto-meta h2 {
+	color: #4a6252;
+}
+
+#all .modal.eixo-2 .texto-meta p {
+	color: #4a6252;
+}
+
+#all .modal.eixo-2 .detalhes h4 {
+	color: #4a6252;
+}
+
+#all .modal.eixo-2 .detalhes .info {
+	color: #4a6252;
+}
+
+#all .modal.eixo-2 .detalhes .detalhamento {
+	background: #a1f5bd;
+}
+
+#all .modal.eixo-2 .detalhes .detalhamento h4 {
+	color: #4a6252;
+}
+
+#all .modal.eixo-2 .detalhes .detalhamento .informacoes .termos {
+	border-right: 1px solid #a1f5bd;
+}
+
+#all .modal.eixo-2 .detalhes .detalhamento .informacoes .titulo {
+	color: #4a6252;
+}
+
+#all .modal.eixo-2 .detalhes .detalhamento .informacoes .info {
+	color: #4a6252;
+}
+
+#all .modal.eixo-2 .detalhes .cronograma {
+	background: #a1f5bd;
+}
+
+#all .modal.eixo-2 .detalhes .cronograma h4 {
+	color: #4a6252;
+}
+
+#all .modal.eixo-2 .detalhes .cronograma .um {
+	border-right: 1px solid #a1f5bd;
+}
+
+#all .modal.eixo-2 .detalhes .cronograma .titulo {
+	color: #4a6252;
+}
+
+#all .modal.eixo-2 .detalhes .cronograma .info {
+	color: #4a6252;
+}
+
+/*EIXO 3*/
+#all .modal.eixo-3 {
+	background: #7eabaf;
+}
+
+#all .modal.eixo-3 .texto-meta {
+	background: #b8f4f9;
+}
+
+#all .modal.eixo-3 .texto-meta h2 {
+	color: #374d4f;
+}
+
+#all .modal.eixo-3 .texto-meta p {
+	color: #374d4f;
+}
+
+#all .modal.eixo-3 .detalhes h4 {
+	color: #374d4f;
+}
+
+#all .modal.eixo-3 .detalhes .info {
+	color: #374d4f;
+}
+
+#all .modal.eixo-3 .detalhes .detalhamento {
+	background: #b8f4f9;
+}
+
+#all .modal.eixo-3 .detalhes .detalhamento h4 {
+	color: #374d4f;
+}
+
+#all .modal.eixo-3 .detalhes .detalhamento .informacoes .termos {
+	border-right: 1px solid #b8f4f9;
+}
+
+#all .modal.eixo-3 .detalhes .detalhamento .informacoes .titulo {
+	color: #374d4f;
+}
+
+#all .modal.eixo-3 .detalhes .detalhamento .informacoes .info {
+	color: #374d4f;
+}
+
+#all .modal.eixo-3 .detalhes .cronograma {
+	background: #b8f4f9;
+}
+
+#all .modal.eixo-3 .detalhes .cronograma h4 {
+	color: #374d4f;
+}
+
+#all .modal.eixo-3 .detalhes .cronograma .um {
+	border-right: 1px solid #b8f4f9;
+}
+
+#all .modal.eixo-3 .detalhes .cronograma .titulo {
+	color: #374d4f;
+}
+
+#all .modal.eixo-3 .detalhes .cronograma .info {
+	color: #374d4f;
+}
+
+
+
+
 #all .logo {
 	margin: 20px auto;
 	width: 242px;
@@ -626,6 +759,7 @@ header h2 span {
 #all .eixos {
 	list-style: none;
 	padding: 0;
+	float: left;
 }
 
 #all .eixos li a {
@@ -665,6 +799,29 @@ header h2 span {
 
 #all .eixos li a.eixo-3 .descri {
 	color: #223652;
+}
+
+#all .outros-filtros {
+	width: 237px;
+	float: left;
+	list-style: none;
+	padding-left: 16px;
+}
+
+#all .buscar {
+	width: 236px;
+	float: left;	
+	margin:11px 0px 0px 25px;
+}
+
+#all .buscar input {
+	width: 236px;
+	height: 63px;
+	background: #fff;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
 }
 
 #all .metas {

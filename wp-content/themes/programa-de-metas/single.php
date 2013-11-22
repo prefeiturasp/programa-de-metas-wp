@@ -1,65 +1,101 @@
-<?php get_header(); ?>
-	
-	<!-- section -->
-	<section role="main">
-	
-	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-	
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
-			
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
-			
-			<!-- post details -->
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-			<!-- /post details -->
-			
-			<?php the_content(); // Dynamic Content ?>
-			
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-			
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
-			
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-			
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-			
-			<?php comments_template(); ?>
-			
-		</article>
-		<!-- /article -->
-		
-	<?php endwhile; ?>
-	
-	<?php else: ?>
-	
-		<!-- article -->
-		<article>
-			
-			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-			
-		</article>
-		<!-- /article -->
-	
-	<?php endif; ?>
-	
-	</section>
-	<!-- /section -->
-	
-<?php get_sidebar(); ?>
+<div class="texto-meta">
+	<h2>Meta <?php echo $post['post_title'];?></h2>
+	<p><?php echo $post['post_content'];?></p>
+</div>
 
-<?php get_footer(); ?>
+<div class="detalhes">
+	<?php
+		foreach($terms as $t):
+			if($t->parent == 0 && strpos($t->slug, 'eixo') !== false):
+				$n = explode('-', $t->slug);
+				$n = $n[1];
+	?>
+				<h4>Eixo Temático <?php echo $n;?>. <?php echo $t->description?></h4>
+	<?php
+			endif;
+		endforeach;
+	?>
+	<h4>Objetivo temático associado</h4>
+	<?php
+		foreach($terms as $t):
+			if(strpos($t->name, 'Objetivo') !== false):
+	?>
+				<p class="info"><b><?php echo $t->name;?>.</b> <?php echo $t->description;?></p>
+	<?php
+			endif;
+		endforeach;
+	?>
+	<h4>Secretaria e unidade responsável</h4>
+	<?php
+		foreach($terms as $t):
+			if($t->parent == 25):
+	?>
+				<p class="info"><?php echo $t->name;?></p>
+	<?php
+			endif;
+		endforeach;
+	?>
+	<h4>Articulação territorial associada</h4>
+	<?php
+		foreach($terms as $t):
+			if($t->parent == 53):
+	?>
+				<p class="info"><?php echo $t->name;?></p>
+	<?php
+			endif;
+		endforeach;
+	?>
+	
+	<div class="detalhamento">
+		<h4>Detalhamento da Meta</h4>
+		<div class="informacoes">
+			<div class="termos">
+				<p class="titulo">Definição dos termos técnicos</p>
+				<p class="info"><?php echo get_post_meta($post['ID'], 'meta_termos_tecnicos', true);?></p>
+			</div>
+			
+			<div class="entrega">
+				<p class="titulo">O que vai ser entregue ?</p>
+				<p class="info"><?php echo get_post_meta($post['ID'], 'meta_entregue', true);?></p>
+			</div>
+		</div>
+	</div>
+	
+	<h4>Observações</h4>
+	<p class="info"><?php echo get_post_meta($post['ID'], 'meta_observacoes', true);?></p>
+	<h4>Custo total da meta</h4>
+	<p class="info"><?php echo get_post_meta($post['ID'], 'meta_custo_total', true);?></p>
+	<div class="cronograma">
+		<div class="conteudo">
+			<h4>Cronograma de entrega</h4>
+			<div class="um">
+				<p class="titulo">2013-2014</p>
+				<?php
+				$cronograma1 = get_post_meta($post['ID'], 'meta_cronograma_1', true);
+				if(!empty($cronograma1)):
+					$parts = explode(',', $cronograma1);
+					foreach($parts as $p):
+					?>
+						<p class="info"><?php echo $p;?></p>
+					<?php
+					endforeach;
+				endif;
+				?>
+			</div>
+			<div class="dois">
+				<p class="titulo">2015-2016</p>
+				<?php
+				$cronograma2 = get_post_meta($post['ID'], 'meta_cronograma_2', true);
+				if(!empty($cronograma2)):
+					$parts = explode(',', $cronograma2);
+					foreach($parts as $p):
+					?>
+						<p class="info"><?php echo $p;?></p>
+					<?php
+					endforeach;
+				endif;
+				?>
+			</div>
+		</div>	
+	</div>
+</div>

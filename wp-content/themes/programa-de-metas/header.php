@@ -18,12 +18,6 @@
 			
 		<!-- css + javascript -->
 		<?php wp_head(); ?>
-		<script>
-		!function(){
-			// configure legacy, retina, touch requirements @ conditionizr.com
-			conditionizr()
-		}()
-		</script>
 		<script type="text/javascript">
 			var wpAjaxUrl = '<?php echo admin_url('admin-ajax.php');?>';
 		</script>

@@ -36,7 +36,7 @@
                                 foreach($eixos as $eixo):
                             ?>
                                     <li>
-                                        <a href="javascript:void(0);" class="<?php echo $eixo['slug'];?>">
+                                        <a href="javascript:void(0);" class="<?php echo $eixo['slug'];?> eixo-filter" data-slug="<?php echo $eixo['slug'];?>">
                                             <span class="titulo"><?php echo $eixo['name'];?></span>
                                             <span class="descri"><?php echo $eixo['description'];?></span>
                                         </a>
@@ -44,10 +44,66 @@
                             <?php
                                 endforeach;
                             ?>
-                        </ul>    
+                        </ul>
                     <?php
                 endif;
                 ?>
+                
+                <form id="filtros">
+                    <input type="hidden" name="action" value="infinite_scroll">
+                    <ul class="outros-filtros">
+                        <li>
+                            <select name="articulacao" class="select-filters">
+                                <option value="">Articulação</option>
+                                <?php
+                                    $articulacoes = filter_articulacoes();
+                                    if(!empty($articulacoes)):
+                                        foreach($articulacoes as $articulacao):
+                                            ?>
+                                                <option value="<?php echo $articulacao['slug'];?>"><?php echo $articulacao['name'];?></option>
+                                            <?php
+                                        endforeach;
+                                    endif;
+                                ?>
+                            </select>
+                        </li>
+                        
+                        <li>
+                            <select name="objetivo" class="select-objetivos">
+                                <option value="">Objetivo</option>
+                                <?php
+                                    $objetivos = filter_objetivos();
+                                    if(!empty($objetivos)):
+                                        foreach($objetivos as $objetivo):
+                                            ?>
+                                                <option value="<?php echo $objetivo['slug'];?>"><?php echo $objetivo['name'];?></option>
+                                            <?php
+                                        endforeach;
+                                    endif;
+                                ?>
+                            </select>
+                        </li>
+                        
+                        <li>
+                            <select name="secretaria" class="select-secretaria">
+                                <option value="">Secretaria</option>
+                                <?php
+                                    $secretarias = filter_secretarias();
+                                    if(!empty($secretarias)):
+                                        foreach($secretarias as $secretaria):
+                                            ?>
+                                                <option value="<?php echo $secretaria['slug'];?>"><?php echo $secretaria['name'];?></option>
+                                            <?php
+                                        endforeach;
+                                    endif;
+                                ?>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="buscar">
+                        <input type="submit" value="buscar">
+                    </div>
+                </form>
             </div>
             
             <div class="metas">

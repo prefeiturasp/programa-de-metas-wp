@@ -1,21 +1,8 @@
-// DOM Ready
-/*$(function() {
-	
-	// SVG fallback
-	// toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script#update
-	if (!Modernizr.svg) {
-		var imgs = document.getElementsByTagName('img');
-		var dotSVG = /.*\.svg$/;
-		for (var i = 0; i != imgs.length; ++i) {
-			if(imgs[i].src.match(dotSVG)) {
-				imgs[i].src = imgs[i].src.slice(0, -3) + "png";
-			}
-		}
-	}
-
-});*/
-
-OBJ = 1;
+var OBJ = 1;
+if (typeof currentOBJ !== "undefined") {
+	OBJ = currentOBJ;
+}
+var filters = '';
 var PDM = PDM || {};
 
 PDM.init = function() {
@@ -37,6 +24,27 @@ PDM.init = function() {
 		$('.mask').fadeOut();
 		$('.modal').fadeOut();
 	});
+	
+	$('.eixo-filter').click(function(e) {
+		e.preventDefault();
+		filters = {
+			'eixo': $(this).attr('data-slug'),
+			'action': 'infinite_scroll'
+		}
+		PDM.loadMetasByFilter(filters);
+	});
+	
+	$('.select-filters').dropkick();
+	
+	$('.select-objetivos').dropkick();
+	
+	$('.select-secretaria').dropkick();
+	
+	$('#filtros').submit(function(e) {
+		e.preventDefault();
+		data = $(this).serialize();
+		PDM.loadMetasByFilter(data);
+	});
 };
 
 PDM.getPost = function(id) {
@@ -52,13 +60,29 @@ PDM.getPost = function(id) {
     });
 };
 
-PDM.loadMetas = function() {
+PDM.loadMetasByFilter = function(target) {
 	$.ajax({  
         url: wpAjaxUrl,  
         type:'POST',  
-        data: 'action=infinite_scroll&objetivo=' + OBJ,   
-        success: function(response){  
-            $('.metas').append(response);
+        data: target,   
+        success: function(response){
+			$('.metas').html(response);
+			PDM.init();
+        }  
+    });
+};
+
+PDM.loadMetas = function(replace) {
+	$.ajax({  
+        url: wpAjaxUrl,  
+        type:'POST',  
+        data: 'action=infinite_scroll&objetivo=objetivo-' + OBJ + filters,   
+        success: function(response){
+			if (typeof replace !== "undefined") {
+				$('.metas').html(response);
+			} else {
+				$('.metas').append(response);
+			}
 			PDM.init();
         }  
     });

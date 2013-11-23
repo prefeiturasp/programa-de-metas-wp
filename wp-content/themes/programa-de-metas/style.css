@@ -311,7 +311,7 @@ a img.aligncenter {
 }
 
 /*RULES FOR PROGRAMA DE METAS*/
-html, body {
+html , body{
 	height: 100%;
 }
 
@@ -371,6 +371,13 @@ header h2 span {
 	width: 98%;
 	background: #2f2f2f;
 	margin: 15px auto;
+}
+
+#all.interna {
+	width: 98%;
+	background: #2f2f2f;
+	margin: 15px auto;
+	height: 100%;
 }
 
 #all .nav {

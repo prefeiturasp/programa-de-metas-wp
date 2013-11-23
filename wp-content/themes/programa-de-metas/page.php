@@ -3,9 +3,9 @@
 	<div class="nav">
 		<div class="content">
 			<ul>
-				<li><a href="" class="first">Conheça o programa</a>|</li>
-				<li><a href="">Objetivos e metas</a>|</li>
-				<li><a href="">Conceito territorial</a>|</li>
+				<li><a href="<?php echo bloginfo('url');?>/conheca-o-programa/" class="first">Conheça o programa</a>|</li>
+				<li><a href="<?php echo bloginfo('url');?>/objetivos-e-metas/">Objetivos e metas</a>|</li>
+				<li><a href="<?php echo bloginfo('url');?>/conceito-territorial/">Conceito territorial</a>|</li>
 				<li><a href="">Contato</a></li>
 			</ul>
 		</div>

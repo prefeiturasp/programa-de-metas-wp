@@ -9,9 +9,10 @@ var PDM = PDM || {};
 PDM.init = function() {
 	$(window).scroll(function(){  
         if($(window).scrollTop() == $(document).height() - $(window).height()){
-			OBJ = OBJ + 1;
 			if (!stopScroll) {
-				PDM.loadMetas();	
+				OBJ = OBJ + 1;
+				PDM.loadMetas();
+				$(window).unbind('scroll');
 			}
 		}
     });

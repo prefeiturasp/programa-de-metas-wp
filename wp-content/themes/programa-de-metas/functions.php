@@ -748,13 +748,14 @@ function load_metas() {
 	}
 	
 	if (empty($_POST['objetivo'])) {
+		//echo '<script type="text/javascript"> OBJ = 1;</script>';
 		$eixoId = get_term_by('slug', $eixo, 'metas-category', ARRAY_A);
 		$eixoId = (!empty($eixoId)) ? $eixoId['term_id'] : 0;
 		$objetivos = get_terms('metas-category', array('child_of' => $eixoId, 'orderby' => 'id', 'order' => 'ASC'));
 	} else {
 		$currObj = explode('-', $_POST['objetivo']);
 		$currObj = $currObj[1];
-		echo '<script type="text/javascript"> OBJ = '.$currObj.';</script>';
+		//echo '<script type="text/javascript"> OBJ = '.$currObj.';</script>';
 		$parent = get_term_by('slug', $_POST['objetivo'], 'metas-category');
 		if (!empty($parent)) {
 			$parentId = $parent->parent;

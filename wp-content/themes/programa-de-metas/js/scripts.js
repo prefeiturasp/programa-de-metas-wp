@@ -3,13 +3,16 @@ if (typeof currentOBJ !== "undefined") {
 	OBJ = currentOBJ;
 }
 var filters = '';
+stopScroll = false;
 var PDM = PDM || {};
 
 PDM.init = function() {
 	$(window).scroll(function(){  
         if($(window).scrollTop() == $(document).height() - $(window).height()){
 			OBJ = OBJ + 1;
-			PDM.loadMetas();
+			if (!stopScroll) {
+				PDM.loadMetas();	
+			}
 		}
     });
 	
@@ -42,6 +45,7 @@ PDM.init = function() {
 	
 	$('#filtros').submit(function(e) {
 		e.preventDefault();
+		stopScroll = true;
 		data = $(this).serialize();
 		PDM.loadMetasByFilter(data);
 	});

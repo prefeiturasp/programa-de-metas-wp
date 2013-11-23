@@ -68,6 +68,9 @@ PDM.getPost = function(id) {
             $('.modal').html(response);
 			$('.mask').fadeIn();
 			$('.modal').fadeIn();
+			$('body,html').animate({
+				scrollTop: 0	
+			}, 2000);
 			PDM.init();
         }  
     });

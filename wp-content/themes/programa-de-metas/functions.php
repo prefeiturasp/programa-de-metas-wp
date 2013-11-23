@@ -751,7 +751,6 @@ function load_metas() {
 		$eixoId = get_term_by('slug', $eixo, 'metas-category', ARRAY_A);
 		$eixoId = (!empty($eixoId)) ? $eixoId['term_id'] : 0;
 		$objetivos = get_terms('metas-category', array('child_of' => $eixoId, 'orderby' => 'id', 'order' => 'ASC'));
-		//var_dump($objetivos);die;
 	} else {
 		$currObj = explode('-', $_POST['objetivo']);
 		$currObj = $currObj[1];

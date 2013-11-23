@@ -6,7 +6,7 @@
 				<li><a href="<?php echo bloginfo('url');?>/conheca-o-programa/" class="first">Conheça o programa</a>|</li>
 				<li><a href="<?php echo bloginfo('url');?>/objetivos-e-metas/">Objetivos e metas</a>|</li>
 				<li><a href="<?php echo bloginfo('url');?>/conceito-territorial/">Conceito territorial</a>|</li>
-				<li><a href="">Contato</a></li>
+				<li><a href="http://planejasampa.prefeitura.sp.gov.br/index.php/contato/">Contato</a></li>
 			</ul>
 		</div>
 	</div>

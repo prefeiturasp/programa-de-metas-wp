@@ -51,7 +51,7 @@
                 endif;
                 ?>
                 
-                <form id="filtros">
+                <!--form id="filtros">
                     <input type="hidden" name="action" value="infinite_scroll">
                     <ul class="outros-filtros">
                         <li>
@@ -105,7 +105,8 @@
                     <div class="buscar">
                         <input type="submit" value="buscar">
                     </div>
-                </form>
+                </form-->
+                <img class="breve" src="<?php echo get_template_directory_uri(); ?>/img/breve.png">
             </div>
             
             <div class="metas">

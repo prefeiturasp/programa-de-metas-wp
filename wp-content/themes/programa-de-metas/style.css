@@ -1060,6 +1060,10 @@ header h2 span {
 	margin-right: 35px;
 }
 
+.breve {
+	margin: 11px 0px 0px 6px;	
+}
+
 #all .metas .grid li a .texto p {
 	font-size: 15px;
 	font-weight: 700;

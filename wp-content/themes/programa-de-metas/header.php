@@ -36,7 +36,7 @@
 						</a>
 					</h1>
 					<h2>
-						Programa de Metas
+						<!-- Programa de Metas -->
 					</h2>
 				</div>
 			</header>

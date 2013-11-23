@@ -658,8 +658,12 @@ header h2 span {
 }
 
 /*EIXO 2*/
+#all .modal.eixo-2 {
+	background: none;	
+}
+
 #all .modal.eixo-2 .bg {
-	background: #81af92;
+	background: #81af92 !important;
 }
 
 #all .modal.eixo-2 .texto-meta {
@@ -724,7 +728,11 @@ header h2 span {
 
 /*EIXO 3*/
 #all .modal.eixo-3 {
-	background: #7eabaf;
+	background: none;
+}
+
+#all .modal.eixo-3 .bg {
+	background: #7eabaf !important;
 }
 
 #all .modal.eixo-3 .texto-meta {

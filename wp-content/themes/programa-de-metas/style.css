@@ -1049,6 +1049,17 @@ header h2 span {
 	margin-bottom: 38px;
 }
 
+.leia-mais, .leia-mais:hover {
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	font-style: italic;
+	margin-right: 35px;
+}
+
 #all .metas .grid li a .texto p {
 	font-size: 15px;
 	font-weight: 700;

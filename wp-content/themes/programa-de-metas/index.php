@@ -21,8 +21,9 @@
             </h1>
             
             <p class="intro">
-                Reduzir as desigualdades em uma cidade do tamanho e da complexidade de São Paulo não é tarefa fácil. O Programa de Metas 2013-2016 reconhece os limites de seu horizonte temporal para fazer frente a uma história de ações desordenadas e concentradoras sobre o território paulistano. Ao mesmo tempo, propõe-se a dar os primeiros passos no caminho da construção de um processo de planejamento participativo e transparente que aponte os eixos de superaçãodas desigualdades sociais, econômicas e regionais.</p>
-            
+                Reduzir as desigualdades em uma cidade do tamanho e da complexidade de São Paulo não é tarefa fácil. O Programa de Metas 2013-2016 reconhece os limites de seu horizonte temporal para fazer frente a uma história de ações desordenadas e concentradoras sobre o território paulistano. Ao mesmo tempo, propõe-se a dar os primeiros passos no caminho da construção de um processo de planejamento participativo e transparente que aponte os eixos de superaçãodas desigualdades sociais, econômicas e regionais.
+            </p>
+            <a href="<?php echo bloginfo('url');?>/conheca-o-programa/" class="leia-mais">Leia mais >></a>
            <!-- <p class="intro">
                 O esforço de elaboração do Programa de Metas 2013-2016 foi o de ir além da lista de metas, apontando objetivos estratégicos, eixos estruturantes e articulações territoriais sobre os quais se pretende alcançar resultados efetivos. Tais objetivos, eixos e articulações, em conjunto com a participação popular no processo, são a verdadeira ponte para a elaboração de um projeto de cidade. A possibilidade de transformação desse projeto em realidade passa pela execução das metas, mas passa também pela continuidade do acompanhamento desses aspectos estratégicos, pela capacidade de ajuste de percurso e, principalmente, pela apropriação desse projeto pela população. O Programa de Metas 2013-2016 pode ser o começo de uma grande mudança. Esperamos que os paulistanos aceitem o convite e nos acompanhem na construção desse novo modelo de planejamento público e compreensão da ação sobre a cidade.
             </p> -->

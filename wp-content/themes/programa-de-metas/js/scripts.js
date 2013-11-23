@@ -60,7 +60,7 @@ PDM.getPost = function(id) {
         type:'POST',  
         data: 'action=get_post_by_id&pid=' + id,   
         success: function(response){  
-            $('.modal').append(response);
+            $('.modal').html(response);
 			$('.mask').fadeIn();
 			$('.modal').fadeIn();
 			PDM.init();

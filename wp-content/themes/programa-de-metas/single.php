@@ -3,6 +3,7 @@ global $withcomments;
 $withcomments = 1;
 $terms = wp_get_post_terms($post->ID, 'metas-category');
 ?>
+<a href="javascript:void(0);" class="close">Fechar x</a>
 <div class="bg">
 	<div class="texto-meta">
 		<h2>Meta <?php the_title();?></h2>

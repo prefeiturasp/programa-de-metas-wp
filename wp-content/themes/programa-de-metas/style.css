@@ -429,6 +429,21 @@ header h2 span {
 	z-index: 1;
 }
 
+#all .modal .close {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	text-align: right;
+}
+
+/*EIXO 1*/
+#all .modal.eixo-1 .close {
+	color: #ff6c6c;
+}
+
 #all .modal .bg {
 	width: 100%;
 	padding: 49px 0px 9px 0px;

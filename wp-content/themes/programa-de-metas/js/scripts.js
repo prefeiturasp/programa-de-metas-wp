@@ -45,6 +45,13 @@ PDM.init = function() {
 		data = $(this).serialize();
 		PDM.loadMetasByFilter(data);
 	});
+	
+	$('.close').click(function(e) {
+		e.preventDefault();
+		$('.modal').fadeOut();
+		$('.modal').empty();
+		$('.mask').fadeOut();
+	});
 };
 
 PDM.getPost = function(id) {
@@ -56,6 +63,7 @@ PDM.getPost = function(id) {
             $('.modal').append(response);
 			$('.mask').fadeIn();
 			$('.modal').fadeIn();
+			PDM.init();
         }  
     });
 };

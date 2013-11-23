@@ -70,7 +70,7 @@ PDM.getPost = function(id) {
 			$('.modal').fadeIn();
 			$('body,html').animate({
 				scrollTop: 0	
-			}, 2000);
+			}, 1000);
 			PDM.init();
         }  
     });

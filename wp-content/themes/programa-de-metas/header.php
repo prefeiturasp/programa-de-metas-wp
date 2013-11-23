@@ -25,7 +25,7 @@
 	<body <?php body_class(); ?>>
 	
 		<!-- wrapper -->
-		<div class="wrapper">
+		<!--div class="wrapper"-->
 			<div class="mask"></div>
 			<!-- header -->
 			<header>

@@ -50,4 +50,4 @@
 		<?php endif; ?>
 	</header><!-- #masthead -->
 
-	<div id="main" class="wrapper">
+	<!--div id="main" class="wrapper"-->

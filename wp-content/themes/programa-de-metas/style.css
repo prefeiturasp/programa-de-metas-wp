@@ -77,7 +77,6 @@ input:focus {
 /* wrapper */
 .wrapper {
 	width:100%;
-	height: 100%;
 	margin:0 auto;
 	position:relative;
 }
@@ -312,7 +311,7 @@ a img.aligncenter {
 }
 
 /*RULES FOR PROGRAMA DE METAS*/
-body {
+html, body {
 	height: 100%;
 }
 
@@ -372,7 +371,6 @@ header h2 span {
 	width: 98%;
 	background: #2f2f2f;
 	margin: 15px auto;
-	height: 100%;
 }
 
 #all .nav {

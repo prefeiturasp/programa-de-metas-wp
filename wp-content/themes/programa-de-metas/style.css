@@ -444,6 +444,15 @@ header h2 span {
 	color: #ff6c6c;
 }
 
+/*EIXO 2*/
+#all .modal.eixo-2 .close {
+	color: #ff6c6c;
+}
+
+/*EIXO 3*/
+#all .modal.eixo-3 .close {
+	color: #b8f4f9;
+}
 #all .modal .bg {
 	width: 100%;
 	padding: 49px 0px 9px 0px;

@@ -44,3 +44,5 @@ Template Name: Objetivos e Metas
 		<?php endif; ?>
 	</div>
 </div>
+
+<?php get_footer();?>

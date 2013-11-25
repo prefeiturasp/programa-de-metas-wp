@@ -30,7 +30,7 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 		
-		<meta property="og:type" content="site" />
+		<meta property="og:type" content="blog" />
 		<meta property="og:title" content="Programa de Metas da Cidade de São Paulo" />
 		<meta property="og:description" content="O esforço de elaboração do Programa de Metas 2013-2016 foi o de ir além da lista de metas, apontando objetivos estratégicos, eixos estruturantes e articulações territoriais sobre os quais se pretende alcançar resultados efetivos." />
 		<meta property="og:image" content=<?php echo get_template_directory_uri(); ?>/img/logo-facebook.jpg" />

@@ -3,6 +3,7 @@ global $withcomments;
 $withcomments = 1;
 $terms = wp_get_post_terms($post->ID, 'metas-category');
 ?>
+
 <a href="javascript:void(0);" class="close">Fechar x</a>
 <div class="bg">
 	<div class="texto-meta">
@@ -113,7 +114,10 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 	<div class="contador">
 		<span class="balao"></span>
 		<span class="total">
-			<b>46</b> Comentários
+			<?php
+				$countComments = wp_count_comments($post->ID);
+			?>
+			<b><?php echo $countComments->approved?></b> Comentários
 		</span>
 	</div>
 	<?php comments_template();?>

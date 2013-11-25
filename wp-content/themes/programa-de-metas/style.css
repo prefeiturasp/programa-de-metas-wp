@@ -828,6 +828,7 @@ header h2 span {
 	font-style: italic;
 	font-size: 12px;
 	margin-left: 8px;
+	word-spacing: 3px;
 }
 
 #all .modal .comentarios .total b {

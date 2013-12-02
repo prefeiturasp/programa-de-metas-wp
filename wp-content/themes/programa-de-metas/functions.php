@@ -534,6 +534,130 @@ function create_metascategory_taxonomy() {
 
 add_action('init', 'create_metascategory_taxonomy', 0);
 
+function create_eixos_taxonomy() {
+
+    $labels = array(
+        'name' => _x( 'Eixos', 'taxonomy general name' ),
+        'singular_name' => _x( 'Category', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Search Categories' ),
+        'popular_items' => __( 'Popular Categories' ),
+        'all_items' => __( 'All Categories' ),
+        'parent_item' => null,
+        'parent_item_colon' => null,
+        'edit_item' => __( 'Editar Eixo' ),
+        'update_item' => __( 'Update Category' ),
+        'add_new_item' => __( 'Add New Category' ),
+        'new_item_name' => __( 'New Category Name' ),
+        'separate_items_with_commas' => __( 'Separate categories with commas' ),
+        'add_or_remove_items' => __( 'Add or remove categories' ),
+        'choose_from_most_used' => __( 'Choose from the most used categories' ),
+    );
+
+    register_taxonomy('eixos', 'metas', array(
+        'label' => __('Eixos'),
+        'labels' => $labels,
+        'hierarchical' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'eixos'),
+    ));
+}
+
+add_action('init', 'create_eixos_taxonomy', 0);
+
+function create_objetivos_taxonomy() {
+
+    $labels = array(
+        'name' => _x( 'Objetivos', 'taxonomy general name' ),
+        'singular_name' => _x( 'Category', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Search Categories' ),
+        'popular_items' => __( 'Popular Categories' ),
+        'all_items' => __( 'All Categories' ),
+        'parent_item' => __('Eixos'),
+        'parent_item_colon' => null,
+        'edit_item' => __( 'Editar Objetivo' ),
+        'update_item' => __( 'Update Category' ),
+        'add_new_item' => __( 'Add New Category' ),
+        'new_item_name' => __( 'New Category Name' ),
+        'separate_items_with_commas' => __( 'Separate categories with commas' ),
+        'add_or_remove_items' => __( 'Add or remove categories' ),
+        'choose_from_most_used' => __( 'Choose from the most used categories' ),
+    );
+
+    register_taxonomy('objetivos', 'metas', array(
+        'label' => __('Objetivos'),
+        'labels' => $labels,
+        'hierarchical' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'objetivos'),
+    ));
+}
+
+add_action('init', 'create_objetivos_taxonomy', 0);
+
+function create_secretaria_taxonomy() {
+
+    $labels = array(
+        'name' => _x( 'Secretaria', 'taxonomy general name' ),
+        'singular_name' => _x( 'Category', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Search Categories' ),
+        'popular_items' => __( 'Popular Categories' ),
+        'all_items' => __( 'All Categories' ),
+        'parent_item' => null,
+        'parent_item_colon' => null,
+        'edit_item' => __( 'Editar secretaria' ),
+        'update_item' => __( 'Update Category' ),
+        'add_new_item' => __( 'Add New Category' ),
+        'new_item_name' => __( 'New Category Name' ),
+        'separate_items_with_commas' => __( 'Separate categories with commas' ),
+        'add_or_remove_items' => __( 'Add or remove categories' ),
+        'choose_from_most_used' => __( 'Choose from the most used categories' ),
+    );
+
+    register_taxonomy('secretarias', 'metas', array(
+        'label' => __('Secretarias'),
+        'labels' => $labels,
+        'hierarchical' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'secretarias'),
+    ));
+}
+
+add_action('init', 'create_secretaria_taxonomy', 0);
+
+function create_articulacoes_taxonomy() {
+
+    $labels = array(
+        'name' => _x( 'Articulações', 'taxonomy general name' ),
+        'singular_name' => _x( 'Category', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Search Categories' ),
+        'popular_items' => __( 'Popular Categories' ),
+        'all_items' => __( 'All Categories' ),
+        'parent_item' => null,
+        'parent_item_colon' => null,
+        'edit_item' => __( 'Editar secretaria' ),
+        'update_item' => __( 'Update Category' ),
+        'add_new_item' => __( 'Add New Category' ),
+        'new_item_name' => __( 'New Category Name' ),
+        'separate_items_with_commas' => __( 'Separate categories with commas' ),
+        'add_or_remove_items' => __( 'Add or remove categories' ),
+        'choose_from_most_used' => __( 'Choose from the most used categories' ),
+    );
+
+    register_taxonomy('articulacoes', 'metas', array(
+        'label' => __('Articulações'),
+        'labels' => $labels,
+        'hierarchical' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'articulacoes'),
+    ));
+}
+
+add_action('init', 'create_articulacoes_taxonomy', 0);
+
 function metas_create() {
     add_meta_box('metas_meta_termos_tecnicos', 'Definições dos termos técnicos', 'metas_meta_termos_tecnicos', 'metas');
 	add_meta_box('metas_meta_o_que_vai_ser_entregue', 'O que vai ser entregue', 'metas_meta_o_que_vai_ser_entregue', 'metas');

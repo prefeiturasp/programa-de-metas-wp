@@ -53,6 +53,11 @@ PDM.init = function() {
 		$('.modal').empty();
 		$('.mask').fadeOut();
 	});
+	
+	$('#reset-form').click(function(e) {
+		e.preventDefault();
+		document.location.reload();
+	});
 };
 
 PDM.getPost = function(id) {

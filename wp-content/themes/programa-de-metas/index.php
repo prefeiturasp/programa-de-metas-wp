@@ -120,8 +120,10 @@
                     <div class="buscar">
                         <input type="submit" value="buscar">
                     </div>
+                    <div class="buscar">
+                        <input type="button" id="reset-form" value="Limpar">
+                    </div>
                 </form>
-                <!--img class="breve" src="<?php echo get_template_directory_uri(); ?>/img/breve.png"-->
             </div>
              
             <div class="metas">

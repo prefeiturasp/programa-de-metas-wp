@@ -91,8 +91,9 @@ PDM.loadMetasByFilter = function(target) {
 PDM.loadMetas = function(replace) {
 	$.ajax({  
         url: wpAjaxUrl,  
-        type:'POST',  
-        data: 'action=infinite_scroll&objetivo=objetivo-' + OBJ + filters,   
+        type:'POST',
+		data: 'action=infinite_scroll&objetivo=objetivo-' + OBJ,
+        //data: 'action=infinite_scroll&objetivo=objetivo-' + OBJ + filters,   
         success: function(response){
 			if (typeof replace !== "undefined") {
 				$('.metas').html(response);

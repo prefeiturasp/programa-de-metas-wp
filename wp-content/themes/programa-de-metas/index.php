@@ -45,21 +45,18 @@
             
             <div class="metas">
                 <?php
-                    $objetivo = get_term_by('slug', 'objetivo-1', 'metas-category', ARRAY_A);
-                    if (!empty($objetivo)) {
+                    $objetivo = get_term_by('slug', 'objetivo-1', 'objetivos', ARRAY_A);
+                    if(!empty($objetivo)):
                         $objetivoNome = $objetivo['name'];
-                        $objetivoDescri = $objetivo['description'];
+                        //$objetivoDescri = $objetivo['description'];
                         $objetivoSlug = $objetivo['slug'];
-                        $eixo = get_term_by('id', $objetivo['parent'], 'metas-category', ARRAY_A);
-                        if(!empty($eixo)):
-                            $class = $eixo['slug'];
                             ?>
-                                <div class="objetivo <?php echo $class;?>">
+                                <div class="objetivo eixo-1">
                                     <h2><?php echo $objetivoNome;?></h2>
-                                    <p><?php echo $objetivoDescri;?></p>
+                                    <p><?php //echo $objetivoDescri;?></p>
                                 </div>
             
-                                <ul class="grid <?php echo $class;?>">
+                                <ul class="grid eixo-1">
                                     <?php
                                     $WP_query = new WP_Query(array('post_type' => 'metas',
                                         'order' => 'ASC',
@@ -67,12 +64,13 @@
                                         'posts_per_page' => -1,
                                         'tax_query' => array(
                                             array(
-                                                'taxonomy' => 'metas-category',
+                                                'taxonomy' => 'objetivos',
                                                 'field' => 'slug',
                                                 'terms' => $objetivoSlug
                                             )
                                         )
                                     ));
+                                    
                                     $i = 1;
                                     echo '<div style="width:100%;float:left;">';
                                     while ($WP_query->have_posts()) : $WP_query->the_post();
@@ -114,8 +112,7 @@
                                     ?>
                                 </ul>
                             <?php
-                        endif;
-                    }
+                    endif;
                 ?>
             </div>
         </div>    

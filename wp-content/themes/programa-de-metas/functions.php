@@ -853,6 +853,84 @@ function filter_secretarias() {
 
 function load_metas() {
 	global $post;
+	$eixo = 'eixo-1';
+	$filters = array();
+	
+	if (!empty($_POST['objetivo'])) {
+		$objetivo = get_term_by('slug', $_POST['objetivo'], 'objetivos');
+		if ($objetivo->slug == 12) {
+			$eixo = 'eixo-2';
+		}
+	}
+	
+	$WP_query = new WP_Query(array('post_type' => 'metas',
+		'order' => 'ASC',
+		'orderby' => 'date',
+		'posts_per_page' => -1,
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'objetivos',
+				'field' => 'slug',
+				'terms' => $objetivo,
+			)
+		)
+	));
+	
+	if($WP_query->have_posts()):
+	?>
+		<div class="objetivo <?php echo $eixo;?>">
+			<h2><?php echo $objetivo->name;?></h2>
+			<p><?php echo $objetivo->description;?></p>
+		</div>
+		
+		<ul class="grid <?php echo $eixo;?>">
+			<?php
+				$i = 1;
+				echo '<div style="width:100%;float:left;">';
+				while ($WP_query->have_posts()) : $WP_query->the_post();
+					$terms = wp_get_post_terms($post->ID, 'metas-category');
+					?>
+					<li>
+						<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $eixo;?>">
+							<h3><?php the_title();?></h3>
+							<div class="texto">
+								<?php the_content();?>
+							</div>
+							<h4>Articulação territorial</h4>
+							<?php
+								foreach($terms as $t):
+									if($t->parent == 53):
+							?>
+										<p class="info"><?php echo $t->name;?></p>
+							<?php
+									endif;
+								endforeach;
+							?>
+							<h4>Secretaria e unidade<br /> responsável</h4>
+							<?php
+								foreach($terms as $t):
+									if($t->parent == 25):
+							?>
+										<p class="info"><?php echo $t->name;?></p>
+							<?php
+									endif;
+								endforeach;
+							?>
+							<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
+						</a>
+					</li>
+				<?php
+					echo ($i%3 == 0) ? '</div><div style="width:100%;float:left;">' : '';
+					$i++;
+			endwhile;
+			?>
+		</ul>
+	<?php
+	endif;
+}
+
+function load_metas_bkp2() {
+	global $post;
 	$filters = array();
 	
 	if (!empty($_POST['eixo'])) {

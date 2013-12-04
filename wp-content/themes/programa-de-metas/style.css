@@ -444,9 +444,6 @@ header h2 span {
 	width: 941px;
 	min-height: 1372px;
 	position: absolute;
-	top: 82px;
-	left: 50%;
-	margin-left: -470px;
 	display: none;
 	z-index: 1;
 }

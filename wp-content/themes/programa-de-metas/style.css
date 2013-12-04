@@ -1243,3 +1243,25 @@ header h2 span {
 .eixo-3 {
 	background: #7eabaf;
 }
+
+.not-found {
+	width: 100%;
+	float: left;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+}
+
+.loader {
+	width: 100%;
+	float: left;
+	height: 50px;
+	margin-top: 16px;
+}
+
+.loader img {
+	display: block;
+	margin: 0 auto;
+}

@@ -43,17 +43,98 @@
                 O esforço de elaboração do Programa de Metas 2013-2016 foi o de ir além da lista de metas, apontando objetivos estratégicos, eixos estruturantes e articulações territoriais sobre os quais se pretende alcançar resultados efetivos. Tais objetivos, eixos e articulações, em conjunto com a participação popular no processo, são a verdadeira ponte para a elaboração de um projeto de cidade. A possibilidade de transformação desse projeto em realidade passa pela execução das metas, mas passa também pela continuidade do acompanhamento desses aspectos estratégicos, pela capacidade de ajuste de percurso e, principalmente, pela apropriação desse projeto pela população. O Programa de Metas 2013-2016 pode ser o começo de uma grande mudança. Esperamos que os paulistanos aceitem o convite e nos acompanhem na construção desse novo modelo de planejamento público e compreensão da ação sobre a cidade.
             </p> -->
             
+             <div class="filters">
+                <form id="filtros">
+                    <input type="hidden" name="action" value="load_metas_filter">
+                    <input type="hidden" name="eixo" id="filter-eixo">
+                    <?php
+                    $eixos = filter_eixos();
+                    if(!empty($eixos)):
+                        ?>
+                            <ul class="eixos">
+                                <?php
+                                    foreach($eixos as $eixo):
+                                ?>
+                                        <li>
+                                            <a href="javascript:void(0);" class="<?php echo $eixo['slug'];?> eixo-filter" data-slug="<?php echo $eixo['slug'];?>">
+                                                <span class="titulo"><?php echo $eixo['name'];?></span>
+                                                <span class="descri"><?php echo $eixo['description'];?></span>
+                                            </a>
+                                        </li>
+                                <?php
+                                    endforeach;
+                                ?>
+                            </ul>
+                        <?php
+                    endif;
+                    ?>
+                    <ul class="outros-filtros">
+                        <li>
+                            <select name="articulacao" class="select-filters">
+                                <option value="">Articulação</option>
+                                <?php
+                                    $articulacoes = filter_articulacoes();
+                                    if(!empty($articulacoes)):
+                                        foreach($articulacoes as $articulacao):
+                                            ?>
+                                                <option value="<?php echo $articulacao['slug'];?>"><?php echo $articulacao['name'];?></option>
+                                            <?php
+                                        endforeach;
+                                    endif;
+                                ?>
+                            </select>
+                        </li>
+                        
+                        <li>
+                            <select name="objetivo" class="select-objetivos">
+                                <option value="">Objetivo</option>
+                                <?php
+                                    $objetivos = filter_objetivos();
+                                    if(!empty($objetivos)):
+                                        foreach($objetivos as $objetivo):
+                                            ?>
+                                                <option value="<?php echo $objetivo['slug'];?>"><?php echo $objetivo['name'];?></option>
+                                            <?php
+                                        endforeach;
+                                    endif;
+                                ?>
+                            </select>
+                        </li>
+                        
+                        <li>
+                            <select name="secretaria" class="select-secretaria">
+                                <option value="">Secretaria</option>
+                                <?php
+                                    $secretarias = filter_secretarias();
+                                    if(!empty($secretarias)):
+                                        foreach($secretarias as $secretaria):
+                                            ?>
+                                                <option value="<?php echo $secretaria['slug'];?>"><?php echo $secretaria['name'];?></option>
+                                            <?php
+                                        endforeach;
+                                    endif;
+                                ?>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="buscar">
+                        <input type="submit" value="buscar">
+                    </div>
+                </form>
+                <!--img class="breve" src="<?php echo get_template_directory_uri(); ?>/img/breve.png"-->
+            </div>
+             
             <div class="metas">
                 <?php
                     $objetivo = get_term_by('slug', 'objetivo-1', 'objetivos', ARRAY_A);
                     if(!empty($objetivo)):
                         $objetivoNome = $objetivo['name'];
-                        //$objetivoDescri = $objetivo['description'];
+                        $objetivoDescri = $objetivo['description'];
                         $objetivoSlug = $objetivo['slug'];
                             ?>
                                 <div class="objetivo eixo-1">
                                     <h2><?php echo $objetivoNome;?></h2>
-                                    <p><?php //echo $objetivoDescri;?></p>
+                                    <p><?php echo $objetivoDescri;?></p>
                                 </div>
             
                                 <ul class="grid eixo-1">
@@ -74,33 +155,30 @@
                                     $i = 1;
                                     echo '<div style="width:100%;float:left;">';
                                     while ($WP_query->have_posts()) : $WP_query->the_post();
-                                        $terms = wp_get_post_terms($post->ID, 'metas-category');
                                         ?>
                                             <li>
-                                                <a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $class;?>">
+                                                <a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="eixo-1">
                                                     <h3><?php the_title();?></h3>
                                                     <div class="texto">
                                                         <?php the_content();?>
                                                     </div>
                                                     <h4>Articulação territorial</h4>
                                                     <?php
-                                                        foreach($terms as $t):
-                                                            if($t->parent == 53):
+                                                        $articulacao = wp_get_post_terms($post->ID, 'articulacoes');
+                                                        if(!empty($articulacao)):
                                                     ?>
-                                                                <p class="info"><?php echo $t->name;?></p>
+                                                            <p class="info"><?php echo $articulacao[0]->name;?></p>
                                                     <?php
-                                                            endif;
-                                                        endforeach;
+                                                        endif;
                                                     ?>
                                                     <h4>Secretaria e unidade<br /> responsável</h4>
                                                     <?php
-                                                        foreach($terms as $t):
-                                                            if($t->parent == 25):
+                                                        $secretaria = wp_get_post_terms($post->ID, 'secretarias');
+                                                        if(!empty($secretaria)):
                                                     ?>
-                                                                <p class="info"><?php echo $t->name;?></p>
+                                                            <p class="info"><?php echo $secretaria[0]->name;?></p>
                                                     <?php
-                                                            endif;
-                                                        endforeach;
+                                                        endif;
                                                     ?>
                                                     <p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
                                                 </a>

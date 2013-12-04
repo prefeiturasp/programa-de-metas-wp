@@ -31,11 +31,7 @@ PDM.init = function() {
 	
 	$('.eixo-filter').click(function(e) {
 		e.preventDefault();
-		filters = {
-			'eixo': $(this).attr('data-slug'),
-			'action': 'infinite_scroll'
-		}
-		PDM.loadMetasByFilter(filters);
+		$('#filter-eixo').attr('value', $(this).attr('data-slug'));
 	});
 	
 	$('.select-filters').dropkick();
@@ -77,6 +73,8 @@ PDM.getPost = function(id) {
 };
 
 PDM.loadMetasByFilter = function(target) {
+	var loader = '<div class="loader"><img src="'+templateUrl+'/img/ajax-loader.gif" /></div>';
+	$('.metas').html(loader);
 	$.ajax({  
         url: wpAjaxUrl,  
         type:'POST',  
@@ -93,7 +91,6 @@ PDM.loadMetas = function(replace) {
         url: wpAjaxUrl,  
         type:'POST',
 		data: 'action=infinite_scroll&objetivo=objetivo-' + OBJ,
-        //data: 'action=infinite_scroll&objetivo=objetivo-' + OBJ + filters,   
         success: function(response){
 			if (typeof replace !== "undefined") {
 				$('.metas').html(response);

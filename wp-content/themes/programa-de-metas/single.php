@@ -13,46 +13,40 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 	
 	<div class="detalhes">
 		<?php
-			foreach($terms as $t):
-				if($t->parent == 0 && strpos($t->slug, 'eixo') !== false):
-					$n = explode('-', $t->slug);
-					$n = $n[1];
-		?>
-					<h4>Eixo Temático <?php echo $n;?>. <?php echo $t->description?></h4>
-		<?php
-				endif;
-			endforeach;
+			$eixo = wp_get_post_terms($post->ID, 'eixos');
+			if(!empty($eixo)):
+				?>
+					<h4>Eixo Temático <?php echo $eixo[0]->name;?>. <?php echo $eixo[0]->description?></h4>
+				<?php
+			endif;
 		?>
 		<h4>Objetivo temático associado</h4>
 		<?php
-			foreach($terms as $t):
-				if(strpos($t->name, 'Objetivo') !== false):
-		?>
-					<p class="info"><b><?php echo $t->name;?>.</b> <?php echo $t->description;?></p>
-		<?php
-				endif;
-			endforeach;
+			$objetivo = wp_get_post_terms($post->ID, 'objetivos');
+			if(!empty($objetivo)):
+				?>
+					<p class="info"><b><?php echo $objetivo[0]->name;?>.</b> <?php echo $objetivo[0]->description;?></p>
+				<?php
+			endif;
 		?>
 		<h4>Secretaria e unidade responsável</h4>
 		<?php
-			foreach($terms as $t):
-				if($t->parent == 25):
-		?>
-					<p class="info"><?php echo $t->name;?></p>
-		<?php
-				endif;
-			endforeach;
+			$secretaria = wp_get_post_terms($post->ID, 'secretarias');
+			if(!empty($secretaria)):
+				?>
+					<p class="info"><?php echo $secretaria[0]->name;?></p>
+				<?php
+			endif;
 		?>
 		<h4>Articulação territorial associada</h4>
 		<?php
-			foreach($terms as $t):
-				if($t->parent == 53):
-		?>
-					<p class="info"><?php echo $t->name;?></p>
-		<?php
-				endif;
-			endforeach;
-		?>
+			$articulacao = wp_get_post_terms($post->ID, 'articulacoes');
+			if(!empty($articulacao)):
+				?>
+					<p class="info"><?php echo $articulacao[0]->name;?></p>
+				<?php
+			endif;
+		?>					
 		
 		<div class="detalhamento">
 			<h4>Detalhamento da Meta</h4>

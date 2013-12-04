@@ -949,7 +949,6 @@ function load_objetivos($tax_obj, $objetivo, $eixo, $tax_art = '', $tax_sec = ''
 				$i = 1;
 				echo '<div style="width:100%;float:left;">';
 				while ($WP_query->have_posts()) : $WP_query->the_post();
-					$terms = wp_get_post_terms($post->ID, 'metas-category');
 					?>
 					<li>
 						<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $eixo;?>">
@@ -959,23 +958,21 @@ function load_objetivos($tax_obj, $objetivo, $eixo, $tax_art = '', $tax_sec = ''
 							</div>
 							<h4>Articulação territorial</h4>
 							<?php
-								foreach($terms as $t):
-									if($t->parent == 53):
-							?>
-										<p class="info"><?php echo $t->name;?></p>
-							<?php
-									endif;
-								endforeach;
+								$articulacao = wp_get_post_terms($post->ID, 'articulacoes');
+								if(!empty($articulacao)):
+									?>
+										<p class="info"><?php echo $articulacao[0]->name;?></p>
+									<?php
+								endif;
 							?>
 							<h4>Secretaria e unidade<br /> responsável</h4>
 							<?php
-								foreach($terms as $t):
-									if($t->parent == 25):
-							?>
-										<p class="info"><?php echo $t->name;?></p>
-							<?php
-									endif;
-								endforeach;
+								$secretaria = wp_get_post_terms($post->ID, 'secretarias');
+								if(!empty($secretaria)):
+									?>
+										<p class="info"><?php echo $secretaria[0]->name;?></p>
+									<?php
+								endif;
 							?>
 							<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
 						</a>
@@ -1046,7 +1043,6 @@ function load_metas() {
 				$i = 1;
 				echo '<div style="width:100%;float:left;">';
 				while ($WP_query->have_posts()) : $WP_query->the_post();
-					$terms = wp_get_post_terms($post->ID, 'metas-category');
 					?>
 					<li>
 						<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $eixo;?>">
@@ -1056,23 +1052,21 @@ function load_metas() {
 							</div>
 							<h4>Articulação territorial</h4>
 							<?php
-								foreach($terms as $t):
-									if($t->parent == 53):
-							?>
-										<p class="info"><?php echo $t->name;?></p>
-							<?php
-									endif;
-								endforeach;
+								$articulacao = wp_get_post_terms($post->ID, 'articulacoes');
+								if(!empty($articulacao)):
+									?>
+										<p class="info"><?php echo $articulacao[0]->name;?></p>
+									<?php
+								endif;
 							?>
 							<h4>Secretaria e unidade<br /> responsável</h4>
 							<?php
-								foreach($terms as $t):
-									if($t->parent == 25):
-							?>
-										<p class="info"><?php echo $t->name;?></p>
-							<?php
-									endif;
-								endforeach;
+								$secretaria = wp_get_post_terms($post->ID, 'secretarias');
+								if(!empty($secretaria)):
+									?>
+										<p class="info"><?php echo $secretaria[0]->name;?></p>
+									<?php
+								endif;
 							?>
 							<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
 						</a>

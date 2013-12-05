@@ -42,7 +42,8 @@
   display: block;
   margin-left: 23px;
   text-align: center;
-  margin-top: 17px;
+  margin-top: 0px;
+  font-size: 10px;
 }
 /* Applied when the dropdown is focused */
 .dk_focus .dk_toggle {

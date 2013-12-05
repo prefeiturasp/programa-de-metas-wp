@@ -30,8 +30,10 @@ PDM.init = function() {
 	});
 	
 	$('.eixo-filter').click(function(e) {
+		$('.eixo-filter').removeClass('current');
 		e.preventDefault();
 		$('#filter-eixo').attr('value', $(this).attr('data-slug'));
+		$(this).addClass('current');
 	});
 	
 	$('.select-filters').dropkick();

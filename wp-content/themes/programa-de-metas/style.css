@@ -956,6 +956,10 @@ header h2 span {
 	font-weight: 700;
 }
 
+#all .eixos li a.current{
+	border: 2px solid #fff;
+}
+
 #all .eixos li a span {
 	display: block;
 	text-align: center;
@@ -963,7 +967,7 @@ header h2 span {
 
 #all .eixos li a .titulo {
 	color: #fff;
-	padding-top: 4px;
+	padding-top: 0px;
 }
 
 #all .eixos li a .descri {

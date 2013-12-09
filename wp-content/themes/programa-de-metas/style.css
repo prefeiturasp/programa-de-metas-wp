@@ -370,6 +370,8 @@ header h2 span {
 	width: 98%;
 	background: #2f2f2f;
 	margin: 15px auto;
+	height: auto;
+	overflow: hidden;
 }
 
 #all.interna {
@@ -1259,7 +1261,7 @@ header h2 span {
 	width: 100%;
 	float: left;
 	height: 50px;
-	margin-top: 16px;
+	margin: 16px 0px 65px 0px;
 }
 
 .loader img {

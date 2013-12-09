@@ -86,7 +86,7 @@
                         </li>
                         
                         <li>
-                            <select name="objetivo" class="select-objetivos">
+                            <select name="objetivo" class="select-filters">
                                 <option value="">Objetivo</option>
                                 <?php
                                     $objetivos = filter_objetivos();
@@ -102,7 +102,7 @@
                         </li>
                         
                         <li>
-                            <select name="secretaria" class="select-secretaria">
+                            <select name="secretaria" class="select-filters">
                                 <option value="">Secretaria</option>
                                 <?php
                                     $secretarias = filter_secretarias();
@@ -117,9 +117,6 @@
                             </select>
                         </li>
                     </ul>
-                    <div class="buscar">
-                        <input type="submit" value="buscar">
-                    </div>
                     <div class="buscar">
                         <input type="button" id="reset-form" value="Limpar">
                     </div>

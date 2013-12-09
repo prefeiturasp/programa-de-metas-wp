@@ -7,7 +7,7 @@ stopScroll = false;
 var PDM = PDM || {};
 
 PDM.init = function() {
-	$(window).scroll(function(){  
+	$(window).scroll(function(){
         if($(window).scrollTop() == $(document).height() - $(window).height()){
 			if (!stopScroll) {
 				OBJ = OBJ + 1;
@@ -34,13 +34,18 @@ PDM.init = function() {
 		e.preventDefault();
 		$('#filter-eixo').attr('value', $(this).attr('data-slug'));
 		$(this).addClass('current');
+		var form = $(this).parent().parent().parent();
+		var data = $(form).serialize();
+		PDM.loadMetasByFilter(data);
 	});
 	
-	$('.select-filters').dropkick();
-	
-	$('.select-objetivos').dropkick();
-	
-	$('.select-secretaria').dropkick();
+	$('.select-filters').dropkick({
+		change: function(value, label) {
+			var form = $(this).parent().parent().parent().parent();
+			var data = $(form).serialize();
+			PDM.loadMetasByFilter(data);
+		}
+	});
 	
 	$('#filtros').submit(function(e) {
 		e.preventDefault();
@@ -58,7 +63,8 @@ PDM.init = function() {
 	
 	$('#reset-form').click(function(e) {
 		e.preventDefault();
-		document.location.reload();
+		OBJ = 1;
+		PDM.loadMetas(true);
 	});
 };
 
@@ -72,16 +78,15 @@ PDM.getPost = function(id) {
 			$('.modal').center();
 			$('.mask').fadeIn();
 			$('.modal').fadeIn();
-			/*$('body,html').animate({
-				scrollTop: 0	
-			}, 1000);*/
 			PDM.init();
         }  
     });
 };
 
 PDM.loadMetasByFilter = function(target) {
+	$(window).unbind('scroll');
 	var loader = '<div class="loader"><img src="'+templateUrl+'/img/ajax-loader.gif" /></div>';
+	//$('.metas .loader').remove();
 	$('.metas').html(loader);
 	$.ajax({  
         url: wpAjaxUrl,  
@@ -95,11 +100,14 @@ PDM.loadMetasByFilter = function(target) {
 };
 
 PDM.loadMetas = function(replace) {
+	var loader = '<div class="loader"><img src="'+templateUrl+'/img/ajax-loader.gif" /></div>';
+	$('.metas').append(loader);
 	$.ajax({  
         url: wpAjaxUrl,  
         type:'POST',
 		data: 'action=infinite_scroll&objetivo=objetivo-' + OBJ,
         success: function(response){
+			$('.metas .loader').remove();
 			if (typeof replace !== "undefined") {
 				$('.metas').html(response);
 			} else {

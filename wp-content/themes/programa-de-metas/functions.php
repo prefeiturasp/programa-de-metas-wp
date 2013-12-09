@@ -494,7 +494,7 @@ function metas_register() {
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'menu_position' => null,
-		'supports' => array('title', 'editor', 'page-attributes', 'comments'),
+		'supports' => array('title', 'editor', 'page-attributes', 'comments', 'thumbnail'),
 		'taxonomies' => array('metas-category')
     );
     register_post_type('metas', $args );

@@ -502,6 +502,10 @@ header h2 span {
 	margin: 7px 0px 0px 20px;
 }
 
+#all .modal .texto-meta img {
+	margin-top: 8px;
+}
+
 #all .modal .detalhes {
 	width: 898px;
 	margin: 40px auto;
@@ -1072,7 +1076,6 @@ header h2 span {
 
 #all .metas .grid li a .texto {
 	width: 272px;
-	min-height: 179px;
 	margin-bottom: 38px;
 }
 
@@ -1142,6 +1145,11 @@ header h2 span {
 #all .metas .grid.eixo-1 li a .texto {
 	background: #ff6c6c;
 	margin-top: 20px;
+}
+
+#all .metas .grid.eixo-1 li a .texto img {
+	display: block;
+	margin: 0 auto;
 }
 
 #all .metas .grid.eixo-1 li a .texto p {

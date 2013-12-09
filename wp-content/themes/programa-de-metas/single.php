@@ -9,6 +9,11 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 	<div class="texto-meta">
 		<h2>Meta <?php the_title();?></h2>
 		<?php the_content();?>
+		<?php
+			if (has_post_thumbnail($post->ID)) {
+				echo get_the_post_thumbnail($post->ID);    
+			}
+		?>
 	</div>
 	
 	<div class="detalhes">

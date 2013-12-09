@@ -159,6 +159,11 @@
                                                 <a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="eixo-1">
                                                     <h3><?php the_title();?></h3>
                                                     <div class="texto">
+                                                        <?php
+                                                            if (has_post_thumbnail($post->ID)) {
+                                                                echo get_the_post_thumbnail($post->ID);    
+                                                            }
+                                                        ?>
                                                         <?php the_content();?>
                                                     </div>
                                                     <h4>Articulação territorial</h4>

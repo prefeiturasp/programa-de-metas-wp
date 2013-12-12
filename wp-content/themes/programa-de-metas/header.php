@@ -49,7 +49,7 @@
 					</script>
 					<meta property="og:type" content="blog" />
 					<meta property="og:title" content="Programa de Metas da Cidade de São Paulo - Meta <?php the_title();?>" />
-					<meta property="og:description" content="<?php get_the_excerpt();?>" />
+					<meta property="og:description" content="<?php echo get_the_excerpt();?>" />
 					<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/logo-facebook.jpg" />			
 				<?php
 			else:

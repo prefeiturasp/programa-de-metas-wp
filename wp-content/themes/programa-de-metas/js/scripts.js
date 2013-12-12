@@ -7,6 +7,10 @@ stopScroll = false;
 var PDM = PDM || {};
 
 PDM.init = function() {
+	if (typeof postId !== "undefined" && typeof eixoId !== "undefined") {
+		PDM.getPost(postId, eixoId);
+	}
+	
 	$(window).scroll(function(){
         if($(window).scrollTop() == $(document).height() - $(window).height()){
 			if (!stopScroll) {
@@ -19,6 +23,7 @@ PDM.init = function() {
 	
 	$('.meta-single').click(function(e) {
 		e.preventDefault();
+		window.history.pushState('Meta ' + $(this).attr('data-post'), 'Meta ' + $(this).attr('data-post'), '?pid=' + $(this).attr('data-post'));
 		PDM.getPost($(this).attr('data-post'));
 		$('.modal').empty();
 		$('.modal').addClass($(this).attr('data-eixo'));
@@ -68,12 +73,15 @@ PDM.init = function() {
 	});
 };
 
-PDM.getPost = function(id) {
+PDM.getPost = function(id, eixo) {
 	$.ajax({  
         url: wpAjaxUrl,  
         type:'POST',  
         data: 'action=get_post_by_id&pid=' + id,   
-        success: function(response){  
+        success: function(response){
+			if (typeof eixo !== "undefined") {
+				$('.modal').addClass(eixo);	
+			}
             $('.modal').html(response);
 			$('.modal').center();
 			$('.mask').fadeIn();

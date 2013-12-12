@@ -156,7 +156,7 @@
                                     while ($WP_query->have_posts()) : $WP_query->the_post();
                                         ?>
                                             <li>
-                                                <a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="eixo-1">
+                                                <a href="<?php echo get_bloginfo('url');?>" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="eixo-1">
                                                     <h3><?php the_title();?></h3>
                                                     <div class="texto">
                                                         <?php

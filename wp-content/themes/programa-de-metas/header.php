@@ -52,12 +52,15 @@
 					<meta property="og:description" content="<?php get_the_excerpt();?>" />
 					<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/logo-facebook.jpg" />			
 				<?php
+			else:
+			?>
+				<meta property="og:type" content="blog" />
+				<meta property="og:title" content="Programa de Metas da Cidade de São Paulo" />
+				<meta property="og:description" content="O esforço de elaboração do Programa de Metas 2013-2016 foi o de ir além da lista de metas, apontando objetivos estratégicos, eixos estruturantes e articulações territoriais sobre os quais se pretende alcançar resultados efetivos." />
+				<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/logo-facebook.jpg" />
+			<?php
 			endif;
 		?>
-		<meta property="og:type" content="blog" />
-		<meta property="og:title" content="Programa de Metas da Cidade de São Paulo" />
-		<meta property="og:description" content="O esforço de elaboração do Programa de Metas 2013-2016 foi o de ir além da lista de metas, apontando objetivos estratégicos, eixos estruturantes e articulações territoriais sobre os quais se pretende alcançar resultados efetivos." />
-		<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/logo-facebook.jpg" />
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="fb-root"></div>

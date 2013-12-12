@@ -2,14 +2,49 @@
     /*
     Template Name: Api
     */
-
-    if (!empty($_GET['filtros'])) {
-        
+    
+    $taxParams = array();
+    if (!empty($_GET['eixo'])) {
+        $eixo = $_GET['eixo'];
+        $taxParams[] = array(
+			'taxonomy' => 'eixos',
+			'field' => 'slug',
+			'terms' => 'eixo-' . $eixo
+		);	
     }
+    
+    if (!empty($_GET['objetivo'])) {
+        $objetivo = $_GET['objetivo'];
+        $taxParams[] = array(
+			'taxonomy' => 'objetivos',
+			'field' => 'slug',
+			'terms' => 'objetivo-' . $objetivo
+		);	
+    }
+    
+    if (!empty($_GET['secretaria'])) {
+        $secretaria = $_GET['secretaria'];
+        $taxParams[] = array(
+			'taxonomy' => 'secretarias',
+			'field' => 'slug',
+			'terms' => $secretaria
+		);	
+    }
+    
+    if (!empty($_GET['articulacao'])) {
+        $articulacao = $_GET['articulacao'];
+        $taxParams[] = array(
+			'taxonomy' => 'articulacoes',
+			'field' => 'slug',
+			'terms' => $articulacao
+		);	
+    }
+    
     $WP_query = new WP_Query(array('post_type' => 'metas',
         'order' => 'ASC',
         'orderby' => 'date',
         'posts_per_page' => -1,
+        'tax_query' => $taxParams
     ));
     
     $metas = array();

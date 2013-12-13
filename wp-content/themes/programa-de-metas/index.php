@@ -158,33 +158,35 @@
                                             <li>
                                                 <a href="<?php echo get_bloginfo('url');?>" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="eixo-1">
                                                     <h3><?php the_title();?></h3>
-                                                    <div class="texto">
+                                                    <div class="conteudo">
+                                                        <div class="texto">
+                                                            <?php
+                                                                if (has_post_thumbnail($post->ID)) {
+                                                                    echo get_the_post_thumbnail($post->ID);    
+                                                                }
+                                                            ?>
+                                                            <?php the_content();?>
+                                                        </div>
+                                                        <h4>Articulação territorial</h4>
                                                         <?php
-                                                            if (has_post_thumbnail($post->ID)) {
-                                                                echo get_the_post_thumbnail($post->ID);    
-                                                            }
+                                                            $articulacao = wp_get_post_terms($post->ID, 'articulacoes');
+                                                            if(!empty($articulacao)):
                                                         ?>
-                                                        <?php the_content();?>
+                                                                <p class="info"><?php echo $articulacao[0]->name;?></p>
+                                                        <?php
+                                                            endif;
+                                                        ?>
+                                                        <h4>Secretaria e unidade<br /> responsável</h4>
+                                                        <?php
+                                                            $secretaria = wp_get_post_terms($post->ID, 'secretarias');
+                                                            if(!empty($secretaria)):
+                                                        ?>
+                                                                <p class="info"><?php echo $secretaria[0]->name;?></p>
+                                                        <?php
+                                                            endif;
+                                                        ?>
+                                                        <p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
                                                     </div>
-                                                    <h4>Articulação territorial</h4>
-                                                    <?php
-                                                        $articulacao = wp_get_post_terms($post->ID, 'articulacoes');
-                                                        if(!empty($articulacao)):
-                                                    ?>
-                                                            <p class="info"><?php echo $articulacao[0]->name;?></p>
-                                                    <?php
-                                                        endif;
-                                                    ?>
-                                                    <h4>Secretaria e unidade<br /> responsável</h4>
-                                                    <?php
-                                                        $secretaria = wp_get_post_terms($post->ID, 'secretarias');
-                                                        if(!empty($secretaria)):
-                                                    ?>
-                                                            <p class="info"><?php echo $secretaria[0]->name;?></p>
-                                                    <?php
-                                                        endif;
-                                                    ?>
-                                                    <p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
                                                 </a>
                                             </li>
                                         <?php

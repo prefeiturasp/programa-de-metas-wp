@@ -972,7 +972,7 @@ header h2 span {
 }
 
 #all .eixos li a .titulo {
-	color: #fff;
+	color: #000;
 	padding-top: 0px;
 }
 
@@ -980,18 +980,7 @@ header h2 span {
 	font-weight: 700;
 	font-size: 10px;
 	padding-top: 1px;
-}
-
-#all .eixos li a.eixo-1 .descri {
-	color: #782525;
-}
-
-#all .eixos li a.eixo-2 .descri {
-	color: #124411;
-}
-
-#all .eixos li a.eixo-3 .descri {
-	color: #223652;
+	color: #212121;
 }
 
 #all .outros-filtros {
@@ -1061,7 +1050,7 @@ header h2 span {
 	float: left;
 	display: inline;
 	margin: 0px 12px 15px 0px;
-	padding: 15px;
+	background: #fff;
 }
 
 #all .metas .grid li .last {
@@ -1071,12 +1060,20 @@ header h2 span {
 #all .metas .grid li a h3 {
 	font-size: 40px;
 	font-weight: 700;
-	margin: -11px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	text-align: right;
+	color: #fff;
+	padding-right: 15px;
+}
+
+#all .metas .grid li a .conteudo {
+	width: 272px;
+	margin: 0 auto;
 }
 
 #all .metas .grid li a .texto {
 	width: 272px;
-	margin-bottom: 38px;
+	margin: 20px 0px 38px 0px ;
 }
 
 .leia-mais, .leia-mais:hover {
@@ -1111,14 +1108,15 @@ header h2 span {
 	font-weight: 700;
 	margin: 0px;
 	text-align: justify;
+	color: #212121;
 }
 
 #all .metas .grid li a .info {
 	font-size: 16px;
-	font-weight: 400;
-	font-style: italic;
+	font-weight: 400;	
 	padding: 14px 0px 22px 0px;
 	margin: 0;
+	color: #212121;
 }
 
 #all .metas .grid li a .custo {
@@ -1126,25 +1124,20 @@ header h2 span {
 	font-size: 16px;
 	text-align: right;
 	font-weight: 700;
+	color: #000;
 }
 
 /*EIXO 1*/
 #all .metas .objetivo.eixo-1 {
-	border: 3px dashed #d94e4d;
-	background: none;
-}
-
-#all .metas .grid.eixo-1 li a {
-	background: #d94e4d;
+	background: #f62048;
 }
 
 #all .metas .grid.eixo-1 li a h3 {
-	color: #602525;
+	background: #f62048;
 }
 
 #all .metas .grid.eixo-1 li a .texto {
-	background: #ff6c6c;
-	margin-top: 20px;
+	border-bottom: 3px dashed #f62048;
 }
 
 #all .metas .grid.eixo-1 li a .texto img {
@@ -1156,54 +1149,30 @@ header h2 span {
 	color: #602626;
 }
 
-#all .metas .grid.eixo-1 li a h4 {
-	color: #602525;
-}
-
-#all .metas .grid.eixo-1 li a .info {
-	color: #602525;
-}
-
 #all .metas .grid.eixo-1 li a .custo {
-	color: #602626;
-	border-bottom: 2px solid #ff6c6c;
+	border-bottom: 2px solid #f62048;
 }
 
 /*EIXO 2*/
 #all .metas .objetivo.eixo-2 {
-	border: 3px dashed #93ddac;
-	background: none;
-}
-
-#all .metas .grid.eixo-2 li a {
-	background: #81af92;
+	background: #93d521;
 }
 
 #all .metas .grid.eixo-2 li a h3 {
-	color: #4a6252;
+	background: #93d521;
 	text-align: right;
 }
 
 #all .metas .grid.eixo-2 li a .texto {
-	background: #a1f5bd;
-	margin-top: 20px;
+	border-bottom: 3px dashed #93d521;
 }
 
 #all .metas .grid.eixo-2 li a .texto p {
 	color: #4a6252;
 }
 
-#all .metas .grid.eixo-2 li a h4 {
-	color: #4a6252;
-}
-
-#all .metas .grid.eixo-2 li a .info {
-	color: #4a6252;
-}
-
 #all .metas .grid.eixo-2 li a .custo {
-	color: #4a6252;
-	border-bottom: 2px solid #a1f5bd;
+	border-bottom: 2px solid #93d521;
 }
 
 /*EIXO 3*/
@@ -1244,11 +1213,11 @@ header h2 span {
 }
 /*EIXOS*/
 .eixo-1 {
-	background: #d94e4d;
+	background: #f62048;
 }
 
 .eixo-2 {
-	background: #81af92;
+	background: #93d521;
 }
 
 .eixo-3 {

@@ -367,8 +367,8 @@ header h2 span {
 }
 
 #all {
-	width: 98%;
-	background: #2f2f2f;
+	width: 100%;
+	background: #f1f1f1;
 	margin: 15px auto;
 	height: auto;
 	overflow: hidden;
@@ -384,7 +384,7 @@ header h2 span {
 #all .nav {
 	width: 100%;
 	height: 72px;
-	box-shadow: -1px 8px 9px #000;
+	box-shadow: -1px 8px 9px #c4c4c4;
 }
 
 #all .nav ul {
@@ -932,7 +932,7 @@ header h2 span {
 }
 
 #all .intro {
-	color: #fff;
+	color: #000;
 	font-size: 20px;
 	font-weight: 700;
 	font-style: italic;
@@ -942,7 +942,13 @@ header h2 span {
 
 #all .filters {
 	width: 855px;
+	height: 229px;
 	margin: 43px auto;
+}
+
+#all .filters form {
+	width: 100%;
+	height: 100%;
 }
 
 #all .eixos {
@@ -994,16 +1000,22 @@ header h2 span {
 	width: 236px;
 	float: left;	
 	margin:11px 0px 0px 25px;
+	height: 100%;
+	position: relative;
 }
 
 #all .buscar input {
-	width: 236px;
-	height: 63px;
-	background: #fff;
+	width: 111px;
+	height: 60px;
 	border: none;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
+	background: #c1c1c1;
+	position: absolute;
+	bottom: 15px;
+	font-weight: 700;
+	color: #fff;
 }
 
 #all .metas {
@@ -1077,7 +1089,7 @@ header h2 span {
 }
 
 .leia-mais, .leia-mais:hover {
-	color: #fff;
+	color: #000;
 	font-size: 13px;
 	font-weight: 700;
 	text-decoration: none;
@@ -1127,6 +1139,34 @@ header h2 span {
 	color: #000;
 }
 
+#all .metas .grid li a .comentarios {
+	width: 143px;
+	height: 50px;
+	float: right;
+	margin-top: -9px;
+}
+
+#all .metas .grid li a .comentarios .balao {
+	display: block;
+	width: 30px;
+	height: 26px;
+	background: url(img/sprite.png) no-repeat;
+	float: left;
+	margin-left: 24px;
+}
+
+#all .metas .grid li a .comentarios .numero {
+	font-size: 12px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#all .metas .grid li a .comentarios .numero b {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #000;
+}
+
 /*EIXO 1*/
 #all .metas .objetivo.eixo-1 {
 	background: #f62048;
@@ -1153,6 +1193,10 @@ header h2 span {
 	border-bottom: 2px solid #f62048;
 }
 
+#all .metas .grid.eixo-1 li a .comentarios .balao {
+	background-position: -3px -5px;
+}
+
 /*EIXO 2*/
 #all .metas .objetivo.eixo-2 {
 	background: #93d521;
@@ -1175,42 +1219,31 @@ header h2 span {
 	border-bottom: 2px solid #93d521;
 }
 
-/*EIXO 3*/
-#all .metas .objetivo.eixo-3 {
-	border: 3px dashed #a7dce0;
-	background: none;
+#all .metas .grid.eixo-2 li a .comentarios .balao {
+	background-position: -53px -4px;
 }
 
-#all .metas .grid.eixo-3 li a {
-	background: #7eabaf;
+/*EIXO 3*/
+#all .metas .objetivo.eixo-3 {
+	background: #12c2d2;
 }
 
 #all .metas .grid.eixo-3 li a h3 {
-	color: #374d4f;
-	text-align: right;
+	background: #12c2d2;
 }
 
 #all .metas .grid.eixo-3 li a .texto {
-	background: #b8f4f9;
-	margin-top: 20px;
-}
-
-#all .metas .grid.eixo-3 li a .texto p {
-	color: #374d4f;
-}
-
-#all .metas .grid.eixo-3 li a h4 {
-	color: #374d4f;
-}
-
-#all .metas .grid.eixo-3 li a .info {
-	color: #374d4f;
+	border-bottom: 3px dashed #12c2d2;
 }
 
 #all .metas .grid.eixo-3 li a .custo {
-	color: #374d4f;
-	border-bottom: 2px solid #b8f4f9;
+	border-bottom: 2px solid #12c2d2;
 }
+
+#all .metas .grid.eixo-3 li a .comentarios .balao {
+	background-position: -105px -5px;
+}
+
 /*EIXOS*/
 .eixo-1 {
 	background: #f62048;
@@ -1221,7 +1254,7 @@ header h2 span {
 }
 
 .eixo-3 {
-	background: #7eabaf;
+	background: #12c2d2;
 }
 
 .not-found {

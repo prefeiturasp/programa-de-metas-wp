@@ -976,6 +976,15 @@ function load_objetivos($tax_obj, $objetivo, $eixo, $tax_art = '', $tax_sec = ''
 									endif;
 								?>
 								<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
+								<div class="comentarios">
+									<span class="balao"></span>
+									<span class="numero">
+										<?php
+											$countComments = wp_count_comments($post->ID);
+										?>
+										<b><?php echo $countComments->approved;?></b> comentários
+									</span>
+								</div>
 							</div>
 						</a>
 					</li>
@@ -1049,28 +1058,39 @@ function load_metas() {
 					<li>
 						<a href="javascript:void(0);" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $eixo;?>">
 							<h3><?php the_title();?></h3>
-							<div class="texto">
-								<?php the_content();?>
+							<div class="conteudo">
+								<div class="texto">
+									<?php the_content();?>
+								</div>
+								<h4>Articulação territorial</h4>
+								<?php
+									$articulacao = wp_get_post_terms($post->ID, 'articulacoes');
+									if(!empty($articulacao)):
+										?>
+											<p class="info"><?php echo $articulacao[0]->name;?></p>
+										<?php
+									endif;
+								?>
+								<h4>Secretaria e unidade<br /> responsável</h4>
+								<?php
+									$secretaria = wp_get_post_terms($post->ID, 'secretarias');
+									if(!empty($secretaria)):
+										?>
+											<p class="info"><?php echo $secretaria[0]->name;?></p>
+										<?php
+									endif;
+								?>
+								<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
+								<div class="comentarios">
+									<span class="balao"></span>
+									<span class="numero">
+										<?php
+											$countComments = wp_count_comments($post->ID);
+										?>
+										<b><?php echo $countComments->approved;?></b> comentários
+									</span>
+								</div>
 							</div>
-							<h4>Articulação territorial</h4>
-							<?php
-								$articulacao = wp_get_post_terms($post->ID, 'articulacoes');
-								if(!empty($articulacao)):
-									?>
-										<p class="info"><?php echo $articulacao[0]->name;?></p>
-									<?php
-								endif;
-							?>
-							<h4>Secretaria e unidade<br /> responsável</h4>
-							<?php
-								$secretaria = wp_get_post_terms($post->ID, 'secretarias');
-								if(!empty($secretaria)):
-									?>
-										<p class="info"><?php echo $secretaria[0]->name;?></p>
-									<?php
-								endif;
-							?>
-							<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
 						</a>
 					</li>
 				<?php

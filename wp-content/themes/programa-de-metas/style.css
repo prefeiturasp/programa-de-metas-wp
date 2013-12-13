@@ -448,6 +448,57 @@ header h2 span {
 	position: absolute;
 	display: none;
 	z-index: 1;
+	background: #fff;
+	border: 1px solid #000;
+}
+
+#all .modal h2 {
+	width: 100%;
+	height: 62px;
+	background: #fec311;
+	padding-left: 21px;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+#all .modal .conteudo {
+	width: 901px;
+	margin: 0 auto;
+}
+
+#all .modal .texto-meta {
+	width: 780px;
+	height: 88px;
+	border-bottom: 3px dashed #000;
+}
+
+#all .modal .texto-meta p {
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 0px 0px 3px 0px;
+	text-transform: uppercase;
+}
+
+#all .modal h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+#all .modal .descricao {
+	font-size: 14px;
+	color: #000;
+	font-weight: 400;
+}
+
+#all .modal .box {
+	width: 99%;
+	height: 243px;
+	border: 1px solid #000;
 }
 
 #all .modal .close {
@@ -479,27 +530,12 @@ header h2 span {
 	padding: 49px 0px 9px 0px;
 }
 
-#all .modal .texto-meta{
-	width: 898px;
-	height: 154px;
-	margin: 49px auto;
-}
-
 #all .modal .texto-meta h2 {
 	font-size: 40px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin: 30px 0px 0px 22px;
 	float: left;
-}
-
-#all .modal .texto-meta p {
-	width: 720px;
-	font-size: 15px;
-	font-weight: 700;
-	text-transform: uppercase;
-	float: left;
-	margin: 7px 0px 0px 20px;
 }
 
 #all .modal .texto-meta img {

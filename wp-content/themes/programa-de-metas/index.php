@@ -1,7 +1,28 @@
 <?php get_header(); ?>
     <div id="all">
-        <div class="modal">
-            
+        <div class="modal" style="display:block;left:50%;margin-left:-470px;">
+            <h2>Meta 1</h2>
+            <div class="conteudo">
+                <div class="texto-meta">
+                    <p>Reformar e ampliar os serviços de 14 Prontos Socorros e 6 AMA- 24h existentes, transformando-os em UPA</p>
+                </div>
+                
+                <h4>Eixo Temático 1. Compromisso com os direitos sociais e civis</h4>
+                <h4>Objetivo Temático Associado</h4>
+                <p class="descricao">Objetivo 4. Ampliar o acesso, aperfeiçoar a qualidade, reduzir as desigualdades regionais e o tempo de espera e fortalecer a 
+atenção integral das ações e serviços de saúde</p>
+                
+                <h4>Secretaria e unidade responsável</h4>
+                <p class="descricao">Objetivo 4. Ampliar o acesso, aperfeiçoar a qualidade, reduzir as desigualdades regionais e o tempo de espera e fortalecer a 
+atenção integral das ações e serviços de saúde</p>
+                
+                <h4>Articulação Territorial Associada</h4>
+                <p class="descricao">Resgate da cidadania nos territórios mais vulneráveis</p>
+                
+                <div class="box">
+                    
+                </div>
+            </div>
         </div>
         
         <div class="nav">

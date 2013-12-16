@@ -5,11 +5,8 @@ if (typeof currentOBJ !== "undefined") {
 var filters = '';
 stopScroll = false;
 var PDM = PDM || {};
-
+	
 PDM.init = function() {
-	if (typeof postId !== "undefined" && typeof eixoId !== "undefined") {
-		PDM.getPost(postId, eixoId);
-	}
 	
 	$(window).scroll(function(){
         if($(window).scrollTop() == $(document).height() - $(window).height()){
@@ -83,7 +80,11 @@ PDM.getPost = function(id, eixo) {
 				$('.modal').addClass(eixo);	
 			}
             $('.modal').html(response);
-			$('.modal').center();
+			$('.modal').css("position","absolute");
+			$('.modal').css("top", Math.max(0, (($(window).height() - $('.modal').outerHeight()) / 2) + 
+                                                $(window).scrollTop()) + "px");
+			$('.modal').css("left", Math.max(0, (($(window).width() - $('.modal').outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
 			$('.mask').fadeIn();
 			$('.modal').fadeIn();
 			PDM.init();
@@ -127,14 +128,9 @@ PDM.loadMetas = function(replace) {
 };
 
 $(document).ready(function() {
+	if (typeof postId !== "undefined" && typeof eixoId !== "undefined") {
+		PDM.getPost(postId, eixoId);
+	}
+	
 	PDM.init();
 });
-
-jQuery.fn.center = function () {
-    this.css("position","absolute");
-    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
-                                                $(window).scrollTop()) + "px");
-    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
-                                                $(window).scrollLeft()) + "px");
-    return this;
-}

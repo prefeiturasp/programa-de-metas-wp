@@ -31,17 +31,28 @@ Template Name: Objetivos e Metas
 		</div>
 	</div>
 	
-	<div class="content interna">
+	<div class="content interna objetivos-e-metas">
 		<h1 class="logo logo-interna">
 			<a href="<?php echo bloginfo('url');?>/">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/logo-programa-de-metas.png">
 			</a>
 		</h1>
 		
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-			<?php the_content(); ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<h2>
+			Além de uma estratéga territorial, o Programa de Metas 2012-2016 também estabelece diretrizes de execução para as iniciativas do poder público que buscam unificar as ações nos diversos territórios, funcionando como eixos integradores. 
+		</h2>
+		
+		<p class="center">
+			Tais diretrizes estão organizadas em três eixos temáticos:
+		</p>
+		
+		<img src="<?php echo get_template_directory_uri(); ?>/img/objetivos-e-metas/fluxo.png" class="fluxo"/>
+		
+		<p class="normal">
+			Cada eixo apresenta um conjunto de objetivos estratégicos que apontam aspectos importantes para a melhoria da vida na cidade de<br />
+			São Paulo. As metas são algumas das iniciativas que possibilitarão o alcance desses objetivos, sendo possível seu o monitoramento<br />
+			através dos indicadores referentes a cada um deles.
+		</p>
 	</div>
 </div>
 

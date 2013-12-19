@@ -376,9 +376,7 @@ header h2 span {
 
 #all.interna {
 	width: 98%;
-	background: #2f2f2f;
 	margin: 15px auto;
-	height: 100%;
 }
 
 #all .nav {
@@ -440,6 +438,7 @@ header h2 span {
 	top: 0;
 	left: 0;
 	display: none;
+	z-index: 1;
 }
 
 #all .modal {
@@ -1396,4 +1395,132 @@ header h2 span {
 
 #all .metas.bolinhas ul.eixo-3 li a {
 	background-position: -283px 1px;
+}
+
+/*Conheça*/
+.content.conheca h2 {
+	font-size: 25px;
+	font-weight: 700;
+	font-style: italic;
+	color: #f62048;
+	line-height: 1;
+}
+
+.content.conheca .azul {
+	font-size: 16px;
+	color: #007a9a;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content.conheca .left, .content.conheca .normal {
+	width: 583px;
+	font-size: 12px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+}
+
+.content.conheca .metas {
+	float: left;
+	margin-left: 25px;
+}
+
+.content.conheca .normal {
+	width: 100%;
+}
+
+.content.conheca .cafe {
+	margin: 61px 0px 20px 0px;
+}
+
+.content.objetivos-e-metas h2 {
+	font-size: 25px;
+	font-weight: 700;
+	font-style: italic;
+	color: #000;
+	line-height: 1;
+}
+
+.content.objetivos-e-metas .center {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+}
+
+.content.objetivos-e-metas .fluxo {
+	display: block;
+	margin: 0 auto;
+}
+
+.content.objetivos-e-metas .normal {
+	font-size: 14px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+}
+
+.content.territorial h2 {
+	font-size: 21px;
+	font-weight: 700;
+	font-style: italic;
+	color: #000;
+	line-height: 1;
+}
+
+.content.territorial .normal {
+	font-size: 14px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content.territorial .small {
+	font-size: 12px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content.territorial .bottom {
+	width: 776px;
+	margin: 41px auto;
+}
+
+.content.territorial .bottom img {
+	float: left;
+}
+
+.content.territorial .bottom .numeros {
+	float: left;
+	margin-left: 17px;
+}
+
+.content.territorial .bottom .numeros p {
+	font-size: 12px;
+	color: #000;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content.territorial .bottom .numeros p b {
+	font-size: 24px;
+}
+
+.content.territorial .bottom .quadro {
+	width: 100%;
+	background: #12c2d2;
+	float: left;
+	margin: 43px 0px 20px 0px;
+}
+
+.content.territorial .bottom .quadro p {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;
+	font-style: italic;
+	padding: 19px;
 }

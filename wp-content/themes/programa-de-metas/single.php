@@ -10,6 +10,11 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 		<div class="texto-meta">
 			<?php the_content();?>
 		</div>
+		<?php
+			if (has_post_thumbnail($post->ID)) {
+				echo get_the_post_thumbnail($post->ID);    
+			}
+		?>
 		
 		<?php
 			$eixo = wp_get_post_terms($post->ID, 'eixos');

@@ -473,9 +473,15 @@ header h2 span {
 }
 
 #all .modal .texto-meta {
-	width: 780px;
+	width: 765px;
 	height: 88px;
 	border-bottom: 3px dashed #f62048;
+	float: left;
+}
+
+#all .modal .conteudo img {
+	display: block;
+	float: left;
 }
 
 #all .modal .texto-meta p {

@@ -656,7 +656,7 @@ function create_articulacoes_taxonomy() {
     ));
 }
 
-add_action('init', 'create_subprefeituras_taxonomy', 0);
+add_action('init', 'create_articulacoes_taxonomy', 0);
 
 function create_subprefeituras_taxonomy() {
 

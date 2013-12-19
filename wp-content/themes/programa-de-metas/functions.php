@@ -1048,6 +1048,11 @@ function load_objetivos($tax_obj, $objetivo, $eixo, $tax_art = '', $tax_sec = ''
 							<h3><?php the_title();?></h3>
 							<div class="conteudo">
 								<div class="texto">
+									<?php
+										if (has_post_thumbnail($post->ID)) {
+											echo get_the_post_thumbnail($post->ID);    
+										}
+									?>
 									<?php the_content();?>
 								</div>
 								<h4>Articulação territorial</h4>
@@ -1153,6 +1158,11 @@ function load_metas() {
 							<h3><?php the_title();?></h3>
 							<div class="conteudo">
 								<div class="texto">
+									<?php
+										if (has_post_thumbnail($post->ID)) {
+											echo get_the_post_thumbnail($post->ID);    
+										}
+									?>
 									<?php the_content();?>
 								</div>
 								<h4>Articulação territorial</h4>

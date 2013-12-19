@@ -8,7 +8,7 @@ var PDM = PDM || {};
 	
 PDM.init = function() {
 	
-	/*$(window).scroll(function(){
+	$(window).scroll(function(){
         if($(window).scrollTop() == $(document).height() - $(window).height()){
 			if (!stopScroll) {
 				OBJ = OBJ + 1;
@@ -16,7 +16,7 @@ PDM.init = function() {
 				$(window).unbind('scroll');
 			}
 		}
-    });*/
+    });
 	
 	$('.metas.bolinhas .meta-single').hover(function(e) {
 		$(this).find('.hover').show();

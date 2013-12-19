@@ -1209,6 +1209,40 @@ function load_metas() {
 add_action('wp_ajax_infinite_scroll', 'load_metas');
 add_action('wp_ajax_nopriv_infinite_scroll', 'load_metas');
 
+function load_by_sub() {
+	if (!empty($_POST['subprefeitura'])) {
+		$subPrefeituras = explode(',', $_POST['subprefeitura']);
+		
+		if (count($subPrefeituras) > 0) {
+			foreach ($subPrefeituras as $sub) {
+				$WP_query = new WP_Query(array('post_type' => 'metas',
+					'order' => 'ASC',
+					'orderby' => 'date',
+					'posts_per_page' => -1,
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'subprefeituras',
+							'field' => 'slug',
+							'terms' => $sub
+						)
+					)
+				));
+				
+				if ($WP_query->have_posts()) {
+					while ($WP_query->have_posts()) : $WP_query->the_post();
+					
+					?>
+					<?php
+					endwhile;
+				}
+			}
+		}
+	}die;
+}
+
+add_action('wp_ajax_load_by_sub', 'load_by_sub');
+add_action('wp_ajax_nopriv_load_by_sub', 'load_by_sub');
+
 function get_post_data(){
     error_reporting(0); //see later to understand why it is here
     global $post;

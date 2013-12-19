@@ -8,7 +8,7 @@ var PDM = PDM || {};
 	
 PDM.init = function() {
 	
-	$(window).scroll(function(){
+	/*$(window).scroll(function(){
         if($(window).scrollTop() == $(document).height() - $(window).height()){
 			if (!stopScroll) {
 				OBJ = OBJ + 1;
@@ -16,7 +16,7 @@ PDM.init = function() {
 				$(window).unbind('scroll');
 			}
 		}
-    });
+    });*/
 	
 	$('.metas.bolinhas .meta-single').hover(function(e) {
 		$(this).find('.hover').show();
@@ -152,10 +152,88 @@ PDM.loadMetas = function(replace) {
     });
 };
 
+PDM.loadMetasBySub = function(sub) {
+	$.ajax({  
+        url: wpAjaxUrl,  
+        type:'POST',
+		data: 'action=load_by_sub&subprefeitura=' + sub,
+        success: function(response){
+			/*$('.metas .loader').remove();
+			if (typeof replace !== "undefined") {
+				$('.metas').html(response);
+			} else {
+				$('.metas').append(response);
+			}
+			PDM.init();*/
+        }  
+    });
+};
+
 $(document).ready(function() {
 	if (typeof postId !== "undefined" && typeof eixoId !== "undefined") {
 		PDM.getPost(postId, eixoId);
 	}
 	
 	PDM.init();
+	
+	$('#mapaSub area').mouseenter(function(){
+		getId = $(this).attr('id');
+		$(".subs").find("."+ getId).filter(':not(:animated)').toggle();
+		$(this).parent().parent().parent().find('.subs').find("."+ getId).addClass('active');
+		$(".subs").find("."+ getId).removeAttr('style');
+				
+	});
+	
+	$('#mapaSub area').mouseout(function(){
+		$(this).parent().parent().parent().find('.subs').find("."+ getId).removeClass('active');
+		$(".subs").find("."+ getId).removeAttr('style');					
+	});
+	
+	
+	$('#mapaSub area').click(function(){
+		var getId = "";
+		var subprefeitura = "";
+		getId = $(this).attr('id');
+		
+		$(".subs").find("."+ getId).addClass('clicado');
+		var clicado = $(this).parent().parent().parent().find('.subs').find("."+ getId).is('.clicado');
+		var qtdClicado = $('#legenda').find('.'+getId).size();
+		
+		if(qtdClicado>0){
+			/* verifica se existe alguma subprefeitura ja clicada e remove esse clic */
+
+			$('#legenda').find("."+ getId).remove();
+			$(".subs").find("."+ getId).removeAttr('style');
+			$(".subs").find("."+ getId).removeClass('clicado');
+			/**
+			* Fazer o ajax para carregar as informações das metas depois dessas linhas de comando
+			*/
+				
+				
+		}else{
+			
+			if(clicado == true){
+				/* adiciona tags de clicado que pinta o mapa e box lateral */
+				subprefeitura = $(".subs").find("."+ getId).html();
+				$('#legenda').append( "<strong class='"+getId+"'>"+subprefeitura+"<input type='hidden' name='subprefeituras[]' value='"+getId+"' /></strong>" );
+				var hiddens = $('#legenda').find('input[type="hidden"]');
+				var subs = [];
+				$(hiddens).each(function(i) {
+					subs[i] = this.value;
+				});
+				$(".subs").find("."+ getId).removeAttr('style');
+				/**
+				* Fazer o ajax para carregar as informações das metas depois dessas linhas de comando
+				*/
+				PDM.loadMetasBySub(subs);
+				
+			}
+		}
+		return false;
+	});
+	$('.limpar').click(function(){
+		$('#legenda strong').remove();
+		$(".subs div").removeClass('clicado');	
+		$(".subs div").removeAttr('style');	
+	});
 });

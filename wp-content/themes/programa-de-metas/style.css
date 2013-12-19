@@ -1618,7 +1618,7 @@ map{
 	left: 108px;
 	padding:35px 0 0 8px;	
 }
-#mapaSub .freguesia{
+#mapaSub .freguesia-do-o-brasilandia{
 	background:url(img/freguesia.png) no-repeat;
 	width:76px;
 	height:108px;
@@ -1628,7 +1628,7 @@ map{
 	left: 170px;
 	padding:35px 0 0 0px;
 }
-#mapaSub .casa{
+#mapaSub .casa-verde{
 	background:url(img/casa.png) no-repeat;
 	width:120px;
 	height:109px;
@@ -1659,7 +1659,7 @@ map{
 	padding:40px 0 0 15px;
 	text-align:center;	
 }
-#mapaSub .maria{
+#mapaSub .vila-maria-guilherme{
 	background:url(img/maria.png) no-repeat;
 	width:110px;
 	height:64px;
@@ -1690,7 +1690,7 @@ map{
 	left: 368px;
 	padding:0 0 0 0;	
 }
-#mapaSub .miguel{
+#mapaSub .sao-miguel{
 	background:url(img/miguel.png) no-repeat;
 	width:102px;
 	height:62px;
@@ -1700,7 +1700,7 @@ map{
 	left: 411px;
 	padding:18px 0 0 5px;	
 }
-#mapaSub .itaim{
+#mapaSub .itaim-paulista{
 	background:url(img/itaim.png) no-repeat;
 	width:69px;
 	height:52px;
@@ -1760,7 +1760,7 @@ map{
 	left: 373px;
 	padding:45px 0 0 15px;		
 }
-#mapaSub .guaianazes{
+#mapaSub .guaianases{
 	background:url(img/guaianazes.png) no-repeat;
 	width:54px;
 	height:58px;
@@ -1790,7 +1790,7 @@ map{
 	left: 151px;
 	padding:30px 0 0 25px;		
 }
-#mapaSub .mariana{
+#mapaSub .vila-mariana{
 	background:url(img/mariana.png) no-repeat;
 	width:86px;
 	height:99px;
@@ -1810,7 +1810,7 @@ map{
 	left: 253px;
 	padding:40px 0 0 8px;	
 }
-#mapaSub .prudente{
+#mapaSub .vila-prudente{
 	background:url(img/prudente.png) no-repeat;
 	width:76px;
 	height:45px;
@@ -1851,7 +1851,7 @@ map{
 	padding:29px 0 0 5px;
 	text-align:center;	
 }
-#mapaSub .campo{
+#mapaSub .campo-limpo{
 	background:url(img/campo.png) no-repeat;
 	width:101px;
 	height:93px;
@@ -1861,7 +1861,7 @@ map{
 	left: 85px;
 	padding:35px 0 0 5px;	
 }
-#mapaSub .santo{
+#mapaSub .santo-amaro{
 	background:url(img/santo.png) no-repeat;
 	width:78px;
 	height:99px;
@@ -1881,7 +1881,7 @@ map{
 	left: 216px;
 	padding:10px 0 0 8px;	
 }
-#mapaSub .mirim{
+#mapaSub .m-boi-mirim{
 	background:url(img/mirim.png) no-repeat;
 	width:82px;
 	height:126px;
@@ -1901,7 +1901,7 @@ map{
 	left: 156px;
 	padding:80px 0 0 8px;		
 }
-#mapaSub .ademar{
+#mapaSub .cidade-ademar{
 	background:url(img/ademar.png) no-repeat;
 	width:70px;
 	height:93px;

@@ -43,7 +43,7 @@
             
              <div class="filters">
                 <form id="filtros">
-                    <input type="hidden" name="action" value="load_metas_filter">
+                    <input type="hidden" name="action" id="action" value="load_metas_filter">
                     <input type="hidden" name="eixo" id="filter-eixo">
                     <?php
                     $eixos = filter_eixos();
@@ -121,6 +121,19 @@
                 </form>
             </div>
              
+            <div class="visualizacoes">
+                <span class="label">Visualização</span>
+                <a href="javascript:void(0);" data-action="load_metas_filter" class="icons first quadros">Quadros</a>
+                <a href="javascript:void(0);" data-action="load_metas_filter_bolinhas" class="icons bolas">Bolinhas</a>
+            </div>
+            
+            <div class="legenda">
+                <ul>
+                    <li class="eixo-1">Eixo 1</li>
+                    <li class="eixo-2">Eixo 2</li>
+                    <li class="eixo-3 last">Eixo 3</li>
+                </ul>
+            </div>
             <div class="metas">
                 <?php
                     $objetivo = get_term_by('slug', 'objetivo-1', 'objetivos', ARRAY_A);

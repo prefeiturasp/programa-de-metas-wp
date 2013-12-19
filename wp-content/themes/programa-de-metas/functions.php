@@ -848,8 +848,70 @@ function filter_secretarias() {
 	return false;
 }
 
+add_action('wp_ajax_load_metas_filter_bolinhas', 'load_metas_filter_bolinhas');
+add_action('wp_ajax_nopriv_load_metas_filter_bolinhas', 'load_metas_filter_bolinhas');
+
 add_action('wp_ajax_load_metas_filter', 'load_metas_filter');
 add_action('wp_ajax_nopriv_load_metas_filter', 'load_metas_filter');
+
+function load_metas_filter_bolinhas() {
+	$eixo = 'eixo-1';
+	for ($i=1; $i<=20; $i++) {
+		if ($i >= 12 && $i < 18) {
+			$eixo = 'eixo-2';
+		} else if ($i >= 18) {
+			$eixo = 'eixo-3';
+		}
+		$objetivo = get_term_by('slug', 'objetivo-' . $i, 'objetivos', ARRAY_A);
+		if (!empty($objetivo)) {
+			$objetivoNumero = explode('-', $objetivo['slug']);
+			$objetivoNumero = $objetivoNumero[1];
+			$WP_query = new WP_Query(array('post_type' => 'metas',
+				'order' => 'ASC',
+				'orderby' => 'date',
+				'posts_per_page' => -1,
+				'tax_query' => array(
+					array(
+						'taxonomy' => 'objetivos',
+						'field' => 'slug',
+						'terms' => $objetivo['slug']
+					)
+				)
+			));
+			if ($WP_query->have_posts()) {
+				?>
+				<ul class="<?php echo $eixo;?>" <?php echo ($i == 12) ? 'style="margin-left: 29px;"' :'' ?>>
+						<li>
+							<a href="" class="objetivo">
+								<div class="img-container">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icones/objetivo-<?php echo $objetivoNumero;?>.png"/>
+								</div>
+								<span><?php echo $objetivoNumero;?></span>
+							</a>
+						</li>
+					<?php
+						$x = 1;
+						while ($WP_query->have_posts()) : $WP_query->the_post();
+						$bottom = $x * 45;
+					?>
+							<li>
+								<a href="javascript:void(0);" style="bottom:<?php echo $bottom . 'px';?>" alt="<?php the_title();?>" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $eixo;?>">
+									<div class="hover">
+										<div class="seta"></div>
+										<div class="texto"><?php echo get_the_content();?></div>
+									</div>
+								</a>
+							</li>
+					<?php
+						$x++;
+					endwhile;
+					?>
+				</ul>
+				<?php
+			}
+		}
+	}die();
+}
 
 function load_metas_filter() {
 	global $post;

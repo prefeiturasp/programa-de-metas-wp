@@ -404,7 +404,7 @@ header h2 span {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
-	color: #e5e5e4;
+	color: #2f302f;
 	padding: 0px 12px 0px 12px;
 	font-weight: 400;
 }
@@ -916,8 +916,89 @@ header h2 span {
 	color: #fff;
 }
 
+#all .visualizacoes {
+	width: 161px;
+	height: 37px;
+	background: #b5b5b5;
+	margin: 23px auto;
+}
+
+#all .visualizacoes .label {
+	display: block;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 3.7;
+	padding-left: 10px;
+}
+
+#all .visualizacoes .icons {
+	width: 29px;
+	height: 26px;
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	outline: none;
+	background: url(img/sprite.png) no-repeat;
+	margin-top: 6px;
+}
+
+#all .visualizacoes .icons.first {
+	margin-left: 10px;
+}
+
+#all .visualizacoes .icons.quadros {
+	background-position: -503px -16px;
+}
+
+#all .visualizacoes .icons.bolas {
+	background-position: -549px -16px;
+}
+
+#all .legenda {
+	width: 231px;
+	height: 32px;
+	margin: -10px auto;
+	display: none;
+}
+
+#all .legenda ul {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#all .legenda ul li {
+	width: 72px;
+	height: 100%;
+	float: left;
+	display: inline;
+	margin-right: 7px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 2.8;
+}
+
+#all .legenda ul .last {
+	margin-right: 0px;
+}
+
 #all .metas {
 	margin-top: 23px;	
+}
+
+#all .metas.bolinhas {
+	margin-top: -36px;
+	height: 834px;
+	float: left;
+	padding-bottom: 25px;
 }
 
 #all .metas .objetivo {
@@ -1175,4 +1256,144 @@ header h2 span {
 .loader img {
 	display: block;
 	margin: 0 auto;
+}
+
+/*CIRCLES*/
+#all .metas.bolinhas ul {
+	list-style: none;
+	padding: 0;
+	margin: 0px -5px 0px 0px;
+	width: 52px;
+	height: 100%;
+	float: left;
+	background: none;
+	position: relative;
+}
+
+#all .metas.bolinhas ul li a {
+	display: block;
+	width: 52px;
+	height: 53px;
+	outline: none;
+	margin-bottom: 8px;
+	background: url(img/sprite.png) no-repeat;
+	position: absolute;
+	bottom: 0;
+}
+
+#all .metas.bolinhas ul li .objetivo {
+	text-indent: 0;
+	background: none;
+	text-align: center;
+	bottom: -29px;
+}
+
+#all .metas.bolinhas ul li .objetivo .img-container {
+	width: 48px;
+	height: 30px;
+}
+
+#all .metas.bolinhas ul li .objetivo img {
+	display: block;
+	margin: 0 auto;
+}
+
+#all .metas.bolinhas ul li .objetivo span {
+	display: block;
+	float: left;
+	width: 100%;
+	text-indent: -4px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	color: #303030;
+	font-weight: 700;
+}
+/*EIXO 1*/
+#all .metas.bolinhas ul.eixo-1 li a .hover {
+	width: 290px;
+	min-height: 77px;
+	display: none;
+	position: absolute;
+	top: 24px;
+	left: 25px;
+	z-index: 1;
+}
+
+#all .metas.bolinhas ul.eixo-1 li a .hover .seta {
+	width: 32px;
+	height: 33px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(img/sprite.png) no-repeat;
+	background-position: -349px -19px;
+}
+
+#all .metas.bolinhas ul.eixo-1 li a .hover .texto {
+	width: 258px;
+	background: #f62048;
+	position: absolute;
+	right: 1px;
+	text-align:center;
+	padding: 22px 10px 22px 10px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 700;
+}
+
+/*EIXO 2 e 3*/
+#all .metas.bolinhas ul.eixo-2 li a .hover, #all .metas.bolinhas ul.eixo-3 li a .hover {
+	width: 290px;
+	min-height: 77px;
+	display: none;
+	position: absolute;
+	top: 24px;
+	right: 25px;
+	z-index: 1;
+}
+
+#all .metas.bolinhas ul.eixo-2 li a .hover .seta, #all .metas.bolinhas ul.eixo-3 li a .hover .seta {
+	width: 32px;
+	height: 33px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url(img/sprite.png) no-repeat;
+	background-position: -394px -19px;
+}
+
+#all .metas.bolinhas ul.eixo-3 li a .hover .seta {
+	background-position: -439px -19px;
+}
+
+#all .metas.bolinhas ul.eixo-2 li a .hover .texto, #all .metas.bolinhas ul.eixo-3 li a .hover .texto {
+	width: 258px;
+	background: #93d521;
+	position: absolute;
+	left: 1px;
+	text-align:center;
+	padding: 22px 10px 22px 10px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 700;
+}
+
+#all .metas.bolinhas ul.eixo-3 li a .hover .texto {
+	left: 3px;
+	background: #12c2d2;
+}
+
+#all .metas.bolinhas ul.eixo-1 li a {
+	background-position: -155px 1px;
+	left: 28px;
+}
+
+#all .metas.bolinhas ul.eixo-2 li a {
+	background-position: -217px 1px;
+}
+
+#all .metas.bolinhas ul.eixo-3 li a {
+	background-position: -283px 1px;
 }

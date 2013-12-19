@@ -8,7 +8,7 @@ var PDM = PDM || {};
 	
 PDM.init = function() {
 	
-	$(window).scroll(function(){
+	/*$(window).scroll(function(){
         if($(window).scrollTop() == $(document).height() - $(window).height()){
 			if (!stopScroll) {
 				OBJ = OBJ + 1;
@@ -16,7 +16,15 @@ PDM.init = function() {
 				$(window).unbind('scroll');
 			}
 		}
-    });
+    });*/
+	
+	$('.metas.bolinhas .meta-single').hover(function(e) {
+		$(this).find('.hover').show();
+	});
+	
+	$('.metas.bolinhas .meta-single').mouseout(function(e) {
+		$(this).find('.hover').hide();
+	});
 	
 	$('.meta-single').click(function(e) {
 		e.preventDefault();
@@ -47,6 +55,23 @@ PDM.init = function() {
 			var data = $(form).serialize();
 			PDM.loadMetasByFilter(data);
 		}
+	});
+	
+	$('.icons').click(function(e) {
+		e.preventDefault();
+		$('#action').attr('value', $(this).attr('data-action'));
+		if ($(this).hasClass('bolas')) {
+			$('.metas').addClass('bolinhas');
+			$('.filters').hide();
+			$('.legenda').show();
+		} else {
+			$('.metas').removeClass('bolinhas');
+			$('.filters').show();
+			$('.legenda').hide();
+		}
+		var form = $('#filtros');
+		var data = $(form).serialize();
+		PDM.loadMetasByFilter(data);
 	});
 	
 	$('#filtros').submit(function(e) {

@@ -656,7 +656,38 @@ function create_articulacoes_taxonomy() {
     ));
 }
 
-add_action('init', 'create_articulacoes_taxonomy', 0);
+add_action('init', 'create_subprefeituras_taxonomy', 0);
+
+function create_subprefeituras_taxonomy() {
+
+    $labels = array(
+        'name' => _x( 'Subprefeituras', 'taxonomy general name' ),
+        'singular_name' => _x( 'Category', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Search Categories' ),
+        'popular_items' => __( 'Popular Categories' ),
+        'all_items' => __( 'All Categories' ),
+        'parent_item' => null,
+        'parent_item_colon' => null,
+        'edit_item' => __( 'Editar subprefeitura' ),
+        'update_item' => __( 'Update Category' ),
+        'add_new_item' => __( 'Add New Category' ),
+        'new_item_name' => __( 'New Category Name' ),
+        'separate_items_with_commas' => __( 'Separate categories with commas' ),
+        'add_or_remove_items' => __( 'Add or remove categories' ),
+        'choose_from_most_used' => __( 'Choose from the most used categories' ),
+    );
+
+    register_taxonomy('subprefeituras', 'metas', array(
+        'label' => __('Subprefeituras'),
+        'labels' => $labels,
+        'hierarchical' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'subprefeituras'),
+    ));
+}
+
+add_action('init', 'create_subprefeituras_taxonomy', 0);
 
 function metas_create() {
     add_meta_box('metas_meta_termos_tecnicos', 'Definições dos termos técnicos', 'metas_meta_termos_tecnicos', 'metas');

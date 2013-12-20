@@ -1252,7 +1252,7 @@ function load_by_sub() {
 											echo get_the_post_thumbnail($post->ID);    
 										}
 									?>
-									<?php the_content();?>
+									<p><?php echo remove_images(get_the_content());?></p>
 								</div>
 								<h4>Articulação territorial</h4>
 								<?php
@@ -1300,6 +1300,13 @@ function load_by_sub() {
 
 add_action('wp_ajax_load_by_sub', 'load_by_sub');
 add_action('wp_ajax_nopriv_load_by_sub', 'load_by_sub');
+
+add_action('wp_ajax_load_metas_filter_mapa', 'load_metas_filter_mapa');
+add_action('wp_ajax_nopriv_load_metas_filter_mapa', 'load_metas_filter_mapa');
+
+function load_metas_filter_mapa() {
+	
+}
 
 function get_post_data(){
     error_reporting(0); //see later to understand why it is here

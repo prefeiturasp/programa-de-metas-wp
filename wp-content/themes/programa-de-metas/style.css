@@ -925,7 +925,7 @@ header h2 span {
 }
 
 #all .visualizacoes {
-	width: 161px;
+	width: 192px;
 	height: 37px;
 	background: #b5b5b5;
 	margin: 23px auto;
@@ -963,6 +963,10 @@ header h2 span {
 
 #all .visualizacoes .icons.bolas {
 	background-position: -549px -16px;
+}
+
+#all .visualizacoes .icons.mapa {
+	background-position: -595px -17px;
 }
 
 #all .legenda {
@@ -1185,24 +1189,24 @@ header h2 span {
 	background: #93d521;
 }
 
-#all .metas .grid.eixo-2 li a h3 {
+#all .metas .grid.eixo-2 li a h3, #all .metas .grid li a.eixo-2 h3 {
 	background: #93d521;
 	text-align: right;
 }
 
-#all .metas .grid.eixo-2 li a .texto {
+#all .metas .grid.eixo-2 li a .texto, #all .metas .grid li a.eixo-2 .texto {
 	border-bottom: 3px dashed #93d521;
 }
 
-#all .metas .grid.eixo-2 li a .texto p {
+#all .metas .grid.eixo-2 li a .texto p, #all .metas .grid li a.eixo-2 .texto p {
 	color: #4a6252;
 }
 
-#all .metas .grid.eixo-2 li a .custo {
+#all .metas .grid.eixo-2 li a .custo, #all .metas .grid li a.eixo-2 .custo {
 	border-bottom: 2px solid #93d521;
 }
 
-#all .metas .grid.eixo-2 li a .comentarios .balao {
+#all .metas .grid.eixo-2 li a .comentarios .balao, #all .metas .grid li a.eixo-2 .comentarios .balao {
 	background-position: -53px -4px;
 }
 
@@ -1211,19 +1215,19 @@ header h2 span {
 	background: #12c2d2;
 }
 
-#all .metas .grid.eixo-3 li a h3 {
+#all .metas .grid.eixo-3 li a h3, #all .metas .grid li a.eixo-3 h3 {
 	background: #12c2d2;
 }
 
-#all .metas .grid.eixo-3 li a .texto {
+#all .metas .grid.eixo-3 li a .texto, #all .metas .grid li a.eixo-3 .texto {
 	border-bottom: 3px dashed #12c2d2;
 }
 
-#all .metas .grid.eixo-3 li a .custo {
+#all .metas .grid.eixo-3 li a .custo, #all .metas .grid li a.eixo-3 .custo {
 	border-bottom: 2px solid #12c2d2;
 }
 
-#all .metas .grid.eixo-3 li a .comentarios .balao {
+#all .metas .grid.eixo-3 li a .comentarios .balao, #all .metas .grid li a.eixo-3 .comentarios .balao {
 	background-position: -105px -5px;
 }
 

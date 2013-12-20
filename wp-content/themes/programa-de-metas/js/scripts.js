@@ -60,7 +60,10 @@ PDM.init = function() {
 	$('.icons').click(function(e) {
 		e.preventDefault();
 		$('#action').attr('value', $(this).attr('data-action'));
-		if ($(this).hasClass('bolas')) {
+		if ($(this).hasClass('mapa')) {
+			$('.filters').hide();
+			$('.metas').empty();
+		} else if ($(this).hasClass('bolas')) {
 			$('.metas').addClass('bolinhas');
 			$('.filters').hide();
 			$('.legenda').show();

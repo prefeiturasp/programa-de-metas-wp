@@ -1209,6 +1209,105 @@ function load_metas() {
 add_action('wp_ajax_infinite_scroll', 'load_metas');
 add_action('wp_ajax_nopriv_infinite_scroll', 'load_metas');
 
+function load_by_sub() {
+	global $post;
+	if (!empty($_POST['subprefeitura'])) {
+		$subPrefeituras = explode(',', $_POST['subprefeitura']);
+		
+		if (count($subPrefeituras) > 0) {
+			foreach ($subPrefeituras as $sub) {
+				$WP_query = new WP_Query(array('post_type' => 'metas',
+					'order' => 'ASC',
+					'orderby' => 'date',
+					'posts_per_page' => -1,
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'subprefeituras',
+							'field' => 'slug',
+							'terms' => $sub
+						)
+					)
+				));
+				if($WP_query->have_posts()):
+				?>
+				<ul class="grid">
+				<?php
+				$i = 1;
+				echo '<div style="width:100%;float:left;">';
+				while ($WP_query->have_posts()) : $WP_query->the_post();
+					?>
+					<li>
+						<?php
+							$eixo = wp_get_post_terms($post->ID, 'eixos');
+							if(!empty($eixo)):
+								$eixo = $eixo[0]->slug;
+							endif;
+						?>
+						<a href="javascript:void(0);" class="meta-single <?php echo $eixo;?>" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $eixo;?>">
+							<h3><?php the_title();?></h3>
+							<div class="conteudo">
+								<div class="texto">
+									<?php
+										if (has_post_thumbnail($post->ID)) {
+											echo get_the_post_thumbnail($post->ID);    
+										}
+									?>
+									<p><?php echo remove_images(get_the_content());?></p>
+								</div>
+								<h4>Articulação territorial</h4>
+								<?php
+									$articulacao = wp_get_post_terms($post->ID, 'articulacoes');
+									if(!empty($articulacao)):
+										?>
+											<p class="info"><?php echo $articulacao[0]->name;?></p>
+										<?php
+									endif;
+								?>
+								<h4>Secretaria e unidade<br /> responsável</h4>
+								<?php
+									$secretaria = wp_get_post_terms($post->ID, 'secretarias');
+									if(!empty($secretaria)):
+										?>
+											<p class="info"><?php echo $secretaria[0]->name;?></p>
+										<?php
+									endif;
+								?>
+								<p class="custo"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
+								<div class="comentarios">
+									<span class="balao"></span>
+									<span class="numero">
+										<?php
+											$countComments = wp_count_comments($post->ID);
+										?>
+										<b><?php echo $countComments->approved;?></b> comentários
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				<?php
+					echo ($i%3 == 0) ? '</div><div style="width:100%;float:left;">' : '';
+					$i++;
+			endwhile;
+			?>
+				</ul>
+			<?php
+			endif;
+			}
+		}
+	}die;
+}
+
+add_action('wp_ajax_load_by_sub', 'load_by_sub');
+add_action('wp_ajax_nopriv_load_by_sub', 'load_by_sub');
+
+add_action('wp_ajax_load_metas_filter_mapa', 'load_metas_filter_mapa');
+add_action('wp_ajax_nopriv_load_metas_filter_mapa', 'load_metas_filter_mapa');
+
+function load_metas_filter_mapa() {
+	
+}
+
 function get_post_data(){
     error_reporting(0); //see later to understand why it is here
     global $post;

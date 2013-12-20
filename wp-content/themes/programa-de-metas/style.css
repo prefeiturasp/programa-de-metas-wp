@@ -332,6 +332,9 @@ body {
 	font-weight: 700;
 }
 
+.content.mapa {
+	width: 973px;
+}
 .wrapper.interna {
 	background: #2f2f2f;
 }
@@ -925,7 +928,7 @@ header h2 span {
 }
 
 #all .visualizacoes {
-	width: 161px;
+	width: 192px;
 	height: 37px;
 	background: #b5b5b5;
 	margin: 23px auto;
@@ -963,6 +966,10 @@ header h2 span {
 
 #all .visualizacoes .icons.bolas {
 	background-position: -549px -16px;
+}
+
+#all .visualizacoes .icons.mapa {
+	background-position: -595px -17px;
 }
 
 #all .legenda {
@@ -1159,24 +1166,24 @@ header h2 span {
 	background: #f62048;
 }
 
-#all .metas .grid.eixo-1 li a h3 {
+#all .metas .grid.eixo-1 li a h3, #all .metas .grid li a.eixo-1 h3  {
 	background: #f62048;
 }
 
-#all .metas .grid.eixo-1 li a .texto {
+#all .metas .grid.eixo-1 li a .texto, #all .metas .grid li a.eixo-1 .texto {
 	border-bottom: 3px dashed #f62048;
 }
 
-#all .metas .grid li a .texto img {
+#all .metas .grid.eixo-1 li a .texto img, #all .metas .grid li a.eixo-1 .texto img{
 	display: block;
 	margin: 0 auto;
 }
 
-#all .metas .grid.eixo-1 li a .custo {
+#all .metas .grid.eixo-1 li a .custo, #all .metas .grid li a.eixo-1 .custo {
 	border-bottom: 2px solid #f62048;
 }
 
-#all .metas .grid.eixo-1 li a .comentarios .balao {
+#all .metas .grid.eixo-1 li a .comentarios .balao, #all .metas .grid li a.eixo-1 .comentarios .balao {
 	background-position: -3px -5px;
 }
 
@@ -1185,24 +1192,24 @@ header h2 span {
 	background: #93d521;
 }
 
-#all .metas .grid.eixo-2 li a h3 {
+#all .metas .grid.eixo-2 li a h3, #all .metas .grid li a.eixo-2 h3 {
 	background: #93d521;
 	text-align: right;
 }
 
-#all .metas .grid.eixo-2 li a .texto {
+#all .metas .grid.eixo-2 li a .texto, #all .metas .grid li a.eixo-2 .texto {
 	border-bottom: 3px dashed #93d521;
 }
 
-#all .metas .grid.eixo-2 li a .texto p {
+#all .metas .grid.eixo-2 li a .texto p, #all .metas .grid li a.eixo-2 .texto p {
 	color: #4a6252;
 }
 
-#all .metas .grid.eixo-2 li a .custo {
+#all .metas .grid.eixo-2 li a .custo, #all .metas .grid li a.eixo-2 .custo {
 	border-bottom: 2px solid #93d521;
 }
 
-#all .metas .grid.eixo-2 li a .comentarios .balao {
+#all .metas .grid.eixo-2 li a .comentarios .balao, #all .metas .grid li a.eixo-2 .comentarios .balao {
 	background-position: -53px -4px;
 }
 
@@ -1211,19 +1218,19 @@ header h2 span {
 	background: #12c2d2;
 }
 
-#all .metas .grid.eixo-3 li a h3 {
+#all .metas .grid.eixo-3 li a h3, #all .metas .grid li a.eixo-3 h3 {
 	background: #12c2d2;
 }
 
-#all .metas .grid.eixo-3 li a .texto {
+#all .metas .grid.eixo-3 li a .texto, #all .metas .grid li a.eixo-3 .texto {
 	border-bottom: 3px dashed #12c2d2;
 }
 
-#all .metas .grid.eixo-3 li a .custo {
+#all .metas .grid.eixo-3 li a .custo, #all .metas .grid li a.eixo-3 .custo {
 	border-bottom: 2px solid #12c2d2;
 }
 
-#all .metas .grid.eixo-3 li a .comentarios .balao {
+#all .metas .grid.eixo-3 li a .comentarios .balao, #all .metas .grid li a.eixo-3 .comentarios .balao {
 	background-position: -105px -5px;
 }
 
@@ -1537,4 +1544,429 @@ header h2 span {
 	display: block;
 	margin: 0 auto;
 	float: none;
+}
+
+/*RULES FOR MAP*/
+map > area,
+map > area:active,
+map > area:focus {outline: none; border:0; }
+
+#mapaSub{
+	position:relative;
+	float:left;
+	width:543px;
+	height:761px;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background:url(img/mapa.png) no-repeat;
+}
+#legenda{
+	float:left;
+	font-size:11px;
+	font-family:'Montserrat', Arial;
+	text-transform:uppercase;
+	color:#fff;
+	width:400px;
+	padding:0 0 0 0;
+	margin:10px 0 0 0;
+	
+}
+#legenda strong{
+	float:left;
+	background:#c1c1c1;
+	padding:5px;
+	margin:3px 0 0 3px;	
+}
+
+/* SUB PREFEITURAS */
+map{
+	z-index:3;
+	position:absolute;
+	float:left;
+}
+#mapaSub .subs div{
+	text-indent:-9999px;
+	cursor:pointer;
+	display:none;
+	font-size:12px;
+	font-family:'Montserrat', Arial;
+	text-transform:uppercase;
+}
+#mapaSub .subs div.active{
+	text-indent:1px;
+	float:left;
+	z-index:4;
+	position:absolute;
+	display:block!important;
+}
+#mapaSub .subs div.clicado{
+	display:block!important;
+}
+
+#mapaSub .mapeamento{
+	position:absolute; 
+	float:left; 
+	z-index:99;
+}
+#mapaSub .subs{
+	position:absolute; 
+	float:left; 
+	z-index:2;
+	
+}
+#mapaSub .perus{
+	background:url(img/perus.png) no-repeat;
+	width:121px;
+	height:96px;
+	float:left;
+	position:absolute;
+	top: 48px;
+	left: 55px;
+	padding:30px 0 0 20px;
+}
+#mapaSub .pirituba{
+	background:url(img/pirituba.png) no-repeat;
+	width:76px;
+	height:108px;
+	float:left;
+	position:absolute;
+	top: 81px;
+	left: 108px;
+	padding:35px 0 0 8px;	
+}
+#mapaSub .freguesia-do-o-brasilandia{
+	background:url(img/freguesia.png) no-repeat;
+	width:76px;
+	height:108px;
+	float:left;
+	position:absolute;
+	top: 81px;
+	left: 170px;
+	padding:35px 0 0 0px;
+}
+#mapaSub .casa-verde{
+	background:url(img/casa.png) no-repeat;
+	width:120px;
+	height:109px;
+	float:left;
+	position:absolute;
+	top: 83px;
+	left: 196px;
+	padding:35px 0 0 0px;	
+}
+#mapaSub .santana{
+	background:url(img/santana.png) no-repeat;
+	width:73px;
+	height:102px;
+	float:left;
+	position:absolute;
+	top: 92px;
+	left: 230px;
+	padding:35px 0 0 8px;		
+}
+#mapaSub .tremembe{
+	background:url(img/tremembe.png) no-repeat;
+	width:103px;
+	height:142px;
+	float:left;
+	position:absolute;
+	top: 14px;
+	left: 246px;
+	padding:40px 0 0 15px;
+	text-align:center;	
+}
+#mapaSub .vila-maria-guilherme{
+	background:url(img/maria.png) no-repeat;
+	width:110px;
+	height:64px;
+	float:left;
+	position:absolute;
+	top: 141px;
+	left: 265px;
+	padding:10px 0 0 0px;	
+	text-align:center;	
+}
+#mapaSub .penha{
+	background:url(img/penha.png) no-repeat;
+	width:87px;
+	height:90px;
+	float:left;
+	position:absolute;
+	top: 141px;
+	left: 331px;
+	padding:49px 0 0 5px;		
+}
+#mapaSub .ermelino{
+	background:url(img/ermelino.png) no-repeat;
+	width:53px;
+	height:57px;
+	float:left;
+	position:absolute;
+	top: 144px;
+	left: 368px;
+	padding:0 0 0 0;	
+}
+#mapaSub .sao-miguel{
+	background:url(img/miguel.png) no-repeat;
+	width:102px;
+	height:62px;
+	float:left;
+	position:absolute;
+	top: 137px;
+	left: 411px;
+	padding:18px 0 0 5px;	
+}
+#mapaSub .itaim-paulista{
+	background:url(img/itaim.png) no-repeat;
+	width:69px;
+	height:52px;
+	float:left;
+	position:absolute;
+	top: 150px;
+	left: 457px;
+	padding:18px 0 0 5px;	
+}
+#mapaSub .lapa{
+	background:url(img/lapa.png) no-repeat;
+	width:111px;
+	height:67px;
+	float:left;
+	position:absolute;
+	top: 171px;
+	left: 120px;
+	padding:18px 0 0 50px;		
+}
+#mapaSub .se{
+	background:url(img/se.png) no-repeat;
+	width:72px;
+	height:68px;
+	float:left;
+	position:absolute;
+	top: 191px;
+	left: 211px;
+	padding:18px 0 0 25px;		
+}
+#mapaSub .mooca{
+	background:url(img/mooca.png) no-repeat;
+	width:81px;
+	height:69px;
+	float:left;
+	position:absolute;
+	top: 193px;
+	left: 259px;
+	padding:18px 0 0 15px;	
+}
+#mapaSub .aricanduva{
+	background:url(img/aricanduva.png) no-repeat;
+	width:70px;
+	height:60px;
+	float:left;
+	position:absolute;
+	top: 210px;
+	left: 318px;
+	padding:18px 0 0 15px;		
+}
+#mapaSub .itaquera{
+	background:url(img/itaquera.png) no-repeat;
+	width:104px;
+	height:93px;
+	float:left;
+	position:absolute;
+	top: 185px;
+	left: 373px;
+	padding:45px 0 0 15px;		
+}
+#mapaSub .guaianases{
+	background:url(img/guaianazes.png) no-repeat;
+	width:54px;
+	height:58px;
+	float:left;
+	position:absolute;
+	top: 191px;
+	left: 458px;
+	padding:15px 0 0 15px;	
+}
+#mapaSub .butanta{
+	background:url(img/butanta.png) no-repeat;
+	width:120px;
+	height:76px;
+	float:left;
+	position:absolute;
+	top: 227px;
+	left: 76px;
+	padding:30px 0 0 25px;		
+}
+#mapaSub .pinheiros{
+	background:url(img/pinheiros.png) no-repeat;
+	width:86px;
+	height:99px;
+	float:left;
+	position:absolute;
+	top: 212px;
+	left: 151px;
+	padding:30px 0 0 25px;		
+}
+#mapaSub .vila-mariana{
+	background:url(img/mariana.png) no-repeat;
+	width:86px;
+	height:99px;
+	float:left;
+	position:absolute;
+	top: 248px;
+	left: 211px;
+	padding:10px 0 0 5px;		
+}
+#mapaSub .ipiranga{
+	background:url(img/ipiranga.png) no-repeat;
+	width:56px;
+	height:115px;
+	float:left;
+	position:absolute;
+	top: 247px;
+	left: 253px;
+	padding:40px 0 0 8px;	
+}
+#mapaSub .vila-prudente{
+	background:url(img/prudente.png) no-repeat;
+	width:76px;
+	height:45px;
+	float:left;
+	position:absolute;
+	text-align:center;
+	top: 252px;
+	left: 291px;
+	padding:10px 0 0 0;
+}
+#mapaSub .sapopemba{
+	background:url(img/sapopemba.png) no-repeat;
+	width:76px;
+	height:45px;
+	float:left;
+	position:absolute;
+	top: 263px;
+	left: 353px;
+	padding:29px 0 0 25px;			
+}
+#mapaSub .tiradentes{
+	background:url(img/tiradentes.png) no-repeat;
+	width:46px;
+	height:53px;
+	float:left;
+	position:absolute;
+	top: 238px;
+	left: 468px;
+}
+#mapaSub .mateus{
+	background:url(img/mateus.png) no-repeat;
+	width:112px;
+	height:73px;
+	float:left;
+	position:absolute;
+	top: 257px;
+	left: 383px;
+	padding:29px 0 0 5px;
+	text-align:center;	
+}
+#mapaSub .campo-limpo{
+	background:url(img/campo.png) no-repeat;
+	width:101px;
+	height:93px;
+	float:left;
+	position:absolute;
+	top: 296px;
+	left: 85px;
+	padding:35px 0 0 5px;	
+}
+#mapaSub .santo-amaro{
+	background:url(img/santo.png) no-repeat;
+	width:78px;
+	height:99px;
+	float:left;
+	position:absolute;
+	top: 294px;
+	left: 160px;
+	padding:29px 0 0 5px;		
+}
+#mapaSub .jabaquara{
+	background:url(img/jabaquara.png) no-repeat;
+	width:47px;
+	height:50px;
+	float:left;
+	position:absolute;
+	top: 315px;
+	left: 216px;
+	padding:10px 0 0 8px;	
+}
+#mapaSub .m-boi-mirim{
+	background:url(img/mirim.png) no-repeat;
+	width:82px;
+	height:126px;
+	float:left;
+	position:absolute;
+	top: 329px;
+	left: 85px;
+	padding:60px 0 0 8px;	
+}
+#mapaSub .socorro{
+	background:url(img/socorro.png) no-repeat;
+	width:121px;
+	height:213px;
+	float:left;
+	position:absolute;
+	top: 346px;
+	left: 156px;
+	padding:80px 0 0 8px;		
+}
+#mapaSub .cidade-ademar{
+	background:url(img/ademar.png) no-repeat;
+	width:70px;
+	height:93px;
+	float:left;
+	position:absolute;
+	top: 332px;
+	left: 203px;
+	padding:30px 0 0 12px;	
+}
+#mapaSub .parelheiros{
+	background:url(img/parelheiros.png) no-repeat;
+	width:209px;
+	height:297px;
+	float:left;
+	position:absolute;
+	top: 436px;
+	left: 77px;
+	padding:160px 0 0 70px;			
+}
+.colunaRegioes{
+	float:left;
+	width:430px;
+}
+.colunaRegioes h2{
+	background:url(img/bgSetaTitulo.jpg) no-repeat;
+	padding:0 0 0 40px;
+	font-family:'Tinos', verdana;
+	color:#595959;
+	font-weight:bold;
+	font-style:italic;
+	font-size:22px;
+}
+.colunaRegioes .selecionadas{
+	font-family:'Montserrat', verdana;
+	color:#000;
+	background:#fff;
+	padding:8px;
+	float:left;
+	font-size:13px;
+	margin:10px 0 0 0;
+}
+.colunaRegioes .limpar{
+	text-decoration:none;
+	color:#000;
+	background:#c1c1c1;
+	float:left;
+	padding:8px;
+	margin:10px 0 0 10px;
+	font-size:13px;
+	font-family:'Montserrat', verdana;	
+>>>>>>> mapa
 }

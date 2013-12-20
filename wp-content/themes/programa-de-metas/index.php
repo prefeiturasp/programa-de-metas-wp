@@ -176,7 +176,7 @@
                                                                     echo get_the_post_thumbnail($post->ID);    
                                                                 }
                                                             ?>
-                                                            <?php the_content();?>
+                                                            <p><?php echo remove_images(get_the_content());?></p>
                                                         </div>
                                                         <h4>Articulação territorial</h4>
                                                         <?php

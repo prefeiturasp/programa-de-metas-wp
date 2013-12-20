@@ -8,7 +8,7 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 	<h2>Meta <?php the_title();?></h2>
 	<div class="conteudo">
 		<div class="texto-meta">
-			<?php the_content();?>
+			<p><?php echo remove_images(get_the_content());?></p>
 		</div>
 		<?php
 			if (has_post_thumbnail($post->ID)) {
@@ -16,6 +16,7 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 			}
 		?>
 		
+		<div style="clear:both;"></div>
 		<?php
 			$eixo = wp_get_post_terms($post->ID, 'eixos');
 			if(!empty($eixo)):
@@ -106,6 +107,7 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 				?>
 			</div>
 		</div>
+		<img src="<?php echo catch_that_image();?>" class="mapa" />
 	</div>
 </div>
 <?php wp_reset_query(); ?>

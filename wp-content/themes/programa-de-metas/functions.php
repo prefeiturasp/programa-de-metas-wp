@@ -1053,7 +1053,7 @@ function load_objetivos($tax_obj, $objetivo, $eixo, $tax_art = '', $tax_sec = ''
 											echo get_the_post_thumbnail($post->ID);    
 										}
 									?>
-									<?php the_content();?>
+									<p><?php echo remove_images(get_the_content());?></p>
 								</div>
 								<h4>Articulação territorial</h4>
 								<?php
@@ -1163,7 +1163,7 @@ function load_metas() {
 											echo get_the_post_thumbnail($post->ID);    
 										}
 									?>
-									<?php the_content();?>
+									<p><?php echo remove_images(get_the_content());?></p>
 								</div>
 								<h4>Articulação territorial</h4>
 								<?php
@@ -1336,4 +1336,24 @@ function get_post_data_bkp() {
 
 add_action('wp_ajax_get_post_by_id', 'get_post_data');
 add_action('wp_ajax_nopriv_get_post_by_id', 'get_post_data');
+
+function catch_that_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+	
+	// no image found display default image instead
+	if(empty($first_img)){
+		$first_img = "/images/default.jpg";
+	}
+	return $first_img;
+}
+
+function remove_images( $content ) {
+   $postOutput = preg_replace('/<img[^>]+./','', $content);
+   return $postOutput;
+}
 ?>

@@ -453,7 +453,6 @@ header h2 span {
 #all .modal .content {
 	width: 100%;
 	background: #fff;
-	height: 1376px;
 }
 
 #all .modal h2 {
@@ -1533,4 +1532,10 @@ header h2 span {
 
 #container.bolinhas {
 	width: 1079px;
+}
+
+#all .modal .content .mapa {
+	display: block;
+	margin: 0 auto;
+	float: none;
 }

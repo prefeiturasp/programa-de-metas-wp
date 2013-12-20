@@ -837,7 +837,6 @@ header h2 span {
 	color: #000;
 	font-size: 20px;
 	font-weight: 700;
-	font-style: italic;
 	text-align: center;
 	margin-top: 57px;
 }
@@ -860,15 +859,19 @@ header h2 span {
 	float: left;
 }
 
+#all .eixos li {
+	margin-bottom: 13px;	
+}
+
 #all .eixos li a {
-	display: block;
+	display: table-cell;
 	width: 237px;
 	height: 63px;
-	margin-bottom: 13px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 700;
+	vertical-align: middle;
 }
 
 #all .eixos li a.current{
@@ -918,7 +921,7 @@ header h2 span {
 	position: absolute;
 	bottom: 15px;
 	font-weight: 700;
-	color: #fff;
+	color: #000;
 }
 
 #all .visualizacoes {
@@ -1164,13 +1167,9 @@ header h2 span {
 	border-bottom: 3px dashed #f62048;
 }
 
-#all .metas .grid.eixo-1 li a .texto img {
+#all .metas .grid li a .texto img {
 	display: block;
 	margin: 0 auto;
-}
-
-#all .metas .grid.eixo-1 li a .texto p {
-	color: #602626;
 }
 
 #all .metas .grid.eixo-1 li a .custo {

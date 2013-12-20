@@ -1346,9 +1346,6 @@ function catch_that_image() {
 	$first_img = $matches [1] [0];
 	
 	// no image found display default image instead
-	if(empty($first_img)){
-		$first_img = "/images/default.jpg";
-	}
 	return $first_img;
 }
 

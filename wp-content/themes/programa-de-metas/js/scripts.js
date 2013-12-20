@@ -158,13 +158,13 @@ PDM.loadMetasBySub = function(sub) {
         type:'POST',
 		data: 'action=load_by_sub&subprefeitura=' + sub,
         success: function(response){
-			/*$('.metas .loader').remove();
+			$('.metas .loader').remove();
 			if (typeof replace !== "undefined") {
 				$('.metas').html(response);
 			} else {
 				$('.metas').append(response);
 			}
-			PDM.init();*/
+			PDM.init();
         }  
     });
 };

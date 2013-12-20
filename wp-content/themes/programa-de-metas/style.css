@@ -1159,24 +1159,24 @@ header h2 span {
 	background: #f62048;
 }
 
-#all .metas .grid.eixo-1 li a h3 {
+#all .metas .grid.eixo-1 li a h3, #all .metas .grid li a.eixo-1 h3  {
 	background: #f62048;
 }
 
-#all .metas .grid.eixo-1 li a .texto {
+#all .metas .grid.eixo-1 li a .texto, #all .metas .grid li a.eixo-1 .texto {
 	border-bottom: 3px dashed #f62048;
 }
 
-#all .metas .grid.eixo-1 li a .texto img {
+#all .metas .grid.eixo-1 li a .texto img, #all .metas .grid li a.eixo-1 .texto img{
 	display: block;
 	margin: 0 auto;
 }
 
-#all .metas .grid.eixo-1 li a .custo {
+#all .metas .grid.eixo-1 li a .custo, #all .metas .grid li a.eixo-1 .custo {
 	border-bottom: 2px solid #f62048;
 }
 
-#all .metas .grid.eixo-1 li a .comentarios .balao {
+#all .metas .grid.eixo-1 li a .comentarios .balao, #all .metas .grid li a.eixo-1 .comentarios .balao {
 	background-position: -3px -5px;
 }
 

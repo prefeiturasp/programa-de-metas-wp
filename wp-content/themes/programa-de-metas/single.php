@@ -107,9 +107,8 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 				?>
 			</div>
 		</div>
-		<?php if(!empty(catch_that_image())):?>
-			<img src="<?php echo catch_that_image();?>" class="mapa" />
-		<?php endif;?>
+		
+		<img src="<?php echo catch_that_image();?>" class="mapa" />
 	</div>
 </div>
 <?php wp_reset_query(); ?>

@@ -61,6 +61,7 @@ PDM.init = function() {
 		e.preventDefault();
 		$('#action').attr('value', $(this).attr('data-action'));
 		if ($(this).hasClass('bolas')) {
+			$('#container').addClass('bolinhas');
 			$('.metas').addClass('bolinhas');
 			$('.filters').hide();
 			$('.legenda').show();

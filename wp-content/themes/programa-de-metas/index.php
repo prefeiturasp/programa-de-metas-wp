@@ -28,7 +28,7 @@
             </div>
         </div>
         
-        <div class="content">
+        <div class="content" id="container">
             <h1 class="logo">
                 <a href="http://programademetas.info"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-programa-de-metas.png"><a/>
             </h1>

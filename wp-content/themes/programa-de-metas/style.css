@@ -1201,10 +1201,6 @@ header h2 span {
 	border-bottom: 3px dashed #93d521;
 }
 
-#all .metas .grid.eixo-2 li a .texto p, #all .metas .grid li a.eixo-2 .texto p {
-	color: #4a6252;
-}
-
 #all .metas .grid.eixo-2 li a .custo, #all .metas .grid li a.eixo-2 .custo {
 	border-bottom: 2px solid #93d521;
 }

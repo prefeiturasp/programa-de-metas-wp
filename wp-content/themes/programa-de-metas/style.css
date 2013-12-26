@@ -538,6 +538,10 @@ header h2 span {
 	margin-top: 25px;
 }
 
+#all .modal .box.cronograma .borda {
+	margin-top: 3px;
+}
+
 #all .modal .box .right {
 	float: right;
 	margin-right: 32px;

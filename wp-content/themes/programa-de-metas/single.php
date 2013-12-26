@@ -93,6 +93,8 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 				?>
 			</div>
 			
+			<div class="borda"></div>
+			
 			<div class="right">
 				<h4>2015 - 2016</h4>
 				<?php

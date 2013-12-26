@@ -475,7 +475,7 @@ header h2 span {
 }
 
 #all .modal .texto-meta {
-	width: 765px;
+	width: 706px;
 	height: 88px;
 	border-bottom: 3px dashed #f62048;
 	float: left;
@@ -535,7 +535,8 @@ header h2 span {
 }
 
 #all .modal .box h4 {
-	text-transform: none;	
+	text-transform: none;
+	text-align: center;
 }
 
 #all .modal .box p {

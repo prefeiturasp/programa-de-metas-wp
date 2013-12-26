@@ -59,9 +59,9 @@ PDM.init = function() {
 	
 	$('.icons').click(function(e) {
 		e.preventDefault();
+		$('#action').attr('value', $(this).attr('data-action'));
 		var form = $('#filtros');
 		var data = $(form).serialize();
-		$('#action').attr('value', $(this).attr('data-action'));
 		if ($(this).hasClass('mapa')) {
 			$('#container').addClass('mapa');
 			$('.filters').hide();

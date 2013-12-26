@@ -1291,7 +1291,7 @@ header h2 span {
 	bottom: 0;
 }
 
-#all .metas.bolinhas ul li .objetivo {
+#all .metas.bolinhas ul li .bolinha-objetivo {
 	text-indent: 0;
 	background: none;
 	text-align: center;
@@ -1397,7 +1397,7 @@ header h2 span {
 
 #all .metas.bolinhas ul.eixo-1 li a {
 	background-position: -155px 1px;
-	left: 28px;
+	/*left: 28px;*/
 }
 
 #all .metas.bolinhas ul.eixo-2 li a {

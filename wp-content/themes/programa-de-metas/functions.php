@@ -914,7 +914,7 @@ function load_metas_filter_bolinhas() {
 				?>
 				<ul class="<?php echo $eixo;?>" <?php echo ($i == 12) ? 'style="margin-left: 29px;"' :'' ?>>
 						<li>
-							<a href="" class="objetivo">
+							<a href="" class="bolinha-objetivo">
 								<div class="img-container">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/icones/objetivo-<?php echo $objetivoNumero;?>.png"/>
 								</div>

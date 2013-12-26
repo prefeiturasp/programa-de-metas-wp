@@ -886,6 +886,7 @@ add_action('wp_ajax_load_metas_filter', 'load_metas_filter');
 add_action('wp_ajax_nopriv_load_metas_filter', 'load_metas_filter');
 
 function load_metas_filter_bolinhas() {
+	global $post;
 	$eixo = 'eixo-1';
 	for ($i=1; $i<=20; $i++) {
 		if ($i >= 12 && $i < 18) {

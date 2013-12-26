@@ -929,7 +929,7 @@ function load_metas_filter_bolinhas() {
 								<a href="javascript:void(0);" style="bottom:<?php echo $bottom . 'px';?>" alt="<?php the_title();?>" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $eixo;?>">
 									<div class="hover">
 										<div class="seta"></div>
-										<div class="texto"><?php echo get_the_content();?></div>
+										<div class="texto"><?php echo remove_images(get_the_content());?></div>
 									</div>
 								</a>
 							</li>
@@ -1229,7 +1229,14 @@ function load_by_sub() {
 					)
 				));
 				if($WP_query->have_posts()):
+					$nomeSub = get_term_by('slug', $sub, 'subprefeituras', ARRAY_A);
 				?>
+				<div class="nome-sub">
+					<?php if(!empty($nomeSub)):?>
+						<?php echo $nomeSub['name'];?>
+					<?php endif;?>
+				</div>
+				
 				<ul class="grid">
 				<?php
 				$i = 1;
@@ -1448,7 +1455,7 @@ function catch_that_image() {
 	return $first_img;
 }
 
-function remove_images( $content ) {
+function remove_images($content) {
    $postOutput = preg_replace('/<img[^>]+./','', $content);
    return $postOutput;
 }

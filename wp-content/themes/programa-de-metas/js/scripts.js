@@ -8,7 +8,7 @@ var PDM = PDM || {};
 	
 PDM.init = function() {
 	
-	/*$(window).scroll(function(){
+	$(window).scroll(function(){
         if($(window).scrollTop() == $(document).height() - $(window).height()){
 			if (!stopScroll) {
 				OBJ = OBJ + 1;
@@ -16,7 +16,7 @@ PDM.init = function() {
 				$(window).unbind('scroll');
 			}
 		}
-    });*/
+    });
 	
 	$('.metas.bolinhas .meta-single').hover(function(e) {
 		$(this).find('.hover').show();
@@ -59,22 +59,27 @@ PDM.init = function() {
 	
 	$('.icons').click(function(e) {
 		e.preventDefault();
+		var form = $('#filtros');
+		var data = $(form).serialize();
 		$('#action').attr('value', $(this).attr('data-action'));
 		if ($(this).hasClass('mapa')) {
+			$('#container').addClass('mapa');
 			$('.filters').hide();
+			$('.container-mapa').show();
 			$('.metas').empty();
 		} else if ($(this).hasClass('bolas')) {
 			$('.metas').addClass('bolinhas');
+			$('#container').css('width', '1069px');
 			$('.filters').hide();
 			$('.legenda').show();
+			PDM.loadMetasByFilter(data);
 		} else {
 			$('.metas').removeClass('bolinhas');
 			$('.filters').show();
 			$('.legenda').hide();
+			$('.container-mapa').hide();
+			PDM.loadMetasByFilter(data);
 		}
-		var form = $('#filtros');
-		var data = $(form).serialize();
-		PDM.loadMetasByFilter(data);
 	});
 	
 	$('#filtros').submit(function(e) {
@@ -140,7 +145,7 @@ PDM.loadMetas = function(replace) {
 	var loader = '<div class="loader"><img src="'+templateUrl+'/img/ajax-loader.gif" /></div>';
 	$('.metas').append(loader);
 	$.ajax({  
-        url: wpAjaxUrl,  
+        url: wpAjaxUrl,
         type:'POST',
 		data: 'action=infinite_scroll&objetivo=objetivo-' + OBJ,
         success: function(response){

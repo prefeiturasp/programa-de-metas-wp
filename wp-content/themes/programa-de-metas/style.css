@@ -1013,7 +1013,7 @@ header h2 span {
 	margin-top: -36px;
 	height: 834px;
 	float: left;
-	padding-bottom: 25px;
+	padding-bottom: 105px;
 }
 
 #all .metas .objetivo {
@@ -1967,6 +1967,19 @@ map{
 	padding:8px;
 	margin:10px 0 0 10px;
 	font-size:13px;
-	font-family:'Montserrat', verdana;	
->>>>>>> mapa
+	font-family:'Montserrat', verdana;
+}
+
+.container-mapa {
+	display: none;
+}
+
+.nome-sub {
+	font-size: 21px;
+	color: #212121;
+	font-style: italic;
+	font-weight: 400;
+	float: left;
+	width: 100%;
+	margin: 56px 0px 51px 0px;
 }

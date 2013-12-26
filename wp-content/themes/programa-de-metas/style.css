@@ -1174,7 +1174,7 @@ header h2 span {
 	border-bottom: 3px dashed #f62048;
 }
 
-#all .metas .grid.eixo-1 li a .texto img, #all .metas .grid li a.eixo-1 .texto img{
+#all .metas .grid.eixo-1 li a .texto img, #all .metas .grid li a .texto img{
 	display: block;
 	margin: 0 auto;
 }

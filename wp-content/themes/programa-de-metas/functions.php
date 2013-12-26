@@ -912,7 +912,7 @@ function load_metas_filter_bolinhas() {
 			));
 			if ($WP_query->have_posts()) {
 				?>
-				<ul class="<?php echo $eixo;?>" <?php echo ($i == 12) ? 'style="margin-left: 29px;"' :'' ?>>
+				<ul class="<?php echo $eixo;?>">
 						<li>
 							<a href="" class="bolinha-objetivo">
 								<div class="img-container">

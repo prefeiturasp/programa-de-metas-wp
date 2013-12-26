@@ -63,6 +63,7 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 				<p class="descricao"><?php echo get_post_meta($post->ID, 'meta_termos_tecnicos', true);?></p>
 			</div>
 			
+			<div class="borda"></div>
 			<div class="right">
 				<h4>O que vai ser entregue?</h4>
 				<p class="descricao"><?php echo get_post_meta($post->ID, 'meta_entregue', true);?></p>

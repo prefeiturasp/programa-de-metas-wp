@@ -529,9 +529,18 @@ header h2 span {
 	margin-left: 52px;
 }
 
+#all .modal .box .borda {
+	width: 1px;
+	height: 65%;
+	background: #000;
+	float: left;
+	margin-left: 44px;
+	margin-top: 25px;
+}
+
 #all .modal .box .right {
 	float: right;
-	margin-right: 52px;
+	margin-right: 32px;
 }
 
 #all .modal .box h4 {
@@ -683,6 +692,9 @@ header h2 span {
 	background: #f62048;
 }
 
+#all .modal.eixo-1 .box .borda {
+	background: #f62048;
+}
 /*EIXO 2*/
 #all .modal.eixo-2 {
 	background: none;	
@@ -700,6 +712,10 @@ header h2 span {
 	border: 1px solid #93d521;
 }
 
+#all .modal.eixo-2 .box .borda {
+	background: #93d521;
+}
+
 /*EIXO 3*/
 #all .modal.eixo-3 {
 	background: none;
@@ -715,6 +731,10 @@ header h2 span {
 
 #all .modal.eixo-3 .box {
 	border: 1px solid #12c2d2;
+}
+
+#all .modal.eixo-3 .box .borda {
+	background: #12c2d2;
 }
 
 #all .modal .comentarios {
@@ -929,7 +949,7 @@ header h2 span {
 }
 
 #all .visualizacoes {
-	width: 192px;
+	width: 161px;
 	height: 37px;
 	background: #b5b5b5;
 	margin: 23px auto;

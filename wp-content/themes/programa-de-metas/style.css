@@ -483,7 +483,7 @@ header h2 span {
 
 #all .modal .conteudo img {
 	display: block;
-	float: left;
+	float: right;
 }
 
 #all .modal .texto-meta p {

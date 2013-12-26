@@ -48,7 +48,7 @@ Template Name: Objetivos e Metas
 		
 		<img src="<?php echo get_template_directory_uri(); ?>/img/objetivos-e-metas/fluxo.png" class="fluxo"/>
 		
-		<p class="normal">
+		<p class="normal last">
 			Cada eixo apresenta um conjunto de objetivos estratégicos que apontam aspectos importantes para a melhoria da vida na cidade de<br />
 			São Paulo. As metas são algumas das iniciativas que possibilitarão o alcance desses objetivos, sendo possível seu o monitoramento<br />
 			através dos indicadores referentes a cada um deles.

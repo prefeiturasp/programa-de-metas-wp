@@ -18,11 +18,11 @@ PDM.init = function() {
 		}
     });
 	
-	$('.metas.bolinhas .meta-single').hover(function(e) {
+	$('.metas.bolinhas .meta-single').mouseenter(function(e) {
 		$(this).find('.hover').show();
 	});
 	
-	$('.metas.bolinhas .meta-single').mouseout(function(e) {
+	$('.metas.bolinhas .meta-single').mouseleave(function(e) {
 		$(this).find('.hover').hide();
 	});
 	
@@ -31,6 +31,7 @@ PDM.init = function() {
 		window.history.pushState('Meta ' + $(this).attr('data-post'), 'Meta ' + $(this).attr('data-post'), '?pid=' + $(this).attr('data-post'));
 		PDM.getPost($(this).attr('data-post'));
 		$('.modal').empty();
+		$('.modal').removeClass('eixo-1 eixo-2 eixo-3');
 		$('.modal').addClass($(this).attr('data-eixo'));
 	})
 	
@@ -59,7 +60,9 @@ PDM.init = function() {
 	
 	$('.icons').click(function(e) {
 		e.preventDefault();
+		$('.icons').removeClass('active');
 		$('#action').attr('value', $(this).attr('data-action'));
+		$(this).addClass('active');
 		var form = $('#filtros');
 		var data = $(form).serialize();
 		if ($(this).hasClass('mapa')) {
@@ -69,7 +72,7 @@ PDM.init = function() {
 			$('.metas').empty();
 		} else if ($(this).hasClass('bolas')) {
 			$('.metas').addClass('bolinhas');
-			$('#container').css('width', '1069px');
+			//$('#container').css('width', '1069px');
 			$('.filters').hide();
 			$('.legenda').show();
 			PDM.loadMetasByFilter(data);
@@ -94,6 +97,7 @@ PDM.init = function() {
 		$('.modal').fadeOut();
 		$('.modal').empty();
 		$('.mask').fadeOut();
+		window.history.pushState('', '', blogUrl);
 	});
 	
 	$('#reset-form').click(function(e) {

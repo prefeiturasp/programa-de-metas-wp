@@ -509,12 +509,13 @@ header h2 span {
 
 #all .modal .box {
 	width: 99%;
-	height: 403px;
+	min-height: 242px;
 	border: 1px solid #f62048;
 }
 
 #all .modal .box.cronograma {
 	height: 243px;
+	margin-bottom: 25px;
 }
 
 #all .modal .box .titulo {
@@ -531,11 +532,10 @@ header h2 span {
 
 #all .modal .box .borda {
 	width: 1px;
-	height: 65%;
+	height: 151px;
 	background: #000;
 	float: left;
-	margin-left: 44px;
-	margin-top: 25px;
+	margin: 9px 0px 0px 44px;
 }
 
 #all .modal .box.cronograma .borda {
@@ -989,8 +989,16 @@ header h2 span {
 	background-position: -503px -16px;
 }
 
+#all .visualizacoes .icons.quadros:hover, #all .visualizacoes .icons.quadros.active {
+	background-position: -503px -46px;
+}
+
 #all .visualizacoes .icons.bolas {
 	background-position: -549px -16px;
+}
+
+#all .visualizacoes .icons.bolas:hover, #all .visualizacoes .icons.bolas.active {
+	background-position: -549px -46px;
 }
 
 #all .visualizacoes .icons.mapa {
@@ -1001,7 +1009,7 @@ header h2 span {
 	width: 231px;
 	height: 32px;
 	margin: -10px auto;
-	display: none;
+	display: block;
 }
 
 #all .legenda ul {
@@ -1294,7 +1302,7 @@ header h2 span {
 #all .metas.bolinhas ul {
 	list-style: none;
 	padding: 0;
-	width: 52px;
+	width: 48px;
 	height: 100%;
 	float: left;
 	background: none;
@@ -2007,4 +2015,8 @@ map{
 	float: left;
 	width: 100%;
 	margin: 56px 0px 51px 0px;
+}
+
+.clear {
+	clear: both;
 }

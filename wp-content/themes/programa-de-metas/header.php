@@ -21,6 +21,7 @@
 		<script type="text/javascript">
 			var wpAjaxUrl = '<?php echo admin_url('admin-ajax.php');?>';
 			var templateUrl = '<?php echo get_template_directory_uri(); ?>';
+			var blogUrl = '<?php echo bloginfo('url');?>';
 		</script>
 		
 		<script>(function(d, s, id) {

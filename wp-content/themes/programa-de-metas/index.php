@@ -211,13 +211,13 @@
                 </div>
             </div>
             
-            <div class="legenda">
+            <!--div class="legenda">
                 <ul>
                     <li class="eixo-1">Eixo 1</li>
                     <li class="eixo-2">Eixo 2</li>
                     <li class="eixo-3 last">Eixo 3</li>
                 </ul>
-            </div>
+            </div-->
             
             <div class="metas">
                 <?php

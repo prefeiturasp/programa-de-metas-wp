@@ -68,6 +68,8 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 				<h4>O que vai ser entregue?</h4>
 				<p class="descricao"><?php echo get_post_meta($post->ID, 'meta_entregue', true);?></p>
 			</div>
+			
+			<div class="clear"></div>
 		</div>
 		
 		<h4>Observações</h4>
@@ -109,6 +111,8 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 					endif;
 				?>
 			</div>
+			
+			<div class="clear"></div>
 		</div>
 		
 		<img src="<?php echo catch_that_image();?>" class="mapa" />

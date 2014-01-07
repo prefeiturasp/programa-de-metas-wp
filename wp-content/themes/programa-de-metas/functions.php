@@ -919,6 +919,9 @@ function load_metas_filter_bolinhas() {
 									<img src="<?php echo get_template_directory_uri(); ?>/img/icones/objetivo-<?php echo $objetivoNumero;?>.png"/>
 								</div>
 								<span><?php echo $objetivoNumero;?></span>
+								<div class="hover-objetivo">
+									<div class="seta"></div>
+								</div>
 							</a>
 						</li>
 					<?php

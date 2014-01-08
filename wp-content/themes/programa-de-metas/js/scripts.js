@@ -26,6 +26,15 @@ PDM.init = function() {
 		$(this).find('.hover').hide();
 	});
 	
+	$('.metas.bolinhas .bolinha-objetivo').mouseenter(function(e) {
+		$(this).find('.hover-objetivo').show();
+	});
+	
+	$('.metas.bolinhas .bolinha-objetivo').mouseleave(function(e) {
+		$(this).find('.hover-objetivo').hide();
+	});
+	
+	
 	$('.meta-single').click(function(e) {
 		e.preventDefault();
 		window.history.pushState('Meta ' + $(this).attr('data-post'), 'Meta ' + $(this).attr('data-post'), '?pid=' + $(this).attr('data-post'));

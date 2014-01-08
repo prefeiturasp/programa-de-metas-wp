@@ -897,6 +897,7 @@ function load_metas_filter_bolinhas() {
 		$objetivo = get_term_by('slug', 'objetivo-' . $i, 'objetivos', ARRAY_A);
 		if (!empty($objetivo)) {
 			$objetivoNumero = explode('-', $objetivo['slug']);
+			$objetivoDescription = $objetivo['description'];
 			$objetivoNumero = $objetivoNumero[1];
 			$WP_query = new WP_Query(array('post_type' => 'metas',
 				'order' => 'ASC',
@@ -921,6 +922,10 @@ function load_metas_filter_bolinhas() {
 								<span><?php echo $objetivoNumero;?></span>
 								<div class="hover-objetivo">
 									<div class="seta"></div>
+									<div class="text">
+										<h3>Objetivo <?php echo $objetivoNumero;?></h3>
+										<p><?php echo $objetivoDescription;?></p>
+									</div>
 								</div>
 							</a>
 						</li>

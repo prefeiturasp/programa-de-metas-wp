@@ -954,7 +954,7 @@ header h2 span {
 }
 
 #all .visualizacoes {
-	width: 161px;
+	width: 185px;
 	height: 37px;
 	background: #b5b5b5;
 	margin: 23px auto;
@@ -1004,6 +1004,10 @@ header h2 span {
 
 #all .visualizacoes .icons.mapa {
 	background-position: -595px -17px;
+}
+
+#all .visualizacoes .icons.mapa:hover, #all .visualizacoes .icons.mapa.active{
+	background-position: -595px -45px;
 }
 
 #all .legenda {

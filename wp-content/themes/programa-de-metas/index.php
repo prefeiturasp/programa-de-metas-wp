@@ -125,7 +125,7 @@
                 <span class="label">Visualização</span>
                 <a href="javascript:void(0);" data-action="load_metas_filter" class="icons first quadros">Quadros</a>
                 <a href="javascript:void(0);" data-action="load_metas_filter_bolinhas" class="icons bolas">Bolinhas</a>
-                <!--a href="javascript:void(0);" data-action="load_metas_filter_mapa" class="icons mapa">Mapa</a-->
+                <a href="javascript:void(0);" data-action="load_metas_filter_mapa" class="icons mapa">Mapa</a>
             </div>
              
             <div class="container-mapa">

@@ -3,7 +3,7 @@ if (typeof currentOBJ !== "undefined") {
 	OBJ = currentOBJ;
 }
 var filters = '';
-stopScroll = false;
+var stopScroll = false;
 var PDM = PDM || {};
 	
 PDM.init = function() {
@@ -11,8 +11,10 @@ PDM.init = function() {
 	$(window).scroll(function(){
         if($(window).scrollTop() == $(document).height() - $(window).height()){
 			if (!stopScroll) {
-				OBJ = OBJ + 1;
-				PDM.loadMetas();
+				if (OBJ <= 20) {
+					OBJ = OBJ + 1;
+					PDM.loadMetas();
+				}
 				$(window).unbind('scroll');
 			}
 		}
@@ -75,6 +77,7 @@ PDM.init = function() {
 		var form = $('#filtros');
 		var data = $(form).serialize();
 		if ($(this).hasClass('mapa')) {
+			stopScroll = true;
 			$('#container').addClass('mapa');
 			$('.filters').hide();
 			$('.container-mapa').show();
@@ -139,9 +142,7 @@ PDM.getPost = function(id, eixo) {
 };
 
 PDM.loadMetasByFilter = function(target) {
-	$(window).unbind('scroll');
 	var loader = '<div class="loader"><img src="'+templateUrl+'/img/ajax-loader.gif" /></div>';
-	//$('.metas .loader').remove();
 	$('.metas').html(loader);
 	$.ajax({  
         url: wpAjaxUrl,  
@@ -254,7 +255,8 @@ $(document).ready(function() {
 	});
 	$('.limpar').click(function(){
 		$('#legenda strong').remove();
+		$('.metas').empty();
 		$(".subs div").removeClass('clicado');	
-		$(".subs div").removeAttr('style');	
+		$(".subs div").removeAttr('style');
 	});
 });

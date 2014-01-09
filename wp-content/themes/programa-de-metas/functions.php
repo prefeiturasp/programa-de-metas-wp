@@ -1148,9 +1148,6 @@ function load_metas() {
 	} else {
 		$objetivo = get_terms('objetivos', array('orderby' => 'id', 'order' => 'ASC'));
 	}
-	foreach($objetivo as $o):
-		
-	endforeach;
 	
 	$WP_query = new WP_Query(array('post_type' => 'metas',
 		'order' => 'ASC',
@@ -1223,6 +1220,7 @@ function load_metas() {
 		</ul>
 	<?php
 	endif;
+	die();
 }
 
 add_action('wp_ajax_infinite_scroll', 'load_metas');

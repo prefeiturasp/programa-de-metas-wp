@@ -39,11 +39,16 @@
 			'terms' => $articulacao
 		);	
     }
+    $meta = '';
+    if (!empty($_GET['meta'])) {
+        $meta = $_GET['meta'];
+    }
     
     $WP_query = new WP_Query(array('post_type' => 'metas',
         'order' => 'ASC',
         'orderby' => 'date',
         'posts_per_page' => -1,
+        'name' => $meta,
         'tax_query' => $taxParams
     ));
     
@@ -71,13 +76,21 @@
                 $eixo = $eixo[0]->name;    
             }
             
+            $oque_vai_ser_entregue = get_post_meta($post->ID, 'meta_entregue', true);
+            $custo_total = get_post_meta($post->ID, 'meta_custo_total', true);
+            
             $metas[] = array(
                 'titulo' => get_the_title(),
-                //'texto' => get_the_content(),
+                'texto' => remove_images(get_the_content()),
                 'articulacao' => $articulacao,
                 'secretaria' => $secretaria,
                 'eixo' => $eixo,
-                'objetivo' => $objetivo
+                'objetivo' => $objetivo,
+                'o_que_vai_ser_entregue' => $oque_vai_ser_entregue,
+                'custo_total' => $custo_total,
+                'cronograma_2013_2014' => explode(',', get_post_meta($post->ID, 'meta_cronograma_1', true)),
+                'cronograma_2015_2016' => explode(',', get_post_meta($post->ID, 'meta_cronograma_2', true)),
+                'observacoes' => get_post_meta($post->ID, 'meta_observacoes', true)
             );
         }
     }

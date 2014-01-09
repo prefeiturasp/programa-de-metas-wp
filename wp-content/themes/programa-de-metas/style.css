@@ -33,6 +33,7 @@ html {
 body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#444;
+	overflow-x: hidden;
 }
 /* clear */
 .clear:before,

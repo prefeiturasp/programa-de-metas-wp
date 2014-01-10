@@ -128,14 +128,16 @@ PDM.getPost = function(id, eixo) {
 			if (typeof eixo !== "undefined") {
 				$('.modal').addClass(eixo);	
 			}
+			
+			var top = Math.max(0, (($(window).height() - $('.modal').outerHeight()) / 2) + $(window).scrollTop());
             $('.modal').html(response);
 			$('.modal').css("position","absolute");
-			$('.modal').css("top", Math.max(0, (($(window).height() - $('.modal').outerHeight()) / 2) + 
-                                                $(window).scrollTop()) + "px");
+			$('.modal').css("top", top);
 			$('.modal').css("left", Math.max(0, (($(window).width() - $('.modal').outerWidth()) / 2) + 
                                                 $(window).scrollLeft()) + "px");
 			$('.mask').fadeIn();
 			$('.modal').fadeIn();
+			$('body').scrollTop(top);
 			PDM.init();
         }  
     });

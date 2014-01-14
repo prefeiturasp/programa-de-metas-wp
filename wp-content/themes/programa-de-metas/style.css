@@ -954,7 +954,7 @@ header h2 span {
 }
 
 #all .visualizacoes {
-	width: 185px;
+	width: 331px;
 	height: 37px;
 	background: #b5b5b5;
 	margin: 23px auto;
@@ -1008,6 +1008,26 @@ header h2 span {
 
 #all .visualizacoes .icons.mapa:hover, #all .visualizacoes .icons.mapa.active{
 	background-position: -595px -45px;
+}
+
+#all .visualizacoes .dev {
+	color: #fff;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 3.7;
+	display: block;
+	float: left;
+}
+
+#all .visualizacoes .dev-ico {
+	width: 30px;
+	height: 30px;
+	background: url(img/sprite.png) no-repeat;
+	display: block;
+	background-position: -701px -18px;
+	float: left;
+	margin: 3px 0px 0px 6px;
 }
 
 #all .legenda {

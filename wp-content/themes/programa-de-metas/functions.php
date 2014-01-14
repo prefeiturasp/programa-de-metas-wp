@@ -920,7 +920,7 @@ function load_metas_filter_bolinhas() {
 									<img src="<?php echo get_template_directory_uri(); ?>/img/icones/objetivo-<?php echo $objetivoNumero;?>.png"/>
 								</div>
 								<span><?php echo $objetivoNumero;?></span>
-								<div class="hover-objetivo">
+								<div class="hover-objetivo <?php echo ($objetivoNumero >= 11) ? 'inverse' : '';?>">
 									<div class="seta"></div>
 									<div class="text">
 										<h3>Objetivo <?php echo $objetivoNumero;?></h3>
@@ -954,9 +954,20 @@ function load_metas_filter_bolinhas() {
 	?>
 	<div class="legenda">
 		<ul>
-			<li class="eixo-1">Eixo 1</li>
-			<li class="eixo-2">Eixo 2</li>
-			<li class="eixo-3 last">Eixo 3</li>
+			<?php
+				$eixos = filter_eixos();
+				foreach($eixos as $eixo):
+				?>
+					<li class="<?php echo $eixo['slug'];?>">
+						<?php echo $eixo['name'];?>
+						<div class="eixo-hover">
+							<div class="text"><?php echo $eixo['description'];?></div>
+							<div class="seta"></div>
+						</div>
+					</li>
+				<?php
+				endforeach;
+			?>
 		</ul>
 	</div>
 	<?php

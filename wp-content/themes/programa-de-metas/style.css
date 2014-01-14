@@ -1070,6 +1070,48 @@ header h2 span {
 	width: 132px;
 }
 
+#all .metas.bolinhas .legenda ul li.eixo-1 .eixo-hover {
+	width: 300px;
+	height: 120px;
+	position: absolute;
+	top: -112px;
+	left: 70px;
+}
+
+#all .metas.bolinhas .legenda ul li .eixo-hover .seta {
+	width: 32px;
+	height: 33px;
+	position: absolute;
+	right: -1px;
+	bottom: -10px;
+	background: url(img/sprite.png) no-repeat;
+}
+
+#all .metas.bolinhas .legenda ul li .eixo-hover .text {
+	width: 100%;
+	height: 98px;
+	position: absolute;
+	top: 0px;
+	line-height: 1;
+	padding-top: 38px;
+}
+
+#all .metas.bolinhas .legenda ul li.eixo-1 .eixo-hover .seta {
+	background-position: -349px -19px;
+}
+
+#all .metas.bolinhas .legenda ul li.eixo-1 .eixo-hover .text {
+	background: #f62048;
+}
+
+#all .metas.bolinhas .legenda ul li.eixo-2 .eixo-hover .seta {
+	background-position: -349px -19px;
+}
+
+#all .metas.bolinhas .legenda ul li.eixo-2 .eixo-hover .text {
+	background: #93d521;
+}
+
 #all .metas {
 	margin-top: 23px;	
 }
@@ -1374,14 +1416,29 @@ header h2 span {
 	z-index: 1;
 }
 
+#all .metas.bolinhas ul li .bolinha-objetivo .hover-objetivo.inverse {
+	left: -271px;
+}
+
 #all .metas.bolinhas ul li .bolinha-objetivo .seta {
 	width: 28px;
 	height: 50px;
 	background: url(img/sprite.png) no-repeat;
-	bottom: -3px;
+	bottom: -2px;
 	left: 0;
 	background-position: -647px 8px;
 	position: absolute;
+}
+
+#all .metas.bolinhas ul li .bolinha-objetivo .hover-objetivo.inverse .seta {
+	height: 27px;
+	right: 0px;
+	background-position: -652px -51px;
+	left: auto;
+}
+
+#all .metas.bolinhas ul li .bolinha-objetivo .hover-objetivo.inverse .text {
+	left: 0px
 }
 
 #all .metas.bolinhas ul li .bolinha-objetivo .text {

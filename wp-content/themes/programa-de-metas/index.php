@@ -34,7 +34,7 @@
             </h1>
             
             <p class="intro">
-                Reduzir as desigualdades em uma cidade do tamanho e da complexidade de São Paulo não é tarefa fácil. O Programa de Metas 2013-2016 reconhece os limites de seu horizonte temporal para fazer frente a uma história de ações desordenadas e concentradoras sobre o território paulistano. Ao mesmo tempo, propõe-se a dar os primeiros passos no caminho da construção de um processo de planejamento participativo e transparente que aponte os eixos de superaçãodas desigualdades sociais, econômicas e regionais.
+                Reduzir as desigualdades em uma cidade do tamanho e da complexidade de São Paulo não é tarefa fácil. O Programa de Metas 2013-2016 reconhece os limites de seu horizonte temporal para fazer frente a uma história de ações desordenadas e concentradoras sobre o território paulistano. Ao mesmo tempo, propõe-se a dar os primeiros passos no caminho da construção de um processo de planejamento participativo e transparente que aponte os eixos de superação das desigualdades sociais, econômicas e regionais.
             </p>
             <a href="<?php echo bloginfo('url');?>/index.php/conheca-o-programa/" class="leia-mais">Saiba mais >></a>
            <!-- <p class="intro">

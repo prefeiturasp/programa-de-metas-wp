@@ -36,6 +36,14 @@ PDM.init = function() {
 		$(this).find('.hover-objetivo').hide();
 	});
 	
+	$('.metas.bolinhas .legenda li').mouseenter(function(e) {
+		$(this).find('.eixo-hover').show();
+	});
+	
+	$('.metas.bolinhas .legenda li').mouseleave(function(e) {
+		$(this).find('.eixo-hover').hide();
+	});
+	
 	
 	$('.meta-single').click(function(e) {
 		e.preventDefault();

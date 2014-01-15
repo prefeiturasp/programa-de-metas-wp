@@ -938,7 +938,7 @@ function load_metas_filter_bolinhas() {
 								<a href="javascript:void(0);" style="bottom:<?php echo $bottom . 'px';?>" alt="<?php the_title();?>" class="meta-single" data-post="<?php echo $post->ID;?>" data-eixo="<?php echo $eixo;?>">
 									<div class="hover">
 										<div class="seta"></div>
-										<div class="texto"><?php echo remove_images(get_the_content());?></div>
+										<div class="texto"><?php echo get_the_title() . ' - '?><?php echo remove_images(get_the_content());?></div>
 									</div>
 								</a>
 							</li>
@@ -1148,9 +1148,13 @@ function load_metas() {
 	if (!empty($_POST['objetivo'])) {
 		$objetivo = get_term_by('slug', $_POST['objetivo'], 'objetivos');
 		$splitedObj = explode('-', $objetivo->slug);
-		if ($splitedObj[1] >= 12) {
+		
+		if ($splitedObj[1] >= 12 && $splitedObj[1] < 18) {
 			$eixo = 'eixo-2';
+		} else if ($splitedObj[1] >= 18) {
+			$eixo = 'eixo-3';
 		}
+		
 		$tax_query[] = array(
 			'taxonomy' => 'objetivos',
 			'field' => 'slug',

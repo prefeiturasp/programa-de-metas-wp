@@ -50,9 +50,31 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 		<?php
 			$articulacao = wp_get_post_terms($post->ID, 'articulacoes');
 			if(!empty($articulacao)):
+				if(count($articulacao) > 1):
+					?>
+					<p class="descricao">
+						<?php
+							$i = 1;
+							foreach($articulacao as $a):
+							?>
+							<?php
+								if ($i < count($articulacao)) {
+									echo $a->name . ' / ';
+								} else {
+									echo $a->name;
+								}
+							?>
+						<?php
+								$i++;
+							endforeach;
+						?>
+					</p>
+					<?php
+				else:
 				?>
 					<p class="descricao"><?php echo $articulacao[0]->name;?></p>
 				<?php
+				endif;
 			endif;
 		?>	
 		
@@ -75,8 +97,13 @@ $terms = wp_get_post_terms($post->ID, 'metas-category');
 		<h4>Observações</h4>
 		<p class="descricao"><?php echo get_post_meta($post->ID, 'meta_observacoes', true);?></p>
 		
-		<h4>Custo total da meta</h4>
-		<p class="descricao"><?php echo get_post_meta($post->ID, 'meta_custo_total', true);?></p>
+		<?php
+			$custo = get_post_meta($post->ID, 'meta_custo_total', true);
+			if(!empty($custo)):
+		?>
+				<h4>Custo total da meta</h4>
+				<p class="descricao"><?php echo $custo;?></p>
+		<?php endif;?>
 		
 		<div class="box cronograma">
 			<h4 class="titulo">Cronograma de entrega</h4>

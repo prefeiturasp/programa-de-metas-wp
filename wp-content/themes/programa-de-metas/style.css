@@ -1056,6 +1056,7 @@ header h2 span {
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 2.6;
+	cursor: pointer;
 }
 
 #all .metas.bolinhas .legenda ul li.eixo-1 {
@@ -1070,12 +1071,21 @@ header h2 span {
 	width: 132px;
 }
 
-#all .metas.bolinhas .legenda ul li.eixo-1 .eixo-hover {
+#all .metas.bolinhas .legenda ul li .eixo-hover {
 	width: 300px;
 	height: 120px;
 	position: absolute;
 	top: -112px;
 	left: 70px;
+	display: none;
+}
+
+#all .metas.bolinhas .legenda ul li.eixo-2 .eixo-hover {
+	left: 465px;
+}
+
+#all .metas.bolinhas .legenda ul li.eixo-3 .eixo-hover {
+	left: 575px;
 }
 
 #all .metas.bolinhas .legenda ul li .eixo-hover .seta {
@@ -1084,7 +1094,7 @@ header h2 span {
 	position: absolute;
 	right: -1px;
 	bottom: -10px;
-	background: url(img/sprite.png) no-repeat;
+	background: url(img/sprite.png) no-repeat;	
 }
 
 #all .metas.bolinhas .legenda ul li .eixo-hover .text {
@@ -1101,15 +1111,23 @@ header h2 span {
 }
 
 #all .metas.bolinhas .legenda ul li.eixo-1 .eixo-hover .text {
-	background: #f62048;
+	background: #ff0448;
 }
 
 #all .metas.bolinhas .legenda ul li.eixo-2 .eixo-hover .seta {
-	background-position: -349px -19px;
+	background-position: -364px -64px;
 }
 
 #all .metas.bolinhas .legenda ul li.eixo-2 .eixo-hover .text {
 	background: #93d521;
+}
+
+#all .metas.bolinhas .legenda ul li.eixo-3 .eixo-hover .seta {
+	background-position: -431px -71px;
+}
+
+#all .metas.bolinhas .legenda ul li.eixo-3 .eixo-hover .text {
+	background: #12c2d2;
 }
 
 #all .metas {

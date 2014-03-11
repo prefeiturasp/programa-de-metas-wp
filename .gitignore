@@ -26,7 +26,7 @@ wp-content/*
 # Ignore everything in the "plugins" directory, except the plugins you
 # specify (see the commented-out examples for hints on how to do this.)
 wp-content/plugins/*
-!wp-content/plugins/timber/
+!wp-content/plugins/timber-library/
 # !wp-content/plugins/my-single-file-plugin.php
 # !wp-content/plugins/my-directory-plugin/
  
@@ -34,4 +34,5 @@ wp-content/plugins/*
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/themes/*
 !wp-content/themes/programa-de-metas/
+!wp-content/themes/pdm-andamento/
 # !wp-content/themes/my-theme/

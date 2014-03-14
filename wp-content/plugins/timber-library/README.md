@@ -1,7 +1,7 @@
 <div style="text-align:center">
-<a href="http://jarednova.github.com/timber"><img src="https://github.com/jarednova/timber/blob/master/admin/images/logo/timber-badge-large.jpg?raw=true" style="display:block; margin:auto;"/></a>
+<a href="http://jarednova.github.com/timber"><img src="http://i.imgur.com/f2w7MxZ.jpg" style="display:block; margin:auto;"/></a>
 <div>
-By Jared Novack (<a href="http://twitter.com/jarednova">@JaredNova</a>) and <a href="http://upstatement.com">Upstatement</a> (<a href="http://twitter.com/upstatement">@Upstatement</a>)</div>  
+By Jared Novack (<a href="http://twitter.com/jarednova">@JaredNova</a>) and <a href="http://upstatement.com">Upstatement</a> (<a href="http://twitter.com/upstatement">@Upstatement</a>)</div>
 </div>
 
 [![Build Status](https://travis-ci.org/jarednova/timber.png)](https://travis-ci.org/jarednova/timber)
@@ -56,12 +56,7 @@ Timber is great for any WordPress developer who cares about writing good, mainta
 * [**Twig**](https://github.com/fabpot/Twig) The template language used by Timber.
 
 #### Should I use it?
-Well, it's **free**! And it's GPL-licensed, so use in personal or commercial work. Just don't re-sell it. Timber is still in development. While much has been stabalized since the first major push back in June 2013, you should expect some breaking changes as development progresses towards a version 1.0
-
-#### Upgrade Notes
-Twig is no longer a submodule, just a part of the repo. If you have trouble pulling, just delete the `Twig` folder. Then you should be good.
-In May 2013 there was a major rewrite of Timber. Trust me, it's worth it. But if you're looking for the old [Parent Theme Timber](https://github.com/jarednova/timber/tree/theme) you can still find it on this [branch](https://github.com/jarednova/timber/tree/theme).
-
+Well, it's **free**! And it's GPL-licensed, so use in personal or commercial work. Just don't re-sell it. Timber is still in development. While much has been stabalized since the first major push back in June 2013, you should expect some breaking changes as development progresses towards a version 1.0.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jarednova/timber/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 

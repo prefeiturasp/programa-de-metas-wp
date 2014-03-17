@@ -1,0 +1,13 @@
+{
+    "name": "lucaspirola/pdm-andamento",
+    "description": "Tema básico das metas com acesso direto a api",
+    "require": {
+        "guzzle/guzzle": "3.8.1"
+    },
+    "authors": [
+        {
+            "name": "Lucas Pirola",
+            "email": "lucaspirola@gmail.com"
+        }
+    ]
+}

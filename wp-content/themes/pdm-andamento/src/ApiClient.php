@@ -11,11 +11,12 @@ use GuzzleHttp\Exception\RequestException;
 class ApiClient
 {
     public $logFile = '';
-    public $url = 'http://pdm.local/api/public/';
+    public $url;
     public $client;
 
     public function __construct()
     {
+        $this->url = API_URL;
         $this->client = new Client();
     }
 

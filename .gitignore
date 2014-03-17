@@ -36,4 +36,5 @@ wp-content/themes/*
 !wp-content/themes/programa-de-metas/
 !wp-content/themes/pdm-andamento/
 wp-content/themes/pdm-andamento/vendor/*
+wp-content/themes/pdm-andamento/log/api.log
 # !wp-content/themes/my-theme/

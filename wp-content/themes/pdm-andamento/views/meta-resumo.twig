@@ -1,0 +1,7 @@
+    <li><a href="/meta/{{meta.id}}">{{meta.name}}</a></li>
+    <ul>
+    {% for projeto in meta.projects %}
+        <li><a href="/projeto/{{projeto.id}}">{{projeto.name}}</a></li>
+    {% endfor %}
+    </ul>
+    

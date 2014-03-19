@@ -3,27 +3,241 @@
 {% endblock %}
 </head>
     <body class="{{body_class}}" data-source="base.twig">
-        <header class="header" >
-            {% block header %}
-            <div class="wrapper">
-
-                <h1 class="hdr-logo" role="banner">
-                    <a class="hdr-logo-link" href="/" title="Timber" rel="home">{{bloginfo('name')}}</a>
-                </h1>
-                <nav id="access" class="main-navigation" role="navigation">
-                    <ul>
-                    {% for item in menu.items %}
-                        <li id="menu-item-{{item.ID}}" class="menu-item menu-item-type-{{item.type}} menu-item-object-{{item.object}} menu-item-{{item.ID}}">
-                            <a href="{{item.link}}">{{item.title}}</a>
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </nav><!-- #access -->
-
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        {% block header %}
+        <div class="fixed header">
+            <div class="support-bar">
+                <div class="row">
+                    <div class="small-6 medium-3 columns">
+                        <div class="box-logo-planeja">
+                            <img class="logo-planeja" src="{{site.theme.link}}/images/logo-planeja-sampa.svg" alt="Logo Planeja Sampa">
+                        </div>
+                    </div>
+                </div>
             </div>
-            {% endblock %}
-        </header>
+            <div class="row menu-bar">
+                <div class="menu-principal small-12 medium-8 columns">
+                    <ul class="inline-list">
+                        {% for item in menu.get_items %}
+                                <li class="nav-main-item {{item.classes | join(' ')}}"><a class="nav-main-link" href="{{item.get_path}}">{{item.title}}</a>
+                                    {% if item.get_children %}
+                                        <ul class="nav-drop">
+                                          {% for child in item.get_children %}
+                                            <li class="nav-drop-item"><a href="{{child.get_path}}">{{child.title}}</a></li>
+                                          {% endfor %}
+                                        </ul>
+                                     {% endif %}
+                                </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="redes-sociais small-12 medium-4 columns">
+                    &nbsp;
+                </div>
+            </div>
 
+            <div class="row title-bar" >
+                <div class="small-10 small-centered columns text-center">
+                    <img class="logo-programa-de-metas" src="{{site.theme.link}}/images/logo-programa-de-metas.svg" alt="Logo Programa de Metas">
+                    <h1>programa de metas</h1>
+                    <h2>Acompanhe o que vem sendo feito em São Paulo</h2>
+                </div>
+            </div>
+        </div>
+        <div class="filter-bar">
+            <div class="row">
+                <div class="infografico small-12 medium-10 small-centered columns">
+                    <img src="{{site.theme.link}}/images/infografico.png" width="809" height="148" alt="Infográfico explicativo de como funciona o programa de metas">
+                </div>
+                <div class="projetos-por-perto small-12 medium-6 columns">
+                    <form name="projetos-por-perto" id="projetos-por-perto">
+                        <div class="row">
+                            <div class="small-11 small-centered columns">
+                                <h3>Encontre projetos próximos a você</h3>
+                            </div>
+                            <div class="small-11 small-centered columns">
+                                <div class="row collapse">
+                                    <div class="small-9 columns">
+                                        <input type="text" placeholder="Digite seu CEP" name="cep" id="cep">
+                                    </div>
+                                    <div class="small-3 columns">
+                                        <a href="#" class="button postfix">Encontrar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="nao-sabe-cep small-11 small-centered columns">
+                                <label>Não sabe seu CEP?
+                                <select name="subprefeitura" id="subprefeitura-topo">
+                                <option value="">Selecione uma subprefeitura</option>
+                                {% include 'partials/_options-subprefeituras.twig' %}
+                                </select>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="metas-por-objetivo small-12 medium-6 columns">
+                    <form name="metas-por-objetivo" id="metas-por-objetivo">
+                        <div class="row">
+                            <div class="small-11 small-centered columns">
+                                <h3>Encontre metas por objetivos</h3>
+                            </div>
+                            <div class="small-11 small-centered columns">
+                                <label class="first-input">
+                                <select name="objetivos" id="objetivos-topo">
+                                    <option value="">Selecione um objetivo</option>
+                                    {% include 'partials/_options-objetivos.twig' %}
+                                </select>
+                                </label>
+                            </div>
+                            <ul class="destaque-por-objetivos" data-orbit data-options="timer:false;slide_number:false;bullets:false;">
+                                <li data-orbit-slide="headline-1">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-book"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="/?objetivo=2">Educação</a></h4>
+                                            <p><a href="/?objetivo=2">Em 2013, foram construídas 33 novas escolas de educação infantil. 73 mil alunos agora ficam mais tempo na escola, com o Programa.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-2">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-saude"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="/?objetivo=3">Saúde</a></h4>
+                                            <p><a href="/?objetivo=3">Melhoria na cobertura do atendimento e redução nas filas de espera com 4 novas UBS, 10 unidades da Rede Hora Certa e 434 novos leitos hospitalares.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-3">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-transporte"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="/?objetivo=16">Transporte</a></h4>
+                                            <p><a href="/?objetivo=16">Implantação do Bilhete Único Mensal e de 294 km de faixas exclusivas. A velocidade média dos ônibus nessas avenidas aumentou em 50%.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-4">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-buildings"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="/?objetivo=5">Habitação</a></h4>
+                                            <p><a href="/?objetivo=5">14 mil famílias com a posse regularizada, 1.890 moradias entregues e viabilização de terrenos para construção de mais 39 mil.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-5">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-transporte"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="/?meta=74">Iluminação</a></h4>
+                                            <p><a href="/?meta=74">Meta concluída com a implantação de 18 mil novos pontos. A Vila Bela, em São Mateus ficou 10 anos na escuridão e hoje está iluminada.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-6">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-gestao"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="/?objetivo=19">Gestão Participativa</a></h4>
+                                            <p><a href="/?objetivo=19">Criação dos Conselhos Participativos das subprefeituras, passo histórico para garantir maior transparência e controle das ações governamentais.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="f1_container" class="hide-for-small-only">
+            <div id="f1_card" class="shadow">
+                <div class="front face">
+                    <div class="row">
+                        <div class="ver-todas-as-metas small-12 columns text-center">
+                            <p><img src="{{site.theme.link}}/images/scroll-down.svg" alt="Role o scroll para ver mais conteúdo.">ver todas as metas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back face center">
+                    <div class="row">
+                        <div class="medium-6 columns faixa-projeto"></div>
+                        <div class="medium-6 columns faixa-meta"></div>
+                        <div class="filtrar-todas-as-metas  small-12 columns text-center">
+                        <form name="filtros-disponiveis" id="filtros-disponiveis" method="GET" action="/">
+                            <div class="row">
+                                <div class="small-12 medium-1 columns">
+                                    <p>Filtros:</p>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select name="subprefeitura">
+                                    <option value="">subprefeitura</option>
+                                    {% include 'partials/_options-subprefeituras.twig' %}
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select name="objetivo">
+                                    <option value="">objetivo</option>
+                                    {% include 'partials/_options-objetivos.twig' %}
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select name="secretaria">
+                                    <option value="">secretaria</option>
+                                    {% include 'partials/_options-secretarias.twig' %}
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select name="eixo">
+                                    <option value="">eixo</option>
+                                    {% include 'partials/_options-eixos.twig' %}
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select name="articulacao">
+                                    <option value="">articulação</option>
+                                    {% include 'partials/_options-articulacoes.twig' %}
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-1 columns">
+                                    <button type="submit" class="button round tiny">Filtrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
 
         <section id="content" role="main" class="content-wrapper">
             {% if title %}<h1>{{title}}</h1>{% endif %}

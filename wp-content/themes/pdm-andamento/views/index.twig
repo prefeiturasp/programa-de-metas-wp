@@ -3,9 +3,7 @@
 {% block content %}
 
 {% for meta in metas %}
-	<ul>
     {% include "meta-resumo.twig" with {meta:meta} %}
-    </ul>
 {% endfor %}
 
 {% endblock %}

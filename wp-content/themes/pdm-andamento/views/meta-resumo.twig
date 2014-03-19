@@ -1,7 +1,77 @@
-    <li><a href="/meta/{{meta.id}}">{{meta.name}}</a></li>
-    <ul>
-    {% for projeto in meta.projects %}
-        <li><a href="/projeto/{{projeto.id}}">{{projeto.name}}</a></li>
-    {% endfor %}
-    </ul>
-    
+<div class="row meta no-resultado">
+    <div class="medium-12 columns">
+        <div class="small-3 medium-1 columns ordem">
+            <p class="faixa"></p>
+            <p class="nome">meta</p>
+            <p class="numero">{{meta.id}}</p>
+        </div>
+        <div class="small-9 medium-8 columns titulo">
+            <h3><a href="/meta/{{meta.id}}">{{meta.name}}</a></h3>
+            <h4><a href="/meta/{{meta.id}}">DESENVOLVIMENTO SOCIAL</a></h4>
+            <h5><a href="/meta/{{meta.id}}">Secretaria Municipal de Transportes</a></h5>
+        </div>
+
+        <div class="small-8 small-centered medium-uncentered medium-3 columns">
+            <dl class="row tabs tabs-options" data-tab>
+                <dd class="meta box-options active"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-graph-arrow"></i>Resumo<br> desta meta</a></dd>
+                <dd class="projeto box-options"><a href="#meta-{{meta.id}}-projetos"><i class="icon-folder"></i>Projetos<br> desta meta</a></dd>
+                <dd class="acompanhar box-options"><a href="#meta-{{meta.id}}-acompanhar"><i class="icon-follow"></i>Seguir<br> esta meta</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="tabs-content medium-12 columns">
+        <div class="content active" id="meta-{{meta.id}}-detalhes">
+                    <div class="medium-4 columns">
+                        <div class="detalhes">
+                            <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[40,60]}"></div>
+                            <div class="status">
+                                <p class="porcentagem"><a href="/meta/{{meta.id}}">100%</a></p>
+                                <p class="descricao"><a href="/meta/{{meta.id}}">em andamento</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medium-8 columns">
+                        <div class="chamadas">
+                            <ul>
+                                <li class="primeiro"><a href="/meta/{{meta.id}}">{{meta.qualitative_progress_1}}</a></li>
+                                <li><a href="/meta/{{meta.id}}">{{meta.qualitative_progress_2}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        </div>
+        <div class="content" id="meta-{{meta.id}}-projetos">
+            <div class="medium-12 columns">
+                <div class="box medium-12 columns">
+                    <ul>
+                        {% for projeto in meta.projects %}
+					        <li class="small-6 columns"><a href="/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i>{{projeto.name}}</a></li>
+					    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="meta-{{meta.id}}-acompanhar">
+            <div class="medium-12 columns">
+                <form>
+                    <div class="box medium-12 columns">
+                        <h4>RECEBA ATUALIZAÇÕES SOBRE ESTA META POR E-MAIL</h4>
+
+                        <div class="small-12 medium-6 columns">
+                            <label>Nome
+                                <input type="text" placeholder="Preencha como você quer ser chamado" />
+                            </label>
+                        </div>
+                        <div class="small-12 medium-6 columns">
+                            <label>E-mail
+                                <input type="text" placeholder="Em qual e-mail você gostaria de receber as atualizações?" />
+                            </label>
+                        </div>
+                        <div class="small-12 medium-3 medium-offset-9 columns text-right">
+                            <button class="button radius round tiny"><i class="icon-follow"></i> Seguir esta meta</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -99,5 +99,5 @@ function myfoo($text)
 
 function load_scripts ()
 {
-    wp_enqueue_script('jquery');
+    //wp_enqueue_script('jquery');
 }

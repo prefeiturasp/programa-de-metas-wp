@@ -13,6 +13,15 @@
  * @since       Timber 0.1
  */
 
+$api_address = get_option("pdm_andamento_api_address");
+
+if (empty($api_address)) {
+    wp_die("Você precisa configurar o tema antes de usá-lo. Vá nas <a href=\"/wp-admin/themes.php?page=front-page-elements\">configurações</a>.");
+} else {
+    define('API_URL', $api_address);
+}
+
+
 if (!class_exists('Timber')) {
     echo 'Timber not activated. Make sure you activate the plugin in <a href="/wp-admin/plugins.php#timber">/wp-admin/plugins.php</a>';
 }

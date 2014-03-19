@@ -51,8 +51,8 @@ require(['chart', 'map', 'app', 'jquery'], function (chart, map, app, $) {
       window.location = '/?subprefeitura=' + jQuery(evt.currentTarget).val();
     });
 
-    jQuery('form[name="metas-por-objetivo"] select#objetivos-topo').on('change', function (evt) {
-      window.location = '/?objetivos=' + jQuery(evt.currentTarget).val();
+    jQuery('form[name="metas-por-objetivo"] select#objetivo-topo').on('change', function (evt) {
+      window.location = '/?objetivo=' + jQuery(evt.currentTarget).val();
     });
 
     //.filtrar-todas-as-metas.button

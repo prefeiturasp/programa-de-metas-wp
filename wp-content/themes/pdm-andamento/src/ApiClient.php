@@ -101,9 +101,41 @@ class ApiClient
         return $response->json();
     }
 
+    protected function validateInput($value)
+    {
+        if (!empty($value)) {
+            return true;
+        }
+        return false;
+    }
+
     public function getMetasFiltradas()
     {
-        $response = $this->fazerRequisicao('goals');
+        $filter = array();
+
+        if ($this->validateInput($_GET['subprefeitura'])) {
+            $filter['prefecture'] = $_GET['subprefeitura'];
+        }
+
+        if ($this->validateInput($_GET['objetivo'])) {
+            $filter['objective'] = $_GET['objetivo'];
+        }
+
+        if ($this->validateInput($_GET['secretaria'])) {
+            $filter['secretary'] = $_GET['secretaria'];
+        }
+
+        if ($this->validateInput($_GET['eixo'])) {
+            $filter['axis'] = $_GET['eixo'];
+        }
+
+        if ($this->validateInput($_GET['articulacao'])) {
+            $filter['articulation'] = $_GET['articulacao'];
+        }
+
+        $url_filters = 'goals?' .  http_build_query($filter);
+
+        $response = $this->fazerRequisicao($url_filters);
         return $response->json();
     }
 }

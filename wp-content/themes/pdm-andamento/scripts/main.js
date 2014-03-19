@@ -11,6 +11,9 @@ require.config({
         },
         jQuery: {
             exports: 'jquery'
+        },
+        foundation: {
+            deps: ['jquery']
         }
     }
 });

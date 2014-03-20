@@ -202,7 +202,7 @@
   }
 }
 
-.header.fixed {
+.header {
   background-color: #fff;
 }
 
@@ -216,7 +216,7 @@
   }
 }
 
-.header.fixed .support-bar {
+.header .support-bar {
   background-color: #4a4949;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
   z-index: 999;
@@ -233,7 +233,7 @@
   }
 }
 
-.header.fixed .support-bar .row {
+.header .support-bar .row {
   background-color: #252424;
 }
 
@@ -247,7 +247,7 @@
   }
 }
 
-.header.fixed .support-bar .box-logo-planeja {
+.header .support-bar .box-logo-planeja {
   position: relative;
 }
 
@@ -261,7 +261,7 @@
   }
 }
 
-.header.fixed .support-bar .box-logo-planeja:after {
+.header .support-bar .box-logo-planeja:after {
   background-color: #4a4949;
   right: 100%;
   top: 50%;
@@ -287,7 +287,7 @@
   }
 }
 
-.header.fixed .support-bar .logo-planeja {
+.header .support-bar .logo-planeja {
   margin: 0.5rem 0;
   width: 80%;
 }
@@ -302,7 +302,7 @@
   }
 }
 
-.header.fixed .menu-bar {
+.header .menu-bar {
   background-color: #fff;
   z-index: 9;
 }
@@ -317,7 +317,7 @@
   }
 }
 
-.header.fixed .menu-bar .menu-principal ul {
+.header .menu-bar .menu-principal ul {
   margin: 0.5rem 0;
 }
 
@@ -331,7 +331,7 @@
   }
 }
 
-.header.fixed .menu-bar .menu-principal ul li {
+.header .menu-bar .menu-principal ul li {
   margin: 0 1rem 0 0;
 }
 
@@ -345,7 +345,7 @@
   }
 }
 
-.header.fixed .menu-bar .menu-principal ul li a {
+.header .menu-bar .menu-principal ul li a {
   color: #999999;
   text-transform: uppercase;
   font-size: 0.8125rem;
@@ -362,7 +362,7 @@
   }
 }
 
-.header.fixed .menu-bar .menu-principal ul li a:hover {
+.header .menu-bar .menu-principal ul li a:hover {
   color: #b3b3b3;
 }
 
@@ -376,7 +376,7 @@
   }
 }
 
-.header.fixed .title-bar {
+.header .title-bar {
   background-color: #fff;
   z-index: 9;
   margin-top: 0.625rem;
@@ -392,7 +392,7 @@
   }
 }
 
-.header.fixed .title-bar h1 {
+.header .title-bar h1 {
   text-transform: uppercase;
   margin: 0.625rem 0 1.25rem;
 }
@@ -407,7 +407,7 @@
   }
 }
 
-.header.fixed .title-bar h2 {
+.header .title-bar h2 {
   text-transform: inherit;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -423,7 +423,7 @@
   }
 }
 
-.header.fixed .title-bar .logo-programa-de-metas {
+.header .title-bar .logo-programa-de-metas {
   max-width: 7.8125rem;
 }
 
@@ -1159,7 +1159,7 @@
 
 .meta {
   background-color: #fff;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.9375rem;
 }
 
 @media -sass-debug-info {
@@ -1410,7 +1410,7 @@
   display: block;
   line-height: 1;
   color: #c3c5c6;
-  font-family: 'Tinos', sans-serif;
+  font-family: 'TinosItalic', sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
   text-align: center;

@@ -7,7 +7,7 @@ $azul: #12c2d2;
 @import "charts";
 // endbower
 
-.header.fixed {
+.header {
     background-color: #fff;
 
     .support-bar {
@@ -326,7 +326,7 @@ $cinza-padrao: #666;
 
 .meta {
     background-color: #fff;
-    margin-bottom: rem-calc(10);
+    margin-bottom: rem-calc(15);
 
     .ordem {
         p {
@@ -413,7 +413,7 @@ $cinza-padrao: #666;
                 display: block;
                 line-height: 1;
                 color: #c3c5c6;
-                font-family: 'Tinos', sans-serif;
+                font-family: 'TinosItalic', sans-serif;
                 font-weight: normal;
                 font-size: rem-calc(14);
                 text-align: center;

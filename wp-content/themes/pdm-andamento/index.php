@@ -13,12 +13,9 @@
  * @since       Timber 0.1
  */
 
-$api_address = get_option("pdm_andamento_api_address");
 
 if (empty($api_address)) {
     wp_die("Você precisa configurar o tema antes de usá-lo. Vá nas <a href=\"/wp-admin/themes.php?page=front-page-elements\">configurações</a>.");
-} else {
-    define('API_URL', $api_address);
 }
 
 

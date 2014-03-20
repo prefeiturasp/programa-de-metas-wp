@@ -1,5 +1,6 @@
 <?php
-
+$api_address = get_option("pdm_andamento_api_address");
+define('API_URL', $api_address);
 require "vendor/autoload.php";
 require "routes.php";
 

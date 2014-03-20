@@ -7,10 +7,6 @@ $azul: #12c2d2;
 @import "charts";
 // endbower
 
-body {
-    height: 20000px;
-}
-
 .header.fixed {
     background-color: #fff;
 
@@ -330,6 +326,7 @@ $cinza-padrao: #666;
 
 .meta {
     background-color: #fff;
+    margin-bottom: rem-calc(10);
 
     .ordem {
         p {

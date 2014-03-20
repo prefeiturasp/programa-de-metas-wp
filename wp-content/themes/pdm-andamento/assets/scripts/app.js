@@ -1,4 +1,4 @@
-define(['jquery', 'foundation'], function ($, foundation) {
+define(['jquery', 'foundation'], function ($) {
     //Do setup work here
 
     'use strict';

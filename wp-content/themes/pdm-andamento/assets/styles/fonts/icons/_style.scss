@@ -104,3 +104,9 @@
 .icon-gestao:before {
     content: "\e61a";
 }
+
+
+
+.back:before {
+    transform: rotate(180deg);
+}

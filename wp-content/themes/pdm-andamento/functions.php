@@ -21,9 +21,9 @@ define('THEME_URL', get_template_directory_uri());
 add_action("admin_menu", "setup_theme_admin_menus");
 
 function setup_theme_admin_menus() {
-    add_submenu_page('themes.php', 
-        'Front Page Elements', 'Configurações', 'manage_options', 
-        'front-page-elements', 'theme_front_page_settings'); 
+    add_submenu_page('themes.php',
+        'Front Page Elements', 'Configurações', 'manage_options',
+        'front-page-elements', 'theme_front_page_settings');
 }
 
 function theme_front_page_settings() {
@@ -35,7 +35,7 @@ function theme_front_page_settings() {
     $api_address = get_option("pdm_andamento_api_address");
 
     if (isset($_POST["update_settings"])) {
-        $api_address = esc_attr($_POST["api_address"]);   
+        $api_address = esc_attr($_POST["api_address"]);
         update_option("pdm_andamento_api_address", $api_address);
         ?>
             <div id="message" class="updated">Configurações atualizadas com sucesso.</div>
@@ -44,14 +44,14 @@ function theme_front_page_settings() {
 ?>
     <div class="wrap">
         <h2>Configurações do Programa de Metas</h2>
- 
+
         <form method="POST" action="">
             <table class="form-table">
                 <tr valign="top">
                     <th scope="row">
                         <label for="api_address">
                             Endereço da API:
-                        </label> 
+                        </label>
                     </th>
                     <td>
                         <input type="text" name="api_address" value="<?php echo $api_address;?>" size="25" />

@@ -1,0 +1,51 @@
+<div class="header simple">
+    <div class="support-bar">
+        <div class="row">
+            <div class="small-6 medium-3 columns">
+                <div class="box-logo-planeja">
+                    <a href="http://planejasampa.prefeitura.sp.gov.br"><img class="logo-planeja" src="{{site.theme.link}}/assets/images/logo-planeja-sampa.svg" alt="Logo Planeja Sampa"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row menu-bar">
+        <div class="menu-principal small-12 medium-8 columns">
+            <ul class="inline-list">
+                {% for item in menu.get_items %}
+                        <li class="nav-main-item {{item.classes | join(' ')}}"><a class="nav-main-link" href="{{item.get_path}}">{{item.title}}</a>
+                            {% if item.get_children %}
+                                <ul class="nav-drop">
+                                  {% for child in item.get_children %}
+                                    <li class="nav-drop-item"><a href="{{child.get_path}}">{{child.title}}</a></li>
+                                  {% endfor %}
+                                </ul>
+                             {% endif %}
+                        </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="redes-sociais small-12 medium-4 columns">
+            <!-- AddThis Button BEGIN --
+            <div class="addthis_toolbox addthis_default_style ">
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                <a class="addthis_button_tweet"></a>
+                <a class="addthis_button_google_plusone"></a>
+            </div>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-532355c417c7000b"></script>
+            <-- AddThis Button END -->
+        </div>
+    </div>
+
+    <div class="row title-bar" >
+        <div class="small-10 small-centered columns text-center">
+            <a href="{{site.url}}"><img class="logo-programa-de-metas" src="{{site.theme.link}}/assets/images/logo-programa-de-metas.svg" alt="Logo Programa de Metas"></a>
+            <h1><a href="{{site.url}}">programa de metas</a></h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns separate-bar {{page_type}}">
+            &nbsp;
+        </div>
+    </div>
+</div>

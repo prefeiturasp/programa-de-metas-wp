@@ -6,7 +6,7 @@ use Pdm\ApiClient;
 
 class PaginaProjeto extends Pagina
 {
-    
+
     public static function startup ($params)
     {
         $query = 'projeto_id='.$params['id'];
@@ -17,6 +17,14 @@ class PaginaProjeto extends Pagina
     {
         $context = \Timber::get_context();
         $api = new ApiClient;
+
+        $context['subprefeituras'] = $api->getSubPrefeituras();
+        $context['objetivos'] = $api->getObjetivos();
+        $context['secretarias'] = $api->getSecretarias();
+        $context['eixos'] = $api->getEixos();
+        $context['articulacoes'] = $api->getArticulacoes();
+        $context['tipos_projeto'] = $api->getTiposProjeto();
+
         $context['projeto'] = $api->getProjeto($projeto_id);
         return $context;
     }

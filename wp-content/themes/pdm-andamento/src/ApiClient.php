@@ -95,6 +95,12 @@ class ApiClient
         return $response->json();
     }
 
+    public function getTiposProjeto()
+    {
+        $response = $this->fazerRequisicao('projects/types');
+        return $response->json();
+    }
+
     public function getMeta($id)
     {
         $response = $this->fazerRequisicao('goal/'.$id);

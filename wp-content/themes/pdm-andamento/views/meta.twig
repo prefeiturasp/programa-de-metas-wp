@@ -1,11 +1,232 @@
 {% extends 'base.twig' %}
 
 {% block header %}
-{% include "header-simple.twig" %}
+{% include "header-simple.twig" with {page_type:"meta"} %}
 {% endblock %}
 
 {% block content %}
-<h2>{{meta.name}}</h2>
-{{meta|print_r}}
 
+<div class="row">
+    <div class="small-12 columns nav-innerpage">
+        <a href="{{site.url}}/"><i class="back icon-arrow-r"></i> home/filtros</a>
+    </div>
+</div>
+
+<div class="row meta-card outer-box no-resultado">
+    <div class="medium-12 columns">
+        <div class="small-3 medium-1 columns ordem">
+            <p class="faixa"></p>
+            <p class="nome">meta</p>
+            <p class="numero">{{meta.id}}</p>
+        </div>
+        <div class="small-9 medium-8 columns titulo">
+            <h3><a href="/meta/{{meta.id}}">{{meta.name}}</a></h3>
+            <h4>
+                {% for objetivo in objetivos %}
+                    {% if objetivo.id == meta.objective_id %}
+                        <a href="/meta/{{meta.id}}">{{objetivo.name}}</a>
+                    {% endif %}
+                {% endfor %}
+            </h4>
+            <h5>
+            {% set count_sec = 0 %}
+            {% for meta_secretaria in meta.secretaries %}
+                {% for secretaria in secretarias %}
+                    {% if secretaria.id == meta_secretaria.id %}
+                        {% if count_sec > 0 %}
+                            /
+                        {% endif %}
+                        <a href="/meta/{{meta.id}}">{{secretaria.name}}</a>
+                        {% set count_sec = count_sec + 1 %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+            </h5>
+        </div>
+
+        <div class="small-8 small-centered medium-uncentered medium-3 columns">
+            <dl class="row tabs tabs-options">
+                <dd class="acompanhar box-options"><a href="#meta-{{meta.id}}-acompanhar"><i class="icon-follow"></i>Seguir<br> esta meta</a></dd>
+                <dd class="compartilhar box-options"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-share"></i>Compartilhe<br> esta meta</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="tabs-content medium-12 columns">
+        <div class="content active" id="meta-{{meta.id}}-detalhes">
+                    <div class="medium-4 columns">
+                        <div class="detalhes">
+                            <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[40,60]}"></div>
+                            <div class="status">
+                                <p class="porcentagem"><a href="/meta/{{meta.id}}">100%</a></p>
+                                <p class="descricao"><a href="/meta/{{meta.id}}">em andamento</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medium-8 columns">
+                        <div class="chamadas">
+                            <ul>
+                                <li class="primeiro"><a href="/meta/{{meta.id}}">{{meta.qualitative_progress_1}}</a></li>
+                                <li><a href="/meta/{{meta.id}}">{{meta.qualitative_progress_2}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        </div>
+        <div class="content" id="meta-{{meta.id}}-projetos">
+            <div class="medium-12 columns">
+                <div class="box medium-12 columns">
+                    <ul>
+                        {% for projeto in meta.projects %}
+                            <li class="small-6 columns"><a href="/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i>{{projeto.name}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="meta-{{meta.id}}-acompanhar">
+            <div class="medium-12 columns">
+                <form>
+                    <div class="box medium-12 columns">
+                        <h4>RECEBA ATUALIZAÇÕES SOBRE ESTA META POR E-MAIL</h4>
+
+                        <div class="small-12 medium-6 columns">
+                            <label>Nome
+                                <input type="text" placeholder="Preencha como você quer ser chamado" />
+                            </label>
+                        </div>
+                        <div class="small-12 medium-6 columns">
+                            <label>E-mail
+                                <input type="text" placeholder="Em qual e-mail você gostaria de receber as atualizações?" />
+                            </label>
+                        </div>
+                        <div class="small-12 medium-3 medium-offset-9 columns text-right">
+                            <button class="button radius round tiny"><i class="icon-follow"></i> Seguir esta meta</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row outer-box" data-equalizer>
+    <div class="small-12 columns ">
+        <div class="small-12 columns">
+            <div class="small-12 columns box text-center">
+                <p class="title">
+                    <i class="icon-text"></i>
+                    <span>identidade</span>
+                </p>
+            </div>
+            <div class="small-3 columns box text-center" data-equalizer-watch>
+                <h4>objetivo</h4>
+                {% for objetivo in objetivos %}
+                    {% if objetivo.id == meta.objective_id %}
+                        <p class="descricao">{{objetivo.description}}</p>
+                    {% endif %}
+                {% endfor %}
+                <h4>articulação</h4>
+                {% for articulacao in articulacoes %}
+                    {% if articulacao.id == meta.articulation_id %}
+                        <p class="descricao">{{articulacao.name}}</p>
+                    {% endif %}
+                {% endfor %}
+                <h4>tipos de projeto</h4>
+                {% for project_type in tipos_projeto %}
+                    {% if project_type.id == meta.projects[0].project_type %}
+                        <p class="descricao">{{project_type.name}}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="small-7 columns box" data-equalizer-watch>
+                <h4>definições dos termos técnicos</h4>
+                <p class="descricao">{{meta.technically}}</p>
+
+                <h4>observações</h4>
+                <p class="descricao">{{meta.observation}}</p>
+            </div>
+            <div class="small-2 columns box" data-equalizer-watch>
+                <img src="{{site.theme.uri}}/assets/images/logos.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row outer-box">
+    <div class="small-12 columns ">
+        <div class="small-12 columns">
+            <div class="small-12 columns box text-center">
+                <p class="title">
+                    <i class="icon-graph-arrow"></i>
+                    <span>andamento quantitativo</span>
+                </p>
+            </div>
+            <div class="small-3 columns box">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row outer-box" data-equalizer>
+    <div class="small-12 columns ">
+        <div class="small-12 columns">
+            <div class="small-8 columns box text-center">
+                <p class="title">
+                    <i class="icon-graph"></i>
+                    <span>andamento qualitativo</span>
+                </p>
+            </div>
+            <div class="small-4 columns box text-center">
+                <p class="title">
+                    <i class="icon-quotation"></i>
+                    <span>execução orçamentária</span>
+                </p>
+            </div>
+            <div class="small-3 columns box text-center" data-equalizer-watch>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row outer-box" data-equalizer>
+    <div class="small-12 columns ">
+        <div class="small-12 columns">
+            <div class="small-12 columns box text-center">
+                <p class="title">
+                    <i class="icon-folder"></i>
+                    <span>projetos</span>
+                </p>
+            </div>
+            <div class="hide-only-small medium-6 columns box" data-equalizer-watch>
+                <div class="map-render" id="map-projects" style="height:400px;" data-source="#list-projects"></div>
+            </div>
+
+            <div class="small-12 medium-6 columns box" data-equalizer-watch>
+                <ul id="list-projects">
+                    {% for projeto in meta.projects %}
+                    <li class="small-6 columns"><a href="/projeto/{{projeto.id}}" data-latlng="{{projeto.gps_lat}},{{projeto.gps_long}}">{{projeto.name}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

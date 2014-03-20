@@ -1,4 +1,4 @@
-<div class="row meta no-resultado">
+<div class="row meta-card no-resultado">
     <div class="medium-12 columns">
         <div class="small-3 medium-1 columns ordem">
             <p class="faixa"></p>
@@ -7,8 +7,27 @@
         </div>
         <div class="small-9 medium-8 columns titulo">
             <h3><a href="/meta/{{meta.id}}">{{meta.name}}</a></h3>
-            <h4><a href="/meta/{{meta.id}}">DESENVOLVIMENTO SOCIAL</a></h4>
-            <h5><a href="/meta/{{meta.id}}">Secretaria Municipal de Transportes</a></h5>
+            <h4>
+                {% for objetivo in objetivos %}
+                    {% if objetivo.id == meta.objective_id %}
+                        <a href="/meta/{{meta.id}}">{{objetivo.name}}</a>
+                    {% endif %}
+                {% endfor %}
+            </h4>
+            <h5>
+            {% set count_sec = 0 %}
+            {% for meta_secretaria in meta.secretaries %}
+                {% for secretaria in secretarias %}
+                    {% if secretaria.id == meta_secretaria.id %}
+                        {% if count_sec > 0 %}
+                            /
+                        {% endif %}
+                        <a href="/meta/{{meta.id}}">{{secretaria.name}}</a>
+                        {% set count_sec = count_sec + 1 %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+            </h5>
         </div>
 
         <div class="small-8 small-centered medium-uncentered medium-3 columns">
@@ -44,8 +63,8 @@
                 <div class="box medium-12 columns">
                     <ul>
                         {% for projeto in meta.projects %}
-					        <li class="small-6 columns"><a href="/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i>{{projeto.name}}</a></li>
-					    {% endfor %}
+                            <li class="small-6 columns"><a href="/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i>{{projeto.name}}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>

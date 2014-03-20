@@ -2,7 +2,8 @@ require.config({
     paths: {
         jquery: '../bower_components/jquery/dist/jquery',
         d3: '../bower_components/d3js/build/d3.v3',
-        leaflet: '../bower_components/leaflet/src/Leaflet',
+        //leaflet: '../bower_components/leaflet/src/Leaflet',
+        leaflet: "//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet",
         foundation: '../bower_components/foundation/js/foundation'
     },
     shim: {

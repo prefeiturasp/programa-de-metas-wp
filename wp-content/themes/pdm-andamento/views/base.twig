@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="small-6 medium-3 columns">
                         <div class="box-logo-planeja">
-                            <img class="logo-planeja" src="{{site.theme.link}}/assets/images/logo-planeja-sampa.svg" alt="Logo Planeja Sampa">
+                            <a href="http://planejasampa.prefeitura.sp.gov.br"><img class="logo-planeja" src="{{site.theme.link}}/assets/images/logo-planeja-sampa.svg" alt="Logo Planeja Sampa"></a>
                         </div>
                     </div>
                 </div>
@@ -34,22 +34,22 @@
                     </ul>
                 </div>
                 <div class="redes-sociais small-12 medium-4 columns">
-                    <!-- AddThis Button BEGIN -->
+                    <!-- AddThis Button BEGIN --
                     <div class="addthis_toolbox addthis_default_style ">
                         <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
                         <a class="addthis_button_tweet"></a>
                         <a class="addthis_button_google_plusone"></a>
                     </div>
                     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-532355c417c7000b"></script>
-                    <!-- AddThis Button END -->
+                    <-- AddThis Button END -->
                 </div>
             </div>
 
             <div class="row title-bar" >
                 <div class="small-10 small-centered columns text-center">
-                    <img class="logo-programa-de-metas" src="{{site.theme.link}}/assets/images/logo-programa-de-metas.svg" alt="Logo Programa de Metas">
-                    <h1>programa de metas</h1>
-                    <h2>Acompanhe o que vem sendo feito em São Paulo</h2>
+                    <a href="{{site.url}}"><img class="logo-programa-de-metas" src="{{site.theme.link}}/assets/images/logo-programa-de-metas.svg" alt="Logo Programa de Metas"></a>
+                    <h1><a href="{{site.url}}">programa de metas</a></h1>
+                    <h2><a href="{{site.url}}">Acompanhe o que vem sendo feito em São Paulo</a></h2>
                 </div>
             </div>
         </div>
@@ -246,19 +246,9 @@
         </div>
         {% endblock %}
 
-        <section id="content" role="main" class="content-wrapper">
-            {% if title %}<h1>{{title}}</h1>{% endif %}
-            <div class="wrapper {{sidebar_class}}">
-                {% block content %}
-                    Sorry, no content
-                {% endblock %}
-            </div>
-            {% if sidebar %}
-                <aside class="layout-sidebar">
-                    {{sidebar}}
-                </aside>
-            {% endif %}
-        </section>
+        {% block content %}
+            Sorry, no content
+        {% endblock %}
 
         <footer id="footer">
             {% include 'footer.twig' %}

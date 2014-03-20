@@ -68,6 +68,10 @@ $azul: #12c2d2;
                 }
             }
         }
+
+        .redes-sociais {
+            padding: rem-calc(8) 0;
+        }
     }
     .title-bar {
         background-color: #fff;
@@ -77,16 +81,52 @@ $azul: #12c2d2;
         h1 {
             text-transform: uppercase;
             margin: rem-calc(10px) 0 rem-calc(20px);
+            a {
+                color: #000;
+            }
         }
 
         h2 {
             text-transform: inherit;
             font-family: 'Montserrat', sans-serif;
             margin: 0;
+            a {
+                color: #000;
+            }
         }
 
         .logo-programa-de-metas {
             max-width: rem-calc(125px);
+        }
+    }
+
+    &.simple {
+        box-shadow: 4px 4px 15px rgba(#000,.4);
+        .title-bar {
+
+            h1 {
+                font-size:rem-calc(14);
+                margin: rem-calc(5) 0 rem-calc(10);
+            }
+
+            .logo-programa-de-metas {
+                max-width: rem-calc(75);
+                transition: all 1.5s;
+            }
+        }
+
+        .separate-bar {
+            height: rem-calc(8);
+        }
+
+
+        .separate-bar {
+            &.meta {
+                background-color: $verde;
+            }
+            &.projeto {
+                background-color: $azul;
+            }
         }
     }
 }
@@ -324,7 +364,7 @@ $azul: #12c2d2;
 $cinza-padrao: #666;
 
 
-.meta {
+.meta-card {
     background-color: #fff;
     margin-bottom: rem-calc(15);
 
@@ -415,7 +455,7 @@ $cinza-padrao: #666;
                 color: #c3c5c6;
                 font-family: 'TinosItalic', sans-serif;
                 font-weight: normal;
-                font-size: rem-calc(14);
+                font-size: rem-calc(12);
                 text-align: center;
                 padding: rem-calc(5) 0;
             }
@@ -448,6 +488,15 @@ $cinza-padrao: #666;
             }
 
             &.acompanhar {
+                &.active {
+                    a {
+                        background-color: #c3c5c6;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.compartilhar {
                 &.active {
                     a {
                         background-color: #c3c5c6;
@@ -537,8 +586,8 @@ $cinza-padrao: #666;
 
 .box {
     background-color: $primary-color;
-    float:left;
-    width: 100%;
+    //float:left;
+    //width: 100%;
 
     ul {
         margin: rem-calc(10) 0;
@@ -579,5 +628,64 @@ $cinza-padrao: #666;
         &:hover {
             background-color: darken(#c3c5c6, 20%);
         }
+    }
+}
+
+
+
+
+
+
+
+.nav-innerpage {
+    background-color: #fff;
+    margin: rem-calc(15) 0;
+    padding: rem-calc(15) 0 rem-calc(15) rem-calc(20);
+    a {
+        font-size: rem-calc(14);
+        color: #999;
+        text-transform: uppercase;
+
+        &:hover {
+            color: darken(#999999, 10%);
+        }
+    }
+}
+
+
+
+.outer-box {
+    .box {
+        padding-bottom: rem-calc(15);
+    }
+    .title {
+        background-color: #fff;
+        text-align: center;
+        display: inline-block;
+        padding: 0 rem-calc(15);
+        i {
+            display: block;
+        }
+        span {
+            font-size: rem-calc(14);
+            text-transform: uppercase;
+            font-family: 'MontserratBold', sans-serif;
+            color: #666;
+            padding: rem-calc(10);
+        }
+    }
+
+    p.descricao {
+        margin: 0 rem-calc(10);
+        line-height: rem-calc(16);
+        font-size: rem-calc(15);
+    }
+
+    background-color: #fff;
+    margin-bottom: rem-calc(15);
+    padding-bottom: rem-calc(15);
+    &.meta-card {
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }

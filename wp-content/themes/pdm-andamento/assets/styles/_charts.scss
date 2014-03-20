@@ -1,52 +1,4 @@
-// SVG charts
-
-// Pie chart
-.chart-container {
-  display: inline-block;
-  position: relative;
-  width: 90%;
-  padding: 0;
-  margin: 5%;
-  vertical-align: middle;
-  overflow: hidden;
-  &.line-container {
-    padding-bottom: 22%;
-  }
-  > svg {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-// Line chart
-.line {
-    stroke-width: 1;
-    fill: none;
-}
-.line-b {
-  stroke: #999;
-}
-.dot {
-  text {
-    font: bold 14px 'Montserrat', sans-serif;
-  }
-}
-.dot-b {
-  fill: #999;
-}
-.axis-x {
-  path {
-    display: none;
-  }
-  text {
-    font: 12px 'Tinos', sans-serif;
-  }
-}
-
+@charset "UTF-8";
 // Coloring charts according to page type
 
     .chart-pie {
@@ -62,4 +14,152 @@
     }
     .dot-a {
       fill: $azul;
+    }
+
+
+@charset "UTF-8";
+/*
+ * Estilização dos gráficos usados no site.
+ *
+ * Alguns gráficos são montados em SVG, então os elementos dessa linguagem
+ * (como path ou text, por exemplo) podem aparecer no CSS.
+ */
+
+/*
+ * Container usado nos gráficos. Faz com que o gráfico se adapte às dimensões
+ * do grid.
+ */
+.chart-container {
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  padding-bottom: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  &.line-container {
+    padding-bottom: 22%;
+  }
+  > svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*
+ * Estilos específicos usados nos gráficos de linha.
+ */
+.line {
+    stroke-width: 1;
+    fill: none;
+}
+.line-b {
+  stroke: #999;
+}
+.dot {
+  text {
+    font: bold 14px 'Montserrat';
+  }
+}
+.dot-b {
+  fill: #999;
+}
+.axis-x {
+  path {
+    display: none;
+  }
+  text {
+    font: 12px 'Tinos';
+  }
+}
+
+/*
+ * Fases do projeto.
+ *
+ * Esse gráfico é feito basicamente com HTML e CSS.
+ */
+.project-phases {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Tinos';
+  & > li {
+    margin-bottom: 10px;
+    padding: 0 5px !important;
+  }
+  .chevron-bar {
+    position: relative;
+    height: 16px;
+    margin-bottom: 26px;
+    background: #e6e6e6;
+        -ms-transform: skew(30deg, 0);
+    -webkit-transform: skew(30deg, 0);
+            transform: skew(30deg, 0);
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 16px;
+      right: 9px;
+      left: -9px;
+        height: 16px;
+        background: #e6e6e6;
+            -ms-transform: skew(-45deg, 0);
+      -webkit-transform: skew(-45deg, 0);
+              transform: skew(-45deg, 0);
+    }
+  }
+}
+
+/*
+ * Legenda usada em alguns gráficos.
+ */
+.caption {
+  padding-top: 10px;
+  border-top: 1px dashed #ccc;
+  margin: 0 20px;
+  span {
+    display: inline-block;
+    margin-left: 50px;
+    padding-left: 8px;
+    border-left: 30px solid #999;
+    font-size: 11px;
+    line-height: 30px;
+    &.light {
+      border-color: #e6e6e6;
+    }
+  }
+  &.text-left span {
+    margin-right: 50px;
+    margin-left: 0;
+  }
+}
+
+
+    /*
+     * Elementos de conteúdo que usam as cores da área.
+     */
+
+    .box {
+      .box-content .projetos ul li a {
+        &:hover,
+        &.active {
+          color: $azul !important;
+          &:before {
+            color: $azul !important;
+          }
+        }
+      }
+      .project-phases {
+        .chevron-bar-100,
+        .chevron-bar-100:after {
+          background: $azul;
+        }
+        .chevron-bar-50,
+        .chevron-bar-50:after {
+          //@include dual-background(lighten($azul, 20%), #e6e6e6);
+        }
+      }
     }

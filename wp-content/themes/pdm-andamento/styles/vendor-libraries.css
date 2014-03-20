@@ -458,6 +458,21 @@
   content: "\e61a";
 }
 
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \00003110;
+  }
+}
+
+.back:before {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 
 /**

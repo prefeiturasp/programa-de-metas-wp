@@ -14,7 +14,6 @@ class PaginaInicial
         $context['secretarias'] = $api->getSecretarias();
         $context['eixos'] = $api->getEixos();
         $context['articulacoes'] = $api->getArticulacoes();
-
         return $context;
     }
 }

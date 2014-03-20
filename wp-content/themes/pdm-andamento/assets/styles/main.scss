@@ -1,0 +1,586 @@
+// bower:scss
+
+$verde: #97c949;
+$azul: #12c2d2;
+
+@import "settings";
+@import "charts";
+// endbower
+
+body {
+    height: 20000px;
+}
+
+.header.fixed {
+    background-color: #fff;
+
+    .support-bar {
+        background-color: #4a4949;
+        box-shadow: 4px 4px 15px rgba(#000,.4);
+        z-index: 999;
+        position: relative;
+
+        .row {
+            background-color: #252424;
+        }
+        .box-logo-planeja {
+            position: relative;
+        }
+        .box-logo-planeja:after {
+            background-color: #4a4949;
+            right: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(213, 21, 21, 0);
+            border-right-color: #252424;
+            border-width: 20px;
+            margin-top: -20px;
+        }
+
+        .logo-planeja {
+            margin: rem-calc(8px) 0;
+            width: 80%;
+        }
+    }
+
+    .menu-bar {
+        background-color: #fff;
+        z-index: 9;
+
+        .menu-principal {
+            ul {
+                margin: rem-calc(8px) 0;
+
+                li {
+                    margin: 0 rem-calc(16px) 0 0;
+
+                    a {
+                        color: $body-font-color;
+                        text-transform: uppercase;
+                        font-size: rem-calc(13px);
+                        font-family: 'Montserrat', sans-serif;
+
+                        &:hover {
+                            color: lighten($body-font-color, 10%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .title-bar {
+        background-color: #fff;
+        z-index: 9;
+        margin-top: rem-calc(10px);
+
+        h1 {
+            text-transform: uppercase;
+            margin: rem-calc(10px) 0 rem-calc(20px);
+        }
+
+        h2 {
+            text-transform: inherit;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+        }
+
+        .logo-programa-de-metas {
+            max-width: rem-calc(125px);
+        }
+    }
+}
+.filter-bar {
+    background-color: #fff;
+
+    .infografico {
+        margin-top: rem-calc(30px);
+        margin-bottom: rem-calc(30px);
+    }
+
+    h3 {
+        color: #fff;
+        font-size: rem-calc(20);
+        margin-top: rem-calc(20);
+        margin-bottom: rem-calc(20);
+    }
+
+    .first-input {
+        margin-bottom: rem-calc(10);
+    }
+
+    .projetos-por-perto {
+        background-color: $verde;
+
+        .nao-sabe-cep {
+            margin-top: rem-calc(20);
+            margin-bottom: rem-calc(16);
+        }
+
+        ::-webkit-input-placeholder { color: darken($verde, 20%); }
+        :-moz-placeholder { color: darken($verde, 20%); }
+        ::-moz-placeholder { color: darken($verde, 20%); }
+        :-ms-input-placeholder { color: darken($verde, 20%); }
+
+        select,
+        input {
+            background-color: darken($verde, 10%);
+            border:none;
+            color: darken($verde, 20%);
+        }
+        label {
+            color: darken($verde, 20%);
+        }
+
+        .button {
+            background-color: darken($verde, 15%);
+            color: darken($verde, 30%);
+        }
+    }
+    .metas-por-objetivo {
+        background-color: $azul;
+        select {
+            background-color: darken($azul, 10%);
+            border:none;
+            color: darken($azul, 20%);
+        }
+
+        .destaque-por-objetivos {
+            background-color: darken($azul, 10%);
+            i {
+                border: 2px dotted darken($azul, 20%);
+                border-radius: rem-calc(70);
+                font-size: rem-calc(40);
+                padding: rem-calc(15);
+                margin: rem-calc(15) 0 0;
+                color: #fff;
+                display: inline-block;
+            }
+            h4 {
+                a {
+                    color:#fff;
+                }
+                font-size: rem-calc(16);
+                margin: rem-calc(15) 0 rem-calc(10);
+            }
+            p {
+                a {
+                    color: #fff;
+                }
+                font-family: 'Montserrat', sans-serif;
+                font-size: rem-calc(13);
+                line-height: 1.2;
+                margin-bottom: rem-calc(3);
+            }
+        }
+    }
+}
+#f1_container {
+    box-shadow: 4px 4px 15px rgba(#000,.4);
+
+    .faixa-projeto,
+    .faixa-meta {
+        height: rem-calc(8);
+    }
+    .faixa-projeto {
+        background-color: $verde;
+    }
+    .faixa-meta {
+        background-color: $azul;
+    }
+    .ver-todas-as-metas {
+        background-color: #f5f5f5;
+        transition:all 1.5s ease-in-out;
+        perspective: 800px;
+
+        p {
+            color: #ccc;
+            margin: rem-calc(15) 0;
+            font-size: rem-calc(16);
+            text-transform: uppercase;
+
+            img {
+                width: rem-calc(28);
+                height: rem-calc(28);
+                margin: 0 rem-calc(5) 0 0;
+            }
+        }
+    }
+    .filtrar-todas-as-metas {
+        padding-top: rem-calc(5);
+        padding-bottom: rem-calc(5);
+        background-color: #fff;
+        // border-left: 1px solid #dbdee0;
+        // border-right: 1px solid #dbdee0;
+
+        label {
+            border-left: 1px solid #dbdee0;
+        }
+
+        p {
+            font-size: rem-calc(14);
+            margin: rem-calc(5) 0 0;
+        }
+        label {
+            margin-bottom: 0;
+        }
+        select {
+            background-color: transparent;
+            border: none;
+            padding: 0 1.5rem;
+            //border-bottom: 2px solid #ccc;
+            font-size: rem-calc(11);
+            text-transform: uppercase;
+            margin-bottom:0;
+        }
+        .button {
+            margin:0;
+        }
+    }
+}
+
+.summary-results {
+    p {
+        margin: rem-calc(10);
+    }
+}
+
+// magicas para o topo aparecer diferente a cada scroll
+.header.fixed {
+    .shrink.title-bar {
+        margin-top: rem-calc(5);
+
+        h1 {
+            font-size:rem-calc(14);
+            margin: rem-calc(5) 0 rem-calc(10);
+            transition: all 1.5s;
+        }
+
+        h2 {
+            font-size:0;
+            transition: all 1.5s;
+        }
+
+        .logo-programa-de-metas {
+            max-width: rem-calc(75);
+            transition: all 1.5s;
+        }
+    }
+}
+
+.shrink2 {
+    &#f1_container {
+        position:fixed;
+    }
+    &#f1_container #f1_card {
+      transform: rotateX(180deg);
+      box-shadow: -5px 5px 5px #aaa;
+    }
+}
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+
+// http://css3.bradshawenterprises.com/flip/
+#f1_container {
+    background-color: #fff;
+    min-height: 58px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateX(180deg);
+}
+
+
+
+
+
+
+$cinza-padrao: #666;
+
+
+.meta {
+    background-color: #fff;
+
+    .ordem {
+        p {
+            text-align: center;
+            width: rem-calc(80);
+            margin-bottom:0;
+        }
+        .faixa {
+            background-color: $cinza-padrao;
+            height: rem-calc(10);
+        }
+        .nome {
+            color: $cinza-padrao;
+            text-transform: uppercase;
+            letter-spacing: rem-calc(8);
+            font-size: rem-calc(14);
+            line-height: rem-calc(14);
+
+            margin-top: rem-calc(10);
+            margin-bottom: rem-calc(5);
+
+            font-family: 'Montserrat', sans-serif;
+        }
+        .numero {
+            color: $cinza-padrao;
+            font-size: rem-calc(42);
+            line-height: rem-calc(42);
+            font-family: 'MontserratBold', sans-serif;
+        }
+    }
+
+    .titulo {
+
+        h3 {
+            a {
+                color: $cinza-padrao;
+                &:hover {
+                    color: darken($cinza-padrao, 10%);
+                }
+            }
+            //font-family: 'MontserratBold'
+            font-size: rem-calc(20);
+            margin: rem-calc(10) 0 0 rem-calc(15);
+        }
+        h4 {
+            a {
+                color: $cinza-padrao;
+                &:hover {
+                    color: darken($cinza-padrao, 10%);
+                }
+            }
+            font-size: rem-calc(14);
+            text-transform: uppercase;
+            margin: rem-calc(10) 0 0 rem-calc(15);
+        }
+        h5 {
+            a {
+                color: #000;
+            }
+            font-family: 'Tinos', sans-serif;
+            font-size: rem-calc(14);
+            margin: 0 0 0 rem-calc(15);
+        }
+    }
+
+    .tabs-content {
+        margin-bottom: rem-calc(10);
+        padding-bottom:rem-calc(10);
+    }
+
+    .tabs-options {
+        .box-options {
+            background-color: #f2f4f6;
+            width: rem-calc(70);
+            float:left;
+            margin-left: rem-calc(8);
+
+            i {
+                display: block;
+                font-size: rem-calc(20);
+                margin: rem-calc(5) 0 rem-calc(10);
+            }
+            a {
+                display: block;
+                line-height: 1;
+                color: #c3c5c6;
+                font-family: 'Tinos', sans-serif;
+                font-weight: normal;
+                font-size: rem-calc(14);
+                text-align: center;
+                padding: rem-calc(5) 0;
+            }
+
+            &.meta {
+                a {
+                    color: $azul;
+                }
+
+                &.active {
+
+                    a {
+                        background-color: $azul;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.projeto {
+                a {
+                    color: $verde;
+                }
+
+                &.active {
+                    a {
+                        background-color: $verde;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.acompanhar {
+                &.active {
+                    a {
+                        background-color: #c3c5c6;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .detalhes {
+        background-color: $primary-color;
+
+        .chart-container {
+            width: 150px;
+            height: 150px;
+        }
+
+        .status {
+            display: inline-block;
+            width: rem-calc(110);
+            vertical-align: middle;
+            height: rem-calc(45);
+
+            p {
+                font-family: 'MontserratBold', sans-serif;
+                text-align: center;
+                margin-bottom: 0;
+
+                a {
+                    color: $cinza-padrao;
+
+                    &:hover {
+                        color: darken($cinza-padrao, 10%);
+                    }
+                }
+
+
+                &.porcentagem {
+                    font-size: rem-calc(35);
+                    line-height: rem-calc(35);
+                    margin-bottom: rem-calc(5);
+                }
+                &.descricao {
+                    font-size: rem-calc(12);
+                    line-height: rem-calc(12);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .chamadas {
+        background-color: $primary-color;
+
+        ul {
+            margin: 0 rem-calc(20);
+            li {
+                list-style: none;
+                text-align: center;
+                padding: rem-calc(10) 0;
+                min-height: rem-calc(90);
+                display: table;
+
+                font-size: rem-calc(14);
+                line-height: rem-calc(15);
+
+                &.primeiro {
+                    border-bottom: 1px solid #e4e7e9;
+                }
+
+                a {
+                    color: $azul;
+                    display: table-cell;
+                    vertical-align: middle;
+
+                    font-family: 'MontserratBold', sans-serif;
+
+                    &:hover {
+                        color: darken($azul, 5%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.box {
+    background-color: $primary-color;
+    float:left;
+    width: 100%;
+
+    ul {
+        margin: rem-calc(10) 0;
+        float: left;
+
+        li {
+            //width: 45%;
+            list-style: none;
+            float: left;
+            //margin:0;
+            a {
+                font-family: "MontserratBold", sans-serif;
+                font-size: rem-calc(18);
+                color: $cinza-padrao;
+
+                i {
+                    margin-right: rem-calc(10);
+                }
+
+                &:hover {
+                    color: $verde;
+                }
+            }
+        }
+    }
+
+    h4 {
+        color: $cinza-padrao;
+        font-size: rem-calc(14);
+        text-transform: uppercase;
+        margin: rem-calc(20) 0 rem-calc(10) rem-calc(10);
+    }
+
+    .button {
+        background-color: #c3c5c6;
+        color: #fff;
+
+        &:hover {
+            background-color: darken(#c3c5c6, 20%);
+        }
+    }
+}

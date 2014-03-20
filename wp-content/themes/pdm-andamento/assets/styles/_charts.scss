@@ -1,0 +1,65 @@
+// SVG charts
+
+// Pie chart
+.chart-container {
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  padding: 0;
+  margin: 5%;
+  vertical-align: middle;
+  overflow: hidden;
+  &.line-container {
+    padding-bottom: 22%;
+  }
+  > svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Line chart
+.line {
+    stroke-width: 1;
+    fill: none;
+}
+.line-b {
+  stroke: #999;
+}
+.dot {
+  text {
+    font: bold 14px 'Montserrat', sans-serif;
+  }
+}
+.dot-b {
+  fill: #999;
+}
+.axis-x {
+  path {
+    display: none;
+  }
+  text {
+    font: 12px 'Tinos', sans-serif;
+  }
+}
+
+// Coloring charts according to page type
+
+    .chart-pie {
+      circle {
+        stroke: $azul;
+      }
+      .colored {
+        fill: $azul;
+      }
+    }
+    .line-a {
+      stroke: $azul;
+    }
+    .dot-a {
+      fill: $azul;
+    }

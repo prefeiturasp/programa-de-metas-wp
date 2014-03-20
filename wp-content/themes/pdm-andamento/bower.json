@@ -1,0 +1,11 @@
+{
+  "name": "pdm-frontend",
+  "private": true,
+  "dependencies": {
+    "foundation": "~5.2.1",
+    "leaflet": "~0.7.2",
+    "d3js": "*",
+    "requirejs": "~2.1.11"
+  },
+  "devDependencies": {}
+}

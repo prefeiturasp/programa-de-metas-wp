@@ -42,10 +42,10 @@
         <div class="content {% if filtro_so_subprefeitura != "sim" %}active{% endif %}" id="meta-{{meta.id}}-detalhes">
                     <div class="medium-4 columns">
                         <div class="detalhes">
-                            <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[40,60]}"></div>
+                            <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[{{meta.porcentagem.concluido}},{{meta.porcentagem.restante}}]}"></div>
                             <div class="status">
-                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">100%</a></p>
-                                <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">em andamento</a></p>
+                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format}}%</a></p>
+                                <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.status}}</a></p>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                 <div class="box medium-12 columns">
                     <ul>
                         {% for projeto in meta.projects %}
-                            <li class="small-6 columns"><a href="/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i>{{projeto.name}}</a></li>
+                            <li class="small-6 columns"><a href="/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
                         {% endfor %}
                     </ul>
                 </div>

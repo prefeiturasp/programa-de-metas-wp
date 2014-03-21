@@ -23,6 +23,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-gestao:before {
+    content: "\e61a";
+}
 .icon-transporte:before {
     content: "\e600";
 }
@@ -49,6 +52,9 @@
 }
 .icon-graph:before {
     content: "\e608";
+}
+.icon-graph-pizza:before {
+    content: "\e619";
 }
 .icon-graph-arrow:before {
     content: "\e609";
@@ -89,6 +95,9 @@
 .icon-balloon:before {
     content: "\e615";
 }
+.icon-arrow-l:before {
+    content: "\e61b";
+}
 .icon-arrow-r:before {
     content: "\e616";
 }
@@ -97,16 +106,4 @@
 }
 .icon-arrow-d:before {
     content: "\e618";
-}
-.icon-graph-pizza:before {
-    content: "\e619";
-}
-.icon-gestao:before {
-    content: "\e61a";
-}
-
-
-
-.back:before {
-    transform: rotate(180deg);
 }

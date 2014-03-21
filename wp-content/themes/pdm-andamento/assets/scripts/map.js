@@ -10,20 +10,24 @@ define(['jquery', 'leaflet'], function ($, L) {
         bounds = [];
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
         $items.each(function () {
-            var
-            $self = $(this),
-            point = eval('[' + $self.data('latlng') + ']'),
-            marker = L.marker(point).addTo(map).bindPopup($self.text());
-            $self.on('click', function (event) {
-                event.preventDefault();
-                marker.openPopup();
-                map.panTo(point);
-            });
-            bounds.push(point);
+            var $self = $(this);
+            if ($self.data('latlng') != "") {
+                var
+                point = eval('[' + $self.data('latlng') + ']'),
+                marker = L.marker(point).addTo(map).bindPopup('<a href="'+$self.attr('href')+'">'+$self.text()+'</a>');
+                $self.on('click', function (event) {
+                    event.preventDefault();
+                    marker.openPopup();
+                    map.panTo(point);
+                });
+                bounds.push(point);
+            }
         });
         // Workaround for a leaflet bug (https://github.com/Leaflet/Leaflet/issues/2021)
         window.setTimeout(function() {
-            map.fitBounds(bounds);
+            if (bounds.length > 0) {
+                map.fitBounds(bounds);
+            }
         }, 0);
 
     };

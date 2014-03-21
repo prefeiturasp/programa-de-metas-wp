@@ -8,7 +8,7 @@
 
 <div class="row">
     <div class="small-12 columns nav-innerpage">
-        <a href="{{site.url}}/"><i class="back icon-arrow-r"></i> home/filtros</a>
+        <a href="{{site.url}}/"><i class="icon-arrow-l"></i> home / filtros</a>
     </div>
 </div>
 
@@ -55,10 +55,10 @@
         <div class="content active" id="meta-{{meta.id}}-detalhes">
                     <div class="medium-4 columns">
                         <div class="detalhes">
-                            <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[40,60]}"></div>
+                            <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[{{meta.porcentagem.concluido}},{{meta.porcentagem.restante}}]}"></div>
                             <div class="status">
-                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">100%</a></p>
-                                <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">em andamento</a></p>
+                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format}}%</a></p>
+                                <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.status}}</a></p>
                             </div>
                         </div>
                     </div>
@@ -154,15 +154,20 @@
 
 <div class="row outer-box">
     <div class="small-12 columns ">
-        <div class="small-12 columns">
+        <div class="small-12 columns" >
             <div class="small-12 columns box text-center">
                 <p class="title">
                     <i class="icon-graph-arrow"></i>
                     <span>andamento quantitativo</span>
                 </p>
             </div>
-            <div class="small-3 columns box">
-
+            <div class="small-12 columns box">
+                {% for valor_progresso in progresso %}
+                    <div class="small-3 columns total-por-fase">
+                    <h6>{{valor_progresso}}</h6>
+                    <p>{{fases_projeto[loop.index].name}}</p>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -174,37 +179,59 @@
 <div class="row outer-box" data-equalizer>
     <div class="small-12 columns ">
         <div class="small-12 columns">
-            <div class="small-8 columns box text-center">
-                <p class="title">
-                    <i class="icon-graph"></i>
-                    <span>andamento qualitativo</span>
-                </p>
-            </div>
-            <div class="small-4 columns box text-center">
-                <p class="title">
-                    <i class="icon-quotation"></i>
-                    <span>execução orçamentária</span>
-                </p>
-            </div>
-            <div class="small-3 columns box text-center" data-equalizer-watch>
+            <div class="small-8 columns box text-center" data-equalizer-watch>
+                <div class="small-12 columns">
+                    <p class="title">
+                        <i class="icon-graph"></i>
+                        <span>andamento qualitativo</span>
+                    </p>
+                </div>
 
+                {% if meta.qualitative_progress_3 %}
+                    <div class="small-6 columns andamento">
+                        <h5>{{meta.qualitative_progress_3}}</h5>
+                    </div>
+                {% endif %}
+
+                {% if meta.qualitative_progress_4 %}
+                <div class="small-6 columns andamento">
+                    <h5>{{meta.qualitative_progress_4}}</h5>
+                </div>
+                {% endif %}
+
+                {% if meta.qualitative_progress_5 %}
+                <div class="small-6 columns andamento">
+                    <h5>{{meta.qualitative_progress_5}}</h5>
+                </div>
+                {% endif %}
+
+                {% if meta.qualitative_progress_6 %}
+                <div class="small-6 columns andamento">
+                    <h5>{{meta.qualitative_progress_6}}</h5>
+                </div>
+                {% endif %}
+            </div>
+            <div class="small-4 columns box text-center" data-equalizer-watch>
+                <div class="small-12 columns" >
+                    <p class="title">
+                        <i class="icon-quotation"></i>
+                        <span>execução orçamentária</span>
+                    </p>
+                </div>
+
+                <div class="small-12 columns">
+                    <h5>custo total da meta</h5>
+                    <p>R$ {{ meta.total_cost|number_format(2, '.', ',')}}</p>
+                </div>
+
+                <div class="small-12 columns">
+                    <h5>executado</h5>
+                    <p>R$ {{ executado|number_format(2, '.', ',')}}</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <div class="row outer-box" data-equalizer>
     <div class="small-12 columns ">
@@ -222,7 +249,11 @@
             <div class="small-12 medium-6 columns box" data-equalizer-watch>
                 <ul id="list-projects">
                     {% for projeto in meta.projects %}
-                    <li class="small-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}" data-latlng="{{projeto.gps_lat}},{{projeto.gps_long}}">{{projeto.name}}</a></li>
+                    {% if  projeto.gps_lat != "" %}
+                        {% set gps = projeto.gps_lat + "," + projeto.gps_long %}
+                    {% endif %}
+
+                    <li class="small-12 columns"><a href="{{site.url}}/projeto/{{projeto.id}}" data-latlng="{{gps}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
                     {% endfor %}
                 </ul>
             </div>

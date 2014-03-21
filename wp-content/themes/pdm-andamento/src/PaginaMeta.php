@@ -26,6 +26,16 @@ class PaginaMeta extends Pagina
         $context['articulacoes'] = $api->getArticulacoes();
         $context['tipos_projeto'] = $api->getTiposProjeto();
 
+        //TODO: deve ser inserido o suporte a múltiplos tipos de projeto por meta
+        $context['fases_projeto'] = $api->getFasesPorTipoProjeto($context['meta']['projects'][0]['project_type']);
+        $context['progresso'] = $api->getMetaProgresso($meta_id);
+
+        $executado = 0;
+        foreach ($context['meta']['projects'] as $project) {
+            $executado = $executado + $project['budget_executed'];
+        }
+        $context['executado'] = $executado;
+
         return $context;
     }
 }

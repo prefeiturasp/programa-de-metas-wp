@@ -613,6 +613,11 @@ $cinza-padrao: #666;
         margin: rem-calc(10) 0;
         float: left;
 
+        &#list-projects {
+            height: 400px;
+            overflow: scroll;
+        }
+
         li {
             //width: 45%;
             list-style: none;
@@ -620,7 +625,7 @@ $cinza-padrao: #666;
             //margin:0;
             a {
                 font-family: "MontserratBold", sans-serif;
-                font-size: rem-calc(18);
+                //font-size: rem-calc(16);
                 color: $cinza-padrao;
 
                 i {
@@ -699,6 +704,32 @@ $cinza-padrao: #666;
         margin: 0 rem-calc(10);
         line-height: rem-calc(16);
         font-size: rem-calc(15);
+    }
+
+    .total-por-fase {
+        min-height: rem-calc(35);
+        margin-bottom: rem-calc(15);
+
+        h6 {
+            color: $azul;
+            font-size: rem-calc(30);
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: rem-calc(12);
+            text-transform: uppercase;
+        }
+    }
+
+    .andamento {
+        margin-bottom: rem-calc(30);
+        h5 {
+            color: $azul;
+            font-size: rem-calc(14);
+            line-height: rem-calc(16);
+            font-family: 'Montserrat', sans-serif;
+        }
     }
 
     background-color: #fff;

@@ -101,9 +101,27 @@ class ApiClient
         return $response->json();
     }
 
+    public function getFasesPorTipoProjeto($tipo)
+    {
+        $response = $this->fazerRequisicao('project/type/'.$tipo.'/milestones');
+        return $response->json();
+    }
+
     public function getMeta($id)
     {
         $response = $this->fazerRequisicao('goal/'.$id);
+        return $response->json();
+    }
+
+    public function getMetaPorcentagemConcluida($id)
+    {
+        $response = $this->fazerRequisicao('goal/'.$id.'/status');
+        return $response->json();
+    }
+
+    public function getMetaProgresso($id)
+    {
+        $response = $this->fazerRequisicao('goal/'.$id.'/progress');
         return $response->json();
     }
 

@@ -2140,9 +2140,9 @@
   }
 }
 
-.box ul li {
-  list-style: none;
-  float: left;
+.box ul#list-projects {
+  height: 400px;
+  overflow: scroll;
 }
 
 @media -sass-debug-info {
@@ -2155,10 +2155,9 @@
   }
 }
 
-.box ul li a {
-  font-family: "MontserratBold", sans-serif;
-  font-size: 1.125rem;
-  color: #666666;
+.box ul li {
+  list-style: none;
+  float: left;
 }
 
 @media -sass-debug-info {
@@ -2168,6 +2167,21 @@
 
   line {
     font-family: \00003626;
+  }
+}
+
+.box ul li a {
+  font-family: "MontserratBold", sans-serif;
+  color: #666666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003631;
   }
 }
 
@@ -2181,7 +2195,7 @@
   }
 
   line {
-    font-family: \00003630;
+    font-family: \00003635;
   }
 }
 
@@ -2195,7 +2209,7 @@
   }
 
   line {
-    font-family: \00003637;
+    font-family: \00003642;
   }
 }
 
@@ -2212,7 +2226,7 @@
   }
 
   line {
-    font-family: \00003644;
+    font-family: \00003649;
   }
 }
 
@@ -2227,7 +2241,7 @@
   }
 
   line {
-    font-family: \00003648;
+    font-family: \00003653;
   }
 }
 
@@ -2241,7 +2255,7 @@
   }
 
   line {
-    font-family: \00003660;
+    font-family: \00003665;
   }
 }
 
@@ -2257,7 +2271,7 @@
   }
 
   line {
-    font-family: \00003664;
+    font-family: \00003669;
   }
 }
 
@@ -2273,7 +2287,7 @@
   }
 
   line {
-    font-family: \00003669;
+    font-family: \00003674;
   }
 }
 
@@ -2287,7 +2301,7 @@
   }
 
   line {
-    font-family: \00003677;
+    font-family: \00003682;
   }
 }
 
@@ -2303,7 +2317,7 @@
   }
 
   line {
-    font-family: \00003678;
+    font-family: \00003683;
   }
 }
 
@@ -2317,7 +2331,7 @@
   }
 
   line {
-    font-family: \00003681;
+    font-family: \00003686;
   }
 }
 
@@ -2334,7 +2348,7 @@
   }
 
   line {
-    font-family: \00003686;
+    font-family: \00003691;
   }
 }
 
@@ -2348,7 +2362,7 @@
   }
 
   line {
-    font-family: \00003689;
+    font-family: \00003694;
   }
 }
 
@@ -2366,7 +2380,7 @@
   }
 
   line {
-    font-family: \00003698;
+    font-family: \00003703;
   }
 }
 
@@ -2382,7 +2396,84 @@
   }
 
   line {
-    font-family: \00003707;
+    font-family: \00003709;
+  }
+}
+
+.outer-box .total-por-fase {
+  min-height: 2.1875rem;
+  margin-bottom: 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003713;
+  }
+}
+
+.outer-box .total-por-fase h6 {
+  color: #12c2d2;
+  font-size: 1.875rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003718;
+  }
+}
+
+.outer-box .total-por-fase p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003725;
+  }
+}
+
+.outer-box .andamento {
+  margin-bottom: 1.875rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003727;
+  }
+}
+
+.outer-box .andamento h5 {
+  color: #12c2d2;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003738;
   }
 }
 

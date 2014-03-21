@@ -90,6 +90,20 @@
   }
 }
 
+.icon-gestao:before {
+  content: "\e61a";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000329;
+  }
+}
+
 .icon-transporte:before {
   content: "\e600";
 }
@@ -100,7 +114,7 @@
   }
 
   line {
-    font-family: \0000329;
+    font-family: \0000332;
   }
 }
 
@@ -114,7 +128,7 @@
   }
 
   line {
-    font-family: \0000332;
+    font-family: \0000335;
   }
 }
 
@@ -128,7 +142,7 @@
   }
 
   line {
-    font-family: \0000335;
+    font-family: \0000338;
   }
 }
 
@@ -142,7 +156,7 @@
   }
 
   line {
-    font-family: \0000338;
+    font-family: \0000341;
   }
 }
 
@@ -156,7 +170,7 @@
   }
 
   line {
-    font-family: \0000341;
+    font-family: \0000344;
   }
 }
 
@@ -170,7 +184,7 @@
   }
 
   line {
-    font-family: \0000344;
+    font-family: \0000347;
   }
 }
 
@@ -184,7 +198,7 @@
   }
 
   line {
-    font-family: \0000347;
+    font-family: \0000350;
   }
 }
 
@@ -198,7 +212,7 @@
   }
 
   line {
-    font-family: \0000350;
+    font-family: \0000353;
   }
 }
 
@@ -212,231 +226,7 @@
   }
 
   line {
-    font-family: \0000353;
-  }
-}
-
-.icon-graph-arrow:before {
-  content: "\e609";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
     font-family: \0000356;
-  }
-}
-
-.icon-follow:before {
-  content: "\e60a";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000359;
-  }
-}
-
-.icon-folder:before {
-  content: "\e60b";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000362;
-  }
-}
-
-.icon-filter-black:before {
-  content: "\e60c";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000365;
-  }
-}
-
-.icon-educacao:before {
-  content: "\e60d";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000368;
-  }
-}
-
-.icon-calendar:before {
-  content: "\e60e";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000371;
-  }
-}
-
-.icon-bus:before {
-  content: "\e60f";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000374;
-  }
-}
-
-.icon-buildings:before {
-  content: "\e610";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000377;
-  }
-}
-
-.icon-book:before {
-  content: "\e611";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000380;
-  }
-}
-
-.icon-battery-100:before {
-  content: "\e612";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000383;
-  }
-}
-
-.icon-battery-77:before {
-  content: "\e613";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000386;
-  }
-}
-
-.icon-battery-0:before {
-  content: "\e614";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000389;
-  }
-}
-
-.icon-balloon:before {
-  content: "\e615";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000392;
-  }
-}
-
-.icon-arrow-r:before {
-  content: "\e616";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000395;
-  }
-}
-
-.icon-arrow-r-bold:before {
-  content: "\e617";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000398;
-  }
-}
-
-.icon-arrow-d:before {
-  content: "\e618";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \00003101;
   }
 }
 
@@ -450,12 +240,12 @@
   }
 
   line {
-    font-family: \00003104;
+    font-family: \0000359;
   }
 }
 
-.icon-gestao:before {
-  content: "\e61a";
+.icon-graph-arrow:before {
+  content: "\e609";
 }
 
 @media -sass-debug-info {
@@ -464,13 +254,222 @@
   }
 
   line {
-    font-family: \00003110;
+    font-family: \0000362;
   }
 }
 
-.back:before {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+.icon-follow:before {
+  content: "\e60a";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000365;
+  }
+}
+
+.icon-folder:before {
+  content: "\e60b";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000368;
+  }
+}
+
+.icon-filter-black:before {
+  content: "\e60c";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000371;
+  }
+}
+
+.icon-educacao:before {
+  content: "\e60d";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000374;
+  }
+}
+
+.icon-calendar:before {
+  content: "\e60e";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000377;
+  }
+}
+
+.icon-bus:before {
+  content: "\e60f";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000380;
+  }
+}
+
+.icon-buildings:before {
+  content: "\e610";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000383;
+  }
+}
+
+.icon-book:before {
+  content: "\e611";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000386;
+  }
+}
+
+.icon-battery-100:before {
+  content: "\e612";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000389;
+  }
+}
+
+.icon-battery-77:before {
+  content: "\e613";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000392;
+  }
+}
+
+.icon-battery-0:before {
+  content: "\e614";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000395;
+  }
+}
+
+.icon-balloon:before {
+  content: "\e615";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000398;
+  }
+}
+
+.icon-arrow-l:before {
+  content: "\e61b";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \00003101;
+  }
+}
+
+.icon-arrow-r:before {
+  content: "\e616";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \00003104;
+  }
+}
+
+.icon-arrow-r-bold:before {
+  content: "\e617";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+  }
+
+  line {
+    font-family: \00003107;
+  }
+}
+
+.icon-arrow-d:before {
+  content: "\e618";
 }
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */

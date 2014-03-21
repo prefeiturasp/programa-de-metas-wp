@@ -20,11 +20,11 @@
             <p class="numero">{{meta.id}}</p>
         </div>
         <div class="small-9 medium-8 columns titulo">
-            <h3><a href="/meta/{{meta.id}}">{{meta.name}}</a></h3>
+            <h3><a href="{{site.url}}/meta/{{meta.id}}">{{meta.name}}</a></h3>
             <h4>
                 {% for objetivo in objetivos %}
                     {% if objetivo.id == meta.objective_id %}
-                        <a href="/meta/{{meta.id}}">{{objetivo.name}}</a>
+                        <a href="{{site.url}}/meta/{{meta.id}}">{{objetivo.name}}</a>
                     {% endif %}
                 {% endfor %}
             </h4>
@@ -36,7 +36,7 @@
                         {% if count_sec > 0 %}
                             /
                         {% endif %}
-                        <a href="/meta/{{meta.id}}">{{secretaria.name}}</a>
+                        <a href="{{site.url}}/meta/{{meta.id}}">{{secretaria.name}}</a>
                         {% set count_sec = count_sec + 1 %}
                     {% endif %}
                 {% endfor %}
@@ -57,16 +57,16 @@
                         <div class="detalhes">
                             <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[40,60]}"></div>
                             <div class="status">
-                                <p class="porcentagem"><a href="/meta/{{meta.id}}">100%</a></p>
-                                <p class="descricao"><a href="/meta/{{meta.id}}">em andamento</a></p>
+                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">100%</a></p>
+                                <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">em andamento</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="medium-8 columns">
                         <div class="chamadas">
                             <ul>
-                                <li class="primeiro"><a href="/meta/{{meta.id}}">{{meta.qualitative_progress_1}}</a></li>
-                                <li><a href="/meta/{{meta.id}}">{{meta.qualitative_progress_2}}</a></li>
+                                <li class="primeiro"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.qualitative_progress_1}}</a></li>
+                                <li><a href="{{site.url}}/meta/{{meta.id}}">{{meta.qualitative_progress_2}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                 <div class="box medium-12 columns">
                     <ul>
                         {% for projeto in meta.projects %}
-                            <li class="small-6 columns"><a href="/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i>{{projeto.name}}</a></li>
+                            <li class="small-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i>{{projeto.name}}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -222,7 +222,7 @@
             <div class="small-12 medium-6 columns box" data-equalizer-watch>
                 <ul id="list-projects">
                     {% for projeto in meta.projects %}
-                    <li class="small-6 columns"><a href="/projeto/{{projeto.id}}" data-latlng="{{projeto.gps_lat}},{{projeto.gps_long}}">{{projeto.name}}</a></li>
+                    <li class="small-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}" data-latlng="{{projeto.gps_lat}},{{projeto.gps_long}}">{{projeto.name}}</a></li>
                     {% endfor %}
                 </ul>
             </div>

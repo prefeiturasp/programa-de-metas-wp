@@ -132,6 +132,7 @@ $azul: #12c2d2;
 }
 .filter-bar {
     background-color: #fff;
+    margin-top: 196px;
 
     .infografico {
         margin-top: rem-calc(30px);
@@ -187,6 +188,24 @@ $azul: #12c2d2;
 
         .destaque-por-objetivos {
             background-color: darken($azul, 10%);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 104px;
+
+            li {
+                background-color: darken($azul, 10%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+
             i {
                 border: 2px dotted darken($azul, 20%);
                 border-radius: rem-calc(70);
@@ -560,6 +579,7 @@ $cinza-padrao: #666;
                 padding: rem-calc(10) 0;
                 min-height: rem-calc(90);
                 display: table;
+                width: 100%;
 
                 font-size: rem-calc(14);
                 line-height: rem-calc(15);

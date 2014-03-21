@@ -52,11 +52,11 @@ require(['chart', 'map', 'app', 'jquery'], function (chart, map, app, $) {
     jQuery('form[name="projetos-por-perto"] input[name="cep"]');
 
     jQuery('form[name="projetos-por-perto"] select#subprefeitura-topo').on('change', function (evt) {
-      window.location = '/?subprefeitura=' + jQuery(evt.currentTarget).val();
+      window.location = SITE_URL + '/?subprefeitura=' + jQuery(evt.currentTarget).val();
     });
 
     jQuery('form[name="metas-por-objetivo"] select#objetivo-topo').on('change', function (evt) {
-      window.location = '/?objetivo=' + jQuery(evt.currentTarget).val();
+      window.location = SITE_URL + '/?objetivo=' + jQuery(evt.currentTarget).val();
     });
 
     //.filtrar-todas-as-metas.button

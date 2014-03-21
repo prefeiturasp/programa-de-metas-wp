@@ -14,6 +14,11 @@ class PaginaInicial
         $context['secretarias'] = $api->getSecretarias();
         $context['eixos'] = $api->getEixos();
         $context['articulacoes'] = $api->getArticulacoes();
+
+        $context['total_metas'] = count($context['metas']);
+        if (!empty($_GET['subprefeitura'])) {
+            $context['filtro_so_subprefeitura'] = 'sim';
+        }
         return $context;
     }
 }

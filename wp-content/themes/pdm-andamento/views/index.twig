@@ -1,16 +1,16 @@
 {% extends "base.twig" %}
 
 {% block content %}
-<div class="row summary-results">
+<div class="row summary-results" id="resultado">
     <div class="small-6 columns">
         <p>Mostrando as metas</p>
     </div>
     <div class="small-6 columns text-right">
-        <p>123 metas</p>
+        <p>{{total_metas}} metas</p>
     </div>
 </div>
 {% for meta in metas %}
-    {% include "meta-resumo.twig" with {meta:meta} %}
+    {% include "meta-resumo.twig" with {meta:meta, filtro_so_subprefeitura:filtro_so_subprefeitura} %}
 {% endfor %}
 
 {% endblock %}

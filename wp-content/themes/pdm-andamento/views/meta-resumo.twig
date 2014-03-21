@@ -61,7 +61,7 @@
         <div class="content {% if filtro_so_subprefeitura == "sim" %}active{% endif %}" id="meta-{{meta.id}}-projetos">
             <div class="medium-12 columns">
                 <div class="box medium-12 columns">
-                    <ul>
+                    <ul class="small-12 columns">
                         {% for projeto in meta.projects %}
                             <li class="small-6 columns"><a href="/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
                         {% endfor %}

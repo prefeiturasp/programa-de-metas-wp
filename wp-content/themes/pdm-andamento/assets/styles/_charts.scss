@@ -17,7 +17,6 @@
     }
 
 
-@charset "UTF-8";
 /*
  * Estilização dos gráficos usados no site.
  *
@@ -83,6 +82,7 @@
  * Esse gráfico é feito basicamente com HTML e CSS.
  */
 .project-phases {
+    width: 100%;
   text-align: center;
   font-size: 12px;
   font-family: 'Tinos';
@@ -118,24 +118,47 @@
  * Legenda usada em alguns gráficos.
  */
 .caption {
-  padding-top: 10px;
-  border-top: 1px dashed #ccc;
-  margin: 0 20px;
-  span {
-    display: inline-block;
-    margin-left: 50px;
-    padding-left: 8px;
-    border-left: 30px solid #999;
-    font-size: 11px;
-    line-height: 30px;
-    &.light {
-      border-color: #e6e6e6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 rem-calc(15) 0;
+    width: 100%;
+    li {
+        margin: rem-calc(15) 0 0;
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: rem-calc(11);
+            vertical-align: middle;
+            padding-left: rem-calc(5);
+            display: inline-block;
+        }
+        &.weight-about-goal {
+            float: right;
+            p {
+                font-family: 'Tinos', sans-serif;
+                padding: rem-calc(10) 0;
+                margin-bottom:0
+            }
+        }
+        i.square {
+            display: inline-block;
+            background-color: #e6e6e6;
+            height: rem-calc(30);
+            width: rem-calc(30);
+
+
+            &.light {
+              background-color: #e6e6e6;
+            }
+            &.color-border {
+              background-color: $verde;
+            }
+            &.color-border-light {
+              background-color: lighten($verde, 20%);
+            }
+        }
     }
-  }
-  &.text-left span {
-    margin-right: 50px;
-    margin-left: 0;
-  }
+    //}
 }
 
 
@@ -144,23 +167,25 @@
      */
 
     .box {
-      .box-content .projetos ul li a {
+      ul li a {
         &:hover,
         &.active {
-          color: $azul !important;
+          color: $verde !important;
           &:before {
-            color: $azul !important;
+            color: $verde !important;
           }
         }
       }
       .project-phases {
         .chevron-bar-100,
         .chevron-bar-100:after {
-          background: $azul;
+          background: $verde;
         }
         .chevron-bar-50,
         .chevron-bar-50:after {
-          //@include dual-background(lighten($azul, 20%), #e6e6e6);
+          @include dual-background(lighten($verde, 20%), #e6e6e6);
         }
       }
     }
+
+

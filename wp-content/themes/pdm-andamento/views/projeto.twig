@@ -1,3 +1,4 @@
+{% set body_class = "projeto" %}
 {% extends 'base.twig' %}
 
 {% block header %}
@@ -13,11 +14,212 @@
     </div>
 </div>
 
-
 <div class="row">
     <div class="small-12 columns nav-innerpage">
-        <a href="{{site.url}}/meta/{{projeto.goal_id}}"><i class="back icon-arrow-r"></i>{{projeto.goals.name}}</a>
+        <div class="small-12 medium-8 columns">
+            <a href="{{site.url}}/meta/{{projeto.goal_id}}"><i class="icon-arrow-l"></i> META {{projeto.goal_id}} - {{projeto.goal.name}}</a>
+        </div>
+        <div class="small-12 medium-4 columns">
+            <form name="projetos-relacionados"><label>
+            <select name="projetos" id="projetos-topo">
+            <option value="">Mais projetos dessa meta</option>
+            {% include 'partials/_options-projetos.twig' with {projetos:meta_relacionada.projects} %}
+            </select>
+            </label></form>
+        </div>
     </div>
 </div>
+
+
+<div class="row projeto-card outer-box" data-equalizer>
+    <div class="medium-12 columns">
+        <div class="small-12 medium-10 columns titulo">
+            <span class="type-page">projeto</span>
+            <h1><i class="icon-arrow-r-bold"></i>{{projeto.name}}</h1>
+        </div>
+
+        <div class="small-8 small-centered medium-uncentered medium-2 columns">
+            <dl class="tabs tabs-options">
+                <dd class="compartilhar box-options"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-share"></i>Compartilhe<br> esta meta</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="medium-12 columns">
+        <div class="small-9 columns">
+            <div class="box small-4 columns" data-equalizer-watch>
+                <h3>tipo</h3>
+                {% for project_type in tipos_projeto %}
+                    {% if project_type.id == projeto.project_type %}
+                        <p class="descricao">{{project_type.name}}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="box small-4 columns" data-equalizer-watch>
+                <h3>subprefeitura</h3>
+                <p class="descricao">{{projeto.prefectures[0].name}}</p>
+            </div>
+            <div class="box small-4 columns" data-equalizer-watch>
+                <h3>distrito</h3>
+                <p class="descricao">{{projeto.district}}</p>
+            </div>
+        </div>
+        <div class="small-3 columns status" data-equalizer-watch>
+            <div class="box small-12 columns text-center">
+                <p>{{status.descricao}}</p>
+                <h5>{{status.absoluto}}%</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row outer-box">
+    <div class="small-12 columns ">
+        <div class="small-12 columns" >
+            <div class="small-12 columns box text-center">
+                <p class="title">
+                    <i class="icon-graph-arrow"></i>
+                    <span>acompanhamento das fases</span>
+                </p>
+            </div>
+            <div class="small-12 columns box ">
+                <ul class="project-phases">
+                    {% for progresso_projeto in progresso %}
+                    <li style="width:{{fases_projeto[progresso_projeto.milestone].percentage}}%;">
+                        <div class="chevron-bar chevron-bar-{{progresso_projeto.status}}"></div>
+                        {{fases_projeto[progresso_projeto.milestone].name}}
+                        ({{fases_projeto[progresso_projeto.milestone].percentage}}%)
+                    </li>
+                    {% endfor %}
+                </ul>
+                <ul class="caption project-phases">
+                    <li class=""><i class="square"></i><p>FASE NÃO INICIADA</p></li>
+                    <li class=""><i class="square color-border-light"></i><p>FASE EM ANDAMENTO</p></li>
+                    <li class=""><i class="square color-border"></i><p>FASE CONCLUÍDA</p></li>
+                    <li class="weight-about-goal"><p>Peso do projeto em relação a meta: {{projeto.weight_about_goal}}%</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row outer-box" data-equalizer>
+    <div class="small-12 columns ">
+        <div class="small-12 columns">
+            <div class="small-12 columns box text-center" data-equalizer-watch>
+                <div class="small-12 columns">
+                    <p class="title">
+                        <i class="icon-graph"></i>
+                        <span>andamento qualitativo</span>
+                    </p>
+                </div>
+                <div class="row">
+                {% if
+                    ((projeto.qualitative_progress_3  == "") and
+                    (projeto.qualitative_progress_4  == "") and
+                    (projeto.qualitative_progress_5  == "") and
+                    (projeto.qualitative_progress_6  == ""))
+                    %}
+                    <div class="small-6 columns small-centered text-center andamento">
+                        <h5>Informações ainda não disponíveis.</h5>
+                    </div>
+                {% endif %}
+
+
+                {% if projeto.qualitative_progress_3 != "" %}
+                    <div class="small-6 columns small-centered text-center andamento">
+                        <h5>{{projeto.qualitative_progress_3}}</h5>
+                    </div>
+                {% endif %}
+
+                {% if projeto.qualitative_progress_4 != "" %}
+                <div class="small-6 columns small-centered text-center andamento">
+                    <h5>{{projeto.qualitative_progress_4}}</h5>
+                </div>
+                {% endif %}
+
+                {% if projeto.qualitative_progress_5 != "" %}
+                <div class="small-6 columns small-centered text-center andamento">
+                    <h5>{{projeto.qualitative_progress_5}}</h5>
+                </div>
+                {% endif %}
+
+                {% if projeto.qualitative_progress_6 != "" %}
+                <div class="small-6 columns small-centered text-center andamento">
+                    <h5>{{projeto.qualitative_progress_6}}</h5>
+                </div>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="row outer-box" data-equalizer>
+    <div class="small-12 columns ">
+        <div class="small-12 columns">
+            <div class="small-12 columns box text-center" data-equalizer-watch>
+                <div class="small-12 columns">
+                    <p class="title">
+                        <i class="icon-quotation"></i>
+                        <span>execução orçamentária</span>
+                    </p>
+                </div>
+
+                <div class="text-center cronograma">
+                    <div class="row anos">
+                        <div class="small-12 medium-2 columns"></div>
+                        <div class="small-12 medium-3 columns">2013</div>
+                        <div class="small-12 medium-3 columns">2014</div>
+                        <div class="small-12 medium-2 columns">2015</div>
+                        <div class="small-12 medium-2 columns">2016</div>
+                    </div>
+                    <div class="entregue row">
+                        <div class="small-12 medium-2 columns"><h3>EXECUTADO</h3></div>
+                        <div class="small-12 medium-3 valor columns">R$ {{projeto.budget_executed|number_format(2, '.', ',')}}</div>
+                        <div class="small-12 medium-7 columns"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="row outer-box" data-equalizer>
+    <div class="small-12 columns ">
+        <div class="small-12 columns">
+            <div class="small-12 columns box text-center" data-equalizer-watch>
+                <div class="small-12 columns">
+                    <p class="title">
+                    <i class="icon-plot-full"></i>
+                    <span>local</span>
+                </p>
+                </div>
+
+                {% if projeto.gps_lat != "" %}
+                <div class="small-12 columns">
+                    <div class="map-render" id="map-local" style="height:470px;" data-source="#project-local"></div>
+                </div>
+                {% endif %}
+
+                <div id="project-local">
+                    <p data-latlng="{{projeto.gps_lat}},{{projeto.gps_long}}">Endereço: {{projeto.address}}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
 {% endblock %}

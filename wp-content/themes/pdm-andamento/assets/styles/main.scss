@@ -122,10 +122,10 @@ $azul: #12c2d2;
 
         .separate-bar {
             &.meta {
-                background-color: $verde;
+                background-color: $azul;
             }
             &.projeto {
-                background-color: $azul;
+                background-color: $verde;
             }
         }
     }
@@ -385,6 +385,7 @@ $cinza-padrao: #666;
 
 .meta-card {
     background-color: #fff;
+    margin-top: rem-calc(15);
     margin-bottom: rem-calc(15);
 
     .ordem {
@@ -460,7 +461,7 @@ $cinza-padrao: #666;
         .box-options {
             background-color: #f2f4f6;
             width: rem-calc(70);
-            float:left;
+            float:right;
             margin-left: rem-calc(8);
 
             i {
@@ -658,13 +659,36 @@ $cinza-padrao: #666;
 
 
 
-
+.meta {
+    .outer-box {
+        .andamento {
+            h5 {
+                color: $azul;
+            }
+        }
+    }
+}
+.projeto {
+    .outer-box {
+        .box {
+            background-color: #fff;
+        }
+        .title {
+            margin-top: rem-calc(25);
+        }
+        .andamento {
+            h5 {
+                color: $verde;
+            }
+        }
+    }
+}
 
 
 
 .nav-innerpage {
     background-color: #fff;
-    margin: rem-calc(15) 0;
+    margin: rem-calc(15) 0 0;
     padding: rem-calc(15) 0 rem-calc(15) rem-calc(20);
     a {
         font-size: rem-calc(14);
@@ -675,11 +699,20 @@ $cinza-padrao: #666;
             color: darken(#999999, 10%);
         }
     }
+
+    select {
+        margin: 0;
+        border: 0;
+        background-color: #fff;
+    }
 }
 
 
 
 .outer-box {
+    background-color: #fff;
+    padding-bottom: rem-calc(15);
+
     .box {
         padding-bottom: rem-calc(15);
     }
@@ -725,18 +758,144 @@ $cinza-padrao: #666;
     .andamento {
         margin-bottom: rem-calc(30);
         h5 {
-            color: $azul;
             font-size: rem-calc(14);
             line-height: rem-calc(16);
             font-family: 'Montserrat', sans-serif;
         }
     }
 
-    background-color: #fff;
-    margin-bottom: rem-calc(15);
-    padding-bottom: rem-calc(15);
     &.meta-card {
         padding-bottom: 0;
         margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+.projeto-card {
+
+    &.outer-box {
+        padding-top: rem-calc(15);
+        margin-top: rem-calc(15);
+
+        .box {
+            background-color: $primary-color;
+
+            h3 {
+                margin: rem-calc(30) rem-calc(10) rem-calc(15);
+                text-transform: uppercase;
+            }
+        }
+
+        .status {
+            p {
+                color: $verde;
+                font-size: rem-calc(15);
+                text-transform: uppercase;
+                margin: rem-calc(15) 0 rem-calc(5);
+            }
+            h5 {
+                color: $verde;
+                font-size: rem-calc(50);
+            }
+        }
+
+        .titulo {
+            h1 {
+                margin-bottom: rem-calc(20);
+            }
+            span {
+                text-transform: uppercase;
+                margin-bottom: rem-calc(10);
+                display: block;
+            }
+        }
+    }
+
+    .tabs-options {
+        .box-options {
+            background-color: #f2f4f6;
+            width: rem-calc(70);
+            float:right;
+            margin-left: rem-calc(8);
+
+            i {
+                display: block;
+                font-size: rem-calc(20);
+                margin: rem-calc(5) 0 rem-calc(10);
+            }
+            a {
+                display: block;
+                line-height: 1;
+                color: #c3c5c6;
+                font-family: 'TinosItalic', sans-serif;
+                font-weight: normal;
+                font-size: rem-calc(12);
+                text-align: center;
+                padding: rem-calc(5) 0;
+            }
+
+            &.meta {
+                a {
+                    color: $azul;
+                }
+
+                &.active {
+
+                    a {
+                        background-color: $azul;
+                        color: #fff;
+                    }
+                }
+            }
+
+
+            &.compartilhar {
+                &.active {
+                    a {
+                        background-color: #c3c5c6;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.cronograma {
+    padding: 0 20px;
+    .anos {
+        position: relative;
+
+        div {
+            font-weight: bold;
+            padding: 10px;
+        &:before {
+            bottom: -5px;
+            content: "|";
+            font-size: 9px;
+            left: 0;
+            position: absolute;
+        }
+        }
+    }
+    .entregue {
+        background-color: darken($primary-color, 5%);
+        border-width: 1px 0;
+        border-style: dashed;
+        border-color: #999;
+        div {
+            padding: 10px;
+        }
+        .valor {
+            color: $verde;
+        }
+
     }
 }

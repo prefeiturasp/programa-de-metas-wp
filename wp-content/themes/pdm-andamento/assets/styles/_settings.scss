@@ -1,3 +1,24 @@
+@charset "UTF-8";
+
+/*
+ * Cria um background com duas cores. Por padrão, a divisão entre as cores
+ * fica no centro do elemento, mas isso pode ser ajustado através do terceiro
+ * parâmetro da função ($position).
+ *
+ * Obs.: O background gerado não é um gradiente, a transição entre as cores é
+ * "seca".
+ */
+@mixin dual-background($colorStart, $colorEnd, $position: 50%) {
+  background: $colorStart;
+  background:    -moz-linear-gradient(left, $colorStart $position, $colorEnd $position); /* FF3.6+ */
+  background:        -webkit-gradient(linear, left top, right top, color-stop($position, $colorStart), color-stop($position, $colorEnd)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, $colorStart $position, $colorEnd $position); /* Chrome10+,Safari5.1+ */
+  background:      -o-linear-gradient(left, $colorStart $position, $colorEnd $position); /* Opera 11.10+ */
+  background:     -ms-linear-gradient(left, $colorStart $position, $colorEnd $position); /* IE10+ */
+  background:         linear-gradient(to right, $colorStart $position, $colorEnd $position); /* W3C */
+}
+
+
 // Foundation by ZURB
 // foundation.zurb.com
 // Licensed under MIT Open Source

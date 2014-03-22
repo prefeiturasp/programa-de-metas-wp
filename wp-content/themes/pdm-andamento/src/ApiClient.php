@@ -101,6 +101,12 @@ class ApiClient
         return $response->json();
     }
 
+    public function getProjetoProgresso($id)
+    {
+        $response = $this->fazerRequisicao('project/'.$id.'/progress');
+        return $response->json();
+    }
+
     public function getFasesPorTipoProjeto($tipo)
     {
         $response = $this->fazerRequisicao('project/type/'.$tipo.'/milestones');

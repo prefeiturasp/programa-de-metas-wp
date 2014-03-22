@@ -1,3 +1,4 @@
+{% set body_class = "meta" %}
 {% extends 'base.twig' %}
 
 {% block header %}
@@ -45,7 +46,7 @@
         </div>
 
         <div class="small-8 small-centered medium-uncentered medium-3 columns">
-            <dl class="row tabs tabs-options">
+            <dl class="tabs tabs-options">
                 <dd class="acompanhar box-options"><a href="#meta-{{meta.id}}-acompanhar"><i class="icon-follow"></i>Seguir<br> esta meta</a></dd>
                 <dd class="compartilhar box-options"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-share"></i>Compartilhe<br> esta meta</a></dd>
             </dl>

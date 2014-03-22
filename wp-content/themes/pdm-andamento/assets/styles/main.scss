@@ -137,6 +137,10 @@ $azul: #12c2d2;
     .infografico {
         margin-top: rem-calc(30px);
         margin-bottom: rem-calc(30px);
+
+        a {
+            display: inline-block;
+        }
     }
 
     h3 {
@@ -166,7 +170,7 @@ $azul: #12c2d2;
             font-family: 'Montserrat', sans-serif;
             padding: rem-calc(15) rem-calc(10);
             border-radius: rem-calc(50);
-            z-index: 999;
+            z-index: 777;
             margin: rem-calc(10);
             font-style: normal;
         }

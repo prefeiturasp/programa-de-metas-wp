@@ -206,7 +206,7 @@
                 </p>
                 </div>
 
-                {% if projeto.gps_lat != "" %}
+                {% if projeto.gps_lat != "" and projeto.gps_lat != 0 %}
                 <div class="small-12 columns">
                     <div class="map-render" id="map-local" style="height:470px;" data-source="#project-local"></div>
                 </div>

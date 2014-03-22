@@ -152,6 +152,24 @@ $azul: #12c2d2;
 
     .projetos-por-perto {
         background-color: $verde;
+        position: relative;
+
+        i.ou {
+            color: #999;
+            background-color: #fff;
+            position: absolute;
+            right: rem-calc(-30);
+            text-transform: uppercase;
+            top: 0;
+            font-size: rem-calc(15);
+            line-height: rem-calc(15);
+            font-family: 'Montserrat', sans-serif;
+            padding: rem-calc(15) rem-calc(10);
+            border-radius: rem-calc(50);
+            z-index: 999;
+            margin: rem-calc(10);
+            font-style: normal;
+        }
 
         .nao-sabe-cep {
             margin-top: rem-calc(20);

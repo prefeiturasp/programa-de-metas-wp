@@ -1,18 +1,28 @@
 {% extends "base.twig" %}
-
+{% block header %}
+{% include "header-simple.twig" with {page_type:"page"} %}
+{% endblock %}
 {% block content %}
 
-	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<h1 class="article-h1">{{post.title}}</h1>
 
-				<div class="article-body">
-					{{post.content}}
-				</div>
-			</section>
 
-		</article>
-	</div> <!-- /content-wrapper -->
+
+<div class="row">
+    <div class="small-12 columns nav-innerpage">
+        <h1 class="article-h1">{{post.title}}</h1>
+    </div>
+</div>
+
+    <div class="content-wrapper row outer-box ">
+        <article class="small-12 columns post-type-{{post.post_type}}" id="post-{{post.ID}}">
+            <section class="article-content">
+
+                <div class="article-body">
+                    {{post.content}}
+                </div>
+            </section>
+
+        </article>
+    </div> <!-- /content-wrapper -->
 
 {% endblock %}

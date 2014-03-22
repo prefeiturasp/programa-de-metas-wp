@@ -2,11 +2,16 @@
 
 $verde: #97c949;
 $azul: #12c2d2;
+$vermelho: #eb2851;
 
 @import "settings";
 @import "charts";
 // endbower
-
+.content-wrapper {
+    z-index: 33;
+    margin-top: rem-calc(30);
+    padding: rem-calc(30);
+}
 .header {
     background-color: #fff;
 
@@ -126,6 +131,9 @@ $azul: #12c2d2;
             }
             &.projeto {
                 background-color: $verde;
+            }
+            &.page {
+                background-color: $vermelho;
             }
         }
     }

@@ -46,7 +46,7 @@ class PaginaProjeto extends Pagina
 
         if ($status_total == 0) {
             $context['status']['descricao'] = 'Não iniciada';
-        } elseif ($status_total > 0) {
+        } elseif (($status_total > 0) && ($status_total < 100) {
             $context['status']['descricao'] = 'Em andamento';
         } elseif ($status_total == 100) {
             $context['status']['descricao'] = 'Concluído';

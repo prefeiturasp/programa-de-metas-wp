@@ -188,6 +188,17 @@
                     </p>
                 </div>
 
+                {% if
+                    ((meta.qualitative_progress_3  == "") and
+                    (meta.qualitative_progress_4  == "") and
+                    (meta.qualitative_progress_5  == "") and
+                    (meta.qualitative_progress_6  == ""))
+                    %}
+                    <div class="small-6 columns small-centered text-center andamento">
+                        <h5>Sem destaques sobre esta meta.</h5>
+                    </div>
+                {% endif %}
+
                 {% if meta.qualitative_progress_3 %}
                     <div class="small-6 columns andamento">
                         <h5>{{meta.qualitative_progress_3}}</h5>
@@ -250,11 +261,11 @@
             <div class="small-12 medium-6 columns box" data-equalizer-watch>
                 <ul id="list-projects">
                     {% for projeto in meta.projects %}
-                    {% if  projeto.gps_lat != "" %}
-                        {% set gps = projeto.gps_lat + "," + projeto.gps_long %}
+                    {% if projeto.gps_lat != "" and projeto.gps_lat != 0 %}
+                        {% set gps = 'data-latlng="' ~ projeto.gps_lat  ~ ',' ~ projeto.gps_long ~ '"' %}
                     {% endif %}
 
-                    <li class="small-12 columns"><a href="{{site.url}}/projeto/{{projeto.id}}" data-latlng="{{gps}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
+                    <li class="small-12 columns"><a href="{{site.url}}/projeto/{{projeto.id}}" {{gps}}><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
                     {% endfor %}
                 </ul>
             </div>

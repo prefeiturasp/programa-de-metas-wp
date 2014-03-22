@@ -1,0 +1,387 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>pdm frontend</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="styles/vendor-libraries.css">
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:css(assets) styles/main.css -->
+            <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="fixed header">
+            <div class="support-bar">
+                <div class="row">
+                    <div class="small-6 medium-3 columns">
+                        <div class="box-logo-planeja">
+                            <img class="logo-planeja" src="images/logo-planeja-sampa.svg" alt="Logo Planeja Sampa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-bar">
+                <div class="menu-principal small-12 medium-8 columns">
+                    <ul class="inline-list">
+                        <li><a href="#">o programa</a></li>
+                        <li><a href="#">metodologia</a></li>
+                        <li><a href="#">contato</a></li>
+                        <li><a href="#">api</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociais small-12 medium-4 columns">
+                    redes sociais
+                </div>
+            </div>
+
+            <div class="row title-bar" >
+                <div class="small-10 small-centered columns text-center">
+                    <img class="logo-programa-de-metas" src="images/logo-programa-de-metas.svg" alt="Logo Programa de Metas">
+                    <h1>programa de metas</h1>
+                    <h2>Acompanhe o que vem sendo feito em São Paulo</h2>
+                </div>
+            </div>
+        </div>
+        <div class="filter-bar">
+            <div class="row">
+                <div class="infografico small-12 medium-10 small-centered columns">
+                    <img src="images/infografico.png" width="809" height="148" alt="Infográfico explicativo de como funciona o programa de metas">
+                </div>
+                <div class="projetos-por-perto small-12 medium-6 columns">
+                    <form>
+                        <div class="row">
+                            <div class="small-11 small-centered columns">
+                                <h3>Encontre projetos próximos a você</h3>
+                            </div>
+                            <div class="small-11 small-centered columns">
+                                <div class="row collapse">
+                                    <div class="small-9 columns">
+                                        <input type="text" placeholder="Digite seu CEP">
+                                    </div>
+                                    <div class="small-3 columns">
+                                        <a href="#" class="button postfix">Encontrar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="nao-sabe-cep small-11 small-centered columns">
+                                <label>Não sabe seu CEP?
+                                <select>
+                                <option value="">Selecione uma subprefeitura</option>
+                                <option value="starbuck">Starbuck</option>
+                                <option value="hotdog">Hot Dog</option>
+                                <option value="apollo">Apollo</option>
+                                </select>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="metas-por-objetivo small-12 medium-6 columns">
+                    <form>
+                        <div class="row">
+                            <div class="small-11 small-centered columns">
+                                <h3>Encontre metas por objetivos</h3>
+                            </div>
+                            <div class="small-11 small-centered columns">
+                                <label class="first-input">
+                                <select>
+                                    <option value="">Selecione um objetivo</option>
+                                    <option value="starbuck">Starbuck</option>
+                                    <option value="hotdog">Hot Dog</option>
+                                    <option value="apollo">Apollo</option>
+                                </select>
+                                </label>
+                            </div>
+                            <ul class="destaque-por-objetivos" data-orbit data-options="timer:false;slide_number:false;bullets:false;">
+                                <li data-orbit-slide="headline-2">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-saude"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="">Saúde</a></h4>
+                                            <p><a href="">Melhoria na cobertura do atendimento e redução nas filas de espera com 4 novas UBS, 10 unidades da Rede Hora Certa e 434 novos leitos hospitalares.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-1">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-book"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="">Educação</a></h4>
+                                            <p><a href="">Em 2013, foram construídas 33 novas escolas de educação infantil. 73 mil alunos agora ficam mais tempo na escola, com o Programa.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-3">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-transporte"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="">Transporte</a></h4>
+                                            <p><a href="">Implantação do Bilhete Único Mensal e de 294 km de faixas exclusivas. A velocidade média dos ônibus nessas avenidas aumentou em 50%.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-4">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-buildings"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="">Habitação</a></h4>
+                                            <p><a href="">14 mil famílias com a posse regularizada, 1.890 moradias entregues e viabilização de terrenos para construção de mais 39 mil.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-5">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-transporte"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="">Iluminação</a></h4>
+                                            <p><a href="">Meta concluída com a implantação de 18 mil novos pontos. A Vila Bela, em São Mateus ficou 10 anos na escuridão e hoje está iluminada.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-orbit-slide="headline-6">
+                                    <div class="row">
+                                        <div class="small-offset-1 small-2 columns">
+                                            <i class="icon-gestao"></i>
+                                        </div>
+                                        <div class="small-8 columns end">
+                                            <h4><a href="">Gestão Participativa</a></h4>
+                                            <p><a href="">Criação dos Conselhos Participativos das subprefeituras, passo histórico para garantir maior transparência e controle das ações governamentais.</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="f1_container" class="hide-for-small-only">
+            <div id="f1_card" class="shadow">
+                <div class="front face">
+                    <div class="row">
+                        <div class="ver-todas-as-metas small-12 columns text-center">
+                            <p><img src="images/scroll-down.svg" alt="Role o scroll para ver mais conteúdo.">ver todas as metas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back face center">
+                    <div class="row">
+                        <div class="medium-6 columns faixa-projeto"></div>
+                        <div class="medium-6 columns faixa-meta"></div>
+                        <div class="filtrar-todas-as-metas  small-12 columns text-center">
+                            <div class="row">
+                                <div class="small-12 medium-1 columns">
+                                    <p>Filtros:</p>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select>
+                                    <option value="">subprefeitura</option>
+                                    <option value="starbuck">Starbuck</option>
+                                    <option value="hotdog">Hot Dog</option>
+                                    <option value="apollo">Apollo</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select>
+                                    <option value="">objetivo</option>
+                                    <option value="starbuck">Starbuck</option>
+                                    <option value="hotdog">Hot Dog</option>
+                                    <option value="apollo">Apollo</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select>
+                                    <option value="">secretaria</option>
+                                    <option value="starbuck">Starbuck</option>
+                                    <option value="hotdog">Hot Dog</option>
+                                    <option value="apollo">Apollo</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select>
+                                    <option value="">eixo</option>
+                                    <option value="starbuck">Starbuck</option>
+                                    <option value="hotdog">Hot Dog</option>
+                                    <option value="apollo">Apollo</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-2 columns">
+                                    <label class="first-input">
+                                    <select>
+                                    <option value="">articulação</option>
+                                    <option value="starbuck">Starbuck</option>
+                                    <option value="hotdog">Hot Dog</option>
+                                    <option value="apollo">Apollo</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-1 columns">
+                                        <a href="#" class="button round tiny">Filtrar</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row summary-results">
+            <div class="small-6 columns">
+                <p>Mostrando as metas</p>
+            </div>
+            <div class="small-6 columns text-right">
+                <p>123 metas</p>
+            </div>
+        </div>
+
+
+        <div class="row meta no-resultado">
+            <div class="medium-12 columns">
+                <div class="small-3 medium-1 columns ordem">
+                    <p class="faixa"></p>
+                    <p class="nome">meta</p>
+                    <p class="numero">123</p>
+                </div>
+                <div class="small-9 medium-8 columns titulo">
+                    <h3><a href="#">Implantação de 31 polos UAB</a></h3>
+                    <h4><a href="#">DESENVOLVIMENTO SOCIAL</a></h4>
+                    <h5><a href="#">Secretaria Municipal de Transportes</a></h5>
+                </div>
+
+                <div class="small-8 small-centered medium-uncentered medium-3 columns">
+                    <dl class="row tabs tabs-options" data-tab>
+                        <dd class="meta box-options active"><a href="#meta-123-detalhes"><i class="icon-graph-arrow"></i>Resumo<br> desta meta</a></dd>
+                        <dd class="projeto box-options"><a href="#meta-123-projetos"><i class="icon-folder"></i>Projetos<br> desta meta</a></dd>
+                        <dd class="acompanhar box-options"><a href="#meta-123-acompanhar"><i class="icon-follow"></i>Seguir<br> esta meta</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="tabs-content medium-12 columns">
+                <div class="content active" id="meta-123-detalhes">
+                            <div class="medium-4 columns">
+                                <div class="detalhes">
+                                    <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[40,60]}"></div>
+                                    <div class="status">
+                                        <p class="porcentagem"><a href="#">100%</a></p>
+                                        <p class="descricao"><a href="#">em andamento</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-8 columns">
+                                <div class="chamadas">
+                                    <ul>
+                                        <li class="primeiro"><a href="#">18 polos implantados, com a oferta de 125 turmas de especialização, 12 de aperfeiçoamento e 31 de licenciatura iniciando em 2014 (6 mil vagas)</a></li>
+                                        <li><a href="#">10 unidades instaladas: 6 unidades fixas ( Freguesia do Ó, Itaim, Lapa, M'Boi Mirim (2) Penha) e 4 unidades móveis (Brasiliândia/Pìrituba, Capela do Socorro/Santo Amaro, Ermelino Matarazzo/São Mateus e Sé)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                </div>
+                <div class="content" id="meta-123-projetos">
+                    <div class="medium-12 columns">
+                        <div class="box medium-12 columns">
+                            <ul>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Aliquam tincidunt mauris eu risus.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Vestibulum auctor dapibus neque.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Nunc dignissim risus id metus.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Cras ornare tristique elit.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Vivamus vestibulum nulla nec ante.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Praesent placerat risus quis eros.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Fusce pellentesque suscipit nibh.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Integer vitae libero ac risus egestas placerat.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Vestibulum commodo felis quis tortor.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Ut aliquam sollicitudin leo.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Cras iaculis ultricies nulla.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Donec quis dui at dolor tempor interdum.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Vivamus molestie gravida turpis.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Fusce lobortis lorem at ipsum semper sagittis.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Nam convallis pellentesque nisl.</a></li>
+                                <li class="small-6 columns"><a href=""><i class="icon-arrow-r-bold"></i>Integer malesuada commodo nulla.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="meta-123-acompanhar">
+                    <div class="medium-12 columns">
+                        <form>
+                            <div class="box medium-12 columns">
+                                <h4>RECEBA ATUALIZAÇÕES SOBRE ESTA META POR E-MAIL</h4>
+
+                                <div class="small-12 medium-6 columns">
+                                    <label>Nome
+                                        <input type="text" placeholder="Preencha como você quer ser chamado" />
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-6 columns">
+                                    <label>E-mail
+                                        <input type="text" placeholder="Em qual e-mail você gostaria de receber as atualizações?" />
+                                    </label>
+                                </div>
+                                <div class="small-12 medium-3 medium-offset-9 columns text-right">
+                                    <button class="button radius round tiny"><i class="icon-follow"></i> Seguir esta meta</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <!--script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+        <script src="bower_components/foundation/js/foundation.js"></script-->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <!--script src="scripts/map.js"></script>
+        <script src="scripts/chart.js"></script>
+        <script src="scripts/app.js"></script-->
+        <!-- endbuild -->
+</body>
+</html>

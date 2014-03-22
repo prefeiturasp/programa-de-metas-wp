@@ -63,7 +63,15 @@
                 <div class="box medium-12 columns">
                     <ul class="small-12 columns">
                         {% for projeto in meta.projects %}
-                            <li class="small-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
+                            {% if subprefeitura_active == "" %}
+                                <li class="small-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
+                            {% else %}
+                                {% for prefecture in projeto.prefectures %}
+                                    {% if prefecture.id == subprefeitura_active %}
+                                        <li class="small-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>

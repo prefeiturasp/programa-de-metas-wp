@@ -16,6 +16,8 @@ class PaginaInicial
         $context['articulacoes'] = $api->getArticulacoes();
 
         $context['total_metas'] = count($context['metas']);
+
+        $context['subprefeitura_active'] = $_GET['subprefeitura'];
         if (!empty($_GET['subprefeitura'])) {
             $context['filtro_so_subprefeitura'] = 'sim';
         }

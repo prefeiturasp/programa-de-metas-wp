@@ -42,7 +42,11 @@
         <div class="content {% if filtro_so_subprefeitura != "sim" %}active{% endif %}" id="meta-{{meta.id}}-detalhes">
                     <div class="medium-4 columns">
                         <div class="detalhes">
+                        {% if meta.porcentagem.concluido > 100 %}
+                            <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[100,0]}"></div>
+                        {% else %}
                             <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[{{meta.porcentagem.concluido}},{{meta.porcentagem.restante}}]}"></div>
+                        {% endif %}
                             <div class="status">
                                 <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format(1, ',', '.')}}%</a></p>
                                 <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.status}}</a></p>

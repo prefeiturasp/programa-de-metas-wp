@@ -1,16 +1,15 @@
-{% if progresso.tipos_agrupados[0] != 0 or progresso.tipos_agrupados[2] != 0 or progresso.tipos_agrupados[3] != 0 %}
-    {% for key, valor_progresso in progresso.tipos_agrupados %}
+{% if progresso | length > 0 %}
+    {% for projeto in projects %}
+        {% if projeto.project_type == tipo %}
+        <div class="small-12 columns">
+        <h5>{{projeto.name}}</h5>
+        {% for key,prog in progresso[projeto.id] %}
         <div class="small-3 columns total-por-fase">
-        <h6>{{valor_progresso}}</h6>
-        <p>
-            {% if key == 1 %}
-                em etapas anteriores ao início das obras
-            {% elseif key == 2 %}
-                em obras ou implantação de estruturas
-            {% elseif key == 3 %}
-                concluídos(as)
-            {% endif %}
-        </p>
+            <h6>{{prog}}</h6>
+            <p>{{key}}</p>
         </div>
+        {% endfor %}
+        </div>
+        {% endif %}
     {% endfor %}
 {% endif %}

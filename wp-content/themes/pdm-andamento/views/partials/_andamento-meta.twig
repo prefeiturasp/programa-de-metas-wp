@@ -1,3 +1,8 @@
-{% include "partials/andamento-meta/_por-fase.twig" with {progresso:progresso} %}
+{% include "partials/andamento-meta/_por-grupo.twig" with {progresso:progresso} %}
 
-{% include "partials/andamento-meta/_mes-a-mes.twig" with {progresso:progresso['tipo8']} %}
+<h3>Outros Projetos:</h3>
+
+{% include "partials/andamento-meta/_por-fase.twig" with {tipo:5,progresso:progresso['tipo5'], projects:meta.projects} %}
+{% include "partials/andamento-meta/_por-fase.twig" with {tipo:6,progresso:progresso['tipo6'], projects:meta.projects} %}
+{% include "partials/andamento-meta/_por-fase.twig" with {tipo:7,progresso:progresso['tipo7'], projects:meta.projects} %}
+{% include "partials/andamento-meta/_mes-a-mes.twig" with {progresso:progresso['tipo8'], projects:meta.projects} %}

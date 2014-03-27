@@ -9,11 +9,22 @@
         fill: $azul;
       }
     }
-    .line-a {
-      stroke: $verde;
+    .projeto {
+        .line-a {
+          stroke: $verde;
+        }
+        .dot-a {
+          fill: $verde;
+        }
     }
-    .dot-a {
-      fill: $verde;
+
+    .meta {
+        .line-a {
+          stroke: $azul;
+        }
+        .dot-a {
+          fill: $azul;
+        }
     }
 
 
@@ -180,9 +191,9 @@
       ul li a {
         &:hover,
         &.active {
-          color: $verde !important;
+          //color: $verde !important;
           &:before {
-            color: $verde !important;
+            //color: $verde !important;
           }
         }
       }

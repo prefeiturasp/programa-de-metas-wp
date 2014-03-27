@@ -663,10 +663,6 @@ $cinza-padrao: #666;
                 i {
                     margin-right: rem-calc(10);
                 }
-
-                &:hover {
-                    color: $verde;
-                }
             }
         }
     }
@@ -691,6 +687,15 @@ $cinza-padrao: #666;
 
 
 .meta {
+    .box {
+        ul {
+            li {
+                a:hover {
+                    color: $azul;
+                }
+            }
+        }
+    }
     .outer-box {
         .andamento {
             h5 {
@@ -700,6 +705,15 @@ $cinza-padrao: #666;
     }
 }
 .projeto {
+    .box {
+        ul {
+            li {
+                a:hover {
+                    color: $azul;
+                }
+            }
+        }
+    }
     .outer-box {
         .box {
             background-color: #fff;

@@ -33,6 +33,7 @@ class PaginaProjeto extends Pagina
 
 
         // necessario mover para a classe da api
+        // pois é necessário verificar qual o tipo do projeto e fazer o cálculo correto
         $status_total = 0;
         foreach ($context['progresso'] as $progresso) {
             if ($progresso['status'] == 50) {

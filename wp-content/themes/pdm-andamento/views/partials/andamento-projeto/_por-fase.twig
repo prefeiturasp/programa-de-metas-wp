@@ -1,0 +1,30 @@
+
+<div class="row outer-box">
+    <div class="small-12 columns ">
+        <div class="small-12 columns" >
+            <div class="small-12 columns box text-center">
+                <p class="title">
+                    <i class="icon-graph-arrow"></i>
+                    <span>acompanhamento das fases</span>
+                </p>
+            </div>
+            <div class="small-12 columns box ">
+                <ul class="project-phases">
+                    {% for progresso_projeto in progresso %}
+                    <li style="width:{{fases_projeto[progresso_projeto.milestone].percentage}}%;">
+                        <div class="chevron-bar chevron-bar-{{progresso_projeto.status}}"></div>
+                        {{fases_projeto[progresso_projeto.milestone].name}}
+                        ({{fases_projeto[progresso_projeto.milestone].percentage}}%)
+                    </li>
+                    {% endfor %}
+                </ul>
+                <ul class="caption project-phases">
+                    <li class=""><i class="square"></i><p>FASE NÃO INICIADA</p></li>
+                    <li class=""><i class="square color-border-light"></i><p>FASE EM ANDAMENTO</p></li>
+                    <li class=""><i class="square color-border"></i><p>FASE CONCLUÍDA</p></li>
+                    <li class="weight-about-goal"><p>Peso do projeto em relação a meta: {{projeto.weight_about_goal}}%</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -119,7 +119,24 @@
   }
 
   line {
-    font-family: \0000346;
+    font-family: \0000347;
+  }
+}
+
+.meta .chart-container-projeto {
+  background-color: #fff;
+  width: 56.25rem;
+  height: 12.5rem;
+  margin: 0 auto 2.5rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000355;
   }
 }
 
@@ -139,7 +156,7 @@
   }
 
   line {
-    font-family: \0000356;
+    font-family: \0000365;
   }
 }
 
@@ -154,7 +171,7 @@
   }
 
   line {
-    font-family: \0000360;
+    font-family: \0000369;
   }
 }
 
@@ -168,7 +185,7 @@
   }
 
   line {
-    font-family: \0000364;
+    font-family: \0000373;
   }
 }
 
@@ -182,7 +199,7 @@
   }
 
   line {
-    font-family: \0000368;
+    font-family: \0000377;
   }
 }
 
@@ -196,7 +213,7 @@
   }
 
   line {
-    font-family: \0000372;
+    font-family: \0000381;
   }
 }
 
@@ -210,7 +227,7 @@
   }
 
   line {
-    font-family: \0000375;
+    font-family: \0000384;
   }
 }
 
@@ -230,7 +247,7 @@
   }
 
   line {
-    font-family: \0000385;
+    font-family: \0000394;
   }
 }
 
@@ -247,7 +264,7 @@
   }
 
   line {
-    font-family: \0000390;
+    font-family: \0000399;
   }
 }
 
@@ -262,7 +279,7 @@
   }
 
   line {
-    font-family: \0000394;
+    font-family: \00003103;
   }
 }
 
@@ -281,7 +298,7 @@
   }
 
   line {
-    font-family: \00003102;
+    font-family: \00003111;
   }
 }
 
@@ -308,7 +325,7 @@
   }
 
   line {
-    font-family: \00003121;
+    font-family: \00003130;
   }
 }
 
@@ -325,7 +342,7 @@
   }
 
   line {
-    font-family: \00003126;
+    font-family: \00003135;
   }
 }
 
@@ -339,7 +356,7 @@
   }
 
   line {
-    font-family: \00003129;
+    font-family: \00003138;
   }
 }
 
@@ -357,7 +374,7 @@
   }
 
   line {
-    font-family: \00003136;
+    font-family: \00003145;
   }
 }
 
@@ -371,7 +388,7 @@
   }
 
   line {
-    font-family: \00003138;
+    font-family: \00003147;
   }
 }
 
@@ -387,7 +404,7 @@
   }
 
   line {
-    font-family: \00003144;
+    font-family: \00003153;
   }
 }
 
@@ -404,7 +421,7 @@
   }
 
   line {
-    font-family: \00003151;
+    font-family: \00003160;
   }
 }
 
@@ -418,7 +435,7 @@
   }
 
   line {
-    font-family: \00003154;
+    font-family: \00003163;
   }
 }
 
@@ -432,7 +449,7 @@
   }
 
   line {
-    font-family: \00003157;
+    font-family: \00003166;
   }
 }
 
@@ -450,7 +467,7 @@
   }
 
   line {
-    font-family: \00003173;
+    font-family: \00003182;
   }
 }
 
@@ -465,7 +482,7 @@
   }
 
   line {
-    font-family: \00003175;
+    font-family: \00003184;
   }
 }
 
@@ -480,7 +497,7 @@
   }
 
   line {
-    font-family: \00003182;
+    font-family: \00003191;
   }
 }
 
@@ -495,7 +512,7 @@
   }
 
   line {
-    font-family: \00003186;
+    font-family: \00003195;
   }
 }
 

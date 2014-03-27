@@ -1,0 +1,26 @@
+{% if progresso | length > 0 %}
+    <!--div class="chart-render chart-container line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;,&quot;labels&quot;:[&quot;Janeiro&quot;],&quot;values&quot;:[[200]]}"></div-->{% for projeto_id,total_projeto in progresso %}
+    <div class="chart-render chart-container chart-container-projeto line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;}"></div>
+<script>
+    var data_chart = {
+        "type" : "line",
+        "labels" : [
+                    'Janeiro',
+                    'Fevereiro',
+                    'Março',
+                    'Abril',
+                    'Maio',
+                    'Junho',
+                    'Julho',
+                    'Agosto',
+                    'Setembro',
+                    'Outubro',
+                    'Novembro',
+                    'Dezembro'
+        ],
+        "values" : [
+                    [{{total_projeto|join(",")}}]
+        ]
+    };
+</script>{% endfor %}
+{% endif %}

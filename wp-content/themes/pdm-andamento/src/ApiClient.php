@@ -107,6 +107,47 @@ class ApiClient
         return $response->json();
     }
 
+    protected function getProjetoDeFasesStatus($projetos, $fases_projeto)
+    {
+        $status_total = 0;
+        foreach ($projetos as $progresso) {
+            if ($progresso['status'] == 50) {
+                $status_total = $status_total + ($fases_projeto[$progresso['milestone']]['percentage']/2);
+            } elseif ($progresso['status'] > 50) {
+                $status_total = $status_total + ($fases_projeto[$progresso['milestone']]['percentage']);
+            } else {
+                $status_total = $status_total + 0;
+            }
+        }
+
+        if ($status_total == 0) {
+            $data['descricao'] = 'Não iniciada';
+        } elseif (($status_total > 0) && ($status_total < 100)) {
+            $data['descricao'] = 'Em andamento';
+        } elseif ($status_total == 100) {
+            $data['descricao'] = 'Concluído';
+        }
+
+        $data['absoluto'] = $status_total;
+
+        return $data;
+    }
+
+    protected function getProjetoMesAMesStatus($projetos)
+    {
+        return array('descricao'=>'Concluído', 'absoluto'=>'100');
+    }
+
+    public function getProjetoStatus($projetos, $fases_projeto, $tipo_projeto)
+    {
+        if ($tipo_projeto == 8) {
+            return $this->getProjetoMesAMesStatus($projetos);
+        }
+
+        return $this->getProjetoDeFasesStatus($projetos, $fases_projeto);
+
+    }
+
     public function getFasesPorTipoProjeto($tipo)
     {
         $response = $this->fazerRequisicao('project/type/'.$tipo.'/milestones');

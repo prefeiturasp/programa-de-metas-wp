@@ -93,14 +93,23 @@ define(['jquery', 'd3'], function ($, ignore) {
         var
         m = 40,
         w = 900,
-        h = 200 - m;
+        h = 200 - m,
+        max_value = 0;
+
+        $(dataA).each(function(k,v){
+            if (v >max_value) {
+                max_value = v;
+            }
+        });
 
         var x = d3.scale.ordinal().domain(labels).rangeRoundBands([0, w]);
-        var y = d3.scale.linear().domain([0, 2500]).range([h, 0]);
+        var y = d3.scale.linear().domain([0, max_value*1.2]).range([h, 0]);
 
         var line = d3.svg.line()
             .x(function(d, i) { return x(labels[i]); })
             .y(function(d) { return y(d); });
+
+        $(selector).html('');
 
         var graph = d3.select(selector).append('svg:svg')
                 .attr('class', 'chart-line')
@@ -128,24 +137,25 @@ define(['jquery', 'd3'], function ($, ignore) {
                     .attr('class', 'dot dot-' + classNameSufix);
 
             dot.append('circle')
-                .attr('r', 5)
+                .attr('r', function (d,i) { if (d != 0) { return 20; } else { return 0; } })
                 .attr('cx', function(d, i) { return x(labels[i]); })
-                .attr('cy', function(d) { return y(d); })
-                .on('mouseover', function() {
-                    d3.select(this).transition().attr('r', 20);
-                    d3.select(this.parentNode).select('text').transition().style('opacity', 1);
-                })
-                .on('mouseout', function() {
-                    d3.select(this).transition().attr('r', 5);
-                    d3.select(this.parentNode).select('text').transition().style('opacity', 0);
-                });
+                .attr('cy', function(d) { return y(d); });
+
+                // .on('mouseover', function() {
+                //     d3.select(this).transition().attr('r', 20);
+                //     d3.select(this.parentNode).select('text').transition().style('opacity', 1);
+                // })
+                // .on('mouseout', function() {
+                //     d3.select(this).transition().attr('r', 5);
+                //     d3.select(this.parentNode).select('text').transition().style('opacity', 0);
+                // });
 
             dot.append('text')
                 .attr('transform', function(d, i) { return 'translate(' + x(labels[i]) + ',' + (y(d) + 4) + ')'; })
                 .attr('pointer-events', 'none')
                 .text(function(d) { return d; })
                 .style('text-anchor', 'middle')
-                .style('opacity', 0)
+                .style('opacity', 1)
                 .attr('fill', 'white');
         };
 

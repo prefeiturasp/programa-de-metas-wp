@@ -61,5 +61,9 @@ require(['chart', 'map', 'app', 'jquery'], function (chart, map, app, $) {
       window.location = SITE_URL + '/projeto/' + jQuery(evt.currentTarget).val();
     });
 
+    jQuery('select#filtra-grafico-por-subprefeitura').on('change', function (evt) {
+      chart.line(document.getElementById('chart-month-a'), data_chart.labels, data_chart.values[$(evt.currentTarget).val()]);
+    });
+
     //.filtrar-todas-as-metas.button
 });

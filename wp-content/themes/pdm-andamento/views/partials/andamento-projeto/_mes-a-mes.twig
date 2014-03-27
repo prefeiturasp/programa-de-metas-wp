@@ -8,6 +8,16 @@
                     <span>acompanhamento mês a mês (2013)</span>
                 </p>
             </div>
+            <div class="small-3 columns small-offset-9">
+                <label>Filtrar resultado no gráfico
+                    <select name="filtra-grafico-por-subprefeitura" id="filtra-grafico-por-subprefeitura">
+                        <option value="0">Agrupado de todas as subprefereituras</option>
+                        {% for key, subprefeitura in progresso %}
+                            <option value="{{key}}">{{subprefeitura.nome}}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+            </div>
             <div class="small-12 columns box ">
                 <!--div class="chart-render chart-container line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;,&quot;labels&quot;:[&quot;Janeiro&quot;],&quot;values&quot;:[[200]]}"></div-->
                 <div class="chart-render chart-container line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;}"></div>

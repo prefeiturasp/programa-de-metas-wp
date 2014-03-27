@@ -929,3 +929,82 @@ $cinza-padrao: #666;
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+.projeto {
+
+    .color-text {
+      color: $verde !important;
+    }
+    .color-bg {
+      background-color: $verde !important;
+    }
+    .color-border {
+      border-color: $verde !important;
+    }
+    .color-border-light {
+      border-color: lighten($verde, 20%) !important;
+    }
+
+    table {
+      width: 100%;
+      border: 0 none;
+      tfoot,
+      thead,
+      tbody {
+        tr {
+          th,
+          td {
+            text-align: center;
+            vertical-align: middle;
+            border: 1px dashed #ddd;
+            word-break: break-word;
+            word-wrap: break-word;
+            &:first-child {
+              border-left-width: 0;
+            }
+            &:last-child {
+              border-right-width: 0;
+            }
+          }
+          &:first-child {
+            th,
+            td {
+              border-top-width: 0;
+            }
+          }
+          &:last-child {
+            th,
+            td {
+              border-bottom-width: 0;
+            }
+          }
+          th {
+            font-family: 'Tinos', sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+          }
+          td {
+            color: #ccc;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+      tfoot tr {
+        th,
+        td {
+          border-top: 1px dashed #999 !important;
+        }
+      }
+    }
+}

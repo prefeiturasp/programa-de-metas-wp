@@ -3,20 +3,20 @@ define(['jquery', 'd3'], function ($, ignore) {
     'use strict';
     var
 
-    _months = [
-        'Janeiro',
-        'Fevereiro',
-        'Março',
-        'Abril',
-        'Maio',
-        'Junho',
-        'Julho',
-        'Agosto',
-        'Setembro',
-        'Outubro',
-        'Novembro',
-        'Dezembro'
-    ],
+    // _months = [
+    //     'Janeiro',
+    //     'Fevereiro',
+    //     'Março',
+    //     'Abril',
+    //     'Maio',
+    //     'Junho',
+    //     'Julho',
+    //     'Agosto',
+    //     'Setembro',
+    //     'Outubro',
+    //     'Novembro',
+    //     'Dezembro'
+    // ],
 
     // Pie chart
     _pie = function _pie(selector, data, config) {
@@ -89,17 +89,17 @@ define(['jquery', 'd3'], function ($, ignore) {
     },
 
     // Line chart
-    _line = function _line(selector, dataA, dataB) {
+    _line = function _line(selector, labels, dataA) {
         var
         m = 40,
         w = 900,
         h = 200 - m;
 
-        var x = d3.scale.ordinal().domain(_months).rangeRoundBands([0, w]);
+        var x = d3.scale.ordinal().domain(labels).rangeRoundBands([0, w]);
         var y = d3.scale.linear().domain([0, 250]).range([h, 0]);
 
         var line = d3.svg.line()
-            .x(function(d, i) { return x(_months[i]); })
+            .x(function(d, i) { return x(labels[i]); })
             .y(function(d) { return y(d); });
 
         var graph = d3.select(selector).append('svg:svg')
@@ -129,7 +129,7 @@ define(['jquery', 'd3'], function ($, ignore) {
 
             dot.append('circle')
                 .attr('r', 5)
-                .attr('cx', function(d, i) { return x(_months[i]); })
+                .attr('cx', function(d, i) { return x(labels[i]); })
                 .attr('cy', function(d) { return y(d); })
                 .on('mouseover', function() {
                     d3.select(this).transition().attr('r', 20);
@@ -141,7 +141,7 @@ define(['jquery', 'd3'], function ($, ignore) {
                 });
 
             dot.append('text')
-                .attr('transform', function(d, i) { return 'translate(' + x(_months[i]) + ',' + (y(d) + 4) + ')'; })
+                .attr('transform', function(d, i) { return 'translate(' + x(labels[i]) + ',' + (y(d) + 4) + ')'; })
                 .attr('pointer-events', 'none')
                 .text(function(d) { return d; })
                 .style('text-anchor', 'middle')
@@ -150,7 +150,7 @@ define(['jquery', 'd3'], function ($, ignore) {
         };
 
         _draw('a', dataA);
-        _draw('b', dataB);
+        //_draw('b', dataB);
     };
 
     return {

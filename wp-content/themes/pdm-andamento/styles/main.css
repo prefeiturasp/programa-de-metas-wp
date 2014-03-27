@@ -1,1 +1,3262 @@
-@charset "US-ASCII";@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\000035}}.chart-pie circle{stroke:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\000038}}.chart-pie .colored{fill:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000312}}.line-a{stroke:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000315}}.dot-a{fill:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000331}}.chart-container{display:inline-block;position:relative;width:90%;padding-bottom:0;margin:.9375rem;vertical-align:middle;overflow:hidden}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000339}}.chart-container.line-container{padding-bottom:22%}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000342}}.chart-container>svg{display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000355}}.line{stroke-width:1;fill:none}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000359}}.line-b{stroke:#999}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000363}}.dot text{font:700 14px Montserrat}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000367}}.dot-b{fill:#999}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000371}}.axis-x path{display:none}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000374}}.axis-x text{font:12px Tinos}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000384}}.project-phases{width:100%;text-align:center;font-size:12px;font-family:Tinos}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000389}}.project-phases>li{margin-bottom:10px;padding:0 5px!important}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\0000393}}.project-phases .chevron-bar{position:relative;height:16px;margin-bottom:26px;background:#e6e6e6;-webkit-transform:skew(30deg,0);transform:skew(30deg,0)}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003101}}.project-phases .chevron-bar:after{display:block;content:'';position:absolute;top:16px;right:9px;left:-9px;height:16px;background:#e6e6e6;-webkit-transform:skew(-45deg,0);transform:skew(-45deg,0)}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003120}}.caption{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:0 0 .9375rem;width:100%}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003125}}.caption li{margin:.9375rem 0 0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003128}}.caption li p{font-family:Montserrat,sans-serif;font-size:.6875rem;vertical-align:middle;padding-left:.3125rem;display:inline-block}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003135}}.caption li.weight-about-goal{float:right}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003137}}.caption li.weight-about-goal p{font-family:Tinos,sans-serif;padding:.625rem 0;margin-bottom:0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003143}}.caption li i.square{display:inline-block;background-color:#e6e6e6;height:1.875rem;width:1.875rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003150}}.caption li i.square.light{background-color:#e6e6e6}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003153}}.caption li i.square.color-border{background-color:#97c949}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003156}}.caption li i.square.color-border-light{background-color:#c4e098}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003172}}.box ul li a.active,.box ul li a.active:before,.box ul li a:hover,.box ul li a:hover:before{color:#97c949!important}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003174}}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003181}}.box .project-phases .chevron-bar-100,.box .project-phases .chevron-bar-100:after{background:#97c949}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss}line{font-family:\00003185}}.box .project-phases .chevron-bar-50,.box .project-phases .chevron-bar-50:after{background:#c4e098;background:linear-gradient(to right,#c4e098 50%,#e6e6e6 50%)}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000310}}.content-wrapper{z-index:33;margin-top:1.875rem;padding:1.875rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000315}}.header{background-color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000318}}.header .support-bar{background-color:#4a4949;box-shadow:4px 4px 15px rgba(0,0,0,.4);z-index:999;position:relative}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000324}}.header .support-bar .row{background-color:#252424}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000327}}.header .support-bar .box-logo-planeja{position:relative}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000330}}.header .support-bar .box-logo-planeja:after{background-color:#4a4949;right:100%;top:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(213,21,21,0);border-right-color:#252424;border-width:20px;margin-top:-20px}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000346}}.header .support-bar .logo-planeja{margin:.5rem 0;width:80%}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000352}}.header .menu-bar{background-color:#fff;z-index:9}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000357}}.header .menu-bar .menu-principal ul{margin:.5rem 0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000360}}.header .menu-bar .menu-principal ul li{margin:0 1rem 0 0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000363}}.header .menu-bar .menu-principal ul li a{color:#999;text-transform:uppercase;font-size:.8125rem;font-family:Montserrat,sans-serif}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000369}}.header .menu-bar .menu-principal ul li a:hover{color:#b3b3b3}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000377}}.header .menu-bar .redes-sociais{padding:.5rem 0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000381}}.header .title-bar{background-color:#fff;z-index:9;margin-top:.625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000386}}.header .title-bar h1{text-transform:uppercase;margin:.625rem 0 1.25rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000389}}.header .title-bar h1 a{color:#000}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000394}}.header .title-bar h2{text-transform:inherit;font-family:Montserrat,sans-serif;margin:0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\0000398}}.header .title-bar h2 a{color:#000}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003103}}.header .title-bar .logo-programa-de-metas{max-width:7.8125rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003108}}.header.simple{box-shadow:4px 4px 15px rgba(0,0,0,.4)}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003112}}.header.simple .title-bar h1{font-size:.875rem;margin:.3125rem 0 .625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003117}}.header.simple .title-bar .logo-programa-de-metas{max-width:4.6875rem;transition:all 1.5s}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003123}}.header.simple .separate-bar{height:.5rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003129}}.header.simple .separate-bar.meta{background-color:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003132}}.header.simple .separate-bar.projeto{background-color:#97c949}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003135}}.header.simple .separate-bar.page{background-color:#eb2851}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003141}}.filter-bar{background-color:#fff;margin-top:196px}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003145}}.filter-bar .infografico{margin-top:1.875rem;margin-bottom:1.875rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003149}}.filter-bar .infografico a{display:inline-block}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003154}}.filter-bar h3{color:#fff;font-size:1.25rem;margin-top:1.25rem;margin-bottom:1.25rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003161}}.filter-bar .first-input{margin-bottom:.625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003165}}.filter-bar .projetos-por-perto{background-color:#97c949;position:relative}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003169}}.filter-bar .projetos-por-perto i.ou{color:#999;background-color:#fff;position:absolute;right:-1.875rem;text-transform:uppercase;top:0;font-size:.9375rem;line-height:.9375rem;font-family:Montserrat,sans-serif;padding:.9375rem .625rem;border-radius:3.125rem;z-index:7;margin:.625rem;font-style:normal}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003186}}.filter-bar .projetos-por-perto .nao-sabe-cep{margin-top:1.25rem;margin-bottom:1rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003191}}.filter-bar .projetos-por-perto ::-webkit-input-placeholder{color:#608527}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003192}}.filter-bar .projetos-por-perto :-moz-placeholder{color:#608527}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003193}}.filter-bar .projetos-por-perto ::-moz-placeholder{color:#608527}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003194}}.filter-bar .projetos-por-perto :-ms-input-placeholder{color:#608527}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003197}}.filter-bar .projetos-por-perto input,.filter-bar .projetos-por-perto select{background-color:#7dac33;border:none;color:#608527}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003202}}.filter-bar .projetos-por-perto label{color:#608527}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003206}}.filter-bar .projetos-por-perto .button{background-color:#6e982d;color:#445d1c}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003211}}.filter-bar .metas-por-objetivo{background-color:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003213}}.filter-bar .metas-por-objetivo select{background-color:#0e97a3;border:none;color:#0a6b74}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003219}}.filter-bar .metas-por-objetivo .destaque-por-objetivos{background-color:#0e97a3;list-style:none;margin:0;padding:0;position:relative;height:104px}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003227}}.filter-bar .metas-por-objetivo .destaque-por-objetivos li{background-color:#0e97a3;position:absolute;top:0;left:0;width:100%}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003234}}.filter-bar .metas-por-objetivo .destaque-por-objetivos li.active{opacity:1}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003239}}.filter-bar .metas-por-objetivo .destaque-por-objetivos i{border:2px dotted #0a6b74;border-radius:4.375rem;font-size:2.5rem;padding:.9375rem;margin:.9375rem 0 0;color:#fff;display:inline-block}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003248}}.filter-bar .metas-por-objetivo .destaque-por-objetivos h4{font-size:1rem;margin:.9375rem 0 .625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003249}}.filter-bar .metas-por-objetivo .destaque-por-objetivos h4 a{color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003255}}.filter-bar .metas-por-objetivo .destaque-por-objetivos p{font-family:Montserrat,sans-serif;font-size:.8125rem;line-height:1.2;margin-bottom:.1875rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003256}}.filter-bar .metas-por-objetivo .destaque-por-objetivos p a{color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003267}}#f1_container{box-shadow:4px 4px 15px rgba(0,0,0,.4)}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003271}}#f1_container .faixa-meta,#f1_container .faixa-projeto{height:.5rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003274}}#f1_container .faixa-projeto{background-color:#97c949}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003277}}#f1_container .faixa-meta{background-color:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003280}}#f1_container .ver-todas-as-metas{background-color:#f5f5f5;transition:all 1.5s ease-in-out;-webkit-perspective:800px;perspective:800px}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003285}}#f1_container .ver-todas-as-metas p{color:#ccc;margin:.9375rem 0;font-size:1rem;text-transform:uppercase}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003291}}#f1_container .ver-todas-as-metas p img{width:1.75rem;height:1.75rem;margin:0 .3125rem 0 0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003298}}#f1_container .filtrar-todas-as-metas{padding-top:.3125rem;padding-bottom:.3125rem;background-color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003305}}#f1_container .filtrar-todas-as-metas label{border-left:1px solid #dbdee0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003309}}#f1_container .filtrar-todas-as-metas p{font-size:.875rem;margin:.3125rem 0 0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003313}}#f1_container .filtrar-todas-as-metas label{margin-bottom:0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003316}}#f1_container .filtrar-todas-as-metas select{background-color:transparent;border:none;padding:0 1.5rem;font-size:.6875rem;text-transform:uppercase;margin-bottom:0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003325}}#f1_container .filtrar-todas-as-metas .button{margin:0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003332}}.summary-results p{margin:.625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003339}}.header.fixed .shrink.title-bar{margin-top:.3125rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003342}}.header.fixed .shrink.title-bar h1{font-size:.875rem;margin:.3125rem 0 .625rem;transition:all 1.5s}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003348}}.header.fixed .shrink.title-bar h2{font-size:0;transition:all 1.5s}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003353}}.header.fixed .shrink.title-bar .logo-programa-de-metas{max-width:4.6875rem;transition:all 1.5s}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003361}}.shrink2#f1_container{position:fixed}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003364}}.shrink2#f1_container #f1_card{-webkit-transform:rotateX(180deg);transform:rotateX(180deg);box-shadow:-5px 5px 5px #aaa}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003369}}.browsehappy{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003381}}#f1_container{background-color:#fff;min-height:58px;position:relative;width:100%;z-index:1;-webkit-perspective:1000;perspective:1000}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003388}}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003391}}#f1_card{width:100%;height:100%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;transition:all 1s linear}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003397}}.face{position:absolute;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003403}}.face.back{display:block;-webkit-transform:rotateX(180deg);transform:rotateX(180deg)}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003416}}.meta-card{background-color:#fff;margin-top:.9375rem;margin-bottom:.9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003422}}.meta-card .ordem p{text-align:center;width:5rem;margin-bottom:0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003427}}.meta-card .ordem .faixa{background-color:#666;height:.625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003431}}.meta-card .ordem .nome{color:#666;text-transform:uppercase;letter-spacing:.5rem;font-size:.875rem;line-height:.875rem;margin-top:.625rem;margin-bottom:.3125rem;font-family:Montserrat,sans-serif}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003443}}.meta-card .ordem .numero{color:#666;font-size:2.625rem;line-height:2.625rem;font-family:MontserratBold,sans-serif}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003453}}.meta-card .titulo h3{font-size:1.25rem;margin:.625rem 0 0 .9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003454}}.meta-card .titulo h3 a{color:#666}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003456}}.meta-card .titulo h3 a:hover{color:#4d4d4d}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003464}}.meta-card .titulo h4{font-size:.875rem;text-transform:uppercase;margin:.625rem 0 0 .9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003465}}.meta-card .titulo h4 a{color:#666}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003467}}.meta-card .titulo h4 a:hover{color:#4d4d4d}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003475}}.meta-card .titulo h5{font-family:Tinos,sans-serif;font-size:.875rem;margin:0 0 0 .9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003476}}.meta-card .titulo h5 a{color:#000}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003485}}.meta-card .tabs-content{margin-bottom:.625rem;padding-bottom:.625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003491}}.meta-card .tabs-options .box-options{background-color:#f2f4f6;width:4.375rem;float:left;margin-left:.5rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003497}}.meta-card .tabs-options .box-options i{display:block;font-size:1.25rem;margin:.3125rem 0 .625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003502}}.meta-card .tabs-options .box-options a{display:block;line-height:1;color:#c3c5c6;font-family:TinosItalic,sans-serif;font-weight:400;font-size:.75rem;text-align:center;padding:.3125rem 0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003514}}.meta-card .tabs-options .box-options.meta a{color:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003520}}.meta-card .tabs-options .box-options.meta.active a{background-color:#12c2d2;color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003528}}.meta-card .tabs-options .box-options.projeto a{color:#97c949}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003533}}.meta-card .tabs-options .box-options.projeto.active a{background-color:#97c949;color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003542}}.meta-card .tabs-options .box-options.acompanhar.active a,.meta-card .tabs-options .box-options.compartilhar.active a{background-color:#c3c5c6;color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003551}}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003560}}.meta-card .detalhes{background-color:#f2f4f6}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003563}}.meta-card .detalhes .chart-container{width:150px;height:150px}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003568}}.meta-card .detalhes .status{display:inline-block;width:6.875rem;vertical-align:middle;height:2.8125rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003574}}.meta-card .detalhes .status p{font-family:MontserratBold,sans-serif;text-align:center;margin-bottom:0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003579}}.meta-card .detalhes .status p a{color:#666}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003582}}.meta-card .detalhes .status p a:hover{color:#4d4d4d}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003588}}.meta-card .detalhes .status p.porcentagem{font-size:2.1875rem;line-height:2.1875rem;margin-bottom:.3125rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003593}}.meta-card .detalhes .status p.descricao{font-size:.75rem;line-height:.75rem;text-transform:uppercase}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003602}}.meta-card .chamadas{background-color:#f2f4f6}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003605}}.meta-card .chamadas ul{margin:0 1.25rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003607}}.meta-card .chamadas ul li{list-style:none;text-align:center;padding:.625rem 0;min-height:5.625rem;display:table;width:100%;font-size:.875rem;line-height:.9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003618}}.meta-card .chamadas ul li.primeiro{border-bottom:1px solid #e4e7e9}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003622}}.meta-card .chamadas ul li a{color:#12c2d2;display:table-cell;vertical-align:middle;font-family:MontserratBold,sans-serif}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003629}}.meta-card .chamadas ul li a:hover{color:#10acbb}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003638}}.box{background-color:#f2f4f6}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003643}}.box ul{margin:.625rem 0;float:left}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003647}}.box ul#list-projects{height:400px;overflow:scroll}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003652}}.box ul li{list-style:none;float:left}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003657}}.box ul li a{font-family:MontserratBold,sans-serif;color:#666}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003662}}.box ul li a i{margin-right:.625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003666}}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003673}}.box h4{color:#666;font-size:.875rem;text-transform:uppercase;margin:1.25rem 0 .625rem .625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003680}}.box .button{background-color:#c3c5c6;color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003684}}.box .button:hover{background-color:#8f9294}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003695}}.meta .outer-box .andamento h5{color:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003703}}.projeto .outer-box .box{background-color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003706}}.projeto .outer-box .title{margin-top:1.5625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003710}}.projeto .outer-box .andamento h5{color:#97c949}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003719}}.nav-innerpage{background-color:#fff;margin:.9375rem 0 0;padding:.9375rem 0 .9375rem 1.25rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003723}}.nav-innerpage a{font-size:.875rem;color:#999;text-transform:uppercase}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003728}}.nav-innerpage a:hover{color:gray}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003733}}.nav-innerpage select{margin:0;border:0;background-color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003742}}.outer-box{background-color:#fff;padding-bottom:.9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003746}}.outer-box .box{padding-bottom:.9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003749}}.outer-box .title{background-color:#fff;text-align:center;display:inline-block;padding:0 .9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003754}}.outer-box .title i{display:block}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003757}}.outer-box .title span{font-size:.875rem;text-transform:uppercase;font-family:MontserratBold,sans-serif;color:#666;padding:.625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003766}}.outer-box p.descricao{margin:0 .625rem;line-height:1rem;font-size:.9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003772}}.outer-box .total-por-fase{min-height:2.1875rem;margin-bottom:.9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003776}}.outer-box .total-por-fase h6{color:#12c2d2;font-size:1.875rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003781}}.outer-box .total-por-fase p{font-family:Montserrat,sans-serif;font-size:.75rem;text-transform:uppercase}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003788}}.outer-box .andamento{margin-bottom:1.875rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003790}}.outer-box .andamento h5{font-size:.875rem;line-height:1rem;font-family:Montserrat,sans-serif}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003797}}.outer-box.meta-card{padding-bottom:0;margin-bottom:0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003812}}.projeto-card.outer-box{padding-top:.9375rem;margin-top:.9375rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003816}}.projeto-card.outer-box .box{background-color:#f2f4f6}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003819}}.projeto-card.outer-box .box h3{margin:1.875rem .625rem .9375rem;text-transform:uppercase}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003826}}.projeto-card.outer-box .status p{color:#97c949;font-size:.9375rem;text-transform:uppercase;margin:.9375rem 0 .3125rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003832}}.projeto-card.outer-box .status h5{color:#97c949;font-size:3.125rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003839}}.projeto-card.outer-box .titulo h1{margin-bottom:1.25rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003842}}.projeto-card.outer-box .titulo span{text-transform:uppercase;margin-bottom:.625rem;display:block}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003851}}.projeto-card .tabs-options .box-options{background-color:#f2f4f6;width:4.375rem;float:right;margin-left:.5rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003857}}.projeto-card .tabs-options .box-options i{display:block;font-size:1.25rem;margin:.3125rem 0 .625rem}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003862}}.projeto-card .tabs-options .box-options a{display:block;line-height:1;color:#c3c5c6;font-family:TinosItalic,sans-serif;font-weight:400;font-size:.75rem;text-align:center;padding:.3125rem 0}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003874}}.projeto-card .tabs-options .box-options.meta a{color:#12c2d2}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003880}}.projeto-card .tabs-options .box-options.meta.active a{background-color:#12c2d2;color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003890}}.projeto-card .tabs-options .box-options.compartilhar.active a{background-color:#c3c5c6;color:#fff}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003901}}.cronograma{padding:0 20px}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003903}}.cronograma .anos{position:relative}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003906}}.cronograma .anos div{font-weight:700;padding:10px}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003909}}.cronograma .anos div:before{bottom:-5px;content:"|";font-size:9px;left:0;position:absolute}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003918}}.cronograma .entregue{background-color:#e3e7ec;border-width:1px 0;border-style:dashed;border-color:#999}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003923}}.cronograma .entregue div{padding:10px}@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss}line{font-family:\00003926}}.cronograma .entregue .valor{color:#97c949}
+@charset "US-ASCII";
+
+/*
+ * Cria um background com duas cores. Por padrão, a divisão entre as cores
+ * fica no centro do elemento, mas isso pode ser ajustado através do terceiro
+ * parâmetro da função ($position).
+ *
+ * Obs.: O background gerado não é um gradiente, a transição entre as cores é
+ * "seca".
+ */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \000035;
+  }
+}
+
+.chart-pie circle {
+  stroke: #12c2d2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \000038;
+  }
+}
+
+.chart-pie .colored {
+  fill: #12c2d2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.line-a {
+  stroke: #97c949;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.dot-a {
+  fill: #97c949;
+}
+
+/*
+ * Estilização dos gráficos usados no site.
+ *
+ * Alguns gráficos são montados em SVG, então os elementos dessa linguagem
+ * (como path ou text, por exemplo) podem aparecer no CSS.
+ */
+
+/*
+ * Container usado nos gráficos. Faz com que o gráfico se adapte às dimensões
+ * do grid.
+ */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000331;
+  }
+}
+
+.chart-container {
+  position: relative;
+  margin: 0.9375rem;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000336;
+  }
+}
+
+.chart-container > svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000346;
+  }
+}
+
+.projeto .chart-container {
+  width: 56.25rem;
+  height: 12.5rem;
+  margin: 0 auto 2.5rem;
+}
+
+/*
+ * Estilos específicos usados nos gráficos de linha.
+ */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000356;
+  }
+}
+
+.line {
+  stroke-width: 1;
+  fill: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000360;
+  }
+}
+
+.line-b {
+  stroke: #999;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000364;
+  }
+}
+
+.dot text {
+  font: bold 14px 'Montserrat';
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000368;
+  }
+}
+
+.dot-b {
+  fill: #999;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000372;
+  }
+}
+
+.axis-x path {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000375;
+  }
+}
+
+.axis-x text {
+  font: 12px 'Tinos';
+}
+
+/*
+ * Fases do projeto.
+ *
+ * Esse gráfico é feito basicamente com HTML e CSS.
+ */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000385;
+  }
+}
+
+.project-phases {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Tinos';
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000390;
+  }
+}
+
+.project-phases > li {
+  margin-bottom: 10px;
+  padding: 0 5px !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \0000394;
+  }
+}
+
+.project-phases .chevron-bar {
+  position: relative;
+  height: 16px;
+  margin-bottom: 26px;
+  background: #e6e6e6;
+  -webkit-transform: skew(30deg, 0);
+  transform: skew(30deg, 0);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003102;
+  }
+}
+
+.project-phases .chevron-bar:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 9px;
+  left: -9px;
+  height: 16px;
+  background: #e6e6e6;
+  -webkit-transform: skew(-45deg, 0);
+  transform: skew(-45deg, 0);
+}
+
+/*
+ * Legenda usada em alguns gráficos.
+ */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003121;
+  }
+}
+
+.caption {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 0.9375rem 0;
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003126;
+  }
+}
+
+.caption li {
+  margin: 0.9375rem 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003129;
+  }
+}
+
+.caption li p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6875rem;
+  vertical-align: middle;
+  padding-left: 0.3125rem;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003136;
+  }
+}
+
+.caption li.weight-about-goal {
+  float: right;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003138;
+  }
+}
+
+.caption li.weight-about-goal p {
+  font-family: 'Tinos', sans-serif;
+  padding: 0.625rem 0;
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003144;
+  }
+}
+
+.caption li i.square {
+  display: inline-block;
+  background-color: #e6e6e6;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003151;
+  }
+}
+
+.caption li i.square.light {
+  background-color: #e6e6e6;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003154;
+  }
+}
+
+.caption li i.square.color-border {
+  background-color: #97c949;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003157;
+  }
+}
+
+.caption li i.square.color-border-light {
+  background-color: #c4e098;
+}
+
+/*
+ * Elementos de conteúdo que usam as cores da área.
+ */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003173;
+  }
+}
+
+.box ul li a:hover,
+.box ul li a.active {
+  color: #97c949 !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003175;
+  }
+}
+
+.box ul li a:hover:before,
+.box ul li a.active:before {
+  color: #97c949 !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003182;
+  }
+}
+
+.box .project-phases .chevron-bar-100,
+.box .project-phases .chevron-bar-100:after {
+  background: #97c949;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+  }
+
+  line {
+    font-family: \00003186;
+  }
+}
+
+.box .project-phases .chevron-bar-50,
+.box .project-phases .chevron-bar-50:after {
+  background: #c4e098;
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to right, #c4e098 50%, #e6e6e6 50%);
+  /* W3C */
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000310;
+  }
+}
+
+.content-wrapper {
+  z-index: 33;
+  margin-top: 1.875rem;
+  padding: 1.875rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.header {
+  background-color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000318;
+  }
+}
+
+.header .support-bar {
+  background-color: #4a4949;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000324;
+  }
+}
+
+.header .support-bar .row {
+  background-color: #252424;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000327;
+  }
+}
+
+.header .support-bar .box-logo-planeja {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000330;
+  }
+}
+
+.header .support-bar .box-logo-planeja:after {
+  background-color: #4a4949;
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(213, 21, 21, 0);
+  border-right-color: #252424;
+  border-width: 20px;
+  margin-top: -20px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000346;
+  }
+}
+
+.header .support-bar .logo-planeja {
+  margin: 0.5rem 0;
+  width: 80%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000352;
+  }
+}
+
+.header .menu-bar {
+  background-color: #fff;
+  z-index: 9;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000357;
+  }
+}
+
+.header .menu-bar .menu-principal ul {
+  margin: 0.5rem 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000360;
+  }
+}
+
+.header .menu-bar .menu-principal ul li {
+  margin: 0 1rem 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000363;
+  }
+}
+
+.header .menu-bar .menu-principal ul li a {
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000369;
+  }
+}
+
+.header .menu-bar .menu-principal ul li a:hover {
+  color: #b3b3b3;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000377;
+  }
+}
+
+.header .menu-bar .redes-sociais {
+  padding: 0.5rem 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000381;
+  }
+}
+
+.header .title-bar {
+  background-color: #fff;
+  z-index: 9;
+  margin-top: 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000386;
+  }
+}
+
+.header .title-bar h1 {
+  text-transform: uppercase;
+  margin: 0.625rem 0 1.25rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000389;
+  }
+}
+
+.header .title-bar h1 a {
+  color: #000;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000394;
+  }
+}
+
+.header .title-bar h2 {
+  text-transform: inherit;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000398;
+  }
+}
+
+.header .title-bar h2 a {
+  color: #000;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003103;
+  }
+}
+
+.header .title-bar .logo-programa-de-metas {
+  max-width: 7.8125rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003108;
+  }
+}
+
+.header.simple {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003112;
+  }
+}
+
+.header.simple .title-bar h1 {
+  font-size: 0.875rem;
+  margin: 0.3125rem 0 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003117;
+  }
+}
+
+.header.simple .title-bar .logo-programa-de-metas {
+  max-width: 4.6875rem;
+  transition: all 1.5s;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003123;
+  }
+}
+
+.header.simple .separate-bar {
+  height: 0.5rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003129;
+  }
+}
+
+.header.simple .separate-bar.meta {
+  background-color: #12c2d2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003132;
+  }
+}
+
+.header.simple .separate-bar.projeto {
+  background-color: #97c949;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003135;
+  }
+}
+
+.header.simple .separate-bar.page {
+  background-color: #eb2851;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003141;
+  }
+}
+
+.filter-bar {
+  background-color: #fff;
+  margin-top: 196px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003145;
+  }
+}
+
+.filter-bar .infografico {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003149;
+  }
+}
+
+.filter-bar .infografico a {
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003154;
+  }
+}
+
+.filter-bar h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003161;
+  }
+}
+
+.filter-bar .first-input {
+  margin-bottom: 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003165;
+  }
+}
+
+.filter-bar .projetos-por-perto {
+  background-color: #97c949;
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003169;
+  }
+}
+
+.filter-bar .projetos-por-perto i.ou {
+  color: #999;
+  background-color: #fff;
+  position: absolute;
+  right: -1.875rem;
+  text-transform: uppercase;
+  top: 0;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.9375rem 0.625rem;
+  border-radius: 3.125rem;
+  z-index: 7;
+  margin: 0.625rem;
+  font-style: normal;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003186;
+  }
+}
+
+.filter-bar .projetos-por-perto .nao-sabe-cep {
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003191;
+  }
+}
+
+.filter-bar .projetos-por-perto ::-webkit-input-placeholder {
+  color: #608527;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003192;
+  }
+}
+
+.filter-bar .projetos-por-perto :-moz-placeholder {
+  color: #608527;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003193;
+  }
+}
+
+.filter-bar .projetos-por-perto ::-moz-placeholder {
+  color: #608527;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003194;
+  }
+}
+
+.filter-bar .projetos-por-perto :-ms-input-placeholder {
+  color: #608527;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003197;
+  }
+}
+
+.filter-bar .projetos-por-perto select,
+.filter-bar .projetos-por-perto input {
+  background-color: #7dac33;
+  border: none;
+  color: #608527;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003202;
+  }
+}
+
+.filter-bar .projetos-por-perto label {
+  color: #608527;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003206;
+  }
+}
+
+.filter-bar .projetos-por-perto .button {
+  background-color: #6e982d;
+  color: #445d1c;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003211;
+  }
+}
+
+.filter-bar .metas-por-objetivo {
+  background-color: #12c2d2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003213;
+  }
+}
+
+.filter-bar .metas-por-objetivo select {
+  background-color: #0e97a3;
+  border: none;
+  color: #0a6b74;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003219;
+  }
+}
+
+.filter-bar .metas-por-objetivo .destaque-por-objetivos {
+  background-color: #0e97a3;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 104px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003227;
+  }
+}
+
+.filter-bar .metas-por-objetivo .destaque-por-objetivos li {
+  background-color: #0e97a3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003234;
+  }
+}
+
+.filter-bar .metas-por-objetivo .destaque-por-objetivos li.active {
+  opacity: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003239;
+  }
+}
+
+.filter-bar .metas-por-objetivo .destaque-por-objetivos i {
+  border: 2px dotted #0a6b74;
+  border-radius: 4.375rem;
+  font-size: 2.5rem;
+  padding: 0.9375rem;
+  margin: 0.9375rem 0 0;
+  color: #fff;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003248;
+  }
+}
+
+.filter-bar .metas-por-objetivo .destaque-por-objetivos h4 {
+  font-size: 1rem;
+  margin: 0.9375rem 0 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003249;
+  }
+}
+
+.filter-bar .metas-por-objetivo .destaque-por-objetivos h4 a {
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003255;
+  }
+}
+
+.filter-bar .metas-por-objetivo .destaque-por-objetivos p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  margin-bottom: 0.1875rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003256;
+  }
+}
+
+.filter-bar .metas-por-objetivo .destaque-por-objetivos p a {
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003267;
+  }
+}
+
+#f1_container {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003271;
+  }
+}
+
+#f1_container .faixa-projeto,
+#f1_container .faixa-meta {
+  height: 0.5rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003274;
+  }
+}
+
+#f1_container .faixa-projeto {
+  background-color: #97c949;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003277;
+  }
+}
+
+#f1_container .faixa-meta {
+  background-color: #12c2d2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003280;
+  }
+}
+
+#f1_container .ver-todas-as-metas {
+  background-color: #f5f5f5;
+  transition: all 1.5s ease-in-out;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003285;
+  }
+}
+
+#f1_container .ver-todas-as-metas p {
+  color: #ccc;
+  margin: 0.9375rem 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003291;
+  }
+}
+
+#f1_container .ver-todas-as-metas p img {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 0 0.3125rem 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003298;
+  }
+}
+
+#f1_container .filtrar-todas-as-metas {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  background-color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003305;
+  }
+}
+
+#f1_container .filtrar-todas-as-metas label {
+  border-left: 1px solid #dbdee0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003309;
+  }
+}
+
+#f1_container .filtrar-todas-as-metas p {
+  font-size: 0.875rem;
+  margin: 0.3125rem 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003313;
+  }
+}
+
+#f1_container .filtrar-todas-as-metas label {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003316;
+  }
+}
+
+#f1_container .filtrar-todas-as-metas select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1.5rem;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003325;
+  }
+}
+
+#f1_container .filtrar-todas-as-metas .button {
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003332;
+  }
+}
+
+.summary-results p {
+  margin: 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003339;
+  }
+}
+
+.header.fixed .shrink.title-bar {
+  margin-top: 0.3125rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003342;
+  }
+}
+
+.header.fixed .shrink.title-bar h1 {
+  font-size: 0.875rem;
+  margin: 0.3125rem 0 0.625rem;
+  transition: all 1.5s;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003348;
+  }
+}
+
+.header.fixed .shrink.title-bar h2 {
+  font-size: 0;
+  transition: all 1.5s;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003353;
+  }
+}
+
+.header.fixed .shrink.title-bar .logo-programa-de-metas {
+  max-width: 4.6875rem;
+  transition: all 1.5s;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003361;
+  }
+}
+
+.shrink2#f1_container {
+  position: fixed;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003364;
+  }
+}
+
+.shrink2#f1_container #f1_card {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003369;
+  }
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003381;
+  }
+}
+
+#f1_container {
+  background-color: #fff;
+  min-height: 58px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003388;
+  }
+}
+
+#f1_container {
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003391;
+  }
+}
+
+#f1_card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003397;
+  }
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003403;
+  }
+}
+
+.face.back {
+  display: block;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003416;
+  }
+}
+
+.meta-card {
+  background-color: #fff;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003422;
+  }
+}
+
+.meta-card .ordem p {
+  text-align: center;
+  width: 5rem;
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003427;
+  }
+}
+
+.meta-card .ordem .faixa {
+  background-color: #666666;
+  height: 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003431;
+  }
+}
+
+.meta-card .ordem .nome {
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.3125rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003443;
+  }
+}
+
+.meta-card .ordem .numero {
+  color: #666666;
+  font-size: 2.625rem;
+  line-height: 2.625rem;
+  font-family: 'MontserratBold', sans-serif;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003453;
+  }
+}
+
+.meta-card .titulo h3 {
+  font-size: 1.25rem;
+  margin: 0.625rem 0 0 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003454;
+  }
+}
+
+.meta-card .titulo h3 a {
+  color: #666666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003456;
+  }
+}
+
+.meta-card .titulo h3 a:hover {
+  color: #4d4d4d;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003464;
+  }
+}
+
+.meta-card .titulo h4 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin: 0.625rem 0 0 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003465;
+  }
+}
+
+.meta-card .titulo h4 a {
+  color: #666666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003467;
+  }
+}
+
+.meta-card .titulo h4 a:hover {
+  color: #4d4d4d;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003475;
+  }
+}
+
+.meta-card .titulo h5 {
+  font-family: 'Tinos', sans-serif;
+  font-size: 0.875rem;
+  margin: 0 0 0 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003476;
+  }
+}
+
+.meta-card .titulo h5 a {
+  color: #000;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003485;
+  }
+}
+
+.meta-card .tabs-content {
+  margin-bottom: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003491;
+  }
+}
+
+.meta-card .tabs-options .box-options {
+  background-color: #f2f4f6;
+  width: 4.375rem;
+  float: left;
+  margin-left: 0.5rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003497;
+  }
+}
+
+.meta-card .tabs-options .box-options i {
+  display: block;
+  font-size: 1.25rem;
+  margin: 0.3125rem 0 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003502;
+  }
+}
+
+.meta-card .tabs-options .box-options a {
+  display: block;
+  line-height: 1;
+  color: #c3c5c6;
+  font-family: 'TinosItalic', sans-serif;
+  font-weight: normal;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.3125rem 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003514;
+  }
+}
+
+.meta-card .tabs-options .box-options.meta a {
+  color: #12c2d2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003520;
+  }
+}
+
+.meta-card .tabs-options .box-options.meta.active a {
+  background-color: #12c2d2;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003528;
+  }
+}
+
+.meta-card .tabs-options .box-options.projeto a {
+  color: #97c949;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003533;
+  }
+}
+
+.meta-card .tabs-options .box-options.projeto.active a {
+  background-color: #97c949;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003542;
+  }
+}
+
+.meta-card .tabs-options .box-options.acompanhar.active a {
+  background-color: #c3c5c6;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003551;
+  }
+}
+
+.meta-card .tabs-options .box-options.compartilhar.active a {
+  background-color: #c3c5c6;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003560;
+  }
+}
+
+.meta-card .detalhes {
+  background-color: #f2f4f6;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003563;
+  }
+}
+
+.meta-card .detalhes .chart-container {
+  width: 150px;
+  height: 150px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003568;
+  }
+}
+
+.meta-card .detalhes .status {
+  display: inline-block;
+  width: 6.875rem;
+  vertical-align: middle;
+  height: 2.8125rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003574;
+  }
+}
+
+.meta-card .detalhes .status p {
+  font-family: 'MontserratBold', sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003579;
+  }
+}
+
+.meta-card .detalhes .status p a {
+  color: #666666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003582;
+  }
+}
+
+.meta-card .detalhes .status p a:hover {
+  color: #4d4d4d;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003588;
+  }
+}
+
+.meta-card .detalhes .status p.porcentagem {
+  font-size: 2.1875rem;
+  line-height: 2.1875rem;
+  margin-bottom: 0.3125rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003593;
+  }
+}
+
+.meta-card .detalhes .status p.descricao {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003602;
+  }
+}
+
+.meta-card .chamadas {
+  background-color: #f2f4f6;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003605;
+  }
+}
+
+.meta-card .chamadas ul {
+  margin: 0 1.25rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003607;
+  }
+}
+
+.meta-card .chamadas ul li {
+  list-style: none;
+  text-align: center;
+  padding: 0.625rem 0;
+  min-height: 5.625rem;
+  display: table;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003618;
+  }
+}
+
+.meta-card .chamadas ul li.primeiro {
+  border-bottom: 1px solid #e4e7e9;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003622;
+  }
+}
+
+.meta-card .chamadas ul li a {
+  color: #12c2d2;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'MontserratBold', sans-serif;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003629;
+  }
+}
+
+.meta-card .chamadas ul li a:hover {
+  color: #10acbb;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003638;
+  }
+}
+
+.box {
+  background-color: #f2f4f6;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003643;
+  }
+}
+
+.box ul {
+  margin: 0.625rem 0;
+  float: left;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003647;
+  }
+}
+
+.box ul#list-projects {
+  height: 400px;
+  overflow: scroll;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003652;
+  }
+}
+
+.box ul li {
+  list-style: none;
+  float: left;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003657;
+  }
+}
+
+.box ul li a {
+  font-family: "MontserratBold", sans-serif;
+  color: #666666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003662;
+  }
+}
+
+.box ul li a i {
+  margin-right: 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003666;
+  }
+}
+
+.box ul li a:hover {
+  color: #97c949;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003673;
+  }
+}
+
+.box h4 {
+  color: #666666;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin: 1.25rem 0 0.625rem 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003680;
+  }
+}
+
+.box .button {
+  background-color: #c3c5c6;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003684;
+  }
+}
+
+.box .button:hover {
+  background-color: #8f9294;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003695;
+  }
+}
+
+.meta .outer-box .andamento h5 {
+  color: #12c2d2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003703;
+  }
+}
+
+.projeto .outer-box .box {
+  background-color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003706;
+  }
+}
+
+.projeto .outer-box .title {
+  margin-top: 1.5625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003710;
+  }
+}
+
+.projeto .outer-box .andamento h5 {
+  color: #97c949;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003719;
+  }
+}
+
+.nav-innerpage {
+  background-color: #fff;
+  margin: 0.9375rem 0 0;
+  padding: 0.9375rem 0 0.9375rem 1.25rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003723;
+  }
+}
+
+.nav-innerpage a {
+  font-size: 0.875rem;
+  color: #999;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003728;
+  }
+}
+
+.nav-innerpage a:hover {
+  color: gray;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003733;
+  }
+}
+
+.nav-innerpage select {
+  margin: 0;
+  border: 0;
+  background-color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003742;
+  }
+}
+
+.outer-box {
+  background-color: #fff;
+  padding-bottom: 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003746;
+  }
+}
+
+.outer-box .box {
+  padding-bottom: 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003749;
+  }
+}
+
+.outer-box .title {
+  background-color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 0 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003754;
+  }
+}
+
+.outer-box .title i {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003757;
+  }
+}
+
+.outer-box .title span {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-family: 'MontserratBold', sans-serif;
+  color: #666;
+  padding: 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003766;
+  }
+}
+
+.outer-box p.descricao {
+  margin: 0 0.625rem;
+  line-height: 1rem;
+  font-size: 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003772;
+  }
+}
+
+.outer-box .total-por-fase {
+  min-height: 2.1875rem;
+  margin-bottom: 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003776;
+  }
+}
+
+.outer-box .total-por-fase h6 {
+  color: #12c2d2;
+  font-size: 1.875rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003781;
+  }
+}
+
+.outer-box .total-por-fase p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003788;
+  }
+}
+
+.outer-box .andamento {
+  margin-bottom: 1.875rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003790;
+  }
+}
+
+.outer-box .andamento h5 {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003797;
+  }
+}
+
+.outer-box.meta-card {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003812;
+  }
+}
+
+.projeto-card.outer-box {
+  padding-top: 0.9375rem;
+  margin-top: 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003816;
+  }
+}
+
+.projeto-card.outer-box .box {
+  background-color: #f2f4f6;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003819;
+  }
+}
+
+.projeto-card.outer-box .box h3 {
+  margin: 1.875rem 0.625rem 0.9375rem;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003826;
+  }
+}
+
+.projeto-card.outer-box .status p {
+  color: #97c949;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  margin: 0.9375rem 0 0.3125rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003832;
+  }
+}
+
+.projeto-card.outer-box .status h5 {
+  color: #97c949;
+  font-size: 3.125rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003839;
+  }
+}
+
+.projeto-card.outer-box .titulo h1 {
+  margin-bottom: 1.25rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003842;
+  }
+}
+
+.projeto-card.outer-box .titulo span {
+  text-transform: uppercase;
+  margin-bottom: 0.625rem;
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003851;
+  }
+}
+
+.projeto-card .tabs-options .box-options {
+  background-color: #f2f4f6;
+  width: 4.375rem;
+  float: right;
+  margin-left: 0.5rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003857;
+  }
+}
+
+.projeto-card .tabs-options .box-options i {
+  display: block;
+  font-size: 1.25rem;
+  margin: 0.3125rem 0 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003862;
+  }
+}
+
+.projeto-card .tabs-options .box-options a {
+  display: block;
+  line-height: 1;
+  color: #c3c5c6;
+  font-family: 'TinosItalic', sans-serif;
+  font-weight: normal;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.3125rem 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003874;
+  }
+}
+
+.projeto-card .tabs-options .box-options.meta a {
+  color: #12c2d2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003880;
+  }
+}
+
+.projeto-card .tabs-options .box-options.meta.active a {
+  background-color: #12c2d2;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003890;
+  }
+}
+
+.projeto-card .tabs-options .box-options.compartilhar.active a {
+  background-color: #c3c5c6;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003901;
+  }
+}
+
+.cronograma {
+  padding: 0 20px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003903;
+  }
+}
+
+.cronograma .anos {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003906;
+  }
+}
+
+.cronograma .anos div {
+  font-weight: bold;
+  padding: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003909;
+  }
+}
+
+.cronograma .anos div:before {
+  bottom: -5px;
+  content: "|";
+  font-size: 9px;
+  left: 0;
+  position: absolute;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003918;
+  }
+}
+
+.cronograma .entregue {
+  background-color: #e3e7ec;
+  border-width: 1px 0;
+  border-style: dashed;
+  border-color: #999;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003923;
+  }
+}
+
+.cronograma .entregue div {
+  padding: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003926;
+  }
+}
+
+.cronograma .entregue .valor {
+  color: #97c949;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003945;
+  }
+}
+
+.projeto .color-text {
+  color: #97c949 !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003948;
+  }
+}
+
+.projeto .color-bg {
+  background-color: #97c949 !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003951;
+  }
+}
+
+.projeto .color-border {
+  border-color: #97c949 !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003954;
+  }
+}
+
+.projeto .color-border-light {
+  border-color: #c4e098 !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003958;
+  }
+}
+
+.projeto table {
+  width: 100%;
+  border: 0 none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003966;
+  }
+}
+
+.projeto table tfoot tr th,
+.projeto table tfoot tr td,
+.projeto table thead tr th,
+.projeto table thead tr td,
+.projeto table tbody tr th,
+.projeto table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px dashed #ddd;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003972;
+  }
+}
+
+.projeto table tfoot tr th:first-child,
+.projeto table tfoot tr td:first-child,
+.projeto table thead tr th:first-child,
+.projeto table thead tr td:first-child,
+.projeto table tbody tr th:first-child,
+.projeto table tbody tr td:first-child {
+  border-left-width: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003975;
+  }
+}
+
+.projeto table tfoot tr th:last-child,
+.projeto table tfoot tr td:last-child,
+.projeto table thead tr th:last-child,
+.projeto table thead tr td:last-child,
+.projeto table tbody tr th:last-child,
+.projeto table tbody tr td:last-child {
+  border-right-width: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003981;
+  }
+}
+
+.projeto table tfoot tr:first-child th,
+.projeto table tfoot tr:first-child td,
+.projeto table thead tr:first-child th,
+.projeto table thead tr:first-child td,
+.projeto table tbody tr:first-child th,
+.projeto table tbody tr:first-child td {
+  border-top-width: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003987;
+  }
+}
+
+.projeto table tfoot tr:last-child th,
+.projeto table tfoot tr:last-child td,
+.projeto table thead tr:last-child th,
+.projeto table thead tr:last-child td,
+.projeto table tbody tr:last-child th,
+.projeto table tbody tr:last-child td {
+  border-bottom-width: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003991;
+  }
+}
+
+.projeto table tfoot tr th,
+.projeto table thead tr th,
+.projeto table tbody tr th {
+  font-family: 'Tinos', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003996;
+  }
+}
+
+.projeto table tfoot tr td,
+.projeto table thead tr td,
+.projeto table tbody tr td {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031005;
+  }
+}
+
+.projeto table tfoot tr th,
+.projeto table tfoot tr td {
+  border-top: 1px dashed #999 !important;
+}

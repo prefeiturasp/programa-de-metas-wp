@@ -66,7 +66,7 @@
         <div class="small-3 columns status" data-equalizer-watch>
             <div class="box small-12 columns text-center">
                 <p>{{status.descricao}}</p>
-                <h5>{{status.absoluto}}%</h5>
+                <h5>{{status.absoluto | number_format(1, ',', '.')}}%</h5>
             </div>
         </div>
     </div>

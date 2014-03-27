@@ -96,7 +96,7 @@ define(['jquery', 'd3'], function ($, ignore) {
         h = 200 - m;
 
         var x = d3.scale.ordinal().domain(labels).rangeRoundBands([0, w]);
-        var y = d3.scale.linear().domain([0, 250]).range([h, 0]);
+        var y = d3.scale.linear().domain([0, 2500]).range([h, 0]);
 
         var line = d3.svg.line()
             .x(function(d, i) { return x(labels[i]); })

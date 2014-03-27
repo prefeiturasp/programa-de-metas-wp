@@ -44,7 +44,7 @@ require(['chart', 'map', 'app', 'jquery'], function (chart, map, app, $) {
               }
               break;
            case 'line':
-              chart.line(this, data.labels, data.values[0]);
+              chart.line(this, data_chart.labels, data_chart.values[0]);
               break;
         }
     });

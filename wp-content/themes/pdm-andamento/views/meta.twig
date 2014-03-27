@@ -58,7 +58,7 @@
                         <div class="detalhes">
                             <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[{{meta.porcentagem.concluido}},{{meta.porcentagem.restante}}]}"></div>
                             <div class="status">
-                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format}}%</a></p>
+                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format(1, ',', '.')}}%</a></p>
                                 <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.status}}</a></p>
                             </div>
                         </div>

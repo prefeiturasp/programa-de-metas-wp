@@ -107,6 +107,31 @@ class ApiClient
         return $response->json();
     }
 
+    public function preparaDadosMesAMesPorPrefeitura($progresso)
+    {
+        $dados_mensais = array();
+
+        foreach ($progresso as $key => $value) {
+            $nome_prefeitura = $value['prefecture']['name'];
+            $id_prefeitura = $value['prefecture']['id'];
+
+            if (array_key_exists($id_prefeitura, $dados_mensais)) {
+                $dados_mensais[$id_prefeitura]['nome'] = $nome_prefeitura;
+            }
+
+            if (empty($value['value'])){
+                $value['value'] = 0;
+            }
+            $dados_mensais[$id_prefeitura]['dados'][] = $value['value'];
+        }
+
+        // foreach ($prefeituras as $key => $value) {
+        //     $novo_progresso[$key]
+        // }
+
+        return $dados_mensais;
+    }
+
     protected function getProjetoDeFasesStatus($projetos, $fases_projeto)
     {
         $status_total = 0;
@@ -135,7 +160,25 @@ class ApiClient
 
     protected function getProjetoMesAMesStatus($projetos)
     {
-        return array('descricao'=>'Concluído', 'absoluto'=>'100');
+        $total = 0;
+        foreach ($projetos as $progresso) {
+            $total = $total + $progresso['value'];
+        }
+        if ($total != 0) {
+            $status_total = ($total*100) / $projetos[0]['goal_target'];
+        }
+
+        if ($status_total == 0) {
+            $data['descricao'] = 'Não iniciada';
+        } elseif (($status_total > 0) && ($status_total < 100)) {
+            $data['descricao'] = 'Em andamento';
+        } elseif ($status_total == 100) {
+            $data['descricao'] = 'Concluído';
+        }
+
+        $data['absoluto'] = $status_total;
+
+        return $data;
     }
 
     public function getProjetoStatus($projetos, $fases_projeto, $tipo_projeto)

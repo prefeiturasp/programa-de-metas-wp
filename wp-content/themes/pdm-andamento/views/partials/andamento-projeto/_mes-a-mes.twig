@@ -10,161 +10,47 @@
             </div>
             <div class="small-12 columns box ">
                 <!--div class="chart-render chart-container line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;,&quot;labels&quot;:[&quot;Janeiro&quot;],&quot;values&quot;:[[200]]}"></div-->
-                <div class="chart-render chart-container line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;,&quot;labels&quot;:[&quot;Janeiro&quot;,&quot;Fevereiro&quot;,&quot;Março&quot;,&quot;Abril&quot;,&quot;Maio&quot;,&quot;Junho&quot;,&quot;Julho&quot;,&quot;Agosto&quot;,&quot;Setembro&quot;,&quot;Outubro&quot;,&quot;Novembro&quot;,&quot;Dezembro&quot;],&quot;values&quot;:[[0,0,35,20,40,160,100,170,145,180,0,30]]}"></div>
+                <div class="chart-render chart-container line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;}"></div>
+            <script>
+                var data_chart = {
+                    "type" : "line",
+                    "labels" : [
+                                'Janeiro',
+                                'Fevereiro',
+                                'Março',
+                                'Abril',
+                                'Maio',
+                                'Junho',
+                                'Julho',
+                                'Agosto',
+                                'Setembro',
+                                'Outubro',
+                                'Novembro',
+                                'Dezembro'
+                    ],
+                    "values" : [
+                                {% for prefeituras in progresso %}[{{prefeituras.dados|join(",")}}],{% endfor %}
+                    ]
+                };
+            </script>
             </div>
             <div class="small-12 columns box table-container">
                 <table>
                     <tbody>
+                    {% for prefeituras in progresso %}
                         <tr>
-                            <th>Butantã</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <th>{{prefeituras.nome}}</th>
+                            {% for dados_progresso in prefeituras.dados %}
+                                {% if dados_progresso == "" %}
+                                    <td >-</td>
+                                {% elseif dados_progresso > 0 %}
+                                    <td class="color-text">{{dados_progresso}}</td>
+                                {% else %}
+                                    <td>{{dados_progresso}}</td>
+                                {% endif %}
+                            {% endfor %}
                         </tr>
-                        <tr>
-                            <th>Freguesia/Brasilândia</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td class="color-text">160</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Itaim Paulista</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td class="color-text">50</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Sapopemba</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                            <tr>
-                            <th>Sé</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td class="color-text">120</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Butantã</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Freguesia/Brasilândia</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Itaim Paulista</th>
-                            <td>0</td>
-                            <td class="color-text">60</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Sapopemba</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Sé</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
+                    {% endfor %}
                     </tbody>
                     <tfoot>
                         <tr>
@@ -184,7 +70,7 @@
                         </tr>
                     </tfoot>
                 </table>
-                <p class="right">Peso do projeto em relação a meta: 8%</p>
+                <p class="right">Peso do projeto em relação a meta: {{projeto.weight_about_goal}}%</p>
             </div>
         </div>
     </div>

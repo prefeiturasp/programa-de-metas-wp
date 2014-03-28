@@ -183,8 +183,33 @@ $vermelho: #eb2851;
         margin-top: rem-calc(30px);
         margin-bottom: rem-calc(30px);
 
-        a {
-            display: inline-block;
+        .border {
+            border-radius:rem-calc(10);
+            border: rem-calc(2) dotted #fff;
+            background-color:#d4d4d4;
+            margin: 0 rem-calc(8) 0 rem-calc(9);
+        }
+        .destaque-situacao {
+            a {
+                color: #fff;
+                float: left;
+                text-align: left;
+                padding: rem-calc(5) 0;
+                font-family: 'Montserrat', sans-serif;
+
+                &.numero {
+                    font-family: 'MontserratBold', sans-serif;
+                    padding: rem-calc(3) rem-calc(3) 0 0;
+                    font-size: rem-calc(36);
+                }
+            }
+        }
+        .informe-atualizacao {
+            p {
+                font-size: rem-calc(12);
+                margin: rem-calc(5) 0 0 0;
+                color: #d4d4d4;
+            }
         }
     }
 

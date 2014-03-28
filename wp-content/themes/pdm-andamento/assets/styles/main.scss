@@ -16,36 +16,72 @@ $vermelho: #eb2851;
     background-color: #fff;
 
     .support-bar {
-        background-color: #4a4949;
+        background-color: #252424;
         box-shadow: 4px 4px 15px rgba(#000,.4);
         z-index: 999;
         position: relative;
 
-        .row {
-            background-color: #252424;
-        }
-        .box-logo-planeja {
-            position: relative;
-        }
-        .box-logo-planeja:after {
+        .news-box {
             background-color: #4a4949;
-            right: 100%;
-            top: 50%;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
-            border-color: rgba(213, 21, 21, 0);
-            border-right-color: #252424;
-            border-width: 20px;
-            margin-top: -20px;
+
+            &:after {
+                right: 100%;
+                top: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(74, 73, 73, 0);
+                border-right-color: #4a4949;
+                border-width: 10px;
+                margin-top: -10px;
+            }
+        }
+
+        .slogan {
+            font-family: 'Montserrat', sans-serif;
+            border-bottom: 1px solid #373636;
+            color: #999;
+            font-size: rem-calc(12);
+            //padding: rem-calc(4) 0 rem-calc(0);
+            line-height: rem-calc(24);
+            margin:0;
         }
 
         .logo-planeja {
-            margin: rem-calc(8px) 0;
-            width: 80%;
+            margin: rem-calc(15) 0;
+            width: 95%;
+        }
+        .logo-prefeitura {
+            img {
+                width: 90%;
+                margin: rem-calc(10) 0;
+            }
+        }
+
+        #js-news {
+            margin:0;
+            .news-item {
+                margin:0;
+                a {
+                    line-height: rem-calc(24);
+                    font-size: rem-calc(14);
+                    color: #cccccc;
+                    font-family: 'TinosItalic', sans-serif;
+                    .subject {
+                        font-size: rem-calc(12);
+                        color: #fff;
+                        font-family: 'Montserrat', sans-serif;
+                        text-transform: uppercase;
+                    }
+
+                    .date {
+                        font-weight: bold;
+                    }
+                }
+            }
         }
     }
 
@@ -95,6 +131,7 @@ $vermelho: #eb2851;
             text-transform: inherit;
             font-family: 'Montserrat', sans-serif;
             margin: 0;
+            font-size: rem-calc(16);
             a {
                 color: #000;
             }

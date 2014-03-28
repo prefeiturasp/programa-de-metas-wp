@@ -72,26 +72,26 @@
                     <div class="row">
                         <div class="small-4 columns border">
                             <div class="destaque-situacao">
-                                <a href="#" class="numero">29.7%</a>
-                                <a href="#">do Programa de<br/>Metas concluído</a>
+                                <a href="javascript:void(0);" class="numero">29.7%</a>
+                                <a href="javascript:void(0);">do Programa de<br/>Metas concluído</a>
                             </div>
                         </div>
                         <div class="small-2 columns border">
                             <div class="destaque-situacao">
-                                <a href="#" class="numero">8</a>
-                                <a href="#">Metas<br/>concluídas</a>
+                                <a href="{{site.url}}/?status=3" class="numero">8</a>
+                                <a href="{{site.url}}/?status=3">Metas<br/>concluídas</a>
                             </div>
                         </div>
                         <div class="small-3 columns border">
                             <div class="destaque-situacao">
-                                <a href="#" class="numero">100</a>
-                                <a href="#">Metas em<br/>andamento</a>
+                                <a href="{{site.url}}/?status=2" class="numero">100</a>
+                                <a href="{{site.url}}/?status=2">Metas em<br/>andamento</a>
                             </div>
                         </div>
                         <div class="small-2 columns border">
                             <div class="destaque-situacao">
-                                <a href="#" class="numero">9</a>
-                                <a href="#">Metas não<br/>iniciadas</a>
+                                <a href="{{site.url}}/?status=1" class="numero">9</a>
+                                <a href="{{site.url}}/?status=1">Metas não<br/>iniciadas</a>
                             </div>
                         </div>
                         <div class="small-3 small-offset-9 columns informe-atualizacao">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="slideshow small-11 small-centered columns">
-                        <ul class="destaque-por-objetivos" data-orbit data-options="timer:false;slide_number:false;next_on_click:false;">
+                        <ul class="destaque-por-objetivos" data-orbit data-options="timer_speed: 6500;slide_number:false;next_on_click:false;">
                             <li data-orbit-slide="headline-1">
                                 <div class="row">
                                     <div class="small-3 columns">
@@ -283,22 +283,20 @@
                                 </div>
                                 <div class="small-12 medium-2 columns">
                                     <label class="first-input">
-                                    <select name="eixo">
-                                    <option value="">eixo</option>
-                                    {% include 'partials/_options-eixos.twig' %}
-                                    </select>
-                                    </label>
-                                </div>
-                                <div class="small-12 medium-2 columns">
-                                    <label class="first-input">
-                                    <select name="articulacao">
-                                    <option value="">articulação</option>
-                                    {% include 'partials/_options-articulacoes.twig' %}
+                                    <select name="status">
+                                    <option value="">situação</option>
+                                    <option value="1">não iniciada</option>
+                                    <option value="2">em andamento</option>
+                                    <option value="3">concluída</option>
+                                    <option value="4">superada</option>
                                     </select>
                                     </label>
                                 </div>
                                 <div class="small-12 medium-1 columns">
                                     <button type="submit" class="button round tiny">Filtrar</button>
+                                </div>
+                                <div class="small-12 medium-1 columns end">
+                                    <a href="{{site.url}}" class="button round tiny">Limpar</a>
                                 </div>
                             </div>
                         </div>

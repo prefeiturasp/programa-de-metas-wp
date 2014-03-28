@@ -1225,7 +1225,7 @@
 .filter-bar .slideshow .destaque-por-objetivos h4 {
   font-family: 'MontserratBold', sans-serif;
   font-size: 2.0625rem;
-  margin: 1.25rem 0 0;
+  margin: 1.5625rem 0 0;
 }
 
 @media -sass-debug-info {
@@ -1255,7 +1255,7 @@
 .filter-bar .slideshow .destaque-por-objetivos p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
-  margin: 0.8125rem 0;
+  margin: 0 0 0.875rem 0;
   line-height: 1.2;
 }
 

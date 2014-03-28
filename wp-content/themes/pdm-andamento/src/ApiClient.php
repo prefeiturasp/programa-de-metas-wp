@@ -247,6 +247,10 @@ class ApiClient
             $filter['articulation'] = $_GET['articulacao'];
         }
 
+        if ($this->validateInput($_GET['status'])) {
+            $filter['status'] = $_GET['status'];
+        }
+
         $url_filters = 'goals?' .  http_build_query($filter);
 
         $response = $this->fazerRequisicao($url_filters);

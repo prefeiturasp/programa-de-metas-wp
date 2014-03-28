@@ -12,8 +12,6 @@ class PaginaInicial
         $context['subprefeituras'] = $api->getSubPrefeituras();
         $context['objetivos'] = $api->getObjetivos();
         $context['secretarias'] = $api->getSecretarias();
-        $context['eixos'] = $api->getEixos();
-        $context['articulacoes'] = $api->getArticulacoes();
 
         $context['total_metas'] = count($context['metas']);
 

@@ -186,7 +186,7 @@ $vermelho: #eb2851;
         .border {
             border-radius:rem-calc(10);
             border: rem-calc(2) dotted #fff;
-            background-color:#d4d4d4;
+            background-color:#b6b6b6;
             margin: 0 rem-calc(8) 0 rem-calc(9);
         }
         .destaque-situacao {
@@ -208,21 +208,21 @@ $vermelho: #eb2851;
             p {
                 font-size: rem-calc(12);
                 margin: rem-calc(5) 0 0 0;
-                color: #d4d4d4;
+                color: #b6b6b6;
             }
         }
     }
-    .orbit-container {
-        height: rem-calc(185);
-        margin-bottom: rem-calc(25);
-    }
     .slideshow {
+        height: rem-calc(170);
+        border-radius: rem-calc(20);
+        //box-shadow: 4px 4px 15px rgba(#000,.4);
+        background-color: #f62048;
+        margin-bottom: rem-calc(25);
 
         .destaque-por-objetivos {
             list-style: none;
             padding: 0;
             position: relative;
-            height: rem-calc(150);
             //border-radius: rem-calc(20);
 
             li {
@@ -242,11 +242,15 @@ $vermelho: #eb2851;
             i {
                 border: 2px dotted darken(#f62048, 20%);
                 border-radius: rem-calc(70);
-                font-size: rem-calc(40);
-                padding: rem-calc(15);
-                margin: rem-calc(15) 0 0;
+                font-size: rem-calc(65);
+                padding: rem-calc(25);
+                margin: rem-calc(25) 0 rem-calc(25) rem-calc(65);
                 color: #fff;
                 display: inline-block;
+
+                &.icon-book {
+                    padding: 1.5rem 1.2rem;
+                }
             }
             h4 {
                 a {
@@ -254,7 +258,7 @@ $vermelho: #eb2851;
                 }
                 font-family: 'MontserratBold', sans-serif;
                 font-size: rem-calc(33);
-                margin: rem-calc(15) 0;
+                margin: rem-calc(20) 0 0;
             }
             p {
                 a {
@@ -262,20 +266,16 @@ $vermelho: #eb2851;
                 }
                 font-family: 'Montserrat', sans-serif;
                 font-size: rem-calc(20);
-                margin: rem-calc(15) 0;
+                margin: rem-calc(13) 0;
                 line-height: 1.2;
 
             }
         }
         .orbit-bullets-container {
-            height: rem-calc(25);
-
-            background-color: #f62048;
-            border-radius: 0 0 rem-calc(20) rem-calc(20);
             ol {
                 height: rem-calc(25);
-                margin:0 0 rem-calc(25) 0;
-                top:0;
+                margin:0;
+                top:rem-calc(-30);
                 li {
                     background: #fff;
                     opacity: .5;

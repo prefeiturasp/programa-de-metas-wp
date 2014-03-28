@@ -1058,7 +1058,7 @@
 .filter-bar .infografico .border {
   border-radius: 0.625rem;
   border: 0.125rem dotted white;
-  background-color: #d4d4d4;
+  background-color: #b6b6b6;
   margin: 0 0.5rem 0 0.5625rem;
 }
 
@@ -1109,7 +1109,7 @@
 .filter-bar .infografico .informe-atualizacao p {
   font-size: 0.75rem;
   margin: 0.3125rem 0 0 0;
-  color: #d4d4d4;
+  color: #b6b6b6;
 }
 
 @media -sass-debug-info {
@@ -1122,8 +1122,10 @@
   }
 }
 
-.filter-bar .orbit-container {
-  height: 11.5625rem;
+.filter-bar .slideshow {
+  height: 10.625rem;
+  border-radius: 1.25rem;
+  background-color: #f62048;
   margin-bottom: 1.5625rem;
 }
 
@@ -1133,7 +1135,7 @@
   }
 
   line {
-    font-family: \00003221;
+    font-family: \00003222;
   }
 }
 
@@ -1141,7 +1143,6 @@
   list-style: none;
   padding: 0;
   position: relative;
-  height: 9.375rem;
 }
 
 @media -sass-debug-info {
@@ -1190,9 +1191,9 @@
 .filter-bar .slideshow .destaque-por-objetivos i {
   border: 2px dotted #a90725;
   border-radius: 4.375rem;
-  font-size: 2.5rem;
-  padding: 0.9375rem;
-  margin: 0.9375rem 0 0;
+  font-size: 4.0625rem;
+  padding: 1.5625rem;
+  margin: 1.5625rem 0 1.5625rem 4.0625rem;
   color: #fff;
   display: inline-block;
 }
@@ -1207,10 +1208,8 @@
   }
 }
 
-.filter-bar .slideshow .destaque-por-objetivos h4 {
-  font-family: 'MontserratBold', sans-serif;
-  font-size: 2.0625rem;
-  margin: 0.9375rem 0;
+.filter-bar .slideshow .destaque-por-objetivos i.icon-book {
+  padding: 1.5rem 1.2rem;
 }
 
 @media -sass-debug-info {
@@ -1219,7 +1218,23 @@
   }
 
   line {
-    font-family: \00003252;
+    font-family: \00003255;
+  }
+}
+
+.filter-bar .slideshow .destaque-por-objetivos h4 {
+  font-family: 'MontserratBold', sans-serif;
+  font-size: 2.0625rem;
+  margin: 1.25rem 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003256;
   }
 }
 
@@ -1233,14 +1248,14 @@
   }
 
   line {
-    font-family: \00003259;
+    font-family: \00003263;
   }
 }
 
 .filter-bar .slideshow .destaque-por-objetivos p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
-  margin: 0.9375rem 0;
+  margin: 0.8125rem 0;
   line-height: 1.2;
 }
 
@@ -1250,28 +1265,12 @@
   }
 
   line {
-    font-family: \00003260;
+    font-family: \00003264;
   }
 }
 
 .filter-bar .slideshow .destaque-por-objetivos p a {
   color: #fff;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
-  }
-
-  line {
-    font-family: \00003270;
-  }
-}
-
-.filter-bar .slideshow .orbit-bullets-container {
-  height: 1.5625rem;
-  background-color: #f62048;
-  border-radius: 0 0 1.25rem 1.25rem;
 }
 
 @media -sass-debug-info {
@@ -1286,8 +1285,8 @@
 
 .filter-bar .slideshow .orbit-bullets-container ol {
   height: 1.5625rem;
-  margin: 0 0 1.5625rem 0;
-  top: 0;
+  margin: 0;
+  top: -1.875rem;
 }
 
 @media -sass-debug-info {

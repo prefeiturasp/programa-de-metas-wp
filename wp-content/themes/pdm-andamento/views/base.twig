@@ -182,7 +182,7 @@
                                         <input type="text" placeholder="Digite seu CEP (EM BREVE)" readonly name="cep" id="cep">
                                     </div>
                                     <div class="small-3 columns">
-                                        <a href="javascript:void(0);" class="button postfix">Encontrar</a>
+                                        <a href="javascript:void(0);" class="button postfix">Procurar</a>
                                     </div>
                                 </div>
                             </div>
@@ -190,12 +190,19 @@
 
                         <div class="row">
                             <div class="nao-sabe-cep small-11 small-centered columns">
-                                <label>Não sabe seu CEP?
-                                <select name="subprefeitura" id="subprefeitura-topo">
-                                <option value="">Escolha uma subprefeitura</option>
-                                {% include 'partials/_options-subprefeituras.twig' %}
-                                </select>
-                                </label>
+                                <div class="row collapse">
+                                    <div class="small-9 columns">
+                                        <label>
+                                        <select name="subprefeitura" id="subprefeitura-topo">
+                                        <option value="">Escolha uma subprefeitura</option>
+                                        {% include 'partials/_options-subprefeituras.twig' %}
+                                        </select>
+                                        </label>
+                                    </div>
+                                    <div class="small-3 columns">
+                                        <a href="javascript:void(0);" class="button postfix">Filtrar</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -207,12 +214,20 @@
                                 <h3>Encontre metas por objetivos</h3>
                             </div>
                             <div class="small-11 small-centered columns">
-                                <label class="first-input">
-                                <select name="objetivo" id="objetivo-topo">
-                                    <option value="">Escolha um objetivo</option>
-                                    {% include 'partials/_options-objetivos.twig' %}
-                                </select>
+                            <div class="row collapse">
+                                <div class="small-9 columns">
+                                        <label>
+                                        <select name="objetivo" id="objetivo-topo">
+                                            <option value="">Escolha um objetivo</option>
+                                            {% include 'partials/_options-objetivos.twig' %}
+                                        </select>
+                                        </label>
+                                    </div>
+                                    <div class="small-3 columns">
+                                        <a href="javascript:void(0);" class="button postfix">Filtrar</a>
+                                    </div>
                                 </label>
+                                </div>
                             </div>
                         </div>
                     </form>

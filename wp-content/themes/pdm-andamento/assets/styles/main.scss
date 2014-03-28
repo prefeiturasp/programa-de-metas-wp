@@ -217,7 +217,7 @@ $vermelho: #eb2851;
         border-radius: rem-calc(20);
         //box-shadow: 4px 4px 15px rgba(#000,.4);
         background-color: #f62048;
-        margin-bottom: rem-calc(25);
+        margin-bottom: rem-calc(30);
 
         .destaque-por-objetivos {
             list-style: none;
@@ -290,15 +290,16 @@ $vermelho: #eb2851;
     h3 {
         color: #fff;
         font-size: rem-calc(20);
-        margin-top: rem-calc(20);
-        margin-bottom: rem-calc(20);
+        margin-top: rem-calc(15);
+        margin-bottom: rem-calc(15);
     }
 
     .first-input {
-        margin-bottom: rem-calc(10);
+        //margin-bottom: rem-calc(10);
     }
 
     .projetos-por-perto {
+        min-height: rem-calc(160);
         background-color: $verde;
         position: relative;
 
@@ -319,21 +320,17 @@ $vermelho: #eb2851;
             font-style: normal;
         }
 
-        .nao-sabe-cep {
-            margin-top: rem-calc(20);
-            margin-bottom: rem-calc(16);
-        }
-
-        ::-webkit-input-placeholder { color: darken($verde, 20%); }
-        :-moz-placeholder { color: darken($verde, 20%); }
-        ::-moz-placeholder { color: darken($verde, 20%); }
-        :-ms-input-placeholder { color: darken($verde, 20%); }
+        ::-webkit-input-placeholder { color: darken(#fff, 5%); }
+        :-moz-placeholder { color: darken(#fff, 5%); }
+        ::-moz-placeholder { color: darken(#fff, 5%); }
+        :-ms-input-placeholder { color: darken(#fff, 5%); }
 
         select,
         input {
+            margin-bottom: rem-calc(10);
             background-color: darken($verde, 10%);
             border:none;
-            color: darken($verde, 20%);
+            color: darken(#fff, 5%);
         }
         label {
             color: darken($verde, 20%);
@@ -341,15 +338,32 @@ $vermelho: #eb2851;
 
         .button {
             background-color: darken($verde, 15%);
-            color: darken($verde, 30%);
+            color: darken(#fff, 5%);
+            width: 90%;
+            margin-left:rem-calc(10);
+
+            &.postfix {
+                margin-bottom: rem-calc(15);
+            }
         }
     }
     .metas-por-objetivo {
+        min-height: rem-calc(160);
         background-color: $azul;
         select {
             background-color: darken($azul, 10%);
             border:none;
-            color: darken($azul, 20%);
+            color: darken(#fff, 5%);
+        }
+        .button {
+            background-color: darken($azul, 15%);
+            color: darken(#fff, 5%);
+            width: 90%;
+            margin-left:rem-calc(10);
+
+            &.postfix {
+                margin-bottom: rem-calc(15);
+            }
         }
     }
 }

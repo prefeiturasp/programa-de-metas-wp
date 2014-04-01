@@ -63,8 +63,12 @@
         </div>
         <div class="small-3 columns status" data-equalizer-watch>
             <div class="box small-12 columns text-center">
-                <p>{{status.descricao}}</p>
-                <h5>{{status.absoluto | number_format(1, ',', '.')}}%</h5>
+                <p>{{status.descricao}}&nbsp;</p>
+                {% if status == '-' %}
+                    {{status}}
+                {% else %}
+                    <h5>{{status.absoluto | number_format(1, ',', '.')}}%</h5>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -137,14 +141,14 @@
                 <div class="small-12 columns">
                     <p class="title">
                         <i class="icon-quotation"></i>
-                        <span>execução orçamentária</span>
+                        <span>execução orçamentária </span>
                     </p>
                 </div>
 
                 <div class="text-center cronograma">
                     <div class="row anos">
                         <div class="small-12 medium-2 columns"></div>
-                        <div class="small-12 medium-3 columns">2013</div>
+                        <div class="small-12 medium-3 columns">2013 (Em revisão)</div>
                         <div class="small-12 medium-3 columns">2014</div>
                         <div class="small-12 medium-2 columns">2015</div>
                         <div class="small-12 medium-2 columns">2016</div>

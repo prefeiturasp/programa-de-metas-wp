@@ -137,7 +137,7 @@ define(['jquery', 'd3'], function ($, ignore) {
                     .attr('class', 'dot dot-' + classNameSufix);
 
             dot.append('circle')
-                .attr('r', function (d,i) { if (d != 0) { return 20; } else { return 0; } })
+                .attr('r', function (d,i) { if (d != 0) { return 25; } else { return 0; } })
                 .attr('cx', function(d, i) { return x(labels[i]); })
                 .attr('cy', function(d) { return y(d); });
 

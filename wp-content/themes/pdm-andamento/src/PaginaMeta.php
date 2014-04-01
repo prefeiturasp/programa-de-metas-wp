@@ -26,17 +26,7 @@ class PaginaMeta extends Pagina
         $context['articulacoes'] = $api->getArticulacoes();
         $context['tipos_projeto'] = $api->getTiposProjeto();
 
-        $context['meta_grouped'] = array(
-                11, // (consultórios na rua),
-                35, // (Unid. Habitacionais),
-                37, // (Regularização fundiária),
-                42, // (Casas de mediação),
-                47, // (Esporte 24h),
-                54, // (CEFAI),
-                73, // (Praças wifi),
-                89, // (Coleta seletiva),
-                97 // (ciclovias)
-        );
+        $context['meta_grouped'] = $api->metas_agrupadas;
 
         //TODO: deve ser inserido o suporte a múltiplos tipos de projeto por meta
         //$context['fases_projeto'] = $api->getFasesPorTipoProjeto($context['meta']['projects'][0]['project_type']);

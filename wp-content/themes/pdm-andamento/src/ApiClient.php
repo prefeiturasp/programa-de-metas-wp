@@ -19,6 +19,18 @@ class ApiClient
     public $url;
     public $client;
 
+    public $metas_agrupadas = array(
+                11, // (consultórios na rua),
+                35, // (Unid. Habitacionais),
+                37, // (Regularização fundiária),
+                42, // (Casas de mediação),
+                47, // (Esporte 24h),
+                54, // (CEFAI),
+                73, // (Praças wifi),
+                89, // (Coleta seletiva),
+                97 // (ciclovias)
+        );
+
     public function __construct()
     {
         $this->url = API_URL;
@@ -181,10 +193,14 @@ class ApiClient
         return $data;
     }
 
-    public function getProjetoStatus($projetos, $fases_projeto, $tipo_projeto)
+    public function getProjetoStatus($projetos, $fases_projeto, $tipo_projeto, $meta_id)
     {
         if ($tipo_projeto == 8) {
-            return $this->getProjetoMesAMesStatus($projetos);
+            if (in_array($meta_id, $this->metas_agrupadas)) {
+                return "-";
+            } else {
+                return $this->getProjetoMesAMesStatus($projetos);
+            }
         }
 
         return $this->getProjetoDeFasesStatus($projetos, $fases_projeto);

@@ -34,7 +34,7 @@ class PaginaProjeto extends Pagina
 
         $context['progresso'] = $api->getProjetoProgresso($projeto_id);
 
-        $context['status'] = $api->getProjetoStatus($context['progresso'], $context['fases_projeto'], $context['projeto']['project_type']);
+        $context['status'] = $api->getProjetoStatus($context['progresso'], $context['fases_projeto'], $context['projeto']['project_type'], $context['projeto']['goal_id']);
 
         if ($context['projeto']['project_type'] == 8) {
             $context['progresso'] = $api->preparaDadosMesAMesPorPrefeitura($context['progresso']);

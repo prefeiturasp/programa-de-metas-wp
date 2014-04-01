@@ -1,0 +1,26 @@
+{% if progresso | length > 0 %}
+        <h5>Agrupado</h5>
+        <div class="chart-render chart-container chart-container-projeto line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;}"></div>
+        <script>
+            var data_chart = {
+                "type" : "line",
+                "labels" : [
+                            'Janeiro',
+                            'Fevereiro',
+                            'Março',
+                            'Abril',
+                            'Maio',
+                            'Junho',
+                            'Julho',
+                            'Agosto',
+                            'Setembro',
+                            'Outubro',
+                            'Novembro',
+                            'Dezembro'
+                ],
+                "values" : [
+                            [{{progresso[0]|join(",")}}]
+                ]
+            };
+        </script>
+{% endif %}

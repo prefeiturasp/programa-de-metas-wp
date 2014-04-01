@@ -1,4 +1,5 @@
 {% set body_class = "meta" %}
+{% set page_title = meta.name ~ " - Meta" %}
 {% extends 'base.twig' %}
 
 {% block header %}
@@ -48,7 +49,7 @@
         <div class="small-8 small-centered medium-uncentered medium-3 columns">
             <dl class="tabs tabs-options">
                 <dd class="acompanhar box-options"><a href="#meta-{{meta.id}}-acompanhar"><i class="icon-follow"></i>Seguir<br> esta meta</a></dd>
-                <dd class="compartilhar box-options"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-share"></i>Compartilhe<br> esta meta</a></dd>
+                <!--dd class="compartilhar box-options"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-share"></i>Compartilhe<br> esta meta</a></dd-->
             </dl>
         </div>
     </div>

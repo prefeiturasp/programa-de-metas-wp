@@ -4,7 +4,11 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" {{site.language_attributes}}> <!--<![endif]-->
     <head>
-        <title>{{wp_title}}</title>
+        {% if page_title == "" %}
+            <title>{{wp_title}}: {{site.description}}</title>
+        {% else %}
+            <title>{{page_title}} - {{wp_title}}</title>
+        {% endif %}
 
         <meta charset="{{site.charset}}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

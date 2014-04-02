@@ -1,6 +1,5 @@
 require.config({
     paths: {
-        async: '../bower_components/requirejs-plugins/src/async',
         jquery: '../bower_components/jquery/dist/jquery',
         d3: '../bower_components/d3js/build/d3.v3',
         //leaflet: '../bower_components/leaflet/src/Leaflet',

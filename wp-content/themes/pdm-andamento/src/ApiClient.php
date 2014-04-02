@@ -272,4 +272,10 @@ class ApiClient
         $response = $this->fazerRequisicao($url_filters);
         return $response->json();
     }
+
+    public function getSubPrefeiturasPorCoordenadas($lat, $long)
+    {
+        $response = $this->fazerRequisicao('prefectures/findByCoordinates/'.$lat.'/'.$long);
+        return $response->json();
+    }
 }

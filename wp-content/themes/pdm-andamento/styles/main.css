@@ -562,7 +562,118 @@
   }
 
   line {
-    font-family: \0000318;
+    font-family: \0000319;
+  }
+}
+
+.header .mobile-disclaimer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000327;
+  }
+}
+
+.header .mobile-disclaimer .title-bar {
+  margin-top: 2em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000330;
+  }
+}
+
+.header .mobile-disclaimer .disclaimer-content {
+  margin-top: 0.3em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000332;
+  }
+}
+
+.header .mobile-disclaimer .disclaimer-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #252424;
+  letter-spacing: -2px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000339;
+  }
+}
+
+.header .mobile-disclaimer button {
+  border-radius: 0.625rem;
+  border: 0.125rem dotted #cfcdcd;
+  border-right-style: solid;
+  background-color: #fff;
+  margin: 0 0.5rem 0 0.5625rem;
+  color: #999999;
+  font-size: 1.125rem;
+  padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+  position: relative;
+  font-family: "Montserrat";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000351;
+  }
+}
+
+.header .mobile-disclaimer button:before {
+  background-color: #C1BFBE;
+  height: 0;
+  padding: 0.5rem 1rem 1.625rem 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  border-radius: 1.5625rem 0.5rem 0.5rem 1.5625rem;
+  color: #fff;
+  font-family: "icomoon";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000368;
   }
 }
 
@@ -579,7 +690,7 @@
   }
 
   line {
-    font-family: \0000324;
+    font-family: \0000374;
   }
 }
 
@@ -593,7 +704,7 @@
   }
 
   line {
-    font-family: \0000327;
+    font-family: \0000377;
   }
 }
 
@@ -618,7 +729,7 @@
   }
 
   line {
-    font-family: \0000343;
+    font-family: \0000393;
   }
 }
 
@@ -637,7 +748,7 @@
   }
 
   line {
-    font-family: \0000353;
+    font-family: \00003103;
   }
 }
 
@@ -652,7 +763,7 @@
   }
 
   line {
-    font-family: \0000358;
+    font-family: \00003108;
   }
 }
 
@@ -667,7 +778,7 @@
   }
 
   line {
-    font-family: \0000364;
+    font-family: \00003114;
   }
 }
 
@@ -681,7 +792,7 @@
   }
 
   line {
-    font-family: \0000366;
+    font-family: \00003116;
   }
 }
 
@@ -695,7 +806,7 @@
   }
 
   line {
-    font-family: \0000368;
+    font-family: \00003118;
   }
 }
 
@@ -712,7 +823,7 @@
   }
 
   line {
-    font-family: \0000373;
+    font-family: \00003123;
   }
 }
 
@@ -729,7 +840,7 @@
   }
 
   line {
-    font-family: \0000380;
+    font-family: \00003130;
   }
 }
 
@@ -743,7 +854,7 @@
   }
 
   line {
-    font-family: \0000388;
+    font-family: \00003138;
   }
 }
 
@@ -758,7 +869,7 @@
   }
 
   line {
-    font-family: \0000393;
+    font-family: \00003143;
   }
 }
 
@@ -772,7 +883,7 @@
   }
 
   line {
-    font-family: \0000396;
+    font-family: \00003146;
   }
 }
 
@@ -786,7 +897,7 @@
   }
 
   line {
-    font-family: \0000399;
+    font-family: \00003149;
   }
 }
 
@@ -803,7 +914,7 @@
   }
 
   line {
-    font-family: \00003105;
+    font-family: \00003155;
   }
 }
 
@@ -817,7 +928,7 @@
   }
 
   line {
-    font-family: \00003113;
+    font-family: \00003163;
   }
 }
 
@@ -831,7 +942,7 @@
   }
 
   line {
-    font-family: \00003117;
+    font-family: \00003167;
   }
 }
 
@@ -847,7 +958,7 @@
   }
 
   line {
-    font-family: \00003122;
+    font-family: \00003172;
   }
 }
 
@@ -862,7 +973,7 @@
   }
 
   line {
-    font-family: \00003125;
+    font-family: \00003175;
   }
 }
 
@@ -876,7 +987,7 @@
   }
 
   line {
-    font-family: \00003130;
+    font-family: \00003180;
   }
 }
 
@@ -893,7 +1004,7 @@
   }
 
   line {
-    font-family: \00003135;
+    font-family: \00003185;
   }
 }
 
@@ -907,7 +1018,7 @@
   }
 
   line {
-    font-family: \00003140;
+    font-family: \00003190;
   }
 }
 
@@ -921,7 +1032,7 @@
   }
 
   line {
-    font-family: \00003145;
+    font-family: \00003195;
   }
 }
 
@@ -935,7 +1046,7 @@
   }
 
   line {
-    font-family: \00003149;
+    font-family: \00003199;
   }
 }
 
@@ -950,7 +1061,7 @@
   }
 
   line {
-    font-family: \00003154;
+    font-family: \00003204;
   }
 }
 
@@ -965,7 +1076,7 @@
   }
 
   line {
-    font-family: \00003160;
+    font-family: \00003210;
   }
 }
 
@@ -979,7 +1090,7 @@
   }
 
   line {
-    font-family: \00003166;
+    font-family: \00003216;
   }
 }
 
@@ -993,7 +1104,7 @@
   }
 
   line {
-    font-family: \00003169;
+    font-family: \00003219;
   }
 }
 
@@ -1007,7 +1118,7 @@
   }
 
   line {
-    font-family: \00003172;
+    font-family: \00003222;
   }
 }
 
@@ -1021,7 +1132,7 @@
   }
 
   line {
-    font-family: \00003178;
+    font-family: \00003228;
   }
 }
 
@@ -1036,7 +1147,21 @@
   }
 
   line {
-    font-family: \00003182;
+    font-family: \00003232;
+  }
+}
+
+.filter-bar #resultado-mobile {
+  padding: 30px 0 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003236;
   }
 }
 
@@ -1051,7 +1176,7 @@
   }
 
   line {
-    font-family: \00003186;
+    font-family: \00003240;
   }
 }
 
@@ -1068,7 +1193,7 @@
   }
 
   line {
-    font-family: \00003193;
+    font-family: \00003247;
   }
 }
 
@@ -1086,7 +1211,7 @@
   }
 
   line {
-    font-family: \00003200;
+    font-family: \00003254;
   }
 }
 
@@ -1102,7 +1227,7 @@
   }
 
   line {
-    font-family: \00003208;
+    font-family: \00003262;
   }
 }
 
@@ -1118,7 +1243,7 @@
   }
 
   line {
-    font-family: \00003215;
+    font-family: \00003269;
   }
 }
 
@@ -1135,7 +1260,7 @@
   }
 
   line {
-    font-family: \00003222;
+    font-family: \00003276;
   }
 }
 
@@ -1151,7 +1276,7 @@
   }
 
   line {
-    font-family: \00003228;
+    font-family: \00003282;
   }
 }
 
@@ -1170,7 +1295,7 @@
   }
 
   line {
-    font-family: \00003237;
+    font-family: \00003291;
   }
 }
 
@@ -1184,7 +1309,7 @@
   }
 
   line {
-    font-family: \00003242;
+    font-family: \00003296;
   }
 }
 
@@ -1204,7 +1329,7 @@
   }
 
   line {
-    font-family: \00003251;
+    font-family: \00003305;
   }
 }
 
@@ -1218,7 +1343,7 @@
   }
 
   line {
-    font-family: \00003255;
+    font-family: \00003309;
   }
 }
 
@@ -1234,7 +1359,7 @@
   }
 
   line {
-    font-family: \00003256;
+    font-family: \00003310;
   }
 }
 
@@ -1248,7 +1373,7 @@
   }
 
   line {
-    font-family: \00003263;
+    font-family: \00003317;
   }
 }
 
@@ -1265,7 +1390,7 @@
   }
 
   line {
-    font-family: \00003264;
+    font-family: \00003318;
   }
 }
 
@@ -1279,7 +1404,7 @@
   }
 
   line {
-    font-family: \00003275;
+    font-family: \00003329;
   }
 }
 
@@ -1295,7 +1420,7 @@
   }
 
   line {
-    font-family: \00003279;
+    font-family: \00003333;
   }
 }
 
@@ -1310,7 +1435,7 @@
   }
 
   line {
-    font-family: \00003282;
+    font-family: \00003336;
   }
 }
 
@@ -1324,7 +1449,7 @@
   }
 
   line {
-    font-family: \00003290;
+    font-family: \00003344;
   }
 }
 
@@ -1341,7 +1466,7 @@
   }
 
   line {
-    font-family: \00003301;
+    font-family: \00003355;
   }
 }
 
@@ -1357,7 +1482,7 @@
   }
 
   line {
-    font-family: \00003306;
+    font-family: \00003360;
   }
 }
 
@@ -1384,7 +1509,7 @@
   }
 
   line {
-    font-family: \00003323;
+    font-family: \00003377;
   }
 }
 
@@ -1398,7 +1523,7 @@
   }
 
   line {
-    font-family: \00003324;
+    font-family: \00003378;
   }
 }
 
@@ -1412,7 +1537,7 @@
   }
 
   line {
-    font-family: \00003325;
+    font-family: \00003379;
   }
 }
 
@@ -1426,7 +1551,7 @@
   }
 
   line {
-    font-family: \00003326;
+    font-family: \00003380;
   }
 }
 
@@ -1440,7 +1565,7 @@
   }
 
   line {
-    font-family: \00003329;
+    font-family: \00003383;
   }
 }
 
@@ -1458,7 +1583,7 @@
   }
 
   line {
-    font-family: \00003335;
+    font-family: \00003389;
   }
 }
 
@@ -1472,7 +1597,7 @@
   }
 
   line {
-    font-family: \00003339;
+    font-family: \00003393;
   }
 }
 
@@ -1489,7 +1614,7 @@
   }
 
   line {
-    font-family: \00003345;
+    font-family: \00003399;
   }
 }
 
@@ -1503,7 +1628,7 @@
   }
 
   line {
-    font-family: \00003350;
+    font-family: \00003404;
   }
 }
 
@@ -1518,7 +1643,7 @@
   }
 
   line {
-    font-family: \00003353;
+    font-family: \00003407;
   }
 }
 
@@ -1534,7 +1659,7 @@
   }
 
   line {
-    font-family: \00003358;
+    font-family: \00003412;
   }
 }
 
@@ -1551,7 +1676,7 @@
   }
 
   line {
-    font-family: \00003364;
+    font-family: \00003418;
   }
 }
 
@@ -1565,7 +1690,7 @@
   }
 
   line {
-    font-family: \00003370;
+    font-family: \00003424;
   }
 }
 
@@ -1579,7 +1704,7 @@
   }
 
   line {
-    font-family: \00003374;
+    font-family: \00003428;
   }
 }
 
@@ -1594,7 +1719,7 @@
   }
 
   line {
-    font-family: \00003377;
+    font-family: \00003431;
   }
 }
 
@@ -1608,7 +1733,7 @@
   }
 
   line {
-    font-family: \00003380;
+    font-family: \00003434;
   }
 }
 
@@ -1622,7 +1747,7 @@
   }
 
   line {
-    font-family: \00003383;
+    font-family: \00003437;
   }
 }
 
@@ -1639,7 +1764,7 @@
   }
 
   line {
-    font-family: \00003388;
+    font-family: \00003442;
   }
 }
 
@@ -1656,7 +1781,7 @@
   }
 
   line {
-    font-family: \00003394;
+    font-family: \00003448;
   }
 }
 
@@ -1672,7 +1797,7 @@
   }
 
   line {
-    font-family: \00003401;
+    font-family: \00003455;
   }
 }
 
@@ -1688,7 +1813,7 @@
   }
 
   line {
-    font-family: \00003408;
+    font-family: \00003462;
   }
 }
 
@@ -1702,7 +1827,7 @@
   }
 
   line {
-    font-family: \00003412;
+    font-family: \00003466;
   }
 }
 
@@ -1717,7 +1842,7 @@
   }
 
   line {
-    font-family: \00003416;
+    font-family: \00003470;
   }
 }
 
@@ -1731,7 +1856,7 @@
   }
 
   line {
-    font-family: \00003419;
+    font-family: \00003473;
   }
 }
 
@@ -1750,7 +1875,7 @@
   }
 
   line {
-    font-family: \00003428;
+    font-family: \00003482;
   }
 }
 
@@ -1764,7 +1889,7 @@
   }
 
   line {
-    font-family: \00003435;
+    font-family: \00003489;
   }
 }
 
@@ -1778,7 +1903,7 @@
   }
 
   line {
-    font-family: \00003442;
+    font-family: \00003497;
   }
 }
 
@@ -1792,7 +1917,7 @@
   }
 
   line {
-    font-family: \00003445;
+    font-family: \00003500;
   }
 }
 
@@ -1808,7 +1933,7 @@
   }
 
   line {
-    font-family: \00003451;
+    font-family: \00003506;
   }
 }
 
@@ -1823,7 +1948,7 @@
   }
 
   line {
-    font-family: \00003456;
+    font-family: \00003511;
   }
 }
 
@@ -1838,7 +1963,7 @@
   }
 
   line {
-    font-family: \00003464;
+    font-family: \00003519;
   }
 }
 
@@ -1852,7 +1977,7 @@
   }
 
   line {
-    font-family: \00003467;
+    font-family: \00003522;
   }
 }
 
@@ -1868,7 +1993,7 @@
   }
 
   line {
-    font-family: \00003470;
+    font-family: \00003525;
   }
 }
 
@@ -1883,7 +2008,7 @@
   }
 
   line {
-    font-family: \00003475;
+    font-family: \00003530;
   }
 }
 
@@ -1900,7 +2025,7 @@
   }
 
   line {
-    font-family: \00003487;
+    font-family: \00003542;
   }
 }
 
@@ -1918,7 +2043,7 @@
   }
 
   line {
-    font-family: \00003494;
+    font-family: \00003549;
   }
 }
 
@@ -1933,7 +2058,7 @@
   }
 
   line {
-    font-family: \00003497;
+    font-family: \00003552;
   }
 }
 
@@ -1951,7 +2076,7 @@
   }
 
   line {
-    font-family: \00003503;
+    font-family: \00003558;
   }
 }
 
@@ -1969,7 +2094,7 @@
   }
 
   line {
-    font-family: \00003509;
+    font-family: \00003564;
   }
 }
 
@@ -1985,7 +2110,7 @@
   }
 
   line {
-    font-family: \00003522;
+    font-family: \00003577;
   }
 }
 
@@ -2001,7 +2126,7 @@
   }
 
   line {
-    font-family: \00003528;
+    font-family: \00003585;
   }
 }
 
@@ -2017,7 +2142,7 @@
   }
 
   line {
-    font-family: \00003533;
+    font-family: \00003590;
   }
 }
 
@@ -2032,7 +2157,7 @@
   }
 
   line {
-    font-family: \00003537;
+    font-family: \00003594;
   }
 }
 
@@ -2053,7 +2178,7 @@
   }
 
   line {
-    font-family: \00003549;
+    font-family: \00003606;
   }
 }
 
@@ -2070,7 +2195,7 @@
   }
 
   line {
-    font-family: \00003559;
+    font-family: \00003616;
   }
 }
 
@@ -2085,7 +2210,7 @@
   }
 
   line {
-    font-family: \00003560;
+    font-family: \00003617;
   }
 }
 
@@ -2099,7 +2224,7 @@
   }
 
   line {
-    font-family: \00003562;
+    font-family: \00003619;
   }
 }
 
@@ -2113,7 +2238,7 @@
   }
 
   line {
-    font-family: \00003570;
+    font-family: \00003627;
   }
 }
 
@@ -2129,7 +2254,7 @@
   }
 
   line {
-    font-family: \00003571;
+    font-family: \00003628;
   }
 }
 
@@ -2143,7 +2268,7 @@
   }
 
   line {
-    font-family: \00003573;
+    font-family: \00003630;
   }
 }
 
@@ -2157,7 +2282,7 @@
   }
 
   line {
-    font-family: \00003581;
+    font-family: \00003638;
   }
 }
 
@@ -2173,7 +2298,7 @@
   }
 
   line {
-    font-family: \00003582;
+    font-family: \00003639;
   }
 }
 
@@ -2187,7 +2312,7 @@
   }
 
   line {
-    font-family: \00003591;
+    font-family: \00003648;
   }
 }
 
@@ -2202,7 +2327,7 @@
   }
 
   line {
-    font-family: \00003597;
+    font-family: \00003654;
   }
 }
 
@@ -2213,13 +2338,29 @@
   margin-left: 0.5rem;
 }
 
+@media screen and (max-width: 639px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003654;
+    }
+}
+
+  .meta-card .tabs-options .box-options {
+    margin-top: 20px;
+  }
+}
+
 @media -sass-debug-info {
   filename {
     font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003603;
+    font-family: \00003664;
   }
 }
 
@@ -2235,7 +2376,7 @@
   }
 
   line {
-    font-family: \00003608;
+    font-family: \00003669;
   }
 }
 
@@ -2256,7 +2397,7 @@
   }
 
   line {
-    font-family: \00003620;
+    font-family: \00003681;
   }
 }
 
@@ -2270,7 +2411,7 @@
   }
 
   line {
-    font-family: \00003626;
+    font-family: \00003687;
   }
 }
 
@@ -2285,7 +2426,7 @@
   }
 
   line {
-    font-family: \00003634;
+    font-family: \00003695;
   }
 }
 
@@ -2299,7 +2440,7 @@
   }
 
   line {
-    font-family: \00003639;
+    font-family: \00003700;
   }
 }
 
@@ -2314,7 +2455,7 @@
   }
 
   line {
-    font-family: \00003648;
+    font-family: \00003709;
   }
 }
 
@@ -2329,7 +2470,7 @@
   }
 
   line {
-    font-family: \00003657;
+    font-family: \00003718;
   }
 }
 
@@ -2344,7 +2485,7 @@
   }
 
   line {
-    font-family: \00003666;
+    font-family: \00003727;
   }
 }
 
@@ -2358,7 +2499,7 @@
   }
 
   line {
-    font-family: \00003669;
+    font-family: \00003730;
   }
 }
 
@@ -2374,7 +2515,7 @@
   }
 
   line {
-    font-family: \00003675;
+    font-family: \00003736;
   }
 }
 
@@ -2391,7 +2532,7 @@
   }
 
   line {
-    font-family: \00003681;
+    font-family: \00003742;
   }
 }
 
@@ -2407,7 +2548,7 @@
   }
 
   line {
-    font-family: \00003686;
+    font-family: \00003747;
   }
 }
 
@@ -2421,7 +2562,7 @@
   }
 
   line {
-    font-family: \00003689;
+    font-family: \00003750;
   }
 }
 
@@ -2435,7 +2576,7 @@
   }
 
   line {
-    font-family: \00003695;
+    font-family: \00003756;
   }
 }
 
@@ -2451,7 +2592,7 @@
   }
 
   line {
-    font-family: \00003700;
+    font-family: \00003761;
   }
 }
 
@@ -2467,7 +2608,7 @@
   }
 
   line {
-    font-family: \00003709;
+    font-family: \00003770;
   }
 }
 
@@ -2481,7 +2622,7 @@
   }
 
   line {
-    font-family: \00003712;
+    font-family: \00003773;
   }
 }
 
@@ -2495,7 +2636,7 @@
   }
 
   line {
-    font-family: \00003714;
+    font-family: \00003775;
   }
 }
 
@@ -2516,7 +2657,7 @@
   }
 
   line {
-    font-family: \00003725;
+    font-family: \00003786;
   }
 }
 
@@ -2530,7 +2671,7 @@
   }
 
   line {
-    font-family: \00003729;
+    font-family: \00003790;
   }
 }
 
@@ -2547,7 +2688,7 @@
   }
 
   line {
-    font-family: \00003736;
+    font-family: \00003797;
   }
 }
 
@@ -2561,7 +2702,7 @@
   }
 
   line {
-    font-family: \00003745;
+    font-family: \00003806;
   }
 }
 
@@ -2575,7 +2716,7 @@
   }
 
   line {
-    font-family: \00003750;
+    font-family: \00003811;
   }
 }
 
@@ -2590,7 +2731,7 @@
   }
 
   line {
-    font-family: \00003754;
+    font-family: \00003815;
   }
 }
 
@@ -2605,7 +2746,7 @@
   }
 
   line {
-    font-family: \00003759;
+    font-family: \00003820;
   }
 }
 
@@ -2620,7 +2761,7 @@
   }
 
   line {
-    font-family: \00003764;
+    font-family: \00003825;
   }
 }
 
@@ -2635,7 +2776,7 @@
   }
 
   line {
-    font-family: \00003769;
+    font-family: \00003830;
   }
 }
 
@@ -2649,7 +2790,7 @@
   }
 
   line {
-    font-family: \00003776;
+    font-family: \00003837;
   }
 }
 
@@ -2666,7 +2807,7 @@
   }
 
   line {
-    font-family: \00003783;
+    font-family: \00003844;
   }
 }
 
@@ -2681,7 +2822,7 @@
   }
 
   line {
-    font-family: \00003787;
+    font-family: \00003848;
   }
 }
 
@@ -2695,7 +2836,7 @@
   }
 
   line {
-    font-family: \00003799;
+    font-family: \00003860;
   }
 }
 
@@ -2709,7 +2850,7 @@
   }
 
   line {
-    font-family: \00003807;
+    font-family: \00003868;
   }
 }
 
@@ -2723,7 +2864,7 @@
   }
 
   line {
-    font-family: \00003817;
+    font-family: \00003878;
   }
 }
 
@@ -2737,7 +2878,7 @@
   }
 
   line {
-    font-family: \00003824;
+    font-family: \00003885;
   }
 }
 
@@ -2751,7 +2892,7 @@
   }
 
   line {
-    font-family: \00003827;
+    font-family: \00003888;
   }
 }
 
@@ -2765,7 +2906,7 @@
   }
 
   line {
-    font-family: \00003831;
+    font-family: \00003892;
   }
 }
 
@@ -2779,7 +2920,7 @@
   }
 
   line {
-    font-family: \00003840;
+    font-family: \00003901;
   }
 }
 
@@ -2795,7 +2936,7 @@
   }
 
   line {
-    font-family: \00003844;
+    font-family: \00003905;
   }
 }
 
@@ -2811,7 +2952,7 @@
   }
 
   line {
-    font-family: \00003849;
+    font-family: \00003910;
   }
 }
 
@@ -2825,7 +2966,7 @@
   }
 
   line {
-    font-family: \00003854;
+    font-family: \00003915;
   }
 }
 
@@ -2841,7 +2982,7 @@
   }
 
   line {
-    font-family: \00003863;
+    font-family: \00003924;
   }
 }
 
@@ -2856,7 +2997,7 @@
   }
 
   line {
-    font-family: \00003867;
+    font-family: \00003928;
   }
 }
 
@@ -2870,7 +3011,7 @@
   }
 
   line {
-    font-family: \00003870;
+    font-family: \00003931;
   }
 }
 
@@ -2887,7 +3028,7 @@
   }
 
   line {
-    font-family: \00003875;
+    font-family: \00003936;
   }
 }
 
@@ -2901,7 +3042,7 @@
   }
 
   line {
-    font-family: \00003878;
+    font-family: \00003939;
   }
 }
 
@@ -2919,7 +3060,7 @@
   }
 
   line {
-    font-family: \00003887;
+    font-family: \00003948;
   }
 }
 
@@ -2935,7 +3076,7 @@
   }
 
   line {
-    font-family: \00003893;
+    font-family: \00003954;
   }
 }
 
@@ -2950,7 +3091,7 @@
   }
 
   line {
-    font-family: \00003897;
+    font-family: \00003958;
   }
 }
 
@@ -2965,7 +3106,7 @@
   }
 
   line {
-    font-family: \00003902;
+    font-family: \00003963;
   }
 }
 
@@ -2981,7 +3122,7 @@
   }
 
   line {
-    font-family: \00003909;
+    font-family: \00003970;
   }
 }
 
@@ -2995,7 +3136,7 @@
   }
 
   line {
-    font-family: \00003911;
+    font-family: \00003972;
   }
 }
 
@@ -3011,7 +3152,7 @@
   }
 
   line {
-    font-family: \00003918;
+    font-family: \00003979;
   }
 }
 
@@ -3026,7 +3167,7 @@
   }
 
   line {
-    font-family: \00003933;
+    font-family: \00003994;
   }
 }
 
@@ -3041,7 +3182,7 @@
   }
 
   line {
-    font-family: \00003937;
+    font-family: \00003998;
   }
 }
 
@@ -3055,7 +3196,7 @@
   }
 
   line {
-    font-family: \00003940;
+    font-family: \000031001;
   }
 }
 
@@ -3070,7 +3211,7 @@
   }
 
   line {
-    font-family: \00003947;
+    font-family: \000031008;
   }
 }
 
@@ -3087,7 +3228,7 @@
   }
 
   line {
-    font-family: \00003953;
+    font-family: \000031014;
   }
 }
 
@@ -3102,7 +3243,7 @@
   }
 
   line {
-    font-family: \00003960;
+    font-family: \000031021;
   }
 }
 
@@ -3116,7 +3257,7 @@
   }
 
   line {
-    font-family: \00003963;
+    font-family: \000031024;
   }
 }
 
@@ -3132,7 +3273,7 @@
   }
 
   line {
-    font-family: \00003972;
+    font-family: \000031033;
   }
 }
 
@@ -3149,7 +3290,7 @@
   }
 
   line {
-    font-family: \00003978;
+    font-family: \000031039;
   }
 }
 
@@ -3165,7 +3306,7 @@
   }
 
   line {
-    font-family: \00003983;
+    font-family: \000031044;
   }
 }
 
@@ -3186,7 +3327,7 @@
   }
 
   line {
-    font-family: \00003995;
+    font-family: \000031056;
   }
 }
 
@@ -3200,7 +3341,7 @@
   }
 
   line {
-    font-family: \000031001;
+    font-family: \000031062;
   }
 }
 
@@ -3215,7 +3356,7 @@
   }
 
   line {
-    font-family: \000031011;
+    font-family: \000031072;
   }
 }
 
@@ -3230,7 +3371,7 @@
   }
 
   line {
-    font-family: \000031022;
+    font-family: \000031083;
   }
 }
 
@@ -3244,7 +3385,7 @@
   }
 
   line {
-    font-family: \000031024;
+    font-family: \000031085;
   }
 }
 
@@ -3258,7 +3399,7 @@
   }
 
   line {
-    font-family: \000031027;
+    font-family: \000031088;
   }
 }
 
@@ -3273,7 +3414,7 @@
   }
 
   line {
-    font-family: \000031030;
+    font-family: \000031091;
   }
 }
 
@@ -3291,7 +3432,7 @@
   }
 
   line {
-    font-family: \000031039;
+    font-family: \000031100;
   }
 }
 
@@ -3308,7 +3449,7 @@
   }
 
   line {
-    font-family: \000031044;
+    font-family: \000031105;
   }
 }
 
@@ -3322,7 +3463,7 @@
   }
 
   line {
-    font-family: \000031047;
+    font-family: \000031108;
   }
 }
 
@@ -3336,7 +3477,7 @@
   }
 
   line {
-    font-family: \000031066;
+    font-family: \000031127;
   }
 }
 
@@ -3350,7 +3491,7 @@
   }
 
   line {
-    font-family: \000031069;
+    font-family: \000031130;
   }
 }
 
@@ -3364,7 +3505,7 @@
   }
 
   line {
-    font-family: \000031072;
+    font-family: \000031133;
   }
 }
 
@@ -3378,7 +3519,7 @@
   }
 
   line {
-    font-family: \000031075;
+    font-family: \000031136;
   }
 }
 
@@ -3392,7 +3533,7 @@
   }
 
   line {
-    font-family: \000031079;
+    font-family: \000031140;
   }
 }
 
@@ -3407,7 +3548,7 @@
   }
 
   line {
-    font-family: \000031087;
+    font-family: \000031148;
   }
 }
 
@@ -3430,7 +3571,7 @@
   }
 
   line {
-    font-family: \000031093;
+    font-family: \000031154;
   }
 }
 
@@ -3449,7 +3590,7 @@
   }
 
   line {
-    font-family: \000031096;
+    font-family: \000031157;
   }
 }
 
@@ -3468,7 +3609,7 @@
   }
 
   line {
-    font-family: \000031102;
+    font-family: \000031163;
   }
 }
 
@@ -3487,7 +3628,7 @@
   }
 
   line {
-    font-family: \000031108;
+    font-family: \000031169;
   }
 }
 
@@ -3506,7 +3647,7 @@
   }
 
   line {
-    font-family: \000031112;
+    font-family: \000031173;
   }
 }
 
@@ -3524,7 +3665,7 @@
   }
 
   line {
-    font-family: \000031117;
+    font-family: \000031178;
   }
 }
 
@@ -3542,7 +3683,7 @@
   }
 
   line {
-    font-family: \000031126;
+    font-family: \000031187;
   }
 }
 

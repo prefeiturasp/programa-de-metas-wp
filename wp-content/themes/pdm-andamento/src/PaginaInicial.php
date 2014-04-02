@@ -50,6 +50,8 @@ class PaginaInicial
                     $name = 'Não iniciada';
                 } elseif (2==$_GET['status']) {
                     $name = 'Em andamento';
+                } elseif (3==$_GET['status']) {
+                    $name = 'Já beneficiam a população';
                 } elseif (4==$_GET['status']) {
                     $name = 'Concluídas';
                 }

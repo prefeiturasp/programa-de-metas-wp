@@ -16,7 +16,8 @@
         <p>{{total_metas}} metas</p>
     </div>
 </div>
-{% if meta %}
+
+{% if metas|length > 0 %}
     {% for meta in metas %}
         {% include "meta-resumo.twig" with {meta:meta, filtro_so_subprefeitura:filtro_so_subprefeitura} %}
     {% endfor %}

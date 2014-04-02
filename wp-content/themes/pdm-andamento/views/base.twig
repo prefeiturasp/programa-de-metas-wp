@@ -44,9 +44,9 @@
                     <div class="medium-10 small-6 columns">
                         <div class="row">
                             <div class="medium-10 hide-for-small-only columns news-box">
-                                <p class="slogan">O Programa de Metas faz parte da plataforma Planeja Sampa, onde é possível dar continuidade à participação.</p>
+                                <p class="slogan">O Programa de Metas faz parte da plataforma Planeja Sampa.</p>
                                 <ul id="js-news" class="js-hidden inline-list">
-                                    <li class="news-item"><a href="#"><span class="subject">notícias: </span><span class="date">12/03 - </span>Encontro para eleger as representantes das mulheres para o CPOP.</a></li>
+                                    <li class="news-item"><a href="http://planejasampa.prefeitura.sp.gov.br/"><span class="subject">última notícia: </span><span class="date">03/04 - </span>Encontro para eleger as representantes das mulheres para o CPOP.</a></li>
                                 </ul>
                             </div>
                             <div class="small-12 medium-2 end columns text-center">
@@ -178,8 +178,8 @@
                                         <i class="icon-transporte"></i>
                                     </div>
                                     <div class="small-8 columns end">
-                                        <h4><a href="{{site.url}}/?meta=74#resultado">Iluminação</a></h4>
-                                        <p><a href="{{site.url}}/?meta=74#resultado">Meta concluída com a implantação de 18 mil novos pontos. A Vila Bela, em São Mateus ficou 10 anos na escuridão e hoje está iluminada.</a></p>
+                                        <h4><a href="{{site.url}}/meta/74">Iluminação</a></h4>
+                                        <p><a href="{{site.url}}/meta/74">Meta concluída com a implantação de 18 mil novos pontos. A Vila Bela, em São Mateus ficou 10 anos na escuridão e hoje está iluminada.</a></p>
                                     </div>
                                 </div>
                             </li>
@@ -201,28 +201,14 @@
                     <p>Use um dos filtros abaixo </p>
                     <i class="icon-filter-arrow-right hide-for-small-only"></i>
                 </div>
-<div id="map_hidden"></div>
+
                 <div class="projetos-por-perto small-12 medium-6 columns">
                     <i class="ou">ou</i>
                     <form name="projetos-por-perto" id="projetos-por-perto" action="{{site.url}}">
-
                         <div class="row">
                             <div class="small-11 small-centered columns">
                                 <h3>Encontre projetos próximos a você</h3>
                             </div>
-                            <div class="small-11 small-centered columns">
-                                <div class="row collapse">
-                                    <div class="small-9 columns">
-                                        <input type="text" placeholder="Digite seu CEP (00000-000)" autocomplete="off" name="input_cep" id="input_cep">
-                                    </div>
-                                    <div class="small-3 columns">
-                                        <a href="javascript:void(0);" id="button_cep" class="button postfix">Procurar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
                             <div class="nao-sabe-cep small-11 small-centered columns">
                                 <div class="row collapse">
                                     <div class="small-9 columns">
@@ -235,6 +221,19 @@
                                     </div>
                                     <div class="small-3 columns">
                                         <a href="javascript:void(0);" class="bprefeitura button postfix">Filtrar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="small-11 small-centered columns">
+                                <div class="row collapse">
+                                    <div class="small-9 columns">
+                                        <input type="text" placeholder="Se preferir, informe seu CEP" autocomplete="off" name="input_cep" id="input_cep">
+                                    </div>
+                                    <div class="small-3 columns">
+                                        <a href="javascript:void(0);" id="button_cep" class="button postfix">Procurar</a>
                                     </div>
                                 </div>
                             </div>

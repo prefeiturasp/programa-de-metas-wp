@@ -15,6 +15,49 @@ class PaginaInicial
 
         $context['total_metas'] = count($context['metas']);
 
+        if (count($_GET) > 0) {
+            $context['filtros_usados'] = array();
+
+            if (!empty($_GET['subprefeitura'])) {
+                foreach ($context['subprefeituras'] as $key => $value) {
+                    if ($value['id']==$_GET['subprefeitura']) {
+                        $name = $value['name'];
+                    }
+                }
+                $context['filtros_usados'][] = 'Subprefeitura: ' . $name;
+            }
+
+            if (!empty($_GET['objetivo'])) {
+                foreach ($context['objetivos'] as $key => $value) {
+                    if ($value['id']==$_GET['objetivo']) {
+                        $name = $value['description'];
+                    }
+                }
+                $context['filtros_usados'][] = 'Objetivo: ' . $name;
+            }
+
+            if (!empty($_GET['secretaria'])) {
+                foreach ($context['secretarias'] as $key => $value) {
+                    if ($value['id']==$_GET['secretaria']) {
+                        $name = $value['name'];
+                    }
+                }
+                $context['filtros_usados'][] = 'Secretaria: ' . $name;
+            }
+
+            if (!empty($_GET['status'])) {
+                if (1==$_GET['status']) {
+                    $name = 'Não iniciada';
+                } elseif (2==$_GET['status']) {
+                    $name = 'Em andamento';
+                } elseif (4==$_GET['status']) {
+                    $name = 'Concluídas';
+                }
+                $context['filtros_usados'][] = 'Situação: ' . $name;
+            }
+        }
+
+
         $context['subprefeitura_active'] = $_GET['subprefeitura'];
         if (!empty($_GET['subprefeitura'])) {
             $context['filtro_so_subprefeitura'] = 'sim';

@@ -3,15 +3,30 @@
 
 {% block content %}
 <div class="row summary-results">
-    <div class="small-6 columns">
-        <p>Mostrando as metas</p>
+    <div class="small-12 medium-10 columns">
+    {% if filtros_usados %}
+        <p class="filtro-por">Mostrando resultados de filtro por
+        {% for filtro in filtros_usados %}
+            <span class="strong">{{filtro}},</span class="strong">
+        {% endfor %}
+        </p>
+    {% endif %}
     </div>
-    <div class="small-6 columns text-right">
+    <div class="small-12 medium-2 columns text-right">
         <p>{{total_metas}} metas</p>
     </div>
 </div>
-{% for meta in metas %}
-    {% include "meta-resumo.twig" with {meta:meta, filtro_so_subprefeitura:filtro_so_subprefeitura} %}
-{% endfor %}
-
+{% if meta %}
+    {% for meta in metas %}
+        {% include "meta-resumo.twig" with {meta:meta, filtro_so_subprefeitura:filtro_so_subprefeitura} %}
+    {% endfor %}
+{% else %}
+<div class="row">
+    <div class="small-12 columns">
+        <h3 class="empty-results">
+            Desculpe, nenhum resultado foi encontrado. Experimente outros filtros.
+        </h3>
+    </div>
+</div>
+{% endif %}
 {% endblock %}

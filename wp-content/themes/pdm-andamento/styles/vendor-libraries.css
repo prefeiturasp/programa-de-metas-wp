@@ -24128,6 +24128,7 @@ blockquote p {
   position: relative;
   width: 100%;
   *zoom: 1;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
 }
 

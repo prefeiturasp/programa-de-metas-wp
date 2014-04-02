@@ -247,6 +247,13 @@ $vermelho: #eb2851;
         margin-top: rem-calc(30px);
         margin-bottom: rem-calc(20px);
 
+
+        .col-2 {
+            width: 245px;
+        }
+        .col-3 {
+            width: 170px;
+        }
         .border {
             border-radius:rem-calc(10);
             border: rem-calc(2) dotted #fff;

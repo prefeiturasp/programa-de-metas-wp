@@ -467,6 +467,9 @@ $vermelho: #eb2851;
     &#f1_container #f1_card {
       transform: rotateX(180deg);
       box-shadow: -5px 5px 5px #aaa;
+      .face.back {
+        backface-visibility: visible;
+      }
     }
 }
 .browsehappy {

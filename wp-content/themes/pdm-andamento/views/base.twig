@@ -8,7 +8,7 @@
         <![endif]-->
         {% block header %}
         <div class="fixed header">
-            <div class="mobile-disclaimer show-for-touch">
+            <div class="mobile-disclaimer hide">
                 <div class="row support-bar">
                     <div class="small-6 medium-2 small-6 columns">
                         <div class="box-logo-planeja">
@@ -30,7 +30,7 @@
                         <p>Desculpe, mas o site ainda não esta preparado para este dispositivo. <br> Deseja seguir mesmo assim?</p>
                     </div>
                     <div class="small-11 small-centered text-center">
-                        <button class="icon-arrow-r" onclick="$('.mobile-disclaimer').hide();">Ir para o site</button>
+                        <button class="icon-arrow-r" onclick="$('.mobile-disclaimer').hide();" ontouchstart="$('.mobile-disclaimer').hide();">Ir para o site</button>
                     </div>
                 </div>
             </div>

@@ -1,17 +1,17 @@
-@charset "US-ASCII";
+@charset "Windows-1252";
 
 /*
- * Cria um background com duas cores. Por padrão, a divisão entre as cores
- * fica no centro do elemento, mas isso pode ser ajustado através do terceiro
- * parâmetro da função ($position).
+ * Cria um background com duas cores. Por padr�o, a divis�o entre as cores
+ * fica no centro do elemento, mas isso pode ser ajustado atrav�s do terceiro
+ * par�metro da fun��o ($position).
  *
- * Obs.: O background gerado não é um gradiente, a transição entre as cores é
+ * Obs.: O background gerado n�o � um gradiente, a transi��o entre as cores �
  * "seca".
  */
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -25,7 +25,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -39,7 +39,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -53,7 +53,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -67,7 +67,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -81,7 +81,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -94,20 +94,20 @@
 }
 
 /*
- * Estilização dos gráficos usados no site.
+ * Estiliza��o dos gr�ficos usados no site.
  *
- * Alguns gráficos são montados em SVG, então os elementos dessa linguagem
+ * Alguns gr�ficos s�o montados em SVG, ent�o os elementos dessa linguagem
  * (como path ou text, por exemplo) podem aparecer no CSS.
  */
 
 /*
- * Container usado nos gráficos. Faz com que o gráfico se adapte às dimensões
+ * Container usado nos gr�ficos. Faz com que o gr�fico se adapte �s dimens�es
  * do grid.
  */
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -124,7 +124,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -143,7 +143,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -160,7 +160,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -175,12 +175,12 @@
 }
 
 /*
- * Estilos específicos usados nos gráficos de linha.
+ * Estilos espec�ficos usados nos gr�ficos de linha.
  */
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -195,7 +195,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -209,7 +209,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -223,7 +223,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -237,7 +237,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -251,7 +251,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -266,12 +266,12 @@
 /*
  * Fases do projeto.
  *
- * Esse gráfico é feito basicamente com HTML e CSS.
+ * Esse gr�fico � feito basicamente com HTML e CSS.
  */
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -288,7 +288,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -303,7 +303,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -322,7 +322,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -344,12 +344,12 @@
 }
 
 /*
- * Legenda usada em alguns gráficos.
+ * Legenda usada em alguns gr�ficos.
  */
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -366,7 +366,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -380,7 +380,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -398,7 +398,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -412,7 +412,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -428,7 +428,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -445,7 +445,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -459,7 +459,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -473,7 +473,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -486,12 +486,12 @@
 }
 
 /*
- * Elementos de conteúdo que usam as cores da área.
+ * Elementos de conte�do que usam as cores da �rea.
  */
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -506,7 +506,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_charts\.scss;
   }
 
   line {
@@ -528,7 +528,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
@@ -544,7 +544,7 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
@@ -558,11 +558,122 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000318;
+    font-family: \0000319;
+  }
+}
+
+.header .mobile-disclaimer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000327;
+  }
+}
+
+.header .mobile-disclaimer .title-bar {
+  margin-top: 2em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000330;
+  }
+}
+
+.header .mobile-disclaimer .disclaimer-content {
+  margin-top: 0.3em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000332;
+  }
+}
+
+.header .mobile-disclaimer .disclaimer-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #252424;
+  letter-spacing: -2px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000339;
+  }
+}
+
+.header .mobile-disclaimer button {
+  border-radius: 0.625rem;
+  border: 0.125rem dotted #cfcdcd;
+  border-right-style: solid;
+  background-color: #fff;
+  margin: 0 0.5rem 0 0.5625rem;
+  color: #999999;
+  font-size: 1.125rem;
+  padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+  position: relative;
+  font-family: "Montserrat";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000351;
+  }
+}
+
+.header .mobile-disclaimer button:before {
+  background-color: #C1BFBE;
+  height: 0;
+  padding: 0.5rem 1rem 1.625rem 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  border-radius: 1.5625rem 0.5rem 0.5rem 1.5625rem;
+  color: #fff;
+  font-family: "icomoon";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000368;
   }
 }
 
@@ -575,11 +686,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000324;
+    font-family: \0000374;
   }
 }
 
@@ -589,11 +700,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000327;
+    font-family: \0000377;
   }
 }
 
@@ -614,11 +725,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000343;
+    font-family: \0000393;
   }
 }
 
@@ -633,11 +744,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000353;
+    font-family: \00003103;
   }
 }
 
@@ -648,11 +759,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000358;
+    font-family: \00003108;
   }
 }
 
@@ -663,11 +774,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000364;
+    font-family: \00003114;
   }
 }
 
@@ -677,11 +788,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000366;
+    font-family: \00003116;
   }
 }
 
@@ -691,11 +802,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000368;
+    font-family: \00003118;
   }
 }
 
@@ -708,11 +819,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000373;
+    font-family: \00003123;
   }
 }
 
@@ -725,11 +836,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000380;
+    font-family: \00003130;
   }
 }
 
@@ -739,11 +850,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000388;
+    font-family: \00003138;
   }
 }
 
@@ -754,11 +865,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000393;
+    font-family: \00003143;
   }
 }
 
@@ -768,11 +879,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000396;
+    font-family: \00003146;
   }
 }
 
@@ -782,11 +893,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000399;
+    font-family: \00003149;
   }
 }
 
@@ -799,11 +910,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003105;
+    font-family: \00003155;
   }
 }
 
@@ -813,11 +924,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003113;
+    font-family: \00003163;
   }
 }
 
@@ -827,11 +938,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003117;
+    font-family: \00003167;
   }
 }
 
@@ -843,11 +954,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003122;
+    font-family: \00003172;
   }
 }
 
@@ -858,11 +969,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003125;
+    font-family: \00003175;
   }
 }
 
@@ -872,11 +983,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003130;
+    font-family: \00003180;
   }
 }
 
@@ -889,11 +1000,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003135;
+    font-family: \00003185;
   }
 }
 
@@ -903,11 +1014,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003140;
+    font-family: \00003190;
   }
 }
 
@@ -917,11 +1028,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003145;
+    font-family: \00003195;
   }
 }
 
@@ -931,11 +1042,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003149;
+    font-family: \00003199;
   }
 }
 
@@ -946,11 +1057,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003154;
+    font-family: \00003204;
   }
 }
 
@@ -961,11 +1072,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003160;
+    font-family: \00003210;
   }
 }
 
@@ -975,11 +1086,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003166;
+    font-family: \00003216;
   }
 }
 
@@ -989,11 +1100,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003169;
+    font-family: \00003219;
   }
 }
 
@@ -1003,11 +1114,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003172;
+    font-family: \00003222;
   }
 }
 
@@ -1017,11 +1128,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003178;
+    font-family: \00003228;
   }
 }
 
@@ -1032,11 +1143,25 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003182;
+    font-family: \00003232;
+  }
+}
+
+.filter-bar #resultado-mobile {
+  padding: 30px 0 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003236;
   }
 }
 
@@ -1047,11 +1172,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003186;
+    font-family: \00003240;
   }
 }
 
@@ -1064,11 +1189,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003193;
+    font-family: \00003247;
   }
 }
 
@@ -1082,11 +1207,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003200;
+    font-family: \00003254;
   }
 }
 
@@ -1098,11 +1223,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003208;
+    font-family: \00003262;
   }
 }
 
@@ -1114,11 +1239,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003215;
+    font-family: \00003269;
   }
 }
 
@@ -1131,11 +1256,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003222;
+    font-family: \00003276;
   }
 }
 
@@ -1147,11 +1272,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003228;
+    font-family: \00003282;
   }
 }
 
@@ -1166,11 +1291,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003237;
+    font-family: \00003291;
   }
 }
 
@@ -1180,11 +1305,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003242;
+    font-family: \00003296;
   }
 }
 
@@ -1200,11 +1325,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003251;
+    font-family: \00003305;
   }
 }
 
@@ -1214,11 +1339,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003255;
+    font-family: \00003309;
   }
 }
 
@@ -1230,11 +1355,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003256;
+    font-family: \00003310;
   }
 }
 
@@ -1244,11 +1369,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003263;
+    font-family: \00003317;
   }
 }
 
@@ -1261,11 +1386,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003264;
+    font-family: \00003318;
   }
 }
 
@@ -1275,11 +1400,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003275;
+    font-family: \00003329;
   }
 }
 
@@ -1291,11 +1416,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003279;
+    font-family: \00003333;
   }
 }
 
@@ -1306,11 +1431,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003282;
+    font-family: \00003336;
   }
 }
 
@@ -1320,11 +1445,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003290;
+    font-family: \00003344;
   }
 }
 
@@ -1337,11 +1462,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003301;
+    font-family: \00003355;
   }
 }
 
@@ -1353,11 +1478,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003306;
+    font-family: \00003360;
   }
 }
 
@@ -1380,11 +1505,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003323;
+    font-family: \00003377;
   }
 }
 
@@ -1394,11 +1519,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003324;
+    font-family: \00003378;
   }
 }
 
@@ -1408,11 +1533,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003325;
+    font-family: \00003379;
   }
 }
 
@@ -1422,11 +1547,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003326;
+    font-family: \00003380;
   }
 }
 
@@ -1436,11 +1561,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003329;
+    font-family: \00003383;
   }
 }
 
@@ -1454,11 +1579,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003335;
+    font-family: \00003389;
   }
 }
 
@@ -1468,11 +1593,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003339;
+    font-family: \00003393;
   }
 }
 
@@ -1485,11 +1610,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003345;
+    font-family: \00003399;
   }
 }
 
@@ -1499,11 +1624,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003350;
+    font-family: \00003404;
   }
 }
 
@@ -1514,11 +1639,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003353;
+    font-family: \00003407;
   }
 }
 
@@ -1530,11 +1655,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003358;
+    font-family: \00003412;
   }
 }
 
@@ -1547,11 +1672,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003364;
+    font-family: \00003418;
   }
 }
 
@@ -1561,11 +1686,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003370;
+    font-family: \00003424;
   }
 }
 
@@ -1575,11 +1700,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003374;
+    font-family: \00003428;
   }
 }
 
@@ -1590,11 +1715,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003377;
+    font-family: \00003431;
   }
 }
 
@@ -1604,11 +1729,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003380;
+    font-family: \00003434;
   }
 }
 
@@ -1618,11 +1743,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003383;
+    font-family: \00003437;
   }
 }
 
@@ -1635,11 +1760,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003388;
+    font-family: \00003442;
   }
 }
 
@@ -1652,11 +1777,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003394;
+    font-family: \00003448;
   }
 }
 
@@ -1668,11 +1793,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003401;
+    font-family: \00003455;
   }
 }
 
@@ -1684,11 +1809,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003408;
+    font-family: \00003462;
   }
 }
 
@@ -1698,11 +1823,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003412;
+    font-family: \00003466;
   }
 }
 
@@ -1713,11 +1838,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003416;
+    font-family: \00003470;
   }
 }
 
@@ -1727,11 +1852,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003419;
+    font-family: \00003473;
   }
 }
 
@@ -1746,11 +1871,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003428;
+    font-family: \00003482;
   }
 }
 
@@ -1760,11 +1885,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003435;
+    font-family: \00003489;
   }
 }
 
@@ -1774,11 +1899,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003442;
+    font-family: \00003497;
   }
 }
 
@@ -1788,11 +1913,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003445;
+    font-family: \00003500;
   }
 }
 
@@ -1804,11 +1929,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003451;
+    font-family: \00003506;
   }
 }
 
@@ -1819,11 +1944,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003456;
+    font-family: \00003511;
   }
 }
 
@@ -1834,11 +1959,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003464;
+    font-family: \00003519;
   }
 }
 
@@ -1848,11 +1973,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003467;
+    font-family: \00003522;
   }
 }
 
@@ -1864,11 +1989,26 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003472;
+    font-family: \00003525;
+  }
+}
+
+.shrink2#f1_container #f1_card .face.back {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003530;
   }
 }
 
@@ -1881,11 +2021,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003484;
+    font-family: \00003542;
   }
 }
 
@@ -1899,11 +2039,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003491;
+    font-family: \00003549;
   }
 }
 
@@ -1914,11 +2054,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003494;
+    font-family: \00003552;
   }
 }
 
@@ -1932,11 +2072,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003500;
+    font-family: \00003558;
   }
 }
 
@@ -1950,11 +2090,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003506;
+    font-family: \00003564;
   }
 }
 
@@ -1966,11 +2106,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003519;
+    font-family: \00003577;
   }
 }
 
@@ -1982,11 +2122,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003525;
+    font-family: \00003585;
   }
 }
 
@@ -1998,11 +2138,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003530;
+    font-family: \00003590;
   }
 }
 
@@ -2013,11 +2153,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003534;
+    font-family: \00003594;
   }
 }
 
@@ -2034,11 +2174,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003546;
+    font-family: \00003606;
   }
 }
 
@@ -2051,26 +2191,26 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003556;
+    font-family: \00003616;
   }
 }
 
 .meta-card .titulo h3 {
   font-size: 1.25rem;
-  margin: 0.625rem 0 0 0.9375rem;
+  margin: 0.625rem 0 0 0;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003557;
+    font-family: \00003617;
   }
 }
 
@@ -2080,11 +2220,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003559;
+    font-family: \00003619;
   }
 }
 
@@ -2092,29 +2232,45 @@
   color: #4d4d4d;
 }
 
+@media screen and (min-width: 640px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003616;
+    }
+}
+
+  .meta-card .titulo h3 {
+    margin: 0.625rem 0 0 0.9375rem;
+  }
+}
+
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003567;
+    font-family: \00003631;
   }
 }
 
 .meta-card .titulo h4 {
   font-size: 0.875rem;
   text-transform: uppercase;
-  margin: 0.625rem 0 0 0.9375rem;
+  margin: 0.625rem 0 0 0;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003568;
+    font-family: \00003632;
   }
 }
 
@@ -2124,11 +2280,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003570;
+    font-family: \00003634;
   }
 }
 
@@ -2136,29 +2292,45 @@
   color: #4d4d4d;
 }
 
+@media screen and (min-width: 640px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003631;
+    }
+}
+
+  .meta-card .titulo h4 {
+    margin: 0.625rem 0 0 0.9375rem;
+  }
+}
+
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003578;
+    font-family: \00003647;
   }
 }
 
 .meta-card .titulo h5 {
   font-family: 'Tinos', sans-serif;
   font-size: 0.875rem;
-  margin: 0 0 0 0.9375rem;
+  margin: 0.625rem 0 0 0;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003579;
+    font-family: \00003648;
   }
 }
 
@@ -2166,13 +2338,29 @@
   color: #000;
 }
 
+@media screen and (min-width: 640px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003647;
+    }
+}
+
+  .meta-card .titulo h5 {
+    margin: 0.625rem 0 0 0.9375rem;
+  }
+}
+
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003588;
+    font-family: \00003661;
   }
 }
 
@@ -2181,13 +2369,29 @@
   padding-bottom: 0.625rem;
 }
 
+@media screen and (max-width: 639px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003666;
+    }
+}
+
+  .meta-card .tabs-options {
+    display: inline-block;
+  }
+}
+
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003594;
+    font-family: \00003673;
   }
 }
 
@@ -2198,13 +2402,29 @@
   margin-left: 0.5rem;
 }
 
+@media screen and (max-width: 639px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003673;
+    }
+}
+
+  .meta-card .tabs-options .box-options {
+    margin-top: 20px;
+  }
+}
+
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003600;
+    font-family: \00003684;
   }
 }
 
@@ -2216,11 +2436,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003605;
+    font-family: \00003689;
   }
 }
 
@@ -2237,11 +2457,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003617;
+    font-family: \00003701;
   }
 }
 
@@ -2251,11 +2471,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003623;
+    font-family: \00003707;
   }
 }
 
@@ -2266,11 +2486,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003631;
+    font-family: \00003715;
   }
 }
 
@@ -2280,11 +2500,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003636;
+    font-family: \00003720;
   }
 }
 
@@ -2295,11 +2515,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003645;
+    font-family: \00003729;
   }
 }
 
@@ -2310,11 +2530,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003654;
+    font-family: \00003738;
   }
 }
 
@@ -2325,11 +2545,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003663;
+    font-family: \00003747;
   }
 }
 
@@ -2339,11 +2559,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003666;
+    font-family: \00003750;
   }
 }
 
@@ -2355,11 +2575,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003672;
+    font-family: \00003756;
   }
 }
 
@@ -2372,11 +2592,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003678;
+    font-family: \00003762;
   }
 }
 
@@ -2388,11 +2608,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003683;
+    font-family: \00003767;
   }
 }
 
@@ -2402,11 +2622,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003686;
+    font-family: \00003770;
   }
 }
 
@@ -2416,11 +2636,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003692;
+    font-family: \00003776;
   }
 }
 
@@ -2432,11 +2652,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003697;
+    font-family: \00003781;
   }
 }
 
@@ -2448,11 +2668,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003706;
+    font-family: \00003790;
   }
 }
 
@@ -2462,11 +2682,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003709;
+    font-family: \00003793;
   }
 }
 
@@ -2476,11 +2696,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003711;
+    font-family: \00003795;
   }
 }
 
@@ -2497,11 +2717,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003722;
+    font-family: \00003806;
   }
 }
 
@@ -2511,11 +2731,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003726;
+    font-family: \00003810;
   }
 }
 
@@ -2528,11 +2748,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003733;
+    font-family: \00003817;
   }
 }
 
@@ -2542,11 +2762,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003742;
+    font-family: \00003826;
   }
 }
 
@@ -2556,11 +2776,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003747;
+    font-family: \00003831;
   }
 }
 
@@ -2571,11 +2791,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003751;
+    font-family: \00003835;
   }
 }
 
@@ -2586,11 +2806,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003756;
+    font-family: \00003840;
   }
 }
 
@@ -2601,11 +2821,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003761;
+    font-family: \00003845;
   }
 }
 
@@ -2616,11 +2836,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003766;
+    font-family: \00003850;
   }
 }
 
@@ -2630,11 +2850,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003773;
+    font-family: \00003857;
   }
 }
 
@@ -2647,11 +2867,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003780;
+    font-family: \00003864;
   }
 }
 
@@ -2662,11 +2882,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003784;
+    font-family: \00003868;
   }
 }
 
@@ -2676,11 +2896,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003796;
+    font-family: \00003880;
   }
 }
 
@@ -2690,11 +2910,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003804;
+    font-family: \00003888;
   }
 }
 
@@ -2704,11 +2924,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003814;
+    font-family: \00003898;
   }
 }
 
@@ -2718,11 +2938,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003821;
+    font-family: \00003905;
   }
 }
 
@@ -2732,11 +2952,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003824;
+    font-family: \00003908;
   }
 }
 
@@ -2746,11 +2966,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003828;
+    font-family: \00003912;
   }
 }
 
@@ -2760,11 +2980,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003837;
+    font-family: \00003921;
   }
 }
 
@@ -2776,11 +2996,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003841;
+    font-family: \00003925;
   }
 }
 
@@ -2792,11 +3012,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003846;
+    font-family: \00003930;
   }
 }
 
@@ -2806,11 +3026,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003851;
+    font-family: \00003935;
   }
 }
 
@@ -2822,11 +3042,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003860;
+    font-family: \00003944;
   }
 }
 
@@ -2837,11 +3057,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003864;
+    font-family: \00003948;
   }
 }
 
@@ -2851,11 +3071,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003867;
+    font-family: \00003951;
   }
 }
 
@@ -2868,11 +3088,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003872;
+    font-family: \00003956;
   }
 }
 
@@ -2882,11 +3102,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003875;
+    font-family: \00003959;
   }
 }
 
@@ -2900,11 +3120,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003884;
+    font-family: \00003968;
   }
 }
 
@@ -2916,11 +3136,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003890;
+    font-family: \00003974;
   }
 }
 
@@ -2931,11 +3151,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003894;
+    font-family: \00003978;
   }
 }
 
@@ -2946,11 +3166,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003899;
+    font-family: \00003983;
   }
 }
 
@@ -2962,11 +3182,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003906;
+    font-family: \00003990;
   }
 }
 
@@ -2976,11 +3196,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003908;
+    font-family: \00003992;
   }
 }
 
@@ -2992,11 +3212,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003915;
+    font-family: \00003999;
   }
 }
 
@@ -3007,11 +3227,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003930;
+    font-family: \000031014;
   }
 }
 
@@ -3022,11 +3242,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003934;
+    font-family: \000031018;
   }
 }
 
@@ -3036,11 +3256,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003937;
+    font-family: \000031021;
   }
 }
 
@@ -3051,11 +3271,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003944;
+    font-family: \000031028;
   }
 }
 
@@ -3068,11 +3288,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003950;
+    font-family: \000031034;
   }
 }
 
@@ -3083,11 +3303,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003957;
+    font-family: \000031041;
   }
 }
 
@@ -3097,11 +3317,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003960;
+    font-family: \000031044;
   }
 }
 
@@ -3113,11 +3333,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003969;
+    font-family: \000031053;
   }
 }
 
@@ -3130,11 +3350,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003975;
+    font-family: \000031059;
   }
 }
 
@@ -3146,11 +3366,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003980;
+    font-family: \000031064;
   }
 }
 
@@ -3167,11 +3387,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003992;
+    font-family: \000031076;
   }
 }
 
@@ -3181,11 +3401,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003998;
+    font-family: \000031082;
   }
 }
 
@@ -3196,11 +3416,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031008;
+    font-family: \000031092;
   }
 }
 
@@ -3211,11 +3431,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031019;
+    font-family: \000031103;
   }
 }
 
@@ -3225,11 +3445,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031021;
+    font-family: \000031105;
   }
 }
 
@@ -3239,11 +3459,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031024;
+    font-family: \000031108;
   }
 }
 
@@ -3254,11 +3474,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031027;
+    font-family: \000031111;
   }
 }
 
@@ -3272,11 +3492,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031036;
+    font-family: \000031120;
   }
 }
 
@@ -3289,11 +3509,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031041;
+    font-family: \000031125;
   }
 }
 
@@ -3303,11 +3523,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031044;
+    font-family: \000031128;
   }
 }
 
@@ -3317,11 +3537,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031063;
+    font-family: \000031147;
   }
 }
 
@@ -3331,11 +3551,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031066;
+    font-family: \000031150;
   }
 }
 
@@ -3345,11 +3565,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031069;
+    font-family: \000031153;
   }
 }
 
@@ -3359,11 +3579,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031072;
+    font-family: \000031156;
   }
 }
 
@@ -3373,11 +3593,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031076;
+    font-family: \000031160;
   }
 }
 
@@ -3388,11 +3608,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031084;
+    font-family: \000031168;
   }
 }
 
@@ -3411,11 +3631,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031090;
+    font-family: \000031174;
   }
 }
 
@@ -3430,11 +3650,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031093;
+    font-family: \000031177;
   }
 }
 
@@ -3449,11 +3669,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031099;
+    font-family: \000031183;
   }
 }
 
@@ -3468,11 +3688,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031105;
+    font-family: \000031189;
   }
 }
 
@@ -3487,11 +3707,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031109;
+    font-family: \000031193;
   }
 }
 
@@ -3505,11 +3725,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031114;
+    font-family: \000031198;
   }
 }
 
@@ -3523,11 +3743,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/lucaspirola\/Documents\/vms\/pref\/public\/pdm\.local\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \000031123;
+    font-family: \000031207;
   }
 }
 

@@ -8,22 +8,48 @@
         <![endif]-->
         {% block header %}
         <div class="fixed header">
-            <div class="support-bar">
-                <div class="row">
-                    <div class="small-6 medium-2 columns">
+            <div class="mobile-disclaimer show-for-touch">
+                <div class="row support-bar">
+                    <div class="small-6 medium-2 small-6 columns">
                         <div class="box-logo-planeja">
                             <a href="http://planejasampa.prefeitura.sp.gov.br"><img class="logo-planeja" src="{{site.theme.link}}/assets/images/logo-planeja-sampa.svg" alt="Logo Planeja Sampa"></a>
                         </div>
                     </div>
-                    <div class="medium-10 columns">
+                    <div class="small-6 medium-2 end columns text-center">
+                        <a href="http://prefeitura.sp.gov.br" class="logo-prefeitura"><img src="{{site.theme.link}}/assets/images/logo-prefeitura.svg" alt="Logo Prefeitura de São Paulo"></a>
+                    </div>
+                </div>
+                <div class="row title-bar" >
+                    <div class="small-11 small-centered columns text-center">
+                        <a href="{{site.url}}"><img class="logo-programa-de-metas-mobile" src="{{site.theme.link}}/assets/images/logo-programa-de-metas.svg" alt="Logo Programa de Metas"></a>
+                        <h1><a href="{{site.url}}">programa de metas</a></h1>
+                    </div>
+                </div>
+                <div class="row disclaimer-content">
+                    <div class="small-11 small-centered columns text-center">
+                        <p>Desculpe, mas o site ainda não esta preparado para este dispositivo. <br> Deseja seguir mesmo assim?</p>
+                    </div>
+                    <div class="small-11 small-centered text-center">
+                        <button class="icon-arrow-r">Ir para o site</button>
+                    </div>
+                </div>
+            </div>
+            <div class="support-bar">
+                <div class="row">
+                    <div class="small-6 medium-2 small-6 columns">
+                        <div class="box-logo-planeja">
+                            <a href="http://planejasampa.prefeitura.sp.gov.br"><img class="logo-planeja" src="{{site.theme.link}}/assets/images/logo-planeja-sampa.svg" alt="Logo Planeja Sampa"></a>
+                        </div>
+                    </div>
+                    <div class="medium-10 small-6 columns">
                         <div class="row">
-                            <div class="small-12 medium-10 columns news-box">
+                            <div class="medium-10 hide-for-small-only columns news-box">
                                 <p class="slogan">O Programa de Metas faz parte da plataforma Planeja Sampa, onde é possível dar continuidade à participação.</p>
                                 <ul id="js-news" class="js-hidden inline-list">
                                     <li class="news-item"><a href="#"><span class="subject">notícias: </span><span class="date">12/03 - </span>Encontro para eleger as representantes das mulheres para o CPOP.</a></li>
                                 </ul>
                             </div>
-                            <div class="small-6 medium-2 end columns text-center">
+                            <div class="small-12 medium-2 end columns text-center">
                                 <a href="http://prefeitura.sp.gov.br" class="logo-prefeitura"><img src="{{site.theme.link}}/assets/images/logo-prefeitura.svg" alt="Logo Prefeitura de São Paulo"></a>
                             </div>
                         </div>
@@ -59,7 +85,7 @@
             </div>
 
             <div class="row title-bar" >
-                <div class="small-10 small-centered columns text-center">
+                <div class="small-11 medium-10 small-centered columns text-center">
                     <a href="{{site.url}}"><img class="logo-programa-de-metas" src="{{site.theme.link}}/assets/images/logo-programa-de-metas.svg" alt="Logo Programa de Metas"></a>
                     <h1><a href="{{site.url}}">programa de metas</a></h1>
                     <h2><a href="{{site.url}}">Faça o monitoramento das 123 metas definidas pela Prefeitura de São Paulo para a gestão 2013 - 2016</a></h2>
@@ -68,7 +94,7 @@
         </div>
         <div class="filter-bar">
             <div class="row">
-                <div class="infografico small-10 small-centered columns text-center">
+                <div class="infografico hide-for-small-only small-10 small-centered columns text-center">
                     <div class="row">
                         <div class="small-4 columns border">
                             <div class="destaque-situacao">
@@ -94,12 +120,12 @@
                                 <a href="{{site.url}}/?status=1#resultado">Metas não<br/>iniciadas</a>
                             </div>
                         </div>
-                        <div class="small-3 small-offset-9 columns informe-atualizacao">
+                        <div class="small-3 small-offset-9 columns  informe-atualizacao">
                             <p>Dados atualizados até dezembro/2014</p>
                         </div>
                     </div>
                 </div>
-                <div class="slideshow small-11 small-centered columns">
+                <div class="slideshow medium-11 hide-for-small-only small-centered columns">
                         <ul class="destaque-por-objetivos" data-orbit data-options="timer_speed: 6500;slide_number:false;next_on_click:false;">
                             <li data-orbit-slide="headline-1">
                                 <div class="row">
@@ -169,8 +195,11 @@
                             </li>
                         </ul>
                 </div>
-                <div class="small-12 small-centered text-center columns" id="resultado">
+                <div class="small-12 small-centered show-for-medium-up text-center columns" id="resultado">
                     <img src="{{site.theme.link}}/assets/images/use-os-filtros.png" alt="Image indicativa para utilização dos filtros abaixo.">
+                </div>
+                <div class="small-12 small-centered hide-for-medium-up text-center columns" id="resultado-mobile">
+                    Use um dos filtros abaixo para pesquisar as metas
                 </div>
                 <div class="projetos-por-perto small-12 medium-6 columns">
                     <i class="ou">ou</i>

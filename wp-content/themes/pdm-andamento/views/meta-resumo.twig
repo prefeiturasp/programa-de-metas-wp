@@ -1,11 +1,11 @@
 <div class="row meta-card no-resultado">
     <div class="medium-12 columns">
-        <div class="small-3 medium-1 columns ordem">
+        <div class="small-12 medium-1 columns ordem">
             <p class="faixa"></p>
             <p class="nome">meta</p>
             <p class="numero">{{meta.id}}</p>
         </div>
-        <div class="small-9 medium-8 columns titulo">
+        <div class="small-12 medium-7 columns titulo">
             <h3><a href="{{site.url}}/meta/{{meta.id}}">{{meta.name}}</a></h3>
             <h4>
                 {% for objetivo in objetivos %}
@@ -30,7 +30,7 @@
             </h5>
         </div>
 
-        <div class="small-8 small-centered medium-uncentered medium-3 columns">
+        <div class="small-12 text-center medium-4 medium-uncentered columns">
             <dl class="row tabs tabs-options" data-tab>
                 <dd class="meta box-options {% if filtro_so_subprefeitura != "sim" %}active{% endif %}"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-graph-arrow"></i>Resumo<br> desta meta</a></dd>
                 <dd class="projeto box-options {% if filtro_so_subprefeitura == "sim" %}active{% endif %}"><a href="#meta-{{meta.id}}-projetos"><i class="icon-folder"></i>Projetos<br> desta meta</a></dd>
@@ -68,11 +68,11 @@
                     <ul class="small-12 columns">
                         {% for projeto in meta.projects %}
                             {% if subprefeitura_active == "" %}
-                                <li class="small-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
+                                <li class="small-12 medium-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
                             {% else %}
                                 {% for prefecture in projeto.prefectures %}
                                     {% if prefecture.id == subprefeitura_active %}
-                                        <li class="small-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
+                                        <li class="small-12 medium-6 columns"><a href="{{site.url}}/projeto/{{projeto.id}}"><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
                                     {% endif %}
                                 {% endfor %}
                             {% endif %}

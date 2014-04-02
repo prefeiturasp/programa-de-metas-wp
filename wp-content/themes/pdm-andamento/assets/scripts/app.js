@@ -43,6 +43,10 @@ define(['jquery', 'foundation'], function ($) {
                 event.preventDefault();
                 $('.follow-form').fadeToggle();
             });
+
+            $('button','.mobile-disclaimer').on('click', function (event) {
+                $('.mobile-disclaimer').hide();
+            });
         },
         _init = function() {
             $(document).foundation();

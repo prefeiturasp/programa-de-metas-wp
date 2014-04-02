@@ -15,6 +15,56 @@ $vermelho: #eb2851;
 .header {
     background-color: #fff;
 
+
+    .mobile-disclaimer {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background-color: #fff;
+        .title-bar {
+            margin-top: 2em;
+        }
+        .disclaimer-content {
+            margin-top: 0.3em; 
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                color: #252424;
+                letter-spacing: -2px;
+            }
+        }
+        button {
+            border-radius:rem-calc(10);
+            border: rem-calc(2) dotted #cfcdcd;
+            border-right-style: solid;
+            background-color:#fff;
+            margin: 0 rem-calc(8) 0 rem-calc(9);
+            color: #999999;
+            font-size: rem-calc(18);
+            padding: rem-calc(8) rem-calc(40) rem-calc(8) rem-calc(24);
+            position: relative;
+            font-family: "Montserrat";
+
+            &:before {
+                background-color: #C1BFBE;
+                height: 0;
+                padding: rem-calc(8) rem-calc(16) rem-calc(26) rem-calc(8);
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 0;
+                border-radius: rem-calc(25) rem-calc(8) rem-calc(8) rem-calc(25);
+                color: #fff;
+                font-family: "icomoon";
+            }
+        }
+
+
+    }
+
     .support-bar {
         background-color: #252424;
         box-shadow: 4px 4px 15px rgba(#000,.4);
@@ -178,6 +228,10 @@ $vermelho: #eb2851;
 .filter-bar {
     background-color: #fff;
     margin-top: 196px;
+
+    #resultado-mobile {
+        padding: 30px 0 10px;
+    }
 
     .infografico {
         margin-top: rem-calc(30px);
@@ -437,6 +491,7 @@ $vermelho: #eb2851;
     }
 }
 
+
 // magicas para o topo aparecer diferente a cada scroll
 .header.fixed {
     .shrink.title-bar {
@@ -467,6 +522,9 @@ $vermelho: #eb2851;
     &#f1_container #f1_card {
       transform: rotateX(180deg);
       box-shadow: -5px 5px 5px #aaa;
+      .face.back {
+        backface-visibility: visible;
+      }
     }
 }
 .browsehappy {
@@ -521,6 +579,8 @@ $cinza-padrao: #666;
     margin-top: rem-calc(15);
     margin-bottom: rem-calc(15);
 
+
+
     .ordem {
         p {
             text-align: center;
@@ -562,7 +622,11 @@ $cinza-padrao: #666;
             }
             //font-family: 'MontserratBold'
             font-size: rem-calc(20);
-            margin: rem-calc(10) 0 0 rem-calc(15);
+            margin: rem-calc(10) 0 0 0;
+
+            @media screen and (min-width: 640px) {
+                margin: rem-calc(10) 0 0 rem-calc(15);
+            }
         }
         h4 {
             a {
@@ -573,7 +637,12 @@ $cinza-padrao: #666;
             }
             font-size: rem-calc(14);
             text-transform: uppercase;
-            margin: rem-calc(10) 0 0 rem-calc(15);
+            margin: rem-calc(10) 0 0 0;
+            
+            @media screen and (min-width: 640px) {
+                margin: rem-calc(10) 0 0 rem-calc(15);
+            }
+
         }
         h5 {
             a {
@@ -581,7 +650,11 @@ $cinza-padrao: #666;
             }
             font-family: 'Tinos', sans-serif;
             font-size: rem-calc(14);
-            margin: 0 0 0 rem-calc(15);
+            margin: rem-calc(10) 0 0 0;
+            
+            @media screen and (min-width: 640px) {
+                margin: rem-calc(10) 0 0 rem-calc(15);
+            }
         }
     }
 
@@ -591,11 +664,22 @@ $cinza-padrao: #666;
     }
 
     .tabs-options {
+
+        @media screen and (max-width: 639px) {
+            
+           display: inline-block;
+        }
+
         .box-options {
             background-color: #f2f4f6;
             width: rem-calc(70);
             float:left;
             margin-left: rem-calc(8);
+
+            @media screen and (max-width: 639px) {
+
+                margin-top: 20px;
+            }
 
             i {
                 display: block;

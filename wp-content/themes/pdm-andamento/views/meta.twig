@@ -15,12 +15,12 @@
 
 <div class="row meta-card outer-box no-resultado">
     <div class="medium-12 columns">
-        <div class="small-3 medium-1 columns ordem">
+        <div class="small-12 medium-1 columns ordem">
             <p class="faixa"></p>
             <p class="nome">meta</p>
             <p class="numero">{{meta.id}}</p>
         </div>
-        <div class="small-9 medium-8 columns titulo">
+        <div class="small-12 medium-7 columns titulo">
             <h3><a href="{{site.url}}/meta/{{meta.id}}">{{meta.name}}</a></h3>
             <h4>
                 {% for objetivo in objetivos %}
@@ -45,7 +45,7 @@
             </h5>
         </div>
 
-        <div class="small-8 small-centered medium-uncentered medium-3 columns">
+        <div class="small-12 text-center medium-4 medium-uncentered columns">
             <dl class="tabs tabs-options">
                 <dd class="acompanhar box-options"><a href="#meta-{{meta.id}}-acompanhar"><i class="icon-follow"></i>Seguir<br> esta meta</a></dd>
                 <dd class="compartilhar box-options"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-share"></i>Compartilhe<br> esta meta</a></dd>
@@ -122,7 +122,7 @@
                     <span>identidade</span>
                 </p>
             </div>
-            <div class="small-3 columns box text-center" data-equalizer-watch>
+            <div class="small-12 medium-3 columns box text-center" data-equalizer-watch>
                 <h4>objetivo</h4>
                 {% for objetivo in objetivos %}
                     {% if objetivo.id == meta.objective_id %}
@@ -142,14 +142,14 @@
                     {% endif %}
                 {% endfor %}
             </div>
-            <div class="small-7 columns box" data-equalizer-watch>
+            <div class="small-12 medium-7 columns box" data-equalizer-watch>
                 <h4>definições dos termos técnicos</h4>
                 <p class="descricao">{{meta.technically}}</p>
 
                 <h4>observações</h4>
                 <p class="descricao">{{meta.observation}}</p>
             </div>
-            <div class="small-2 columns box" data-equalizer-watch>
+            <div class="small-12 medium-2 columns box" data-equalizer-watch>
                 <img src="{{site.theme.uri}}/assets/images/logos.png" alt="">
             </div>
         </div>
@@ -179,7 +179,7 @@
 <div class="row outer-box" data-equalizer>
     <div class="small-12 columns ">
         <div class="small-12 columns">
-            <div class="small-8 columns box text-center" data-equalizer-watch>
+            <div class="small-12 medium-8 columns box text-center" data-equalizer-watch>
                 <div class="small-12 columns">
                     <p class="title">
                         <i class="icon-graph"></i>
@@ -222,7 +222,7 @@
                 </div>
                 {% endif %}
             </div>
-            <div class="small-4 columns box text-center" data-equalizer-watch>
+            <div class="small-12 medium-4 columns box text-center" data-equalizer-watch>
                 <div class="small-12 columns" >
                     <p class="title">
                         <i class="icon-quotation"></i>

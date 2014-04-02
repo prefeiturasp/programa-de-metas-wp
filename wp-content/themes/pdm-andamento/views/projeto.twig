@@ -36,15 +36,15 @@
             <h1><i class="icon-arrow-r-bold"></i>{{projeto.name}}</h1>
         </div>
 
-        <div class="small-8 small-centered medium-uncentered medium-2 columns">
+        <div class="small-12 text-center medium-4 medium-uncentered columns">
             <dl class="tabs tabs-options">
                 <dd class="compartilhar box-options"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-share"></i>Compartilhe<br> esta meta</a></dd>
             </dl>
         </div>
     </div>
     <div class="medium-12 columns">
-        <div class="small-9 columns">
-            <div class="box small-4 columns" data-equalizer-watch>
+        <div class="small-12 medium-9 columns">
+            <div class="box small-12 medium-4 columns" data-equalizer-watch>
                 <h3>tipo</h3>
                 {% for project_type in tipos_projeto %}
                     {% if project_type.id == projeto.project_type %}
@@ -52,16 +52,16 @@
                     {% endif %}
                 {% endfor %}
             </div>
-            <div class="box small-4 columns" data-equalizer-watch>
+            <div class="box small-12 medium-4 columns" data-equalizer-watch>
                 <h3>subprefeitura</h3>
                 <p class="descricao">{{projeto.prefectures[0].name}}</p>
             </div>
-            <div class="box small-4 columns" data-equalizer-watch>
+            <div class="box small-12 medium-4 columns" data-equalizer-watch>
                 <h3>distrito</h3>
                 <p class="descricao">{{projeto.district}}</p>
             </div>
         </div>
-        <div class="small-3 columns status" data-equalizer-watch>
+        <div class="small-12 medium-3 columns status" data-equalizer-watch>
             <div class="box small-12 columns text-center">
                 <p>{{status.descricao}}</p>
                 <h5>{{status.absoluto | number_format(1, ',', '.')}}%</h5>

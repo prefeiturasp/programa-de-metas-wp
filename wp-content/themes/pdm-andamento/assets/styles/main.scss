@@ -622,7 +622,11 @@ $cinza-padrao: #666;
             }
             //font-family: 'MontserratBold'
             font-size: rem-calc(20);
-            margin: rem-calc(10) 0 0 rem-calc(15);
+            margin: rem-calc(10) 0 0 0;
+
+            @media screen and (min-width: 640px) {
+                margin: rem-calc(10) 0 0 rem-calc(15);
+            }
         }
         h4 {
             a {
@@ -633,7 +637,12 @@ $cinza-padrao: #666;
             }
             font-size: rem-calc(14);
             text-transform: uppercase;
-            margin: rem-calc(10) 0 0 rem-calc(15);
+            margin: rem-calc(10) 0 0 0;
+            
+            @media screen and (min-width: 640px) {
+                margin: rem-calc(10) 0 0 rem-calc(15);
+            }
+
         }
         h5 {
             a {
@@ -641,7 +650,11 @@ $cinza-padrao: #666;
             }
             font-family: 'Tinos', sans-serif;
             font-size: rem-calc(14);
-            margin: 0 0 0 rem-calc(15);
+            margin: rem-calc(10) 0 0 0;
+            
+            @media screen and (min-width: 640px) {
+                margin: rem-calc(10) 0 0 rem-calc(15);
+            }
         }
     }
 
@@ -651,6 +664,12 @@ $cinza-padrao: #666;
     }
 
     .tabs-options {
+
+        @media screen and (max-width: 639px) {
+            
+           display: inline-block;
+        }
+
         .box-options {
             background-color: #f2f4f6;
             width: rem-calc(70);
@@ -658,6 +677,7 @@ $cinza-padrao: #666;
             margin-left: rem-calc(8);
 
             @media screen and (max-width: 639px) {
+
                 margin-top: 20px;
             }
 

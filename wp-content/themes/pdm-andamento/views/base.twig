@@ -30,7 +30,7 @@
                         <p>Desculpe, mas o site ainda não esta preparado para este dispositivo. <br> Deseja seguir mesmo assim?</p>
                     </div>
                     <div class="small-11 small-centered text-center">
-                        <button class="icon-arrow-r">Ir para o site</button>
+                        <button class="icon-arrow-r" onclick="$('.mobile-disclaimer').hide();">Ir para o site</button>
                     </div>
                 </div>
             </div>
@@ -195,11 +195,10 @@
                             </li>
                         </ul>
                 </div>
-                <div class="small-12 small-centered show-for-medium-up text-center columns" id="resultado">
-                    <img src="{{site.theme.link}}/assets/images/use-os-filtros.png" alt="Image indicativa para utilização dos filtros abaixo.">
-                </div>
-                <div class="small-12 small-centered hide-for-medium-up text-center columns" id="resultado-mobile">
-                    Use um dos filtros abaixo para pesquisar as metas
+                <div class="small-12 small-centered text-center columns" id="resultado">
+                    <i class="icon-filter-arrow-left hide-for-small-only"></i>
+                    <p>Use um dos filtros abaixo </p>
+                    <i class="icon-filter-arrow-right hide-for-small-only"></i>
                 </div>
 <div id="map_hidden"></div>
                 <div class="projetos-por-perto small-12 medium-6 columns">

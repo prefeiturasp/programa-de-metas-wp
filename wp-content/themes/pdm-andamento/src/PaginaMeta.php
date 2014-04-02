@@ -28,7 +28,6 @@ class PaginaMeta extends Pagina
 
         $context['meta_grouped'] = $api->metas_agrupadas;
 
-        //TODO: deve ser inserido o suporte a múltiplos tipos de projeto por meta
         //$context['fases_projeto'] = $api->getFasesPorTipoProjeto($context['meta']['projects'][0]['project_type']);
         $context['progresso'] = $api->getMetaProgresso($meta_id);
 

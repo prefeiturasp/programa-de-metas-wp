@@ -1,5 +1,6 @@
 require.config({
     paths: {
+        async: '../bower_components/requirejs-plugins/src/async',
         jquery: '../bower_components/jquery/dist/jquery',
         d3: '../bower_components/d3js/build/d3.v3',
         //leaflet: '../bower_components/leaflet/src/Leaflet',
@@ -19,7 +20,7 @@ require.config({
     }
 });
 
-require(['chart', 'map', 'app', 'jquery'], function (chart, map, app, $) {
+require(['chart', 'map', 'app', 'jquery', 'buscaPorCep'], function (chart, map, app, $, buscaPorCep) {
     'use strict';
     // use app here
     app.init();
@@ -64,6 +65,8 @@ require(['chart', 'map', 'app', 'jquery'], function (chart, map, app, $) {
     jQuery('select#filtra-grafico-por-subprefeitura').on('change', function (evt) {
       chart.line(document.getElementById('chart-month-a'), data_chart.labels, data_chart.values[$(evt.currentTarget).val()]);
     });
+
+    buscaPorCep.init();
 
     //.filtrar-todas-as-metas.button
 });

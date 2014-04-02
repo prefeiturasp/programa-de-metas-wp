@@ -175,6 +175,7 @@
                 <div class="projetos-por-perto small-12 medium-6 columns">
                     <i class="ou">ou</i>
                     <form name="projetos-por-perto" id="projetos-por-perto" action="{{site.url}}">
+                    <div id="map_hidden"></div>
                         <div class="row">
                             <div class="small-11 small-centered columns">
                                 <h3>Encontre projetos próximos a você</h3>
@@ -182,10 +183,10 @@
                             <div class="small-11 small-centered columns">
                                 <div class="row collapse">
                                     <div class="small-9 columns">
-                                        <input type="text" placeholder="Digite seu CEP (EM BREVE)" readonly name="cep" id="cep">
+                                        <input type="text" placeholder="Digite seu CEP (00000-000)" autocomplete="off" name="input_cep" id="input_cep">
                                     </div>
                                     <div class="small-3 columns">
-                                        <a href="javascript:void(0);" class="button postfix">Procurar</a>
+                                        <a href="javascript:void(0);" id="button_cep" class="button postfix">Procurar</a>
                                     </div>
                                 </div>
                             </div>

@@ -69,11 +69,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000312;
+    font-family: \0000316;
   }
 }
 
@@ -93,25 +93,81 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000326;
+    font-family: \0000330;
   }
 }
 
-.icon-gestao:before {
-  content: "\e61a";
+.icon-filter-arrow-left:before {
+  content: "\e61f";
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000329;
+    font-family: \0000333;
+  }
+}
+
+.icon-filter-arrow-right:before {
+  content: "\e620";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000336;
+  }
+}
+
+.icon-share-arrow:before {
+  content: "\e61c";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000339;
+  }
+}
+
+.icon-refresh:before {
+  content: "\e61d";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000342;
+  }
+}
+
+.icon-email-envelope:before {
+  content: "\e61e";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000345;
   }
 }
 
@@ -121,11 +177,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000332;
+    font-family: \0000348;
   }
 }
 
@@ -135,11 +191,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000335;
+    font-family: \0000351;
   }
 }
 
@@ -149,11 +205,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000338;
+    font-family: \0000354;
   }
 }
 
@@ -163,11 +219,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000341;
+    font-family: \0000357;
   }
 }
 
@@ -177,11 +233,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000344;
+    font-family: \0000360;
   }
 }
 
@@ -191,11 +247,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000347;
+    font-family: \0000363;
   }
 }
 
@@ -205,11 +261,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000350;
+    font-family: \0000366;
   }
 }
 
@@ -219,11 +275,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000353;
+    font-family: \0000369;
   }
 }
 
@@ -233,25 +289,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000356;
-  }
-}
-
-.icon-graph-pizza:before {
-  content: "\e619";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \0000359;
+    font-family: \0000372;
   }
 }
 
@@ -261,11 +303,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000362;
+    font-family: \0000375;
   }
 }
 
@@ -275,11 +317,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000365;
+    font-family: \0000378;
   }
 }
 
@@ -289,11 +331,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000368;
+    font-family: \0000381;
   }
 }
 
@@ -303,11 +345,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000371;
+    font-family: \0000384;
   }
 }
 
@@ -317,11 +359,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000374;
+    font-family: \0000387;
   }
 }
 
@@ -331,11 +373,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000377;
+    font-family: \0000390;
   }
 }
 
@@ -345,11 +387,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000380;
+    font-family: \0000393;
   }
 }
 
@@ -359,11 +401,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000383;
+    font-family: \0000396;
   }
 }
 
@@ -373,11 +415,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000386;
+    font-family: \0000399;
   }
 }
 
@@ -387,11 +429,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000389;
+    font-family: \00003102;
   }
 }
 
@@ -401,11 +443,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000392;
+    font-family: \00003105;
   }
 }
 
@@ -415,11 +457,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000395;
+    font-family: \00003108;
   }
 }
 
@@ -429,25 +471,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \0000398;
-  }
-}
-
-.icon-arrow-l:before {
-  content: "\e61b";
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
-  }
-
-  line {
-    font-family: \00003101;
+    font-family: \00003111;
   }
 }
 
@@ -457,11 +485,11 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \00003104;
+    font-family: \00003114;
   }
 }
 
@@ -471,16 +499,58 @@
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/fonts\/icons\/_style\.scss;
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
   }
 
   line {
-    font-family: \00003107;
+    font-family: \00003117;
   }
 }
 
 .icon-arrow-d:before {
   content: "\e618";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \00003120;
+  }
+}
+
+.icon-graph-pizza:before {
+  content: "\e619";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \00003123;
+  }
+}
+
+.icon-gestao:before {
+  content: "\e61a";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \00003126;
+  }
+}
+
+.icon-arrow-l:before {
+  content: "\e61b";
 }
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */

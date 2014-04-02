@@ -229,8 +229,12 @@ $vermelho: #eb2851;
     background-color: #fff;
     margin-top: 196px;
 
-    #resultado-mobile {
-        padding: 30px 0 10px;
+    #resultado {
+        p, i {
+            display: inline-block !important;
+
+        }
+        // padding: 30px 0 10px;
     }
 
     .infografico {
@@ -665,11 +669,7 @@ $cinza-padrao: #666;
 
     .tabs-options {
 
-        @media screen and (max-width: 639px) {
-            
-           display: inline-block;
-        }
-
+        display: inline-block;
         .box-options {
             background-color: #f2f4f6;
             width: rem-calc(70);
@@ -1050,6 +1050,7 @@ $cinza-padrao: #666;
     }
 
     .tabs-options {
+        display: inline-block;
         .box-options {
             background-color: #f2f4f6;
             width: rem-calc(70);
@@ -1210,3 +1211,5 @@ $cinza-padrao: #666;
       }
     }
 }
+
+

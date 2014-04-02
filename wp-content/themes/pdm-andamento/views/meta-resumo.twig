@@ -5,7 +5,7 @@
             <p class="nome">meta</p>
             <p class="numero">{{meta.id}}</p>
         </div>
-        <div class="small-12 medium-7 columns titulo">
+        <div class="small-12 medium-7 large-8 columns titulo">
             <h3><a href="{{site.url}}/meta/{{meta.id}}">{{meta.name}}</a></h3>
             <h4>
                 {% for objetivo in objetivos %}
@@ -30,11 +30,11 @@
             </h5>
         </div>
 
-        <div class="small-12 text-center medium-4 medium-uncentered columns">
+        <div class="small-12 medium-4 large-3 small-text-center text-right columns">
             <dl class="row tabs tabs-options" data-tab>
                 <dd class="meta box-options {% if filtro_so_subprefeitura != "sim" %}active{% endif %}"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-graph-arrow"></i>Resumo<br> desta meta</a></dd>
                 <dd class="projeto box-options {% if filtro_so_subprefeitura == "sim" %}active{% endif %}"><a href="#meta-{{meta.id}}-projetos"><i class="icon-folder"></i>Projetos<br> desta meta</a></dd>
-                <dd class="acompanhar box-options"><a href="#meta-{{meta.id}}-acompanhar"><i class="icon-follow"></i>Seguir<br> esta meta</a></dd>
+                <dd class="acompanhar box-options"><a href="#meta-{{meta.id}}-acompanhar"><i class="icon-email-envelope"></i>Seguir<br> esta meta</a></dd>
             </dl>
         </div>
     </div>

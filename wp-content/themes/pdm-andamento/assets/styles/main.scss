@@ -1,39 +1,4 @@
 // bower:scss
-
-$verde: #97c949;
-$azul: #12c2d2;
-$vermelho: #eb2851;
-
-@mixin dotted-button() {
-
-    border-radius:rem-calc(10);
-    border: rem-calc(2) dotted #cfcdcd;
-    border-right-style: solid;
-    background-color:#fff;
-    margin: 0 rem-calc(8) 0 rem-calc(9);
-    color: #999999;
-    font-size: rem-calc(18);
-    padding: rem-calc(8) rem-calc(40) rem-calc(8) rem-calc(24);
-    position: relative;
-    font-family: "Montserrat";
-
-    &:before {
-        background-color: #C1BFBE;
-        height: 0;
-        padding: rem-calc(8) rem-calc(16) rem-calc(26) rem-calc(8);
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 0;
-        border-radius: rem-calc(25) rem-calc(8) rem-calc(8) rem-calc(25);
-        color: #fff;
-        font-family: "icomoon";
-    }
-
-}
-
-@import "settings";
-@import "charts";
 // endbower
 .content-wrapper {
     z-index: 33;

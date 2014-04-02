@@ -21,6 +21,22 @@ define(['jquery', 'async!http://maps.google.com/maps/api/js?sensor=false'], func
                             .done(buscaPorCep.procuraSubPrefeitura)
             });
 
+            var mapOptions = {
+              center: new google.maps.LatLng(-23.6071459, -46.65794169999999),
+              zoom: 12
+            };
+            var map = new google.maps.Map(document.getElementById("map_hidden"), mapOptions);
+            // var importedKml = new google.maps.KmlLayer({
+            //     url: 'http://pdm.local/wp-content/themes/pdm-andamento/assets/map/prefecture.kml'
+            // });
+            // importedKml.setMap(map);
+            // var ctaLayer = new google.maps.KmlLayer({
+            //     url: 'http://planejasampa.prefeitura.sp.gov.br/metas/wp-content/themes/pdm-andamento/assets/map/prefecture.kml'
+            // });
+            // ctaLayer.setMap(map);
+
+
+
         },
 
         procuraSubPrefeitura : function (data) {
@@ -28,9 +44,9 @@ define(['jquery', 'async!http://maps.google.com/maps/api/js?sensor=false'], func
                 console.log( ' Latitude: '+obj.results[0].geometry.location.lat );
                 console.log( ' Longitude: '+obj.results[0].geometry.location.lng );
             });
-            var map = new google.maps.Map(document.getElementById("map_hidden"));
-            var importedKml = new google.maps.KmlLayer('../map/prefecture.kml');
-            importedKml.setMap(map);
+
+
+
         }
 
     };

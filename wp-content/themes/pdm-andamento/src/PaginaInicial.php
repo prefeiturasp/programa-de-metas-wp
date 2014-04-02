@@ -21,4 +21,10 @@ class PaginaInicial
         }
         return $context;
     }
+
+    public static function buscaPorCoordenada($lat, $long)
+    {
+        $api = new ApiClient;
+        return $api->getSubPrefeiturasPorCoordenadas($lat, $long);
+    }
 }

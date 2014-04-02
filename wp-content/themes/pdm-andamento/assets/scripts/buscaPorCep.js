@@ -1,4 +1,4 @@
-define(['jquery', 'async!http://maps.google.com/maps/api/js?sensor=false'], function ($, ignore) {
+define(['jquery'], function ($, ignore) {
 
     'use strict';
 
@@ -17,36 +17,24 @@ define(['jquery', 'async!http://maps.google.com/maps/api/js?sensor=false'], func
             });
 
             $('#button_cep').on('click', function () {
-                var json = $.ajax({url:"http://maps.google.com/maps/api/geocode/json?address="+input_cep.value+"&sensor=false"})
+                var json = $.ajax({url:"http://maps.google.com/maps/api/geocode/json?address="+input_cep.value+",são+paulo&sensor=false"})
                             .done(buscaPorCep.procuraSubPrefeitura)
             });
-
-            var mapOptions = {
-              center: new google.maps.LatLng(-23.6071459, -46.65794169999999),
-              zoom: 12
-            };
-            var map = new google.maps.Map(document.getElementById("map_hidden"), mapOptions);
-            // var importedKml = new google.maps.KmlLayer({
-            //     url: 'http://pdm.local/wp-content/themes/pdm-andamento/assets/map/prefecture.kml'
-            // });
-            // importedKml.setMap(map);
-            // var ctaLayer = new google.maps.KmlLayer({
-            //     url: 'http://planejasampa.prefeitura.sp.gov.br/metas/wp-content/themes/pdm-andamento/assets/map/prefecture.kml'
-            // });
-            // ctaLayer.setMap(map);
-
-
-
         },
 
         procuraSubPrefeitura : function (data) {
             $( data ).each(function( i, obj ){
-                console.log( ' Latitude: '+obj.results[0].geometry.location.lat );
-                console.log( ' Longitude: '+obj.results[0].geometry.location.lng );
+
+                var latitude = obj.results[0].geometry.location.lat;
+                var longitude = obj.results[0].geometry.location.lng;
+
+                var json = $.ajax({url:SITE_URL + '/buscaPorCep/?lat='+latitude+'&long='+longitude})
+                            .done(buscaPorCep.redirecionaParaSubPrefeitura);
             });
+        },
 
-
-
+        redirecionaParaSubPrefeitura : function (data) {
+            window.location = SITE_URL + '/?subprefeitura=' + data + '#resultado';
         }
 
     };

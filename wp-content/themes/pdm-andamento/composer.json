@@ -1,5 +1,4 @@
 {
-    "minimum-stability": "dev",
     "name": "lucaspirola/pdm-andamento",
     "description": "Tema básico das metas com acesso direto a api",
     "license": "proprietary",

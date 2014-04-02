@@ -4,6 +4,34 @@ $verde: #97c949;
 $azul: #12c2d2;
 $vermelho: #eb2851;
 
+@mixin dotted-button() {
+
+    border-radius:rem-calc(10);
+    border: rem-calc(2) dotted #cfcdcd;
+    border-right-style: solid;
+    background-color:#fff;
+    margin: 0 rem-calc(8) 0 rem-calc(9);
+    color: #999999;
+    font-size: rem-calc(18);
+    padding: rem-calc(8) rem-calc(40) rem-calc(8) rem-calc(24);
+    position: relative;
+    font-family: "Montserrat";
+
+    &:before {
+        background-color: #C1BFBE;
+        height: 0;
+        padding: rem-calc(8) rem-calc(16) rem-calc(26) rem-calc(8);
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0;
+        border-radius: rem-calc(25) rem-calc(8) rem-calc(8) rem-calc(25);
+        color: #fff;
+        font-family: "icomoon";
+    }
+
+}
+
 @import "settings";
 @import "charts";
 // endbower
@@ -26,6 +54,9 @@ $vermelho: #eb2851;
         background-color: #fff;
         .title-bar {
             margin-top: 2em;
+            button {
+                @include dotted-button();
+            }
         }
         .disclaimer-content {
             margin-top: 0.3em; 
@@ -34,31 +65,6 @@ $vermelho: #eb2851;
                 font-size: 18px;
                 color: #252424;
                 letter-spacing: -2px;
-            }
-        }
-        button {
-            border-radius:rem-calc(10);
-            border: rem-calc(2) dotted #cfcdcd;
-            border-right-style: solid;
-            background-color:#fff;
-            margin: 0 rem-calc(8) 0 rem-calc(9);
-            color: #999999;
-            font-size: rem-calc(18);
-            padding: rem-calc(8) rem-calc(40) rem-calc(8) rem-calc(24);
-            position: relative;
-            font-family: "Montserrat";
-
-            &:before {
-                background-color: #C1BFBE;
-                height: 0;
-                padding: rem-calc(8) rem-calc(16) rem-calc(26) rem-calc(8);
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 0;
-                border-radius: rem-calc(25) rem-calc(8) rem-calc(8) rem-calc(25);
-                color: #fff;
-                font-family: "icomoon";
             }
         }
 
@@ -263,11 +269,23 @@ $vermelho: #eb2851;
             }
         }
         .informe-atualizacao {
-            p {
-                font-size: rem-calc(12);
-                margin: rem-calc(5) 0 0 0;
-                color: #b6b6b6;
+            position: relative;
+            i {
+                left: -10px;
+                position: absolute;
+                top: 5px;
             }
+            p {
+                color: #B6B6B6;
+                font-size: 0.75rem;
+                line-height: 0.9;
+                margin: 0.3125rem 0 0;
+                text-align: left;
+            }
+        }
+        button {
+            @include dotted-button();
+            margin-top: 20px;
         }
     }
     .slideshow {
@@ -485,6 +503,21 @@ $vermelho: #eb2851;
         }
         .button {
             margin:0;
+            padding: 10px;
+            color: #999999;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+        .button.filter {
+            padding-left: 35px;
+            position: relative;
+            margin-left: -20px;
+            font-size: 14px;
+            i {
+                left: 15px;
+                position: absolute;
+                top: 11px;
+            }
         }
     }
 }
@@ -695,6 +728,8 @@ $cinza-padrao: #666;
                 font-size: rem-calc(12);
                 text-align: center;
                 padding: rem-calc(5) 0;
+                border-radius: rem-calc(10);
+                margin-top: rem-calc(10);
             }
 
             &.meta {
@@ -1071,6 +1106,8 @@ $cinza-padrao: #666;
                 font-size: rem-calc(12);
                 text-align: center;
                 padding: rem-calc(5) 0;
+                border-radius: rem-calc(10);
+                margin-top: rem-calc(10);
             }
 
             &.meta {

@@ -34,27 +34,18 @@ define(['jquery', 'foundation'], function ($) {
 
         _metaFollow = function (e,o) {
 
-            console.log('1');
+            var form = $(this).parents('.meta-follow'),
+                name = form.find('input.name').val(),
+                email = form.find('input.email').val(),
+                meta = form.find('input.meta').val();
 
-            var form = $(this),
-                name = form.find('input:first').val(),
-                email = form.find('input:last').val();
-
-            console.log('2');
-
-            if (!name.length || !email.length) {
-                console.log('Verifique o preenchimento dos campos');
-                console.log('3');
-                return false;
+            if (!name.length || !email.length || !meta.length) {
+                alert.log('Verifique o preenchimento dos campos');
+                return;
             }
 
-            console.log('4');
-
-            $.post(window.location.href + 'metaFollow/' + name + '/' + email,function(data){
-
-                console.log('5');
-                form.children('.box').html(data);
-
+            $.post('metaFollow/' + name + '/' + email + '/' + meta,function(data){
+                form.find('.box').html(data);
             });
 
 
@@ -75,7 +66,8 @@ define(['jquery', 'foundation'], function ($) {
                 $('.follow-form').fadeToggle();
             });
 
-            $('.meta-follow form').on('submit',_metaFollow);
+            // $('.meta-follow form').on('submit',_metaFollow);
+            $('.meta-follow button').on('click',_metaFollow);
 
             // $('button','.mobile-disclaimer').on('click', function (event) {
             //     $('.mobile-disclaimer').hide();

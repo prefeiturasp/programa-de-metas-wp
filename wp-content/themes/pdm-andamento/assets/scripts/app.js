@@ -34,24 +34,25 @@ define(['jquery', 'foundation'], function ($) {
 
         _metaFollow = function (e,o) {
 
-            var form = $(this).parents('.meta-follow'),
+            console.log('MANO1!');
+
+            var form = $(o).parents('.meta-follow'),
                 name = form.find('input.name').val(),
                 email = form.find('input.email').val(),
-                meta = form.find('input.meta').val();
+                meta = form.find('input.meta').val(),
+                url = form.find('input.url').val();
 
             if (!name.length || !email.length || !meta.length) {
-                alert.log('Verifique o preenchimento dos campos');
+                alert('Verifique o preenchimento dos campos');
                 return;
             }
 
-            $.post('metaFollow/' + name + '/' + email + '/' + meta,function(data){
+            $.post(url + '/metaFollow/' + name + '/' + email + '/' + meta,function(data){
                 form.find('.box').html(data);
             });
 
-
             return false;
 
-            
         },
 
         getCurrentScroll = function () {
@@ -61,13 +62,25 @@ define(['jquery', 'foundation'], function ($) {
             docElem.setAttribute('data-useragent', navigator.userAgent);
         },
         _events = function () {
+
             $(document).on('click', '.follow a', function (event) {
                 event.preventDefault();
                 $('.follow-form').fadeToggle();
             });
 
-            // $('.meta-follow form').on('submit',_metaFollow);
-            $('.meta-follow button').on('click',_metaFollow);
+            $('.meta-follow input').on('keypress',function (e,o) {
+
+                o = this;
+
+                if (e.which == 13) {
+                    e.preventDefault();
+                    _metaFollow(e,o);
+                }
+            });
+            $('.meta-follow .button').on('click',function (e,o) {
+                o = this;
+                _metaFollow(e,o);
+            });
 
             // $('button','.mobile-disclaimer').on('click', function (event) {
             //     $('.mobile-disclaimer').hide();

@@ -48,8 +48,8 @@
                             <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[{{meta.porcentagem.concluido}},{{meta.porcentagem.restante}}]}"></div>
                         {% endif %}
                             <div class="status">
-                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format(1, ',', '.')}}%</a></p>
                                 <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.status}}</a></p>
+                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format(1, ',', '.')}}%</a></p>
                             </div>
                             <a href="http://planejasampa.prefeitura.sp.gov.br/metas/metodologia/" target="_blank" class="findout">
                                 ?
@@ -90,6 +90,7 @@
                     <div class="box medium-12 columns">
                         <h4>RECEBA ATUALIZAÇÕES SOBRE ESTA META POR E-MAIL</h4>
                         <input type="hidden" value="{{meta.id}}" class="meta">
+                        <input type="hidden" value="{{site.url}}" class="url">
                         <div class="small-12 medium-6 columns">
                             <label>Nome
                                 <input class="name" type="text" placeholder="Preencha como você quer ser chamado" />
@@ -101,7 +102,7 @@
                             </label>
                         </div>
                         <div class="small-12 medium-3 medium-offset-9 columns text-right">
-                            <button class="button radius round tiny" ><i class="icon-email-envelope"></i> Receber notificações</button>
+                            <a class="button radius round tiny" href="javascript://" type="button"><i class="icon-email-envelope"></i> Receber notificações</a>
                         </div>
                     </div>
             </div>

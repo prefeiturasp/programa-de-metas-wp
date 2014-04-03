@@ -51,6 +51,10 @@
                                 <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format(1, ',', '.')}}%</a></p>
                                 <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.status}}</a></p>
                             </div>
+                            <a href="http://planejasampa.prefeitura.sp.gov.br/metas/metodologia/" target="_blank" class="findout">
+                                ?
+                                <span>Entenda como é feito este cálculo</span>
+                            </a>
                         </div>
                     </div>
                     <div class="medium-8 columns">
@@ -81,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <div class="content" id="meta-{{meta.id}}-acompanhar">
+        <div class="content meta-follow" id="meta-{{meta.id}}-acompanhar">
             <div class="medium-12 columns">
                 <form>
                     <div class="box medium-12 columns">
@@ -98,7 +102,7 @@
                             </label>
                         </div>
                         <div class="small-12 medium-3 medium-offset-9 columns text-right">
-                            <button class="button radius round tiny"><i class="icon-email-envelope"></i> Receber notificações</button>
+                            <button class="button radius round tiny" type="submit"><i class="icon-email-envelope"></i> Receber notificações</button>
                         </div>
                     </div>
                 </form>

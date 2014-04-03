@@ -290,7 +290,7 @@ $vermelho: #eb2851;
                 text-align: left;
             }
         }
-        button {
+        .button.findout {
             @include dotted-button();
             margin-top: 20px;
         }
@@ -578,7 +578,14 @@ $vermelho: #eb2851;
     padding: 0.2em 0;
 }
 
-
+.page {
+    p {
+        color: #333;
+        a {
+            color: #999;
+        }
+    }
+}
 
 
 
@@ -826,6 +833,58 @@ $cinza-padrao: #666;
                     text-transform: uppercase;
                 }
             }
+        }
+        .findout {
+            background-color: #999999;
+            border-radius: 3px;
+            bottom: 10px;
+            color: #FFFFFF;
+            display: block;
+            height: 0;
+            margin: 0;
+            padding: 5px 16px 19px 9px;
+            position: absolute;
+            right: 20px;
+            width: 0;
+
+
+            span {
+                background-color: #999;
+                color: #FFFFFF;
+                font-family: 'Tinos',sans-serif;
+                font-size: 14px;
+                left: -23px;
+                padding: 9px;
+                position: relative;
+                text-align: center;
+                top: 8px;
+                white-space: nowrap;
+                display: none;
+                width: 205px;
+
+                &:before {
+                    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #999999;
+                    border-style: solid;
+                    border-width: 7px;
+                    content: "";
+                    display: block;
+                    height: 0;
+                    left: 21px;
+                    position: absolute;
+                    top: -14px;
+                    width: 0;
+                } 
+            }
+
+            &:hover {
+
+                span {
+                    display: block;
+                }
+
+            }
+            
+
         }
     }
 

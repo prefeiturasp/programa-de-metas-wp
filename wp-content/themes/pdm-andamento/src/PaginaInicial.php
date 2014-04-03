@@ -72,4 +72,11 @@ class PaginaInicial
         $api = new ApiClient;
         return $api->getSubPrefeiturasPorCoordenadas($lat, $long);
     }
+
+    public static function metaFollow()
+    {
+        // $api = new ApiClient;
+        // return $api->getSubPrefeiturasPorCoordenadas($lat, $long);
+        return '<h4>Seu e-email foi incluido com sucesso</h4>';
+    }
 }

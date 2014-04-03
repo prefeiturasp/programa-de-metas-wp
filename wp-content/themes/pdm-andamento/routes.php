@@ -26,6 +26,23 @@ Timber::add_route('buscaPorCep', function ($params) {
     //return Pdm\PaginaProjeto::startup($params);
 });
 
+Timber::add_route('metaFollow/:name/:email', function ($params) {
+
+    // if ((empty($_GET['name'])) || (empty($_GET['email']))) {
+    //     exit;
+    // }
+
+    // $name = $_GET['name'];
+    // $email = $_GET['email'];
+
+    print_r(Pdm\PaginaInicial::metaFollow());
+
+    exit;
+
+
+});
+
+
 // Timber::add_route('meta/:id/page/:pg', function ($params) {
 //     $query = 'posts_per_page=3&post_type='.$params['name'].'&paged='.$params['pg'];
 //     Timber::load_template('archive.php', $query);

@@ -32,6 +32,15 @@ define(['jquery', 'foundation'], function ($) {
             }
         },
 
+        // _metaFollow = function () {
+
+
+        //     $.post
+
+
+            
+        // },
+
         getCurrentScroll = function () {
             return window.pageYOffset || document.documentElement.scrollTop;
         },
@@ -43,6 +52,8 @@ define(['jquery', 'foundation'], function ($) {
                 event.preventDefault();
                 $('.follow-form').fadeToggle();
             });
+
+            $('.meta-follow form').on('submit',_metaFollow)
 
             // $('button','.mobile-disclaimer').on('click', function (event) {
             //     $('.mobile-disclaimer').hide();

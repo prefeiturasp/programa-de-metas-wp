@@ -4,11 +4,6 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" {{site.language_attributes}}> <!--<![endif]-->
     <head>
-        {% if page_title == "" %}
-            <title>{{wp_title}}: {{site.description}}</title>
-        {% else %}
-            <title>{{page_title}} - {{wp_title}}</title>
-        {% endif %}
 
         <meta charset="{{site.charset}}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,11 +11,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+        {% if page_title == "" %}
+            <title>{{wp_title}}: {{site.description}}</title>
+            <meta property="og:title" content="{{wp_title}}"/>
+        {% else %}
+            <title>{{page_title}} - {{wp_title}}</title>
+            <meta property="og:title" content="{{page_title}} - {{wp_title}}"/>
+        {% endif %}
 
-        <meta property="og:title" content="Programa de Metas"/>
-        <meta property="og:image" content="http://planejasampa.prefeitura.sp.gov.br/metas/wp-content/theme/pdm-andamento/assets/images/logo_SHARE_FACEBOOK.png"/>
-        <meta property="og:site_name" content="Programa de Metas"/>
-        <meta property="og:description" content="O aplicativo do Programa de Metas, também conhecido como Monitoramento das Metas, é uma ferramenta web que proporciona acesso transparente ao andamento das principais metas da Prefeitura de São Paulo. Acesse e faça o monitoramento das 123 metas definidas para a gestão 2013 - 2016."/>
+        <meta property="og:image" content="{{site.theme.link}}/assets/images/logo_SHARE_FACEBOOK.png"/>
+        <meta property="og:site_name" content="{{wp_title}}"/>
+        <meta property="og:description" content="{{site.description}}"/>
 
         <link rel="pingback" href="{{site.pingback_url}}" />
 

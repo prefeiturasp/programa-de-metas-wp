@@ -26,7 +26,7 @@ Timber::add_route('buscaPorCep', function ($params) {
     //return Pdm\PaginaProjeto::startup($params);
 });
 
-Timber::add_route('metaFollow/:name/:email/:meta', function ($params) {
+Timber::add_route('metaFollow/:meta', function ($params) {
 
     // if ((empty($_GET['name'])) || (empty($_GET['email']))) {
     //     exit;

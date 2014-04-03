@@ -45,7 +45,11 @@ define(['jquery', 'foundation'], function ($) {
                 return;
             }
 
-            $.post(SITE_URL + '/metaFollow/' + name + '/' + email + '/' + meta,function(data){
+            $.ajax({
+                type: "POST",
+                url: SITE_URL + '/metaFollow/' + meta,
+                data: form
+            }).done(function(data){
                 form.find('.box').html(data);
             });
 

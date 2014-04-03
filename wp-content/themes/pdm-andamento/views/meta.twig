@@ -151,7 +151,9 @@
                 <p class="descricao">{{meta.observation}}</p>
             </div>
             <div class="small-12 medium-2 columns box" data-equalizer-watch>
-                <img src="{{site.theme.uri}}/assets/images/logos.png" alt="">
+            {% for transver in meta.transversalidade|split(',') %}
+                <img src="{{site.theme.uri}}/assets/images/transversalidade/{{transver|trim}}.png" alt="{{transver|trim}}">
+            {% endfor %}
             </div>
         </div>
     </div>

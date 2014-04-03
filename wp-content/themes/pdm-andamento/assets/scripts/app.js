@@ -34,8 +34,6 @@ define(['jquery', 'foundation'], function ($) {
 
         _metaFollow = function (e,o) {
 
-            console.log('MANO1!');
-
             var form = $(o).parents('.meta-follow'),
                 name = form.find('input.name').val(),
                 email = form.find('input.email').val(),
@@ -47,7 +45,7 @@ define(['jquery', 'foundation'], function ($) {
                 return;
             }
 
-            $.post(url + '/metaFollow/' + name + '/' + email + '/' + meta,function(data){
+            $.post(SITE_URL + '/metaFollow/' + name + '/' + email + '/' + meta,function(data){
                 form.find('.box').html(data);
             });
 

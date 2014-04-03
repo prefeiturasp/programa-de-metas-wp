@@ -807,6 +807,7 @@ $cinza-padrao: #666;
             width: rem-calc(110);
             vertical-align: middle;
             height: rem-calc(45);
+            margin-bottom: rem-calc(50);
 
             p {
                 font-family: 'MontserratBold', sans-serif;
@@ -828,6 +829,9 @@ $cinza-padrao: #666;
                     margin-bottom: rem-calc(5);
                 }
                 &.descricao {
+                    border-bottom: 1px solid #999999;
+                    margin-bottom: rem-calc(10);
+                    padding-bottom: rem-calc(10);
                     font-size: rem-calc(12);
                     line-height: rem-calc(12);
                     text-transform: uppercase;

@@ -39,6 +39,7 @@
                                 'Dezembro'
                     ],
                     "values" : [
+                                [{{progresso_total|join(",")}}],
                                 {% for prefeituras in progresso %}[{{prefeituras.dados|join(",")}}],{% endfor %}
                     ]
                 };

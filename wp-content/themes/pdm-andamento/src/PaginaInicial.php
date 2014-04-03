@@ -86,7 +86,7 @@ class PaginaInicial
 
         if (($valid) && ($api->seguirMeta($params['meta'], $params['name'], $params['email']))) {
             return '<h4>Olá ' . $params['name'] . ', seu e-email ' . $params['email'] .
-                   ' foi incluido com sucesso</h4>';
+                   ' foi incluído com sucesso</h4>';
         } else {
             return 'Falha ao tentar cadastrar seu email. Verifique seus dados e tente novamente.';
         }

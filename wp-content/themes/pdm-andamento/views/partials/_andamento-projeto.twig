@@ -1,5 +1,5 @@
 {% if projeto.project_type == 8 %}
-    {% include "partials/andamento-projeto/_mes-a-mes.twig" with {projeto:projeto, progresso:progresso, fases_projeto:fases_projeto} %}
+    {% include "partials/andamento-projeto/_mes-a-mes.twig" with {projeto:projeto, progresso:progresso, fases_projeto:fases_projeto, progresso_total:progresso_total} %}
 {% else %}
     {% include "partials/andamento-projeto/_por-fase.twig" with {projeto:projeto, progresso:progresso} %}
 {% endif %}

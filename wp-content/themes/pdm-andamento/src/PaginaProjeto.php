@@ -38,6 +38,21 @@ class PaginaProjeto extends Pagina
 
         if ($context['projeto']['project_type'] == 8) {
             $context['progresso'] = $api->preparaDadosMesAMesPorPrefeitura($context['progresso']);
+
+            $progresso_total = array();
+
+            foreach ($context['progresso'] as $prog) {
+
+                foreach ($prog['dados'] as $k => $val) {
+                    if (isset($progresso_total[$k])) {
+                        $progresso_total[$k] = $progresso_total[$k] + $val;
+                    } else {
+                        $progresso_total[$k] = $val;
+                    }
+                }
+
+            }
+            $context['progresso_total'] = $progresso_total;
         }
 
         return $context;

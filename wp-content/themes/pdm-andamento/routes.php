@@ -35,7 +35,7 @@ Timber::add_route('metaFollow/:name/:email', function ($params) {
     // $name = $_GET['name'];
     // $email = $_GET['email'];
 
-    print_r(Pdm\PaginaInicial::metaFollow());
+    print_r(Pdm\PaginaInicial::metaFollow($params));
 
     exit;
 

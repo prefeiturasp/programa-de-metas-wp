@@ -73,10 +73,11 @@ class PaginaInicial
         return $api->getSubPrefeiturasPorCoordenadas($lat, $long);
     }
 
-    public static function metaFollow()
+    public static function metaFollow($params)
     {
         // $api = new ApiClient;
         // return $api->getSubPrefeiturasPorCoordenadas($lat, $long);
-        return '<h4>Seu e-email foi incluido com sucesso</h4>';
+        // return $params;
+        return '<h4>Olá ' . $params['name'] . ', seu e-email ' . $params['email'] . ' foi incluido com sucesso</h4>';
     }
 }

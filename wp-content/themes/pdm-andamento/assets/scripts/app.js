@@ -32,14 +32,36 @@ define(['jquery', 'foundation'], function ($) {
             }
         },
 
-        // _metaFollow = function () {
+        _metaFollow = function (e,o) {
+
+            console.log('1');
+
+            var form = $(this),
+                name = form.find('input:first').val(),
+                email = form.find('input:last').val();
+
+            console.log('2');
+
+            if (!name.length || !email.length) {
+                console.log('Verifique o preenchimento dos campos');
+                console.log('3');
+                return false;
+            }
+
+            console.log('4');
+
+            $.post(window.location.href + 'metaFollow/' + name + '/' + email,function(data){
+
+                console.log('5');
+                form.children('.box').html(data);
+
+            });
 
 
-        //     $.post
-
+            return false;
 
             
-        // },
+        },
 
         getCurrentScroll = function () {
             return window.pageYOffset || document.documentElement.scrollTop;
@@ -53,7 +75,7 @@ define(['jquery', 'foundation'], function ($) {
                 $('.follow-form').fadeToggle();
             });
 
-            $('.meta-follow form').on('submit',_metaFollow)
+            $('.meta-follow form').on('submit',_metaFollow);
 
             // $('button','.mobile-disclaimer').on('click', function (event) {
             //     $('.mobile-disclaimer').hide();

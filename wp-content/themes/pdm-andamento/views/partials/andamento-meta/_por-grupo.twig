@@ -1,4 +1,4 @@
-{% if progresso.tipos_agrupados[0] != 0 or progresso.tipos_agrupados[2] != 0 or progresso.tipos_agrupados[3] != 0 %}
+{% if progresso['tipos_agrupados'][1] != 0 or progresso['tipos_agrupados'][2] != 0 or progresso['tipos_agrupados'][3] != 0 %}
     {% for key, valor_progresso in progresso.tipos_agrupados %}
         <div class="small-3 columns total-por-fase">
         <h6>{{valor_progresso}}</h6>

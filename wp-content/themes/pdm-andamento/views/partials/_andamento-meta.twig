@@ -1,13 +1,17 @@
 {% include "partials/andamento-meta/_por-grupo.twig" with {progresso:progresso} %}
 
-<h3>Outros Projetos:</h3>
+{% if progresso['tipo5']|length > 0 or progresso['tipo6']|length > 0 or progresso['tipo7']|length > 0 or progresso['tipo8']|length > 0   %}
 
-{% include "partials/andamento-meta/_por-fase.twig" with {tipo:5,progresso:progresso['tipo5'], projects:meta.projects} %}
-{% include "partials/andamento-meta/_por-fase.twig" with {tipo:6,progresso:progresso['tipo6'], projects:meta.projects} %}
-{% include "partials/andamento-meta/_por-fase.twig" with {tipo:7,progresso:progresso['tipo7'], projects:meta.projects} %}
+    <h3>Outros Projetos:</h3>
 
-{% if meta.id in meta_grouped %}
-    {% include "partials/andamento-meta/_mes-a-mes-grouped.twig" with {progresso:progresso['tipo8']} %}
-{% else %}
-    {% include "partials/andamento-meta/_mes-a-mes.twig" with {progresso:progresso['tipo8'], projects:meta.projects} %}
+    {% include "partials/andamento-meta/_por-fase.twig" with {tipo:5,progresso:progresso['tipo5'], projects:meta.projects} %}
+    {% include "partials/andamento-meta/_por-fase.twig" with {tipo:6,progresso:progresso['tipo6'], projects:meta.projects} %}
+    {% include "partials/andamento-meta/_por-fase.twig" with {tipo:7,progresso:progresso['tipo7'], projects:meta.projects} %}
+
+    {% if meta.id in meta_grouped %}
+        {% include "partials/andamento-meta/_mes-a-mes-grouped.twig" with {progresso:progresso['tipo8']} %}
+    {% else %}
+        {% include "partials/andamento-meta/_mes-a-mes.twig" with {progresso:progresso['tipo8'], projects:meta.projects} %}
+    {% endif %}
+
 {% endif %}

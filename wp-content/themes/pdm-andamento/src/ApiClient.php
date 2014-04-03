@@ -47,10 +47,15 @@ class ApiClient
         // $this->client->addSubscriber($cachePlugin);
     }
 
-    protected function fazerRequisicao($path)
+    protected function fazerRequisicao($path, $type = 'get', $data = null)
     {
         try {
-            return $this->client->get($this->url . $path);
+            if (($type == 'post') && (count($data) > 0)) {
+                return $this->client->post($this->url . $path, array(
+                    'body' => $data));
+            } else {
+                return $this->client->get($this->url . $path);
+            }
         } catch (RequestException $e) {
             $this->gravarLog($e->getRequest());
             if ($e->hasResponse()) {
@@ -276,6 +281,13 @@ class ApiClient
     public function getSubPrefeiturasPorCoordenadas($lat, $long)
     {
         $response = $this->fazerRequisicao('prefectures/findByCoordinates/'.$lat.'/'.$long);
+        return $response->json();
+    }
+
+    public function seguirMeta($meta, $name, $email)
+    {
+        $data = array('name'=>$name, 'email'=>$email);
+        $response = $this->fazerRequisicao('goal/'.$meta.'/follow', "post", $data);
         return $response->json();
     }
 }

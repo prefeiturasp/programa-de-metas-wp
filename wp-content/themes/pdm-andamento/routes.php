@@ -31,11 +31,11 @@ Timber::add_route('metaFollow/:meta', function ($params) {
     // if ((empty($_GET['name'])) || (empty($_GET['email']))) {
     //     exit;
     // }
+    $input['meta'] = $params['meta'];
+    $input['name'] = $_POST['name'];
+    $input['email'] = $_POST['email'];
 
-    // $name = $_GET['name'];
-    // $email = $_GET['email'];
-
-    print_r(Pdm\PaginaInicial::metaFollow($params));
+    print_r(Pdm\PaginaInicial::metaFollow($input));
 
     exit;
 

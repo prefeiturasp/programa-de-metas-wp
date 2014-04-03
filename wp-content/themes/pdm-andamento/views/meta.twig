@@ -47,7 +47,7 @@
         </div>
 
         <div class="small-12 medium-4 large-3 small-text-center medium-text-right columns">
-            <dl class="tabs tabs-options">
+            <dl class="tabs tabs-options" data-tab>
                 <dd class="acompanhar box-options"><a href="#meta-{{meta.id}}-acompanhar"><i class="icon-email-envelope"></i>Seguir<br> esta meta</a></dd>
                 <!-- <dd class="compartilhar box-options"><a href="#meta-{{meta.id}}-detalhes"><i class="icon-share-arrow"></i>Compartilhe<br> esta meta</a></dd> -->
             </dl>
@@ -88,27 +88,26 @@
                 </div>
             </div>
         </div>
-        <div class="content" id="meta-{{meta.id}}-acompanhar">
+        <div class="content meta-follow" id="meta-{{meta.id}}-acompanhar">
             <div class="medium-12 columns">
-                <form>
-                    <div class="box medium-12 columns">
-                        <h4>RECEBA ATUALIZAÇÕES SOBRE ESTA META POR E-MAIL</h4>
-
-                        <div class="small-12 medium-6 columns">
-                            <label>Nome
-                                <input type="text" placeholder="Preencha como você quer ser chamado" />
-                            </label>
-                        </div>
-                        <div class="small-12 medium-6 columns">
-                            <label>E-mail
-                                <input type="text" placeholder="Em qual e-mail você gostaria de receber as atualizações?" />
-                            </label>
-                        </div>
-                        <div class="small-12 medium-3 medium-offset-9 columns text-right">
-                            <button class="button radius round tiny"><i class="icon-follow"></i> Receber notificações</button>
-                        </div>
+                <div class="box medium-12 columns">
+                    <h4>RECEBA ATUALIZAÇÕES SOBRE ESTA META POR E-MAIL</h4>
+                    <input type="hidden" value="{{meta.id}}" class="meta">
+                    <input type="hidden" value="{{site.url}}" class="url">
+                    <div class="small-12 medium-6 columns">
+                        <label>Nome
+                            <input class="name" type="text" placeholder="Preencha como você quer ser chamado" />
+                        </label>
                     </div>
-                </form>
+                    <div class="small-12 medium-6 columns">
+                        <label>E-mail
+                            <input class="email" type="text" placeholder="Em qual e-mail você gostaria de receber as atualizações?" />
+                        </label>
+                    </div>
+                    <div class="small-12 medium-3 medium-offset-9 columns text-right">
+                        <a class="button radius round tiny" href="javascript://" type="button"><i class="icon-email-envelope"></i> Receber notificações</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -66,6 +66,13 @@ define(['jquery', 'foundation'], function ($) {
                 $('.follow-form').fadeToggle();
             });
 
+            $('.meta-follow input').keypress(function (e) {
+                if (e.which == 13) {
+                    e.preventDefault();
+                    $('#button_cep').trigger('click');
+                }
+            });
+
             // $('.meta-follow form').on('submit',_metaFollow);
             $('.meta-follow button').on('click',_metaFollow);
 

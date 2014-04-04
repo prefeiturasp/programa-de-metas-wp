@@ -64,8 +64,8 @@
 }
 .projeto {
     .chart-container {
-        width: rem-calc(900);
-        height: rem-calc(200);
+        width: 90%;
+        min-height: rem-calc(200);
         margin: 0 auto rem-calc(40);
     }
 }

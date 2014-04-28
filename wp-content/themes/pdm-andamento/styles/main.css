@@ -2207,7 +2207,7 @@
   min-height: 58px;
   position: relative;
   width: 100%;
-  z-index: 1;
+  z-index: 11;
 }
 
 @media -sass-debug-info {

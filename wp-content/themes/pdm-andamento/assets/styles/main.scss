@@ -183,16 +183,6 @@ $vermelho: #eb2851;
             }
         }
 
-        h2 {
-            text-transform: inherit;
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            font-size: rem-calc(16);
-            a {
-                color: #000;
-            }
-        }
-
         .logo-programa-de-metas {
             max-width: rem-calc(125px);
         }
@@ -233,7 +223,18 @@ $vermelho: #eb2851;
 }
 .filter-bar {
     background-color: #fff;
-    margin-top: 196px;
+    margin-top: 187px;
+
+    h2 {
+        text-align: center;
+        text-transform: inherit;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        font-size: rem-calc(16);
+        a {
+            color: #000;
+        }
+    } 
 
     #resultado {
         p, i {

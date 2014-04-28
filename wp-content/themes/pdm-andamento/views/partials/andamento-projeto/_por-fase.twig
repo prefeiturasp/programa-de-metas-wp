@@ -9,7 +9,7 @@
                 </p>
             </div>
             <div class="small-12 columns box ">
-                <ul class="project-phases">
+                <ul class="project-phases hide-for-small-only">
                     {% for progresso_projeto in progresso %}
                     <li style="width:{{fases_projeto[progresso_projeto.milestone].percentage}}%;">
                         <div class="chevron-bar chevron-bar-{{progresso_projeto.status}}"></div>
@@ -18,8 +18,16 @@
                     </li>
                     {% endfor %}
                 </ul>
-                <ul class="caption project-phases">
-                    <li class=""><i class="square"></i><p>FASE NÃO INICIADA</p></li>
+                <div class="project-phases row show-for-small-only">
+                    {% for progresso_projeto in progresso %}
+                    <div class="small-12 medium-6 columns">
+                        {{fases_projeto[progresso_projeto.milestone].name}}
+                        ({{fases_projeto[progresso_projeto.milestone].percentage}}%)
+                    </div>
+                    {% endfor %}
+                </div>
+                <ul class="caption project-phases  hide-for-small-only">
+                    <li class=""><i class="square "></i><p>FASE NÃO INICIADA</p></li>
                     <li class=""><i class="square color-border-light"></i><p>FASE EM ANDAMENTO</p></li>
                     <li class=""><i class="square color-border"></i><p>FASE CONCLUÍDA</p></li>
                     <li class="weight-about-goal"><p>Peso do projeto em relação a meta: {{projeto.weight_about_goal}}%</p></li>

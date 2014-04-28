@@ -15,13 +15,20 @@ define(['jquery', 'foundation'], function ($) {
         _onScroll = function () {
             var shrinkHeader = $('.fixed.header').height(),
                 scroll = getCurrentScroll();
-            if ( scroll >= shrinkHeader ) {
+
+            if (scroll >= (bottom-100)) {
+                $('.filter-bar').css('visibility','hidden')
+            } else {
+                $('.filter-bar').css('visibility','visible')
+            }
+
+            if ( scroll >= shrinkHeader || scroll >= (bottom-100)) {
                 $('.title-bar').addClass('shrink');
             } else {
                 $('.title-bar').removeClass('shrink');
             }
 
-            if ( scroll > $('.filter-bar').height()+$('.fixed.header').height()-$('#f1_container').height() ) {
+            if ( scroll > $('.filter-bar').height()+$('.fixed.header').height()-$('#f1_container').height() || scroll >= (bottom-100)) {
                 $('#f1_container').addClass('shrink2');
                 $('#f1_container').css('top', $('.header.fixed').height());
                 $('.summary-results').css('margin-top', $('#f1_container').height()+40);

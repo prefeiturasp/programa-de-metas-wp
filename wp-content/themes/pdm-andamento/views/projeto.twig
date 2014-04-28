@@ -156,7 +156,12 @@
                     </div>
                     <div class="entregue row">
                         <div class="small-12 medium-2 columns"><h3>EXECUTADO</h3></div>
-                        <div class="small-12 medium-3 valor columns">R$ {{projeto.budget_executed|number_format(2, '.', ',')}}</div>
+                        {% if projeto.budget_executed > 0 %}
+                        {% set budget = 'R$ ' ~ projeto.budget_executed|number_format(2, ',', '.') %}
+                        {% else %}
+                        {% set budget = 'Sem execução orçamentária no ano' %}
+                        {% endif %}
+                        <div class="small-12 medium-3 valor columns">{{budget}}</div>
                         <div class="small-12 medium-7 columns"></div>
                     </div>
                 </div>

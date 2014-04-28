@@ -369,6 +369,11 @@ $vermelho: #eb2851;
                 }
             }
         }
+
+        .orbit-next,
+        .orbit-prev {
+            display: none;
+        }
     }
 
     h3 {

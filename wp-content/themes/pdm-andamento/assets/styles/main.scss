@@ -898,12 +898,18 @@ $cinza-padrao: #666;
 
         ul {
             margin: 0 rem-calc(20);
+
+            display: block;
+            margin: 0 1.25rem;
+            min-height: 12rem;
+
             li {
                 list-style: none;
                 text-align: center;
                 padding: rem-calc(10) 0;
-                min-height: rem-calc(90);
-                display: table;
+                // min-height: rem-calc(90);
+                // padding: rem-calc(45) 0;
+                // display: table;
                 width: 100%;
 
                 font-size: rem-calc(14);
@@ -915,7 +921,10 @@ $cinza-padrao: #666;
 
                 a {
                     color: $azul;
-                    display: table-cell;
+                    // display: table-cell;
+                    display: block;
+                    padding: rem-calc(23) 0;
+
                     vertical-align: middle;
 
                     font-family: 'MontserratBold', sans-serif;

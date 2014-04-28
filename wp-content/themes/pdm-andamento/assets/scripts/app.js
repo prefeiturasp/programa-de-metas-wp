@@ -14,7 +14,8 @@ define(['jquery', 'foundation'], function ($) {
 
         _onScroll = function () {
             var shrinkHeader = $('.fixed.header').height(),
-                scroll = getCurrentScroll();
+                scroll = getCurrentScroll(),
+                bottom = getFullHeight();
 
             if (scroll >= (bottom-100)) {
                 $('.filter-bar').css('visibility','hidden')
@@ -37,6 +38,7 @@ define(['jquery', 'foundation'], function ($) {
                 $('#f1_container').removeClass('shrink2');
                 $('.summary-results').css('margin-top', 0);
             }
+
         },
 
         _metaFollow = function (e,o) {
@@ -64,6 +66,9 @@ define(['jquery', 'foundation'], function ($) {
 
         },
 
+        getFullHeight = function () {
+            return $(document).height() - $(window).height();
+        },
         getCurrentScroll = function () {
             return window.pageYOffset || document.documentElement.scrollTop;
         },
@@ -101,6 +106,7 @@ define(['jquery', 'foundation'], function ($) {
             _events();
             _onScroll();
             _animateHeader();
+
         };
 
     return {

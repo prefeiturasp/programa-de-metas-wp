@@ -18,9 +18,9 @@ define(['jquery', 'foundation'], function ($) {
                 bottom = getFullHeight();
 
             if (scroll >= (bottom-100)) {
-                $('.filter-bar').css('visibility','hidden')
+                $('.filter-bar, #filter-options').css('visibility','hidden')
             } else {
-                $('.filter-bar').css('visibility','visible')
+                $('.filter-bar, #filter-options').css('visibility','visible')
             }
 
             if ( scroll >= shrinkHeader || scroll >= (bottom-100)) {

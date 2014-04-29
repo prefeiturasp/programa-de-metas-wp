@@ -302,17 +302,27 @@ $vermelho: #eb2851;
         //box-shadow: 4px 4px 15px rgba(#000,.4);
         background-color: #f62048;
         margin-bottom: rem-calc(30);
+        padding: 0;
+
+        &:hover {
+            .orbit-next, 
+            .orbit-prev {
+                display: block;
+            }
+        }
 
         .destaque-por-objetivos {
             list-style: none;
             padding: 0;
             position: relative;
+            margin: 0 rem-calc(40);
+            overflow: hidden;
             //border-radius: rem-calc(20);
 
             li {
                 border-radius: rem-calc(20) rem-calc(20) 0 0;
                 //box-shadow: 4px 4px 15px rgba(#000,.4);
-                background-color: #f62048;
+                // background-color: #f62048;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -370,9 +380,53 @@ $vermelho: #eb2851;
             }
         }
 
+        .orbit-bullets-container ol li {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .orbit-timer {
+            // bottom: 50px;
+            // left: 14px;
+            // right: auto;
+            // top: auto;
+            // // width: 15px;
+            > span { 
+                border-color: transparent transparent transparent rgba(0, 0, 0, 0.4);
+            }
+        }
+
         .orbit-next,
         .orbit-prev {
             display: none;
+            background-color: rgba(0, 0, 0, .2);
+            text-indent: 0 !important;
+            &:before {
+                color: #FFFFFF;
+                font-family: 'icomoon';
+                font-size: 20px;
+                position: absolute;
+                top: 4px;
+                color: rgba(0, 0, 0, 0.4);
+            }
+            > span {
+                display: none;
+                // margin-left: 0;
+            }
+        }
+
+        .orbit-next {
+            border-radius: 60px 0 0 60px;
+            &:before {
+                content: "\e616";
+                left: 15px;
+            }
+        }
+        .orbit-prev {
+            border-radius: 0 60px 60px 0;
+            &:before {
+                content: "\e61b";
+                right: 15px;
+            }
         }
     }
 

@@ -1107,8 +1107,7 @@
 
 .filter-bar {
   background-color: #fff;
-  margin-top: 169px;
-  padding-top: 10px;
+  padding-top: 190px;
 }
 
 @media -sass-debug-info {

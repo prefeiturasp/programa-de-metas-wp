@@ -7,7 +7,7 @@ define(['jquery', 'foundation'], function ($) {
         _animateHeader = function () {
             //var shrinkHeader2 = $('.fixed.header').height()+$('.filter-bar').height()-$('#f1_container').height();
 
-            $('.filter-bar').css('margin-top', $('.header.fixed').height())
+            $('.filter-bar').css('padding-top', $('.header.fixed').height())
 
             $(window).scroll(_onScroll);
         },
@@ -105,7 +105,7 @@ define(['jquery', 'foundation'], function ($) {
             _userAgentInit();
 
             $('html,body').scrollTop(0);
-            
+
             _events();
             _onScroll();
             _animateHeader();

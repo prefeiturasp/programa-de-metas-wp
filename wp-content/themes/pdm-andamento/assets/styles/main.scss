@@ -385,13 +385,19 @@ $vermelho: #eb2851;
         }
 
         .orbit-timer {
-            // bottom: 50px;
-            // left: 14px;
-            // right: auto;
-            // top: auto;
-            // // width: 15px;
-            > span { 
-                border-color: transparent transparent transparent rgba(0, 0, 0, 0.4);
+            bottom: 50px;
+            left: 14px;
+            right: auto;
+            top: auto;
+            width: 15px;
+            > span {
+                border-color: transparent rgba(0, 0, 0, 0.4);
+            }
+
+            &.paused {
+                > span {
+                    border-color: transparent transparent transparent rgba(0, 0, 0, 0.4);
+                }
             }
         }
 

@@ -103,6 +103,9 @@ define(['jquery', 'foundation'], function ($) {
         _init = function() {
             $(document).foundation();
             _userAgentInit();
+
+            $('html,body').scrollTop(0);
+            
             _events();
             _onScroll();
             _animateHeader();

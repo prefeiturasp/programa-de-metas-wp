@@ -1214,7 +1214,7 @@
   border-radius: 0.625rem;
   border: 0.125rem dotted white;
   background-color: #b6b6b6;
-  margin: 0 0.5rem 0 0.5625rem;
+  margin: 0 0 0 0.3125rem;
 }
 
 @media -sass-debug-info {

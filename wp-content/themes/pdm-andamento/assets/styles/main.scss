@@ -235,6 +235,10 @@ $vermelho: #eb2851;
         a {
             color: #000;
         }
+
+        @media screen and (man-width: 640px) {
+            font-size: 0;
+        }
     } 
 
     #resultado {
@@ -647,7 +651,7 @@ $vermelho: #eb2851;
 
         h2 {
             font-size:0;
-            transition: all 1.5s;
+            transition: all 0.8s;
         }
 
         .logo-programa-de-metas {

@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="row menu-bar">
-                <div class="menu-principal small-12 medium-8 columns">
+                <div class="menu-principal small-12 medium-8 hide-for-mobile-only hide-for-small-only columns">
                     <ul class="inline-list">
                         {% for item in menu.get_items %}
                                 <li class="nav-main-item {{item.classes | join(' ')}}"><a class="nav-main-link" href="{{item.get_path}}">{{item.title}}</a>
@@ -209,7 +209,7 @@
             <div class="row">
 
                 <div class="projetos-por-perto small-12 medium-6 columns">
-                    <i class="ou">ou</i>
+                    <i class="ou hide-for-small-only">ou</i>
                     <form name="projetos-por-perto" id="projetos-por-perto" action="{{site.url}}">
                         <div class="row">
                             <div class="small-11 small-centered columns">

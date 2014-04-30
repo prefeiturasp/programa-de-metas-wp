@@ -107,8 +107,13 @@ define(['jquery', 'foundation'], function ($) {
             $('html,body').scrollTop(0);
 
             _events();
-            _onScroll();
             _animateHeader();
+
+            if (matchMedia(Foundation.media_queries.small).matches) {
+                return false;
+            }
+            
+            _onScroll();
 
         };
 

@@ -4,7 +4,8 @@ require.config({
         d3: '../bower_components/d3js/build/d3.v3',
         //leaflet: '../bower_components/leaflet/src/Leaflet',
         leaflet: "//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet",
-        foundation: '../bower_components/foundation/js/foundation'
+        foundation: '../bower_components/foundation/js/foundation',
+        polyfil: '../bower_components/REM-unit-polyfill-master/js/rem.min'
     },
     shim: {
         d3: {
@@ -15,11 +16,14 @@ require.config({
         },
         foundation: {
             deps: ['jquery']
+        },
+        polyfil: {
+            exports: 'polyfil'
         }
     }
 });
 
-require(['chart', 'map', 'app', 'jquery', 'buscaPorCep'], function (chart, map, app, $, buscaPorCep) {
+require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'polyfil'], function (chart, map, app, $, buscaPorCep) {
     'use strict';
     // use app here
     app.init();

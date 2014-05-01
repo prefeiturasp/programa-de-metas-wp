@@ -1,0 +1,279 @@
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \000037;
+  }
+}
+
+.support-bar,
+.redes-sociais,
+.menu-principal,
+.filter-bar,
+#f1_container {
+  display: none !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+.row {
+  max-width: 1000px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.row .medium-6 {
+  float: left;
+  width: 50%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000319;
+  }
+}
+
+.small-9 {
+  width: 75%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000323;
+  }
+}
+
+.small-3 {
+  width: 25%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000327;
+  }
+}
+
+.header {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000331;
+  }
+}
+
+#filter-options {
+  background-color: transparent;
+  max-width: 1000px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000335;
+  }
+}
+
+#filter-options:before {
+  background-color: transparent;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000339;
+  }
+}
+
+#filter-options h3 {
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000345;
+  }
+}
+
+#filter-options select,
+#filter-options #input_cep {
+  width: 90%;
+  padding: 20px 5;
+  margin-left: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000351;
+  }
+}
+
+#filter-options .button {
+  padding: 20px 5;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000355;
+  }
+}
+
+#filter-options .projetos-por-perto,
+#filter-options .metas-por-objetivo {
+  height: 170px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000359;
+  }
+}
+
+#filter-options .nao-sabe-cep {
+  padding: 10px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000365;
+  }
+}
+
+.meta-card {
+  margin: 10px auto;
+  padding: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000371;
+  }
+}
+
+.meta-card .box-options,
+.meta-card .chart-render,
+.meta-card .chart-container {
+  display: none !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000375;
+  }
+}
+
+.meta-card .ordem {
+  width: 16.6667%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000379;
+  }
+}
+
+.meta-card .titulo {
+  width: 83.3333%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000383;
+  }
+}
+
+.meta-card .detalhes {
+  padding: 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/dan\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000395;
+  }
+}
+
+.meta-card .findout span:before {
+  display: none;
+}

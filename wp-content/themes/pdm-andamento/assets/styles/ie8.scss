@@ -1,0 +1,107 @@
+.support-bar, 
+.redes-sociais,
+.menu-principal,
+.filter-bar,
+#f1_container 
+// #filter-options 
+{
+	display: none !important;
+}
+
+.row {
+	max-width: 1000px;
+	.medium-6 {
+		float: left;
+		width: 50%
+	}
+}
+
+.small-9 {
+    width: 75%;
+}
+
+.small-3 {
+    width: 25%;
+}
+
+.header {
+	position: relative;
+}
+
+#filter-options {
+	background-color: transparent;
+	max-width: 1000px;
+
+	&:before {
+		background-color: transparent;
+	}
+
+	h3 {
+		padding: 10px 0;
+		text-align: center;
+	}
+	select,
+	#input_cep
+	{
+		width: 90%;
+		padding: 20px 5;
+		margin-left: 10px;
+	}
+
+	.button {
+		padding: 20px 5;
+	}
+
+	.projetos-por-perto, .metas-por-objetivo {
+		height: 170px;
+	}
+
+	.nao-sabe-cep {
+		padding: 10px 0;
+	}
+
+}
+
+.meta-card {
+
+	margin: 10px auto;
+	padding: 10px;
+
+
+	.box-options, .chart-render, .chart-container {
+		display: none !important;
+	}
+
+	.ordem {
+		width: 16.6667%;
+	}
+
+	.titulo {
+		width: 83.3333%;
+	}
+
+	.detalhes {
+		padding: 5px;
+
+		.status {
+			// height: auto;
+			// width: auto;
+			// margin: 0;
+		}
+	}
+
+	.findout {
+		span {
+			&:before {
+				display:none;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

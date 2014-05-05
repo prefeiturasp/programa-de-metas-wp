@@ -83,6 +83,23 @@
   }
 }
 
+.browsehappy {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px;
+  text-align: center !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/ie8\.scss;
+  }
+
+  line {
+    font-family: \0000334;
+  }
+}
+
 .header {
   position: relative;
 }
@@ -93,7 +110,7 @@
   }
 
   line {
-    font-family: \0000330;
+    font-family: \0000337;
   }
 }
 
@@ -107,7 +124,7 @@
   }
 
   line {
-    font-family: \0000332;
+    font-family: \0000339;
   }
 }
 
@@ -123,7 +140,7 @@
   }
 
   line {
-    font-family: \0000336;
+    font-family: \0000343;
   }
 }
 
@@ -137,7 +154,7 @@
   }
 
   line {
-    font-family: \0000343;
+    font-family: \0000350;
   }
 }
 
@@ -152,7 +169,7 @@
   }
 
   line {
-    font-family: \0000347;
+    font-family: \0000354;
   }
 }
 
@@ -166,7 +183,7 @@
   }
 
   line {
-    font-family: \0000351;
+    font-family: \0000358;
   }
 }
 
@@ -181,7 +198,7 @@
   }
 
   line {
-    font-family: \0000354;
+    font-family: \0000361;
   }
 }
 
@@ -197,7 +214,7 @@
   }
 
   line {
-    font-family: \0000360;
+    font-family: \0000367;
   }
 }
 
@@ -218,7 +235,7 @@
   }
 
   line {
-    font-family: \0000368;
+    font-family: \0000375;
   }
 }
 
@@ -235,7 +252,7 @@
   }
 
   line {
-    font-family: \0000378;
+    font-family: \0000385;
   }
 }
 
@@ -249,7 +266,7 @@
   }
 
   line {
-    font-family: \0000382;
+    font-family: \0000389;
   }
 }
 
@@ -263,7 +280,7 @@
   }
 
   line {
-    font-family: \0000388;
+    font-family: \0000395;
   }
 }
 
@@ -277,7 +294,7 @@
   }
 
   line {
-    font-family: \0000392;
+    font-family: \0000399;
   }
 }
 
@@ -292,7 +309,7 @@
   }
 
   line {
-    font-family: \0000399;
+    font-family: \00003106;
   }
 }
 
@@ -307,7 +324,7 @@
   }
 
   line {
-    font-family: \00003105;
+    font-family: \00003112;
   }
 }
 
@@ -323,7 +340,7 @@
   }
 
   line {
-    font-family: \00003109;
+    font-family: \00003116;
   }
 }
 
@@ -337,7 +354,7 @@
   }
 
   line {
-    font-family: \00003113;
+    font-family: \00003120;
   }
 }
 
@@ -351,7 +368,7 @@
   }
 
   line {
-    font-family: \00003117;
+    font-family: \00003124;
   }
 }
 
@@ -365,7 +382,7 @@
   }
 
   line {
-    font-family: \00003129;
+    font-family: \00003136;
   }
 }
 

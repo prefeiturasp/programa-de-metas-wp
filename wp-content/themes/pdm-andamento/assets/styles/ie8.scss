@@ -26,6 +26,18 @@
 
 .header {
 	position: relative;
+
+	.title-bar {
+		padding: 30px;
+		> div > a {
+			padding: 30px;
+			display: block;
+			background: url(../assets/images/logo-programa-de-metas.png) no-repeat center top transparent;
+			img {
+				display: none;
+			}
+		}
+	}
 }
 
 #filter-options {
@@ -36,28 +48,50 @@
 		background-color: transparent;
 	}
 
-	h3 {
-		padding: 10px 0;
-		text-align: center;
-	}
-	select,
-	#input_cep
-	{
-		width: 90%;
-		padding: 20px 5;
-		margin-left: 10px;
-	}
-
-	.button {
-		padding: 20px 5;
-	}
-
-	.projetos-por-perto, .metas-por-objetivo {
+	 .projetos-por-perto, .metas-por-objetivo {
 		height: 170px;
-	}
+
+		h3 {
+			padding: 10px 0;
+			text-align: center;
+		}
+		select,
+		#input_cep
+		{
+			width: 90%;
+			margin-left: 10px;
+			border-width: 7px 0;
+			border-color: #7dac33;
+			border-style: solid;
+		}
+
+		.button {
+			border-width: 7px 0;
+			border-color: #6E982D;
+			border-style: solid;
+		}
+	 	
+	 }
+
+	 .metas-por-objetivo {
+
+	 	select {
+	 		border-color: #0e97a3;
+	 	}
+
+		.button {
+			border-color: #0C818C;
+		}
+
+	 }
 
 	.nao-sabe-cep {
 		padding: 10px 0;
+	}
+
+	.ou {
+		left: 96%;
+		border: 5px solid #fff;
 	}
 
 }

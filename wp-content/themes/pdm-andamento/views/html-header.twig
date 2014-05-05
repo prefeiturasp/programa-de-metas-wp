@@ -11,14 +11,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <!--[if lt IE 9]>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-            <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
-            <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
-            <link rel="stylesheet" href="{{site.theme.link}}/styles/ie8.css">
-        <![endif]-->
-
         {% if page_title == "" %}
             <title>{{wp_title}}</title>
             <meta property="og:title" content="{{wp_title}}"/>
@@ -26,8 +18,6 @@
             <title>{{page_title}} - {{wp_title}}</title>
             <meta property="og:title" content="{{page_title}} - {{wp_title}}"/>
         {% endif %}
-
-
 
         <meta property="og:url" content="{{site.url}}/"/>
         <meta property="og:image" content="{{site.theme.link}}/assets/images/logo_SHARE_FACEBOOK.png"/>
@@ -44,5 +34,14 @@
         {{function('wp_head')}}
 
         <script src="{{site.theme.link}}/assets/bower_components/modernizr/modernizr.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+            <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+            <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+            <link rel="stylesheet" href="{{site.theme.link}}/styles/ie8.css">
+        <![endif]-->
+
 
     </head>

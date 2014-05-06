@@ -1,3 +1,5 @@
+{% set selected = subprefeitura %}
 {% for subprefeitura in subprefeituras %}
-<option value="{{subprefeitura.id}}">{{subprefeitura.name}}</option>
+<option value="{{subprefeitura.id}}" {% if subprefeitura.id == selected %}selected{% endif %}>{{subprefeitura.name}}</option>
 {% endfor %}
+

@@ -1,3 +1,4 @@
+{% set selected = objetivo %}
 {% for objetivo in objetivos %}
-<option value="{{objetivo.id}}">{{objetivo.name}}</option>
+<option value="{{objetivo.id}}" {% if objetivo.id == selected %}selected{% endif %}>{{objetivo.name}}</option>
 {% endfor %}

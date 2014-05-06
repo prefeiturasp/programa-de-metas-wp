@@ -5,7 +5,7 @@ define(['jquery', 'foundation'], function ($) {
     var docElem = document.documentElement,
 
         _animateHeader = function () {
-            //var shrinkHeader2 = $('.fixed.header').height()+$('.filter-bar').height()-$('#f1_container').height();
+            var shrinkHeader2 = $('.fixed.header').height()+$('.filter-bar').height()-$('#f1_container').height();
 
             $('.filter-bar').css('padding-top', $('.header.fixed').height())
 
@@ -95,6 +95,15 @@ define(['jquery', 'foundation'], function ($) {
                 o = this;
                 _metaFollow(e,o);
             });
+
+            $('.topo a','#footer').on('click',function(){
+                var body = $("html, body");
+                body.animate({scrollTop:0}, 2000, 'swing');
+            })
+
+            $('.clear-form').on('click',function(){
+                $('#filtros-disponiveis select option:selected').removeAttr('selected');
+            })
 
             // $('button','.mobile-disclaimer').on('click', function (event) {
             //     $('.mobile-disclaimer').hide();

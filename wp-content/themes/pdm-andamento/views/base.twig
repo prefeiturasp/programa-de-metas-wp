@@ -300,7 +300,7 @@
                                 <div class="small-12 medium-2 columns">
                                     <label class="first-input">
                                     <select name="subprefeitura">
-                                    <option value="">subprefeitura</option>
+                                    <option value="" selected>subprefeitura</option>
                                     {% include 'partials/_options-subprefeituras.twig' %}
                                     </select>
                                     </label>
@@ -308,7 +308,7 @@
                                 <div class="small-12 medium-2 columns">
                                     <label class="first-input">
                                     <select name="objetivo">
-                                    <option value="">objetivo</option>
+                                    <option value="" selected>objetivo</option>
                                     {% include 'partials/_options-objetivos.twig' %}
                                     </select>
                                     </label>
@@ -316,7 +316,7 @@
                                 <div class="small-12 medium-2 columns">
                                     <label class="first-input">
                                     <select name="secretaria">
-                                    <option value="">secretaria</option>
+                                    <option value="" selected>secretaria</option>
                                     {% include 'partials/_options-secretarias.twig' %}
                                     </select>
                                     </label>
@@ -324,12 +324,12 @@
                                 <div class="small-12 medium-2 columns">
                                     <label class="first-input">
                                     <select name="status">
-                                    <option value="">situação</option>
-                                    <option value="1">não iniciada</option>
-                                    <option value="2">em andamento</option>
-                                    <option value="3">já beneficiam a população</option>
-                                    <option value="4">concluída</option>
-                                    <option value="5">superadas</option>
+                                    <option value="" selected>situação</option>
+                                    <option value="1" {% if status == 1 %}selected{% endif %}>não iniciada</option>
+                                    <option value="2" {% if status == 2 %}selected{% endif %}>em andamento</option>
+                                    <option value="3" {% if status == 3 %}selected{% endif %}>já beneficiam a população</option>
+                                    <option value="4" {% if status == 4 %}selected{% endif %}>concluída</option>
+                                    <option value="5" {% if status == 5 %}selected{% endif %}>superadas</option>
                                     </select>
                                     </label>
                                 </div>
@@ -337,7 +337,7 @@
                                     <button type="submit" class="button round tiny filter"><i class="icon-filter-black"></i> Filtrar</button>
                                 </div>
                                 <div class="small-12 medium-1 columns end">
-                                    <button class="button round tiny" type="reset">x Limpar</button>
+                                    <button class="clear-form button round tiny" type="button">x Limpar</button>
                                 </div>
                             </div>
                         </div>

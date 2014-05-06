@@ -13,6 +13,12 @@ class PaginaInicial
         $context['objetivos'] = $api->getObjetivos();
         $context['secretarias'] = $api->getSecretarias();
 
+        $context['subprefeitura'] = $_GET['subprefeitura'];
+        $context['objetivo'] = $_GET['objetivo'];
+        $context['secretaria'] = $_GET['secretaria'];
+        $context['status'] = $_GET['status'];
+
+
         $context['total_metas'] = count($context['metas']);
 
         if (count($_GET) > 0) {
@@ -20,7 +26,7 @@ class PaginaInicial
 
             if (!empty($_GET['subprefeitura'])) {
                 foreach ($context['subprefeituras'] as $key => $value) {
-                    if ($value['id']==$_GET['subprefeitura']) {
+                    if ($value['id']==$context['subprefeitura']) {
                         $name = $value['name'];
                     }
                 }

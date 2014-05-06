@@ -1432,4 +1432,36 @@ $cinza-padrao: #666;
     }
 }
 
+#footer {
+    background-color: #2f2f2f;
+    font-family: "TinosItalic", sans-serif;
+    font-size: 12px;
+    color: #999999;
+    // max-width: 
 
+    .footer-content {
+
+        > div {
+            padding: rem-calc(5) 0;
+        }
+
+        .valid-until {
+            color: #fff;
+        }
+
+
+        .topo {
+            padding: 0;
+            overflow: hidden;
+            a {
+                padding: rem-calc(11);
+                background-color: #434242;
+                display: block;
+            }
+        }
+        
+    }
+
+
+    
+}

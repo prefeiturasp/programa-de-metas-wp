@@ -23,20 +23,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-filter-arrow-left:before {
-    content: "\e61f";
+.icon-cc:before {
+    content: "\e621";
 }
-.icon-filter-arrow-right:before {
-    content: "\e620";
+.icon-arrow-up:before {
+    content: "\e622";
 }
-.icon-share-arrow:before {
-    content: "\e61c";
-}
-.icon-refresh:before {
-    content: "\e61d";
-}
-.icon-email-envelope:before {
-    content: "\e61e";
+.icon-lock:before {
+    content: "\e623";
 }
 .icon-transporte:before {
     content: "\e600";
@@ -121,4 +115,19 @@
 }
 .icon-arrow-l:before {
     content: "\e61b";
+}
+.icon-share-arrow:before {
+    content: "\e61c";
+}
+.icon-refresh:before {
+    content: "\e61d";
+}
+.icon-email-envelope:before {
+    content: "\e61e";
+}
+.icon-filter-arrow-right:before {
+    content: "\e620";
+}
+.icon-filter-arrow-left:before {
+    content: "\e61f";
 }

@@ -4304,3 +4304,79 @@
 .projeto table tfoot tr td {
   border-top: 1px dashed #999 !important;
 }
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031435;
+  }
+}
+
+#footer {
+  background-color: #2f2f2f;
+  font-family: "TinosItalic", sans-serif;
+  font-size: 12px;
+  color: #999999;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031444;
+  }
+}
+
+#footer .footer-content > div {
+  padding: 0.3125rem 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031448;
+  }
+}
+
+#footer .footer-content .valid-until {
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031453;
+  }
+}
+
+#footer .footer-content .topo {
+  padding: 0;
+  overflow: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031456;
+  }
+}
+
+#footer .footer-content .topo a {
+  padding: 0.6875rem;
+  background-color: #434242;
+  display: block;
+}

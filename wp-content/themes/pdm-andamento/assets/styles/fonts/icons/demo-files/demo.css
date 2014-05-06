@@ -130,7 +130,7 @@ p {
 .clearfix:after {
 	clear: both;
 }
-.noLiga-true {
+.hidden-true {
 	display: none;
 }
 .textbox0 {

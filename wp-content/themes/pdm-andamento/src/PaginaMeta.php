@@ -26,6 +26,24 @@ class PaginaMeta extends Pagina
         $context['articulacoes'] = $api->getArticulacoes();
         $context['tipos_projeto'] = $api->getTiposProjeto();
 
+        $selos_links = array(
+            'agenda-pop-rua'        => 'https://saopauloaberta.prefeitura.sp.gov.br',
+            'historia-africa'       => 'https://saopauloaberta.prefeitura.sp.gov.br',
+            'juventude-viva'        => 'https://saopauloaberta.prefeitura.sp.gov.br',
+            'sp-aberta'             => 'https://saopauloaberta.prefeitura.sp.gov.br',
+            'sp-carinhosa'          => 'https://saopauloaberta.prefeitura.sp.gov.br',
+            'sp-mais-inclusiva'     => 'https://saopauloaberta.prefeitura.sp.gov.br'
+            );
+
+        $transvs = split(',',$context['meta'][transversalidade]);
+        $context['transversalidade'] = array();
+
+        foreach ($transvs as $transv) {
+            $context['transversalidade'][$transv] = array(
+                trim($transv) , $selos_links[trim($transv)]
+            );
+        }
+
         $context['meta_grouped'] = $api->metas_agrupadas;
 
         //$context['fases_projeto'] = $api->getFasesPorTipoProjeto($context['meta']['projects'][0]['project_type']);

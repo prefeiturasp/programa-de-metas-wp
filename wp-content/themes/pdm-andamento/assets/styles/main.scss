@@ -1122,6 +1122,30 @@ $cinza-padrao: #666;
             }
         }
     }
+    .transversalidade {
+        a {
+            margin-bottom: rem-calc(20);
+            display: block;
+            height: 60px;
+
+            img {
+                position: absolute;
+            }
+
+            img.over {
+                display: none;
+            }
+
+            &:hover {
+                .out {
+                    display: none !important;
+                }
+                .over {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 .projeto {
     .box {

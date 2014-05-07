@@ -27,12 +27,12 @@ class PaginaMeta extends Pagina
         $context['tipos_projeto'] = $api->getTiposProjeto();
 
         $selos_links = array(
-            'agenda-pop-rua'        => 'https://saopauloaberta.prefeitura.sp.gov.br',
-            'historia-africa'       => 'https://saopauloaberta.prefeitura.sp.gov.br',
-            'juventude-viva'        => 'https://saopauloaberta.prefeitura.sp.gov.br',
-            'sp-aberta'             => 'https://saopauloaberta.prefeitura.sp.gov.br',
-            'sp-carinhosa'          => 'https://saopauloaberta.prefeitura.sp.gov.br',
-            'sp-mais-inclusiva'     => 'https://saopauloaberta.prefeitura.sp.gov.br'
+            'agenda-pop-rua'        => 'http://www.prefeitura.sp.gov.br/cidade/secretarias/direitos_humanos/poprua/',
+            'historia-africa'       => 'http://www.prefeitura.sp.gov.br/cidade/secretarias/igualdade_racial/',
+            'juventude-viva'        => 'http://www.prefeitura.sp.gov.br/cidade/secretarias/direitos_humanos/juventude/',
+            'sp-aberta'             => 'http://www.saopauloaberta.prefeitura.sp.gov.br/',
+            'sp-carinhosa'          => 'http://www.saopaulocarinhosa.prefeitura.sp.gov.br/',
+            'sp-mais-inclusiva'     => 'http://saopaulomaisinclusiva.prefeitura.sp.gov.br/'
             );
 
         $transvs = split(',',$context['meta'][transversalidade]);

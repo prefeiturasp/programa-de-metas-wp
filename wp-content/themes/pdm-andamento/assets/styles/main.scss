@@ -126,6 +126,8 @@ $vermelho: #eb2851;
                     font-size: rem-calc(14);
                     color: #cccccc;
                     font-family: 'TinosItalic', sans-serif;
+                    background-color: transparent;
+
                     .subject {
                         font-size: rem-calc(12);
                         color: #fff;
@@ -136,6 +138,49 @@ $vermelho: #eb2851;
                     .date {
                         font-weight: bold;
                     }
+                }
+            }
+        }
+
+        .ticker-wrapper.has-js,
+        .ticker,
+        .ticker-title,
+        .ticker-content,
+        .ticker-swipe,
+        .ticker-swipe span,
+        .no-js-news {
+            background-color: #4A4949;
+        }
+
+        .ticker-wrapper.has-js {
+            border-radius: 0;
+            margin: 0;
+            width: auto;
+
+            .ticker {
+                border: medium none;
+                width: 545px;
+
+                .ticker-content {
+                    font-family: "TinosItalic",sans-serif;
+                    font-size: rem-calc(16);
+                    font-weight: normal;
+                    padding: rem-calc(4) 0 0;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                .ticker-swipe {
+                }
+
+                .ticker-title {
+                    font-family: "TinosItalic",sans-serif;
+                    font-size: rem-calc(12);
+                    color: #fff;
+                    font-family: 'Montserrat', sans-serif;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -985,7 +1030,7 @@ $cinza-padrao: #666;
                 width: 205px;
 
                 &:before {
-                    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #999999;
+                    border-color: transparent transparent #999999;
                     border-style: solid;
                     border-width: 7px;
                     content: "";

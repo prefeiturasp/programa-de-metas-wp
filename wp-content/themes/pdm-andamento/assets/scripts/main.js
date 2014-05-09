@@ -5,7 +5,8 @@ require.config({
         //leaflet: '../bower_components/leaflet/src/Leaflet',
         leaflet: "//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet",
         foundation: '../bower_components/foundation/js/foundation',
-        polyfil: '../bower_components/REM-unit-polyfill-master/js/rem.min'
+        polyfil: '../bower_components/REM-unit-polyfill-master/js/rem.min',
+        ticker: '../bower_components/jQuery-News-Ticker/includes/jquery.ticker'
     },
     shim: {
         d3: {
@@ -19,11 +20,14 @@ require.config({
         },
         polyfil: {
             exports: 'polyfil'
+        },
+        ticker: {
+            deps: ['jquery']
         }
     }
 });
 
-require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'polyfil'], function (chart, map, app, $, buscaPorCep) {
+require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'polyfil', 'ticker'], function (chart, map, app, $, buscaPorCep) {
     'use strict';
     // use app here
     app.init();

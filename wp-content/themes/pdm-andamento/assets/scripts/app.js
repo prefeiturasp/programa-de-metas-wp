@@ -105,6 +105,12 @@ define(['jquery', 'foundation'], function ($) {
                 $('#filtros-disponiveis select option:selected').removeAttr('selected');
             })
 
+            $(function () {
+                $('#js-news').ticker({
+                    titleText: 'Últimas notícias'
+                });
+            });
+
             // $('button','.mobile-disclaimer').on('click', function (event) {
             //     $('.mobile-disclaimer').hide();
             // });

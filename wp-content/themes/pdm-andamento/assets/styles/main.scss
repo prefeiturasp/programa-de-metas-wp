@@ -79,6 +79,7 @@ $vermelho: #eb2851;
 
         .news-box {
             background-color: #4a4949;
+            min-height: rem-calc(60);
 
             &:after {
                 right: 100%;
@@ -159,7 +160,7 @@ $vermelho: #eb2851;
 
             .ticker {
                 border: medium none;
-                width: 545px;
+                width: rem-calc(640);
 
                 .ticker-content {
                     font-family: "TinosItalic",sans-serif;
@@ -176,13 +177,18 @@ $vermelho: #eb2851;
                 }
 
                 .ticker-title {
-                    font-family: "TinosItalic",sans-serif;
                     font-size: rem-calc(12);
                     color: #fff;
                     font-family: 'Montserrat', sans-serif;
                     text-transform: uppercase;
                 }
+
             }
+
+            .ticker-controls {
+                display: none;
+            }
+            
         }
     }
 

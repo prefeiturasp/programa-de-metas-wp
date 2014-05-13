@@ -962,6 +962,7 @@ $cinza-padrao: #666;
     }
 
     .detalhes {
+        padding-bottom: rem-calc(20);
         background-color: $primary-color;
 
         .chart-container {
@@ -1083,9 +1084,15 @@ $cinza-padrao: #666;
                 font-size: rem-calc(14);
                 line-height: rem-calc(15);
 
-                &.primeiro {
-                    border-bottom: 1px solid #e4e7e9;
-                }
+                color: #666666;
+                // color: $azul; // Como não são mais links, deixei o cinza.
+                // display: table-cell;
+                display: block;
+                padding: rem-calc(23) 0;
+
+                vertical-align: middle;
+
+                font-family: 'MontserratBold', sans-serif;
 
                 a {
                     color: $azul;
@@ -1094,13 +1101,23 @@ $cinza-padrao: #666;
                     padding: rem-calc(23) 0;
 
                     vertical-align: middle;
-
                     font-family: 'MontserratBold', sans-serif;
 
                     &:hover {
                         color: darken($azul, 5%);
                     }
+
+                    &.primeiro {
+                        border-bottom: 1px solid #e4e7e9;
+                    }
+                    
                 }
+
+
+                &.primeiro {
+                    border-bottom: 1px solid #e4e7e9;
+                }
+
             }
         }
     }
@@ -1504,11 +1521,13 @@ $cinza-padrao: #666;
             font-family: 'Tinos', sans-serif;
             font-size: 12px;
             font-weight: normal;
+            white-space: nowrap;
           }
           td {
             color: #ccc;
             font-size: 13px;
             font-weight: bold;
+            white-space: nowrap;
           }
         }
       }

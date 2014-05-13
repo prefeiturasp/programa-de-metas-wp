@@ -55,7 +55,10 @@
             </div>
             <div class="box small-12 medium-4 columns" data-equalizer-watch>
                 <h3>subprefeitura</h3>
-                <p class="descricao">{{projeto.prefectures[0].name}}</p>
+                <p class="descricao">
+                    {% for subprefeitura in projeto.prefectures %}
+                        {{subprefeitura.name}}{% if loop.index < loop.length %}, {% endif %}
+                    {% endfor %}
             </div>
             <div class="box small-12 medium-4 columns" data-equalizer-watch>
                 <h3>distrito</h3>

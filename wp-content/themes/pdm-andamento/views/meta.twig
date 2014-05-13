@@ -63,16 +63,20 @@
                                 <div class="chart-render chart-container" id="chart-qualy-main" data-chart="{&quot;type&quot;:&quot;pie&quot;,&quot;size&quot;:&quot;large&quot;,&quot;values&quot;:[{{meta.porcentagem.concluido}},{{meta.porcentagem.restante}}]}"></div>
                             {% endif %}
                             <div class="status">
-                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format(1, ',', '.')}}%</a></p>
                                 <p class="descricao"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.status}}</a></p>
+                                <p class="porcentagem"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.porcentagem.concluido|number_format(1, ',', '.')}}%</a></p>
                             </div>
+                            <a href="http://planejasampa.prefeitura.sp.gov.br/metas/metodologia/#grafico" target="_blank" class="findout">
+                                ?
+                                <span>Entenda como é feito este cálculo</span>
+                            </a>
                         </div>
                     </div>
                     <div class="medium-8 columns">
                         <div class="chamadas">
                             <ul>
-                                <li class="primeiro"><a href="{{site.url}}/meta/{{meta.id}}">{{meta.qualitative_progress_1}}</a></li>
-                                <li><a href="{{site.url}}/meta/{{meta.id}}">{{meta.qualitative_progress_2}}</a></li>
+                                <li class="primeiro">{{meta.qualitative_progress_1}}</li>
+                                <li>{{meta.qualitative_progress_2}}</li>
                             </ul>
                         </div>
                     </div>

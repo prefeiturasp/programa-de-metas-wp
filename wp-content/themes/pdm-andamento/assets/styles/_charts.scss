@@ -111,10 +111,13 @@
     margin-bottom: 10px;
     padding: 0 5px !important;
   }
-  .chevron-bar {
+  .chevron-bar, 
+  li i.square
+  {
     position: relative;
     height: 16px;
     margin-bottom: 26px;
+    display: block;
     background: #e6e6e6;
         -ms-transform: skew(30deg, 0);
     -webkit-transform: skew(30deg, 0);
@@ -164,18 +167,30 @@
         i.square {
             display: inline-block;
             background-color: #e6e6e6;
-            height: rem-calc(30);
+            height: rem-calc(16);
             width: rem-calc(30);
 
 
             &.light {
               background-color: #e6e6e6;
+
+              &:after {
+                background-color: #e6e6e6;
+              }
             }
             &.color-border {
               background-color: $verde;
+
+              &:after {
+                background-color: $verde;
+              }
             }
             &.color-border-light {
               background-color: lighten($verde, 20%);
+
+              &:after {
+                background-color: lighten($verde, 20%);
+              }
             }
         }
     }

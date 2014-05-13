@@ -23,3 +23,6 @@
 
 $context = Pdm\PaginaMeta::get_context(get_query_var('meta_id'));
 Timber::render('meta.twig', $context);
+
+
+$print_r($context);

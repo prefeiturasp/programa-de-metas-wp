@@ -1,4 +1,4 @@
-define(['jquery', 'foundation'], function ($) {
+define(['jquery', 'list', 'foundation'], function ($,List) {
     //Do setup work here
 
     'use strict';
@@ -65,7 +65,21 @@ define(['jquery', 'foundation'], function ($) {
             return false;
 
         },
+        _metaFilter = function () {
 
+            var options = {valueNames: [ 'project', 'subprefecture', 'status' ] };
+            var projectsList = new List('list-filter',options);
+
+            $('#list-filter select').on('change',function(){
+                $('#list-filter select').not(this).val('');
+                projectsList.search(this.value);
+
+                $('#list-filter select').removeClass('active');
+                if (this.value.length) $(this).addClass('active');
+
+            })
+
+        },
         getFullHeight = function () {
             return $(document).height() - $(window).height();
         },
@@ -126,6 +140,10 @@ define(['jquery', 'foundation'], function ($) {
 
             if (matchMedia(Foundation.media_queries.small).matches) {
                 return false;
+            }
+
+            if (document.body.className.indexOf('meta') > -1) {
+                _metaFilter();
             }
             
             _onScroll();

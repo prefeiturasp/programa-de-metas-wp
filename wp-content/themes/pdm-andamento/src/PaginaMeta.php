@@ -35,7 +35,7 @@ class PaginaMeta extends Pagina
             'sp-mais-inclusiva'     => 'http://saopaulomaisinclusiva.prefeitura.sp.gov.br/'
             );
 
-        $transvs = split(',',$context['meta'][transversalidade]);
+        $transvs = split(',',$context['meta']['transversalidade']);
         $context['transversalidade'] = array();
 
         foreach ($transvs as $transv) {
@@ -45,6 +45,13 @@ class PaginaMeta extends Pagina
         }
 
         $context['meta_grouped'] = $api->metas_agrupadas;
+
+        foreach ($context['meta']['projects'] as $key => $value) {
+
+            $progresso = $api->getProjetoProgresso($value['id']);
+            $fases_projeto = $api->getFasesPorTipoProjeto($value['id']);
+            $context['meta']['projects'][$key]['status'] = $api->getProjetoStatus($progresso, $fases_projeto, $value['project_type'], $value['goal_id']);
+        }
 
         //$context['fases_projeto'] = $api->getFasesPorTipoProjeto($context['meta']['projects'][0]['project_type']);
         $context['progresso'] = $api->getMetaProgresso($meta_id);

@@ -1135,6 +1135,12 @@ $cinza-padrao: #666;
         &#list-projects {
             height: 400px;
             overflow: scroll;
+            width: 100%;
+            li {
+                p {
+                    display: none;
+                }
+            }
         }
 
         li {
@@ -1210,6 +1216,20 @@ $cinza-padrao: #666;
                 }
                 .over {
                     display: block;
+                }
+            }
+        }
+    }
+    #list-filter {
+
+        select {
+
+            &.active {
+                background-color: #DDD;
+                // color: #FFF;
+                option {
+                    color: #999;
+                    background-color: #FFF;
                 }
             }
         }

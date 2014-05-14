@@ -266,14 +266,56 @@
                 <div class="map-render" id="map-projects" style="height:400px;" data-source="#list-projects"></div>
             </div>
 
-            <div class="small-12 medium-6 columns box" data-equalizer-watch>
-                <ul id="list-projects">
+            <div id="list-filter" class="small-12 medium-6 columns box" data-equalizer-watch>
+                <div class="row">
+
+                    <div class="columns small-12 medium-6">
+                        <select class="subprefeitura">
+                            <option value="">Subprefeitura</option>
+                            {% for subprefeitura in subprefeituras %}
+                            <option value="{{subprefeitura.name}}">{{subprefeitura.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="columns small-12 medium-6">
+                        <select name="status">
+                            <option value="" selected>Situação</option>
+                            <option value="não iniciada">não iniciada</option>
+                            <option value="em andamento">em andamento</option>
+                            <option value="já beneficiam a população">já beneficiam a população</option>
+                            <option value="concluída">concluída</option>
+                            <option value="superadas">superadas</option>
+                        </select>
+                    </div>
+
+                    <!-- <input class="search" type="text"></input> -->
+                    
+                </div>
+                <ul id="list-projects" class="list">
                     {% for projeto in meta.projects %}
                     {% if projeto.gps_lat != "" and projeto.gps_lat != 0 %}
                         {% set gps = 'data-latlng="' ~ projeto.gps_lat  ~ ',' ~ projeto.gps_long ~ '"' %}
                     {% endif %}
 
-                    <li class="small-12 columns"><a href="{{site.url}}/projeto/{{projeto.id}}" {{gps}}><i class="icon-arrow-r-bold"></i> {{projeto.name}}</a></li>
+                    <li class="small-12 columns">
+                        <a href="{{site.url}}/projeto/{{projeto.id}}" {{gps}}>
+                            <i class="icon-arrow-r-bold"></i> 
+                            <em class="project">{{projeto.name}}</em>
+                            <p class="data">
+                                <i class="subprefecture">
+                                    {% for subpref in projeto.prefectures %}
+                                        {{subpref.name}},
+                                    {% endfor %}
+                                </i>
+                                <i class="status">
+                                    {{projeto.status.descricao}}
+                                    {#% for status in projeto.status %}
+                                        {{status.descricao}},
+                                    {% endfor %#}
+                                </i>
+                            </p>
+                        </a>
+                    </li>
                     {% endfor %}
                 </ul>
             </div>

@@ -12,17 +12,17 @@ class PaginaInicial
         $context['subprefeituras'] = $api->getSubPrefeituras();
         $context['objetivos'] = $api->getObjetivos();
         $context['secretarias'] = $api->getSecretarias();
-        // $context['eixos'] = $api->getEixos();
-        // $context['articulacoes'] = $api->getArticulacoes();
+        $context['eixos'] = $api->getEixos();
+        $context['articulacoes'] = $api->getArticulacoes();
         // $context['labels'] = $api->getLabels();
 
         $context['subprefeitura'] = $_GET['subprefeitura'];
         $context['objetivo'] = $_GET['objetivo'];
         $context['secretaria'] = $_GET['secretaria'];
         $context['status'] = $_GET['status'];
-        // $context['eixos'] = $_GET['eixos'];
-        // $context['articulacoes'] = $_GET['articulacoes'];
-        // $context['labels'] = $_GET['labels'];
+        $context['eixo'] = $_GET['eixo'];
+        $context['articulacao'] = $_GET['articulacao'];
+        $context['selo'] = $_GET['selo'];
 
 
         $context['total_metas'] = count($context['metas']);

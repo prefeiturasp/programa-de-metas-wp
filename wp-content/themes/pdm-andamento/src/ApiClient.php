@@ -106,6 +106,12 @@ class ApiClient
         return $response->json();
     }
 
+    public function getSelos()
+    {
+        $response = $this->fazerRequisicao('labels');
+        return $response->json();
+    }
+
     public function getProjeto($id)
     {
         $response = $this->fazerRequisicao('project/'.$id);

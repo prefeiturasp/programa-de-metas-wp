@@ -613,6 +613,7 @@ $vermelho: #eb2851;
     }
 }
 #f1_container {
+    transition: min-height .5s;
     box-shadow: 4px 4px 15px rgba(#000,.4);
 
     .faixas {

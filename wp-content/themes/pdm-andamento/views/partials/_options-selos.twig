@@ -1,0 +1,4 @@
+{% set selected = selo %}
+{% for selo in selos %}
+<option value="{{selo.id}}" {% if selo.id == selected %}selected{% endif %}>{{selo.name}}</option>
+{% endfor %}

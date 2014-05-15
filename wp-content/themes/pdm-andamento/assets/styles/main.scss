@@ -655,8 +655,15 @@ $vermelho: #eb2851;
         // border-left: 1px solid #dbdee0;
         // border-right: 1px solid #dbdee0;
 
+        .advanced-filters {
+            border-top: rem-calc(2) solid #F1F1F1;
+            margin-top: rem-calc(8);
+            padding-top: rem-calc(5);
+        }
+
         label {
             border-left: 1px solid #dbdee0;
+            outline: 0px none;
         }
 
         p {
@@ -761,9 +768,18 @@ $vermelho: #eb2851;
 #f1_container {
     background-color: #fff;
     min-height: 58px;
-  position: relative;
-  width: 100%;
-  z-index: 11;
+    position: relative;
+    width: 100%;
+    z-index: 11;
+    overflow: hidden;
+
+    &.advanced {
+        min-height: 115px;
+
+        .column-button {
+            display: none;
+        }
+    }
 }
 #f1_container {
   perspective: 1000;

@@ -50,6 +50,7 @@ class PaginaMeta extends Pagina
 
             $progresso = $api->getProjetoProgresso($value['id']);
             $fases_projeto = $api->getFasesPorTipoProjeto($value['id']);
+
             $context['meta']['projects'][$key]['status'] = $api->getProjetoStatus($progresso, $fases_projeto, $value['project_type'], $value['goal_id']);
         }
 

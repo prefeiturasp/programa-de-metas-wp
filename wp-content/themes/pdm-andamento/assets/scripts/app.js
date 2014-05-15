@@ -66,6 +66,7 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
 
         },
         _metaFilter = function () {
+            console.log('oi');
 
             var options = {valueNames: [ 'project', 'subprefecture', 'status' ] };
             var projectsList = new List('list-filter',options);
@@ -77,7 +78,14 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
                 $('#list-filter select').removeClass('active');
                 if (this.value.length) $(this).addClass('active');
 
+                // if (!$('#list-projects li:visible').length) {
+
+                // }
             })
+
+            // projectsList.on('search',function(){
+            //     console.log('oioioi');
+            // })
 
         },
         getFullHeight = function () {

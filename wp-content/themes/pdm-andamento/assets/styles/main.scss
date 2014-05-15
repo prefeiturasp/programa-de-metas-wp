@@ -700,6 +700,21 @@ $vermelho: #eb2851;
                 top: 11px;
             }
         }
+        .column-button {
+          padding: 0;
+        }
+        .advanced-toggle {
+
+            i {
+
+                &:before {
+                    font-size: 5px;
+                    margin-right: 5px;
+                }
+            }
+
+        }
+
     }
 }
 
@@ -776,8 +791,18 @@ $vermelho: #eb2851;
     &.advanced {
         min-height: 115px;
 
-        .column-button {
+        .basic-filters .column-button {
             display: none;
+        }
+
+        .advanced-toggle i:before {
+            transform: rotateX(180deg);
+            -webkit-transform: rotate(180deg);
+               -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                 -o-transform: rotate(180deg);
+            display: inline-block;
+            height: 3px;
         }
     }
 }

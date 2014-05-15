@@ -133,6 +133,10 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
                 });
             });
 
+            $('.advanced-toggle').on('click',function(){
+                $('#f1_container').toggleClass('advanced');
+            })
+
             // $('button','.mobile-disclaimer').on('click', function (event) {
             //     $('.mobile-disclaimer').hide();
             // });

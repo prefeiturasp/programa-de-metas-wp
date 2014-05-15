@@ -92,7 +92,9 @@
                 </div>
                 <div class="row">
                 {% if
-                    ((projeto.qualitative_progress_3  == "") and
+                    ((projeto.qualitative_progress_1  == "") and
+                    (projeto.qualitative_progress_2  == "") and
+                    (projeto.qualitative_progress_3  == "") and
                     (projeto.qualitative_progress_4  == "") and
                     (projeto.qualitative_progress_5  == "") and
                     (projeto.qualitative_progress_6  == ""))
@@ -102,6 +104,17 @@
                     </div>
                 {% endif %}
 
+                {% if projeto.qualitative_progress_1 != "" %}
+                    <div class="small-6 columns small-centered text-center andamento">
+                        <h5>{{projeto.qualitative_progress_1}}</h5>
+                    </div>
+                {% endif %}
+
+                {% if projeto.qualitative_progress_2 != "" %}
+                    <div class="small-6 columns small-centered text-center andamento">
+                        <h5>{{projeto.qualitative_progress_2}}</h5>
+                    </div>
+                {% endif %}
 
                 {% if projeto.qualitative_progress_3 != "" %}
                     <div class="small-6 columns small-centered text-center andamento">

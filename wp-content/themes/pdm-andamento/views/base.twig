@@ -299,7 +299,7 @@
                     <div class="row">
                         <div class="filtrar-todas-as-metas  small-12 columns text-center">
                         <form name="filtros-disponiveis" id="filtros-disponiveis" method="GET" action="{{site.url}}#resultado">
-                            <div class="row">
+                            <div class="row basic-filters">
                                 <div class="small-12 medium-1 columns">
                                     <p>Filtros:</p>
                                 </div>
@@ -339,16 +339,14 @@
                                     </select>
                                     </label>
                                 </div>
-                                <!-- <div class="small-12 medium-1 column-button columns">
+                                <div class="small-12 medium-1 column-button columns">
                                     <button type="submit" class="button round tiny filter"><i class="icon-filter-black"></i> Filtrar</button>
                                 </div>
-                                <div class="small-12 medium-1 column-button columns end">
+                                <div class="small-12 medium-1 column-button columns">
                                     <button class="clear-form button round tiny" type="button">x Limpar</button>
-                                </div> -->
+                                </div>
                                 <div class="small-12 medium-1 column-button columns end">
-                                    <button type="submit" class="button round tiny filter"><i class="icon-filter-black"></i> Filtrar</button>
-                                    <button class="clear-form button round tiny" type="button">x Limpar</button>
-                                    <button class="form-advanced button round tiny" type="button"><i class="icon-arrow-d"></i>Mais filtros</button>
+                                    <button class="advanced-toggle button round tiny" type="button"><i class="icon-arrow-d"></i>Mais filtros</button>
                                 </div>
                             </div>
                             <div class="row advanced-filters">
@@ -382,11 +380,14 @@
                                 <div class="hide-for-small-only medium-2 columns">
                                     &nbsp;
                                 </div>
-                                <div class="small-12 medium-1 columns">
+                                <div class="small-12 medium-1 column-button columns">
                                     <button type="submit" class="button round tiny filter"><i class="icon-filter-black"></i> Filtrar</button>
                                 </div>
-                                <div class="small-12 medium-1 columns end">
+                                <div class="small-12 medium-1 column-button columns">
                                     <button class="clear-form button round tiny" type="button">x Limpar</button>
+                                </div>
+                                <div class="small-12 medium-1 column-button columns end">
+                                    <button class="advanced-toggle button round tiny" type="button"><i class="icon-arrow-d"></i>Menos filtros</button>
                                 </div>
                             </div>
                         </div>

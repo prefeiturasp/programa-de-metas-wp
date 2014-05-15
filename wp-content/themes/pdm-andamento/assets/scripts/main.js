@@ -5,7 +5,7 @@ require.config({
         //leaflet: '../bower_components/leaflet/src/Leaflet',
         leaflet: "//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet",
         foundation: '../bower_components/foundation/js/foundation',
-        polyfil: '../bower_components/REM-unit-polyfill-master/js/rem.min',
+        polyfil: '../bower_components/REM-unit-polyfill/js/rem.min',
         ticker: '../bower_components/jQuery-News-Ticker/includes/jquery.ticker',
         list: '../bower_components/list.js/dist/list.min'
     },

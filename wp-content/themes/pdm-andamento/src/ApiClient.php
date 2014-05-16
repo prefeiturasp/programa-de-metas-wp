@@ -274,6 +274,10 @@ class ApiClient
             $filter['articulation'] = $_GET['articulacao'];
         }
 
+        if ($this->validateInput($_GET['selo'])) {
+            $filter['label'] = $_GET['selo'];
+        }
+
         if ($this->validateInput($_GET['status'])) {
             $filter['status'] = $_GET['status'];
         }

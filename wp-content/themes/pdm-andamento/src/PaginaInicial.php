@@ -14,7 +14,7 @@ class PaginaInicial
         $context['secretarias'] = $api->getSecretarias();
         $context['eixos'] = $api->getEixos();
         $context['articulacoes'] = $api->getArticulacoes();
-        // $context['labels'] = $api->getLabels();
+        $context['selos'] = $api->getSelos();
 
         $context['subprefeitura'] = $_GET['subprefeitura'];
         $context['objetivo'] = $_GET['objetivo'];
@@ -30,7 +30,7 @@ class PaginaInicial
         if (count($_GET) > 0) {
             $context['filtros_usados'] = array();
 
-            if (!empty($_GET['subprefeitura'])) {
+            if (!empty($context['subprefeitura'])) {
                 foreach ($context['subprefeituras'] as $key => $value) {
                     if ($value['id']==$context['subprefeitura']) {
                         $name = $value['name'];
@@ -39,7 +39,7 @@ class PaginaInicial
                 $context['filtros_usados'][] = 'Subprefeitura: ' . $name;
             }
 
-            if (!empty($_GET['objetivo'])) {
+            if (!empty($context['objetivo'])) {
                 foreach ($context['objetivos'] as $key => $value) {
                     if ($value['id']==$_GET['objetivo']) {
                         $name = $value['description'];
@@ -48,7 +48,7 @@ class PaginaInicial
                 $context['filtros_usados'][] = 'Objetivo: ' . $name;
             }
 
-            if (!empty($_GET['secretaria'])) {
+            if (!empty($context['secretaria'])) {
                 foreach ($context['secretarias'] as $key => $value) {
                     if ($value['id']==$_GET['secretaria']) {
                         $name = $value['name'];
@@ -57,7 +57,7 @@ class PaginaInicial
                 $context['filtros_usados'][] = 'Secretaria: ' . $name;
             }
 
-            if (!empty($_GET['status'])) {
+            if (!empty($context['status'])) {
                 if (1==$_GET['status']) {
                     $name = 'Não iniciada';
                 } elseif (2==$_GET['status']) {
@@ -69,6 +69,35 @@ class PaginaInicial
                 }
                 $context['filtros_usados'][] = 'Situação: ' . $name;
             }
+
+            if (!empty($context['eixo'])) {
+                foreach ($context['eixos'] as $key => $value) {
+                    if ($value['id']==$context['eixo']) {
+                        $name = $value['name'];
+                    }
+                }
+                $context['filtros_usados'][] = 'Eixo: ' . $name;
+            }
+
+            if (!empty($context['articulacao'])) {
+                foreach ($context['articulacoes'] as $key => $value) {
+                    if ($value['id']==$context['articulacao']) {
+                        $name = $value['name'];
+                    }
+                }
+                $context['filtros_usados'][] = 'Articulação: ' . $name;
+            }
+
+
+            if (!empty($context['selo'])) {
+                foreach ($context['selos'] as $key => $value) {
+                    if ($value['id']==$context['selo']) {
+                        $name = $value['name'];
+                    }
+                }
+                $context['filtros_usados'][] = 'Selo: ' . $name;
+            }
+
         }
 
 

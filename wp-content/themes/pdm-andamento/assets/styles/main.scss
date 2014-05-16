@@ -653,6 +653,9 @@ $vermelho: #eb2851;
         padding-top: rem-calc(5);
         padding-bottom: rem-calc(5);
         background-color: #fff;
+        position: relative;
+        height: rem-calc(50);
+        transition: height 0.5s ease 0s;
         // border-left: 1px solid #dbdee0;
         // border-right: 1px solid #dbdee0;
 
@@ -683,12 +686,28 @@ $vermelho: #eb2851;
             text-transform: uppercase;
             margin-bottom:0;
         }
+        .filter-buttons {
+          position: absolute;
+          right: 0;
+          bottom: 5px;
+        }
         .button {
             margin:0;
             padding: 10px;
             color: #999999;
             border-radius: 10px;
             white-space: nowrap;
+            outline: 0px none;
+
+            &:focus {
+                background-color: transparent;
+                outline: 0px none;
+            }
+
+            &:active {
+                background-color: transparent;
+                outline: 0px none;
+            }
         }
         .button.filter {
             padding-left: 35px;
@@ -700,9 +719,6 @@ $vermelho: #eb2851;
                 position: absolute;
                 top: 11px;
             }
-        }
-        .column-button {
-          padding: 0;
         }
         .advanced-toggle {
 
@@ -789,11 +805,11 @@ $vermelho: #eb2851;
     z-index: 11;
     overflow: hidden;
 
-    &.advanced {
+    &.advanced.shrink2 {
         min-height: 115px;
 
-        .basic-filters .column-button {
-            display: none;
+        .filtrar-todas-as-metas {
+          height: rem-calc(106);
         }
 
         .advanced-toggle i:before {
@@ -1216,6 +1232,16 @@ $cinza-padrao: #666;
         &:hover {
             background-color: darken(#c3c5c6, 20%);
         }
+
+        &:focus {
+            background-color: transparent;
+        }
+
+        &:active {
+            background-color: transparent;
+        }
+
+
     }
 }
 

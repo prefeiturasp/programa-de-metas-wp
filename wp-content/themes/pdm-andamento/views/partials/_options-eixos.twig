@@ -1,4 +1,4 @@
-{% set eixo = selo %}
+{% set selected = eixo %}
 {% for eixo in eixos %}
 <option value="{{eixo.id}}" {% if eixo.id == selected %}selected{% endif %}>{{eixo.name}}</option>
 {% endfor %}

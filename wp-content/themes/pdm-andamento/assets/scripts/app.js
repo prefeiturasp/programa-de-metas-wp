@@ -123,7 +123,7 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
             })
 
             $('.clear-form').on('click',function(){
-                $('#filtros-disponiveis select option:selected').removeAttr('selected');
+                window.location = SITE_URL + '/#resultado';
             })
 
             $(function () {

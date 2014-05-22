@@ -66,7 +66,6 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
 
         },
         _metaFilter = function () {
-            console.log('oi');
 
             var options = {valueNames: [ 'project', 'subprefecture', 'status' ] };
             var projectsList = new List('list-filter',options);
@@ -157,7 +156,7 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
             if (document.body.className.indexOf('meta') > -1) {
                 _metaFilter();
             }
-            
+
             _onScroll();
 
         };

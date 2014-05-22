@@ -289,7 +289,7 @@
                     </div>
 
                     <!-- <input class="search" type="text"></input> -->
-                    
+
                 </div>
                 <ul id="list-projects" class="list">
                     {% for projeto in meta.projects %}
@@ -299,8 +299,8 @@
 
                     <li class="small-12 columns">
                         <a href="{{site.url}}/projeto/{{projeto.id}}" {{gps}}>
-                            <i class="icon-arrow-r-bold"></i> 
-                            <em class="project">{{projeto.name}}</em>
+                            <i class="icon-arrow-r-bold"></i>
+                            <span class="project">{{projeto.name}}</span>
                             <p class="data">
                                 <i class="subprefecture">
                                     {% for subpref in projeto.prefectures %}

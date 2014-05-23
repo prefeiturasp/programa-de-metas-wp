@@ -35,13 +35,16 @@ class PaginaMeta extends Pagina
             'sp-mais-inclusiva'     => 'http://saopaulomaisinclusiva.prefeitura.sp.gov.br/'
             );
 
-        $transvs = split(',',$context['meta']['transversalidade']);
-        $context['transversalidade'] = array();
 
-        foreach ($transvs as $transv) {
-            $context['transversalidade'][$transv] = array(
-                trim($transv) , $selos_links[trim($transv)]
-            );
+        if (!empty($context['meta']['transversalidade'])) {
+            $transvs = split(',', $context['meta']['transversalidade']);
+            $context['transversalidade'] = array();
+
+            foreach ($transvs as $transv) {
+                $context['transversalidade'][$transv] = array(
+                    trim($transv) , $selos_links[trim($transv)]
+                );
+            }
         }
 
         $context['meta_grouped'] = $api->metas_agrupadas;

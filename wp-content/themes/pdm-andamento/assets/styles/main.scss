@@ -1,3 +1,4 @@
+@charset "utf-8";
 // bower:scss
 
 $verde: #97c949;
@@ -59,7 +60,7 @@ $vermelho: #eb2851;
             }
         }
         .disclaimer-content {
-            margin-top: 0.3em; 
+            margin-top: 0.3em;
             p {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 18px;
@@ -188,7 +189,7 @@ $vermelho: #eb2851;
             .ticker-controls {
                 display: none;
             }
-            
+
         }
     }
 
@@ -290,7 +291,7 @@ $vermelho: #eb2851;
         @media screen and (man-width: 640px) {
             font-size: 0;
         }
-    } 
+    }
 
     #resultado {
         p, i {
@@ -318,7 +319,7 @@ $vermelho: #eb2851;
                 border-radius:rem-calc(10);
                 border: rem-calc(2) dotted #fff;
                 background-color:#b6b6b6;
-                margin: 0 0 0 rem-calc(5); 
+                margin: 0 0 0 rem-calc(5);
                 width: 100%;
                 display: inline-block;
                 padding: 0 rem-calc(10);
@@ -340,7 +341,7 @@ $vermelho: #eb2851;
 
             &.col-1 {
                 .destaque-situacao {
-                    margin: 0; 
+                    margin: 0;
                 }
             }
 
@@ -375,7 +376,7 @@ $vermelho: #eb2851;
         padding: 0;
 
         &:hover {
-            .orbit-next, 
+            .orbit-next,
             .orbit-prev {
                 display: block;
             }
@@ -915,7 +916,7 @@ $cinza-padrao: #666;
             font-size: rem-calc(14);
             text-transform: uppercase;
             margin: rem-calc(10) 0 0 0;
-            
+
             @media screen and (min-width: 640px) {
                 margin: rem-calc(10) 0 0 rem-calc(15);
             }
@@ -928,7 +929,7 @@ $cinza-padrao: #666;
             font-family: 'Tinos', sans-serif;
             font-size: rem-calc(14);
             margin: rem-calc(10) 0 0 0;
-            
+
             @media screen and (min-width: 640px) {
                 margin: rem-calc(10) 0 0 rem-calc(15);
             }
@@ -1105,7 +1106,7 @@ $cinza-padrao: #666;
                     position: absolute;
                     top: -14px;
                     width: 0;
-                } 
+                }
             }
 
             &:hover {
@@ -1115,7 +1116,7 @@ $cinza-padrao: #666;
                 }
 
             }
-            
+
 
         }
     }
@@ -1168,7 +1169,7 @@ $cinza-padrao: #666;
                     &.primeiro {
                         border-bottom: 1px solid #e4e7e9;
                     }
-                    
+
                 }
 
 
@@ -1266,27 +1267,36 @@ $cinza-padrao: #666;
     }
     .transversalidade {
         a {
+            background: 0 0 url('../assets/images/transversalidade/off.png') no-repeat transparent ;
             margin-bottom: rem-calc(20);
             display: block;
             height: 60px;
-
-            img {
-                position: absolute;
-            }
-
-            img.over {
-                display: none;
-            }
+            text-indent: -9999px;
 
             &:hover {
-                .out {
-                    display: none !important;
-                }
-                .over {
-                    display: block;
-                }
+                background-image: url('../assets/images/transversalidade/on.png');
             }
         }
+
+        .historia-africa {
+            background-position: 0 0;
+        }
+        .sp-carinhosa {
+            background-position: 0 -60px;
+        }
+        .agenda-pop-rua {
+            background-position: 0 -122px;
+        }
+        .sp-aberta {
+            background-position: 0 -192px;
+        }
+        .juventude-viva {
+            background-position: 0 -252px;
+        }
+        .sp-mais-inclusiva {
+            background-position: 0 -362px;
+        }
+
     }
     #list-filter {
 
@@ -1645,7 +1655,7 @@ $cinza-padrao: #666;
         max-width: rem-calc(1000);
 
         a {
-            color: #999999; 
+            color: #999999;
         }
 
         > div {

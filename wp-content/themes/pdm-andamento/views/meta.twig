@@ -154,12 +154,11 @@
                 <p class="descricao">{{meta.observation}}</p>
             </div>
             <div class="transversalidade small-12 medium-2 columns box" data-equalizer-watch>
+            {% if transversalidade|length > 0 %}
             {% for transver in transversalidade %}
-                <a href="{{transver|last}}" target="_blank">
-                    <img src="{{site.theme.uri}}/assets/images/transversalidade/{{transver|first}}.png" classs="out" alt="{{transver|first}}">
-                    <img src="{{site.theme.uri}}/assets/images/transversalidade/{{transver|first}}-hover.png" class="over" alt="{{transver|first}}">
-                </a>
+                <a href="{{transver|last}}" target="_blank" class="{{transver|first}} botao-selo">{{transver|first}}</a>
             {% endfor %}
+            {% endif %}
             </div>
         </div>
     </div>

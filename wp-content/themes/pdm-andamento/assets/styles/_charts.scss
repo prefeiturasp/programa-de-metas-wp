@@ -111,7 +111,7 @@
     margin-bottom: 10px;
     padding: 0 5px !important;
   }
-  .chevron-bar, 
+  .chevron-bar,
   li i.square
   {
     position: relative;
@@ -169,6 +169,10 @@
             background-color: #e6e6e6;
             height: rem-calc(16);
             width: rem-calc(30);
+
+            &.half {
+                width: rem-calc(15);
+            }
 
 
             &.light {

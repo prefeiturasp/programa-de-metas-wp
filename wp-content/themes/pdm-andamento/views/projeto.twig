@@ -189,8 +189,7 @@
 
 
 
-
-
+{% if (projeto.gps_lat != 0 and projeto.gps_lat != 0) or projeto.address != "" %}
 <div class="row outer-box" data-equalizer>
     <div class="small-12 columns ">
         <div class="small-12 columns">
@@ -208,14 +207,16 @@
                 </div>
                 {% endif %}
 
+                {% if projeto.address != "" %}
                 <div id="project-local">
                     <p data-latlng="{{projeto.gps_lat}},{{projeto.gps_long}}">Endereço: {{projeto.address}}</p>
                 </div>
+                {% endif %}
 
             </div>
         </div>
     </div>
 </div>
-
+{% endif %}
 
 {% endblock %}

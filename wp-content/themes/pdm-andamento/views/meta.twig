@@ -301,13 +301,13 @@
                     <li class="small-12 columns">
                         <a href="{{site.url}}/projeto/{{projeto.id}}" {{gps}}>
                             <i class="icon-arrow-r-bold"></i>
-                            <span class="project">{{projeto.name}}</span> -
+                            <span class="project">{{projeto.name}}</span>
                             <p class="data">
-                                <i class="subprefecture">
+                                <i class="subprefecture"> -
                                     {% for subpref in projeto.prefectures %}
                                         {{subpref.name}},
-                                    {% endfor %}
-                                </i> -
+                                    {% endfor %} -
+                                </i>
                                 <i class="status">
                                     {{projeto.status.descricao}}
                                     {#% for status in projeto.status %}

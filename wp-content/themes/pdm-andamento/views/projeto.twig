@@ -84,13 +84,13 @@
     <div class="small-12 columns ">
         <div class="small-12 columns">
             <div class="small-12 columns box text-center" data-equalizer-watch>
-                <div class="small-12 columns">
-                    <p class="title">
-                        <i class="icon-graph"></i>
-                        <span>andamento qualitativo</span>
-                    </p>
-                </div>
                 <div class="row">
+                    <div class="small-12 columns">
+                        <p class="title">
+                            <i class="icon-graph"></i>
+                            <span>andamento qualitativo</span>
+                        </p>
+                    </div>
                 {% if
                     ((projeto.qualitative_progress_1  == "") and
                     (projeto.qualitative_progress_2  == "") and
@@ -99,43 +99,43 @@
                     (projeto.qualitative_progress_5  == "") and
                     (projeto.qualitative_progress_6  == ""))
                     %}
-                    <div class="small-6 columns small-centered text-center andamento">
+                    <div class="small-12 columns small-centered text-center andamento">
                         <h5>Sem destaques sobre este projeto.</h5>
                     </div>
                 {% endif %}
 
                 {% if projeto.qualitative_progress_1 != "" %}
-                    <div class="small-6 columns small-centered text-center andamento">
+                    <div class="small-6 columns {% if projeto.qualitative_progress_2 == "" %}small-centered{% endif %} text-center andamento">
                         <h5>{{projeto.qualitative_progress_1}}</h5>
                     </div>
                 {% endif %}
 
                 {% if projeto.qualitative_progress_2 != "" %}
-                    <div class="small-6 columns small-centered text-center andamento">
+                    <div class="small-6 columns text-center andamento">
                         <h5>{{projeto.qualitative_progress_2}}</h5>
                     </div>
                 {% endif %}
 
                 {% if projeto.qualitative_progress_3 != "" %}
-                    <div class="small-6 columns small-centered text-center andamento">
+                    <div class="small-6 columns text-center andamento">
                         <h5>{{projeto.qualitative_progress_3}}</h5>
                     </div>
                 {% endif %}
 
                 {% if projeto.qualitative_progress_4 != "" %}
-                <div class="small-6 columns small-centered text-center andamento">
+                <div class="small-6 columns text-center andamento">
                     <h5>{{projeto.qualitative_progress_4}}</h5>
                 </div>
                 {% endif %}
 
                 {% if projeto.qualitative_progress_5 != "" %}
-                <div class="small-6 columns small-centered text-center andamento">
+                <div class="small-6 columns text-center andamento">
                     <h5>{{projeto.qualitative_progress_5}}</h5>
                 </div>
                 {% endif %}
 
                 {% if projeto.qualitative_progress_6 != "" %}
-                <div class="small-6 columns small-centered text-center andamento">
+                <div class="small-6 columns text-center andamento">
                     <h5>{{projeto.qualitative_progress_6}}</h5>
                 </div>
                 {% endif %}

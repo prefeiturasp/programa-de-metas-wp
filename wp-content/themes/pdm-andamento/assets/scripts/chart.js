@@ -1,4 +1,4 @@
-define(['jquery', 'd3'], function ($, ignore) {
+define(['jquery', 'd3'], function ($, d3) {
 
     'use strict';
     var

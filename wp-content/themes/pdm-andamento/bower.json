@@ -4,7 +4,7 @@
   "dependencies": {
     "foundation": "~5.2.1",
     "leaflet": "~0.7.2",
-    "d3js": "*",
+    "d3": "*",
     "requirejs": "~2.1.11",
     "list.js": "1.1.1",
     "jQuery-News-Ticker": "git@github.com:daniloprates/jQuery-News-Ticker.git",

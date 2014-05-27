@@ -55,6 +55,56 @@
         </div>
     </div>
 
+    {% if page_type == 'projetos' %}
+        <div id="projects-header" class="row row-full">
+            <div class="row">
+                <div class="small-12 medium-6 columns">
+                    <h2>Filtragem de Projetos</h2>    
+                </div>
+                <div class="small-12 medium-6 columns">
+                    <a class="button right"><i class="icon-arrow-up"></i> Voltar para a home</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="filtrar-todas-as-metas  small-12 columns text-center">
+            <form name="filtros-disponiveis" id="filtros-disponiveis" method="GET" action="{{site.url}}#resultado">
+                <div class="row">
+                    <div class="columns small-9">
+                        <div class="row basic-filters">
+                            <div class="small-12 medium-1 columns">
+                                <p>Filtros:</p>
+                            </div>
+                            <div class="columns small-12 medium-11">
+                                <div class="small-12 medium-3 columns">
+                                    <label class="first-input">
+                                    <select name="subprefeitura">
+                                    <option value="" selected>subprefeitura</option>
+                                    {% include 'partials/_options-subprefeituras.twig' %}
+                                    </select>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-buttons columns small-3">
+                        <div class="small-12 medium-4 columns">
+                            <button type="submit" class="button round tiny filter"><i class="icon-filter-black"></i> Filtrar</button>
+                        </div>
+                        <div class="small-12 medium-4 columns">
+                            <button class="clear-form button round tiny" type="button">x Limpar</button>
+                        </div>
+                        <div class="small-12 medium-4 columns end">
+                            <button class="advanced-toggle button round tiny" type="button"><i class="icon-arrow-d"></i>Mais filtros</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            </div>
+        </div>
+    {% endif %}
+
     <div class="row">
         <div class="small-12 columns separate-bar {{page_type}}">
             &nbsp;

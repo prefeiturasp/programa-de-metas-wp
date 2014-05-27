@@ -1,0 +1,35 @@
+{% set body_class = "projetos" %}
+{# set page_title = projeto.name ~ " - Projeto" #}
+{% extends 'base.twig' %}
+
+{% block header %}
+{% include "header-simple.twig" with {page_type:"projetos"} %}
+{% endblock %}
+
+{% block content %}
+
+	<div class="row result-container">
+		<div class="row">
+			<div class="medium-1 columns"><i class="icon-arrow-up"></i></div>
+			<div class="medium-11 columns">
+				<h2>CRAS - PARQUE DO CARMO</h2>
+				<p>Secretaria e tal</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="medium-1 columns"><i class="icon-arrow-up"></i></div>
+			<div class="medium-11 columns">
+				<h2>CRAS - PARQUE DO CARMO</h2>
+				<p>Secretaria e tal</p>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="row map-container">
+		<div class="small-12 columns">
+		    <div class="map-render" id="map-local" data-source="#project-local"></div>
+		</div>
+	</div>
+
+{% endblock %}

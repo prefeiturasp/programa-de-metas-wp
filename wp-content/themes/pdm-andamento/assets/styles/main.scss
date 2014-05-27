@@ -36,6 +36,16 @@ $vermelho: #eb2851;
 @import "settings";
 @import "charts";
 // endbower
+
+.row-full {
+    max-width: 100%;
+
+    > .row {
+        max-width: 62.5rem;
+        margin: 0 auto;
+    }
+}
+
 .content-wrapper {
     z-index: 33;
     margin-top: rem-calc(30);
@@ -521,7 +531,7 @@ $vermelho: #eb2851;
 }
 #filter-options {
 
-    max-width: 100%;
+    // max-width: 100%;
     background-color: #12C2D2;
 
     h3 {
@@ -537,11 +547,6 @@ $vermelho: #eb2851;
       height: 160px;
       position: absolute;
       width: 50%;
-    }
-
-    > .row {
-        max-width: 62.5rem;
-        margin: 0 auto;
     }
 
     .projetos-por-perto {
@@ -1246,6 +1251,68 @@ $cinza-padrao: #666;
     }
 }
 
+
+.projetos {
+
+    .header.simple {
+        position: relative;
+        z-index: 9;
+
+        #projects-header {
+            background-color: $verde;
+
+            h2 {
+                font-size: rem-calc(24);
+                color: white;
+                padding: rem-calc(13) 0 0;
+            }
+
+            .button {
+                background-color: darken($verde, 10%);
+                margin: 0;
+                font-size: rem-calc(13);
+            }
+
+        }
+    }
+
+
+    .map-container {
+        position: relative;
+        z-index: 0;
+
+        .map-render {
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 200px;
+        }
+    }
+
+    .result-container {
+
+        background-color: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        right: rem-calc(10);
+        top: rem-calc(215);
+        padding: rem-calc(10);
+        width: rem-calc(300);
+        bottom: rem-calc(50);
+        // position: relative;
+        z-index: 10;
+
+        > .row {
+            background-color: #FFFFFF;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+            margin: 0 0 rem-calc(10);
+            padding: rem-calc(10);
+        }
+
+    }
+
+
+}
 
 
 .meta {

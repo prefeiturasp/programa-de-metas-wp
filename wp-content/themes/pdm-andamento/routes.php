@@ -8,6 +8,29 @@ Timber::add_route('projeto/:id', function ($params) {
     return Pdm\PaginaProjeto::startup($params);
 });
 
+Timber::add_route('projetos', function ($params) {
+
+    return Pdm\PaginaProjetos::startup($params);
+    // if ((empty($_GET['lat'])) || (empty($_GET['long']))) {
+    //     exit;
+    // }
+    // $lat = $_GET['lat'];
+    // $long = $_GET['long'];
+
+    // $subprefeitura = Pdm\PaginaInicial::buscaPorCoordenada($lat, $long);
+
+    // if (count($subprefeitura) > 0) {
+    //     echo ($subprefeitura[0]['id']);
+    // } else {
+    //     echo 0;
+    // }
+    // exit;
+    //return Pdm\PaginaProjeto::startup($params);
+
+    // $query = 'bla=bla';
+    // Timber::load_template('projetos.php', $query);
+});
+
 Timber::add_route('buscaPorCep', function ($params) {
     if ((empty($_GET['lat'])) || (empty($_GET['long']))) {
         exit;

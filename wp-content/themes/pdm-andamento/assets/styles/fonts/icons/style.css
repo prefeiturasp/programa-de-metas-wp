@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-mg7m2y');
-	src:url('fonts/icomoon.eot?#iefix-mg7m2y') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-mg7m2y') format('woff'),
-		url('fonts/icomoon.ttf?-mg7m2y') format('truetype'),
-		url('fonts/icomoon.svg?-mg7m2y#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-r4wkvg');
+	src:url('fonts/icomoon.eot?#iefix-r4wkvg') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-r4wkvg') format('woff'),
+		url('fonts/icomoon.ttf?-r4wkvg') format('truetype'),
+		url('fonts/icomoon.svg?-r4wkvg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,68 +23,68 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-plot_fill:before {
-	content: "\e62b";
-}
-.icon-map_devsoc:before {
+.icon-projects_tecnologia-e-inovacao:before {
 	content: "\e624";
 }
-.icon-map_popido:before {
+.icon-projects_seguranca:before {
 	content: "\e625";
 }
-.icon-map_partra:before {
+.icon-projects_saude:before {
 	content: "\e626";
 }
-.icon-map_dirhum:before {
+.icon-projects_residuos-solidos:before {
 	content: "\e627";
 }
-.icon-map_atecid:before {
+.icon-projects_pessoas-com-deficiencia:before {
 	content: "\e628";
 }
-.icon-map_pesdef:before {
+.icon-projects_participacao-e-transparencia:before {
 	content: "\e629";
 }
-.icon-map_dre:before {
+.icon-projects_mobilidade:before {
 	content: "\e62a";
 }
-.icon-map_mob:before {
+.icon-projects_meio-ambiente:before {
 	content: "\e62c";
 }
-.icon-map_seg:before {
+.icon-projects_populacao-idosa:before {
 	content: "\e62d";
 }
-.icon-map_ressol:before {
+.icon-projects_direitos-humanos-e-cidadania:before {
+	content: "\e62e";
+}
+.icon-projects_habitacao:before {
 	content: "\e62f";
 }
-.icon-map_hab:before {
+.icon-projects_esporte-e-lazer:before {
 	content: "\e630";
 }
-.icon-map_esplaz:before {
+.icon-projects_espacos-publicos:before {
 	content: "\e631";
 }
-.icon-map_meiamb:before {
+.icon-projects_educacao:before {
 	content: "\e632";
 }
-.icon-map_cul:before {
+.icon-projects_drenagem:before {
 	content: "\e633";
 }
-.icon-map_tecino:before {
+.icon-projects_desenvolvimento-urbano:before {
+	content: "\e634";
+}
+.icon-projects_desenvolvimento-social:before {
 	content: "\e635";
 }
-.icon-map_sau:before {
+.icon-projects_desenvolvimento-economico:before {
 	content: "\e636";
 }
-.icon-map_deveco:before {
+.icon-projects_cultura:before {
 	content: "\e637";
 }
-.icon-map_edu:before {
+.icon-projects_atendimento-ao-cidadao:before {
 	content: "\e638";
 }
-.icon-map_esppub:before {
-	content: "\e639";
-}
-.icon-map_devsos:before {
-	content: "\e63a";
+.icon-plot_fill:before {
+	content: "\e62b";
 }
 .icon-transporte:before {
 	content: "\e600";
@@ -95,7 +95,7 @@
 .icon-share:before {
 	content: "\e602";
 }
-.icon-saude:before {
+.icon-saude2:before {
 	content: "\e603";
 }
 .icon-quotation:before {
@@ -125,7 +125,7 @@
 .icon-filter-black:before {
 	content: "\e60c";
 }
-.icon-educacao:before {
+.icon-educacao2:before {
 	content: "\e60d";
 }
 .icon-calendar:before {

@@ -101,8 +101,8 @@
   }
 }
 
-.icon-plot_fill:before {
-  content: "\e62b";
+.icon-projects_tecnologia-e-inovacao:before {
+  content: "\e624";
 }
 
 @media -sass-debug-info {
@@ -115,8 +115,8 @@
   }
 }
 
-.icon-map_devsoc:before {
-  content: "\e624";
+.icon-projects_seguranca:before {
+  content: "\e625";
 }
 
 @media -sass-debug-info {
@@ -129,8 +129,8 @@
   }
 }
 
-.icon-map_popido:before {
-  content: "\e625";
+.icon-projects_saude:before {
+  content: "\e626";
 }
 
 @media -sass-debug-info {
@@ -143,8 +143,8 @@
   }
 }
 
-.icon-map_partra:before {
-  content: "\e626";
+.icon-projects_residuos-solidos:before {
+  content: "\e627";
 }
 
 @media -sass-debug-info {
@@ -157,8 +157,8 @@
   }
 }
 
-.icon-map_dirhum:before {
-  content: "\e627";
+.icon-projects_pessoas-com-deficiencia:before {
+  content: "\e628";
 }
 
 @media -sass-debug-info {
@@ -171,8 +171,8 @@
   }
 }
 
-.icon-map_atecid:before {
-  content: "\e628";
+.icon-projects_participacao-e-transparencia:before {
+  content: "\e629";
 }
 
 @media -sass-debug-info {
@@ -185,8 +185,8 @@
   }
 }
 
-.icon-map_pesdef:before {
-  content: "\e629";
+.icon-projects_mobilidade:before {
+  content: "\e62a";
 }
 
 @media -sass-debug-info {
@@ -199,8 +199,8 @@
   }
 }
 
-.icon-map_dre:before {
-  content: "\e62a";
+.icon-projects_meio-ambiente:before {
+  content: "\e62c";
 }
 
 @media -sass-debug-info {
@@ -213,8 +213,8 @@
   }
 }
 
-.icon-map_mob:before {
-  content: "\e62c";
+.icon-projects_populacao-idosa:before {
+  content: "\e62d";
 }
 
 @media -sass-debug-info {
@@ -227,8 +227,8 @@
   }
 }
 
-.icon-map_seg:before {
-  content: "\e62d";
+.icon-projects_direitos-humanos-e-cidadania:before {
+  content: "\e62e";
 }
 
 @media -sass-debug-info {
@@ -241,7 +241,7 @@
   }
 }
 
-.icon-map_ressol:before {
+.icon-projects_habitacao:before {
   content: "\e62f";
 }
 
@@ -255,7 +255,7 @@
   }
 }
 
-.icon-map_hab:before {
+.icon-projects_esporte-e-lazer:before {
   content: "\e630";
 }
 
@@ -269,7 +269,7 @@
   }
 }
 
-.icon-map_esplaz:before {
+.icon-projects_espacos-publicos:before {
   content: "\e631";
 }
 
@@ -283,7 +283,7 @@
   }
 }
 
-.icon-map_meiamb:before {
+.icon-projects_educacao:before {
   content: "\e632";
 }
 
@@ -297,7 +297,7 @@
   }
 }
 
-.icon-map_cul:before {
+.icon-projects_drenagem:before {
   content: "\e633";
 }
 
@@ -311,8 +311,8 @@
   }
 }
 
-.icon-map_tecino:before {
-  content: "\e635";
+.icon-projects_desenvolvimento-urbano:before {
+  content: "\e634";
 }
 
 @media -sass-debug-info {
@@ -325,8 +325,8 @@
   }
 }
 
-.icon-map_sau:before {
-  content: "\e636";
+.icon-projects_desenvolvimento-social:before {
+  content: "\e635";
 }
 
 @media -sass-debug-info {
@@ -339,8 +339,8 @@
   }
 }
 
-.icon-map_deveco:before {
-  content: "\e637";
+.icon-projects_desenvolvimento-economico:before {
+  content: "\e636";
 }
 
 @media -sass-debug-info {
@@ -353,8 +353,8 @@
   }
 }
 
-.icon-map_edu:before {
-  content: "\e638";
+.icon-projects_cultura:before {
+  content: "\e637";
 }
 
 @media -sass-debug-info {
@@ -367,8 +367,8 @@
   }
 }
 
-.icon-map_esppub:before {
-  content: "\e639";
+.icon-projects_atendimento-ao-cidadao:before {
+  content: "\e638";
 }
 
 @media -sass-debug-info {
@@ -381,8 +381,8 @@
   }
 }
 
-.icon-map_devsos:before {
-  content: "\e63a";
+.icon-plot_fill:before {
+  content: "\e62b";
 }
 
 @media -sass-debug-info {
@@ -437,7 +437,7 @@
   }
 }
 
-.icon-saude:before {
+.icon-saude2:before {
   content: "\e603";
 }
 
@@ -577,7 +577,7 @@
   }
 }
 
-.icon-educacao:before {
+.icon-educacao2:before {
   content: "\e60d";
 }
 

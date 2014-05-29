@@ -1410,6 +1410,21 @@ $cinza-padrao: #666;
                 }
             }
 
+            .small-1 {
+                padding: 0;
+
+                img {
+                    max-width: 28px;
+                }
+            }
+
+            .small-10 {
+
+                &.first {
+                    padding-top: rem-calc(7);
+                }
+            }
+
 
             .green {
                 color: #93d521;

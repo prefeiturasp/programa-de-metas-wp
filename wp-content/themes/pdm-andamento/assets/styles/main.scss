@@ -1322,6 +1322,7 @@ $cinza-padrao: #666;
     .result-container {
         // display: none;
 
+        overflow: auto;
         background-color: rgba(0, 0, 0, 0.2);
         position: fixed;
         right: rem-calc(10);

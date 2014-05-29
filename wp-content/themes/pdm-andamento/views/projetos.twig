@@ -1,5 +1,5 @@
 {% set body_class = "projetos" %}
-{# set page_title = projeto.name ~ " - Projeto" #}
+{% set page_title = "Projetos" %}
 {% extends 'base.twig' %}
 
 {% block header %}
@@ -10,25 +10,70 @@
 
 	<div class="row result-container">
 		<div class="row">
-			<div class="medium-1 columns"><i class="icon-arrow-up"></i></div>
+			<div class="medium-1 columns"><i class="icon-map_cul"></i></div>
 			<div class="medium-11 columns">
-				<h2>CRAS - PARQUE DO CARMO</h2>
-				<p>Secretaria e tal</p>
+				<h1>CRAS - PARQUE DO CARMO</h1>
+				<p class="secretaria">Secretaria Municipal de Assistência Social</p>
+				<p class="assunto">Direitos Humanos e cidadania</p>
+				<p class="meta">Meta 1</p>
+				<p class="local">Local em definição</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="medium-1 columns"><i class="icon-arrow-up"></i></div>
+			<div class="medium-1 columns"><i class="icon-map_tecino"></i></div>
 			<div class="medium-11 columns">
-				<h2>CRAS - PARQUE DO CARMO</h2>
-				<p>Secretaria e tal</p>
+				<h1>CRAS - PARQUE DO CARMO</h1>
+				<p class="secretaria">Secretaria Municipal de Assistência Social</p>
+				<p class="assunto">Direitos Humanos e cidadania</p>
+				<p class="meta">Meta 1</p>
+				<p class="local">Local em definição</p>
 			</div>
 		</div>
+
 		
 	</div>
 
 	<div class="row map-container">
 		<div class="small-12 columns">
 		    <div class="map-render" id="map-local" data-source="#project-local"></div>
+		</div>
+	</div>
+
+	<div class="legendas-container">
+		<div class="legendas">
+			<div class="row green">
+				<div class="small-1 columns">
+					<i class="icon-plot_fill"></i>
+				</div>
+				<div class="small-10 columns">
+					Local definido
+				</div>
+			</div>
+			<div class="row light-green">
+				<div class="small-1 columns">
+					<i class="icon-plot_fill"></i>
+				</div>
+				<div class="small-10 columns">
+					Local em definição
+				</div>
+			</div>
+			<div class="row gray">
+				<div class="small-1 columns">
+					<i class="icon-plot_fill"></i>
+				</div>
+				<div class="small-10 columns">
+					Abrange toda a cidade
+				</div>
+			</div>
+			<div class="row sepia last-row">
+				<div class="small-1 columns">
+					<i class="icon-plot_fill"></i>
+				</div>
+				<div class="small-10 columns">
+					Abrange a subprefeitura
+				</div>
+			</div>
+
 		</div>
 	</div>
 

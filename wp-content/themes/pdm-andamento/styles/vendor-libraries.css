@@ -101,8 +101,8 @@
   }
 }
 
-.icon-cc:before {
-  content: "\e621";
+.icon-plot_fill:before {
+  content: "\e62b";
 }
 
 @media -sass-debug-info {
@@ -115,8 +115,8 @@
   }
 }
 
-.icon-arrow-up:before {
-  content: "\e622";
+.icon-map_devsoc:before {
+  content: "\e624";
 }
 
 @media -sass-debug-info {
@@ -129,8 +129,8 @@
   }
 }
 
-.icon-lock:before {
-  content: "\e623";
+.icon-map_popido:before {
+  content: "\e625";
 }
 
 @media -sass-debug-info {
@@ -140,6 +140,258 @@
 
   line {
     font-family: \0000339;
+  }
+}
+
+.icon-map_partra:before {
+  content: "\e626";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000342;
+  }
+}
+
+.icon-map_dirhum:before {
+  content: "\e627";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000345;
+  }
+}
+
+.icon-map_atecid:before {
+  content: "\e628";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000348;
+  }
+}
+
+.icon-map_pesdef:before {
+  content: "\e629";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000351;
+  }
+}
+
+.icon-map_dre:before {
+  content: "\e62a";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000354;
+  }
+}
+
+.icon-map_mob:before {
+  content: "\e62c";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000357;
+  }
+}
+
+.icon-map_seg:before {
+  content: "\e62d";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000360;
+  }
+}
+
+.icon-map_ressol:before {
+  content: "\e62f";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000363;
+  }
+}
+
+.icon-map_hab:before {
+  content: "\e630";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000366;
+  }
+}
+
+.icon-map_esplaz:before {
+  content: "\e631";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000369;
+  }
+}
+
+.icon-map_meiamb:before {
+  content: "\e632";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000372;
+  }
+}
+
+.icon-map_cul:before {
+  content: "\e633";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000375;
+  }
+}
+
+.icon-map_tecino:before {
+  content: "\e635";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000378;
+  }
+}
+
+.icon-map_sau:before {
+  content: "\e636";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000381;
+  }
+}
+
+.icon-map_deveco:before {
+  content: "\e637";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000384;
+  }
+}
+
+.icon-map_edu:before {
+  content: "\e638";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000387;
+  }
+}
+
+.icon-map_esppub:before {
+  content: "\e639";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000390;
+  }
+}
+
+.icon-map_devsos:before {
+  content: "\e63a";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \0000393;
   }
 }
 
@@ -153,7 +405,7 @@
   }
 
   line {
-    font-family: \0000342;
+    font-family: \0000396;
   }
 }
 
@@ -167,7 +419,7 @@
   }
 
   line {
-    font-family: \0000345;
+    font-family: \0000399;
   }
 }
 
@@ -181,7 +433,7 @@
   }
 
   line {
-    font-family: \0000348;
+    font-family: \00003102;
   }
 }
 
@@ -195,7 +447,7 @@
   }
 
   line {
-    font-family: \0000351;
+    font-family: \00003105;
   }
 }
 
@@ -209,7 +461,7 @@
   }
 
   line {
-    font-family: \0000354;
+    font-family: \00003108;
   }
 }
 
@@ -223,7 +475,7 @@
   }
 
   line {
-    font-family: \0000357;
+    font-family: \00003111;
   }
 }
 
@@ -237,7 +489,7 @@
   }
 
   line {
-    font-family: \0000360;
+    font-family: \00003114;
   }
 }
 
@@ -251,7 +503,7 @@
   }
 
   line {
-    font-family: \0000363;
+    font-family: \00003117;
   }
 }
 
@@ -265,7 +517,7 @@
   }
 
   line {
-    font-family: \0000366;
+    font-family: \00003120;
   }
 }
 
@@ -279,7 +531,7 @@
   }
 
   line {
-    font-family: \0000369;
+    font-family: \00003123;
   }
 }
 
@@ -293,7 +545,7 @@
   }
 
   line {
-    font-family: \0000372;
+    font-family: \00003126;
   }
 }
 
@@ -307,7 +559,7 @@
   }
 
   line {
-    font-family: \0000375;
+    font-family: \00003129;
   }
 }
 
@@ -321,7 +573,7 @@
   }
 
   line {
-    font-family: \0000378;
+    font-family: \00003132;
   }
 }
 
@@ -335,7 +587,7 @@
   }
 
   line {
-    font-family: \0000381;
+    font-family: \00003135;
   }
 }
 
@@ -349,7 +601,7 @@
   }
 
   line {
-    font-family: \0000384;
+    font-family: \00003138;
   }
 }
 
@@ -363,7 +615,7 @@
   }
 
   line {
-    font-family: \0000387;
+    font-family: \00003141;
   }
 }
 
@@ -377,7 +629,7 @@
   }
 
   line {
-    font-family: \0000390;
+    font-family: \00003144;
   }
 }
 
@@ -391,7 +643,7 @@
   }
 
   line {
-    font-family: \0000393;
+    font-family: \00003147;
   }
 }
 
@@ -405,7 +657,7 @@
   }
 
   line {
-    font-family: \0000396;
+    font-family: \00003150;
   }
 }
 
@@ -419,7 +671,7 @@
   }
 
   line {
-    font-family: \0000399;
+    font-family: \00003153;
   }
 }
 
@@ -433,7 +685,7 @@
   }
 
   line {
-    font-family: \00003102;
+    font-family: \00003156;
   }
 }
 
@@ -447,7 +699,7 @@
   }
 
   line {
-    font-family: \00003105;
+    font-family: \00003159;
   }
 }
 
@@ -461,7 +713,7 @@
   }
 
   line {
-    font-family: \00003108;
+    font-family: \00003162;
   }
 }
 
@@ -475,7 +727,7 @@
   }
 
   line {
-    font-family: \00003111;
+    font-family: \00003165;
   }
 }
 
@@ -489,7 +741,7 @@
   }
 
   line {
-    font-family: \00003114;
+    font-family: \00003168;
   }
 }
 
@@ -503,7 +755,7 @@
   }
 
   line {
-    font-family: \00003117;
+    font-family: \00003171;
   }
 }
 
@@ -517,7 +769,7 @@
   }
 
   line {
-    font-family: \00003120;
+    font-family: \00003174;
   }
 }
 
@@ -531,7 +783,7 @@
   }
 
   line {
-    font-family: \00003123;
+    font-family: \00003177;
   }
 }
 
@@ -545,7 +797,7 @@
   }
 
   line {
-    font-family: \00003126;
+    font-family: \00003180;
   }
 }
 
@@ -559,7 +811,7 @@
   }
 
   line {
-    font-family: \00003129;
+    font-family: \00003183;
   }
 }
 
@@ -573,7 +825,7 @@
   }
 
   line {
-    font-family: \00003132;
+    font-family: \00003186;
   }
 }
 
@@ -587,12 +839,54 @@
   }
 
   line {
-    font-family: \00003135;
+    font-family: \00003189;
   }
 }
 
 .icon-filter-arrow-left:before {
   content: "\e61f";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \00003192;
+  }
+}
+
+.icon-lock:before {
+  content: "\e623";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \00003195;
+  }
+}
+
+.icon-arrow-up:before {
+  content: "\e622";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/c\:\/dev\/pdm\/wp-content\/themes\/pdm-andamento\/assets\/styles\/vendor-libraries\.scss;
+  }
+
+  line {
+    font-family: \00003198;
+  }
+}
+
+.icon-cc:before {
+  content: "\e621";
 }
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */

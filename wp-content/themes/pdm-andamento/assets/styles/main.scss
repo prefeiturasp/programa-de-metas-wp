@@ -1271,8 +1271,37 @@ $cinza-padrao: #666;
                 background-color: darken($verde, 10%);
                 margin: 0;
                 font-size: rem-calc(13);
+
+                i:before {
+                    position: absolute;
+                    left: 13px;
+                    transform: rotate(-90deg);
+                    top: 17px;
+                }
             }
 
+
+        }
+
+        #filter-simple {
+
+            .basic-filters {
+                padding-top: rem-calc(10);
+            }
+            select {
+                background-color: transparent;
+                border: none;
+                padding: 0 1.5rem;
+                //border-bottom: 2px solid #ccc;
+                font-size: rem-calc(11);
+                text-transform: uppercase;
+                margin-bottom:0;
+            }
+            p {
+                font-size: rem-calc(14);
+                margin: rem-calc(5) 0 0;
+            }
+            
         }
     }
 
@@ -1291,16 +1320,22 @@ $cinza-padrao: #666;
     }
 
     .result-container {
+        // display: none;
 
         background-color: rgba(0, 0, 0, 0.2);
         position: fixed;
         right: rem-calc(10);
-        top: rem-calc(215);
         padding: rem-calc(10);
+        top: rem-calc(300);
         width: rem-calc(300);
         bottom: rem-calc(50);
         // position: relative;
         z-index: 10;
+
+        .medium-1 {
+            padding: 0;
+            font-size: 24px;
+        }
 
         > .row {
             background-color: #FFFFFF;
@@ -1309,6 +1344,87 @@ $cinza-padrao: #666;
             padding: rem-calc(10);
         }
 
+        h2 {
+            font-family: "MontserratBold";
+            font-size: 18px;
+            color: #666666;
+            
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .secretaria {
+            font-size: 14px;
+            font-family: "Tinos";
+            color: #000;
+        }
+        .assunto {
+            font-size: 12px;            
+            font-family: "MontserratBold";
+            color: #666666;
+
+        }
+        .meta {
+            font-family: "MontserratBold";
+            font-size: 12px;
+            color: #18a5b1;
+        }
+        .local {
+            font-size: 12px;            
+            font-family: "MontserratBold";
+            color: #b7e27d;
+
+        }
+
+
+
+    }
+
+    .legendas-container {
+        z-index: 10;
+
+        .legendas {
+            background: none repeat scroll 0 0 #FFFFFF;
+            box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            top: rem-calc(300);
+            left: rem-calc(15);
+            width: rem-calc(143);
+            height: rem-calc(147);
+            padding: rem-calc(5);
+            font-size: 12px;
+            font-family: "MontserratBold";
+
+            .row {
+                margin-bottom: rem-calc(10);
+
+                .last-row {
+                    margin-bottom: 0
+                }
+
+                .small-1 {
+                    font-size: 18px;
+                }
+            }
+
+
+            .green {
+                color: #93d521;
+            }
+
+            .light-green {
+                color: #b7e27d;
+            }
+            .gray {
+                color: #999999;
+            }
+
+            .sepia {
+                color: #b9b898;
+            }
+        }
     }
 
 

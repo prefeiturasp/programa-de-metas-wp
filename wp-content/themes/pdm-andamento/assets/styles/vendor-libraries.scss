@@ -27,14 +27,68 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cc:before {
-    content: "\e621";
+.icon-plot_fill:before {
+    content: "\e62b";
 }
-.icon-arrow-up:before {
-    content: "\e622";
+.icon-map_devsoc:before {
+    content: "\e624";
 }
-.icon-lock:before {
-    content: "\e623";
+.icon-map_popido:before {
+    content: "\e625";
+}
+.icon-map_partra:before {
+    content: "\e626";
+}
+.icon-map_dirhum:before {
+    content: "\e627";
+}
+.icon-map_atecid:before {
+    content: "\e628";
+}
+.icon-map_pesdef:before {
+    content: "\e629";
+}
+.icon-map_dre:before {
+    content: "\e62a";
+}
+.icon-map_mob:before {
+    content: "\e62c";
+}
+.icon-map_seg:before {
+    content: "\e62d";
+}
+.icon-map_ressol:before {
+    content: "\e62f";
+}
+.icon-map_hab:before {
+    content: "\e630";
+}
+.icon-map_esplaz:before {
+    content: "\e631";
+}
+.icon-map_meiamb:before {
+    content: "\e632";
+}
+.icon-map_cul:before {
+    content: "\e633";
+}
+.icon-map_tecino:before {
+    content: "\e635";
+}
+.icon-map_sau:before {
+    content: "\e636";
+}
+.icon-map_deveco:before {
+    content: "\e637";
+}
+.icon-map_edu:before {
+    content: "\e638";
+}
+.icon-map_esppub:before {
+    content: "\e639";
+}
+.icon-map_devsos:before {
+    content: "\e63a";
 }
 .icon-transporte:before {
     content: "\e600";
@@ -135,7 +189,15 @@
 .icon-filter-arrow-left:before {
     content: "\e61f";
 }
-
+.icon-lock:before {
+    content: "\e623";
+}
+.icon-arrow-up:before {
+    content: "\e622";
+}
+.icon-cc:before {
+    content: "\e621";
+}
 
 @import "../bower_components/foundation/scss/normalize";
 @import "../bower_components/foundation/scss/foundation";

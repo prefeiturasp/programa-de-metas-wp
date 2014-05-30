@@ -36,6 +36,8 @@ $vermelho: #eb2851;
 @import "settings";
 @import "charts";
 @import "marker-cluster";
+@import "mapbox/mapbox";
+@import "leaflet.fullscreen";
 // endbower
 
 .row-full {
@@ -204,9 +206,11 @@ $vermelho: #eb2851;
         }
     }
 
+
     .menu-bar {
         background-color: #fff;
         z-index: 9;
+        height: 40px;
 
         .menu-principal {
             ul {
@@ -1306,6 +1310,9 @@ $cinza-padrao: #666;
         }
     }
 
+    // .leaflet-container {
+    //     min-height: 400px;
+    // }
 
     .map-container {
         position: relative;
@@ -1317,6 +1324,10 @@ $cinza-padrao: #666;
             position: fixed;
             right: 0;
             top: 200px;
+
+            &.leaflet-fullscreen-on {
+                top:0;
+            }
         }
     }
 
@@ -1330,7 +1341,7 @@ $cinza-padrao: #666;
         padding: rem-calc(10);
         top: rem-calc(300);
         width: rem-calc(300);
-        bottom: rem-calc(50);
+        //bottom: rem-calc(50);
         // position: relative;
         z-index: 10;
 
@@ -1342,7 +1353,7 @@ $cinza-padrao: #666;
         > .row {
             background-color: #FFFFFF;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-            margin: 0 0 rem-calc(10);
+            margin: 0;
             padding: rem-calc(10);
         }
 
@@ -1392,12 +1403,13 @@ $cinza-padrao: #666;
             box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.3);
             position: fixed;
             top: rem-calc(300);
-            left: rem-calc(15);
+            left: rem-calc(50);
             width: rem-calc(143);
             height: rem-calc(147);
             padding: rem-calc(5);
             font-size: 12px;
             font-family: "MontserratBold";
+
 
             .row {
                 margin-bottom: rem-calc(10);
@@ -1876,5 +1888,35 @@ $cinza-padrao: #666;
                 display: block;
             }
         }
+    }
+}
+
+
+
+
+
+
+.icon-marker {
+    background: top left url('') no-repeat transparent;
+    padding-top: 15px;
+    text-align: center;
+
+    i {
+        font-size: 26px;
+        color: #fff;
+        margin-top: 16px;
+    }
+
+    &.abrange-cidade {
+        background-image: url(../assets/images/projetos_plot_cidade.png);
+    }
+    &.abrange-sub {
+        background-image: url(../assets/images/projetos_plot_sub.png);
+    }
+    &.local-def {
+        background-image: url(../assets/images/projetos_plot_definido.png);
+    }
+    &.local-em-def {
+        background-image: url(../assets/images/projetos_plot_naodefinido.png);
     }
 }

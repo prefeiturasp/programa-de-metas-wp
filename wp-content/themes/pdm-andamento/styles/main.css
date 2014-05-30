@@ -821,11 +821,2644 @@
 
 @media -sass-debug-info {
   filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container {
+  background: #fff;
+  font: 12px/20px 'Helvetica Neue',Arial,Helvetica,sans-serif;
+  color: #404040;
+  color: rgba(0, 0, 0, 0.75);
+  outline: 0;
+  overflow: hidden;
+  -ms-touch-action: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container *,
+.leaflet-container :after,
+.leaflet-container :before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container h1,
+.leaflet-container h2,
+.leaflet-container h3,
+.leaflet-container h4,
+.leaflet-container h5,
+.leaflet-container h6,
+.leaflet-container p {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 0 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container .marker-description img {
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container a {
+  color: #3887BE;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container a:hover,
+.leaflet-container.dark a {
+  color: #63b6e5;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark a:hover {
+  color: #8fcaec;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container .mapbox-button,
+.leaflet-container.dark .mapbox-button {
+  background-color: #3887be;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container .mapbox-button:hover,
+.leaflet-container.dark .mapbox-button:hover {
+  color: #fff;
+  background-color: #3bb2d0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-image-layer,
+.leaflet-layer,
+.leaflet-map-pane,
+.leaflet-marker-icon,
+.leaflet-marker-pane,
+.leaflet-marker-shadow,
+.leaflet-overlay-pane,
+.leaflet-overlay-pane svg,
+.leaflet-popup-pane,
+.leaflet-shadow-pane,
+.leaflet-tile,
+.leaflet-tile-container,
+.leaflet-tile-pane,
+.leaflet-zoom-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-tile {
+  -webkit-filter: inherit;
+  filter: inherit;
+  visibility: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-tile-loaded {
+  visibility: inherit;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-zoom-box {
+  width: 0;
+  height: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-tile-pane {
+  z-index: 2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-objects-pane {
+  z-index: 3;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-overlay-pane {
+  z-index: 4;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-shadow-pane {
+  z-index: 5;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-marker-pane {
+  z-index: 6;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-pane {
+  z-index: 7;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control {
+  position: relative;
+  z-index: 7;
+  pointer-events: auto;
+  float: left;
+  clear: both;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-right .leaflet-control {
+  float: right;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-top .leaflet-control {
+  margin-top: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bottom .leaflet-control {
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-left .leaflet-control {
+  margin-left: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-right .leaflet-control {
+  margin-right: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bottom,
+.leaflet-top {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-top {
+  top: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-right {
+  right: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bottom {
+  bottom: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-left {
+  left: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-fade-anim .leaflet-popup,
+.leaflet-fade-anim .leaflet-tile {
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup,
+.leaflet-fade-anim .leaflet-tile-loaded {
+  opacity: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-pan-anim .leaflet-tile,
+.leaflet-touching .leaflet-zoom-animated,
+.leaflet-zoom-anim .leaflet-tile {
+  transition: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-zoom-anim .leaflet-zoom-hide {
+  visibility: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container {
+  cursor: -webkit-grab;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.leaflet-clickable,
+.leaflet-container.map-clickable,
+.leaflet-marker-icon,
+.leaflet-overlay-pane path {
+  cursor: pointer;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control,
+.leaflet-popup-pane {
+  cursor: auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-dragging,
+.leaflet-dragging .leaflet-clickable,
+.leaflet-dragging .leaflet-container,
+.leaflet-dragging .map-clickable {
+  cursor: move;
+  cursor: -webkit-grabbing;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-zoom-box {
+  background: #fff;
+  border: 2px dotted #202020;
+  opacity: .5;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar,
+.leaflet-control-layers {
+  background-color: #fff;
+  border: 1px solid #999;
+  border-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  color: #404040;
+  color: rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid #ddd;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar a:active,
+.leaflet-bar a:hover {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar a:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar a:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 3px 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar a:only-of-type {
+  border-radius: 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar .leaflet-disabled {
+  cursor: default;
+  opacity: .75;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  display: block;
+  content: '';
+  text-indent: -999em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-layers .leaflet-control-layers-list,
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+  display: block;
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-layers-expanded {
+  background: #fff;
+  padding: 6px 10px 6px 6px;
+  color: #404040;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-layers-selector {
+  margin-top: 2px;
+  position: relative;
+  top: 1px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-layers label {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-layers-separator {
+  height: 0;
+  border-top: 1px solid #ddd;
+  border-top-color: rgba(0, 0, 0, 0.1);
+  margin: 5px -10px 5px -6px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  box-shadow: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container .leaflet-control-attribution a,
+.leaflet-container .map-info-container a {
+  color: #404040;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-attribution a:hover,
+.map-info-container a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
+  padding: 0 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-left .leaflet-control-scale {
+  margin-left: 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bottom .leaflet-control-scale {
+  margin-bottom: 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-scale-line {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #999;
+  border-color: rgba(0, 0, 0, 0.4);
+  border-top: 0;
+  padding: 2px 5px 1px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-scale-line:not(:first-child) {
+  border-top: 2px solid #ddd;
+  border-top-color: rgba(0, 0, 0, 0.1);
+  border-bottom: 0;
+  margin-top: -2px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-scale-line:not(:first-child):not(:last-child) {
+  border-bottom: 2px solid #777;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup {
+  position: absolute;
+  text-align: center;
+  pointer-events: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-content-wrapper {
+  padding: 1px;
+  text-align: left;
+  pointer-events: all;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-content {
+  padding: 10px 10px 15px;
+  margin: 0;
+  line-height: inherit;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-tip-container {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-tip {
+  width: 0;
+  height: 0;
+  margin: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  box-shadow: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-close-button {
+  text-indent: -999em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: all;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-close-button:hover {
+  background-color: #f8f8f8;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-scrolled {
+  overflow: auto;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-div-icon {
+  background: #fff;
+  border: 1px solid #999;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-editing-icon {
+  border-radius: 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar a,
+.leaflet-control-layers-toggle,
+.leaflet-popup-close-button,
+.map-tooltip.closable .close,
+.mapbox-button-icon:before,
+.mapbox-icon {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar a {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .map-tooltip .close,
+.leaflet-control-layers-toggle,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-popup-close-button,
+.map-tooltip .close,
+.mapbox-icon {
+  opacity: .75;
+  background-image: url(images/icons-000000.png);
+  background-repeat: no-repeat;
+  background-size: 26px 260px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-control-layers-toggle,
+.leaflet-container.dark .leaflet-control-zoom-in,
+.leaflet-container.dark .leaflet-control-zoom-out,
+.leaflet-container.dark .mapbox-icon,
+.mapbox-button-icon:before {
+  opacity: 1;
+  background-image: url(images/icons-ffffff.png);
+  background-size: 26px 260px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar .leaflet-control-zoom-in {
+  background-position: 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar .leaflet-control-zoom-out {
+  background-position: 0 -26px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-close-button,
+.map-tooltip .close {
+  background-position: 0 -52px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-icon-info {
+  background-position: 0 -78px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-layers-toggle {
+  background-position: 0 -104px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-icon-share,
+.mapbox-icon-share:before {
+  background-position: 0 -130px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-icon-geocoder,
+.mapbox-icon-geocoder:before {
+  background-position: 0 -156px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-icon-facebook,
+.mapbox-icon-facebook:before {
+  background-position: 0 -182px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-icon-twitter,
+.mapbox-icon-twitter:before {
+  background-position: 0 -208px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-icon-pinterest,
+.mapbox-icon-pinterest:before {
+  background-position: 0 -234px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+    }
+
+    line {
+      font-family: \000031;
+    }
+}
+
+  .leaflet-control-layers-toggle,
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out,
+  .leaflet-popup-close-button,
+  .mapbox-icon {
+    background-image: url(images/icons-000000@2x.png);
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+    }
+
+    line {
+      font-family: \000031;
+    }
+}
+
+  .leaflet-container.dark .leaflet-control-layers-toggle,
+  .leaflet-container.dark .leaflet-control-zoom-in,
+  .leaflet-container.dark .leaflet-control-zoom-out,
+  .leaflet-container.dark .mapbox-icon,
+  .mapbox-button-icon:before {
+    background-image: url(images/icons-ffffff@2x.png);
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-content-wrapper,
+.map-legends,
+.map-tooltip {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.map-legends,
+.map-tooltip {
+  max-width: 300px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.map-legends .map-legend {
+  padding: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.map-tooltip {
+  z-index: 999999;
+  padding: 10px;
+  min-width: 180px;
+  max-height: 400px;
+  overflow: auto;
+  opacity: 1;
+  transition: opacity 150ms;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.map-tooltip .close {
+  text-indent: -999em;
+  overflow: hidden;
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.map-tooltip.closable .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.map-tooltip.closable .close:active {
+  background-color: #f8f8f8;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-interaction {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 300px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-popup-content .marker-title {
+  font-weight: 700;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control .mapbox-button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-modal > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow-y: auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-modal.active > div {
+  z-index: 99999;
+  transition: all .2s,z-index 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-modal .mapbox-modal-mask {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-modal.active .mapbox-modal-mask {
+  opacity: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-modal .mapbox-modal-content {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-modal.active .mapbox-modal-content {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-modal-body {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  z-index: 1000;
+  width: 50%;
+  margin: 20px 0 20px 25%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-share-buttons {
+  margin: 0 0 20px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-share-buttons a {
+  width: 33.3333%;
+  border-left: 1px solid #fff;
+  text-align: center;
+  border-radius: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-share-buttons a:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-share-buttons a:first-child {
+  border: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-modal input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control.mapbox-control-info {
+  margin: 5px 30px 10px 10px;
+  min-height: 26px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-right .leaflet-control.mapbox-control-info {
+  margin: 5px 10px 10px 30px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-info-toggle {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-right .mapbox-control-info .mapbox-info-toggle {
+  left: auto;
+  right: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-info-toggle:hover {
+  background-color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.map-info-container {
+  background: #fff;
+  padding: 3px 5px 3px 27px;
+  display: none;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  border-radius: 13px 3px 3px 13px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-right .map-info-container {
+  left: auto;
+  right: 0;
+  padding: 3px 27px 3px 5px;
+  border-radius: 3px 13px 13px 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.mapbox-control-info.active .map-info-container {
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container .mapbox-improve-map {
+  font-weight: 700;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder.searching {
+  opacity: .75;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-wrap {
+  background: #fff;
+  position: absolute;
+  border: 1px solid #999;
+  border-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  left: 26px;
+  height: 28px;
+  width: 0;
+  top: -1px;
+  border-radius: 0 3px 3px 0;
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder.active .leaflet-control-mapbox-geocoder-wrap {
+  width: 180px;
+  opacity: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bar .leaflet-control-mapbox-geocoder-toggle,
+.leaflet-bar .leaflet-control-mapbox-geocoder-toggle:hover {
+  border-bottom: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder-toggle {
+  border-radius: 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder.active,
+.leaflet-control-mapbox-geocoder.active .leaflet-control-mapbox-geocoder-toggle {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-form input {
+  background: 0 0;
+  border: 0;
+  width: 180px;
+  padding: 0 0 0 10px;
+  height: 26px;
+  outline: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder-results {
+  width: 180px;
+  position: absolute;
+  left: 26px;
+  top: 25px;
+  border-radius: 0 0 3px 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder.active .leaflet-control-mapbox-geocoder-results {
+  background: #fff;
+  border: 1px solid #999;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-mapbox-geocoder-results a,
+.leaflet-control-mapbox-geocoder-results span {
+  padding: 0 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 26px;
+  text-align: left;
+  overflow: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-control .leaflet-control-mapbox-geocoder-results a:hover,
+.leaflet-control-mapbox-geocoder-results a:hover {
+  background: #f8f8f8;
+  opacity: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-right .leaflet-control-mapbox-geocoder-results,
+.leaflet-right .leaflet-control-mapbox-geocoder-wrap {
+  left: auto;
+  right: 26px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-right .leaflet-control-mapbox-geocoder-wrap {
+  border-radius: 3px 0 0 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-right .leaflet-control-mapbox-geocoder.active,
+.leaflet-right .leaflet-control-mapbox-geocoder.active .leaflet-control-mapbox-geocoder-toggle {
+  border-radius: 0 3px 3px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-bottom .leaflet-control-mapbox-geocoder-results {
+  top: auto;
+  bottom: 25px;
+  border-radius: 3px 3px 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-bar {
+  background-color: #404040;
+  border-color: #202020;
+  border-color: rgba(0, 0, 0, 0.75);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-bar a {
+  color: #404040;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-bar a:active,
+.leaflet-container.dark .leaflet-bar a:hover {
+  background-color: #505050;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-control-attribution,
+.leaflet-container.dark .map-info-container,
+.leaflet-container.dark .mapbox-info-toggle {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f8f8f8;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-control-attribution a,
+.leaflet-container.dark .leaflet-control-attribution a:hover,
+.leaflet-container.dark .map-info-container a,
+.leaflet-container.dark .map-info-container a:hover {
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-control-layers-list span {
+  color: #f8f8f8;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-control-layers-separator {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-bar a.leaflet-disabled,
+.leaflet-container.dark .leaflet-control .mapbox-button.disabled {
+  background-color: #252525;
+  color: #404040;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-control-mapbox-geocoder > div {
+  border-color: #202020;
+  border-color: rgba(0, 0, 0, 0.75);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-control .leaflet-control-mapbox-geocoder-results a {
+  border-color: #ddd #202020;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.75);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container.dark .leaflet-control .leaflet-control-mapbox-geocoder-results span {
+  border-color: #202020;
+  border-color: rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+    }
+
+    line {
+      font-family: \000031;
+    }
+}
+
+  .mapbox-modal-body {
+    width: 83.3333%;
+    margin-left: 8.3333%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+    }
+
+    line {
+      font-family: \000031;
+    }
+}
+
+  .mapbox-modal-body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-vml-shape {
+  width: 1px;
+  height: 1px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.lvml {
+  behavior: url(#default#VML);
+  display: inline-block;
+  position: absolute;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container img.leaflet-tile {
+  max-width: none !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container img.leaflet-marker-icon {
+  max-width: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-container img.leaflet-image-layer {
+  max-width: 15000px !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-overlay-pane svg {
+  -moz-user-select: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-oldie .mapbox-modal .mapbox-modal-content {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-oldie .mapbox-modal.active .mapbox-modal-content {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/mapbox\/_mapbox\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.map-tooltip {
+  width: 280px\8;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_leaflet\.fullscreen\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.leaflet-control-fullscreen a {
+  background: white url(fullscreen.png) no-repeat 0 0;
+  background-size: 26px 52px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_leaflet\.fullscreen\.scss;
+  }
+
+  line {
+    font-family: \000035;
+  }
+}
+
+.leaflet-fullscreen-on .leaflet-control-fullscreen a {
+  background-position: 0 -26px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_leaflet\.fullscreen\.scss;
+  }
+
+  line {
+    font-family: \000039;
+  }
+}
+
+.leaflet-container:-webkit-full-screen {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_leaflet\.fullscreen\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.leaflet-pseudo-fullscreen {
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 99999;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/_leaflet\.fullscreen\.scss;
+    }
+
+    line {
+      font-family: \0000325;
+    }
+}
+
+  .leaflet-control-fullscreen a {
+    background-image: url(fullscreen@2x.png);
+  }
+}
+
+@media -sass-debug-info {
+  filename {
     font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000341;
+    font-family: \0000343;
   }
 }
 
@@ -839,7 +3472,7 @@
   }
 
   line {
-    font-family: \0000344;
+    font-family: \0000346;
   }
 }
 
@@ -854,7 +3487,7 @@
   }
 
   line {
-    font-family: \0000350;
+    font-family: \0000352;
   }
 }
 
@@ -870,7 +3503,7 @@
   }
 
   line {
-    font-family: \0000355;
+    font-family: \0000357;
   }
 }
 
@@ -884,7 +3517,7 @@
   }
 
   line {
-    font-family: \0000359;
+    font-family: \0000361;
   }
 }
 
@@ -904,7 +3537,7 @@
   }
 
   line {
-    font-family: \0000367;
+    font-family: \0000369;
   }
 }
 
@@ -918,7 +3551,7 @@
   }
 
   line {
-    font-family: \0000369;
+    font-family: \0000371;
   }
 }
 
@@ -964,7 +3597,7 @@
   }
 
   line {
-    font-family: \0000373;
+    font-family: \0000375;
   }
 }
 
@@ -978,7 +3611,7 @@
   }
 
   line {
-    font-family: \0000375;
+    font-family: \0000377;
   }
 }
 
@@ -995,7 +3628,7 @@
   }
 
   line {
-    font-family: \0000386;
+    font-family: \0000388;
   }
 }
 
@@ -1012,7 +3645,7 @@
   }
 
   line {
-    font-family: \0000392;
+    font-family: \0000394;
   }
 }
 
@@ -1027,7 +3660,7 @@
   }
 
   line {
-    font-family: \0000396;
+    font-family: \0000398;
   }
 }
 
@@ -1052,7 +3685,7 @@
   }
 
   line {
-    font-family: \00003112;
+    font-family: \00003114;
   }
 }
 
@@ -1071,7 +3704,7 @@
   }
 
   line {
-    font-family: \00003122;
+    font-family: \00003124;
   }
 }
 
@@ -1086,7 +3719,7 @@
   }
 
   line {
-    font-family: \00003127;
+    font-family: \00003129;
   }
 }
 
@@ -1101,7 +3734,7 @@
   }
 
   line {
-    font-family: \00003133;
+    font-family: \00003135;
   }
 }
 
@@ -1115,7 +3748,7 @@
   }
 
   line {
-    font-family: \00003135;
+    font-family: \00003137;
   }
 }
 
@@ -1129,7 +3762,7 @@
   }
 
   line {
-    font-family: \00003137;
+    font-family: \00003139;
   }
 }
 
@@ -1147,7 +3780,7 @@
   }
 
   line {
-    font-family: \00003144;
+    font-family: \00003146;
   }
 }
 
@@ -1164,7 +3797,7 @@
   }
 
   line {
-    font-family: \00003151;
+    font-family: \00003153;
   }
 }
 
@@ -1178,7 +3811,7 @@
   }
 
   line {
-    font-family: \00003164;
+    font-family: \00003166;
   }
 }
 
@@ -1198,7 +3831,7 @@
   }
 
   line {
-    font-family: \00003168;
+    font-family: \00003170;
   }
 }
 
@@ -1214,7 +3847,7 @@
   }
 
   line {
-    font-family: \00003173;
+    font-family: \00003175;
   }
 }
 
@@ -1229,7 +3862,7 @@
   }
 
   line {
-    font-family: \00003177;
+    font-family: \00003179;
   }
 }
 
@@ -1246,7 +3879,7 @@
   }
 
   line {
-    font-family: \00003183;
+    font-family: \00003185;
   }
 }
 
@@ -1260,7 +3893,7 @@
   }
 
   line {
-    font-family: \00003191;
+    font-family: \00003193;
   }
 }
 
@@ -1277,7 +3910,7 @@
   }
 
   line {
-    font-family: \00003200;
+    font-family: \00003202;
   }
 }
 
@@ -1291,13 +3924,14 @@
   }
 
   line {
-    font-family: \00003207;
+    font-family: \00003210;
   }
 }
 
 .header .menu-bar {
   background-color: #fff;
   z-index: 9;
+  height: 40px;
 }
 
 @media -sass-debug-info {
@@ -1306,7 +3940,7 @@
   }
 
   line {
-    font-family: \00003212;
+    font-family: \00003216;
   }
 }
 
@@ -1320,7 +3954,7 @@
   }
 
   line {
-    font-family: \00003215;
+    font-family: \00003219;
   }
 }
 
@@ -1334,7 +3968,7 @@
   }
 
   line {
-    font-family: \00003218;
+    font-family: \00003222;
   }
 }
 
@@ -1351,7 +3985,7 @@
   }
 
   line {
-    font-family: \00003224;
+    font-family: \00003228;
   }
 }
 
@@ -1365,7 +3999,7 @@
   }
 
   line {
-    font-family: \00003232;
+    font-family: \00003236;
   }
 }
 
@@ -1379,7 +4013,7 @@
   }
 
   line {
-    font-family: \00003236;
+    font-family: \00003240;
   }
 }
 
@@ -1395,7 +4029,7 @@
   }
 
   line {
-    font-family: \00003241;
+    font-family: \00003245;
   }
 }
 
@@ -1410,7 +4044,7 @@
   }
 
   line {
-    font-family: \00003244;
+    font-family: \00003248;
   }
 }
 
@@ -1424,7 +4058,7 @@
   }
 
   line {
-    font-family: \00003249;
+    font-family: \00003253;
   }
 }
 
@@ -1438,7 +4072,7 @@
   }
 
   line {
-    font-family: \00003254;
+    font-family: \00003258;
   }
 }
 
@@ -1452,7 +4086,7 @@
   }
 
   line {
-    font-family: \00003258;
+    font-family: \00003262;
   }
 }
 
@@ -1467,7 +4101,7 @@
   }
 
   line {
-    font-family: \00003263;
+    font-family: \00003267;
   }
 }
 
@@ -1482,7 +4116,7 @@
   }
 
   line {
-    font-family: \00003269;
+    font-family: \00003273;
   }
 }
 
@@ -1496,7 +4130,7 @@
   }
 
   line {
-    font-family: \00003275;
+    font-family: \00003279;
   }
 }
 
@@ -1510,7 +4144,7 @@
   }
 
   line {
-    font-family: \00003278;
+    font-family: \00003282;
   }
 }
 
@@ -1524,7 +4158,7 @@
   }
 
   line {
-    font-family: \00003281;
+    font-family: \00003285;
   }
 }
 
@@ -1538,7 +4172,7 @@
   }
 
   line {
-    font-family: \00003287;
+    font-family: \00003291;
   }
 }
 
@@ -1553,7 +4187,7 @@
   }
 
   line {
-    font-family: \00003292;
+    font-family: \00003296;
   }
 }
 
@@ -1571,7 +4205,7 @@
   }
 
   line {
-    font-family: \00003298;
+    font-family: \00003302;
   }
 }
 
@@ -1586,7 +4220,7 @@
     }
 
     line {
-      font-family: \00003292;
+      font-family: \00003296;
     }
 }
 
@@ -1601,7 +4235,7 @@
   }
 
   line {
-    font-family: \00003308;
+    font-family: \00003312;
   }
 }
 
@@ -1616,7 +4250,7 @@
   }
 
   line {
-    font-family: \00003315;
+    font-family: \00003319;
   }
 }
 
@@ -1631,7 +4265,7 @@
   }
 
   line {
-    font-family: \00003319;
+    font-family: \00003323;
   }
 }
 
@@ -1645,7 +4279,7 @@
   }
 
   line {
-    font-family: \00003322;
+    font-family: \00003326;
   }
 }
 
@@ -1659,7 +4293,7 @@
   }
 
   line {
-    font-family: \00003325;
+    font-family: \00003329;
   }
 }
 
@@ -1674,7 +4308,7 @@
   }
 
   line {
-    font-family: \00003329;
+    font-family: \00003333;
   }
 }
 
@@ -1694,7 +4328,7 @@
   }
 
   line {
-    font-family: \00003338;
+    font-family: \00003342;
   }
 }
 
@@ -1712,7 +4346,7 @@
   }
 
   line {
-    font-family: \00003345;
+    font-family: \00003349;
   }
 }
 
@@ -1728,7 +4362,7 @@
   }
 
   line {
-    font-family: \00003354;
+    font-family: \00003358;
   }
 }
 
@@ -1742,7 +4376,7 @@
   }
 
   line {
-    font-family: \00003360;
+    font-family: \00003364;
   }
 }
 
@@ -1756,7 +4390,7 @@
   }
 
   line {
-    font-family: \00003362;
+    font-family: \00003366;
   }
 }
 
@@ -1772,7 +4406,7 @@
   }
 
   line {
-    font-family: \00003367;
+    font-family: \00003371;
   }
 }
 
@@ -1790,7 +4424,7 @@
   }
 
   line {
-    font-family: \00003376;
+    font-family: \00003380;
   }
 }
 
@@ -1837,7 +4471,7 @@
   }
 
   line {
-    font-family: \00003381;
+    font-family: \00003385;
   }
 }
 
@@ -1855,7 +4489,7 @@
   }
 
   line {
-    font-family: \00003391;
+    font-family: \00003395;
   }
 }
 
@@ -1870,7 +4504,7 @@
   }
 
   line {
-    font-family: \00003396;
+    font-family: \00003400;
   }
 }
 
@@ -1888,7 +4522,7 @@
   }
 
   line {
-    font-family: \00003404;
+    font-family: \00003408;
   }
 }
 
@@ -1906,7 +4540,7 @@
   }
 
   line {
-    font-family: \00003413;
+    font-family: \00003417;
   }
 }
 
@@ -1920,7 +4554,7 @@
   }
 
   line {
-    font-family: \00003418;
+    font-family: \00003422;
   }
 }
 
@@ -1940,7 +4574,7 @@
   }
 
   line {
-    font-family: \00003427;
+    font-family: \00003431;
   }
 }
 
@@ -1954,7 +4588,7 @@
   }
 
   line {
-    font-family: \00003431;
+    font-family: \00003435;
   }
 }
 
@@ -1970,7 +4604,7 @@
   }
 
   line {
-    font-family: \00003432;
+    font-family: \00003436;
   }
 }
 
@@ -1984,7 +4618,7 @@
   }
 
   line {
-    font-family: \00003439;
+    font-family: \00003443;
   }
 }
 
@@ -2001,7 +4635,7 @@
   }
 
   line {
-    font-family: \00003440;
+    font-family: \00003444;
   }
 }
 
@@ -2015,7 +4649,7 @@
   }
 
   line {
-    font-family: \00003451;
+    font-family: \00003455;
   }
 }
 
@@ -2031,7 +4665,7 @@
   }
 
   line {
-    font-family: \00003455;
+    font-family: \00003459;
   }
 }
 
@@ -2046,7 +4680,7 @@
   }
 
   line {
-    font-family: \00003458;
+    font-family: \00003462;
   }
 }
 
@@ -2060,7 +4694,7 @@
   }
 
   line {
-    font-family: \00003465;
+    font-family: \00003469;
   }
 }
 
@@ -2074,7 +4708,7 @@
   }
 
   line {
-    font-family: \00003469;
+    font-family: \00003473;
   }
 }
 
@@ -2092,7 +4726,7 @@
   }
 
   line {
-    font-family: \00003475;
+    font-family: \00003479;
   }
 }
 
@@ -2106,7 +4740,7 @@
   }
 
   line {
-    font-family: \00003480;
+    font-family: \00003484;
   }
 }
 
@@ -2120,7 +4754,7 @@
   }
 
   line {
-    font-family: \00003487;
+    font-family: \00003491;
   }
 }
 
@@ -2137,7 +4771,7 @@
   }
 
   line {
-    font-family: \00003491;
+    font-family: \00003495;
   }
 }
 
@@ -2157,7 +4791,7 @@
   }
 
   line {
-    font-family: \00003499;
+    font-family: \00003503;
   }
 }
 
@@ -2172,7 +4806,7 @@
   }
 
   line {
-    font-family: \00003505;
+    font-family: \00003509;
   }
 }
 
@@ -2186,7 +4820,7 @@
   }
 
   line {
-    font-family: \00003507;
+    font-family: \00003511;
   }
 }
 
@@ -2201,7 +4835,7 @@
   }
 
   line {
-    font-family: \00003512;
+    font-family: \00003516;
   }
 }
 
@@ -2215,7 +4849,7 @@
   }
 
   line {
-    font-family: \00003514;
+    font-family: \00003518;
   }
 }
 
@@ -2230,7 +4864,7 @@
   }
 
   line {
-    font-family: \00003521;
+    font-family: \00003525;
   }
 }
 
@@ -2247,7 +4881,7 @@
   }
 
   line {
-    font-family: \00003533;
+    font-family: \00003537;
   }
 }
 
@@ -2261,7 +4895,7 @@
   }
 
   line {
-    font-family: \00003538;
+    font-family: \00003542;
   }
 }
 
@@ -2278,7 +4912,7 @@
   }
 
   line {
-    font-family: \00003546;
+    font-family: \00003550;
   }
 }
 
@@ -2295,7 +4929,7 @@
   }
 
   line {
-    font-family: \00003553;
+    font-family: \00003557;
   }
 }
 
@@ -2311,7 +4945,7 @@
   }
 
   line {
-    font-family: \00003558;
+    font-family: \00003562;
   }
 }
 
@@ -2338,7 +4972,7 @@
   }
 
   line {
-    font-family: \00003575;
+    font-family: \00003579;
   }
 }
 
@@ -2352,7 +4986,7 @@
   }
 
   line {
-    font-family: \00003576;
+    font-family: \00003580;
   }
 }
 
@@ -2366,7 +5000,7 @@
   }
 
   line {
-    font-family: \00003577;
+    font-family: \00003581;
   }
 }
 
@@ -2380,7 +5014,7 @@
   }
 
   line {
-    font-family: \00003578;
+    font-family: \00003582;
   }
 }
 
@@ -2394,7 +5028,7 @@
   }
 
   line {
-    font-family: \00003581;
+    font-family: \00003585;
   }
 }
 
@@ -2412,7 +5046,7 @@
   }
 
   line {
-    font-family: \00003587;
+    font-family: \00003591;
   }
 }
 
@@ -2426,7 +5060,7 @@
   }
 
   line {
-    font-family: \00003591;
+    font-family: \00003595;
   }
 }
 
@@ -2443,7 +5077,7 @@
   }
 
   line {
-    font-family: \00003597;
+    font-family: \00003601;
   }
 }
 
@@ -2457,7 +5091,7 @@
   }
 
   line {
-    font-family: \00003602;
+    font-family: \00003606;
   }
 }
 
@@ -2472,7 +5106,7 @@
   }
 
   line {
-    font-family: \00003605;
+    font-family: \00003609;
   }
 }
 
@@ -2488,7 +5122,7 @@
   }
 
   line {
-    font-family: \00003610;
+    font-family: \00003614;
   }
 }
 
@@ -2505,7 +5139,7 @@
   }
 
   line {
-    font-family: \00003616;
+    font-family: \00003620;
   }
 }
 
@@ -2519,7 +5153,7 @@
   }
 
   line {
-    font-family: \00003622;
+    font-family: \00003626;
   }
 }
 
@@ -2534,7 +5168,7 @@
   }
 
   line {
-    font-family: \00003629;
+    font-family: \00003633;
   }
 }
 
@@ -2549,7 +5183,7 @@
   }
 
   line {
-    font-family: \00003632;
+    font-family: \00003636;
   }
 }
 
@@ -2563,7 +5197,7 @@
   }
 
   line {
-    font-family: \00003635;
+    font-family: \00003639;
   }
 }
 
@@ -2577,7 +5211,7 @@
   }
 
   line {
-    font-family: \00003641;
+    font-family: \00003645;
   }
 }
 
@@ -2594,7 +5228,7 @@
   }
 
   line {
-    font-family: \00003646;
+    font-family: \00003650;
   }
 }
 
@@ -2611,7 +5245,7 @@
   }
 
   line {
-    font-family: \00003652;
+    font-family: \00003656;
   }
 }
 
@@ -2627,7 +5261,7 @@
   }
 
   line {
-    font-family: \00003659;
+    font-family: \00003663;
   }
 }
 
@@ -2646,7 +5280,7 @@
   }
 
   line {
-    font-family: \00003669;
+    font-family: \00003673;
   }
 }
 
@@ -2662,7 +5296,7 @@
   }
 
   line {
-    font-family: \00003675;
+    font-family: \00003679;
   }
 }
 
@@ -2677,7 +5311,7 @@
   }
 
   line {
-    font-family: \00003680;
+    font-family: \00003684;
   }
 }
 
@@ -2692,7 +5326,7 @@
   }
 
   line {
-    font-family: \00003684;
+    font-family: \00003688;
   }
 }
 
@@ -2706,7 +5340,7 @@
   }
 
   line {
-    font-family: \00003687;
+    font-family: \00003691;
   }
 }
 
@@ -2725,7 +5359,7 @@
   }
 
   line {
-    font-family: \00003696;
+    font-family: \00003700;
   }
 }
 
@@ -2741,7 +5375,7 @@
   }
 
   line {
-    font-family: \00003701;
+    font-family: \00003705;
   }
 }
 
@@ -2760,7 +5394,7 @@
   }
 
   line {
-    font-family: \00003709;
+    font-family: \00003713;
   }
 }
 
@@ -2775,7 +5409,7 @@
   }
 
   line {
-    font-family: \00003714;
+    font-family: \00003718;
   }
 }
 
@@ -2790,7 +5424,7 @@
   }
 
   line {
-    font-family: \00003719;
+    font-family: \00003723;
   }
 }
 
@@ -2807,7 +5441,7 @@
   }
 
   line {
-    font-family: \00003724;
+    font-family: \00003728;
   }
 }
 
@@ -2823,7 +5457,7 @@
   }
 
   line {
-    font-family: \00003734;
+    font-family: \00003738;
   }
 }
 
@@ -2838,7 +5472,7 @@
   }
 
   line {
-    font-family: \00003746;
+    font-family: \00003750;
   }
 }
 
@@ -2852,7 +5486,7 @@
   }
 
   line {
-    font-family: \00003754;
+    font-family: \00003758;
   }
 }
 
@@ -2866,7 +5500,7 @@
   }
 
   line {
-    font-family: \00003757;
+    font-family: \00003761;
   }
 }
 
@@ -2882,7 +5516,7 @@
   }
 
   line {
-    font-family: \00003763;
+    font-family: \00003767;
   }
 }
 
@@ -2897,7 +5531,7 @@
   }
 
   line {
-    font-family: \00003768;
+    font-family: \00003772;
   }
 }
 
@@ -2912,7 +5546,7 @@
   }
 
   line {
-    font-family: \00003776;
+    font-family: \00003780;
   }
 }
 
@@ -2926,7 +5560,7 @@
   }
 
   line {
-    font-family: \00003779;
+    font-family: \00003783;
   }
 }
 
@@ -2942,7 +5576,7 @@
   }
 
   line {
-    font-family: \00003782;
+    font-family: \00003786;
   }
 }
 
@@ -2957,7 +5591,7 @@
   }
 
   line {
-    font-family: \00003787;
+    font-family: \00003791;
   }
 }
 
@@ -2974,7 +5608,7 @@
   }
 
   line {
-    font-family: \00003795;
+    font-family: \00003799;
   }
 }
 
@@ -2989,7 +5623,7 @@
   }
 
   line {
-    font-family: \00003798;
+    font-family: \00003802;
   }
 }
 
@@ -3003,7 +5637,7 @@
   }
 
   line {
-    font-family: \00003807;
+    font-family: \00003811;
   }
 }
 
@@ -3022,7 +5656,7 @@
   }
 
   line {
-    font-family: \00003815;
+    font-family: \00003819;
   }
 }
 
@@ -3036,7 +5670,7 @@
   }
 
   line {
-    font-family: \00003818;
+    font-family: \00003822;
   }
 }
 
@@ -3050,7 +5684,7 @@
   }
 
   line {
-    font-family: \00003822;
+    font-family: \00003826;
   }
 }
 
@@ -3067,7 +5701,7 @@
   }
 
   line {
-    font-family: \00003833;
+    font-family: \00003837;
   }
 }
 
@@ -3082,7 +5716,7 @@
   }
 
   line {
-    font-family: \00003836;
+    font-family: \00003840;
   }
 }
 
@@ -3100,7 +5734,7 @@
   }
 
   line {
-    font-family: \00003842;
+    font-family: \00003846;
   }
 }
 
@@ -3118,7 +5752,7 @@
   }
 
   line {
-    font-family: \00003848;
+    font-family: \00003852;
   }
 }
 
@@ -3134,7 +5768,7 @@
   }
 
   line {
-    font-family: \00003861;
+    font-family: \00003865;
   }
 }
 
@@ -3150,7 +5784,7 @@
   }
 
   line {
-    font-family: \00003869;
+    font-family: \00003873;
   }
 }
 
@@ -3166,7 +5800,7 @@
   }
 
   line {
-    font-family: \00003874;
+    font-family: \00003878;
   }
 }
 
@@ -3181,7 +5815,7 @@
   }
 
   line {
-    font-family: \00003878;
+    font-family: \00003882;
   }
 }
 
@@ -3202,7 +5836,7 @@
   }
 
   line {
-    font-family: \00003890;
+    font-family: \00003894;
   }
 }
 
@@ -3219,7 +5853,7 @@
   }
 
   line {
-    font-family: \00003900;
+    font-family: \00003904;
   }
 }
 
@@ -3234,7 +5868,7 @@
   }
 
   line {
-    font-family: \00003901;
+    font-family: \00003905;
   }
 }
 
@@ -3248,7 +5882,7 @@
   }
 
   line {
-    font-family: \00003903;
+    font-family: \00003907;
   }
 }
 
@@ -3263,7 +5897,7 @@
     }
 
     line {
-      font-family: \00003900;
+      font-family: \00003904;
     }
 }
 
@@ -3278,7 +5912,7 @@
   }
 
   line {
-    font-family: \00003915;
+    font-family: \00003919;
   }
 }
 
@@ -3294,7 +5928,7 @@
   }
 
   line {
-    font-family: \00003916;
+    font-family: \00003920;
   }
 }
 
@@ -3308,7 +5942,7 @@
   }
 
   line {
-    font-family: \00003918;
+    font-family: \00003922;
   }
 }
 
@@ -3323,7 +5957,7 @@
     }
 
     line {
-      font-family: \00003915;
+      font-family: \00003919;
     }
 }
 
@@ -3338,7 +5972,7 @@
   }
 
   line {
-    font-family: \00003931;
+    font-family: \00003935;
   }
 }
 
@@ -3354,7 +5988,7 @@
   }
 
   line {
-    font-family: \00003932;
+    font-family: \00003936;
   }
 }
 
@@ -3369,7 +6003,7 @@
     }
 
     line {
-      font-family: \00003931;
+      font-family: \00003935;
     }
 }
 
@@ -3384,7 +6018,7 @@
   }
 
   line {
-    font-family: \00003945;
+    font-family: \00003949;
   }
 }
 
@@ -3399,7 +6033,7 @@
   }
 
   line {
-    font-family: \00003950;
+    font-family: \00003954;
   }
 }
 
@@ -3413,7 +6047,7 @@
   }
 
   line {
-    font-family: \00003953;
+    font-family: \00003957;
   }
 }
 
@@ -3430,7 +6064,7 @@
     }
 
     line {
-      font-family: \00003953;
+      font-family: \00003957;
     }
 }
 
@@ -3445,7 +6079,7 @@
   }
 
   line {
-    font-family: \00003964;
+    font-family: \00003968;
   }
 }
 
@@ -3461,7 +6095,7 @@
   }
 
   line {
-    font-family: \00003969;
+    font-family: \00003973;
   }
 }
 
@@ -3484,7 +6118,7 @@
   }
 
   line {
-    font-family: \00003983;
+    font-family: \00003987;
   }
 }
 
@@ -3498,7 +6132,7 @@
   }
 
   line {
-    font-family: \00003989;
+    font-family: \00003993;
   }
 }
 
@@ -3513,7 +6147,7 @@
   }
 
   line {
-    font-family: \00003997;
+    font-family: \000031001;
   }
 }
 
@@ -3527,7 +6161,7 @@
   }
 
   line {
-    font-family: \000031002;
+    font-family: \000031006;
   }
 }
 
@@ -3542,7 +6176,7 @@
   }
 
   line {
-    font-family: \000031011;
+    font-family: \000031015;
   }
 }
 
@@ -3557,7 +6191,7 @@
   }
 
   line {
-    font-family: \000031020;
+    font-family: \000031024;
   }
 }
 
@@ -3572,7 +6206,7 @@
   }
 
   line {
-    font-family: \000031029;
+    font-family: \000031033;
   }
 }
 
@@ -3587,7 +6221,7 @@
   }
 
   line {
-    font-family: \000031033;
+    font-family: \000031037;
   }
 }
 
@@ -3603,7 +6237,7 @@
   }
 
   line {
-    font-family: \000031039;
+    font-family: \000031043;
   }
 }
 
@@ -3621,7 +6255,7 @@
   }
 
   line {
-    font-family: \000031046;
+    font-family: \000031050;
   }
 }
 
@@ -3637,7 +6271,7 @@
   }
 
   line {
-    font-family: \000031051;
+    font-family: \000031055;
   }
 }
 
@@ -3651,7 +6285,7 @@
   }
 
   line {
-    font-family: \000031054;
+    font-family: \000031058;
   }
 }
 
@@ -3665,7 +6299,7 @@
   }
 
   line {
-    font-family: \000031060;
+    font-family: \000031064;
   }
 }
 
@@ -3681,7 +6315,7 @@
   }
 
   line {
-    font-family: \000031065;
+    font-family: \000031069;
   }
 }
 
@@ -3700,7 +6334,7 @@
   }
 
   line {
-    font-family: \000031075;
+    font-family: \000031079;
   }
 }
 
@@ -3725,7 +6359,7 @@
   }
 
   line {
-    font-family: \000031090;
+    font-family: \000031094;
   }
 }
 
@@ -3750,7 +6384,7 @@
   }
 
   line {
-    font-family: \000031104;
+    font-family: \000031108;
   }
 }
 
@@ -3773,7 +6407,7 @@
   }
 
   line {
-    font-family: \000031120;
+    font-family: \000031124;
   }
 }
 
@@ -3787,7 +6421,7 @@
   }
 
   line {
-    font-family: \000031130;
+    font-family: \000031134;
   }
 }
 
@@ -3801,7 +6435,7 @@
   }
 
   line {
-    font-family: \000031133;
+    font-family: \000031137;
   }
 }
 
@@ -3818,7 +6452,7 @@
   }
 
   line {
-    font-family: \000031140;
+    font-family: \000031144;
   }
 }
 
@@ -3842,7 +6476,7 @@
   }
 
   line {
-    font-family: \000031162;
+    font-family: \000031166;
   }
 }
 
@@ -3860,7 +6494,7 @@
   }
 
   line {
-    font-family: \000031171;
+    font-family: \000031175;
   }
 }
 
@@ -3874,7 +6508,7 @@
   }
 
   line {
-    font-family: \000031175;
+    font-family: \000031179;
   }
 }
 
@@ -3888,7 +6522,7 @@
   }
 
   line {
-    font-family: \000031182;
+    font-family: \000031186;
   }
 }
 
@@ -3902,7 +6536,7 @@
   }
 
   line {
-    font-family: \000031191;
+    font-family: \000031195;
   }
 }
 
@@ -3916,7 +6550,7 @@
   }
 
   line {
-    font-family: \000031196;
+    font-family: \000031200;
   }
 }
 
@@ -3931,7 +6565,7 @@
   }
 
   line {
-    font-family: \000031200;
+    font-family: \000031204;
   }
 }
 
@@ -3947,7 +6581,7 @@
   }
 
   line {
-    font-family: \000031205;
+    font-family: \000031209;
   }
 }
 
@@ -3961,7 +6595,7 @@
   }
 
   line {
-    font-family: \000031211;
+    font-family: \000031215;
   }
 }
 
@@ -3976,7 +6610,7 @@
   }
 
   line {
-    font-family: \000031216;
+    font-family: \000031220;
   }
 }
 
@@ -3991,7 +6625,7 @@
   }
 
   line {
-    font-family: \000031221;
+    font-family: \000031225;
   }
 }
 
@@ -4005,7 +6639,7 @@
   }
 
   line {
-    font-family: \000031228;
+    font-family: \000031232;
   }
 }
 
@@ -4022,7 +6656,7 @@
   }
 
   line {
-    font-family: \000031235;
+    font-family: \000031239;
   }
 }
 
@@ -4037,7 +6671,7 @@
   }
 
   line {
-    font-family: \000031239;
+    font-family: \000031243;
   }
 }
 
@@ -4051,7 +6685,7 @@
   }
 
   line {
-    font-family: \000031243;
+    font-family: \000031247;
   }
 }
 
@@ -4065,7 +6699,7 @@
   }
 
   line {
-    font-family: \000031247;
+    font-family: \000031251;
   }
 }
 
@@ -4079,7 +6713,7 @@
   }
 
   line {
-    font-family: \000031258;
+    font-family: \000031262;
   }
 }
 
@@ -4094,7 +6728,7 @@
   }
 
   line {
-    font-family: \000031262;
+    font-family: \000031266;
   }
 }
 
@@ -4108,7 +6742,7 @@
   }
 
   line {
-    font-family: \000031265;
+    font-family: \000031269;
   }
 }
 
@@ -4124,7 +6758,7 @@
   }
 
   line {
-    font-family: \000031271;
+    font-family: \000031275;
   }
 }
 
@@ -4140,7 +6774,7 @@
   }
 
   line {
-    font-family: \000031276;
+    font-family: \000031280;
   }
 }
 
@@ -4158,7 +6792,7 @@
   }
 
   line {
-    font-family: \000031289;
+    font-family: \000031293;
   }
 }
 
@@ -4172,7 +6806,7 @@
   }
 
   line {
-    font-family: \000031292;
+    font-family: \000031296;
   }
 }
 
@@ -4191,7 +6825,7 @@
   }
 
   line {
-    font-family: \000031301;
+    font-family: \000031305;
   }
 }
 
@@ -4206,7 +6840,7 @@
   }
 
   line {
-    font-family: \000031310;
+    font-family: \000031317;
   }
 }
 
@@ -4221,7 +6855,7 @@
   }
 
   line {
-    font-family: \000031314;
+    font-family: \000031321;
   }
 }
 
@@ -4239,7 +6873,21 @@
   }
 
   line {
-    font-family: \000031323;
+    font-family: \000031328;
+  }
+}
+
+.projetos .map-container .projects-map-render.leaflet-fullscreen-on {
+  top: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031334;
   }
 }
 
@@ -4251,7 +6899,6 @@
   padding: 0.625rem;
   top: 18.75rem;
   width: 18.75rem;
-  bottom: 3.125rem;
   z-index: 10;
 }
 
@@ -4261,7 +6908,7 @@
   }
 
   line {
-    font-family: \000031337;
+    font-family: \000031348;
   }
 }
 
@@ -4276,14 +6923,14 @@
   }
 
   line {
-    font-family: \000031342;
+    font-family: \000031353;
   }
 }
 
 .projetos .result-container > .row {
   background-color: #FFFFFF;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-  margin: 0 0 0.625rem;
+  margin: 0;
   padding: 0.625rem;
 }
 
@@ -4293,7 +6940,7 @@
   }
 
   line {
-    font-family: \000031349;
+    font-family: \000031360;
   }
 }
 
@@ -4309,7 +6956,7 @@
   }
 
   line {
-    font-family: \000031356;
+    font-family: \000031367;
   }
 }
 
@@ -4323,7 +6970,7 @@
   }
 
   line {
-    font-family: \000031360;
+    font-family: \000031371;
   }
 }
 
@@ -4339,7 +6986,7 @@
   }
 
   line {
-    font-family: \000031365;
+    font-family: \000031376;
   }
 }
 
@@ -4355,7 +7002,7 @@
   }
 
   line {
-    font-family: \000031371;
+    font-family: \000031382;
   }
 }
 
@@ -4371,7 +7018,7 @@
   }
 
   line {
-    font-family: \000031376;
+    font-family: \000031387;
   }
 }
 
@@ -4387,7 +7034,7 @@
   }
 
   line {
-    font-family: \000031387;
+    font-family: \000031398;
   }
 }
 
@@ -4401,7 +7048,7 @@
   }
 
   line {
-    font-family: \000031390;
+    font-family: \000031401;
   }
 }
 
@@ -4410,7 +7057,7 @@
   box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 18.75rem;
-  left: 0.9375rem;
+  left: 3.125rem;
   width: 8.9375rem;
   height: 9.1875rem;
   padding: 0.3125rem;
@@ -4424,7 +7071,7 @@
   }
 
   line {
-    font-family: \000031402;
+    font-family: \000031414;
   }
 }
 
@@ -4438,7 +7085,7 @@
   }
 
   line {
-    font-family: \000031405;
+    font-family: \000031417;
   }
 }
 
@@ -4452,7 +7099,7 @@
   }
 
   line {
-    font-family: \000031409;
+    font-family: \000031421;
   }
 }
 
@@ -4466,7 +7113,7 @@
   }
 
   line {
-    font-family: \000031414;
+    font-family: \000031426;
   }
 }
 
@@ -4480,7 +7127,7 @@
   }
 
   line {
-    font-family: \000031417;
+    font-family: \000031429;
   }
 }
 
@@ -4494,7 +7141,7 @@
   }
 
   line {
-    font-family: \000031424;
+    font-family: \000031436;
   }
 }
 
@@ -4508,7 +7155,7 @@
   }
 
   line {
-    font-family: \000031430;
+    font-family: \000031442;
   }
 }
 
@@ -4522,7 +7169,7 @@
   }
 
   line {
-    font-family: \000031434;
+    font-family: \000031446;
   }
 }
 
@@ -4536,7 +7183,7 @@
   }
 
   line {
-    font-family: \000031437;
+    font-family: \000031449;
   }
 }
 
@@ -4550,7 +7197,7 @@
   }
 
   line {
-    font-family: \000031441;
+    font-family: \000031453;
   }
 }
 
@@ -4564,7 +7211,7 @@
   }
 
   line {
-    font-family: \000031455;
+    font-family: \000031467;
   }
 }
 
@@ -4578,7 +7225,7 @@
   }
 
   line {
-    font-family: \000031463;
+    font-family: \000031475;
   }
 }
 
@@ -4592,7 +7239,7 @@
   }
 
   line {
-    font-family: \000031469;
+    font-family: \000031481;
   }
 }
 
@@ -4610,7 +7257,7 @@
   }
 
   line {
-    font-family: \000031476;
+    font-family: \000031488;
   }
 }
 
@@ -4624,7 +7271,7 @@
   }
 
   line {
-    font-family: \000031481;
+    font-family: \000031493;
   }
 }
 
@@ -4638,7 +7285,7 @@
   }
 
   line {
-    font-family: \000031484;
+    font-family: \000031496;
   }
 }
 
@@ -4652,7 +7299,7 @@
   }
 
   line {
-    font-family: \000031487;
+    font-family: \000031499;
   }
 }
 
@@ -4666,7 +7313,7 @@
   }
 
   line {
-    font-family: \000031490;
+    font-family: \000031502;
   }
 }
 
@@ -4680,7 +7327,7 @@
   }
 
   line {
-    font-family: \000031493;
+    font-family: \000031505;
   }
 }
 
@@ -4694,7 +7341,7 @@
   }
 
   line {
-    font-family: \000031496;
+    font-family: \000031508;
   }
 }
 
@@ -4708,7 +7355,7 @@
   }
 
   line {
-    font-family: \000031505;
+    font-family: \000031517;
   }
 }
 
@@ -4722,7 +7369,7 @@
   }
 
   line {
-    font-family: \000031508;
+    font-family: \000031520;
   }
 }
 
@@ -4737,7 +7384,7 @@
   }
 
   line {
-    font-family: \000031520;
+    font-family: \000031532;
   }
 }
 
@@ -4751,7 +7398,7 @@
   }
 
   line {
-    font-family: \000031527;
+    font-family: \000031539;
   }
 }
 
@@ -4765,7 +7412,7 @@
   }
 
   line {
-    font-family: \000031530;
+    font-family: \000031542;
   }
 }
 
@@ -4779,7 +7426,7 @@
   }
 
   line {
-    font-family: \000031534;
+    font-family: \000031546;
   }
 }
 
@@ -4793,7 +7440,7 @@
   }
 
   line {
-    font-family: \000031543;
+    font-family: \000031555;
   }
 }
 
@@ -4809,7 +7456,7 @@
   }
 
   line {
-    font-family: \000031547;
+    font-family: \000031559;
   }
 }
 
@@ -4825,7 +7472,7 @@
   }
 
   line {
-    font-family: \000031552;
+    font-family: \000031564;
   }
 }
 
@@ -4839,7 +7486,7 @@
   }
 
   line {
-    font-family: \000031557;
+    font-family: \000031569;
   }
 }
 
@@ -4855,7 +7502,7 @@
   }
 
   line {
-    font-family: \000031566;
+    font-family: \000031578;
   }
 }
 
@@ -4870,7 +7517,7 @@
   }
 
   line {
-    font-family: \000031570;
+    font-family: \000031582;
   }
 }
 
@@ -4884,7 +7531,7 @@
   }
 
   line {
-    font-family: \000031573;
+    font-family: \000031585;
   }
 }
 
@@ -4901,7 +7548,7 @@
   }
 
   line {
-    font-family: \000031578;
+    font-family: \000031590;
   }
 }
 
@@ -4915,7 +7562,7 @@
   }
 
   line {
-    font-family: \000031581;
+    font-family: \000031593;
   }
 }
 
@@ -4933,7 +7580,7 @@
   }
 
   line {
-    font-family: \000031590;
+    font-family: \000031602;
   }
 }
 
@@ -4949,7 +7596,7 @@
   }
 
   line {
-    font-family: \000031596;
+    font-family: \000031608;
   }
 }
 
@@ -4964,7 +7611,7 @@
   }
 
   line {
-    font-family: \000031600;
+    font-family: \000031612;
   }
 }
 
@@ -4979,7 +7626,7 @@
   }
 
   line {
-    font-family: \000031605;
+    font-family: \000031617;
   }
 }
 
@@ -4995,7 +7642,7 @@
   }
 
   line {
-    font-family: \000031612;
+    font-family: \000031624;
   }
 }
 
@@ -5009,7 +7656,7 @@
   }
 
   line {
-    font-family: \000031614;
+    font-family: \000031626;
   }
 }
 
@@ -5025,7 +7672,7 @@
   }
 
   line {
-    font-family: \000031621;
+    font-family: \000031633;
   }
 }
 
@@ -5040,7 +7687,7 @@
   }
 
   line {
-    font-family: \000031636;
+    font-family: \000031648;
   }
 }
 
@@ -5055,7 +7702,7 @@
   }
 
   line {
-    font-family: \000031640;
+    font-family: \000031652;
   }
 }
 
@@ -5069,7 +7716,7 @@
   }
 
   line {
-    font-family: \000031643;
+    font-family: \000031655;
   }
 }
 
@@ -5084,7 +7731,7 @@
   }
 
   line {
-    font-family: \000031650;
+    font-family: \000031662;
   }
 }
 
@@ -5101,7 +7748,7 @@
   }
 
   line {
-    font-family: \000031656;
+    font-family: \000031668;
   }
 }
 
@@ -5116,7 +7763,7 @@
   }
 
   line {
-    font-family: \000031663;
+    font-family: \000031675;
   }
 }
 
@@ -5130,7 +7777,7 @@
   }
 
   line {
-    font-family: \000031666;
+    font-family: \000031678;
   }
 }
 
@@ -5146,7 +7793,7 @@
   }
 
   line {
-    font-family: \000031674;
+    font-family: \000031686;
   }
 }
 
@@ -5160,7 +7807,7 @@
   }
 
   line {
-    font-family: \000031676;
+    font-family: \000031688;
   }
 }
 
@@ -5176,7 +7823,7 @@
   }
 
   line {
-    font-family: \000031682;
+    font-family: \000031694;
   }
 }
 
@@ -5192,7 +7839,7 @@
   }
 
   line {
-    font-family: \000031687;
+    font-family: \000031699;
   }
 }
 
@@ -5215,7 +7862,7 @@
   }
 
   line {
-    font-family: \000031701;
+    font-family: \000031713;
   }
 }
 
@@ -5229,7 +7876,7 @@
   }
 
   line {
-    font-family: \000031707;
+    font-family: \000031719;
   }
 }
 
@@ -5244,7 +7891,7 @@
   }
 
   line {
-    font-family: \000031717;
+    font-family: \000031729;
   }
 }
 
@@ -5259,7 +7906,7 @@
   }
 
   line {
-    font-family: \000031728;
+    font-family: \000031740;
   }
 }
 
@@ -5273,7 +7920,7 @@
   }
 
   line {
-    font-family: \000031730;
+    font-family: \000031742;
   }
 }
 
@@ -5287,7 +7934,7 @@
   }
 
   line {
-    font-family: \000031733;
+    font-family: \000031745;
   }
 }
 
@@ -5302,7 +7949,7 @@
   }
 
   line {
-    font-family: \000031736;
+    font-family: \000031748;
   }
 }
 
@@ -5320,7 +7967,7 @@
   }
 
   line {
-    font-family: \000031745;
+    font-family: \000031757;
   }
 }
 
@@ -5337,7 +7984,7 @@
   }
 
   line {
-    font-family: \000031750;
+    font-family: \000031762;
   }
 }
 
@@ -5351,7 +7998,7 @@
   }
 
   line {
-    font-family: \000031753;
+    font-family: \000031765;
   }
 }
 
@@ -5365,7 +8012,7 @@
   }
 
   line {
-    font-family: \000031772;
+    font-family: \000031784;
   }
 }
 
@@ -5379,7 +8026,7 @@
   }
 
   line {
-    font-family: \000031775;
+    font-family: \000031787;
   }
 }
 
@@ -5393,7 +8040,7 @@
   }
 
   line {
-    font-family: \000031778;
+    font-family: \000031790;
   }
 }
 
@@ -5407,7 +8054,7 @@
   }
 
   line {
-    font-family: \000031781;
+    font-family: \000031793;
   }
 }
 
@@ -5421,7 +8068,7 @@
   }
 
   line {
-    font-family: \000031785;
+    font-family: \000031797;
   }
 }
 
@@ -5436,7 +8083,7 @@
   }
 
   line {
-    font-family: \000031793;
+    font-family: \000031805;
   }
 }
 
@@ -5459,7 +8106,7 @@
   }
 
   line {
-    font-family: \000031799;
+    font-family: \000031811;
   }
 }
 
@@ -5478,7 +8125,7 @@
   }
 
   line {
-    font-family: \000031802;
+    font-family: \000031814;
   }
 }
 
@@ -5497,7 +8144,7 @@
   }
 
   line {
-    font-family: \000031808;
+    font-family: \000031820;
   }
 }
 
@@ -5516,7 +8163,7 @@
   }
 
   line {
-    font-family: \000031814;
+    font-family: \000031826;
   }
 }
 
@@ -5535,7 +8182,7 @@
   }
 
   line {
-    font-family: \000031818;
+    font-family: \000031830;
   }
 }
 
@@ -5554,7 +8201,7 @@
   }
 
   line {
-    font-family: \000031824;
+    font-family: \000031836;
   }
 }
 
@@ -5573,7 +8220,7 @@
   }
 
   line {
-    font-family: \000031834;
+    font-family: \000031846;
   }
 }
 
@@ -5588,7 +8235,7 @@
   }
 
   line {
-    font-family: \000031841;
+    font-family: \000031853;
   }
 }
 
@@ -5607,7 +8254,7 @@
   }
 
   line {
-    font-family: \000031849;
+    font-family: \000031861;
   }
 }
 
@@ -5626,7 +8273,7 @@
   }
 
   line {
-    font-family: \000031857;
+    font-family: \000031869;
   }
 }
 
@@ -5640,7 +8287,7 @@
   }
 
   line {
-    font-family: \000031861;
+    font-family: \000031873;
   }
 }
 
@@ -5654,7 +8301,7 @@
   }
 
   line {
-    font-family: \000031865;
+    font-family: \000031877;
   }
 }
 
@@ -5669,7 +8316,7 @@
   }
 
   line {
-    font-family: \000031870;
+    font-family: \000031882;
   }
 }
 
@@ -5684,7 +8331,7 @@
   }
 
   line {
-    font-family: \000031873;
+    font-family: \000031885;
   }
 }
 
@@ -5692,4 +8339,92 @@
   padding: 0.6875rem;
   background-color: #434242;
   display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031899;
+  }
+}
+
+.icon-marker {
+  background: top left url("") no-repeat transparent;
+  padding-top: 15px;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031904;
+  }
+}
+
+.icon-marker i {
+  font-size: 26px;
+  color: #fff;
+  margin-top: 16px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031910;
+  }
+}
+
+.icon-marker.abrange-cidade {
+  background-image: url(../assets/images/projetos_plot_cidade.png);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031913;
+  }
+}
+
+.icon-marker.abrange-sub {
+  background-image: url(../assets/images/projetos_plot_sub.png);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031916;
+  }
+}
+
+.icon-marker.local-def {
+  background-image: url(../assets/images/projetos_plot_definido.png);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/srv\/www\/pdm\.local\/htdocs\/wp-content\/themes\/pdm-andamento\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000031919;
+  }
+}
+
+.icon-marker.local-em-def {
+  background-image: url(../assets/images/projetos_plot_naodefinido.png);
 }

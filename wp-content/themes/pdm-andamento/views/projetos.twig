@@ -4,13 +4,28 @@
 
 {% block header %}
 {% include "header-simple.twig" with {page_type:"projetos"} %}
+<script src='//api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+<link href='//api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+
+<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+<link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+<link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/leaflet.fullscreen.css' rel='stylesheet' />
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+
 {% endblock %}
 
 {% block content %}
 
 	<div class="row result-container">
 		<div class="row">
-			<div class="medium-1 columns"><i class="icon-projects_saude"></i></div>
+			<div class="medium-1 columns" id="project-icon"><i class="icon-projects_saude"></i></div>
 			<div class="medium-11 columns">
 				<h1>CRAS - PARQUE DO CARMO</h1>
 				<p class="secretaria">Secretaria Municipal de Assistência Social</p>
@@ -19,7 +34,7 @@
 				<p class="local">Local em definição</p>
 			</div>
 		</div>
-		<div class="row">
+		<!--div class="row">
 			<div class="medium-1 columns"><i class="icon-projects_pessoas-com-deficiencia"></i></div>
 			<div class="medium-11 columns">
 				<h1>CRAS - PARQUE DO CARMO</h1>
@@ -108,7 +123,7 @@
 				<p class="meta">Meta 1</p>
 				<p class="local">Local em definição</p>
 			</div>
-		</div>
+		</div-->
 
 
 	</div>

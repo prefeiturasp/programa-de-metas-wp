@@ -59,7 +59,7 @@
         <div id="projects-header" class="row row-full">
             <div class="row">
                 <div class="small-12 medium-6 columns">
-                    <h2>Filtragem de Projetos</h2>    
+                    <h2>Filtragem de Projetos</h2>
                 </div>
                 <div class="small-12 medium-6 columns">
                     <a class="button right"><i class="icon-arrow-up"></i> Voltar para a home</a>
@@ -67,46 +67,28 @@
             </div>
         </div>
         <div class="row row-full" id="f1_container">
-            <div class="row">
-                
-                <div class="filtrar-todas-as-metas  small-12 columns text-center">
-                <form name="filtros-disponiveis" id="filtros-disponiveis" method="GET" action="{{site.url}}#resultado">
-                    <div class="row">
-                        <div class="columns small-9">
-                            <div class="row basic-filters">
-                                <div class="small-12 medium-1 columns">
-                                    <p>Filtros:</p>
-                                </div>
-                                <div class="columns small-12 medium-11">
-                                    <div class="small-12 medium-3 columns">
-                                        <label class="first-input">
-                                        <select name="subprefeitura">
-                                        <option value="" selected>subprefeitura</option>
-                                        {% include 'partials/_options-subprefeituras.twig' %}
-                                        </select>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-buttons columns small-3">
-                            <div class="small-12 medium-6 columns">
-                                <button type="submit" class="button round tiny filter"><i class="icon-filter-black"></i> Filtrar</button>
-                            </div>
-                            <div class="small-12 medium-6 columns">
-                                <button class="clear-form button round tiny" type="button">x Limpar</button>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="filtrar-todas-as-metas  small-12 columns text-center">
+                <div class="row basic-filters">
+                    <div class="small-12 medium-1 columns">
+                        <p>Vá direto:</p>
                     </div>
-                </form>
+                    <div class="columns small-12 medium-11">
+                        <p> {% set selected = subprefeitura %}
+                        {% for subprefeitura in subprefeituras %}
+                        <a href="javascript:void(0);" data-lat="{{subprefeitura.gps_lat}}" data-long="{{subprefeitura.gps_long}}" class="{% if subprefeitura.id == selected %}selected{% endif %} navigate-to">{{subprefeitura.name}}</a>
+                        {% endfor %}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     {% endif %}
 
-    <div class="row">
+{#     <div class="row">
         <div class="small-12 columns separate-bar {{page_type}}">
             &nbsp;
         </div>
-    </div>
+    </div> #}
 </div>

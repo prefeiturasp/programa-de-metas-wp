@@ -3,21 +3,38 @@ require.config({
         jquery: '../bower_components/jquery/dist/jquery',
         d3: '../bower_components/d3/d3.min',
         //leaflet: '../bower_components/leaflet/src/Leaflet',
-        leaflet: "//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet",
+        //leaflet: "//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet",
         foundation: '../bower_components/foundation/js/foundation',
         polyfil: '../bower_components/REM-unit-polyfill/js/rem.min',
         ticker: '../bower_components/jQuery-News-Ticker/includes/jquery.ticker',
         list: '../bower_components/list.js/dist/list.min',
-        'leaflet.ajax': '../bower_components/leaflet.ajax/dist/leaflet.ajax.min',
-        'leaflet.markercluster': '../bower_components/leaflet.markercluster/dist/leaflet.markercluster'
+        // mapbox: 'mapbox/mapbox',
+        // 'leaflet.ajax': '../bower_components/leaflet.ajax/dist/leaflet.ajax.min',
+        // 'leaflet.markercluster': '../bower_components/leaflet.markercluster/dist/leaflet.markercluster',
+        // 'mapbox.fullscreen': 'mapbox/Leaflet.fullscreen.min'
     },
     shim: {
-        'leaflet.ajax': {
-            deps: ['leaflet']
-        },
-        'leaflet.markercluster': {
-            deps: ['leaflet']
-        },
+        // 'mapbox': {
+        //     exports: 'L'
+        // },
+        // 'leaflet.ajax': {
+        //     deps: ['leaflet' ]
+        // },
+
+        // 'leaflet.markercluster.with.mapbox': {
+        //     deps: ['mapbox/mapbox']
+        // },
+
+        // 'leaflet.markercluster': {
+        //   deps: ['mapbox'],
+        //   exports: 'L'
+        // },
+
+        // 'mapbox.fullscreen': {
+        //     deps: ['mapbox'],
+        //     exports: 'L'
+        // },
+
         d3: {
             exports: 'd3'
         },
@@ -39,19 +56,38 @@ require.config({
     }
 });
 
-require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'polyfil', 'ticker', 'list'], function (chart, map, app, $, buscaPorCep, List) {
+require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'list', 'Config', 'polyfil', 'ticker'],
+  function (chart, map, app, $, buscaPorCep, List, Config) {
     'use strict';
     // use app here
     app.init();
 
-    // startup map
-    $('.map-render').each(function () {
-        map.init(this);
-    });
+    if (Config.isMapBoxEnabled) {
+        //require( ['mapbox', 'leaflet.markercluster'], function (L) {
+          // startup map
+          $('.map-render').each(function () {
+              map.init(this);
+          });
 
-    $('.projects-map-render').each(function () {
-        map.plotProjects(this);
-    });
+          $('.projects-map-render').each(function () {
+              map.plotProjects(this);
+          });
+        //});
+    } else {
+        require( ['leaflet', 'leaflet.ajax', 'leaflet.markercluster'],  function (L) {
+          // startup map
+          $('.map-render').each(function () {
+              map.init(this);
+          });
+
+          $('.projects-map-render').each(function () {
+              map.plotProjects(this);
+          });
+        });
+    }
+
+
+
 
     // startup chart
     $('.chart-render').each(function () {
@@ -91,5 +127,7 @@ require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'polyfil', 'ticker', 'l
 
     buscaPorCep.init();
 
-    //.filtrar-todas-as-metas.button
+    map.adjustMapPosition();
+
+    jQuery(window).resize(map.adjustMapPosition);
 });

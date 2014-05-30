@@ -17,6 +17,7 @@ class PaginaProjetos
     {
         $context = \Timber::get_context();
         $api = new ApiClient;
+        $context['subprefeituras'] = $api->getSubPrefeituras();
         return $context;
     }
 

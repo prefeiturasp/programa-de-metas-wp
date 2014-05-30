@@ -38,7 +38,6 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
                 $('#f1_container').removeClass('shrink2');
                 $('.summary-results').css('margin-top', 0);
             }
-
         },
 
         _metaFollow = function (e,o) {

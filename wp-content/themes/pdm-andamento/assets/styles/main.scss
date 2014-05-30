@@ -1263,6 +1263,10 @@ $cinza-padrao: #666;
         position: relative;
         z-index: 9;
 
+        #f1_container {
+            min-height: 0 !important;
+        }
+
         #projects-header {
             background-color: $verde;
 

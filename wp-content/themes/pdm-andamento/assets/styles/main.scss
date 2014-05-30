@@ -35,6 +35,7 @@ $vermelho: #eb2851;
 
 @import "settings";
 @import "charts";
+@import "marker-cluster";
 // endbower
 
 .row-full {
@@ -1301,7 +1302,7 @@ $cinza-padrao: #666;
                 font-size: rem-calc(14);
                 margin: rem-calc(5) 0 0;
             }
-            
+
         }
     }
 
@@ -1310,7 +1311,7 @@ $cinza-padrao: #666;
         position: relative;
         z-index: 0;
 
-        .map-render {
+        .projects-map-render {
             bottom: 0;
             left: 0;
             position: fixed;
@@ -1349,7 +1350,7 @@ $cinza-padrao: #666;
             font-family: "MontserratBold";
             font-size: 18px;
             color: #666666;
-            
+
         }
 
         p {
@@ -1362,7 +1363,7 @@ $cinza-padrao: #666;
             color: #000;
         }
         .assunto {
-            font-size: 12px;            
+            font-size: 12px;
             font-family: "MontserratBold";
             color: #666666;
 
@@ -1373,7 +1374,7 @@ $cinza-padrao: #666;
             color: #18a5b1;
         }
         .local {
-            font-size: 12px;            
+            font-size: 12px;
             font-family: "MontserratBold";
             color: #b7e27d;
 

@@ -7,9 +7,17 @@ require.config({
         foundation: '../bower_components/foundation/js/foundation',
         polyfil: '../bower_components/REM-unit-polyfill/js/rem.min',
         ticker: '../bower_components/jQuery-News-Ticker/includes/jquery.ticker',
-        list: '../bower_components/list.js/dist/list.min'
+        list: '../bower_components/list.js/dist/list.min',
+        'leaflet.ajax': '../bower_components/leaflet.ajax/dist/leaflet.ajax.min',
+        'leaflet.markercluster': '../bower_components/leaflet.markercluster/dist/leaflet.markercluster'
     },
     shim: {
+        'leaflet.ajax': {
+            deps: ['leaflet']
+        },
+        'leaflet.markercluster': {
+            deps: ['leaflet']
+        },
         d3: {
             exports: 'd3'
         },
@@ -39,6 +47,10 @@ require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'polyfil', 'ticker', 'l
     // startup map
     $('.map-render').each(function () {
         map.init(this);
+    });
+
+    $('.projects-map-render').each(function () {
+        map.plotProjects(this);
     });
 
     // startup chart

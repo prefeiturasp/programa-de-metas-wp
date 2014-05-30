@@ -1,4 +1,4 @@
-define(['jquery', 'leaflet'], function ($, L) {
+define(['jquery', 'leaflet', 'leaflet.ajax', 'leaflet.markercluster'], function ($, L) {
 
     'use strict';
     var
@@ -29,11 +29,55 @@ define(['jquery', 'leaflet'], function ($, L) {
                 map.fitBounds(bounds);
             }
         }, 0);
+    },
 
+    _plotProjects = function mapProjects(selector) {
+        var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            maxZoom: 16,
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+        }),
+        latlng = L.latLng(-23.546628, -46.637787);
+
+        if (this.isMapBoxEnabled) {
+
+        } else {
+            var map = L.map($(selector).get(0), {center: latlng, zoom: 13, layers: [tiles]});
+        }
+
+
+        var markers = L.markerClusterGroup();
+        $.ajax({
+          dataType: "jsonp",
+          url: 'http://planejasampa.prefeitura.sp.gov.br/metas-qa/api/projects.geojson',
+            success: function (addressPoints) {
+                for (var i = 0; i < addressPoints.features.length; i++) {
+                    var a = addressPoints.features[i];
+                    if (a.properties['location-type'] == 'local-def') {
+                        var title = a.properties.name;
+                        var marker = L.marker(new L.LatLng(a.geometry.coordinates[0], a.geometry.coordinates[1]), { title: title });
+
+                        marker.bindPopup(title);
+                        markers.addLayer(marker);
+                    } else {
+
+                    }
+                }
+                /*L.geoJson(addressPoints, {
+                    style: function(feature) {
+                        switch (feature.properties.party) {
+                            case 'Republican': return {color: "#ff0000"};
+                            case 'Democrat':   return {color: "#0000ff"};
+                        }
+                    }
+                }).addTo(map);*/
+            }
+        });
+        map.addLayer(markers);
     };
 
     return {
-        init: _init
+        init: _init,
+        plotProjects: _plotProjects
     };
 
 });

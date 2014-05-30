@@ -8,7 +8,9 @@
     "requirejs": "~2.1.11",
     "list.js": "1.1.1",
     "jQuery-News-Ticker": "git@github.com:daniloprates/jQuery-News-Ticker.git",
-    "REM-unit-polyfill": "git@github.com:chuckcarpenter/REM-unit-polyfill.git#~1.2.4"
+    "REM-unit-polyfill": "git@github.com:chuckcarpenter/REM-unit-polyfill.git#~1.2.4",
+    "leaflet.markercluster": "~0.4.0",
+    "leaflet.ajax": "calvinmetcalf/leaflet-ajax#~1.1.0"
   },
   "devDependencies": {}
 }

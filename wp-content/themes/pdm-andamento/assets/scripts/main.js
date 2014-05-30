@@ -95,7 +95,7 @@ require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'list', 'Config', 'poly
     jQuery('form[name="projetos-por-perto"] input[name="cep"]');
 
     jQuery('form[name="projetos-por-perto"] .bprefeitura').on('click', function (evt) {
-      window.location = SITE_URL + '/projetos/?subprefeitura=' + jQuery('select#subprefeitura-topo').val() + '#resultado';
+      window.location = SITE_URL + '/?subprefeitura=' + jQuery('select#subprefeitura-topo').val() + '#resultado';
     });
      jQuery('form[name="metas-por-objetivo"] .bojetivo').on('click', function (evt) {
       window.location = SITE_URL + '/?objetivo=' + jQuery('select#objetivo-topo').val() + '#resultado';

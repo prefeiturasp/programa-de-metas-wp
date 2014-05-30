@@ -101,9 +101,27 @@ define(['jquery', 'Config'], function ($, Config) {
 
                     for (var i = 0; i < addressPoints.features.length; i++) {
                         var a = addressPoints.features[i];
-                        //if (a.properties['location-type'] == 'local-def') {
                         var title = a.properties.name;
-                        var marker = L.marker(new L.LatLng(a.geometry.coordinates[0], a.geometry.coordinates[1]),
+                        var gpsLat = a.geometry.coordinates[0];
+                        var gpsLong = a.geometry.coordinates[1]
+
+                        if (a.properties.location_type == 'abrange-cidade') {
+                            var gpsLat = -23.546628;
+                            var gpsLong = -46.637787;
+                        } else if (a.properties.location_type == 'abrange-sub') {
+                            var gpsLat = a.properties.prefectures[0].gps_lat;
+                            var gpsLong = a.properties.prefectures[0].gps_long;
+                        } else if (a.properties.location_type == 'local-def') {
+                            //var gpsLat = a.geometry.prefecture;
+                            //var gpsLong = a.geometry.prefecture;
+                        } else if (a.properties.location_type == 'local-em-def') {
+                            // var gpsLat = a.geometry.prefecture;
+                            // var gpsLong = a.geometry.prefecture;
+                        } else {
+                            //
+                        }
+
+                        var marker = L.marker(new L.LatLng(gpsLat, gpsLong),
                             {
                                 icon: L.divIcon({
                                     // Specify a class name we can refer to in CSS.

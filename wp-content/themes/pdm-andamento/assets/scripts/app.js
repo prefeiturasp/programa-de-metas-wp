@@ -86,6 +86,19 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
             // })
 
         },
+        openSelect = function(selector){
+             var element = $(selector)[0], worked = false;
+            if (document.createEvent) { // all browsers
+                var e = document.createEvent("MouseEvents");
+                e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                worked = element.dispatchEvent(e);
+            } else if (element.fireEvent) { // ie
+                worked = element.fireEvent("onmousedown");
+            }
+            if (!worked) { // unknown browser / error
+                alert("It didn't worked in your browser.");
+            }   
+        },
         getFullHeight = function () {
             return $(document).height() - $(window).height();
         },
@@ -134,6 +147,20 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
             $('.advanced-toggle').on('click',function(){
                 $('#f1_container').toggleClass('advanced');
             })
+
+            $('body.projetos .filtrar-todas-as-metas select').on({
+
+                mouseenter :  function() {
+                    openSelect(this);
+                    // var count = $(this).children().length;
+                    // $(this).attr('size', count);
+                },
+                mouseleave : function() {
+                    // $(this).removeAttr('size');
+                }
+
+            });
+
 
             // $('button','.mobile-disclaimer').on('click', function (event) {
             //     $('.mobile-disclaimer').hide();

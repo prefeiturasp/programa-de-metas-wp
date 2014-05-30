@@ -22,6 +22,18 @@ define(['jquery', 'Config'], function ($, Config) {
                 bounds.push(point);
             }
         });
+        // $('body.projetos .filtrar-todas-as-metas select').on(change,function() {
+
+        //     var lat = $('select :selected').data('gps-lat'),
+        //         lng = $('select :selected').data('gps-long')
+        //         pnt = [lat,lng],
+        //         marker = L.marker(point).addTo(map).bindPopup('<a href="'+$(this).attr('href')+'">'+$(this).text()+'</a>');
+
+        //     event.preventDefault();
+        //     marker.openPopup();
+        //     map.panTo(point);
+
+        // });
         // Workaround for a leaflet bug (https://github.com/Leaflet/Leaflet/issues/2021)
         window.setTimeout(function() {
             if (bounds.length > 0) {
@@ -54,13 +66,16 @@ define(['jquery', 'Config'], function ($, Config) {
     },
 
     navigation : function (map) {
-        var $navigateTo = $('.navigate-to');
 
-        $navigateTo.on('click', function (e) {
-            var el = $(e.currentTarget);
+        $('body.projetos .filtrar-todas-as-metas select').on('change',function(e,o) {
+
+            var el = $(this).find(':selected');
             var latLong = [el.data('gps-lat'), el.data('gps-long')];
             map.setView(latLong, 13);
+
         });
+
+
     },
 
     embedMap : function (selector) {
@@ -84,6 +99,31 @@ define(['jquery', 'Config'], function ($, Config) {
         return map;
     },
 
+    stringToSlug : function(str) {
+        str = str.replace(/^\s+|\s+$/g, ''); // trim
+        str = str.toLowerCase();
+
+        // remove accents, swap ñ for n, etc
+        var from = "àáäâãèéëêìíïîòóöôùúüûñç·/_,:;";
+        var to   = "aaaaaeeeeiiiioooouuuunc------";
+        for (var i=0, l=from.length ; i<l ; i++) {
+            str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+        }
+
+        str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+        .replace(/\s+/g, '-') // collapse whitespace and replace by -
+        .replace(/-+/g, '-'); // collapse dashes
+
+        return str;
+    },
+
+    statusType : {
+        'local-def' : 'Local definido',
+        'local-em-def' : 'Local em definição',
+        'abrange-sub' : 'Abrange a subprefeitura',
+        'abrange-cidade' : 'Abrange toda a cidade'
+    },
+
     plotProjects : function (selector) {
 
         var map = this.embedMap(selector);
@@ -101,15 +141,17 @@ define(['jquery', 'Config'], function ($, Config) {
 
                     for (var i = 0; i < addressPoints.features.length; i++) {
                         var a = addressPoints.features[i];
+
                         //if (a.properties['location-type'] == 'local-def') {
                         var title = a.properties.name;
+                        var objectiveSlug = 'icon-projects_' + MAP.stringToSlug(a.properties.objective);
                         var marker = L.marker(new L.LatLng(a.geometry.coordinates[0], a.geometry.coordinates[1]),
                             {
                                 icon: L.divIcon({
                                     // Specify a class name we can refer to in CSS.
                                     className: 'icon-marker '+a.properties.location_type,
                                     // Define what HTML goes in each marker.
-                                    html: '<i class="icon-projects_tecnologia-e-inovacao"></i>',
+                                    html: '<i class="' + objectiveSlug + '"></i>',
                                     // Set a markers width and height.
                                     iconSize: [76, 72]
                                 }),
@@ -121,10 +163,11 @@ define(['jquery', 'Config'], function ($, Config) {
                                 $('.result-container.row').html();
                                 $('.result-container.row').find('#project-icon').html("<i class='icon-projects_tecnologia-e-inovacao'></i>");
                                 $('.result-container.row').find('h1').text(e.target.options.properties.name);
-                                $('.result-container.row').find('.secretaria').text(e.target.options.properties.name);
-                                $('.result-container.row').find('.assunto').text(e.target.options.properties.name);
-                                $('.result-container.row').find('.meta').text('META '+e.target.options.properties.goal_id);;
-                                $('.result-container.row').find('.local').text(e.target.options.properties.location_type);;
+                                $('.result-container.row').find('.secretaria').text(e.target.options.properties.secretary[0].name);
+                                $('.result-container.row').find('.assunto').text(e.target.options.properties.objective);
+                                $('.result-container.row').find('.meta').text('META '+e.target.options.properties.goal_id);
+                                $('.result-container.row').find('.local').text(MAP.statusType[e.target.options.properties.location_type]);
+
                             });
                             //marker.bindPopup(title);
                             markers.addLayer(marker);
@@ -175,6 +218,7 @@ define(['jquery', 'Config'], function ($, Config) {
         });
         map.addLayer(markers);
     }
+
 };
 
     return MAP;

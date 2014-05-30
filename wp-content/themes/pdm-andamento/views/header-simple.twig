@@ -71,7 +71,14 @@
             <div class="filtrar-todas-as-metas  small-12 columns text-center">
                 <div class="row basic-filters">
                     <div class="small-12 medium-1 columns">
-                        <p>Vá direto:</p>
+                        <p>Subprefeitura:</p>
+                    </div>
+                    <div class="small-12 medium-4 left columns">
+                        <select>
+                            {% for subprefeitura in subprefeituras %}
+                            <option data-gps-lat="{{subprefeitura.gps_lat}}" data-gps-long="{{subprefeitura.gps_long}}" class="{% if subprefeitura.id == selected %}selected{% endif %} navigate-to">{{subprefeitura.name}}</option>
+                            {% endfor %}
+                        </select>
                     </div>
                     <div class="columns small-12 medium-11">
                         <p> {% set selected = subprefeitura %}

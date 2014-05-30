@@ -62,32 +62,15 @@ require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'list', 'Config', 'poly
     // use app here
     app.init();
 
-    if (Config.isMapBoxEnabled) {
-        //require( ['mapbox', 'leaflet.markercluster'], function (L) {
-          // startup map
-          $('.map-render').each(function () {
-              map.init(this);
-          });
+    // startup map
+    $('.map-render').each(function () {
+        map.init(this);
+    });
 
-          $('.projects-map-render').each(function () {
-              map.plotProjects(this);
-          });
-        //});
-    } else {
-        require( ['leaflet', 'leaflet.ajax', 'leaflet.markercluster'],  function (L) {
-          // startup map
-          $('.map-render').each(function () {
-              map.init(this);
-          });
-
-          $('.projects-map-render').each(function () {
-              map.plotProjects(this);
-          });
-        });
-    }
-
-
-
+    // startup project map
+    $('.projects-map-render').each(function () {
+        map.plotProjects(this);
+    });
 
     // startup chart
     $('.chart-render').each(function () {

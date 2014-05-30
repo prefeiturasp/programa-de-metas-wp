@@ -3,13 +3,11 @@ define(['jquery', 'Config'], function ($, Config) {
     'use strict';
     var MAP = {
     init: function (selector) {
-        var L = this.loadLibrary();
         var
         $map = $(selector),
         $items = $($map.data('source')).find('[data-latlng]'),
-        map = L.map($map.get(0)).setView([-23.5475, -46.63611111], 10),
+        map = this.embedMap(selector),
         bounds = [];
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
         $items.each(function () {
             var $self = $(this);
             if ($self.data('latlng') != "") {
@@ -56,25 +54,25 @@ define(['jquery', 'Config'], function ($, Config) {
     },
 
     navigation : function (map) {
-        var
-            $navigateTo = $('.navigate-to'),
-            latLong = [$navigateTo.data('gps_lat'), $navigateTo.data('gps_long')];
+        var $navigateTo = $('.navigate-to');
 
-            $navigateTo.on('click', function () {
-                map.setView(latLong, 13);
-            });
+        $navigateTo.on('click', function (e) {
+            var el = $(e.currentTarget);
+            var latLong = [el.data('gps-lat'), el.data('gps-long')];
+            map.setView(latLong, 13);
+        });
     },
 
-    plotProjects : function (selector) {
-
+    embedMap : function (selector) {
         var latLong = [-23.546628, -46.637787];
+
         if (Config.isMapBoxEnabled) {
             var map = L.mapbox.map($(selector).get(0))
                 .setView(latLong, 13)
                 .addLayer(L.mapbox.tileLayer('lpirola.ic41i88p'));
 
             L.control.fullscreen().addTo(map);
-            var hash = L.hash(map);
+
         } else {
             var
                 tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -83,9 +81,15 @@ define(['jquery', 'Config'], function ($, Config) {
                 }),
                 map = L.map($(selector).get(0), {center: new L.latLng(latLong), zoom: 13, layers: [tiles]});
         }
+        return map;
+    },
 
-        MAP.navigation(map);
+    plotProjects : function (selector) {
 
+        var map = this.embedMap(selector);
+
+        this.navigation(map);
+        var hash = L.hash(map);
         var markers = L.markerClusterGroup({showCoverageOnHover:false});
         $.ajax({
           dataType: "jsonp",

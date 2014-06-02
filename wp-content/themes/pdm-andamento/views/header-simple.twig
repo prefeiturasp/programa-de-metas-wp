@@ -76,7 +76,7 @@
                     <div class="small-12 medium-4 left columns">
                         <select>
                             {% for subprefeitura in subprefeituras %}
-                            <option data-gps-lat="{{subprefeitura.gps_lat}}" data-gps-long="{{subprefeitura.gps_long}}" class="{% if subprefeitura.id == selected %}selected{% endif %} navigate-to">{{subprefeitura.name}}</option>
+                            <option value="{{subprefeitura.id}}" data-gps-lat="{{subprefeitura.gps_lat}}" data-gps-long="{{subprefeitura.gps_long}}" class="{% if subprefeitura.id == selected %}selected{% endif %} navigate-to">{{subprefeitura.name}}</option>
                             {% endfor %}
                         </select>
                     </div>

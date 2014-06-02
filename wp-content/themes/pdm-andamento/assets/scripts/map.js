@@ -22,36 +22,13 @@ define(['jquery', 'Config'], function ($, Config) {
                 bounds.push(point);
             }
         });
-        // $('body.projetos .filtrar-todas-as-metas select').on(change,function() {
 
-        //     var lat = $('select :selected').data('gps-lat'),
-        //         lng = $('select :selected').data('gps-long')
-        //         pnt = [lat,lng],
-        //         marker = L.marker(point).addTo(map).bindPopup('<a href="'+$(this).attr('href')+'">'+$(this).text()+'</a>');
-
-        //     event.preventDefault();
-        //     marker.openPopup();
-        //     map.panTo(point);
-
-        // });
         // Workaround for a leaflet bug (https://github.com/Leaflet/Leaflet/issues/2021)
         window.setTimeout(function() {
             if (bounds.length > 0) {
                 map.fitBounds(bounds);
             }
         }, 0);
-    },
-
-    loadLibrary : function() {
-        // var L = {};
-        // if (Config.isMapBoxEnabled) {
-        //     require( ['mapbox/mapbox'] );
-        //     require( ['mapbox/Leaflet.fullscreen.min']);
-        // } else {
-        //     require( ['leaflet']);
-        //     require( ['leaflet.ajax', 'leaflet.markercluster'] );
-        // }
-        // window.L = L;
     },
 
     adjustMapPosition : function () {
@@ -71,19 +48,34 @@ define(['jquery', 'Config'], function ($, Config) {
 
             var el = $(this).find(':selected');
             var latLong = [el.data('gps-lat'), el.data('gps-long')];
-            map.setView(latLong, 13);
+            map.setView(latLong, 14);
 
         });
 
 
     },
 
+    getURLParameter : function (name) {
+        return decodeURI(
+            (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+        );
+    },
+
     embedMap : function (selector) {
-        var latLong = [-23.546628, -46.637787];
+        var url_sub = this.getURLParameter('subprefeitura');
+
+        if (url_sub === "null") {
+            var latLong = [-23.546628, -46.637787];
+        } else {
+            var el = $('body.projetos .filtrar-todas-as-metas select');
+            el.val(url_sub);
+            el = el.find(':selected');
+            latLong = [el.data('gps-lat'), el.data('gps-long')];
+        }
 
         if (Config.isMapBoxEnabled) {
             var map = L.mapbox.map($(selector).get(0))
-                .setView(latLong, 13)
+                .setView(latLong, 14)
                 .addLayer(L.mapbox.tileLayer('lpirola.ic41i88p'));
 
             L.control.fullscreen().addTo(map);
@@ -94,7 +86,7 @@ define(['jquery', 'Config'], function ($, Config) {
                     maxZoom: 16,
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
                 }),
-                map = L.map($(selector).get(0), {center: new L.latLng(latLong), zoom: 13, layers: [tiles]});
+                map = L.map($(selector).get(0), {center: new L.latLng(latLong), zoom: 14, layers: [tiles]});
         }
         return map;
     },
@@ -180,11 +172,14 @@ define(['jquery', 'Config'], function ($, Config) {
 
                             marker.on('mouseover', function (e) {
                                 $('.result-container.row').html();
-                                $('.result-container.row').find('#project-icon').html("<i class='icon-projects_tecnologia-e-inovacao'></i>");
-                                $('.result-container.row').find('h1').text(e.target.options.properties.name);
+                                $('.result-container.row').find('#project-icon').html("<i class='"+objectiveSlug+"'></i>");
+                                $('.result-container.row').find('h1 a').text(e.target.options.properties.name);
+                                $('.result-container.row').find('h1 a').attr('href', '/projeto/'+e.target.options.properties.id);
                                 $('.result-container.row').find('.secretaria').text(e.target.options.properties.secretary[0].name);
                                 $('.result-container.row').find('.assunto').text(e.target.options.properties.objective);
-                                $('.result-container.row').find('.meta').text('META '+e.target.options.properties.goal_id);
+                                $('.result-container.row').find('.endereco').text(e.target.options.properties.address);
+                                $('.result-container.row').find('.meta a').text('META '+e.target.options.properties.goal_id);
+                                $('.result-container.row').find('.meta a').attr('href', '/meta/'+e.target.options.properties.goal_id)
                                 $('.result-container.row').find('.local').text(MAP.statusType[e.target.options.properties.location_type]);
 
                             });
@@ -200,16 +195,6 @@ define(['jquery', 'Config'], function ($, Config) {
                     map.addLayer(subs);
                     //map.addControl(L.mapbox.legendControl());
 
-                    // var subs = L.mapbox.gridLayer('lpirola.2bqyf1or');
-                    // //map.addLayer(L.mapbox.tileLayer('lpirola.2bqyf1or'));
-                    // map.addLayer(subs);
-                    // //map.addControl(L.mapbox.gridControl(gridLayer));
-                    // map.gridLayer.on('click', function(e) {
-                    //     if (e.data && e.data.url) {
-                    //         window.open(e.data.url);
-                    //     }
-                    // });
-
                 } else {
                     for (var i = 0; i < addressPoints.features.length; i++) {
                         var a = addressPoints.features[i];
@@ -224,15 +209,6 @@ define(['jquery', 'Config'], function ($, Config) {
                         //}
                     }
                 }
-
-                /*L.geoJson(addressPoints, {
-                    style: function(feature) {
-                        switch (feature.properties.party) {
-                            case 'Republican': return {color: "#ff0000"};
-                            case 'Democrat':   return {color: "#0000ff"};
-                        }
-                    }
-                }).addTo(map);*/
             }
         });
         map.addLayer(markers);

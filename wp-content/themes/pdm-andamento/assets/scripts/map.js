@@ -174,12 +174,12 @@ define(['jquery', 'Config'], function ($, Config) {
                                 $('.result-container.row').html();
                                 $('.result-container.row').find('#project-icon').html("<i class='"+objectiveSlug+"'></i>");
                                 $('.result-container.row').find('h1 a').text(e.target.options.properties.name);
-                                $('.result-container.row').find('h1 a').attr('href', '/projeto/'+e.target.options.properties.id);
+                                $('.result-container.row').find('h1 a').attr('href', SITE_URL+'/projeto/'+e.target.options.properties.id);
                                 $('.result-container.row').find('.secretaria').text(e.target.options.properties.secretary[0].name);
                                 $('.result-container.row').find('.assunto').text(e.target.options.properties.objective);
                                 $('.result-container.row').find('.endereco').text(e.target.options.properties.address);
                                 $('.result-container.row').find('.meta a').text('META '+e.target.options.properties.goal_id);
-                                $('.result-container.row').find('.meta a').attr('href', '/meta/'+e.target.options.properties.goal_id)
+                                $('.result-container.row').find('.meta a').attr('href', SITE_URL+'/meta/'+e.target.options.properties.goal_id)
                                 $('.result-container.row').find('.local').text(MAP.statusType[e.target.options.properties.location_type]);
 
                             });

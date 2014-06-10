@@ -135,9 +135,17 @@
 
                     </div>
                 </div>
+
+
+                {% if slide1 or slide2 or slide3 or slide4 or slide5 or slide6 %}
+                    {% set slide_options = "timer: false;slide_number:false;next_on_click:false;" %}
+                {% else %}
+                    {% set slide_options = "timer_speed: 6500;slide_number:false;next_on_click:false;" %}
+                {% endif %}
+
                 <div class="slideshow medium-11 hide-for-small-only small-centered columns">
-                        <ul class="destaque-por-objetivos" data-orbit data-options="timer_speed: 6500;slide_number:false;next_on_click:false;">
-                            <li data-orbit-slide="headline-1">
+                        <ul class="destaque-por-objetivos" data-orbit data-options="{{slide_options}}">
+                            <li data-orbit-slide="headline-1" class="{{slide1}}">
                                 <div class="row">
                                     <div class="small-3 columns">
                                         <i class="icon-projects_educacao"></i>
@@ -148,7 +156,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li data-orbit-slide="headline-2">
+                            <li data-orbit-slide="headline-2" class="{{slide2}}">
                                 <div class="row">
                                     <div class="small-3 columns">
                                         <i class="icon-projects_saude"></i>
@@ -159,7 +167,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li data-orbit-slide="headline-3">
+                            <li data-orbit-slide="headline-3" class="{{slide3}}">
                                 <div class="row">
                                     <div class="small-3 columns">
                                         <i class="icon-projects_drenagem"></i>
@@ -170,7 +178,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li data-orbit-slide="headline-4">
+                            <li data-orbit-slide="headline-4" class="{{slide4}}">
                                 <div class="row">
                                     <div class="small-3 columns">
                                         <i class="icon-transporte"></i>
@@ -181,7 +189,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li data-orbit-slide="headline-5">
+                            <li data-orbit-slide="headline-5" class="{{slide5}}">
                                 <div class="row">
                                     <div class="small-3 columns">
                                         <i class="icon-projects_desenvolvimento-social"></i>
@@ -192,7 +200,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li data-orbit-slide="headline-6">
+                            <li data-orbit-slide="headline-6" class="{{slide6}}">
                                 <div class="row">
                                     <div class="small-3 columns">
                                         <i class="icon-projects_desenvolvimento-social"></i>

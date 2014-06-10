@@ -73,6 +73,34 @@ function add_to_context($data)
     /* this is where you can add your own data to Timber's context object */
 //    $api = new Pdm\ApiClient;
 //    $data['metas'] = $api->getMetasFiltradas();
+
+    if (!empty($_GET['slide'])) {
+        switch ($_GET['slide']) {
+            case '1':
+                $data['slide1'] = "active";
+                break;
+            case '2':
+                $data['slide2'] = "active";
+                break;
+            case '3':
+                $data['slide3'] = "active";
+                break;
+            case '4':
+                $data['slide4'] = "active";
+                break;
+            case '5':
+                $data['slide5'] = "active";
+                break;
+            case '6':
+                $data['slide6'] = "active";
+                break;
+
+            default:
+                # code...
+                break;
+        }
+    }
+
     $data['menu'] = new TimberMenu();
     return $data;
 }

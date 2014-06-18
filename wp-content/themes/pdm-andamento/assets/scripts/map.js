@@ -32,14 +32,15 @@ define(['jquery', 'Config'], function ($, Config) {
     },
 
     adjustMapPosition : function () {
-
-        if ($('.projects-map-render').hasClass('leaflet-fullscreen-on')) {
-            $('.projects-map-render').css('top', '0px');
-        } else {
-            $('.projects-map-render').css('top', $('#f1_container').position().top+$('#f1_container').height()+'px');
+        if($('.projects-map-render').size()>0) {
+            if ($('.projects-map-render').hasClass('leaflet-fullscreen-on')) {
+                $('.projects-map-render').css('top', '0px');
+            } else {
+                $('.projects-map-render').css('top', $('#f1_container').position().top+$('#f1_container').height()+'px');
+            }
+            $('.result-container').css('top', $('#f1_container').position().top+$('#f1_container').height()+15+'px');
+            $('.legendas').css('top', $('#f1_container').position().top+$('#f1_container').height()+15+'px');
         }
-        $('.result-container').css('top', $('#f1_container').position().top+$('#f1_container').height()+15+'px');
-        $('.legendas').css('top', $('#f1_container').position().top+$('#f1_container').height()+15+'px');
     },
 
     navigation : function (map) {

@@ -1,0 +1,76 @@
+<div class="small-3 columns small-offset-9">
+    <label>Filtrar resultado no gráfico
+        <select name="filtra-grafico-por-subprefeitura-a" id="filtra-grafico-por-subprefeitura-a">
+            <option value="0">Agrupado de todas as subprefereituras</option>
+            {% for key, subprefeitura in progresso.2013 %}
+                <option value="{{key}}">{{subprefeitura.nome}}</option>
+            {% endfor %}
+        </select>
+    </label>
+</div>
+<div class="small-12 columns box ">
+    <!--div class="chart-render chart-container line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;,&quot;labels&quot;:[&quot;Janeiro&quot;],&quot;values&quot;:[[200]]}"></div-->
+    <div class="chart-render chart-container line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;}"></div>
+
+<script>
+    var data_chart = {
+        "type" : "line",
+        "labels" : [
+                    'Janeiro',
+                    'Fevereiro',
+                    'Março',
+                    'Abril',
+                    'Maio',
+                    'Junho',
+                    'Julho',
+                    'Agosto',
+                    'Setembro',
+                    'Outubro',
+                    'Novembro',
+                    'Dezembro'
+        ],
+        "values" : [
+                    [{{progresso_total.2013|join(",")}}],
+                    {% for prefeituras in progresso.2013 %}[{{prefeituras.dados|join(",")}}],{% endfor %}
+        ]
+    };
+</script>
+</div>
+<div class="small-12 columns box table-container hide-for-small-only">
+    <table>
+        <tbody>
+        {% for prefeituras in progresso.2013 %}
+            <tr>
+                <th>{{prefeituras.nome}}</th>
+                {% for dados_progresso in prefeituras.dados %}
+                    {% if dados_progresso == "" %}
+                        <td >-</td>
+                    {% elseif dados_progresso > 0 %}
+                        <td class="color-text">{{dados_progresso}}</td>
+                    {% else %}
+                        <td>{{dados_progresso}}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th width="7%">Janeiro</th>
+                <th width="7%">Fevereiro</th>
+                <th width="7%">Março</th>
+                <th width="7%">Abril</th>
+                <th width="7%">Maio</th>
+                <th width="7%">Junho</th>
+                <th width="7%">Julho</th>
+                <th width="7%">Agosto</th>
+                <th width="7%">Setembro</th>
+                <th width="7%">Outubro</th>
+                <th width="7%">Novembro</th>
+                <th width="7%">Dezembro</th>
+            </tr>
+        </tfoot>
+    </table>
+    <p class="right">Peso do projeto em relação a meta: {{projeto.weight_about_goal | number_format(2, ',', '.')}}%</p>
+</div>

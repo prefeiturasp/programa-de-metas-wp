@@ -97,7 +97,7 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
             }
             if (!worked) { // unknown browser / error
                 alert("It didn't worked in your browser.");
-            }   
+            }
         },
         getFullHeight = function () {
             return $(document).height() - $(window).height();
@@ -167,7 +167,10 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
             // });
         },
         _init = function() {
-            $(document).foundation();
+            $(document).ready(function () {
+                $(document).foundation();
+            });
+
             _userAgentInit();
 
             $('html,body').scrollTop(0);

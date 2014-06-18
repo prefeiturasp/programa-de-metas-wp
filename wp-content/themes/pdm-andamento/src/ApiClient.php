@@ -132,20 +132,22 @@ class ApiClient
 
     public function preparaDadosMesAMesPorPrefeitura($progresso)
     {
-        $dados_mensais = array();
+        $dados_mensais = array('2013'=>array(), '2014'=>array() );
 
         foreach ($progresso as $key => $value) {
             $nome_prefeitura = $value['prefecture']['name'];
             $id_prefeitura = $value['prefecture']['id'];
+            $year = \DateTime::createFromFormat('Y-m-d H:i:s', $value['month_year']);
 
-            if (array_key_exists($id_prefeitura, $dados_mensais)) {
-                $dados_mensais[$id_prefeitura]['nome'] = $nome_prefeitura;
+            if (array_key_exists($id_prefeitura, $dados_mensais[$year->format('Y')])) {
+                $dados_mensais[$year->format('Y')][$id_prefeitura]['nome'] = $nome_prefeitura;
             }
 
-            if (empty($value['value'])){
+            if (empty($value['value'])) {
                 $value['value'] = 0;
             }
-            $dados_mensais[$id_prefeitura]['dados'][] = $value['value'];
+
+            $dados_mensais[$year->format('Y')][$id_prefeitura]['dados'][] = $value['value'];
         }
 
         // foreach ($prefeituras as $key => $value) {
@@ -184,11 +186,17 @@ class ApiClient
     protected function getProjetoMesAMesStatus($projetos)
     {
         $total = 0;
-        foreach ($projetos as $progresso) {
-            $total = $total + $progresso['value'];
-        }
+        //$years = array('2013', '2014');
+        //foreach ($years as $year) {
+            foreach ($projetos as $progresso) {
+                $total = $total + $progresso['value'];
+            }
+        //}
+
+        $target = $projetos[0]['goal_target'];
+
         if ($total != 0) {
-            $status_total = ($total*100) / $projetos[0]['goal_target'];
+            $status_total = ($total*100) / $target;
         }
 
         if ($status_total == 0) {

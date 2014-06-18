@@ -86,9 +86,12 @@ require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'list', 'Config', 'poly
                       break;
               }
               break;
-           case 'line':
-              chart.line(this, data_chart.labels, data_chart.values[0]);
-              break;
+            case 'line':
+                chart.line(this, data_chart.labels, data_chart.values[0]);
+                break;
+            case 'line2':
+                chart.line(this, data_chart2.labels, data_chart2.values[0]);
+                break;
         }
     });
 
@@ -104,8 +107,12 @@ require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'list', 'Config', 'poly
       window.location = SITE_URL + '/projeto/' + jQuery(evt.currentTarget).val();
     });
 
-    jQuery('select#filtra-grafico-por-subprefeitura').on('change', function (evt) {
+    jQuery('select#filtra-grafico-por-subprefeitura-a').on('change', function (evt) {
       chart.line(document.getElementById('chart-month-a'), data_chart.labels, data_chart.values[$(evt.currentTarget).val()]);
+    });
+
+    jQuery('select#filtra-grafico-por-subprefeitura-b').on('change', function (evt) {
+      chart.line(document.getElementById('chart-month-b'), data_chart2.labels, data_chart2.values[$(evt.currentTarget).val()]);
     });
 
     buscaPorCep.init();

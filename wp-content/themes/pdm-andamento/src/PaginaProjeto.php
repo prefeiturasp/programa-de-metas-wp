@@ -40,17 +40,18 @@ class PaginaProjeto extends Pagina
             $context['progresso'] = $api->preparaDadosMesAMesPorPrefeitura($context['progresso']);
 
             $progresso_total = array();
+            $years = array('2013', '2014');
 
-            foreach ($context['progresso'] as $prog) {
-
-                foreach ($prog['dados'] as $k => $val) {
-                    if (isset($progresso_total[$k])) {
-                        $progresso_total[$k] = $progresso_total[$k] + $val;
-                    } else {
-                        $progresso_total[$k] = $val;
+            foreach ($years as $year) {
+                foreach ($context['progresso'][$year] as $prog) {
+                    foreach ($prog['dados'] as $k => $val) {
+                        if (isset($progresso_total[$year][$k])) {
+                            $progresso_total[$year][$k] = $progresso_total[$year][$k] + $val;
+                        } else {
+                            $progresso_total[$year][$k] = $val;
+                        }
                     }
                 }
-
             }
             $context['progresso_total'] = $progresso_total;
         }

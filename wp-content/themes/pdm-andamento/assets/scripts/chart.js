@@ -88,6 +88,7 @@ define(['jquery', 'd3'], function ($, d3) {
         _pie(selector, data, config);
     },
 
+
     // Line chart
     _line = function _line(selector, labels, dataA) {
         var

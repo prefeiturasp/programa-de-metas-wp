@@ -1552,7 +1552,30 @@ $cinza-padrao: #666;
             }
         }
     }
+
+    #tab-por-ano {
+        li {
+            margin-left:0;
+
+            a {
+                padding: 1em;
+                background-color: #f9f9f9;
+                color: #000;
+            }
+
+            &.active {
+                a {
+                    background-color: #ccc;
+                    font-style: bold;
+                }
+            }
+        }
+    }
 }
+
+
+
+
 
 
 
@@ -1924,3 +1947,6 @@ $cinza-padrao: #666;
         background-image: url(../assets/images/projetos_plot_naodefinido.png);
     }
 }
+
+
+

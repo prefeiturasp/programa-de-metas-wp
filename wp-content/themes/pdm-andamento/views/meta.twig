@@ -279,18 +279,19 @@
                         <select class="subprefeitura">
                             <option value="">Subprefeitura</option>
                             {% for subprefeitura in subprefeituras %}
-                            <option value="{{subprefeitura.name}}">{{subprefeitura.name}}</option>
+
+                                {% if subprefeitura.id in prefecture_available %}
+                                    <option value="{{subprefeitura.name}}">{{subprefeitura.name}}</option>
+                                {% endif %}
                             {% endfor %}
                         </select>
                     </div>
                     <div class="columns small-12 medium-6">
                         <select name="status">
                             <option value="" selected>Situação</option>
-                            <option value="não iniciada">não iniciada</option>
-                            <option value="em andamento">em andamento</option>
-                            <option value="já beneficiam a população">já beneficiam a população</option>
-                            <option value="concluída">concluída</option>
-                            <option value="superadas">superadas</option>
+                            {% for stt in status_available %}
+                                <option value="stt">stt</option>
+                            {% endfor %}
                         </select>
                     </div>
 

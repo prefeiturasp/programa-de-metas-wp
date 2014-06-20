@@ -48,16 +48,32 @@ class PaginaMeta extends Pagina
         }
 
         $context['meta_grouped'] = $api->metas_agrupadas;
+        $status_available = $prefecture_available = array();
 
         foreach ($context['meta']['projects'] as $key => $value) {
 
             $progresso = $api->getProjetoProgresso($value['id']);
-            $fases_projeto = $api->getFasesPorTipoProjeto($value['id']);
+            if ($value['project_type'] != 8) {
+                $fases_projeto = $api->getFasesPorTipoProjeto($value['project_type']);
+            }
 
-            $context['meta']['projects'][$key]['status'] = $api->getProjetoStatus($progresso, $fases_projeto, $value['project_type'], $value['goal_id']);
+            $status = $api->getProjetoStatus($progresso, $fases_projeto, $value['project_type'], $value['goal_id']);
+            $context['meta']['projects'][$key]['status'] = $status;
+
+            if (!in_array($status['descricao'], $status_available)) {
+                $status_available[] = $status['descricao'];
+            }
+
+            if (count($value['prefectures']) > 0) {
+                foreach ($value['prefectures'] as $prefectures) {
+                    $prefecture_available[] = $prefectures['id'];
+                }
+            }
         }
 
-        //$context['fases_projeto'] = $api->getFasesPorTipoProjeto($context['meta']['projects'][0]['project_type']);
+        $context['prefecture_available'] = $prefecture_available;
+        $context['status_available'] = $status_available;
+
         $context['progresso'] = $api->getMetaProgresso($meta_id);
 
         $executado = 0;

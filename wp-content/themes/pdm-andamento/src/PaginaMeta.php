@@ -60,7 +60,7 @@ class PaginaMeta extends Pagina
             $status = $api->getProjetoStatus($progresso, $fases_projeto, $value['project_type'], $value['goal_id']);
             $context['meta']['projects'][$key]['status'] = $status;
 
-            if (!in_array($status['descricao'], $status_available)) {
+            if ((!empty($status['descricao'])) && (!in_array($status['descricao'], $status_available))) {
                 $status_available[] = $status['descricao'];
             }
 

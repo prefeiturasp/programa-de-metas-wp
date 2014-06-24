@@ -74,11 +74,10 @@ define(['jquery', 'Config'], function ($, Config) {
         }
 
         if (Config.isMapBoxEnabled) {
-            var map = L.mapbox.map($(selector).get(0))
-                .setView(latLong, 14)
-                .addLayer(L.mapbox.tileLayer('lpirola.ic41i88p'));
-
+            var map = L.mapbox.map($(selector).get(0), 'lpirola.ic41i88p', {maxZoom:17})
+                .setView(latLong, 14);
             L.control.fullscreen().addTo(map);
+
 
         } else {
             var
@@ -122,7 +121,7 @@ define(['jquery', 'Config'], function ($, Config) {
 
         this.navigation(map);
         var hash = L.hash(map);
-        var markers = L.markerClusterGroup({showCoverageOnHover:false});
+        var markers = L.markerClusterGroup({showCoverageOnHover:false, spiderfyDistanceMultiplier: 1.5});
         $.ajax({
           dataType: "jsonp",
           url: 'http://planejasampa.prefeitura.sp.gov.br/metas-qa/api/projects.geojson',
@@ -156,9 +155,8 @@ define(['jquery', 'Config'], function ($, Config) {
                         //if (a.properties['location-type'] == 'local-def') {
                         var title = a.properties.name;
                         var objectiveSlug = 'icon-projects_' + MAP.stringToSlug(a.properties.objective);
-                        var marker = L.marker(new L.LatLng(gpsLat, gpsLong),
-                            {
-                                icon: L.divIcon({
+                        var marker = new L.marker(new L.LatLng(gpsLat, gpsLong), {
+                                icon: new L.divIcon({
                                     // Specify a class name we can refer to in CSS.
                                     className: 'icon-marker '+a.properties.location_type,
                                     // Define what HTML goes in each marker.
@@ -170,26 +168,25 @@ define(['jquery', 'Config'], function ($, Config) {
                                 properties: a.properties
                             });
 
-                            marker.on('mouseover', function (e) {
-                                $('.result-container.row').html();
-                                $('.result-container.row').find('#project-icon').html("<i class='"+objectiveSlug+"'></i>");
-                                $('.result-container.row').find('h1 a').text(e.target.options.properties.name);
-                                $('.result-container.row').find('h1 a').attr('href', SITE_URL+'/projeto/'+e.target.options.properties.id);
-                                $('.result-container.row').find('.secretaria').text(e.target.options.properties.secretary[0].name);
-                                $('.result-container.row').find('.assunto').text(e.target.options.properties.objective);
-                                $('.result-container.row').find('.endereco').text(e.target.options.properties.address);
-                                $('.result-container.row').find('.meta a').text('META '+e.target.options.properties.goal_id);
-                                $('.result-container.row').find('.meta a').attr('href', SITE_URL+'/meta/'+e.target.options.properties.goal_id)
-                                $('.result-container.row').find('.local').text(MAP.statusType[e.target.options.properties.location_type]);
+                        marker.on('mouseover', function (e) {
+                            $('.result-container.row').html();
+                            $('.result-container.row').find('#project-icon').html("<i class='"+objectiveSlug+"'></i>");
+                            $('.result-container.row').find('h1 a').text(e.target.options.properties.name);
+                            $('.result-container.row').find('h1 a').attr('href', SITE_URL+'/projeto/'+e.target.options.properties.id);
+                            $('.result-container.row').find('.secretaria').text(e.target.options.properties.secretary[0].name);
+                            $('.result-container.row').find('.assunto').text(e.target.options.properties.objective);
+                            $('.result-container.row').find('.endereco').text(e.target.options.properties.address);
+                            $('.result-container.row').find('.meta a').text('META '+e.target.options.properties.goal_id);
+                            $('.result-container.row').find('.meta a').attr('href', SITE_URL+'/meta/'+e.target.options.properties.goal_id)
+                            $('.result-container.row').find('.local').text(MAP.statusType[e.target.options.properties.location_type]);
 
-                            });
-                            //marker.bindPopup(title);
-                            markers.addLayer(marker);
-                        //} else {
-
-                        //}
+                        });
+                        markers.addLayer(marker);
                     }
+markers.on('clusterclick', function (a) {
+    console.log('cluster ' + a.layer.getAllChildMarkers());
 
+});
                     // you can also provide a full url to a TileJSON resource
                     var subs = L.mapbox.tileLayer('lpirola.2bqyf1or');
                     map.addLayer(subs);
@@ -213,7 +210,6 @@ define(['jquery', 'Config'], function ($, Config) {
         });
         map.addLayer(markers);
     }
-
 };
 
     return MAP;

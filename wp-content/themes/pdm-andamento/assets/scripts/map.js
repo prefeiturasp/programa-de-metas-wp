@@ -133,8 +133,8 @@ define(['jquery', 'Config'], function ($, Config) {
 
                     for (var i = 0; i < addressPoints.features.length; i++) {
                         var a = addressPoints.features[i];
-                        var gpsLat = a.geometry.coordinates[1];
-                        var gpsLong = a.geometry.coordinates[0];
+                        var gpsLat = a.geometry.coordinates[0];
+                        var gpsLong = a.geometry.coordinates[1]
 
                         if (a.properties.location_type == 'abrange-cidade') {
                             var gpsLat = -23.546628;

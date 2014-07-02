@@ -122,7 +122,7 @@ define(['jquery', 'Config'], function ($, Config) {
 
         this.navigation(map);
         var hash = L.hash(map);
-        var markers = L.markerClusterGroup({showCoverageOnHover:false, spiderfyDistanceMultiplier: 1.5});
+        var markers = L.markerClusterGroup({showCoverageOnHover:false, spiderfyOnMaxZoom: false, spiderfyDistanceMultiplier: 1.5});
         $.ajax({
           dataType: "jsonp",
           url: 'http://planejasampa.prefeitura.sp.gov.br/metas-qa/api/projects.geojson',
@@ -130,6 +130,8 @@ define(['jquery', 'Config'], function ($, Config) {
                 if (Config.isMapBoxEnabled) {
                     // Since featureLayer is an asynchronous method, we use the `.on('ready'`
                     // call to only use its marker data once we know it is actually loaded.
+
+                    var popup = L.popup({className: 'result-container', offset: new L.Point(150, -30)});
 
                     for (var i = 0; i < addressPoints.features.length; i++) {
                         var a = addressPoints.features[i];
@@ -168,26 +170,39 @@ define(['jquery', 'Config'], function ($, Config) {
                                 title: title,
                                 properties: a.properties
                             });
+                        marker.on('click', function (e) {
+                            popup
+                                .setLatLng(e.latlng)
+                                .setContent(
+                                '    <i id="project-icon" class="'+objectiveSlug+'"></i><h1><a href="'+SITE_URL+'/projeto/'+e.target.options.properties.id+'">'+e.target.options.properties.name+'</a></h1>'+
+                                '    <div class="details">'+
+                                '        <p class="secretaria">'+e.target.options.properties.secretary[0].name+'</p>'+
+                                '        <p class="assunto">'+e.target.options.properties.objective+'</p>'+
+                                '        <p class="endereco">'+e.target.options.properties.address+'</p>'+
+                                '        <p class="meta"><a href="'+SITE_URL+'/meta/'+e.target.options.properties.goal_id+'">META '+e.target.options.properties.goal_id+'</a></p>'+
+                                '        <p class="local">'+MAP.statusType[e.target.options.properties.location_type]+'</p>'+
+                                '    </div>')
+                                .openOn(map);
+                                // .openPopup();
 
-                        marker.on('mouseover', function (e) {
-                            $('.result-container.row').html();
-                            $('.result-container.row').find('#project-icon').html("<i class='"+objectiveSlug+"'></i>");
-                            $('.result-container.row').find('h1 a').text(e.target.options.properties.name);
-                            $('.result-container.row').find('h1 a').attr('href', SITE_URL+'/projeto/'+e.target.options.properties.id);
-                            $('.result-container.row').find('.secretaria').text(e.target.options.properties.secretary[0].name);
-                            $('.result-container.row').find('.assunto').text(e.target.options.properties.objective);
-                            $('.result-container.row').find('.endereco').text(e.target.options.properties.address);
-                            $('.result-container.row').find('.meta a').text('META '+e.target.options.properties.goal_id);
-                            $('.result-container.row').find('.meta a').attr('href', SITE_URL+'/meta/'+e.target.options.properties.goal_id)
-                            $('.result-container.row').find('.local').text(MAP.statusType[e.target.options.properties.location_type]);
-
+                            // $('.result-container.row').find('#project-icon').html("<i class='"+objectiveSlug+"'></i>");
+                            // $('.result-container.row').find('h1 a').text(e.target.options.properties.name);
+                            // $('.result-container.row').find('h1 a').attr('href', SITE_URL+'/projeto/'+e.target.options.properties.id);
+                            // $('.result-container.row').find('.secretaria').text(e.target.options.properties.secretary[0].name);
+                            // $('.result-container.row').find('.assunto').text(e.target.options.properties.objective);
+                            // $('.result-container.row').find('.endereco').text(e.target.options.properties.address);
+                            // $('.result-container.row').find('.meta a').text('META '+e.target.options.properties.goal_id);
+                            // $('.result-container.row').find('.meta a').attr('href', SITE_URL+'/meta/'+e.target.options.properties.goal_id)
+                            // $('.result-container.row').find('.local').text(MAP.statusType[e.target.options.properties.location_type]);
                         });
                         markers.addLayer(marker);
                     }
-markers.on('clusterclick', function (a) {
-    console.log('cluster ' + a.layer.getAllChildMarkers());
 
-});
+                    markers.on('clusterclick', function (a) {
+                        console.log('cluster ' + a.layer.getAllChildMarkers());
+
+                    });
+
                     // you can also provide a full url to a TileJSON resource
                     var subs = L.mapbox.tileLayer('lpirola.2bqyf1or');
                     map.addLayer(subs);
@@ -209,6 +224,7 @@ markers.on('clusterclick', function (a) {
                 }
             }
         });
+
         map.addLayer(markers);
     }
 };

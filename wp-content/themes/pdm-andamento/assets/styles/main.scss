@@ -1336,36 +1336,78 @@ $cinza-padrao: #666;
     }
 
     .result-container {
-        // display: none;
 
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.2);
-        position: fixed;
-        right: rem-calc(10);
-        padding: rem-calc(10);
-        top: rem-calc(300);
-        width: rem-calc(300);
+        //overflow: auto;
+        //background-color: rgba(0, 0, 0, 0.2);
+        //position: fixed;
+        //right: rem-calc(10);
+        //padding: rem-calc(10);
+        //top: rem-calc(300);
+        //width: rem-calc(300);
         //bottom: rem-calc(50);
         // position: relative;
-        z-index: 10;
+        //z-index: 10;
 
-        .medium-1 {
-            padding: 0;
+        // #project-icon {
+        //     padding: 0;
+        //     font-size: 24px;
+        // }
+
+        .leaflet-popup-content {
+            //background-color: #FFFFFF;
+            //box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+            // margin: 0;
+            // padding: rem-calc(10);
+            position:relative;
+
+                &:before {
+                    top: 100%;
+                    left: 10%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    border-color: rgba(255, 255, 255, 0);
+                    border-top-color: #fff;
+                    border-width: 15px;
+                    margin-left: -15px;
+                }
+        }
+
+        .leaflet-popup-tip-container {
+            margin:0;
+            .leaflet-popup-tip {
+                -webkit-transform: rotate(0deg);
+                display: none;
+
+            }
+        }
+
+
+
+
+        #project-icon {
             font-size: 24px;
-        }
-
-        > .row {
-            background-color: #FFFFFF;
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-            margin: 0;
-            padding: rem-calc(10);
-        }
-
-        h1 a {
-            font-family: "MontserratBold";
-            font-size: 18px;
             color: #666666;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 5px;
+        }
 
+        h1 {
+            display: inline-block;
+            width: 250px;
+            a {
+                font-family: "MontserratBold";
+                font-size: 18px;
+                color: #666666;
+            }
+        }
+
+        .details {
+            margin-left: 30px;
         }
 
         p {

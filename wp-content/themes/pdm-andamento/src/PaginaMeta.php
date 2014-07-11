@@ -60,6 +60,43 @@ class PaginaMeta extends Pagina
             $status = $api->getProjetoStatus($progresso, $fases_projeto, $value['project_type'], $value['goal_id']);
             $context['meta']['projects'][$key]['status'] = $status;
 
+            if ($context['meta']['projects'][$key]['project_type'] == 8) {
+                $context['meta']['projects'][$key]['progresso'] = $api->preparaDadosMesAMesPorPrefeitura($progresso, true);
+
+                $progresso_total = array();
+                $years = array('2013', '2014');
+
+                foreach ($years as $year) {
+                    foreach ($context['meta']['projects'][$key]['progresso'][$year] as $prog) {
+                        foreach ($prog as $k => $val) {
+                            if (isset($progresso_total[$year][$k])) {
+                                $progresso_total[$year][$k] = $progresso_total[$year][$k] + $val;
+                            } else {
+                                $progresso_total[$year][$k] = $val;
+                            }
+                        }
+                    }
+                }
+                // progresso total quando +1 prefeitura no mesmo projeto
+                $context['meta']['projects'][$key]['progresso_total'] = $progresso_total;
+
+                foreach ($progresso_total as $ano => $valores) {
+                    $context['meta']['projects']['agrupado_total'][$ano]['01'] += $valores['01'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['02'] += $valores['02'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['03'] += $valores['03'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['04'] += $valores['04'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['05'] += $valores['05'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['06'] += $valores['06'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['07'] += $valores['07'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['08'] += $valores['08'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['09'] += $valores['09'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['10'] += $valores['10'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['11'] += $valores['11'];
+                    $context['meta']['projects']['agrupado_total'][$ano]['12'] += $valores['12'];
+                }
+            }
+
+
             if ((!empty($status['descricao'])) && (!in_array($status['descricao'], $status_available))) {
                 $status_available[] = $status['descricao'];
             }
@@ -70,7 +107,6 @@ class PaginaMeta extends Pagina
                 }
             }
         }
-
         $context['prefecture_available'] = $prefecture_available;
         $context['status_available'] = $status_available;
 

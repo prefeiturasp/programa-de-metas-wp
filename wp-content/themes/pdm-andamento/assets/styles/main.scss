@@ -1229,7 +1229,7 @@ $cinza-padrao: #666;
         }
     }
 
-    h4 {
+    h4{
         color: $cinza-padrao;
         font-size: rem-calc(14);
         text-transform: uppercase;
@@ -1570,6 +1570,30 @@ $cinza-padrao: #666;
             }
         }
     }
+    #tab-por-ano-na-meta {
+        margin:10px 0 0 20px;
+        li {
+            margin:0;
+            a {
+                background: #eee;
+                padding: 10px 15px;
+                &:hover {
+                    color: #999;
+                }
+            }
+            &.active {
+                a {
+                    background: #ccc;
+                }
+            }
+        }
+    }
+    h5 {
+        font-size: rem-calc(18);
+        text-transform: none;
+        margin: 0 0 0 20px;
+        color: #666;
+    }
 }
 .projeto {
     .box {
@@ -1595,7 +1619,7 @@ $cinza-padrao: #666;
         }
     }
 
-    #tab-por-ano {
+    #tab-por-ano{
         li {
             margin-left:0;
 
@@ -1989,6 +2013,12 @@ $cinza-padrao: #666;
         background-image: url(../assets/images/projetos_plot_naodefinido.png);
     }
 }
+
+
+
+
+
+
 
 
 

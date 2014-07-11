@@ -130,7 +130,7 @@ class ApiClient
         return $response->json();
     }
 
-    public function preparaDadosMesAMesPorPrefeitura($progresso)
+    public function preparaDadosMesAMesPorPrefeitura($progresso, $agrupado_todas_prefeitura = false)
     {
         $dados_mensais = array('2013'=>array(), '2014'=>array() );
 
@@ -139,7 +139,7 @@ class ApiClient
             $id_prefeitura = $value['prefecture']['id'];
             $year = \DateTime::createFromFormat('Y-m-d H:i:s', $value['month_year']);
 
-            if (array_key_exists($id_prefeitura, $dados_mensais[$year->format('Y')])) {
+            if ((!$agrupado_todas_prefeitura) && (array_key_exists($id_prefeitura, $dados_mensais[$year->format('Y')]))) {
                 $dados_mensais[$year->format('Y')][$id_prefeitura]['nome'] = $nome_prefeitura;
             }
 
@@ -147,9 +147,16 @@ class ApiClient
                 $value['value'] = 0;
             }
 
-            $dados_mensais[$year->format('Y')][$id_prefeitura]['dados'][] = $value['value'];
+            if (!$agrupado_todas_prefeitura) {
+                $dados_mensais[$year->format('Y')][$id_prefeitura]['dados'][] = $value['value'];
+            } else {
+                if (isset($dados_mensais[$year->format('Y')]['dados'][$year->format('m')])) {
+                    $dados_mensais[$year->format('Y')]['dados'][$year->format('m')] += $value['value'];
+                } else {
+                    $dados_mensais[$year->format('Y')]['dados'][$year->format('m')] = $value['value'];
+                }
+            }
         }
-
         // foreach ($prefeituras as $key => $value) {
         //     $novo_progresso[$key]
         // }

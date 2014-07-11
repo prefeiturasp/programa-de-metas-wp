@@ -2,29 +2,65 @@
     {% for projeto in projects %}
         {% if projeto.project_type == 8 %}
         <h5>{{projeto.name}}</h5>
-        <div class="chart-render chart-container chart-container-projeto line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;}"></div>
-        <script>
-            var data_chart = {
-                "type" : "line",
-                "labels" : [
-                            'Janeiro',
-                            'Fevereiro',
-                            'Março',
-                            'Abril',
-                            'Maio',
-                            'Junho',
-                            'Julho',
-                            'Agosto',
-                            'Setembro',
-                            'Outubro',
-                            'Novembro',
-                            'Dezembro'
-                ],
-                "values" : [
-                            [{{progresso[projeto.id]|join(",")}}]
-                ]
-            };
-        </script>
+
+
+        <ul class="tabs tab-options inline-list small-2 columns" id="tab-por-ano-na-meta" data-tab>
+            <li class="tab-title active"><a href="#panel2-1">2013</a></li>
+            <li class="tab-title"><a href="#panel2-2">2014</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="content active" id="panel2-1">
+                <div class="chart-render chart-container chart-container-projeto line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;}"></div>
+                <script>
+                    var data_chart = {
+                        "type" : "line",
+                        "labels" : [
+                                    'Janeiro',
+                                    'Fevereiro',
+                                    'Março',
+                                    'Abril',
+                                    'Maio',
+                                    'Junho',
+                                    'Julho',
+                                    'Agosto',
+                                    'Setembro',
+                                    'Outubro',
+                                    'Novembro',
+                                    'Dezembro'
+                        ],
+                        "values" : [
+                                    [{{projeto.progresso.2013.dados|join(",")}}]
+                        ]
+                    };
+                </script>
+            </div>
+            <div class="content" id="panel2-2">
+                <div class="chart-render chart-container chart-container-projeto line-container" id="chart-month-b" data-chart="{&quot;type&quot;:&quot;line2&quot;}"></div>
+
+                <script>
+                    var data_chart2 = {
+                        "type" : "line",
+                        "labels" : [
+                                    'Janeiro',
+                                    'Fevereiro',
+                                    'Março',
+                                    'Abril',
+                                    'Maio',
+                                    'Junho',
+                                    'Julho',
+                                    'Agosto',
+                                    'Setembro',
+                                    'Outubro',
+                                    'Novembro',
+                                    'Dezembro'
+                        ],
+                        "values" : [
+                                    [{{projeto.progresso.2014.dados|join(",")}}]
+                        ]
+                    };
+                </script>
+            </div>
+        </div>
         {% endif %}
     {% endfor %}
 {% endif %}

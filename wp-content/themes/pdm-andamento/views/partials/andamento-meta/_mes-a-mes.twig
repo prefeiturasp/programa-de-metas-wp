@@ -4,13 +4,13 @@
         <h5>{{projeto.name}}</h5>
 
 
-        <ul class="tabs tab-options inline-list small-2 columns" id="tab-por-ano-na-meta" data-tab>
-            <li class="tab-title active"><a href="#panel2-1">2013</a></li>
-            <li class="tab-title"><a href="#panel2-2">2014</a></li>
+        <ul class="tabs tab-options inline-list small-2 columns tab-por-ano-na-meta" id="tab-por-ano-na-meta-{{projeto.id}}" data-tab>
+            <li class="tab-title"><a href="#panel{{projeto.id}}-1">2013</a></li>
+            <li class="tab-title active"><a href="#panel{{projeto.id}}-2">2014</a></li>
         </ul>
         <div class="tabs-content">
-            <div class="content active" id="panel2-1">
-                <div class="chart-render chart-container chart-container-projeto line-container" id="chart-month-a" data-chart="{&quot;type&quot;:&quot;line&quot;}"></div>
+            <div class="content" id="panel{{projeto.id}}-1">
+                <div class="chart-render chart-container chart-container-projeto line-container" id="chart-month-a{{projeto.id}}" data-chart="{&quot;type&quot;:&quot;line3&quot;,&quot;values&quot;:[[{{projeto.progresso.2013.dados|join(",")}}]]}"></div>
                 <script>
                     var data_chart = {
                         "type" : "line",
@@ -28,37 +28,12 @@
                                     'Novembro',
                                     'Dezembro'
                         ],
-                        "values" : [
-                                    [{{projeto.progresso.2013.dados|join(",")}}]
-                        ]
+                        "values" : [[{{projeto.progresso.2013.dados|join(",")}}]]
                     };
                 </script>
             </div>
-            <div class="content" id="panel2-2">
-                <div class="chart-render chart-container chart-container-projeto line-container" id="chart-month-b" data-chart="{&quot;type&quot;:&quot;line2&quot;}"></div>
-
-                <script>
-                    var data_chart2 = {
-                        "type" : "line",
-                        "labels" : [
-                                    'Janeiro',
-                                    'Fevereiro',
-                                    'Março',
-                                    'Abril',
-                                    'Maio',
-                                    'Junho',
-                                    'Julho',
-                                    'Agosto',
-                                    'Setembro',
-                                    'Outubro',
-                                    'Novembro',
-                                    'Dezembro'
-                        ],
-                        "values" : [
-                                    [{{projeto.progresso.2014.dados|join(",")}}]
-                        ]
-                    };
-                </script>
+            <div class="content active" id="panel{{projeto.id}}-2">
+                <div class="chart-render chart-container chart-container-projeto line-container" id="chart-month-b{{projeto.id}}" data-chart="{&quot;type&quot;:&quot;line3&quot;,&quot;values&quot;:[[{{projeto.progresso.2014.dados|join(",")}}]]}"></div>
             </div>
         </div>
         {% endif %}

@@ -92,6 +92,9 @@ require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'list', 'Config', 'poly
             case 'line2':
                 chart.line(this, data_chart2.labels, data_chart2.values[0]);
                 break;
+            case 'line3':
+                chart.line(this, data_chart.labels, data.values[0]);
+                break;
         }
     });
 
@@ -121,3 +124,7 @@ require(['chart', 'map', 'app', 'jquery', 'buscaPorCep', 'list', 'Config', 'poly
 
     jQuery(window).resize(map.adjustMapPosition);
 });
+
+
+
+

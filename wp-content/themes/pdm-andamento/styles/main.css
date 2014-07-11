@@ -7464,7 +7464,7 @@
   }
 }
 
-.meta #tab-por-ano-na-meta {
+.meta .tab-por-ano-na-meta {
   margin: 10px 0 0 20px;
 }
 
@@ -7478,7 +7478,7 @@
   }
 }
 
-.meta #tab-por-ano-na-meta li {
+.meta .tab-por-ano-na-meta li {
   margin: 0;
 }
 
@@ -7492,7 +7492,7 @@
   }
 }
 
-.meta #tab-por-ano-na-meta li a {
+.meta .tab-por-ano-na-meta li a {
   background: #eee;
   padding: 10px 15px;
 }
@@ -7507,7 +7507,7 @@
   }
 }
 
-.meta #tab-por-ano-na-meta li a:hover {
+.meta .tab-por-ano-na-meta li a:hover {
   color: #999;
 }
 
@@ -7521,7 +7521,7 @@
   }
 }
 
-.meta #tab-por-ano-na-meta li.active a {
+.meta .tab-por-ano-na-meta li.active a {
   background: #ccc;
 }
 

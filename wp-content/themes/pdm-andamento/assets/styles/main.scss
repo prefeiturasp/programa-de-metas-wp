@@ -81,8 +81,6 @@ $vermelho: #eb2851;
                 letter-spacing: -2px;
             }
         }
-
-
     }
 
     .support-bar {
@@ -93,7 +91,7 @@ $vermelho: #eb2851;
 
         .news-box {
             background-color: #4a4949;
-            min-height: rem-calc(60);
+            min-height: rem-calc(50);
 
             &:after {
                 right: 100%;
@@ -171,6 +169,7 @@ $vermelho: #eb2851;
             border-radius: 0;
             margin: 0;
             width: auto;
+            height: rem-calc(27);
 
             .ticker {
                 border: medium none;
@@ -660,12 +659,19 @@ $vermelho: #eb2851;
             }
         }
     }
+
+
+
+
+
+
+
     .filtrar-todas-as-metas {
-        padding-top: rem-calc(5);
-        padding-bottom: rem-calc(5);
+        margin-top: rem-calc(5);
+        margin-bottom: rem-calc(5);
         background-color: #fff;
         position: relative;
-        height: rem-calc(50);
+        height: rem-calc(30);
         transition: height 0.5s ease 0s;
         // border-left: 1px solid #dbdee0;
         // border-right: 1px solid #dbdee0;
@@ -788,6 +794,10 @@ $vermelho: #eb2851;
       }
     }
 }
+
+
+
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -1260,37 +1270,37 @@ $cinza-padrao: #666;
 .projetos {
 
     .header.simple {
-        position: relative;
+        // position: relative;
         z-index: 9;
 
         #f1_container {
-            min-height: 0 !important;
+            min-height: 40px;
         }
 
         #projects-header {
             background-color: $verde;
 
             h2 {
-                font-size: rem-calc(24);
+                font-size: rem-calc(16);
                 color: white;
-                padding: rem-calc(13) 0 0;
+                padding: rem-calc(7) 0;
             }
 
             .button {
                 background-color: darken($verde, 10%);
                 margin: 0;
                 font-size: rem-calc(13);
+                padding: rem-calc(7) rem-calc(7) rem-calc(7) rem-calc(21);
 
                 i:before {
                     position: absolute;
-                    left: 13px;
+                    left: 10px;
                     transform: rotate(-90deg);
-                    top: 17px;
+                    top: 10px;
                 }
             }
-
-
         }
+
 
         #filter-simple {
 
@@ -1441,49 +1451,30 @@ $cinza-padrao: #666;
 
     }
 
-    .legendas-container {
+    #legendas-container {
         z-index: 10;
 
         .legendas {
-            background: none repeat scroll 0 0 #FFFFFF;
-            box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.3);
-            position: fixed;
-            top: rem-calc(300);
-            left: rem-calc(50);
-            width: rem-calc(143);
-            height: rem-calc(147);
-            padding: rem-calc(5);
-            font-size: 12px;
-            font-family: "MontserratBold";
+            padding: 0;
+            margin: 0 0 0 10px;
 
-
-            .row {
-                margin-bottom: rem-calc(10);
-
-                .last-row {
-                    margin-bottom: 0
-                }
-
-                .small-1 {
-                    font-size: 18px;
-                }
+            li {
+                margin:0 5px 0 0;
+                height: 32px;
             }
-
-            .small-1 {
-                padding: 0;
-
-                img {
-                    max-width: 28px;
-                }
+            img {
+                height: 28px;
+                display: inline-block;
+                vertical-align: top;
             }
-
-            .small-10 {
-
-                &.first {
-                    padding-top: rem-calc(7);
-                }
+            p {
+                display: inline-block;
+                font-family: "MontserratBold";
+                font-size: rem-calc(10px);
+                text-transform: uppercase;
+                text-align: left;
+                margin:0;
             }
-
 
             .green {
                 color: #93d521;
@@ -1987,6 +1978,23 @@ $cinza-padrao: #666;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.popup-box {
+    height: 250px;
+    width: 300px;
+    overflow: auto;
+}
 
 
 .icon-marker {

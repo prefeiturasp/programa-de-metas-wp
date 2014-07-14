@@ -131,7 +131,7 @@ define(['jquery', 'Config'], function ($, Config) {
                     // Since featureLayer is an asynchronous method, we use the `.on('ready'`
                     // call to only use its marker data once we know it is actually loaded.
 
-                    var popup = L.popup({className: 'result-container', offset: new L.Point(150, -30)});
+                    var popup = L.popup({className: 'result-container', offset: new L.Point(165, -30)});
 
                     for (var i = 0; i < addressPoints.features.length; i++) {
                         var a = addressPoints.features[i];
@@ -199,8 +199,28 @@ define(['jquery', 'Config'], function ($, Config) {
                     }
 
                     markers.on('clusterclick', function (a) {
-                        console.log('cluster ' + a.layer.getAllChildMarkers());
+                        var clusterPoints = a.layer.getAllChildMarkers();
+                        var popupContent = '<div class="popup-box">';
 
+                        for (var i = clusterPoints.length - 1; i >= 0; i--) {
+                            var currentPoint = clusterPoints[i];
+                            var localOptions = currentPoint.options.properties;
+                            var objectiveSlug = 'icon-projects_' + MAP.stringToSlug(localOptions.objective);
+                            popupContent +=
+                            '    <i id="project-icon" class="'+objectiveSlug+'"></i><h1><a href="'+SITE_URL+'/projeto/'+localOptions.id+'">'+localOptions.name+'</a></h1>'+
+                            '    <div class="details">'+
+                            '        <p class="secretaria">'+localOptions.secretary[0].name+'</p>'+
+                            '        <p class="assunto">'+localOptions.objective+'</p>'+
+                            '        <p class="endereco">'+localOptions.address+'</p>'+
+                            '        <p class="meta"><a href="'+SITE_URL+'/meta/'+localOptions.goal_id+'">META '+localOptions.goal_id+'</a></p>'+
+                            '        <p class="local">'+MAP.statusType[localOptions.location_type]+'</p>'+
+                            '    </div>';
+                        }
+                        popupContent += '</div>';
+                        popup
+                            .setLatLng(currentPoint._latlng)
+                            .setContent(popupContent)
+                            .openOn(map);
                     });
 
                     // you can also provide a full url to a TileJSON resource

@@ -73,19 +73,32 @@
                     <div class="small-12 medium-1 columns">
                         <p>Subprefeitura:</p>
                     </div>
-                    <div class="small-12 medium-4 left columns">
+                    <div class="small-12 medium-4 columns">
                         <select>
                             {% for subprefeitura in subprefeituras %}
                             <option value="{{subprefeitura.id}}" data-gps-lat="{{subprefeitura.gps_lat}}" data-gps-long="{{subprefeitura.gps_long}}" class="{% if subprefeitura.id == selected %}selected{% endif %} navigate-to">{{subprefeitura.name}}</option>
                             {% endfor %}
                         </select>
                     </div>
-                    <div class="columns small-12 medium-11">
-                        <p> {% set selected = subprefeitura %}
-                        {% for subprefeitura in subprefeituras %}
-                        <a href="javascript:void(0);" data-gps-lat="{{subprefeitura.gps_lat}}" data-gps-long="{{subprefeitura.gps_long}}" class="{% if subprefeitura.id == selected %}selected{% endif %} navigate-to">{{subprefeitura.name}}</a>
-                        {% endfor %}
-                        </p>
+                    <div id="legendas-container" class="small-12 medium-7 columns">
+                        <ul class="inline-list legendas">
+                            <li>
+                                <img src="{{template_uri}}/assets/images/projetos_plot_definido.png" alt="">
+                                <p class="green">Local definido</p>
+                            </li>
+                            <li>
+                                <img src="{{template_uri}}/assets/images/projetos_plot_naodefinido.png" alt="">
+                                <p class="light-green">Local em<br/>definição</p>
+                            </li>
+                            <li>
+                                <img src="{{template_uri}}/assets/images/projetos_plot_cidade.png" alt="">
+                                <p class="gray">Abrange toda a cidade<br/>ou a subprefeitura</p>
+                            </li>
+                            <li>
+                                <img src="{{template_uri}}/assets/images/projetos_plot_sub.png" alt="">
+                                <p class="sepia">Abrange a<br/>subprefeitura</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

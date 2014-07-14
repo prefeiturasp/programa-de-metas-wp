@@ -116,8 +116,11 @@ define(['jquery', 'Config'], function ($, Config) {
         'abrange-cidade' : 'Abrange toda a cidade'
     },
 
-    plotProjects : function (selector) {
 
+
+
+
+    plotProjects : function (selector) {
         var map = this.embedMap(selector);
 
         this.navigation(map);
@@ -131,7 +134,7 @@ define(['jquery', 'Config'], function ($, Config) {
                     // Since featureLayer is an asynchronous method, we use the `.on('ready'`
                     // call to only use its marker data once we know it is actually loaded.
 
-                    var popup = L.popup({className: 'result-container', offset: new L.Point(165, -30)});
+                    var popup = L.popup({className: 'result-container', offset: new L.Point(120, -25)});
 
                     for (var i = 0; i < addressPoints.features.length; i++) {
                         var a = addressPoints.features[i];
@@ -211,7 +214,7 @@ define(['jquery', 'Config'], function ($, Config) {
                             '    <div class="details">'+
                             '        <p class="secretaria">'+localOptions.secretary[0].name+'</p>'+
                             '        <p class="assunto">'+localOptions.objective+'</p>'+
-                            '        <p class="endereco">'+localOptions.address+'</p>'+
+                            //'        <p class="endereco">'+localOptions.address+'</p>'+
                             '        <p class="meta"><a href="'+SITE_URL+'/meta/'+localOptions.goal_id+'">META '+localOptions.goal_id+'</a></p>'+
                             '        <p class="local">'+MAP.statusType[localOptions.location_type]+'</p>'+
                             '    </div>';

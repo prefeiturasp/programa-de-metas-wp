@@ -82,7 +82,7 @@ define(['jquery'], function ($, ignore) {
 
         redirecionaParaSubPrefeitura : function (data) {
             $('#button_cep').html('Procurar');
-            window.location = SITE_URL + '/?subprefeitura=' + data + '#resultado';
+            window.location = SITE_URL + '/projetos/?subprefeitura=' + data;
         }
 
     };

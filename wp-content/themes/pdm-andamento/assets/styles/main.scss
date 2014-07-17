@@ -1,6 +1,10 @@
 @charset "utf-8";
 // bower:scss
 
+
+@import "vendor-libraries";
+@improt "ie8";
+
 $verde: #97c949;
 $azul: #12c2d2;
 $vermelho: #eb2851;
@@ -1975,21 +1979,6 @@ $cinza-padrao: #666;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .popup-box {
     height: 250px;
     width: 300px;
@@ -2021,3 +2010,8 @@ $cinza-padrao: #666;
         background-image: url(../assets/images/projetos_plot_naodefinido.png);
     }
 }
+
+
+
+
+

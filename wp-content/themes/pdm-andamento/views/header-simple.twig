@@ -62,7 +62,7 @@
                     <h2>Filtragem de Projetos</h2>
                 </div>
                 <div class="small-12 medium-6 columns">
-                    <a class="button right"><i class="icon-arrow-up"></i> Voltar para a home</a>
+                    <a class="button right" href="/"><i class="icon-arrow-up"></i> Voltar para a home</a>
                 </div>
             </div>
         </div>
@@ -73,14 +73,15 @@
                     <div class="small-12 medium-1 columns">
                         <p>Subprefeitura:</p>
                     </div>
-                    <div class="small-12 medium-4 columns">
+                    <div class="small-12 medium-3 columns">
                         <select>
                             {% for subprefeitura in subprefeituras %}
                             <option value="{{subprefeitura.id}}" data-gps-lat="{{subprefeitura.gps_lat}}" data-gps-long="{{subprefeitura.gps_long}}" class="{% if subprefeitura.id == selected %}selected{% endif %} navigate-to">{{subprefeitura.name}}</option>
                             {% endfor %}
                         </select>
                     </div>
-                    <div id="legendas-container" class="small-12 medium-7 columns">
+
+                    <div id="legendas-container" class="small-12 medium-8 columns">
                         <ul class="inline-list legendas">
                             <li>
                                 <img src="{{template_uri}}/assets/images/projetos_plot_definido.png" alt="">

@@ -384,6 +384,11 @@ $vermelho: #eb2851;
         .button.findout {
             @include dotted-button();
             margin-top: 20px;
+
+            &:hover {
+                color: #666;
+                border-color: #666;
+            }
         }
     }
     .slideshow {
@@ -431,6 +436,8 @@ $vermelho: #eb2851;
                 margin: rem-calc(25) rem-calc(25) rem-calc(25) rem-calc(35);
                 color: #fff;
                 display: inline-block;
+                width: 2em;
+                text-align: center;
 
                 &.icon-book {
                     padding: 1.5rem 1.2rem;
@@ -451,7 +458,7 @@ $vermelho: #eb2851;
                 font-family: 'Montserrat', sans-serif;
                 font-size: rem-calc(20);
                 margin: 0 0 rem-calc(14) 0;
-                line-height: 1.2;
+                line-height: 1.1;
 
             }
         }
@@ -709,9 +716,9 @@ $vermelho: #eb2851;
             margin-bottom:0;
         }
         .filter-buttons {
-          position: absolute;
-          right: 0;
-          bottom: 5px;
+          // position: absolute;
+          // right: 0;
+          // bottom: 5px;
         }
         .button {
             margin:0;
@@ -1295,16 +1302,23 @@ $cinza-padrao: #666;
                 background-color: darken($verde, 10%);
                 margin: 0;
                 font-size: rem-calc(13);
-                padding: rem-calc(7) rem-calc(7) rem-calc(7) rem-calc(21);
+                padding: rem-calc(7) rem-calc(7) rem-calc(7) rem-calc(30);
+
+                &:hover {
+                    background-color: darken($verde, 20%);
+                    color: #fff;
+                }
 
                 i:before {
                     position: absolute;
                     left: 10px;
                     transform: rotate(-90deg);
-                    top: 10px;
+                    top: 8px;
                 }
             }
         }
+
+
 
 
         #filter-simple {
@@ -1402,6 +1416,7 @@ $cinza-padrao: #666;
 
         #project-icon {
             font-size: 24px;
+            width: 25px;
             color: #666666;
             display: inline-block;
             vertical-align: top;
@@ -1421,7 +1436,7 @@ $cinza-padrao: #666;
         .details {
             margin: 8px 0;
             display: inline-block;
-            width: 255px;
+            width: 250px;
         }
 
         p {
@@ -1447,7 +1462,8 @@ $cinza-padrao: #666;
             line-height: 12px;
             color: #18a5b1;
         }
-        .local {
+        .local,
+        .bar-title {
             font-size: 12px;
             font-family: "MontserratBold";
             color: #b7e27d;
@@ -1458,7 +1474,36 @@ $cinza-padrao: #666;
             margin:0;
         }
 
+        .card-projeto {
+            background-color:#fff;
+            border-bottom: 2px solid #b5b7b1;
+            margin: 0 10px 0 5px;
+            .details {
+                width: 235px;
+            }
+        }
+
+
+
+        .total-projetos {
+            color: #999;
+        }
+
+        .toda-cidade-projetos {
+            background-color: #999;
+            color: #fff;
+            margin: 5px 10px 0 5px;
+        }
+
+        .subprefeitura-projetos {
+            background-color: #b9b898;
+            color: #fff;
+            margin: 5px 10px 0 5px;
+        }
+
     }
+
+
 
     #legendas-container {
         z-index: 10;
@@ -1466,9 +1511,10 @@ $cinza-padrao: #666;
         .legendas {
             padding: 0;
             margin: 0 0 0 10px;
+            float: right;
 
             li {
-                margin:0 5px 0 0;
+                margin:0 15px 0 0;
                 height: 32px;
             }
             img {
@@ -1480,9 +1526,10 @@ $cinza-padrao: #666;
                 display: inline-block;
                 font-family: "MontserratBold";
                 font-size: rem-calc(10px);
+                line-height: rem-calc(10px);
                 text-transform: uppercase;
                 text-align: left;
-                margin:0;
+                margin:5px 0 0;
             }
 
             .green {
@@ -2015,6 +2062,18 @@ $cinza-padrao: #666;
         background-image: url(../assets/images/projetos_plot_naodefinido.png);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

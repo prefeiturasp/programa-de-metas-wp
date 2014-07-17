@@ -20,8 +20,8 @@ var options = {};
 options.sass = {
     outputStyle: 'compressed',
     errLogToConsole: true,
-    sourceMap: 'sass',
-    sourceComments: 'map',
+    // sourceMap: 'sass',
+    // sourceComments: 'map',
     precision: 10,
     imagePath: 'assets/images',
     includePaths: [paths.styles.src]

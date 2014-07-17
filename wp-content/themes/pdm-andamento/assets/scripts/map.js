@@ -193,23 +193,56 @@ define(['jquery', 'Config'], function ($, Config) {
 
                     markers.on('clusterclick', function (a) {
                         var clusterPoints = a.layer.getAllChildMarkers();
-                        var popupContent = '<div class="popup-box">';
+                        var popupContent =
+                        '<p class="total-projetos bar-title">'+clusterPoints.length+' projetos</p>'+
+                        '<div class="popup-box">';
+                        var popupContentAbrangeCidade = '',
+                            popupContentAbrangeSub = '';
 
                         for (var i = clusterPoints.length - 1; i >= 0; i--) {
                             var currentPoint = clusterPoints[i];
                             var localOptions = currentPoint.options.properties;
                             var objectiveSlug = 'icon-projects_' + MAP.stringToSlug(localOptions.objective);
-                            popupContent +=
-                            '    <i id="project-icon" class="'+objectiveSlug+'"></i><h1><a href="'+SITE_URL+'/projeto/'+localOptions.id+'">'+localOptions.name+'</a></h1>'+
-                            '    <div class="details">'+
-                            '        <p class="secretaria">'+localOptions.secretary[0].name+'</p>'+
-                            '        <p class="assunto">'+localOptions.objective+'</p>'+
-                            //'        <p class="endereco">'+localOptions.address+'</p>'+
-                            '        <p class="meta"><a href="'+SITE_URL+'/meta/'+localOptions.goal_id+'">META '+localOptions.goal_id+'</a></p>'+
-                            '        <p class="local">'+MAP.statusType[localOptions.location_type]+'</p>'+
-                            '    </div>';
+
+
+                            if (localOptions.location_type == "abrange-cidade") {
+                                popupContentAbrangeCidade +=
+                                '    <div class="card-projeto">'+
+                                '        <i id="project-icon" class="'+objectiveSlug+'"></i>'+
+                                '        <div class="details">'+
+                                '            <h1><a href="'+SITE_URL+'/projeto/'+localOptions.id+'">'+localOptions.name+'</a></h1>'+
+                                '            <p class="secretaria">'+localOptions.secretary[0].name+'</p>'+
+                                '            <p class="assunto">'+localOptions.objective+'</p>'+
+                                '            <p class="meta"><a href="'+SITE_URL+'/meta/'+localOptions.goal_id+'">META '+localOptions.goal_id+'</a></p>'+
+                                '        </div>'+
+                                '    </div>';
+                            }
+
+                            if ((localOptions.location_type == "abrange-sub") || (localOptions.location_type == "local-em-def")){
+                                popupContentAbrangeSub +=
+                                '    <div class="card-projeto">'+
+                                '        <i id="project-icon" class="'+objectiveSlug+'"></i>'+
+                                '        <div class="details">'+
+                                '            <h1><a href="'+SITE_URL+'/projeto/'+localOptions.id+'">'+localOptions.name+'</a></h1>'+
+                                '            <p class="secretaria">'+localOptions.secretary[0].name+'</p>'+
+                                '            <p class="assunto">'+localOptions.objective+'</p>'+
+                                '            <p class="meta"><a href="'+SITE_URL+'/meta/'+localOptions.goal_id+'">META '+localOptions.goal_id+'</a></p>'+
+                                '        </div>'+
+                                '    </div>';
+                            }
+                        }
+
+                        if (popupContentAbrangeCidade != "") {
+                            popupContent += '    <p class="toda-cidade-projetos bar-title">abrange toda a cidade</p>';
+                            popupContent += popupContentAbrangeCidade;
+                        }
+                        if (popupContentAbrangeSub != "") {
+                            popupContent += '    <p class="subprefeitura-projetos bar-title">abrange a subprefeitura</p>';
+                            popupContent += popupContentAbrangeSub;
                         }
                         popupContent += '</div>';
+
+
                         popup
                             .setLatLng(currentPoint._latlng)
                             .setContent(popupContent)

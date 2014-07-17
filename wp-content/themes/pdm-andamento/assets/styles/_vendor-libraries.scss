@@ -12,6 +12,7 @@
     font-style: normal;
 }
 
+
 [class^="icon-"], [class*=" icon-"] {
     font-family: 'icomoon';
     speak: none;
@@ -26,6 +27,21 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-projects_drenagem:before {
+    content: "\e604";
+}
+.icon-projects_espacos-publicos:before {
+    content: "\e60a";
+}
+.icon-projects_follow:before {
+    content: "\e612";
+}
+.icon-projects_participacao-e-transparencia:before {
+    content: "\e613";
+}
+.icon-projects_quotation:before {
+    content: "\e614";
+}
 .icon-projects_tecnologia-e-inovacao:before {
     content: "\e624";
 }
@@ -40,9 +56,6 @@
 }
 .icon-projects_pessoas-com-deficiencia:before {
     content: "\e628";
-}
-.icon-projects_participacao-e-transparencia:before {
-    content: "\e629";
 }
 .icon-projects_mobilidade:before {
     content: "\e62a";
@@ -62,14 +75,8 @@
 .icon-projects_esporte-e-lazer:before {
     content: "\e630";
 }
-.icon-projects_espacos-publicos:before {
-    content: "\e631";
-}
 .icon-projects_educacao:before {
     content: "\e632";
-}
-.icon-projects_drenagem:before {
-    content: "\e633";
 }
 .icon-projects_desenvolvimento-urbano:before {
     content: "\e634";
@@ -101,9 +108,6 @@
 .icon-saude2:before {
     content: "\e603";
 }
-.icon-quotation:before {
-    content: "\e604";
-}
 .icon-plot-full:before {
     content: "\e605";
 }
@@ -118,9 +122,6 @@
 }
 .icon-graph-arrow:before {
     content: "\e609";
-}
-.icon-follow:before {
-    content: "\e60a";
 }
 .icon-folder:before {
     content: "\e60b";
@@ -142,15 +143,6 @@
 }
 .icon-book:before {
     content: "\e611";
-}
-.icon-battery-100:before {
-    content: "\e612";
-}
-.icon-battery-77:before {
-    content: "\e613";
-}
-.icon-battery-0:before {
-    content: "\e614";
 }
 .icon-balloon:before {
     content: "\e615";

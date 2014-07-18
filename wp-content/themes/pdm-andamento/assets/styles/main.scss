@@ -770,6 +770,14 @@ $vermelho: #eb2851;
     }
 }
 
+.empty-results {
+    text-align: center;
+    margin: rem-calc(30) 0;
+
+    h3 {
+        margin: rem-calc(20) 0;
+    }
+}
 
 // magicas para o topo aparecer diferente a cada scroll
 .header.fixed {

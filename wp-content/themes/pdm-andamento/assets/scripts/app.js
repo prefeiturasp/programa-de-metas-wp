@@ -23,7 +23,7 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
                 $('.filter-bar, #filter-options').css('visibility','visible')
             }
 
-            if ( scroll >= shrinkHeader || scroll >= (bottom-100)) {
+            if ( scroll >= shrinkHeader) {
                 $('.title-bar').addClass('shrink');
             } else {
                 $('.title-bar').removeClass('shrink');
@@ -32,11 +32,11 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
             if ( scroll > $('.filter-bar').height()+$('.fixed.header').height()-$('#f1_container').height() || scroll >= (bottom-100)) {
                 $('#f1_container').addClass('shrink2');
                 $('#f1_container').css('top', $('.header.fixed').height());
-                $('.summary-results').css('margin-top', $('#f1_container').height()+40);
+                //$('.summary-results').css('margin-top', $('#f1_container').height()+40);
             } else {
                 $('#f1_container').css('top', 0);
                 $('#f1_container').removeClass('shrink2');
-                $('.summary-results').css('margin-top', 0);
+                //$('.summary-results').css('margin-top', 0);
             }
         },
 
@@ -194,3 +194,7 @@ define(['jquery', 'list', 'foundation'], function ($,List) {
         init: _init
     };
 });
+
+
+
+

@@ -23,11 +23,13 @@
     {% endfor %}
 {% else %}
 <div class="row">
-    <div class="small-12 columns">
-        <h3 class="empty-results">
-            Desculpe, nenhum resultado foi encontrado. Experimente outros filtros.
+    <div class="small-12 columns empty-results">
+        <img src="{{site.theme.link}}/assets/images/sem-resultados.png" alt="Sem resultados">
+        <h3>
+            Desculpe, nenhum resultado foi encontrado. <br/>Experimente outros filtros.
         </h3>
     </div>
 </div>
+<br><br><br><br><br><br>
 {% endif %}
 {% endblock %}

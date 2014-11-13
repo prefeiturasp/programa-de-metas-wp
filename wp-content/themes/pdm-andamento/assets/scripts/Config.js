@@ -2,9 +2,10 @@ define([], function () {
 
 var Config = {
     isMapBoxEnabled : function () {
-        return true;
+        return false;
     }
 };
+
 
 return Config;
 

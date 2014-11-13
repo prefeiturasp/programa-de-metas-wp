@@ -1,7 +1,7 @@
 define(['jquery', 'Config'], function ($, Config) {
 
-    'use strict';
-    var MAP = {
+'use strict';
+var MAP = {
     init: function (selector) {
         var
         $map = $(selector),
@@ -74,20 +74,12 @@ define(['jquery', 'Config'], function ($, Config) {
             latLong = [el.data('gps-lat'), el.data('gps-long')];
         }
 
-        if (Config.isMapBoxEnabled) {
-            var map = L.mapbox.map($(selector).get(0), 'lpirola.ic41i88p', {maxZoom:17})
-                .setView(latLong, 14);
-            L.control.fullscreen().addTo(map);
-
-
-        } else {
-            var
-                tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                    maxZoom: 16,
-                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
-                }),
-                map = L.map($(selector).get(0), {center: new L.latLng(latLong), zoom: 14, layers: [tiles]});
-        }
+        var
+            tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                maxZoom: 16,
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+            }),
+            map = L.map($(selector).get(0), {center: new L.latLng(latLong), zoom: 14, layers: [tiles]});
         return map;
     },
 
@@ -116,10 +108,6 @@ define(['jquery', 'Config'], function ($, Config) {
         'abrange-cidade' : 'Abrange toda a cidade'
     },
 
-
-
-
-
     plotProjects : function (selector) {
         var map = this.embedMap(selector);
 
@@ -127,151 +115,134 @@ define(['jquery', 'Config'], function ($, Config) {
         var hash = L.hash(map);
         var markers = L.markerClusterGroup({showCoverageOnHover:false, spiderfyOnMaxZoom: false, spiderfyDistanceMultiplier: 1.5});
         $.ajax({
-          dataType: "jsonp",
-          url: 'http://planejasampa.prefeitura.sp.gov.br/metas-qa/api/projects.geojson',
+            dataType: "jsonp",
+            url: 'http://planejasampa.prefeitura.sp.gov.br/metas/api/projects.geojson',
             success: function (addressPoints) {
-                if (Config.isMapBoxEnabled) {
-                    // Since featureLayer is an asynchronous method, we use the `.on('ready'`
-                    // call to only use its marker data once we know it is actually loaded.
+                // if (Config.isMapBoxEnabled) {
 
-                    var popup = L.popup({className: 'result-container', offset: new L.Point(120, -25)});
+                // Since featureLayer is an asynchronous method, we use the `.on('ready'`
+                // call to only use its marker data once we know it is actually loaded.
+                var popup = L.popup({className: 'result-container', offset: new L.Point(120, -25)});
 
-                    for (var i = 0; i < addressPoints.features.length; i++) {
-                        var a = addressPoints.features[i];
-                        var gpsLat = a.geometry.coordinates[0];
-                        var gpsLong = a.geometry.coordinates[1]
+                for (var i = 0; i < addressPoints.features.length; i++) {
+                    var a = addressPoints.features[i];
+                    var gpsLat = a.geometry.coordinates[0];
+                    var gpsLong = a.geometry.coordinates[1]
 
-                        if (a.properties.location_type == 'abrange-cidade') {
-                            var gpsLat = -23.546628;
-                            var gpsLong = -46.637787;
-                        } else if (a.properties.location_type == 'abrange-sub') {
-                            var gpsLat = a.properties.prefectures[0].gps_lat;
-                            var gpsLong = a.properties.prefectures[0].gps_long;
-                        } else if (a.properties.location_type == 'local-def') {
-                            //var gpsLat = a.geometry.prefecture;
-                            //var gpsLong = a.geometry.prefecture;
-                        } else if (a.properties.location_type == 'local-em-def') {
-                            // var gpsLat = a.geometry.prefecture;
-                            // var gpsLong = a.geometry.prefecture;
-                        } else {
-                            //
-                        }
-
-
-                        //if (a.properties['location-type'] == 'local-def') {
-                        var title = a.properties.name;
-                        var objectiveSlug = 'icon-projects_' + MAP.stringToSlug(a.properties.objective);
-                        var marker = new L.marker(new L.LatLng(gpsLat, gpsLong), {
-                                icon: new L.divIcon({
-                                    // Specify a class name we can refer to in CSS.
-                                    className: 'icon-marker '+a.properties.location_type,
-                                    // Define what HTML goes in each marker.
-                                    html: '<i class="' + objectiveSlug + '"></i>',
-                                    // Set a markers width and height.
-                                    iconSize: [76, 72]
-                                }),
-                                title: title,
-                                properties: a.properties
-                            });
-                        marker.on('click', function (e) {
-                            popup
-                                .setLatLng(e.latlng)
-                                .setContent(
-                                '<p class="local">'+MAP.statusType[e.target.options.properties.location_type]+'</p>'+
-                                '    <i id="project-icon" class="'+objectiveSlug+'"></i>'+
-                                '    <div class="details">'+
-                                '        <h1><a href="'+SITE_URL+'/projeto/'+e.target.options.properties.id+'">'+e.target.options.properties.name+'</a></h1>'+
-                                '        <p class="secretaria">'+e.target.options.properties.secretary[0].name+'</p>'+
-                                '        <p class="assunto">'+e.target.options.properties.objective+'</p>'+
-                                '        <p class="endereco">'+e.target.options.properties.address+'</p>'+
-                                '        <p class="meta"><a href="'+SITE_URL+'/meta/'+e.target.options.properties.goal_id+'">META '+e.target.options.properties.goal_id+'</a></p>'+
-                                '    </div>')
-                                .openOn(map);
-                       });
-                        markers.addLayer(marker);
+                    if (a.properties.location_type == 'abrange-cidade') {
+                        var gpsLat = -23.546628;
+                        var gpsLong = -46.637787;
+                    } else if (a.properties.location_type == 'abrange-sub') {
+                        var gpsLat = a.properties.prefectures[0].gps_lat;
+                        var gpsLong = a.properties.prefectures[0].gps_long;
+                    } else if (a.properties.location_type == 'local-def') {
+                        //var gpsLat = a.geometry.prefecture;
+                        //var gpsLong = a.geometry.prefecture;
+                    } else if (a.properties.location_type == 'local-em-def') {
+                        // var gpsLat = a.geometry.prefecture;
+                        // var gpsLong = a.geometry.prefecture;
+                    } else {
+                        //
                     }
 
-                    markers.on('clusterclick', function (a) {
-                        var clusterPoints = a.layer.getAllChildMarkers();
-                        var popupContent =
-                        '<p class="total-projetos bar-title">'+clusterPoints.length+' projetos</p>'+
-                        '<div class="popup-box">';
-                        var popupContentAbrangeCidade = '',
-                            popupContentAbrangeSub = '';
 
-                        for (var i = clusterPoints.length - 1; i >= 0; i--) {
-                            var currentPoint = clusterPoints[i];
-                            var localOptions = currentPoint.options.properties;
-                            var objectiveSlug = 'icon-projects_' + MAP.stringToSlug(localOptions.objective);
-
-
-                            if (localOptions.location_type == "abrange-cidade") {
-                                popupContentAbrangeCidade +=
-                                '    <div class="card-projeto">'+
-                                '        <i id="project-icon" class="'+objectiveSlug+'"></i>'+
-                                '        <div class="details">'+
-                                '            <h1><a href="'+SITE_URL+'/projeto/'+localOptions.id+'">'+localOptions.name+'</a></h1>'+
-                                '            <p class="secretaria">'+localOptions.secretary[0].name+'</p>'+
-                                '            <p class="assunto">'+localOptions.objective+'</p>'+
-                                '            <p class="meta"><a href="'+SITE_URL+'/meta/'+localOptions.goal_id+'">META '+localOptions.goal_id+'</a></p>'+
-                                '        </div>'+
-                                '    </div>';
-                            }
-
-                            if ((localOptions.location_type == "abrange-sub") || (localOptions.location_type == "local-em-def")){
-                                popupContentAbrangeSub +=
-                                '    <div class="card-projeto">'+
-                                '        <i id="project-icon" class="'+objectiveSlug+'"></i>'+
-                                '        <div class="details">'+
-                                '            <h1><a href="'+SITE_URL+'/projeto/'+localOptions.id+'">'+localOptions.name+'</a></h1>'+
-                                '            <p class="secretaria">'+localOptions.secretary[0].name+'</p>'+
-                                '            <p class="assunto">'+localOptions.objective+'</p>'+
-                                '            <p class="meta"><a href="'+SITE_URL+'/meta/'+localOptions.goal_id+'">META '+localOptions.goal_id+'</a></p>'+
-                                '        </div>'+
-                                '    </div>';
-                            }
-                        }
-
-                        if (popupContentAbrangeCidade != "") {
-                            popupContent += '    <p class="toda-cidade-projetos bar-title">abrange toda a cidade</p>';
-                            popupContent += popupContentAbrangeCidade;
-                        }
-                        if (popupContentAbrangeSub != "") {
-                            popupContent += '    <p class="subprefeitura-projetos bar-title">abrange a subprefeitura</p>';
-                            popupContent += popupContentAbrangeSub;
-                        }
-                        popupContent += '</div>';
-
-
+                    //if (a.properties['location-type'] == 'local-def') {
+                    var title = a.properties.name;
+                    var objectiveSlug = 'icon-projects_' + MAP.stringToSlug(a.properties.objective);
+                    var marker = new L.marker(new L.LatLng(gpsLat, gpsLong), {
+                            icon: new L.divIcon({
+                                // Specify a class name we can refer to in CSS.
+                                className: 'icon-marker '+a.properties.location_type,
+                                // Define what HTML goes in each marker.
+                                html: '<i class="' + objectiveSlug + '"></i>',
+                                // Set a markers width and height.
+                                iconSize: [76, 72]
+                            }),
+                            title: title,
+                            properties: a.properties
+                        });
+                    marker.on('click', function (e) {
                         popup
-                            .setLatLng(currentPoint._latlng)
-                            .setContent(popupContent)
+                            .setLatLng(e.latlng)
+                            .setContent(
+                            '<p class="local">'+MAP.statusType[e.target.options.properties.location_type]+'</p>'+
+                            '    <i id="project-icon" class="'+objectiveSlug+'"></i>'+
+                            '    <div class="details">'+
+                            '        <h1><a href="'+SITE_URL+'/projeto/'+e.target.options.properties.id+'">'+e.target.options.properties.name+'</a></h1>'+
+                            '        <p class="secretaria">'+e.target.options.properties.secretary[0].name+'</p>'+
+                            '        <p class="assunto">'+e.target.options.properties.objective+'</p>'+
+                            '        <p class="endereco">'+e.target.options.properties.address+'</p>'+
+                            '        <p class="meta"><a href="'+SITE_URL+'/meta/'+e.target.options.properties.goal_id+'">META '+e.target.options.properties.goal_id+'</a></p>'+
+                            '    </div>')
                             .openOn(map);
                     });
-
-                    // you can also provide a full url to a TileJSON resource
-                    var subs = L.mapbox.tileLayer('lpirola.2bqyf1or');
-                    map.addLayer(subs);
-                    //map.addControl(L.mapbox.legendControl());
-
-                } else {
-                    for (var i = 0; i < addressPoints.features.length; i++) {
-                        var a = addressPoints.features[i];
-                        //if (a.properties['location-type'] == 'local-def') {
-                            var title = a.properties.name;
-                            var marker = L.marker(new L.LatLng(a.geometry.coordinates[0], a.geometry.coordinates[1]), { title: title });
-
-                            marker.bindPopup(title);
-                            markers.addLayer(marker);
-                        //} else {
-
-                        //}
-                    }
+                    markers.addLayer(marker);
                 }
+
+                markers.on('clusterclick', function (a) {
+                    var clusterPoints = a.layer.getAllChildMarkers();
+                    var popupContent =
+                    '<p class="total-projetos bar-title">'+clusterPoints.length+' projetos</p>'+
+                    '<div class="popup-box">';
+                    var popupContentAbrangeCidade = '',
+                        popupContentAbrangeSub = '';
+
+                    for (var i = clusterPoints.length - 1; i >= 0; i--) {
+                        var currentPoint = clusterPoints[i];
+                        var localOptions = currentPoint.options.properties;
+                        var objectiveSlug = 'icon-projects_' + MAP.stringToSlug(localOptions.objective);
+
+
+                        if (localOptions.location_type == "abrange-cidade") {
+                            popupContentAbrangeCidade +=
+                            '    <div class="card-projeto">'+
+                            '        <i id="project-icon" class="'+objectiveSlug+'"></i>'+
+                            '        <div class="details">'+
+                            '            <h1><a href="'+SITE_URL+'/projeto/'+localOptions.id+'">'+localOptions.name+'</a></h1>'+
+                            '            <p class="secretaria">'+localOptions.secretary[0].name+'</p>'+
+                            '            <p class="assunto">'+localOptions.objective+'</p>'+
+                            '            <p class="meta"><a href="'+SITE_URL+'/meta/'+localOptions.goal_id+'">META '+localOptions.goal_id+'</a></p>'+
+                            '        </div>'+
+                            '    </div>';
+                        }
+
+                        if ((localOptions.location_type == "abrange-sub") || (localOptions.location_type == "local-em-def")){
+                            popupContentAbrangeSub +=
+                            '    <div class="card-projeto">'+
+                            '        <i id="project-icon" class="'+objectiveSlug+'"></i>'+
+                            '        <div class="details">'+
+                            '            <h1><a href="'+SITE_URL+'/projeto/'+localOptions.id+'">'+localOptions.name+'</a></h1>'+
+                            '            <p class="secretaria">'+localOptions.secretary[0].name+'</p>'+
+                            '            <p class="assunto">'+localOptions.objective+'</p>'+
+                            '            <p class="meta"><a href="'+SITE_URL+'/meta/'+localOptions.goal_id+'">META '+localOptions.goal_id+'</a></p>'+
+                            '        </div>'+
+                            '    </div>';
+                        }
+                    }
+
+                    if (popupContentAbrangeCidade != "") {
+                        popupContent += '    <p class="toda-cidade-projetos bar-title">abrange toda a cidade</p>';
+                        popupContent += popupContentAbrangeCidade;
+                    }
+                    if (popupContentAbrangeSub != "") {
+                        popupContent += '    <p class="subprefeitura-projetos bar-title">abrange a subprefeitura</p>';
+                        popupContent += popupContentAbrangeSub;
+                    }
+                    popupContent += '</div>';
+
+
+                    popup
+                        .setLatLng(currentPoint._latlng)
+                        .setContent(popupContent)
+                        .openOn(map);
+                });
+
+                // you can also provide a full url to a TileJSON resource
+                var subs = L.mapbox.tileLayer('lpirola.2bqyf1or');
+                map.addLayer(subs);
+                map.addLayer(markers);
             }
         });
-
-        map.addLayer(markers);
     }
 };
 

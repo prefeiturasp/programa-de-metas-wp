@@ -19,7 +19,7 @@
 ## Licença
 
 Website Programa de Metas
-Copyright (C) 2015 Núcleo Digital <https://nucleodigital.cc/>
+Copyright (C) 2015 Prefeitura Municipal de São Paulo <http://www.capital.sp.gov.br/>
 
 Este programa é software livre: você pode redistribuí-lo e / ou modificá-
 -lo sob os termos da GNU General Public License conforme publicada pela
